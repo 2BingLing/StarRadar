@@ -1,0 +1,56 @@
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.Python
+build/
+dist/
+*.egg-info/
+.eggs/
+*.egg
+
+# Virtual environments
+.venv/
+venv/
+env/
+ENV/
+
+# IDE
+.idea/
+.vscode/
+*.swp
+*.swo
+*~
+.DS_Store
+
+# Testing / coverage
+.pytest_cache/
+.coverage
+htmlcov/
+.tox/
+.mypy_cache/
+.ruff_cache/
+
+# Project: data & output (运行时产物，不提交)
+data/cache/*
+!data/cache/.gitkeep
+data/profile/*
+!data/profile/.gitkeep
+output/*
+!output/.gitkeep
+
+# Secrets / 本地配置
+.env
+.env.local
+config.local.py
+
+# Logs
+*.log
+logs/
+
+# 设计文档与 demo（私有，不上传到 git）
+docs/
+design-demos/
+设计文档.md
+EXECUTION_LOG.md

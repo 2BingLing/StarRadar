@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>StarRadar · 星探</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="stylesheet" href="css/style.css" />
+</head>
+<body>
+  <main class="page">
+
+    <!-- ===== 品牌区 ===== -->
+    <header class="brand">
+      <div class="brand-mark" aria-hidden="true">
+        <svg width="28" height="28" viewBox="0 0 28 28" fill="none">
+          <circle cx="14" cy="14" r="11" stroke="currentColor" stroke-width="1.5"/>
+          <circle cx="14" cy="14" r="4.5" fill="currentColor"/>
+          <line x1="14" y1="3" x2="14" y2="7" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/>
+          <line x1="14" y1="21" x2="14" y2="25" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/>
+          <line x1="3" y1="14" x2="7" y2="14" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/>
+          <line x1="21" y1="14" x2="25" y2="14" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/>
+        </svg>
+      </div>
+      <h1 class="brand-title">StarRadar</h1>
+      <p class="brand-tagline">中文 AI 驱动的 GitHub 潜力项目发现周报</p>
+      <p class="brand-meta">
+        <span>2026 年第 31 周</span>
+        <span class="dot">·</span>
+        <span>07.28 — 08.03</span>
+      </p>
+    </header>
+
+    <!-- ===== 周报状态 ===== -->
+    <section class="status">
+      <div class="status-row">
+        <span class="status-pulse" aria-hidden="true"></span>
+        <span class="status-text">本周报正在生成中</span>
+        <span class="status-time">预计周一 10:00 发布</span>
+      </div>
+    </section>
+
+    <!-- ===== 概览统计 ===== -->
+    <section class="overview" aria-label="本周概览">
+      <article class="stat">
+        <div class="stat-value">—</div>
+        <div class="stat-label">追踪项目</div>
+      </article>
+      <article class="stat">
+        <div class="stat-value">—</div>
+        <div class="stat-label">热门榜</div>
+      </article>
+      <article class="stat">
+        <div class="stat-value">—</div>
+        <div class="stat-label">潜力雷达</div>
+      </article>
+    </section>
+
+    <!-- ===== 栏目骨架 ===== -->
+    <section class="sections">
+
+      <!-- 热门榜 -->
+      <article class="section">
+        <header class="section-head">
+          <h2 class="section-title">热门榜 TOP 20</h2>
+          <span class="section-sub">本周星增绝对值前 20</span>
+        </header>
+        <div class="section-body section-empty">
+          <p class="empty-hint">等待数据采集</p>
+          <p class="empty-sub">GitHub Search API · 每周两次抓取</p>
+        </div>
+      </article>
+
+      <!-- 潜力雷达 -->
+      <article class="section section-accent">
+        <header class="section-head">
+          <h2 class="section-title">潜力雷达 TOP 10</h2>
+          <span class="section-sub">500–5000 stars · 正在加速</span>
+        </header>
+        <div class="section-body section-empty">
+          <p class="empty-hint">等待潜力评分</p>
+          <p class="empty-sub">速度 · 加速度 · 社区健康 · 新鲜度 · 信号</p>
+        </div>
+      </article>
+
+      <!-- 为你精选 -->
+      <article class="section">
+        <header class="section-head">
+          <h2 class="section-title">为你精选</h2>
+          <span class="section-sub">基于个人兴趣档案</span>
+        </header>
+        <div class="section-body section-empty">
+          <p class="empty-hint">等待兴趣模型构建</p>
+          <p class="empty-sub">越用越懂你 · 数据仅存本地</p>
+        </div>
+      </article>
+
+    </section>
+
+    <!-- ===== 流程指示 ===== -->
+    <section class="pipeline" aria-label="生成流程">
+      <ol class="pipeline-list">
+        <li class="step step-done">
+          <span class="step-index">1</span>
+          <span class="step-name">数据采集</span>
+        </li>
+        <li class="step step-done">
+          <span class="step-index">2</span>
+          <span class="step-name">潜力评分</span>
+        </li>
+        <li class="step step-active">
+          <span class="step-index">3</span>
+          <span class="step-name">个性化推荐</span>
+        </li>
+        <li class="step">
+          <span class="step-index">4</span>
+          <span class="step-name">LLM 摘要</span>
+        </li>
+        <li class="step">
+          <span class="step-index">5</span>
+          <span class="step-name">渲染发布</span>
+        </li>
+      </ol>
+    </section>
+
+    <!-- ===== 底部 ===== -->
+    <footer class="footer">
+      <span>StarRadar · 自动生成</span>
+      <span class="dot">·</span>
+      <a href="#" class="footer-link">订阅</a>
+      <span class="dot">·</span>
+      <a href="https://github.com/2BingLing/StarRadar" class="footer-link" target="_blank" rel="noopener">GitHub</a>
+    </footer>
+
+  </main>
+
+  <script src="js/app.js"></script>
+</body>
+</html>
