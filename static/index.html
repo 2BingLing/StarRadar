@@ -8,18 +8,42 @@
   <link rel="stylesheet" href="css/style.css" />
 </head>
 <body>
+
+  <!-- 背景层：mesh 光晕 + dot grid -->
+  <div class="bg-layer" aria-hidden="true">
+    <div class="bg-mesh"></div>
+    <div class="bg-dots"></div>
+  </div>
+
   <main class="page">
 
-    <!-- ===== 品牌区 ===== -->
+    <!-- ===== 品牌区（含雷达扫描动画） ===== -->
     <header class="brand">
-      <div class="brand-mark" aria-hidden="true">
-        <svg width="28" height="28" viewBox="0 0 28 28" fill="none">
-          <circle cx="14" cy="14" r="11" stroke="currentColor" stroke-width="1.5"/>
-          <circle cx="14" cy="14" r="4.5" fill="currentColor"/>
-          <line x1="14" y1="3" x2="14" y2="7" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/>
-          <line x1="14" y1="21" x2="14" y2="25" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/>
-          <line x1="3" y1="14" x2="7" y2="14" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/>
-          <line x1="21" y1="14" x2="25" y2="14" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/>
+      <div class="radar" aria-hidden="true">
+        <svg class="radar-svg" width="84" height="84" viewBox="0 0 84 84" fill="none">
+          <!-- 同心圆 -->
+          <circle cx="42" cy="42" r="38" stroke="currentColor" stroke-width="1" opacity="0.18"/>
+          <circle cx="42" cy="42" r="26" stroke="currentColor" stroke-width="1" opacity="0.28"/>
+          <circle cx="42" cy="42" r="14" stroke="currentColor" stroke-width="1" opacity="0.42"/>
+          <!-- 十字线 -->
+          <line x1="42" y1="4" x2="42" y2="80" stroke="currentColor" stroke-width="0.6" opacity="0.18"/>
+          <line x1="4" y1="42" x2="80" y2="42" stroke="currentColor" stroke-width="0.6" opacity="0.18"/>
+          <!-- 中心点 -->
+          <circle cx="42" cy="42" r="3" fill="currentColor"/>
+          <!-- 扫描扇形（旋转） -->
+          <g class="radar-sweep">
+            <defs>
+              <linearGradient id="sweepGrad" x1="0" y1="0" x2="1" y2="0">
+                <stop offset="0%" stop-color="currentColor" stop-opacity="0"/>
+                <stop offset="100%" stop-color="currentColor" stop-opacity="0.45"/>
+              </linearGradient>
+            </defs>
+            <path d="M 42 42 L 80 42 A 38 38 0 0 0 56.9 8.6 Z" fill="url(#sweepGrad)"/>
+          </g>
+          <!-- 信号点（闪烁） -->
+          <circle class="signal signal-1" cx="60" cy="28" r="2" fill="currentColor"/>
+          <circle class="signal signal-2" cx="28" cy="58" r="1.6" fill="currentColor"/>
+          <circle class="signal signal-3" cx="62" cy="56" r="1.4" fill="currentColor"/>
         </svg>
       </div>
       <h1 class="brand-title">StarRadar</h1>
@@ -43,15 +67,21 @@
     <!-- ===== 概览统计 ===== -->
     <section class="overview" aria-label="本周概览">
       <article class="stat">
-        <div class="stat-value">—</div>
+        <div class="stat-value">
+          <span class="stat-placeholder">—</span>
+        </div>
         <div class="stat-label">追踪项目</div>
       </article>
       <article class="stat">
-        <div class="stat-value">—</div>
+        <div class="stat-value">
+          <span class="stat-placeholder">—</span>
+        </div>
         <div class="stat-label">热门榜</div>
       </article>
       <article class="stat">
-        <div class="stat-value">—</div>
+        <div class="stat-value">
+          <span class="stat-placeholder">—</span>
+        </div>
         <div class="stat-label">潜力雷达</div>
       </article>
     </section>
@@ -62,10 +92,25 @@
       <!-- 热门榜 -->
       <article class="section">
         <header class="section-head">
-          <h2 class="section-title">热门榜 TOP 20</h2>
+          <div class="section-head-left">
+            <span class="section-icon" aria-hidden="true">
+              <svg width="16" height="16" viewBox="0 0 16 16" fill="none">
+                <path d="M2 13L5 8L8 11L11 4L14 9" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/>
+                <path d="M2 13L14 13" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" opacity="0.4"/>
+              </svg>
+            </span>
+            <h2 class="section-title">热门榜 TOP 20</h2>
+          </div>
           <span class="section-sub">本周星增绝对值前 20</span>
         </header>
         <div class="section-body section-empty">
+          <div class="empty-glyph" aria-hidden="true">
+            <svg width="40" height="40" viewBox="0 0 40 40" fill="none">
+              <rect x="6" y="22" width="6" height="12" rx="1" stroke="currentColor" stroke-width="1.4" opacity="0.5"/>
+              <rect x="17" y="14" width="6" height="20" rx="1" stroke="currentColor" stroke-width="1.4" opacity="0.7"/>
+              <rect x="28" y="8" width="6" height="26" rx="1" stroke="currentColor" stroke-width="1.4"/>
+            </svg>
+          </div>
           <p class="empty-hint">等待数据采集</p>
           <p class="empty-sub">GitHub Search API · 每周两次抓取</p>
         </div>
@@ -74,10 +119,30 @@
       <!-- 潜力雷达 -->
       <article class="section section-accent">
         <header class="section-head">
-          <h2 class="section-title">潜力雷达 TOP 10</h2>
+          <div class="section-head-left">
+            <span class="section-icon section-icon-accent" aria-hidden="true">
+              <svg width="16" height="16" viewBox="0 0 16 16" fill="none">
+                <circle cx="8" cy="8" r="6" stroke="currentColor" stroke-width="1.5"/>
+                <circle cx="8" cy="8" r="2" fill="currentColor"/>
+                <line x1="8" y1="2" x2="8" y2="4" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/>
+                <line x1="8" y1="12" x2="8" y2="14" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/>
+                <line x1="2" y1="8" x2="4" y2="8" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/>
+                <line x1="12" y1="8" x2="14" y2="8" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/>
+              </svg>
+            </span>
+            <h2 class="section-title">潜力雷达 TOP 10</h2>
+          </div>
           <span class="section-sub">500–5000 stars · 正在加速</span>
         </header>
         <div class="section-body section-empty">
+          <div class="empty-glyph empty-glyph-radar" aria-hidden="true">
+            <svg width="40" height="40" viewBox="0 0 40 40" fill="none">
+              <circle cx="20" cy="20" r="14" stroke="currentColor" stroke-width="1.4" opacity="0.4"/>
+              <circle cx="20" cy="20" r="9" stroke="currentColor" stroke-width="1.4" opacity="0.6"/>
+              <circle cx="20" cy="20" r="4" stroke="currentColor" stroke-width="1.4"/>
+              <circle cx="20" cy="20" r="1.5" fill="currentColor"/>
+            </svg>
+          </div>
           <p class="empty-hint">等待潜力评分</p>
           <p class="empty-sub">速度 · 加速度 · 社区健康 · 新鲜度 · 信号</p>
         </div>
@@ -86,10 +151,22 @@
       <!-- 为你精选 -->
       <article class="section">
         <header class="section-head">
-          <h2 class="section-title">为你精选</h2>
+          <div class="section-head-left">
+            <span class="section-icon" aria-hidden="true">
+              <svg width="16" height="16" viewBox="0 0 16 16" fill="none">
+                <path d="M8 2L9.8 6.2L14 6.6L10.8 9.4L11.8 13.6L8 11.4L4.2 13.6L5.2 9.4L2 6.6L6.2 6.2L8 2Z" stroke="currentColor" stroke-width="1.4" stroke-linejoin="round"/>
+              </svg>
+            </span>
+            <h2 class="section-title">为你精选</h2>
+          </div>
           <span class="section-sub">基于个人兴趣档案</span>
         </header>
         <div class="section-body section-empty">
+          <div class="empty-glyph" aria-hidden="true">
+            <svg width="40" height="40" viewBox="0 0 40 40" fill="none">
+              <path d="M20 6L23.4 14.6L32 15.2L25.4 21L27.6 29.4L20 25L12.4 29.4L14.6 21L8 15.2L16.6 14.6L20 6Z" stroke="currentColor" stroke-width="1.4" stroke-linejoin="round" opacity="0.7"/>
+            </svg>
+          </div>
           <p class="empty-hint">等待兴趣模型构建</p>
           <p class="empty-sub">越用越懂你 · 数据仅存本地</p>
         </div>
@@ -101,11 +178,19 @@
     <section class="pipeline" aria-label="生成流程">
       <ol class="pipeline-list">
         <li class="step step-done">
-          <span class="step-index">1</span>
+          <span class="step-index">
+            <svg class="step-check" width="10" height="10" viewBox="0 0 10 10" fill="none">
+              <path d="M2 5L4 7L8 3" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/>
+            </svg>
+          </span>
           <span class="step-name">数据采集</span>
         </li>
         <li class="step step-done">
-          <span class="step-index">2</span>
+          <span class="step-index">
+            <svg class="step-check" width="10" height="10" viewBox="0 0 10 10" fill="none">
+              <path d="M2 5L4 7L8 3" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/>
+            </svg>
+          </span>
           <span class="step-name">潜力评分</span>
         </li>
         <li class="step step-active">
