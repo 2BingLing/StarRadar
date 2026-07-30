@@ -11,23 +11,42 @@
 
     if (!window.StarRadarScores || !window.StarRadarScores.renderScoreBoard) {
       console.warn("[StarRadar] score_card.js 未加载，picks 无法渲染");
+      if (window.StarRadar) window.StarRadar.reportFail("picks");
       return;
     }
 
-    if (window.fetch) {
-      fetch("data/picks.json", { cache: "no-cache" })
-        .then(function (resp) {
-          if (!resp.ok) throw new Error("HTTP " + resp.status);
-          return resp.json();
-        })
-        .then(function (data) {
-          if (Array.isArray(data) && data.length) {
-            window.StarRadarScores.renderScoreBoard(data, container);
-          }
-        })
-        .catch(function (err) {
-          console.warn("[StarRadar] picks.json 加载失败:", err);
-        });
+    if (window.StarRadar && window.StarRadar.renderSkeleton) {
+      window.StarRadar.renderSkeleton(container, "picks");
+    }
+
+    if (!window.fetch) {
+      handleFail(container);
+      return;
+    }
+
+    fetch("data/picks.json", { cache: "no-cache" })
+      .then(function (resp) {
+        if (!resp.ok) throw new Error("HTTP " + resp.status);
+        return resp.json();
+      })
+      .then(function (data) {
+        if (Array.isArray(data) && data.length) {
+          window.StarRadarScores.renderScoreBoard(data, container);
+          if (window.StarRadar) window.StarRadar.reportLoad("picks", data);
+        } else {
+          handleFail(container);
+        }
+      })
+      .catch(function (err) {
+        console.warn("[StarRadar] picks.json 加载失败:", err);
+        handleFail(container);
+      });
+  }
+
+  function handleFail(container) {
+    if (window.StarRadar) {
+      window.StarRadar.renderError(container, function () { init(); });
+      window.StarRadar.reportFail("picks");
     }
   }
 

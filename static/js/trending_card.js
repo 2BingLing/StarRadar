@@ -93,25 +93,44 @@
   }
 
   // ===== 自动初始化：渲染到"热门榜"栏目 =====
-  // 优先 fetch 后端生成的 data/trending.json；失败时保留空状态
+  // 流程：骨架屏 → fetch data/trending.json → 成功渲染+reportLoad；
+  //       失败/空 → renderError+reportFail（带重试）
   function init() {
     var container = document.querySelector("#hot .section-body");
     if (!container) return;
 
-    if (window.fetch) {
-      fetch("data/trending.json", { cache: "no-cache" })
-        .then(function (resp) {
-          if (!resp.ok) throw new Error("HTTP " + resp.status);
-          return resp.json();
-        })
-        .then(function (data) {
-          if (Array.isArray(data) && data.length) {
-            renderTrendingBoard(data, container);
-          }
-        })
-        .catch(function (err) {
-          console.warn("[StarRadar] trending.json 加载失败:", err);
-        });
+    if (window.StarRadar && window.StarRadar.renderSkeleton) {
+      window.StarRadar.renderSkeleton(container, "trending");
+    }
+
+    if (!window.fetch) {
+      handleFail(container);
+      return;
+    }
+
+    fetch("data/trending.json", { cache: "no-cache" })
+      .then(function (resp) {
+        if (!resp.ok) throw new Error("HTTP " + resp.status);
+        return resp.json();
+      })
+      .then(function (data) {
+        if (Array.isArray(data) && data.length) {
+          renderTrendingBoard(data, container);
+          if (window.StarRadar) window.StarRadar.reportLoad("trending", data);
+        } else {
+          handleFail(container);
+        }
+      })
+      .catch(function (err) {
+        console.warn("[StarRadar] trending.json 加载失败:", err);
+        handleFail(container);
+      });
+  }
+
+  function handleFail(container) {
+    if (window.StarRadar) {
+      window.StarRadar.renderError(container, function () { init(); });
+      window.StarRadar.reportFail("trending");
     }
   }
 

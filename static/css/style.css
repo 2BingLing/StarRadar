@@ -1179,3 +1179,205 @@ a {
     transition-duration: 0.01ms !important;
   }
 }
+
+/* ===== 骨架屏 ===== */
+.section-body.has-skeleton {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 14px;
+  padding: 20px 24px 24px;
+  text-align: left;
+}
+
+@media (min-width: 880px) {
+  .section-body.has-skeleton {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+/* 热门榜骨架为行布局 */
+#hot .section-body.has-skeleton {
+  display: flex;
+  flex-direction: column;
+  gap: 0;
+  padding: 8px 12px 12px;
+}
+
+.sk {
+  background: linear-gradient(90deg, var(--bg-soft) 0%, var(--border-soft) 50%, var(--bg-soft) 100%);
+  background-size: 200% 100%;
+  animation: skShimmer 1.4s ease-in-out infinite;
+  border-radius: 4px;
+}
+
+@keyframes skShimmer {
+  0%   { background-position: 200% 0;  }
+  100% { background-position: -200% 0; }
+}
+
+.sk-card {
+  display: grid;
+  grid-template-columns: auto 1fr auto;
+  gap: 4px 14px;
+  align-items: center;
+  padding: 12px 16px;
+  border: 1px solid var(--border-soft);
+  border-radius: var(--radius-md);
+  background: var(--bg-card);
+}
+
+.sk-row {
+  display: grid;
+  grid-template-columns: auto 1fr auto;
+  gap: 12px;
+  align-items: center;
+  padding: 12px 14px;
+  border-bottom: 1px solid var(--border-soft);
+}
+
+.sk-row:last-child {
+  border-bottom: none;
+}
+
+.sk-body {
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+  min-width: 0;
+}
+
+.sk-side {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 6px;
+}
+
+.sk-circle {
+  width: 32px;
+  height: 32px;
+  border-radius: 50%;
+}
+
+.sk-circle-sm {
+  width: 24px;
+  height: 24px;
+  border-radius: 50%;
+}
+
+.sk-square {
+  width: 56px;
+  height: 56px;
+  border-radius: 8px;
+}
+
+.sk-line {
+  height: 10px;
+  border-radius: 4px;
+}
+
+.w85 { width: 85%; }
+.w80 { width: 80%; }
+.w55 { width: 55%; }
+.w50 { width: 50%; }
+.w40 { width: 40%; }
+.w30 { width: 30px; }
+.w20 { width: 40px; }
+
+@media (max-width: 480px) {
+  .sk-card {
+    grid-template-columns: auto 1fr;
+  }
+  .sk-side {
+    flex-direction: row;
+    grid-column: 1 / -1;
+    justify-content: center;
+  }
+}
+
+/* ===== 加载失败提示 ===== */
+.load-error {
+  text-align: center;
+  padding: 36px 16px;
+  color: var(--text-tertiary);
+}
+
+.load-error-icon {
+  color: var(--text-quaternary);
+  margin-bottom: 12px;
+  display: inline-flex;
+}
+
+.load-error-text {
+  font-size: 14px;
+  color: var(--text-secondary);
+  font-weight: 500;
+  margin-bottom: 14px;
+}
+
+.retry-btn {
+  font-family: var(--font);
+  font-size: 13px;
+  font-weight: 500;
+  color: var(--accent);
+  background: var(--bg-accent);
+  border: 1px solid var(--accent-soft);
+  padding: 6px 20px;
+  border-radius: var(--radius-sm);
+  cursor: pointer;
+  transition: background 0.15s ease, color 0.15s ease, border-color 0.15s ease;
+}
+
+.retry-btn:hover {
+  background: var(--accent);
+  color: #fff;
+  border-color: var(--accent);
+}
+
+/* ===== 评分维度 tooltip ===== */
+.dim-val {
+  position: relative;
+  cursor: help;
+  padding: 1px 0;
+}
+
+.dim-val::after {
+  content: attr(data-tip);
+  position: absolute;
+  bottom: 145%;
+  left: 50%;
+  transform: translateX(-50%);
+  background: var(--text-primary);
+  color: #fff;
+  font-size: 11px;
+  font-weight: 500;
+  padding: 5px 9px;
+  border-radius: 6px;
+  white-space: nowrap;
+  opacity: 0;
+  pointer-events: none;
+  transition: opacity 0.15s ease;
+  z-index: 30;
+  box-shadow: 0 4px 12px rgba(15, 23, 42, 0.18);
+}
+
+.dim-val:hover::after {
+  opacity: 1;
+}
+
+.dim-sep {
+  color: var(--text-quaternary);
+  margin: 0 1px;
+}
+
+/* ===== 周涨星 sparkline ===== */
+.sparkline {
+  color: var(--accent);
+  flex-shrink: 0;
+  display: block;
+}
+
+/* ===== 状态条完成态 ===== */
+.pulse-done {
+  animation: none;
+}

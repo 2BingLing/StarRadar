@@ -23,6 +23,15 @@
     saturated: "已饱和",
   };
 
+  // ===== 五维度 tooltip 文案 =====
+  var DIM_TIPS = {
+    vel:    "速度 · 本周涨星绝对值",
+    acc:    "加速度 · 涨速变化率",
+    health: "健康 · 社区健康度（forks/issues）",
+    fresh:  "新鲜 · 项目新鲜度（创建时间）",
+    signal: "信号 · 元数据完整度",
+  };
+
   // ===== 工具：数字格式化（75200 -> 75.2k） =====
   function formatCount(n) {
     n = Number(n) || 0;
@@ -114,11 +123,14 @@
     }
     var dataPolygon = dataPoints.map(function (p) { return p.x + "," + p.y; }).join(" ");
 
-    // 数据顶点圆点
+    // 数据顶点圆点（含原生 title tooltip）
     var dataDots = "";
     for (var dd = 0; dd < dataPoints.length; dd++) {
+      var dimKey = RADAR_DIMS[dd].key;
+      var dimVal = Math.round(Number(breakdown[dimKey]) || 0);
       dataDots += '<circle class="radar-dot" cx="' + dataPoints[dd].x +
-                  '" cy="' + dataPoints[dd].y + '" r="2.6"/>';
+                  '" cy="' + dataPoints[dd].y + '" r="2.6"><title>' +
+                  RADAR_DIMS[dd].label + '：' + dimVal + '</title></circle>';
     }
 
     // 维度标签
@@ -138,6 +150,20 @@
       '<polygon class="radar-data" points="' + dataPolygon + '"/>' +
       dataDots +
       labels +
+      '</svg>'
+    );
+  }
+
+  // ===== 周涨星 sparkline（2 点迷你上升折线） =====
+  // 数据仅有 stars_7d_ago 与 stars 两个点，渲染为固定上升线，强化"在涨"的视觉信号
+  function renderSparkline(starsNow, stars7dAgo) {
+    if (starsNow == null || stars7dAgo == null) return "";
+    if (starsNow <= stars7dAgo) return "";
+    return (
+      '<svg class="sparkline" width="26" height="10" viewBox="0 0 26 10" aria-hidden="true">' +
+        '<polyline points="2,8 23,2" fill="none" stroke="currentColor" ' +
+        'stroke-width="1.4" stroke-linecap="round" stroke-linejoin="round"/>' +
+        '<circle cx="23" cy="2" r="1.6" fill="currentColor"/>' +
       '</svg>'
     );
   }
@@ -184,7 +210,7 @@
       weekGain = Math.round(breakdown.vel * 0.2 * 7);
     }
     var gainHtml = weekGain > 0
-      ? '<span class="meta-item meta-gain">' + ICON.trend + "+" + formatCount(weekGain) + "/周</span>"
+      ? '<span class="meta-item meta-gain">' + renderSparkline(repo.stars, repo.stars_7d_ago) + "+" + formatCount(weekGain) + "/周</span>"
       : '';
 
     var ageText = formatAge(repo.created_at);
@@ -197,14 +223,14 @@
         Math.round(score.confidence * 100) + "%</span>"
       : "";
 
-    // 5 维度数值（雷达图下方紧凑显示）
+    // 5 维度数值（雷达图下方紧凑显示，hover 显示维度含义）
     var dimShort = ["速", "加", "健", "鲜", "信"];
     var dimVals = [];
     for (var i = 0; i < RADAR_DIMS.length; i++) {
-      var val = Math.round(Number(breakdown[RADAR_DIMS[i].key]) || 0);
-      dimVals.push(dimShort[i] + val);
+      var dval = Math.round(Number(breakdown[RADAR_DIMS[i].key]) || 0);
+      dimVals.push('<span class="dim-val" data-tip="' + DIM_TIPS[RADAR_DIMS[i].key] + '">' + dimShort[i] + dval + '</span>');
     }
-    var dimValsHtml = '<div class="radar-vals">' + dimVals.join(" · ") + "</div>";
+    var dimValsHtml = '<div class="radar-vals">' + dimVals.join('<span class="dim-sep">·</span>') + "</div>";
 
     var explainHtml = score.explanation
       ? '<p class="score-explain">' + escapeHtml(score.explanation) + "</p>"
@@ -255,38 +281,48 @@
   }
 
   // ===== 自动初始化：渲染到"潜力雷达"栏目 =====
-  // 优先 fetch 后端生成的 data/scores.json；失败时降级到 window.SAMPLE_SCORES
+  // 流程：骨架屏 → fetch data/scores.json → 成功渲染+reportLoad；
+  //       失败降级 window.SAMPLE_SCORES；降级亦无 → renderError+reportFail
   function init() {
     var container = document.querySelector(".section-accent .section-body");
     if (!container) return;
 
-    // 优先加载后端真实数据
-    if (window.fetch) {
-      fetch("data/scores.json", { cache: "no-cache" })
-        .then(function (resp) {
-          if (!resp.ok) throw new Error("HTTP " + resp.status);
-          return resp.json();
-        })
-        .then(function (data) {
-          if (Array.isArray(data) && data.length) {
-            renderScoreBoard(data, container);
-          } else {
-            renderFallback(container);
-          }
-        })
-        .catch(function (err) {
-          console.warn("[StarRadar] scores.json 加载失败，降级到示例数据:", err);
-          renderFallback(container);
-        });
-    } else {
-      renderFallback(container);
+    if (window.StarRadar && window.StarRadar.renderSkeleton) {
+      window.StarRadar.renderSkeleton(container, "scores");
     }
+
+    if (!window.fetch) {
+      renderFallback(container);
+      return;
+    }
+
+    fetch("data/scores.json", { cache: "no-cache" })
+      .then(function (resp) {
+        if (!resp.ok) throw new Error("HTTP " + resp.status);
+        return resp.json();
+      })
+      .then(function (data) {
+        if (Array.isArray(data) && data.length) {
+          renderScoreBoard(data, container);
+          if (window.StarRadar) window.StarRadar.reportLoad("scores", data);
+        } else {
+          renderFallback(container);
+        }
+      })
+      .catch(function (err) {
+        console.warn("[StarRadar] scores.json 加载失败，降级到示例数据:", err);
+        renderFallback(container);
+      });
   }
 
   function renderFallback(container) {
     var data = window.SAMPLE_SCORES || [];
     if (data.length) {
       renderScoreBoard(data, container);
+      if (window.StarRadar) window.StarRadar.reportLoad("scores", data);
+    } else if (window.StarRadar) {
+      window.StarRadar.renderError(container, function () { init(); });
+      window.StarRadar.reportFail("scores");
     } else {
       container.innerHTML = '<p class="score-empty">暂无潜力评分数据</p>';
     }
