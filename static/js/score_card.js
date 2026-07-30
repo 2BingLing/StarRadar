@@ -197,18 +197,14 @@
         Math.round(score.confidence * 100) + "%</span>"
       : "";
 
-    // 5 维度分数条
-    var dimsHtml = '<div class="score-dims">';
+    // 5 维度数值（雷达图下方紧凑显示）
+    var dimShort = ["速", "加", "健", "鲜", "信"];
+    var dimVals = [];
     for (var i = 0; i < RADAR_DIMS.length; i++) {
-      var d = RADAR_DIMS[i];
-      var val = Math.round(Number(breakdown[d.key]) || 0);
-      dimsHtml += '<div class="dim-row">' +
-        '<span class="dim-name">' + d.label + "</span>" +
-        '<div class="dim-track"><div class="dim-fill" style="width:' + val + '%"></div></div>' +
-        '<span class="dim-val">' + val + "</span>" +
-        "</div>";
+      var val = Math.round(Number(breakdown[RADAR_DIMS[i].key]) || 0);
+      dimVals.push(dimShort[i] + val);
     }
-    dimsHtml += "</div>";
+    var dimValsHtml = '<div class="radar-vals">' + dimVals.join(" · ") + "</div>";
 
     var explainHtml = score.explanation
       ? '<p class="score-explain">' + escapeHtml(score.explanation) + "</p>"
@@ -228,7 +224,6 @@
           confHtml +
         "</div>" +
         topicsHtml +
-        dimsHtml +
         explainHtml +
         '<div class="score-side">' +
           '<div class="score-num">' +
@@ -236,6 +231,7 @@
             '<span class="score-num-label">潜力分</span>' +
           "</div>" +
           renderRadar(breakdown, 132) +
+          dimValsHtml +
         "</div>" +
       "</article>"
     );

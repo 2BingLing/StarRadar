@@ -319,6 +319,46 @@ a {
   margin-bottom: 48px;
 }
 
+/* 跳转索引 */
+.nav-tabs {
+  display: flex;
+  gap: 4px;
+  padding: 4px;
+  background: var(--bg-card);
+  border: 1px solid var(--border);
+  border-radius: var(--radius-md);
+  box-shadow: var(--shadow-card);
+  position: sticky;
+  top: 12px;
+  z-index: 20;
+}
+
+.nav-tab {
+  flex: 1;
+  padding: 8px 12px;
+  font-size: 13px;
+  font-weight: 500;
+  color: var(--text-tertiary);
+  text-align: center;
+  border-radius: var(--radius-sm);
+  cursor: pointer;
+  transition: color 0.2s ease, background 0.2s ease;
+  border: none;
+  background: none;
+  font-family: var(--font);
+}
+
+.nav-tab:hover {
+  color: var(--text-primary);
+  background: var(--bg-soft);
+}
+
+.nav-tab.active {
+  color: var(--accent);
+  background: var(--bg-accent);
+  font-weight: 600;
+}
+
 .section {
   background: var(--bg-card);
   border: 1px solid var(--border);
@@ -629,11 +669,10 @@ a {
     "rank desc   side"
     "rank meta   side"
     "rank topics side"
-    "dims  dims   side"
     "explain explain side";
-  gap: 5px 14px;
+  gap: 4px 14px;
   align-items: center;
-  padding: 16px 18px;
+  padding: 12px 16px;
   background: var(--bg-card);
   border: 1px solid var(--border);
   border-radius: var(--radius-md);
@@ -853,51 +892,14 @@ a {
   letter-spacing: 0.01em;
 }
 
-/* 5 维度分数条 */
-.score-dims {
-  grid-area: dims;
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-  gap: 3px 18px;
-  padding-top: 4px;
-}
-
-.dim-row {
-  display: flex;
-  align-items: center;
-  gap: 6px;
-}
-
-.dim-name {
-  font-size: 10.5px;
+/* 雷达图下方维度数值 */
+.radar-vals {
+  font-size: 9.5px;
   color: var(--text-tertiary);
-  width: 32px;
-  flex-shrink: 0;
-}
-
-.dim-track {
-  flex: 1;
-  height: 5px;
-  background: var(--bg-soft);
-  border-radius: 3px;
-  overflow: hidden;
-}
-
-.dim-fill {
-  height: 100%;
-  background: linear-gradient(90deg, var(--accent) 0%, var(--accent-hover) 100%);
-  border-radius: 3px;
-  transition: width 0.4s cubic-bezier(0.16, 1, 0.3, 1);
-}
-
-.dim-val {
-  font-size: 10.5px;
-  font-weight: 600;
-  color: var(--text-secondary);
   font-variant-numeric: tabular-nums;
-  width: 22px;
-  text-align: right;
-  flex-shrink: 0;
+  text-align: center;
+  letter-spacing: 0.02em;
+  margin-top: -2px;
 }
 
 /* 解释文本 */
@@ -1014,13 +1016,9 @@ a {
       "rank desc"
       "rank meta"
       "rank topics"
-      "dims dims"
       "explain explain"
       "side side";
-    gap: 6px 12px;
-  }
-  .score-dims {
-    grid-template-columns: 1fr;
+    gap: 5px 12px;
   }
   .score-side {
     flex-direction: row;

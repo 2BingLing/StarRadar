@@ -89,8 +89,15 @@
     <!-- ===== 栏目骨架 ===== -->
     <section class="sections">
 
+      <!-- 跳转索引 -->
+      <nav class="nav-tabs" role="tablist">
+        <button class="nav-tab active" data-target="#hot">热门榜</button>
+        <button class="nav-tab" data-target="#potential">潜力雷达</button>
+        <button class="nav-tab" data-target="#foryou">为你精选</button>
+      </nav>
+
       <!-- 热门榜 -->
-      <article class="section">
+      <article class="section" id="hot">
         <header class="section-head">
           <div class="section-head-left">
             <span class="section-icon" aria-hidden="true">
@@ -117,7 +124,7 @@
       </article>
 
       <!-- 潜力雷达（评分结果渲染于此） -->
-      <article class="section section-accent">
+      <article class="section section-accent" id="potential">
         <header class="section-head">
           <div class="section-head-left">
             <span class="section-icon section-icon-accent" aria-hidden="true">
@@ -149,7 +156,7 @@
       </article>
 
       <!-- 为你精选 -->
-      <article class="section">
+      <article class="section" id="foryou">
         <header class="section-head">
           <div class="section-head-left">
             <span class="section-icon" aria-hidden="true">
@@ -397,5 +404,30 @@
   </script>
   <script src="js/score_card.js"></script>
   <script src="js/app.js"></script>
+  <script>
+    // 跳转索引：点击平滑滚动 + 滚动高亮
+    (function () {
+      var tabs = document.querySelectorAll(".nav-tab");
+      var targets = ["#hot", "#potential", "#foryou"].map(function (s) {
+        return document.querySelector(s);
+      });
+      tabs.forEach(function (tab) {
+        tab.addEventListener("click", function () {
+          var el = document.querySelector(tab.dataset.target);
+          if (el) el.scrollIntoView({ behavior: "smooth", block: "start" });
+        });
+      });
+      window.addEventListener("scroll", function () {
+        var y = window.scrollY + 140;
+        var idx = 0;
+        for (var i = 0; i < targets.length; i++) {
+          if (targets[i] && targets[i].offsetTop <= y) idx = i;
+        }
+        tabs.forEach(function (t, i) {
+          t.classList.toggle("active", i === idx);
+        });
+      }, { passive: true });
+    })();
+  </script>
 </body>
 </html>
