@@ -50,13 +50,20 @@ def check_github_token(client: GitHubAPIClient) -> None:
         print()
 
 
-def collect_trending(client: GitHubAPIClient, limit: int = 10) -> list:
-    """采集近期热门仓库（默认 limit=10，避免消耗过多额度）。"""
-    print(f"  → 搜索近 7 天 stars:>500 的热门仓库（取前 {limit} 个）...")
+def collect_potential(client: GitHubAPIClient, limit: int = 10) -> list:
+    """采集潜力项目：中等星数 + 较新 + 近期活跃。
+
+    与 collect_trending 的区别：
+    - trending 搜 stars:>500 按星降序 → 全是高星巨无霸
+    - potential 搜 stars:50..5000 + created:>2024 → 有初期增长势头的新项目
+    """
+    print(f"  → 搜索 stars:50..5000 + created:>2024 的潜力项目（取前 {limit} 个）...")
     try:
-        result = client.fetch_trending(
-            min_stars=500,
-            pushed_within_days=7,
+        result = client.fetch_potential(
+            min_stars=50,
+            max_stars=5000,
+            created_after="2024-01-01",
+            pushed_within_days=30,
             limit=limit,
         )
     except RateLimitError as e:
@@ -143,7 +150,7 @@ def main() -> None:
     client = get_client()
     check_github_token(client)
 
-    repos = collect_trending(client, limit=10)
+    repos = collect_potential(client, limit=10)
     print_top_repos(repos, top_n=5)
 
     # 写本地快照（用于 stars_7d_ago / 14d_ago / 30d_ago，见 star_history.save_snapshot）

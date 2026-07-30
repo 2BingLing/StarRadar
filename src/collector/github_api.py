@@ -344,6 +344,43 @@ class GitHubAPIClient:
             query=query, sort="stars", order="desc", per_page=limit, page=1,
         )
 
+    def fetch_potential(
+        self,
+        min_stars: int = 50,
+        max_stars: int = 5000,
+        created_after: str = "2024-01-01",
+        pushed_within_days: int = 30,
+        language: str | None = None,
+        limit: int = 50,
+    ) -> SearchResult:
+        """搜索潜力项目：中等星数 + 较新项目 + 近期活跃。
+
+        与 fetch_trending 的区别：
+        - fetch_trending 搜 stars:>500 按星降序 → 全是高星巨无霸
+        - fetch_potential 搜 stars:50..5000 + created:>2024 → 有初期增长势头的新项目
+
+        搜索结果按星数排序，但后续潜力评分（速度+加速度维度）
+        会让增长快的项目排到前面，不依赖搜索排序。
+
+        Args:
+            min_stars: 最低 star 数（排除零星项目）
+            max_stars: 最高 star 数（排除已爆红的巨无霸）
+            created_after: 创建于此日期之后（优先新项目）
+            pushed_within_days: 近 N 天内有 push（确保活跃）
+            language: 限定语言（可选）
+            limit: 返回数量上限
+        """
+        cutoff = (
+            datetime.now(timezone.utc) - timedelta(days=pushed_within_days)
+        ).strftime("%Y-%m-%d")
+        query = f"stars:{min_stars}..{max_stars} created:>{created_after} pushed:>{cutoff}"
+        if language:
+            query += f" language:{language}"
+        logger.info("fetch_potential 查询: %s", query)
+        return self.search_repositories(
+            query=query, sort="stars", order="desc", per_page=limit, page=1,
+        )
+
     def rate_limit(self) -> dict:
         """查询当前速率限制状态（GET /rate_limit，不缓存）。"""
         return self._request("GET", "/rate_limit", use_cache=False)
