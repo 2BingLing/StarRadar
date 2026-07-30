@@ -434,26 +434,26 @@ def generate_explanation(
         "saturated": "增长已饱和",
     }.get(stage_label, "")
     if stage_text:
-        reasons.append(f"📊 {stage_text}")
+        reasons.append(stage_text)
 
     if scores["vel"] > 70:
-        reasons.append(f"🚀 本周涨速 {vel_this_week:.0f} star/天")
+        reasons.append(f"本周涨速 {vel_this_week:.0f} star/天")
     elif scores["vel"] > 40:
-        reasons.append(f"📈 本周涨速 {vel_this_week:.0f} star/天")
+        reasons.append(f"本周涨速 {vel_this_week:.0f} star/天")
 
     if scores["acc"] > 70:
-        reasons.append("⚡ 涨速在加快")
+        reasons.append("涨速在加快")
     elif scores["acc"] < 30:
-        reasons.append("📉 涨速在放缓")
+        reasons.append("涨速在放缓")
 
     if scores["health"] > 70:
-        reasons.append(f"✅ 社区健康（forks={repo.forks}, issues={repo.open_issues}）")
+        reasons.append(f"社区健康（forks={repo.forks}, issues={repo.open_issues}）")
 
     if scores["signal"] >= 85:
-        reasons.append("📝 元数据完整")
+        reasons.append("元数据完整")
 
     if not reasons:
-        reasons.append(f"⭐ {repo.stars} stars，{repo.language or '未知语言'}")
+        reasons.append(f"{repo.stars} stars，{repo.language or '未知语言'}")
 
     return "；".join(reasons[:3]) + "。"
 

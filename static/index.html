@@ -116,7 +116,7 @@
         </div>
       </article>
 
-      <!-- 潜力雷达 -->
+      <!-- 潜力雷达（评分结果渲染于此） -->
       <article class="section section-accent">
         <header class="section-head">
           <div class="section-head-left">
@@ -130,9 +130,9 @@
                 <line x1="12" y1="8" x2="14" y2="8" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/>
               </svg>
             </span>
-            <h2 class="section-title">潜力雷达 TOP 10</h2>
+            <h2 class="section-title">潜力雷达 TOP 5</h2>
           </div>
-          <span class="section-sub">500–5000 stars · 正在加速</span>
+          <span class="section-sub">5 维加权评分 · 几何平均 · 阶段调整</span>
         </header>
         <div class="section-body section-empty">
           <div class="empty-glyph empty-glyph-radar" aria-hidden="true">
@@ -172,27 +172,6 @@
         </div>
       </article>
 
-    </section>
-
-    <!-- ===== 潜力榜单（评分结果） ===== -->
-    <section class="scoreboard" aria-label="潜力评分榜单">
-      <header class="scoreboard-head">
-        <div class="scoreboard-head-left">
-          <span class="section-icon section-icon-accent" aria-hidden="true">
-            <svg width="16" height="16" viewBox="0 0 16 16" fill="none">
-              <path d="M4 2.5H12V5.5C12 7.7 10.2 9.5 8 9.5C5.8 9.5 4 7.7 4 5.5V2.5Z" stroke="currentColor" stroke-width="1.4" stroke-linejoin="round"/>
-              <path d="M6 9.5V11.5H10V9.5" stroke="currentColor" stroke-width="1.4" stroke-linejoin="round"/>
-              <path d="M5.5 13.5H10.5" stroke="currentColor" stroke-width="1.4" stroke-linecap="round"/>
-            </svg>
-          </span>
-          <div class="scoreboard-titles">
-            <h2 class="section-title">潜力榜单 TOP 5</h2>
-            <p class="scoreboard-sub">5 维加权评分 · 几何平均 · 阶段调整</p>
-          </div>
-        </div>
-        <span class="scoreboard-badge">本周</span>
-      </header>
-      <div class="scoreboard-body" data-scoreboard></div>
     </section>
 
     <!-- ===== 流程指示 ===== -->
@@ -266,7 +245,7 @@
           stage_multiplier: 1.1,
           confidence: 0.94,
           base_score: 89.7,
-          explanation: "📊 处于中早期增长；🚀 本周涨速 12 star/天；⚡ 涨速在加快。"
+          explanation: "处于中早期增长；本周涨速 12 star/天；涨速在加快。"
         }
       },
       {
@@ -291,7 +270,7 @@
           stage_multiplier: 1.1,
           confidence: 0.97,
           base_score: 82.5,
-          explanation: "📊 处于中早期增长；🚀 本周涨速 8 star/天；✅ 社区健康（forks=2100, issues=410）。"
+          explanation: "处于中早期增长；本周涨速 8 star/天；社区健康（forks=2100, issues=410）。"
         }
       },
       {
@@ -316,7 +295,7 @@
           stage_multiplier: 1.0,
           confidence: 1.0,
           base_score: 78.3,
-          explanation: "📊 处于中后期增长；📈 本周涨速 4 star/天；✅ 社区健康（forks=5500, issues=890）。"
+          explanation: "处于中后期增长；本周涨速 4 star/天；社区健康（forks=5500, issues=890）。"
         }
       },
       {
@@ -341,7 +320,7 @@
           stage_multiplier: 0.7,
           confidence: 1.0,
           base_score: 89.1,
-          explanation: "📊 增长已饱和；📈 本周涨速 3 star/天；✅ 社区健康（forks=34200, issues=300）。"
+          explanation: "增长已饱和；本周涨速 3 star/天；社区健康（forks=34200, issues=300）。"
         }
       },
       {
@@ -366,7 +345,7 @@
           stage_multiplier: 0.85,
           confidence: 1.0,
           base_score: 69.1,
-          explanation: "📊 接近增长天花板；📉 涨速在放缓；📝 元数据完整。"
+          explanation: "接近增长天花板；涨速在放缓；元数据完整。"
         }
       }
     ];

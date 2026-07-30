@@ -110,7 +110,8 @@
     }
 
     return (
-      '<svg class="score-radar" viewBox="0 0 ' + size + ' ' + size + '" aria-hidden="true">' +
+      '<svg class="score-radar" viewBox="-10 -4 ' + (size + 20) + ' ' + (size + 8) +
+      '" aria-hidden="true">' +
       gridLayers +
       axes +
       '<polygon class="radar-data" points="' + dataPolygon + '"/>' +
@@ -185,11 +186,13 @@
       html += renderCard(items[i], i);
     }
     container.innerHTML = html;
+    container.classList.remove("section-empty");
+    container.classList.add("has-scores");
   }
 
-  // ===== 自动初始化：读取 window.SAMPLE_SCORES 并渲染到 [data-scoreboard] =====
+  // ===== 自动初始化：渲染到"潜力雷达"栏目 =====
   function init() {
-    var container = document.querySelector("[data-scoreboard]");
+    var container = document.querySelector(".section-accent .section-body");
     if (!container) return;
     var data = window.SAMPLE_SCORES || [];
     renderScoreBoard(data, container);

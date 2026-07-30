@@ -604,67 +604,17 @@ a {
   }
 }
 
-/* ===== 潜力榜单 ===== */
-.scoreboard {
-  margin-bottom: 48px;
-  animation: fadeUp 0.7s cubic-bezier(0.16, 1, 0.3, 1) 0.58s both;
-}
-
-.scoreboard-head {
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  gap: 12px;
-  padding: 18px 24px 14px;
-  background: linear-gradient(180deg, var(--bg-accent) 0%, #ffffff 100%);
-  border: 1px solid var(--accent-soft);
-  border-bottom: 1px solid var(--border-soft);
-  border-radius: var(--radius-md) var(--radius-md) 0 0;
-}
-
-.scoreboard-head-left {
-  display: flex;
-  align-items: center;
-  gap: 12px;
-}
-
-.scoreboard-titles {
-  display: flex;
-  flex-direction: column;
-  gap: 2px;
-}
-
-.scoreboard-sub {
-  font-size: 12px;
-  color: var(--text-tertiary);
-}
-
-.scoreboard-badge {
-  font-size: 11px;
-  font-weight: 600;
-  color: var(--accent);
-  background: var(--bg-accent-strong);
-  padding: 4px 10px;
-  border-radius: 999px;
-  letter-spacing: 0.02em;
-  flex-shrink: 0;
-}
-
-.scoreboard-body {
+/* ===== 潜力雷达 · 评分卡片容器 ===== */
+.section-body.has-scores {
   display: grid;
   grid-template-columns: 1fr;
   gap: 14px;
   padding: 20px 24px 24px;
-  background: linear-gradient(180deg, #ffffff 0%, var(--bg-soft) 100%);
-  border: 1px solid var(--accent-soft);
-  border-top: none;
-  border-radius: 0 0 var(--radius-md) var(--radius-md);
-  box-shadow: var(--shadow-card);
+  text-align: left;
 }
 
-/* 大屏幕双列 */
 @media (min-width: 880px) {
-  .scoreboard-body {
+  .section-body.has-scores {
     grid-template-columns: repeat(2, 1fr);
   }
 }
@@ -958,10 +908,7 @@ a {
 
 /* ===== 榜单响应式 ===== */
 @media (max-width: 720px) {
-  .scoreboard-head {
-    padding: 16px 18px 12px;
-  }
-  .scoreboard-body {
+  .section-body.has-scores {
     padding: 16px 14px 18px;
   }
 }
