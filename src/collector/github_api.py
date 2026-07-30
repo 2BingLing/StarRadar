@@ -112,6 +112,67 @@ class Repository:
         return d
 
 
+# ===== 噪声仓库过滤 =====
+
+# 课程作业 / 教学课件 / 镜像 关键词（小写匹配 name/full_name/description）
+_NOISE_NAME_KEYWORDS: tuple[str, ...] = (
+    "engenharia", "curso", "course", "homework", "assignment", "exercise",
+    "lecture", "tutorial", "aula", "pos-graduacao", "classroom", "lesson",
+    "tutorial-", "-tutorial", "learn-", "-learn", "learning-",
+)
+_NOISE_DESC_KEYWORDS: tuple[str, ...] = (
+    # 中文
+    "课件", "作业", "实验指导", "课程设计", "教学用", "学院", "大学课程",
+    "研究生课程", "本科生课程", "实验报告",
+    # 葡语 / 西语（课程仓库高发）
+    "engenharia de software", "pos-graduacao", "curso de",
+    "códigos e referências", "códigos e referencias",
+    # 英语
+    "lecture notes", "course materials", "assignments for",
+    "homework ", "exercise solutions", "lab assignments",
+    # 镜像
+    "mirror of ", "镜像仓库", "这是一个镜像",
+)
+# forks/stars 比例异常阈值（课程仓库学生大量 fork 导致比例偏高）
+_NOISE_FORK_RATIO_THRESHOLD = 0.5
+_NOISE_FORK_RATIO_MAX_STARS = 2000  # 仅对小项目应用此规则（大项目 fork 多正常）
+
+
+def _is_noise_repo(repo: Repository) -> bool:
+    """判断是否为噪声仓库（课程作业 / 教学课件 / 镜像 / 异常 fork 率）。
+
+    过滤规则：
+    1. full_name / name 命中课程作业类关键词
+    2. description 命中课程 / 教学课件 / 镜像类关键词
+    3. forks/stars 比例异常高（>0.5 且 stars<2000，典型课程仓库特征）
+
+    Returns:
+        True 表示应过滤掉
+    """
+    name_lower = (repo.name or "").lower()
+    full_lower = (repo.full_name or "").lower()
+    desc_lower = (repo.description or "").lower()
+
+    # 1. name / full_name 关键词
+    name_text = f"{full_lower} {name_lower}"
+    for kw in _NOISE_NAME_KEYWORDS:
+        if kw in name_text:
+            return True
+
+    # 2. description 关键词
+    for kw in _NOISE_DESC_KEYWORDS:
+        if kw in desc_lower:
+            return True
+
+    # 3. forks/stars 比例异常（课程仓库特征：学生大量 fork）
+    if 0 < repo.stars < _NOISE_FORK_RATIO_MAX_STARS:
+        fork_ratio = repo.forks / repo.stars
+        if fork_ratio > _NOISE_FORK_RATIO_THRESHOLD:
+            return True
+
+    return False
+
+
 @dataclass(slots=True)
 class SearchResult:
     """搜索结果。"""
@@ -371,9 +432,14 @@ class GitHubAPIClient:
         搜索结果按各桶 stars 降序合并，但后续潜力评分（速度+加速度维度）
         会让增长快的项目排到前面，不依赖搜索排序。
 
+        噪声过滤（保证榜单质量）：
+        - query 加 fork:false 排除 fork 仓库
+        - 客户端 _is_noise_repo 过滤课程作业 / 教学课件 / 镜像仓库
+        - 每桶多取 50% 作为过滤缓冲，过滤后裁剪到 limit
+
         Args:
             min_stars: 全局最低 star 数（裁剪桶下界）
-            max_stars: 全局最高 star 数（裁剪桶上界）
+            max_stars: 全局最高 star 数（裁剪桶上界，不含）
             created_after: 创建于此日期之后（优先新项目）
             pushed_within_days: 近 N 天内有 push（确保活跃）
             language: 限定语言（可选）
@@ -384,7 +450,7 @@ class GitHubAPIClient:
         if buckets is None:
             buckets = list(self.DEFAULT_POTENTIAL_BUCKETS)
 
-        # 裁剪桶到 [min_stars, max_stars] 全局范围
+        # 裁剪桶到 [min_stars, max_stars) 全局范围（上界不含，避免取到触上限项目）
         clipped: list[tuple[int, int]] = []
         for lo, hi in buckets:
             lo = max(lo, min_stars)
@@ -398,24 +464,27 @@ class GitHubAPIClient:
             datetime.now(timezone.utc) - timedelta(days=pushed_within_days)
         ).strftime("%Y-%m-%d")
 
-        # 每桶分配的限额（向上取整，确保凑够 limit）
+        # 每桶分配的限额（向上取整 + 50% 缓冲用于噪声过滤）
         per_bucket = -(-limit // len(clipped))  # 等价于 math.ceil(limit / len)
+        per_bucket_fetch = per_bucket * 3 // 2  # 多取 50% 作为过滤缓冲
 
         all_items: list[Repository] = []
         seen: set[str] = set()
         total_count = 0
+        noise_filtered = 0
 
         for lo, hi in clipped:
             if len(all_items) >= limit:
                 break
-            query = f"stars:{lo}..{hi} created:>{created_after} pushed:>{cutoff}"
+            # fork:false 排除 fork 仓库（保留原创项目）
+            query = f"stars:{lo}..{hi} created:>{created_after} pushed:>{cutoff} fork:false"
             if language:
                 query += f" language:{language}"
             logger.info("fetch_potential 桶 [%d..%d] 查询: %s", lo, hi, query)
             try:
                 result = self.search_repositories(
                     query=query, sort="stars", order="desc",
-                    per_page=per_bucket, page=1,
+                    per_page=per_bucket_fetch, page=1,
                 )
             except GitHubAPIError as e:
                 logger.warning("fetch_potential 桶 [%d..%d] 失败: %s", lo, hi, e)
@@ -425,13 +494,17 @@ class GitHubAPIClient:
                 if repo.full_name in seen:
                     continue
                 seen.add(repo.full_name)
+                # 噪声过滤：课程作业 / 教学课件 / 镜像仓库
+                if _is_noise_repo(repo):
+                    noise_filtered += 1
+                    continue
                 all_items.append(repo)
                 if len(all_items) >= limit:
                     break
 
         logger.info(
-            "fetch_potential 完成：3 桶共 %d 候选，去重后返回 %d",
-            total_count, len(all_items[:limit]),
+            "fetch_potential 完成：3 桶共 %d 候选，过滤噪声 %d，返回 %d",
+            total_count, noise_filtered, len(all_items[:limit]),
         )
         return SearchResult(
             total_count=total_count,

@@ -1,65 +1,6 @@
 [
   {
     "repo": {
-      "owner": "browser-act",
-      "name": "skills",
-      "full_name": "browser-act/skills",
-      "description": "Browser automation CLI built for AI agents. Break through anti-bot walls, hand off to humans across platforms when stuck. Parallel multi-task execution, independent multi-session operation, isolated multi-account browsing.",
-      "stars": 5000,
-      "forks": 235,
-      "open_issues": 8,
-      "created_at": "2026-02-06T10:35:35+00:00",
-      "pushed_at": "2026-07-21T13:51:28+00:00",
-      "updated_at": "2026-07-30T15:15:12+00:00",
-      "topics": [
-        "agent-infrastructure",
-        "ai-agents",
-        "automation",
-        "claude-cli",
-        "claude-code",
-        "claude-code-skills",
-        "claude-skills",
-        "codex",
-        "codex-cli",
-        "codex-skill",
-        "cursor",
-        "data-extraction",
-        "no-code",
-        "openclaw",
-        "openclaw-cli",
-        "openclaw-skill",
-        "openclaw-skills",
-        "web-data-extraction",
-        "web-scraping",
-        "web-scraping-api"
-      ],
-      "language": "Python",
-      "license": "MIT",
-      "homepage": "https://www.browseract.com/?co-from=github",
-      "html_url": "https://github.com/browser-act/skills",
-      "default_branch": "main",
-      "archived": false,
-      "search_score": 1.0,
-      "stars_7d_ago": 4742
-    },
-    "score": {
-      "score": 88.95,
-      "breakdown": {
-        "vel": 100,
-        "acc": 99,
-        "health": 61,
-        "fresh": 52,
-        "signal": 85
-      },
-      "stage": "mid_early",
-      "stage_multiplier": 1.1,
-      "confidence": 1.0,
-      "base_score": 80.87,
-      "explanation": "面向AI agent的浏览器自动化CLI，凭借突破反爬、跨平台人工交接与多账户并行执行能力，在agent基础设施层快速起量（周涨37星），正处于高速增长的中早期阶段。"
-    }
-  },
-  {
-    "repo": {
       "owner": "zzet",
       "name": "gortex",
       "full_name": "zzet/gortex",
@@ -102,9 +43,9 @@
       "stars_7d_ago": 951
     },
     "score": {
-      "score": 85.26,
+      "score": 100.0,
       "breakdown": {
-        "vel": 58,
+        "vel": 100,
         "acc": 99,
         "health": 85,
         "fresh": 68,
@@ -113,51 +54,46 @@
       "stage": "mid_early",
       "stage_multiplier": 1.1,
       "confidence": 1.0,
-      "base_score": 77.51,
-      "explanation": "基于图结构的本地化代码引擎，通过精准暴露必要信息将token消耗降低50倍，切中AI编码工具成本痛点，且涨速持续加快，有望成为开发者生态关键基础设施。"
+      "base_score": 91.29,
+      "explanation": "该项目通过图结构代码分析实现高达50倍的token压缩，且完全本地运行，在AI编码代理爆发期精准解决了大模型上下文窗口瓶颈，近千星且增速加快，意味着它正在成为开发者工具链的关键基础设施。"
     }
   },
   {
     "repo": {
-      "owner": "unipds-engenharia-de-ia-aplicada",
-      "name": "engenharia-de-software-com-ia-aplicada",
-      "full_name": "unipds-engenharia-de-ia-aplicada/engenharia-de-software-com-ia-aplicada",
-      "description": "Códigos e referências usados na Pós de Engenharia de Software com IA Aplicada",
-      "stars": 999,
-      "forks": 501,
-      "open_issues": 0,
-      "created_at": "2026-01-21T22:47:30+00:00",
-      "pushed_at": "2026-07-29T15:18:43+00:00",
-      "updated_at": "2026-07-30T14:37:21+00:00",
-      "topics": [
-        "ai",
-        "javascript",
-        "langchain-js",
-        "typescript"
-      ],
-      "language": "Python",
-      "license": "NOASSERTION",
-      "homepage": "https://unipds.com.br/org-erick-wendel/?utm_source=github&utm_medium=bio&utm_campaign=bolsa_47&utm_term=&utm_content=perfil_erick",
-      "html_url": "https://github.com/unipds-engenharia-de-ia-aplicada/engenharia-de-software-com-ia-aplicada",
-      "default_branch": "main",
+      "owner": "qwq233",
+      "name": "OhMyKeymint",
+      "full_name": "qwq233/OhMyKeymint",
+      "description": null,
+      "stars": 200,
+      "forks": 23,
+      "open_issues": 2,
+      "created_at": "2025-10-02T11:49:31+00:00",
+      "pushed_at": "2026-07-29T18:50:21+00:00",
+      "updated_at": "2026-07-30T14:28:40+00:00",
+      "topics": [],
+      "language": "Rust",
+      "license": "AGPL-3.0",
+      "homepage": null,
+      "html_url": "https://github.com/qwq233/OhMyKeymint",
+      "default_branch": "master",
       "archived": false,
       "search_score": 1.0,
-      "stars_7d_ago": 980
+      "stars_7d_ago": 165
     },
     "score": {
-      "score": 61.14,
+      "score": 77.09,
       "breakdown": {
-        "vel": 37,
-        "acc": 51,
-        "health": 66,
-        "fresh": 48,
-        "signal": 85
+        "vel": 88,
+        "acc": 87,
+        "health": 90,
+        "fresh": 18,
+        "signal": 40
       },
       "stage": "early",
       "stage_multiplier": 1.2,
       "confidence": 1.0,
-      "base_score": 50.95,
-      "explanation": "作为AI+软件工程的教育类项目，不到一周即获近千星且零issue，说明内容精准契合开发者需求，增长潜力和社区认可度极高。"
+      "base_score": 64.24,
+      "explanation": "Rust 语言的密钥管理项目，健康度 90 且涨速加快至 5 star/天，早期阶段即获 200+ Stars，信号虽弱但增长势头强劲，值得关注其技术实现与社区反馈。"
     }
   },
   {
@@ -194,9 +130,9 @@
       "stars_7d_ago": 184
     },
     "score": {
-      "score": 38.94,
+      "score": 45.98,
       "breakdown": {
-        "vel": 33,
+        "vel": 58,
         "acc": 54,
         "health": 71,
         "fresh": 89,
@@ -205,67 +141,91 @@
       "stage": "saturated",
       "stage_multiplier": 0.7,
       "confidence": 1.0,
-      "base_score": 55.64,
-      "explanation": "该项目能以无损质量降低53%的token消耗，直接节省AI编码工具的API成本，并兼容Claude Code、Cursor、Copilot等主流工具，在当前AI开发成本敏感期极具实用价值。"
+      "base_score": 65.68,
+      "explanation": "一款能无损降低AI编码代理token消耗53%的实用工具，直接帮开发者省下真金白银的API调用费——即便增长放缓，这类“提效降本”的硬需求项目仍有长期采用潜力。"
     }
   },
   {
     "repo": {
-      "owner": "Kiln-AI",
-      "name": "Kiln",
-      "full_name": "Kiln-AI/Kiln",
-      "description": "Build, Evaluate, and Optimize AI Systems. Includes evals, RAG, agents, fine-tuning, synthetic data generation, dataset management, MCP, and more.",
-      "stars": 4991,
-      "forks": 374,
-      "open_issues": 71,
-      "created_at": "2024-07-23T23:10:13+00:00",
-      "pushed_at": "2026-07-30T15:00:37+00:00",
-      "updated_at": "2026-07-30T12:50:24+00:00",
+      "owner": "mfat",
+      "name": "sshpilot",
+      "full_name": "mfat/sshpilot",
+      "description": "User-friendly, cross-platform SSH connection manager",
+      "stars": 999,
+      "forks": 59,
+      "open_issues": 86,
+      "created_at": "2025-07-30T18:24:23+00:00",
+      "pushed_at": "2026-07-30T05:16:22+00:00",
+      "updated_at": "2026-07-30T16:46:06+00:00",
       "topics": [
-        "ai",
-        "chain-of-thought",
-        "collaboration",
-        "dataset-generation",
-        "evals",
-        "evaluation",
-        "evaluation-framework",
-        "fine-tuning",
-        "machine-learning",
-        "macos",
-        "mcp",
-        "ml",
-        "ollama",
-        "openai",
-        "prompt",
-        "prompt-engineering",
-        "python",
-        "rlhf",
-        "synthetic-data",
-        "windows"
+        "gnome",
+        "linux",
+        "ssh",
+        "ssh-client",
+        "ssh-tunnel",
+        "terminal"
       ],
       "language": "Python",
-      "license": "NOASSERTION",
-      "homepage": "https://kiln.tech",
-      "html_url": "https://github.com/Kiln-AI/Kiln",
+      "license": "GPL-3.0",
+      "homepage": "https://sshpilot.app",
+      "html_url": "https://github.com/mfat/sshpilot",
       "default_branch": "main",
       "archived": false,
       "search_score": 1.0,
-      "stars_7d_ago": 4969
+      "stars_7d_ago": 993
     },
     "score": {
-      "score": 35.05,
+      "score": 30.07,
       "breakdown": {
-        "vel": 40,
-        "acc": 94,
-        "health": 84,
+        "vel": 30,
+        "acc": 57,
+        "health": 57,
         "fresh": 0,
         "signal": 85
+      },
+      "stage": "mid_early",
+      "stage_multiplier": 1.1,
+      "confidence": 1.0,
+      "base_score": 27.34,
+      "explanation": "跨平台SSH连接管理器，信号值85表明社区活跃度远超同类早期项目；近千星且无基础星数（新0），说明增长源自真实用户需求，填补了自定义SSH管理工具的空白。"
+    }
+  },
+  {
+    "repo": {
+      "owner": "paean-ai",
+      "name": "deeptide",
+      "full_name": "paean-ai/deeptide",
+      "description": "Built by DeepSeek, for DeepSeek — a Swift-native macOS coding agent",
+      "stars": 1000,
+      "forks": 132,
+      "open_issues": 1,
+      "created_at": "2026-05-05T16:40:06+00:00",
+      "pushed_at": "2026-07-08T09:37:30+00:00",
+      "updated_at": "2026-07-12T10:56:25+00:00",
+      "topics": [],
+      "language": "Rust",
+      "license": "MIT",
+      "homepage": "https://deeptide.sh",
+      "html_url": "https://github.com/paean-ai/deeptide",
+      "default_branch": "main",
+      "archived": false,
+      "search_score": 1.0,
+      "stars_7d_ago": 1000
+    },
+    "score": {
+      "score": 18.15,
+      "breakdown": {
+        "vel": 0,
+        "acc": 50,
+        "health": 85,
+        "fresh": 76,
+        "signal": 70
       },
       "stage": "mid_late",
       "stage_multiplier": 1.0,
       "confidence": 1.0,
-      "base_score": 35.05,
-      "explanation": "处于中后期增长；涨速在加快；社区健康（forks=374, issues=71）。"
+      "base_score": 18.15,
+      "explanation": "处于中后期增长；社区健康（forks=132, issues=1）。"
     }
   }
 ]
