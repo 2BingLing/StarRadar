@@ -174,6 +174,27 @@
 
     </section>
 
+    <!-- ===== 潜力榜单（评分结果） ===== -->
+    <section class="scoreboard" aria-label="潜力评分榜单">
+      <header class="scoreboard-head">
+        <div class="scoreboard-head-left">
+          <span class="section-icon section-icon-accent" aria-hidden="true">
+            <svg width="16" height="16" viewBox="0 0 16 16" fill="none">
+              <path d="M4 2.5H12V5.5C12 7.7 10.2 9.5 8 9.5C5.8 9.5 4 7.7 4 5.5V2.5Z" stroke="currentColor" stroke-width="1.4" stroke-linejoin="round"/>
+              <path d="M6 9.5V11.5H10V9.5" stroke="currentColor" stroke-width="1.4" stroke-linejoin="round"/>
+              <path d="M5.5 13.5H10.5" stroke="currentColor" stroke-width="1.4" stroke-linecap="round"/>
+            </svg>
+          </span>
+          <div class="scoreboard-titles">
+            <h2 class="section-title">潜力榜单 TOP 5</h2>
+            <p class="scoreboard-sub">5 维加权评分 · 几何平均 · 阶段调整</p>
+          </div>
+        </div>
+        <span class="scoreboard-badge">本周</span>
+      </header>
+      <div class="scoreboard-body" data-scoreboard></div>
+    </section>
+
     <!-- ===== 流程指示 ===== -->
     <section class="pipeline" aria-label="生成流程">
       <ol class="pipeline-list">
@@ -219,6 +240,138 @@
 
   </main>
 
+  <script>
+    // 示例数据：模拟 compute_potential_scores() 的输出格式
+    // 真实数据将由后端注入并调用 window.StarRadarScores.renderScoreBoard(data, container)
+    window.SAMPLE_SCORES = [
+      {
+        repo: {
+          owner: "shadcn-ui",
+          name: "ui",
+          full_name: "shadcn-ui/ui",
+          description: "Beautifully designed components built with Radix UI and Tailwind CSS.",
+          stars: 75200,
+          forks: 4200,
+          open_issues: 1280,
+          created_at: "2023-01-04T00:00:00Z",
+          pushed_at: "2026-07-29T00:00:00Z",
+          language: "TypeScript",
+          html_url: "https://github.com/shadcn-ui/ui",
+          topics: ["react", "tailwind", "radix-ui"]
+        },
+        score: {
+          score: 92.5,
+          breakdown: { vel: 95, acc: 92, health: 88, fresh: 78, signal: 90 },
+          stage: "mid_early",
+          stage_multiplier: 1.1,
+          confidence: 0.94,
+          base_score: 89.7,
+          explanation: "📊 处于中早期增长；🚀 本周涨速 12 star/天；⚡ 涨速在加快。"
+        }
+      },
+      {
+        repo: {
+          owner: "withastro",
+          name: "astro",
+          full_name: "withastro/astro",
+          description: "The web framework for content-driven websites.",
+          stars: 46000,
+          forks: 2100,
+          open_issues: 410,
+          created_at: "2021-03-15T00:00:00Z",
+          pushed_at: "2026-07-30T00:00:00Z",
+          language: "TypeScript",
+          html_url: "https://github.com/withastro/astro",
+          topics: ["astro", "ssg", "framework"]
+        },
+        score: {
+          score: 88.1,
+          breakdown: { vel: 86, acc: 82, health: 84, fresh: 72, signal: 92 },
+          stage: "mid_early",
+          stage_multiplier: 1.1,
+          confidence: 0.97,
+          base_score: 82.5,
+          explanation: "📊 处于中早期增长；🚀 本周涨速 8 star/天；✅ 社区健康（forks=2100, issues=410）。"
+        }
+      },
+      {
+        repo: {
+          owner: "mui",
+          name: "mui-x",
+          full_name: "mui/mui-x",
+          description: "MUI X: Build complex and data-rich applications using a growing list of advanced components.",
+          stars: 23500,
+          forks: 5500,
+          open_issues: 890,
+          created_at: "2020-08-20T00:00:00Z",
+          pushed_at: "2026-07-29T00:00:00Z",
+          language: "TypeScript",
+          html_url: "https://github.com/mui/mui-x",
+          topics: ["react", "material-ui", "datagrid"]
+        },
+        score: {
+          score: 78.3,
+          breakdown: { vel: 72, acc: 58, health: 86, fresh: 50, signal: 88 },
+          stage: "mid_late",
+          stage_multiplier: 1.0,
+          confidence: 1.0,
+          base_score: 78.3,
+          explanation: "📊 处于中后期增长；📈 本周涨速 4 star/天；✅ 社区健康（forks=5500, issues=890）。"
+        }
+      },
+      {
+        repo: {
+          owner: "public-apis",
+          name: "public-apis",
+          full_name: "public-apis/public-apis",
+          description: "A collective list of free APIs.",
+          stars: 321500,
+          forks: 34200,
+          open_issues: 300,
+          created_at: "2016-03-22T00:00:00Z",
+          pushed_at: "2026-06-15T00:00:00Z",
+          language: "Python",
+          html_url: "https://github.com/public-apis/public-apis",
+          topics: ["api", "public-apis", "list"]
+        },
+        score: {
+          score: 62.4,
+          breakdown: { vel: 45, acc: 35, health: 80, fresh: 12, signal: 75 },
+          stage: "saturated",
+          stage_multiplier: 0.7,
+          confidence: 1.0,
+          base_score: 89.1,
+          explanation: "📊 增长已饱和；📈 本周涨速 3 star/天；✅ 社区健康（forks=34200, issues=300）。"
+        }
+      },
+      {
+        repo: {
+          owner: "freeCodeCamp",
+          name: "freeCodeCamp",
+          full_name: "freeCodeCamp/freeCodeCamp",
+          description: "freeCodeCamp.org's open-source codebase and curriculum.",
+          stars: 405800,
+          forks: 38200,
+          open_issues: 180,
+          created_at: "2014-12-25T00:00:00Z",
+          pushed_at: "2026-07-28T00:00:00Z",
+          language: "TypeScript",
+          html_url: "https://github.com/freeCodeCamp/freeCodeCamp",
+          topics: ["education", "learn-to-code", "curriculum"]
+        },
+        score: {
+          score: 58.7,
+          breakdown: { vel: 38, acc: 30, health: 82, fresh: 6, signal: 85 },
+          stage: "late",
+          stage_multiplier: 0.85,
+          confidence: 1.0,
+          base_score: 69.1,
+          explanation: "📊 接近增长天花板；📉 涨速在放缓；📝 元数据完整。"
+        }
+      }
+    ];
+  </script>
+  <script src="js/score_card.js"></script>
   <script src="js/app.js"></script>
 </body>
 </html>
