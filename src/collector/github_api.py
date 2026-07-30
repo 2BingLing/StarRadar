@@ -344,6 +344,12 @@ class GitHubAPIClient:
             query=query, sort="stars", order="desc", per_page=limit, page=1,
         )
 
+    DEFAULT_POTENTIAL_BUCKETS: list[tuple[int, int]] = [
+        (50, 200),     # 早期萌芽：刚冒头的小项目
+        (200, 1000),   # 中期加速：正在突破的项目
+        (1000, 5000),  # 中后期：已有规模但未饱和
+    ]
+
     def fetch_potential(
         self,
         min_stars: int = 50,
@@ -351,34 +357,86 @@ class GitHubAPIClient:
         created_after: str = "2024-01-01",
         pushed_within_days: int = 30,
         language: str | None = None,
-        limit: int = 50,
+        limit: int = 30,
+        buckets: list[tuple[int, int]] | None = None,
     ) -> SearchResult:
-        """搜索潜力项目：中等星数 + 较新项目 + 近期活跃。
+        """搜索潜力项目：多 star 区间采样 + 较新项目 + 近期活跃。
 
         与 fetch_trending 的区别：
         - fetch_trending 搜 stars:>500 按星降序 → 全是高星巨无霸
-        - fetch_potential 搜 stars:50..5000 + created:>2024 → 有初期增长势头的新项目
+        - fetch_potential 默认按 3 个 star 区间采样
+          （50-200 / 200-1000 / 1000-5000），每区间取 stars 降序前 N 个，
+          合并去重后返回 → 覆盖早期高潜力项目，不全是接近 max_stars 的项目。
 
-        搜索结果按星数排序，但后续潜力评分（速度+加速度维度）
+        搜索结果按各桶 stars 降序合并，但后续潜力评分（速度+加速度维度）
         会让增长快的项目排到前面，不依赖搜索排序。
 
         Args:
-            min_stars: 最低 star 数（排除零星项目）
-            max_stars: 最高 star 数（排除已爆红的巨无霸）
+            min_stars: 全局最低 star 数（裁剪桶下界）
+            max_stars: 全局最高 star 数（裁剪桶上界）
             created_after: 创建于此日期之后（优先新项目）
             pushed_within_days: 近 N 天内有 push（确保活跃）
             language: 限定语言（可选）
-            limit: 返回数量上限
+            limit: 返回数量上限（平均分配到各桶，向上取整）
+            buckets: star 区间列表，默认 DEFAULT_POTENTIAL_BUCKETS；
+                     传入 [(min_stars, max_stars)] 退化为单区间查询
         """
+        if buckets is None:
+            buckets = list(self.DEFAULT_POTENTIAL_BUCKETS)
+
+        # 裁剪桶到 [min_stars, max_stars] 全局范围
+        clipped: list[tuple[int, int]] = []
+        for lo, hi in buckets:
+            lo = max(lo, min_stars)
+            hi = min(hi, max_stars)
+            if lo < hi:
+                clipped.append((lo, hi))
+        if not clipped:
+            clipped = [(min_stars, max_stars)]
+
         cutoff = (
             datetime.now(timezone.utc) - timedelta(days=pushed_within_days)
         ).strftime("%Y-%m-%d")
-        query = f"stars:{min_stars}..{max_stars} created:>{created_after} pushed:>{cutoff}"
-        if language:
-            query += f" language:{language}"
-        logger.info("fetch_potential 查询: %s", query)
-        return self.search_repositories(
-            query=query, sort="stars", order="desc", per_page=limit, page=1,
+
+        # 每桶分配的限额（向上取整，确保凑够 limit）
+        per_bucket = -(-limit // len(clipped))  # 等价于 math.ceil(limit / len)
+
+        all_items: list[Repository] = []
+        seen: set[str] = set()
+        total_count = 0
+
+        for lo, hi in clipped:
+            if len(all_items) >= limit:
+                break
+            query = f"stars:{lo}..{hi} created:>{created_after} pushed:>{cutoff}"
+            if language:
+                query += f" language:{language}"
+            logger.info("fetch_potential 桶 [%d..%d] 查询: %s", lo, hi, query)
+            try:
+                result = self.search_repositories(
+                    query=query, sort="stars", order="desc",
+                    per_page=per_bucket, page=1,
+                )
+            except GitHubAPIError as e:
+                logger.warning("fetch_potential 桶 [%d..%d] 失败: %s", lo, hi, e)
+                continue
+            total_count += result.total_count
+            for repo in result.items:
+                if repo.full_name in seen:
+                    continue
+                seen.add(repo.full_name)
+                all_items.append(repo)
+                if len(all_items) >= limit:
+                    break
+
+        logger.info(
+            "fetch_potential 完成：3 桶共 %d 候选，去重后返回 %d",
+            total_count, len(all_items[:limit]),
+        )
+        return SearchResult(
+            total_count=total_count,
+            incomplete_results=False,
+            items=all_items[:limit],
         )
 
     def rate_limit(self) -> dict:

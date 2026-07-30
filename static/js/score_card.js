@@ -255,11 +255,41 @@
   }
 
   // ===== 自动初始化：渲染到"潜力雷达"栏目 =====
+  // 优先 fetch 后端生成的 data/scores.json；失败时降级到 window.SAMPLE_SCORES
   function init() {
     var container = document.querySelector(".section-accent .section-body");
     if (!container) return;
+
+    // 优先加载后端真实数据
+    if (window.fetch) {
+      fetch("data/scores.json", { cache: "no-cache" })
+        .then(function (resp) {
+          if (!resp.ok) throw new Error("HTTP " + resp.status);
+          return resp.json();
+        })
+        .then(function (data) {
+          if (Array.isArray(data) && data.length) {
+            renderScoreBoard(data, container);
+          } else {
+            renderFallback(container);
+          }
+        })
+        .catch(function (err) {
+          console.warn("[StarRadar] scores.json 加载失败，降级到示例数据:", err);
+          renderFallback(container);
+        });
+    } else {
+      renderFallback(container);
+    }
+  }
+
+  function renderFallback(container) {
     var data = window.SAMPLE_SCORES || [];
-    renderScoreBoard(data, container);
+    if (data.length) {
+      renderScoreBoard(data, container);
+    } else {
+      container.innerHTML = '<p class="score-empty">暂无潜力评分数据</p>';
+    }
   }
 
   if (document.readyState === "loading") {

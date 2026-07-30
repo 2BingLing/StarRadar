@@ -3,8 +3,9 @@
 职责：获取仓库的 star 增长时间序列，用于潜力评分的速度/加速度计算。
 
 数据源优先级：
-1. star-history.com 公开 API（免 token，按日粒度）
-2. 本地快照（每周抓 current_stars 存档，构建 7d/14d/30d 快照）
+1. GitHub REST stargazers 端点（需 token，最可靠，按 starred_at 时间戳）
+2. star-history.com 公开 API（免 token，按日粒度，常返回 404）
+3. 本地快照（每周抓 current_stars 存档，构建 7d/14d/30d 快照）
 
 参考：
 - 设计文档.md 第 4 章「核心算法：潜力分模型」
@@ -15,14 +16,19 @@ from __future__ import annotations
 import json
 import logging
 import time
+from collections import Counter
 from dataclasses import dataclass
 from datetime import datetime, timedelta, timezone
 from pathlib import Path
+from typing import TYPE_CHECKING
 
 import requests
 
 from config import CACHE_DIR, settings
 from src.collector.github_api import Repository
+
+if TYPE_CHECKING:
+    from src.collector.github_api import GitHubAPIClient
 
 logger = logging.getLogger(__name__)
 
@@ -44,10 +50,16 @@ def fetch_star_history(
     cache_dir: Path | None = None,
     cache_ttl_days: int = 7,
     timeout: int = 30,
+    client: "GitHubAPIClient | None" = None,
+    current_stars: int | None = None,
 ) -> list[StarHistoryPoint]:
     """获取仓库的每日 star 历史。
 
-    优先调用 star-history.com 公开 API；失败时返回空列表（调用方降级）。
+    优先级：
+    1. GitHub REST stargazers 端点（client 不为 None 时使用，需 token，最可靠）
+    2. star-history.com 公开 API（fallback，常返回 404）
+    失败时返回空列表（调用方降级）。
+
     结果缓存到 cache_dir/star_history/{owner}_{repo}.json，TTL 默认 7 天。
 
     Args:
@@ -57,6 +69,8 @@ def fetch_star_history(
         cache_dir: 缓存目录（默认 data/cache/star_history/）
         cache_ttl_days: 缓存有效期
         timeout: 请求超时秒数
+        client: GitHubAPIClient 实例（传入则使用 stargazers 端点，最可靠）
+        current_stars: 当前 star 总数（用于计算 last_page，跳过前 N 页）
     """
     cache_dir = cache_dir or (CACHE_DIR / "star_history")
     cache_dir.mkdir(parents=True, exist_ok=True)
@@ -71,6 +85,32 @@ def fetch_star_history(
         ]
         return _filter_last_days(all_points, days)
 
+    # 优先使用 GitHub stargazers 端点（最可靠）
+    if client is not None:
+        points = _fetch_from_github_stargazers(
+            client, owner, repo, current_stars, timeout, days=days,
+        )
+        if points:
+            logger.debug("stargazers 端点成功: %s/%s (%d 点)", owner, repo, len(points))
+            _write_cache(
+                cache_file,
+                [{"date": p.date, "star_count": p.star_count} for p in points],
+            )
+            return _filter_last_days(points, days)
+        # stargazers 失败（403/404 等），降级到 events 端点
+        points = _fetch_from_github_events(
+            client, owner, repo, current_stars, timeout, days=days,
+        )
+        if points:
+            logger.debug("events 端点成功: %s/%s (%d 点)", owner, repo, len(points))
+            _write_cache(
+                cache_file,
+                [{"date": p.date, "star_count": p.star_count} for p in points],
+            )
+            return _filter_last_days(points, days)
+        logger.debug("GitHub 端点均未返回数据，降级到 star-history.com")
+
+    # fallback：star-history.com
     points = _fetch_from_star_history_com(owner, repo, timeout)
     if not points:
         logger.warning("star-history.com 未返回数据: %s/%s", owner, repo)
@@ -82,6 +122,232 @@ def fetch_star_history(
     )
 
     return _filter_last_days(points, days)
+
+
+# ===== 数据源：GitHub REST stargazers 端点（最可靠） =====
+
+def _fetch_from_github_stargazers(
+    client: "GitHubAPIClient",
+    owner: str,
+    repo: str,
+    current_stars: int | None,
+    timeout: int,
+    days: int = 30,
+) -> list[StarHistoryPoint]:
+    """从 GitHub REST stargazers 端点获取 star 历史。
+
+    使用 Accept: application/vnd.github.star+json 头获取 starred_at 时间戳。
+    端点按 starred_at 升序返回（最旧在前），从最后一页向前回溯分页，
+    直到覆盖目标天数（days+2）或耗尽页面/上限。
+
+    锚定 current_stars（来自搜索结果）反推每日累计 star 数：
+        stars_at_date_d = current_stars - (sample 中 starred_at > d 的数量)
+
+    Returns:
+        最近 days 天的每日 star 累计序列；失败返回空列表。
+    """
+    per_page = 100
+    if current_stars and current_stars > 0:
+        last_page = max(1, (current_stars + per_page - 1) // per_page)
+    else:
+        last_page = 1
+
+    now = datetime.now(timezone.utc)
+    cutoff_dt = now - timedelta(days=days + 2)
+
+    headers = {"Accept": "application/vnd.github.star+json"}
+    starred_dates: list[str] = []
+
+    page = last_page
+    max_pages = 20  # 安全上限：最多 20 页 = 2000 stars
+    while page >= 1 and max_pages > 0:
+        url = f"{client.api_base}/repos/{owner}/{repo}/stargazers"
+        try:
+            resp = client.session.get(
+                url,
+                params={"per_page": per_page, "page": page},
+                headers=headers,
+                timeout=timeout,
+            )
+            client._update_rate_limit(resp.headers)
+            if resp.status_code == 404:
+                logger.warning("stargazers 404: %s/%s", owner, repo)
+                return []
+            if resp.status_code in (403, 429):
+                remaining = resp.headers.get("X-RateLimit-Remaining")
+                body = resp.text[:300]
+                # 区分"权限不足"与"速率限制"
+                if "not accessible" in body or "Resource not accessible" in body:
+                    logger.error(
+                        "stargazers 权限不足: %s/%s — fine-grained PAT 需勾选 "
+                        "Stargazers 读取权限，或改用 classic token",
+                        owner, repo,
+                    )
+                    return []
+                if remaining == "0":
+                    logger.warning(
+                        "stargazers 速率限制耗尽: %s/%s", owner, repo,
+                    )
+                else:
+                    # 403 但 remaining 不为 0：可能是 secondary rate limit（abuse detection）
+                    logger.warning(
+                        "stargazers 403 (secondary rate limit?): %s/%s (剩余 %s)",
+                        owner, repo, remaining,
+                    )
+                break
+            if resp.status_code >= 400:
+                logger.warning(
+                    "stargazers %d: %s", resp.status_code, resp.text[:200],
+                )
+                break
+
+            data = resp.json()
+            if not isinstance(data, list) or not data:
+                break
+
+            page_dates: list[str] = []
+            for item in data:
+                sa = item.get("starred_at")
+                if sa:
+                    page_dates.append(sa[:10])
+            starred_dates.extend(page_dates)
+
+            # 检查是否已覆盖目标天数
+            if page_dates:
+                oldest_in_page = min(page_dates)
+                try:
+                    oldest_dt = datetime.fromisoformat(oldest_in_page).replace(
+                        tzinfo=timezone.utc,
+                    )
+                    if oldest_dt <= cutoff_dt:
+                        break
+                except ValueError:
+                    pass
+
+            if len(data) < per_page:
+                break  # 已到第一页（或不满一页）
+            page -= 1
+            max_pages -= 1
+        except (requests.Timeout, requests.ConnectionError) as e:
+            logger.warning("stargazers 请求失败: %s", e)
+            break
+
+    if not starred_dates:
+        return []
+
+    # 锚定 current_stars，反推每日累计 star 数
+    anchor = current_stars if (current_stars and current_stars > 0) else len(starred_dates)
+    date_counts = Counter(starred_dates)
+
+    points: list[StarHistoryPoint] = []
+    for i in range(days + 1):
+        d = (now - timedelta(days=i)).strftime("%Y-%m-%d")
+        after = sum(c for dt, c in date_counts.items() if dt > d)
+        star_count = anchor - after
+        points.append(StarHistoryPoint(date=d, star_count=max(0, star_count)))
+
+    points.sort(key=lambda p: p.date)
+    return points
+
+
+# ===== 数据源：GitHub events 端点（stargazers 不可用时的备选） =====
+
+def _fetch_from_github_events(
+    client: "GitHubAPIClient",
+    owner: str,
+    repo: str,
+    current_stars: int | None,
+    timeout: int,
+    days: int = 30,
+) -> list[StarHistoryPoint]:
+    """从 GitHub events 端点获取最近的 star 事件。
+
+    使用 GET /repos/{owner}/{repo}/events，过滤 WatchEvent（star 事件）。
+    限制：仅返回最近 300 事件（10 页 × 30，按事件类型混合），
+    活跃仓库可能覆盖不足 14 天，但通常足以计算 7 天 vel。
+
+    锚定策略与 stargazers 相同：
+        stars_at_date_d = current_stars - (sample 中 WatchEvent.created_at > d 的数量)
+    """
+    per_page = 100
+    max_pages = 10  # GitHub 仅保留最近 300 事件
+    now = datetime.now(timezone.utc)
+    cutoff_dt = now - timedelta(days=days + 2)
+
+    starred_dates: list[str] = []
+
+    for page in range(1, max_pages + 1):
+        url = f"{client.api_base}/repos/{owner}/{repo}/events"
+        try:
+            resp = client.session.get(
+                url,
+                params={"per_page": per_page, "page": page},
+                timeout=timeout,
+            )
+            client._update_rate_limit(resp.headers)
+            if resp.status_code == 404:
+                logger.debug("events 404: %s/%s", owner, repo)
+                return []
+            if resp.status_code in (403, 429):
+                remaining = resp.headers.get("X-RateLimit-Remaining")
+                logger.warning(
+                    "events 速率限制: %s/%s (剩余 %s)", owner, repo, remaining,
+                )
+                break
+            if resp.status_code >= 400:
+                logger.warning("events %d: %s", resp.status_code, resp.text[:200])
+                break
+
+            data = resp.json()
+            if not isinstance(data, list) or not data:
+                break
+
+            for event in data:
+                if event.get("type") != "WatchEvent":
+                    continue
+                created_at = event.get("created_at")
+                if created_at:
+                    starred_dates.append(created_at[:10])
+
+            # 检查是否已覆盖目标天数（用本页最早事件时间，不只是 WatchEvent）
+            page_dates = [
+                e.get("created_at", "")[:10]
+                for e in data
+                if e.get("created_at")
+            ]
+            if page_dates:
+                oldest_in_page = min(page_dates)
+                try:
+                    oldest_dt = datetime.fromisoformat(oldest_in_page).replace(
+                        tzinfo=timezone.utc,
+                    )
+                    if oldest_dt <= cutoff_dt:
+                        break
+                except ValueError:
+                    pass
+
+            if len(data) < per_page:
+                break  # 最后一页
+        except (requests.Timeout, requests.ConnectionError) as e:
+            logger.warning("events 请求失败: %s", e)
+            break
+
+    if not starred_dates:
+        return []
+
+    # 同 stargazers 的锚定策略
+    anchor = current_stars if (current_stars and current_stars > 0) else len(starred_dates)
+    date_counts = Counter(starred_dates)
+
+    points: list[StarHistoryPoint] = []
+    for i in range(days + 1):
+        d = (now - timedelta(days=i)).strftime("%Y-%m-%d")
+        after = sum(c for dt, c in date_counts.items() if dt > d)
+        star_count = anchor - after
+        points.append(StarHistoryPoint(date=d, star_count=max(0, star_count)))
+
+    points.sort(key=lambda p: p.date)
+    return points
 
 
 # ===== 数据源：star-history.com =====

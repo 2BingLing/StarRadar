@@ -1,10 +1,153 @@
 """LLM 中文摘要生成。
 
-职责：为每个项目生成
-- 中文简介
-- 核心亮点
-- 适合谁用
-- 趋势解读
+职责：为 Top 项目生成 1-2 句中文趋势解读，强调"为什么有潜力"，
+覆盖 PotentialScore.explanation 的规则化文本。
+
+接口：
+- summarize_repo(repo, score) -> str       单项目解读
+- batch_summarize(scored, top_n=5)         批量解读 Top N
+
+降级策略：API 失败 / 未配置 / 库缺失时返回 score.explanation（规则文本），
+保证主流程不中断。
 
 参考：设计文档.md 第 5 章
 """
+from __future__ import annotations
+
+import logging
+from typing import Sequence
+
+from config import settings
+from src.analyzer.potential_score import PotentialScore
+from src.collector.github_api import Repository
+
+logger = logging.getLogger(__name__)
+
+
+# 按模型名前缀推断 OpenAI 兼容 API base_url
+# （.env 中 LLM_BASE_URL 未设置时使用）
+_DEFAULT_BASE_URLS: dict[str, str] = {
+    "deepseek": "https://api.deepseek.com/v1",
+    "glm": "https://open.bigmodel.cn/api/paas/v4",
+    "qwen": "https://dashscope.aliyuncs.com/compatible-mode/v1",
+    "moonshot": "https://api.moonshot.cn/v1",
+}
+
+
+def _infer_base_url(model: str) -> str:
+    """按模型名前缀推断 OpenAI 兼容 API base_url。"""
+    model_lower = model.lower()
+    for prefix, url in _DEFAULT_BASE_URLS.items():
+        if model_lower.startswith(prefix):
+            return url
+    return "https://api.openai.com/v1"
+
+
+def _build_prompt(repo: Repository, score: PotentialScore) -> tuple[str, str]:
+    """构造 LLM 提示词。返回 (system, user)。"""
+    b = score.breakdown
+    system = (
+        "你是 GitHub 项目趋势分析师，擅长用 1-2 句中文解读项目潜力，"
+        "强调『为什么值得关注』。语言简洁、客观、有数据感，避免空话和客套。"
+    )
+    user = (
+        f"项目：{repo.full_name}\n"
+        f"描述：{repo.description or '（无描述）'}\n"
+        f"语言：{repo.language or '未知'}\n"
+        f"主题：{', '.join(repo.topics) if repo.topics else '无'}\n"
+        f"Stars：{repo.stars}，Forks：{repo.forks}，Open Issues：{repo.open_issues}\n"
+        f"创建于：{repo.created_at.strftime('%Y-%m-%d')}\n"
+        f"最近 push：{repo.pushed_at.strftime('%Y-%m-%d')}\n"
+        f"阶段：{score.stage}（base={score.base_score:.1f}, 置信度={score.confidence:.2f}）\n"
+        f"5 维度：速{b.vel:.0f} / 加{b.acc:.0f} / 健康{b.health:.0f} "
+        f"/ 新{b.fresh:.0f} / 信号{b.signal:.0f}\n"
+        f"原始规则解读：{score.explanation}\n\n"
+        f"请用 1-2 句中文给出趋势解读，强调这个项目为什么有潜力。"
+        f"直接输出解读文本，不要加前缀、引号或解释。"
+    )
+    return system, user
+
+
+def summarize_repo(repo: Repository, score: PotentialScore) -> str:
+    """为单个项目生成中文趋势解读。
+
+    失败时返回 score.explanation（规则化文本，降级保证）。
+    """
+    fallback = score.explanation
+
+    if not settings.llm.api_key:
+        logger.debug("LLM_API_KEY 未配置，跳过 LLM 摘要")
+        return fallback
+
+    base_url = settings.llm.base_url or _infer_base_url(settings.llm.model)
+
+    try:
+        from openai import OpenAI
+    except ImportError:
+        logger.warning("openai 库未安装，跳过 LLM 摘要")
+        return fallback
+
+    system, user = _build_prompt(repo, score)
+
+    try:
+        client = OpenAI(api_key=settings.llm.api_key, base_url=base_url)
+        resp = client.chat.completions.create(
+            model=settings.llm.model,
+            messages=[
+                {"role": "system", "content": system},
+                {"role": "user", "content": user},
+            ],
+            max_tokens=settings.llm.max_tokens_per_summary,
+            temperature=0.5,
+        )
+        summary = (resp.choices[0].message.content or "").strip()
+        if not summary:
+            logger.debug("LLM 返回空内容，使用规则文本降级 (%s)", repo.full_name)
+            return fallback
+        # 去除可能的引号包裹
+        if len(summary) >= 2 and summary[0] in "\"'" and summary[-1] == summary[0]:
+            summary = summary[1:-1].strip()
+        return summary
+    except Exception as e:
+        logger.warning(
+            "LLM 摘要失败 (%s): %s，使用规则文本降级", repo.full_name, e,
+        )
+        return fallback
+
+
+def batch_summarize(
+    scored: Sequence[tuple[Repository, PotentialScore]],
+    top_n: int = 5,
+) -> list[tuple[Repository, PotentialScore, str]]:
+    """批量生成 Top N 项目的中文趋势解读。
+
+    Args:
+        scored: compute_potential_scores 返回的 (Repository, PotentialScore) 列表（已按分数降序）
+        top_n: 处理前 N 个项目
+
+    Returns:
+        [(repo, score, summary), ...] 按 score 降序的前 top_n 项。
+        失败项的 summary 为原 score.explanation（降级保证）。
+    """
+    if not scored:
+        return []
+
+    top = list(scored[:top_n])
+    print(
+        f"  → 调用 LLM 生成 Top {len(top)} 项目中文解读"
+        f"（model={settings.llm.model}, top_n={top_n}）..."
+    )
+
+    results: list[tuple[Repository, PotentialScore, str]] = []
+    success_count = 0
+    for repo, ps in top:
+        summary = summarize_repo(repo, ps)
+        if summary != ps.explanation:
+            success_count += 1
+        results.append((repo, ps, summary))
+
+    print(
+        f"  ✓ LLM 解读完成（{success_count}/{len(top)} 成功，"
+        f"失败项已降级为规则文本）"
+    )
+    return results
