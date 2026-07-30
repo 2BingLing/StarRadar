@@ -19,13 +19,14 @@ sys.path.insert(0, str(Path(__file__).resolve().parent.parent))
 
 from config import ensure_dirs, settings
 
+from src.analyzer.potential_score import compute_potential_scores
 from src.collector.github_api import (
     GitHubAPIClient,
     GitHubAPIError,
     RateLimitError,
     get_client,
 )
-from src.collector.star_history import save_snapshot
+from src.collector.star_history import fetch_star_history, save_snapshot
 
 logger = logging.getLogger("star-radar")
 
@@ -84,6 +85,49 @@ def print_top_repos(repos: list, top_n: int = 5) -> None:
         print(f"  {i:<3} {name:<40} {repo.stars:<8} {repo.forks:<6} {lang:<10} {pushed}")
 
 
+def score_repos(repos: list) -> list:
+    """对采集到的 repos 计算潜力分。
+
+    流程：获取 star 历史 → 批量评分 → 按分数降序返回。
+    star-history.com 不可用时降级为空历史（vel/acc 归零，仍能基于元数据评分）。
+    """
+    if not repos:
+        return []
+    print(f"  → 获取 star 历史（{len(repos)} 个项目，可能需要数秒）...")
+    repos_with_history = []
+    for repo in repos:
+        history = fetch_star_history(repo.owner, repo.name, days=30)
+        repos_with_history.append((repo, history))
+    print(f"  ✓ star 历史获取完成，开始评分...")
+
+    scored = compute_potential_scores(repos_with_history)
+    print(f"  ✓ 评分完成（动态基准 vel_p99 已从批量计算）")
+    return scored
+
+
+def print_scored_repos(scored: list, top_n: int = 5) -> None:
+    """打印评分 Top N。"""
+    if not scored:
+        print("  （无评分结果）")
+        return
+    print()
+    print(f"  🏆 潜力 Top {min(top_n, len(scored))}：")
+    print(f"  {'-'*70}")
+    for i, (repo, ps) in enumerate(scored[:top_n], 1):
+        b = ps.breakdown
+        print(
+            f"  {i}. {repo.full_name}  ⭐{repo.stars}  "
+            f"分数 {ps.score:.1f}  [{ps.stage}]"
+        )
+        print(
+            f"     vel={b.vel:.0f} acc={b.acc:.0f} health={b.health:.0f} "
+            f"fresh={b.fresh:.0f} signal={b.signal:.0f}  "
+            f"(base={ps.base_score:.1f}, conf={ps.confidence:.2f})"
+        )
+        print(f"     {ps.explanation}")
+        print()
+
+
 def main() -> None:
     setup_logging()
     ensure_dirs()
@@ -121,7 +165,8 @@ def main() -> None:
     # ② 分析引擎
     print()
     print("[2/5] 潜力评分 · 速度 + 加速度 + 社区健康 + 新鲜度 + 信号")
-    # TODO: src.analyzer.potential_score.compute(...)
+    scored = score_repos(repos)
+    print_scored_repos(scored, top_n=5)
 
     # ③ 个性化记忆 / 推荐 / 语义搜索
     print("[3/5] 个性化记忆 + 推荐 + 语义搜索")
