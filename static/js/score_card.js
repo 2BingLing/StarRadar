@@ -35,6 +35,27 @@
     return String(n);
   }
 
+  // ===== 工具：从 ISO 日期计算年龄文本（"3 年"/"8 月"/"15 天"） =====
+  function formatAge(dateStr) {
+    if (!dateStr) return "";
+    var d = new Date(dateStr);
+    if (isNaN(d)) return "";
+    var now = new Date();
+    var years = (now - d) / (365.25 * 24 * 3600 * 1000);
+    if (years >= 1) return Math.floor(years) + " 年";
+    var months = years * 12;
+    if (months >= 1) return Math.floor(months) + " 月";
+    return Math.max(1, Math.floor(months * 30)) + " 天";
+  }
+
+  // ===== 内联 SVG 图标（13×13，currentColor 继承文字色） =====
+  var ICON = {
+    star: '<svg class="meta-icon" width="13" height="13" viewBox="0 0 16 16" fill="none"><path d="M8 1.5l1.96 4.02 4.43.64-3.2 3.12.76 4.4L8 11.6l-3.95 2.08.76-4.4-3.2-3.12 4.43-.64L8 1.5z" fill="currentColor"/></svg>',
+    fork: '<svg class="meta-icon" width="13" height="13" viewBox="0 0 16 16" fill="none"><circle cx="4" cy="3" r="1.4" stroke="currentColor" stroke-width="1.3"/><circle cx="12" cy="3" r="1.4" stroke="currentColor" stroke-width="1.3"/><circle cx="8" cy="13" r="1.4" stroke="currentColor" stroke-width="1.3"/><path d="M4 4.4v2.6c0 .8.4 1.8 1.8 1.8M12 4.4v2.6c0 .8-.4 1.8-1.8 1.8M8 9.2v2.4" stroke="currentColor" stroke-width="1.3" fill="none" stroke-linecap="round"/></svg>',
+    trend: '<svg class="meta-icon" width="13" height="13" viewBox="0 0 16 16" fill="none"><path d="M2 12l4-4 2.5 2.5L14 4" stroke="currentColor" stroke-width="1.4" fill="none" stroke-linecap="round" stroke-linejoin="round"/><path d="M10.5 4H14v3.5" stroke="currentColor" stroke-width="1.4" fill="none" stroke-linecap="round" stroke-linejoin="round"/></svg>',
+    cal: '<svg class="meta-icon" width="13" height="13" viewBox="0 0 16 16" fill="none"><rect x="2" y="3.2" width="12" height="10.5" rx="1.4" stroke="currentColor" stroke-width="1.3" fill="none"/><path d="M2 6.5h12M5.2 1.5v3M10.8 1.5v3" stroke="currentColor" stroke-width="1.3" stroke-linecap="round"/></svg>',
+  };
+
   // ===== 工具：HTML 转义 =====
   function escapeHtml(s) {
     return String(s == null ? "" : s).replace(/[&<>"']/g, function (c) {
@@ -129,7 +150,7 @@
     var stageLabel = STAGE_LABELS[score.stage] || score.stage || "未知";
     var stageClass = "stage-" + (score.stage || "unknown");
     var breakdown = score.breakdown || {};
-    var delay = (0.45 + index * 0.08).toFixed(2);
+    var delay = (0.45 + index * 0.06).toFixed(2);
 
     var nameHtml = repo.full_name
       ? '<a class="score-name" href="' + escapeHtml(repo.html_url || "#") +
@@ -140,43 +161,90 @@
       ? '<span class="score-lang">' + escapeHtml(repo.language) + '</span>'
       : '';
 
-    var confHtml = (score.confidence != null)
-      ? '<span class="meta-conf" title="数据置信度">置信 ' +
-        Math.round(score.confidence * 100) + '%</span>'
+    // 项目描述
+    var descHtml = repo.description
+      ? '<p class="score-desc">' + escapeHtml(repo.description) + '</p>'
       : '';
 
-    var explainHtml = score.explanation
-      ? '<p class="score-explain">' + escapeHtml(score.explanation) + '</p>'
+    // 主题标签（最多 3 个）
+    var topicsHtml = "";
+    if (repo.topics && repo.topics.length) {
+      var topics = repo.topics.slice(0, 3);
+      topicsHtml = '<div class="score-topics">' +
+        topics.map(function (t) {
+          return '<span class="topic-tag">' + escapeHtml(t) + '</span>';
+        }).join("") + '</div>';
+    }
+
+    // 本周涨星（优先用 stars_7d_ago 差值，否则从 vel 估算）
+    var weekGain = 0;
+    if (repo.stars_7d_ago != null) {
+      weekGain = (repo.stars || 0) - repo.stars_7d_ago;
+    } else if (breakdown.vel) {
+      weekGain = Math.round(breakdown.vel * 0.2 * 7);
+    }
+    var gainHtml = weekGain > 0
+      ? '<span class="meta-item meta-gain">' + ICON.trend + "+" + formatCount(weekGain) + "/周</span>"
       : '';
+
+    var ageText = formatAge(repo.created_at);
+    var ageHtml = ageText
+      ? '<span class="meta-item">' + ICON.cal + ageText + "</span>"
+      : '';
+
+    var confHtml = (score.confidence != null)
+      ? '<span class="meta-conf" title="数据置信度">置信 ' +
+        Math.round(score.confidence * 100) + "%</span>"
+      : "";
+
+    // 5 维度分数条
+    var dimsHtml = '<div class="score-dims">';
+    for (var i = 0; i < RADAR_DIMS.length; i++) {
+      var d = RADAR_DIMS[i];
+      var val = Math.round(Number(breakdown[d.key]) || 0);
+      dimsHtml += '<div class="dim-row">' +
+        '<span class="dim-name">' + d.label + "</span>" +
+        '<div class="dim-track"><div class="dim-fill" style="width:' + val + '%"></div></div>' +
+        '<span class="dim-val">' + val + "</span>" +
+        "</div>";
+    }
+    dimsHtml += "</div>";
+
+    var explainHtml = score.explanation
+      ? '<p class="score-explain">' + escapeHtml(score.explanation) + "</p>"
+      : "";
 
     return (
       '<article class="score-card rank-' + rank + '" style="--card-delay:' + delay + 's">' +
-        '<div class="score-rank">' +
-          '<span class="rank-badge">' + rank + '</span>' +
-        '</div>' +
-        '<div class="score-head">' + nameHtml + langHtml + '</div>' +
+        '<div class="score-rank"><span class="rank-badge">' + rank + "</span></div>" +
+        '<div class="score-head">' + nameHtml + langHtml + "</div>" +
+        descHtml +
         '<div class="score-meta">' +
-          '<span class="meta-stars" title="Stars">★ ' + formatCount(repo.stars) + '</span>' +
-          '<span class="meta-forks" title="Forks">⑂ ' + formatCount(repo.forks) + '</span>' +
-          '<span class="meta-stage ' + stageClass + '">' + stageLabel + '</span>' +
+          '<span class="meta-item">' + ICON.star + formatCount(repo.stars) + "</span>" +
+          '<span class="meta-item">' + ICON.fork + formatCount(repo.forks) + "</span>" +
+          gainHtml +
+          ageHtml +
+          '<span class="meta-stage ' + stageClass + '">' + stageLabel + "</span>" +
           confHtml +
-        '</div>' +
+        "</div>" +
+        topicsHtml +
+        dimsHtml +
         explainHtml +
         '<div class="score-side">' +
           '<div class="score-num">' +
-            '<span class="score-num-value">' + (Number(score.score) || 0).toFixed(1) + '</span>' +
+            '<span class="score-num-value">' + (Number(score.score) || 0).toFixed(1) + "</span>" +
             '<span class="score-num-label">潜力分</span>' +
-          '</div>' +
+          "</div>" +
           renderRadar(breakdown, 132) +
-        '</div>' +
-      '</article>'
+        "</div>" +
+      "</article>"
     );
   }
 
   // ===== 渲染榜单 =====
   function renderScoreBoard(data, container) {
     if (!container) return;
-    var items = (Array.isArray(data) ? data : []).slice(0, 5);
+    var items = (Array.isArray(data) ? data : []).slice(0, 10);
     if (!items.length) {
       container.innerHTML = '<p class="score-empty">暂无潜力评分数据</p>';
       return;

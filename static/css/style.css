@@ -625,10 +625,13 @@ a {
   display: grid;
   grid-template-columns: auto 1fr auto;
   grid-template-areas:
-    "rank head  side"
-    "rank meta  side"
+    "rank head   side"
+    "rank desc   side"
+    "rank meta   side"
+    "rank topics side"
+    "dims  dims   side"
     "explain explain side";
-  gap: 6px 14px;
+  gap: 5px 14px;
   align-items: center;
   padding: 16px 18px;
   background: var(--bg-card);
@@ -748,6 +751,19 @@ a {
   flex-shrink: 0;
 }
 
+/* 项目描述 */
+.score-desc {
+  grid-area: desc;
+  font-size: 12px;
+  color: var(--text-tertiary);
+  line-height: 1.45;
+  margin: 0;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  min-width: 0;
+}
+
 /* 元信息行 */
 .score-meta {
   grid-area: meta;
@@ -760,13 +776,25 @@ a {
   flex-wrap: wrap;
 }
 
-.meta-stars {
+.meta-item {
+  display: inline-flex;
+  align-items: center;
+  gap: 3px;
   color: var(--text-secondary);
+}
+
+.meta-icon {
+  flex-shrink: 0;
+  opacity: 0.7;
+}
+
+.meta-gain {
+  color: var(--accent);
   font-weight: 500;
 }
 
-.meta-forks {
-  color: var(--text-tertiary);
+.meta-gain .meta-icon {
+  opacity: 1;
 }
 
 .meta-stage {
@@ -805,6 +833,71 @@ a {
 .meta-conf {
   color: var(--text-quaternary);
   font-size: 11px;
+}
+
+/* 主题标签 */
+.score-topics {
+  grid-area: topics;
+  display: flex;
+  gap: 5px;
+  flex-wrap: wrap;
+}
+
+.topic-tag {
+  font-size: 10.5px;
+  color: var(--accent);
+  background: var(--bg-accent);
+  border: 1px solid var(--accent-soft);
+  padding: 1px 7px;
+  border-radius: 999px;
+  letter-spacing: 0.01em;
+}
+
+/* 5 维度分数条 */
+.score-dims {
+  grid-area: dims;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 3px 18px;
+  padding-top: 4px;
+}
+
+.dim-row {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+}
+
+.dim-name {
+  font-size: 10.5px;
+  color: var(--text-tertiary);
+  width: 32px;
+  flex-shrink: 0;
+}
+
+.dim-track {
+  flex: 1;
+  height: 5px;
+  background: var(--bg-soft);
+  border-radius: 3px;
+  overflow: hidden;
+}
+
+.dim-fill {
+  height: 100%;
+  background: linear-gradient(90deg, var(--accent) 0%, var(--accent-hover) 100%);
+  border-radius: 3px;
+  transition: width 0.4s cubic-bezier(0.16, 1, 0.3, 1);
+}
+
+.dim-val {
+  font-size: 10.5px;
+  font-weight: 600;
+  color: var(--text-secondary);
+  font-variant-numeric: tabular-nums;
+  width: 22px;
+  text-align: right;
+  flex-shrink: 0;
 }
 
 /* 解释文本 */
@@ -918,10 +1011,16 @@ a {
     grid-template-columns: auto 1fr;
     grid-template-areas:
       "rank head"
+      "rank desc"
       "rank meta"
+      "rank topics"
+      "dims dims"
       "explain explain"
       "side side";
-    gap: 8px 12px;
+    gap: 6px 12px;
+  }
+  .score-dims {
+    grid-template-columns: 1fr;
   }
   .score-side {
     flex-direction: row;

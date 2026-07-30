@@ -130,7 +130,7 @@
                 <line x1="12" y1="8" x2="14" y2="8" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/>
               </svg>
             </span>
-            <h2 class="section-title">潜力雷达 TOP 5</h2>
+            <h2 class="section-title">潜力雷达 TOP 10</h2>
           </div>
           <span class="section-sub">5 维加权评分 · 几何平均 · 阶段调整</span>
         </header>
@@ -225,126 +225,171 @@
     window.SAMPLE_SCORES = [
       {
         repo: {
-          owner: "shadcn-ui",
-          name: "ui",
-          full_name: "shadcn-ui/ui",
+          owner: "shadcn-ui", name: "ui", full_name: "shadcn-ui/ui",
           description: "Beautifully designed components built with Radix UI and Tailwind CSS.",
-          stars: 75200,
-          forks: 4200,
-          open_issues: 1280,
-          created_at: "2023-01-04T00:00:00Z",
-          pushed_at: "2026-07-29T00:00:00Z",
-          language: "TypeScript",
-          html_url: "https://github.com/shadcn-ui/ui",
+          stars: 75200, forks: 4200, open_issues: 1280,
+          created_at: "2023-01-04T00:00:00Z", pushed_at: "2026-07-29T00:00:00Z",
+          stars_7d_ago: 74360,
+          language: "TypeScript", html_url: "https://github.com/shadcn-ui/ui",
           topics: ["react", "tailwind", "radix-ui"]
         },
         score: {
           score: 92.5,
           breakdown: { vel: 95, acc: 92, health: 88, fresh: 78, signal: 90 },
-          stage: "mid_early",
-          stage_multiplier: 1.1,
-          confidence: 0.94,
-          base_score: 89.7,
+          stage: "mid_early", stage_multiplier: 1.1, confidence: 0.94, base_score: 89.7,
           explanation: "处于中早期增长；本周涨速 12 star/天；涨速在加快。"
         }
       },
       {
         repo: {
-          owner: "withastro",
-          name: "astro",
-          full_name: "withastro/astro",
+          owner: "withastro", name: "astro", full_name: "withastro/astro",
           description: "The web framework for content-driven websites.",
-          stars: 46000,
-          forks: 2100,
-          open_issues: 410,
-          created_at: "2021-03-15T00:00:00Z",
-          pushed_at: "2026-07-30T00:00:00Z",
-          language: "TypeScript",
-          html_url: "https://github.com/withastro/astro",
+          stars: 46000, forks: 2100, open_issues: 410,
+          created_at: "2021-03-15T00:00:00Z", pushed_at: "2026-07-30T00:00:00Z",
+          stars_7d_ago: 45440,
+          language: "TypeScript", html_url: "https://github.com/withastro/astro",
           topics: ["astro", "ssg", "framework"]
         },
         score: {
           score: 88.1,
           breakdown: { vel: 86, acc: 82, health: 84, fresh: 72, signal: 92 },
-          stage: "mid_early",
-          stage_multiplier: 1.1,
-          confidence: 0.97,
-          base_score: 82.5,
+          stage: "mid_early", stage_multiplier: 1.1, confidence: 0.97, base_score: 82.5,
           explanation: "处于中早期增长；本周涨速 8 star/天；社区健康（forks=2100, issues=410）。"
         }
       },
       {
         repo: {
-          owner: "mui",
-          name: "mui-x",
-          full_name: "mui/mui-x",
-          description: "MUI X: Build complex and data-rich applications using a growing list of advanced components.",
-          stars: 23500,
-          forks: 5500,
-          open_issues: 890,
-          created_at: "2020-08-20T00:00:00Z",
-          pushed_at: "2026-07-29T00:00:00Z",
-          language: "TypeScript",
-          html_url: "https://github.com/mui/mui-x",
+          owner: "mui", name: "mui-x", full_name: "mui/mui-x",
+          description: "MUI X: Build complex and data-rich applications using advanced components.",
+          stars: 23500, forks: 5500, open_issues: 890,
+          created_at: "2020-08-20T00:00:00Z", pushed_at: "2026-07-29T00:00:00Z",
+          stars_7d_ago: 23220,
+          language: "TypeScript", html_url: "https://github.com/mui/mui-x",
           topics: ["react", "material-ui", "datagrid"]
         },
         score: {
           score: 78.3,
           breakdown: { vel: 72, acc: 58, health: 86, fresh: 50, signal: 88 },
-          stage: "mid_late",
-          stage_multiplier: 1.0,
-          confidence: 1.0,
-          base_score: 78.3,
+          stage: "mid_late", stage_multiplier: 1.0, confidence: 1.0, base_score: 78.3,
           explanation: "处于中后期增长；本周涨速 4 star/天；社区健康（forks=5500, issues=890）。"
         }
       },
       {
         repo: {
-          owner: "public-apis",
-          name: "public-apis",
-          full_name: "public-apis/public-apis",
+          owner: "vercel", name: "next.js", full_name: "vercel/next.js",
+          description: "The React Framework for the Web.",
+          stars: 128400, forks: 27300, open_issues: 2400,
+          created_at: "2016-10-06T00:00:00Z", pushed_at: "2026-07-30T00:00:00Z",
+          stars_7d_ago: 127100,
+          language: "TypeScript", html_url: "https://github.com/vercel/next.js",
+          topics: ["react", "ssr", "framework"]
+        },
+        score: {
+          score: 76.8,
+          breakdown: { vel: 68, acc: 54, health: 82, fresh: 28, signal: 95 },
+          stage: "mid_late", stage_multiplier: 1.0, confidence: 1.0, base_score: 76.8,
+          explanation: "处于中后期增长；本周涨速 186 star/天；元数据完整。"
+        }
+      },
+      {
+        repo: {
+          owner: "tailwindlabs", name: "tailwindcss", full_name: "tailwindlabs/tailwindcss",
+          description: "A utility-first CSS framework for rapid UI development.",
+          stars: 84200, forks: 4400, open_issues: 1200,
+          created_at: "2017-11-01T00:00:00Z", pushed_at: "2026-07-28T00:00:00Z",
+          stars_7d_ago: 83650,
+          language: "JavaScript", html_url: "https://github.com/tailwindlabs/tailwindcss",
+          topics: ["css", "utility-first", "design-system"]
+        },
+        score: {
+          score: 74.2,
+          breakdown: { vel: 64, acc: 50, health: 80, fresh: 32, signal: 90 },
+          stage: "mid_late", stage_multiplier: 1.0, confidence: 0.98, base_score: 74.2,
+          explanation: "处于中后期增长；本周涨速 79 star/天；社区健康。"
+        }
+      },
+      {
+        repo: {
+          owner: "pmndrs", name: "zustand", full_name: "pmndrs/zustand",
+          description: "Bear necessities for state management in React.",
+          stars: 48300, forks: 1520, open_issues: 280,
+          created_at: "2019-02-12T00:00:00Z", pushed_at: "2026-07-27T00:00:00Z",
+          stars_7d_ago: 47800,
+          language: "TypeScript", html_url: "https://github.com/pmndrs/zustand",
+          topics: ["react", "state-management", "hooks"]
+        },
+        score: {
+          score: 71.5,
+          breakdown: { vel: 62, acc: 48, health: 78, fresh: 38, signal: 84 },
+          stage: "mid_late", stage_multiplier: 1.0, confidence: 0.92, base_score: 71.5,
+          explanation: "处于中后期增长；本周涨速 71 star/天；社区健康。"
+        }
+      },
+      {
+        repo: {
+          owner: "tldraw", name: "tldraw", full_name: "tldraw/tldraw",
+          description: "A very good whiteboard SDK.",
+          stars: 38900, forks: 2350, open_issues: 420,
+          created_at: "2021-06-15T00:00:00Z", pushed_at: "2026-07-29T00:00:00Z",
+          stars_7d_ago: 38350,
+          language: "TypeScript", html_url: "https://github.com/tldraw/tldraw",
+          topics: ["whiteboard", "canvas", "sdk"]
+        },
+        score: {
+          score: 68.9,
+          breakdown: { vel: 58, acc: 44, health: 74, fresh: 42, signal: 86 },
+          stage: "mid_late", stage_multiplier: 1.0, confidence: 0.88, base_score: 68.9,
+          explanation: "处于中后期增长；本周涨速 79 star/天；元数据完整。"
+        }
+      },
+      {
+        repo: {
+          owner: "public-apis", name: "public-apis", full_name: "public-apis/public-apis",
           description: "A collective list of free APIs.",
-          stars: 321500,
-          forks: 34200,
-          open_issues: 300,
-          created_at: "2016-03-22T00:00:00Z",
-          pushed_at: "2026-06-15T00:00:00Z",
-          language: "Python",
-          html_url: "https://github.com/public-apis/public-apis",
+          stars: 321500, forks: 34200, open_issues: 300,
+          created_at: "2016-03-22T00:00:00Z", pushed_at: "2026-06-15T00:00:00Z",
+          stars_7d_ago: 321290,
+          language: "Python", html_url: "https://github.com/public-apis/public-apis",
           topics: ["api", "public-apis", "list"]
         },
         score: {
           score: 62.4,
           breakdown: { vel: 45, acc: 35, health: 80, fresh: 12, signal: 75 },
-          stage: "saturated",
-          stage_multiplier: 0.7,
-          confidence: 1.0,
-          base_score: 89.1,
-          explanation: "增长已饱和；本周涨速 3 star/天；社区健康（forks=34200, issues=300）。"
+          stage: "saturated", stage_multiplier: 0.7, confidence: 1.0, base_score: 89.1,
+          explanation: "增长已饱和；本周涨速 30 star/天；社区健康。"
         }
       },
       {
         repo: {
-          owner: "freeCodeCamp",
-          name: "freeCodeCamp",
-          full_name: "freeCodeCamp/freeCodeCamp",
+          owner: "facebook", name: "react", full_name: "facebook/react",
+          description: "The library for web and native user interfaces.",
+          stars: 234600, forks: 48200, open_issues: 980,
+          created_at: "2013-05-25T00:00:00Z", pushed_at: "2026-07-29T00:00:00Z",
+          stars_7d_ago: 234450,
+          language: "JavaScript", html_url: "https://github.com/facebook/react",
+          topics: ["react", "ui", "frontend"]
+        },
+        score: {
+          score: 60.3,
+          breakdown: { vel: 42, acc: 32, health: 85, fresh: 4, signal: 92 },
+          stage: "saturated", stage_multiplier: 0.7, confidence: 1.0, base_score: 86.1,
+          explanation: "增长已饱和；本周涨速 21 star/天；社区健康。"
+        }
+      },
+      {
+        repo: {
+          owner: "freeCodeCamp", name: "freeCodeCamp", full_name: "freeCodeCamp/freeCodeCamp",
           description: "freeCodeCamp.org's open-source codebase and curriculum.",
-          stars: 405800,
-          forks: 38200,
-          open_issues: 180,
-          created_at: "2014-12-25T00:00:00Z",
-          pushed_at: "2026-07-28T00:00:00Z",
-          language: "TypeScript",
-          html_url: "https://github.com/freeCodeCamp/freeCodeCamp",
+          stars: 405800, forks: 38200, open_issues: 180,
+          created_at: "2014-12-25T00:00:00Z", pushed_at: "2026-07-28T00:00:00Z",
+          stars_7d_ago: 405600,
+          language: "TypeScript", html_url: "https://github.com/freeCodeCamp/freeCodeCamp",
           topics: ["education", "learn-to-code", "curriculum"]
         },
         score: {
           score: 58.7,
           breakdown: { vel: 38, acc: 30, health: 82, fresh: 6, signal: 85 },
-          stage: "late",
-          stage_multiplier: 0.85,
-          confidence: 1.0,
-          base_score: 69.1,
+          stage: "late", stage_multiplier: 0.85, confidence: 1.0, base_score: 69.1,
           explanation: "接近增长天花板；涨速在放缓；元数据完整。"
         }
       }
