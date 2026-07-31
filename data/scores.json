@@ -1,0 +1,394 @@
+[
+  {
+    "repo": {
+      "owner": "digimata",
+      "name": "parrot",
+      "full_name": "digimata/parrot",
+      "description": "Ultra-minimalist macOS dictation.",
+      "stars": 1000,
+      "forks": 82,
+      "open_issues": 16,
+      "created_at": "2026-05-10T19:42:00+00:00",
+      "pushed_at": "2026-07-30T08:11:35+00:00",
+      "updated_at": "2026-07-31T16:19:15+00:00",
+      "topics": [],
+      "language": "Swift",
+      "license": "MIT",
+      "homepage": "https://digimata.github.io/parrot/",
+      "html_url": "https://github.com/digimata/parrot",
+      "default_branch": "master",
+      "archived": false,
+      "search_score": 1.0,
+      "stars_7d_ago": 739
+    },
+    "score": {
+      "score": 100.0,
+      "breakdown": {
+        "vel": 100,
+        "acc": 99,
+        "health": 84,
+        "fresh": 78,
+        "signal": 85
+      },
+      "stage": "early",
+      "stage_multiplier": 1.2,
+      "confidence": 1.0,
+      "base_score": 91.28,
+      "explanation": "极简定位精准切中macOS原生听写痛点，早期阶段即实现日均37星的高速增长，且涨势持续加快，潜力明显。"
+    }
+  },
+  {
+    "repo": {
+      "owner": "RibShark",
+      "name": "OmniDrive",
+      "full_name": "RibShark/OmniDrive",
+      "description": null,
+      "stars": 1000,
+      "forks": 50,
+      "open_issues": 15,
+      "created_at": "2026-01-17T04:49:27+00:00",
+      "pushed_at": "2026-07-18T06:48:57+00:00",
+      "updated_at": "2026-07-31T09:12:55+00:00",
+      "topics": [],
+      "language": "Assembly",
+      "license": "NOASSERTION",
+      "homepage": null,
+      "html_url": "https://github.com/RibShark/OmniDrive",
+      "default_branch": "main",
+      "archived": false,
+      "search_score": 1.0,
+      "stars_7d_ago": 978
+    },
+    "score": {
+      "score": 52.12,
+      "breakdown": {
+        "vel": 40,
+        "acc": 38,
+        "health": 58,
+        "fresh": 47,
+        "signal": 40
+      },
+      "stage": "early",
+      "stage_multiplier": 1.2,
+      "confidence": 1.0,
+      "base_score": 43.44,
+      "explanation": "纯 Assembly 项目能突破千星且保持活跃开发，说明其在底层性能或系统控制力上有稀缺价值；健康度 58 叠加稳定推送，早期阶段即获高关注，值得留意后续演进。"
+    }
+  },
+  {
+    "repo": {
+      "owner": "dusk-audio",
+      "name": "dusk-audio-plugins",
+      "full_name": "dusk-audio/dusk-audio-plugins",
+      "description": "All of my plugins",
+      "stars": 200,
+      "forks": 13,
+      "open_issues": 8,
+      "created_at": "2025-09-18T19:10:54+00:00",
+      "pushed_at": "2026-07-30T17:19:59+00:00",
+      "updated_at": "2026-07-31T02:00:53+00:00",
+      "topics": [],
+      "language": "C++",
+      "license": "GPL-3.0",
+      "homepage": null,
+      "html_url": "https://github.com/dusk-audio/dusk-audio-plugins",
+      "default_branch": "main",
+      "archived": false,
+      "search_score": 1.0,
+      "stars_7d_ago": 192
+    },
+    "score": {
+      "score": 42.26,
+      "breakdown": {
+        "vel": 21,
+        "acc": 76,
+        "health": 69,
+        "fresh": 14,
+        "signal": 55
+      },
+      "stage": "mid_early",
+      "stage_multiplier": 1.1,
+      "confidence": 1.0,
+      "base_score": 38.41,
+      "explanation": "音频插件赛道竞争激烈，但该仓库处于中早期且增长加速（加速度76，速度21），健康度69显示项目演进稳健，涨势刚启动，后续爆发力值得关注。"
+    }
+  },
+  {
+    "repo": {
+      "owner": "web-infra-dev",
+      "name": "rslib",
+      "full_name": "web-infra-dev/rslib",
+      "description": "Create JavaScript libraries in a simple and intuitive way.",
+      "stars": 1000,
+      "forks": 63,
+      "open_issues": 34,
+      "created_at": "2024-03-04T08:18:53+00:00",
+      "pushed_at": "2026-07-31T12:02:08+00:00",
+      "updated_at": "2026-07-31T16:04:28+00:00",
+      "topics": [
+        "build-tool",
+        "bundler",
+        "frontend",
+        "javascript",
+        "library",
+        "rsbuild",
+        "rslib",
+        "rspack",
+        "rstack",
+        "typescript",
+        "webpack"
+      ],
+      "language": "TypeScript",
+      "license": "MIT",
+      "homepage": "https://rslib.rs",
+      "html_url": "https://github.com/web-infra-dev/rslib",
+      "default_branch": "main",
+      "archived": false,
+      "search_score": 1.0,
+      "stars_7d_ago": 997
+    },
+    "score": {
+      "score": 20.21,
+      "breakdown": {
+        "vel": 10,
+        "acc": 61,
+        "health": 72,
+        "fresh": 0,
+        "signal": 85
+      },
+      "stage": "mid_late",
+      "stage_multiplier": 1.0,
+      "confidence": 1.0,
+      "base_score": 20.21,
+      "explanation": "基于 rspack/rsbuild 生态的库构建工具，信号分高达 85 且社区活跃（1000 stars / 63 forks），在 Web 构建工具链加速整合的背景下有望成为 JS 库开发的标准选择。"
+    }
+  },
+  {
+    "repo": {
+      "owner": "ninoseki",
+      "name": "uv-dynamic-versioning",
+      "full_name": "ninoseki/uv-dynamic-versioning",
+      "description": "Dynamic versioning based on VCS tags for uv/hatch project",
+      "stars": 200,
+      "forks": 17,
+      "open_issues": 0,
+      "created_at": "2024-08-30T09:02:31+00:00",
+      "pushed_at": "2026-07-25T22:12:08+00:00",
+      "updated_at": "2026-07-30T06:10:53+00:00",
+      "topics": [],
+      "language": "Python",
+      "license": "MIT",
+      "homepage": null,
+      "html_url": "https://github.com/ninoseki/uv-dynamic-versioning",
+      "default_branch": "main",
+      "archived": false,
+      "search_score": 1.0,
+      "stars_7d_ago": 198
+    },
+    "score": {
+      "score": 19.26,
+      "breakdown": {
+        "vel": 7,
+        "acc": 39,
+        "health": 81,
+        "fresh": 0,
+        "signal": 55
+      },
+      "stage": "early",
+      "stage_multiplier": 1.2,
+      "confidence": 1.0,
+      "base_score": 16.05,
+      "explanation": "uv 生态的版本管理痛点场景明确，200 Stars 且零 Open Issues 体现工具成熟度与维护效率；加速度 39 叠加 81 的社区健康度，说明正处需求驱动的早期扩散阶段，值得关注。"
+    }
+  },
+  {
+    "repo": {
+      "owner": "databrickslabs",
+      "name": "ontos",
+      "full_name": "databrickslabs/ontos",
+      "description": "A Business Catalog for Unity Catalog",
+      "stars": 200,
+      "forks": 67,
+      "open_issues": 236,
+      "created_at": "2025-02-25T11:50:01+00:00",
+      "pushed_at": "2026-07-31T15:05:57+00:00",
+      "updated_at": "2026-07-30T06:17:31+00:00",
+      "topics": [],
+      "language": "Python",
+      "license": "NOASSERTION",
+      "homepage": null,
+      "html_url": "https://github.com/databrickslabs/ontos",
+      "default_branch": "development",
+      "archived": false,
+      "search_score": 1.0,
+      "stars_7d_ago": 198
+    },
+    "score": {
+      "score": 18.18,
+      "breakdown": {
+        "vel": 7,
+        "acc": 50,
+        "health": 70,
+        "fresh": 0,
+        "signal": 55
+      },
+      "stage": "mid_early",
+      "stage_multiplier": 1.1,
+      "confidence": 1.0,
+      "base_score": 16.53,
+      "explanation": "处于中早期增长。"
+    }
+  },
+  {
+    "repo": {
+      "owner": "paean-ai",
+      "name": "deeptide",
+      "full_name": "paean-ai/deeptide",
+      "description": "Built by DeepSeek, for DeepSeek — a Swift-native macOS coding agent",
+      "stars": 1000,
+      "forks": 132,
+      "open_issues": 1,
+      "created_at": "2026-05-05T16:40:06+00:00",
+      "pushed_at": "2026-07-08T09:37:30+00:00",
+      "updated_at": "2026-07-12T10:56:25+00:00",
+      "topics": [],
+      "language": "Rust",
+      "license": "MIT",
+      "homepage": "https://deeptide.sh",
+      "html_url": "https://github.com/paean-ai/deeptide",
+      "default_branch": "main",
+      "archived": false,
+      "search_score": 1.0,
+      "stars_7d_ago": 1000
+    },
+    "score": {
+      "score": 18.15,
+      "breakdown": {
+        "vel": 0,
+        "acc": 50,
+        "health": 85,
+        "fresh": 76,
+        "signal": 70
+      },
+      "stage": "mid_late",
+      "stage_multiplier": 1.0,
+      "confidence": 1.0,
+      "base_score": 18.15,
+      "explanation": "处于中后期增长；社区健康（forks=132, issues=1）。"
+    }
+  },
+  {
+    "repo": {
+      "owner": "carmonalab",
+      "name": "GeneNMF",
+      "full_name": "carmonalab/GeneNMF",
+      "description": "Methods to discover gene programs on single-cell data",
+      "stars": 200,
+      "forks": 11,
+      "open_issues": 6,
+      "created_at": "2024-01-11T14:02:34+00:00",
+      "pushed_at": "2026-07-21T12:52:00+00:00",
+      "updated_at": "2026-07-30T02:56:13+00:00",
+      "topics": [],
+      "language": "R",
+      "license": null,
+      "homepage": null,
+      "html_url": "https://github.com/carmonalab/GeneNMF",
+      "default_branch": "master",
+      "archived": false,
+      "search_score": 1.0,
+      "stars_7d_ago": 198
+    },
+    "score": {
+      "score": 17.87,
+      "breakdown": {
+        "vel": 7,
+        "acc": 50,
+        "health": 53,
+        "fresh": 0,
+        "signal": 35
+      },
+      "stage": "early",
+      "stage_multiplier": 1.2,
+      "confidence": 1.0,
+      "base_score": 14.89,
+      "explanation": "处于增长早期。"
+    }
+  },
+  {
+    "repo": {
+      "owner": "lobehub",
+      "name": "lobe-midjourney-webui",
+      "full_name": "lobehub/lobe-midjourney-webui",
+      "description": "⛵️ Midjourney WebUI - This plugin can integrate with Midjourney in LobeChat.",
+      "stars": 200,
+      "forks": 52,
+      "open_issues": 38,
+      "created_at": "2024-01-14T14:36:42+00:00",
+      "pushed_at": "2026-07-12T02:07:29+00:00",
+      "updated_at": "2026-07-08T22:53:54+00:00",
+      "topics": [],
+      "language": "TypeScript",
+      "license": "MIT",
+      "homepage": "https://midjourney-webui.lobehub.com",
+      "html_url": "https://github.com/lobehub/lobe-midjourney-webui",
+      "default_branch": "main",
+      "archived": false,
+      "search_score": 1.0,
+      "stars_7d_ago": 200
+    },
+    "score": {
+      "score": 8.15,
+      "breakdown": {
+        "vel": 0,
+        "acc": 50,
+        "health": 55,
+        "fresh": 0,
+        "signal": 70
+      },
+      "stage": "mid_late",
+      "stage_multiplier": 1.0,
+      "confidence": 1.0,
+      "base_score": 8.15,
+      "explanation": "处于中后期增长。"
+    }
+  },
+  {
+    "repo": {
+      "owner": "gitlihang",
+      "name": "Maa_MHXY_MG",
+      "full_name": "gitlihang/Maa_MHXY_MG",
+      "description": "梦幻手游小助手",
+      "stars": 200,
+      "forks": 66,
+      "open_issues": 5,
+      "created_at": "2024-05-14T07:52:53+00:00",
+      "pushed_at": "2026-07-28T06:52:31+00:00",
+      "updated_at": "2026-07-28T06:53:07+00:00",
+      "topics": [],
+      "language": "Python",
+      "license": "MIT",
+      "homepage": null,
+      "html_url": "https://github.com/gitlihang/Maa_MHXY_MG",
+      "default_branch": "main",
+      "archived": false,
+      "search_score": 1.0,
+      "stars_7d_ago": 200
+    },
+    "score": {
+      "score": 5.9,
+      "breakdown": {
+        "vel": 0,
+        "acc": 39,
+        "health": 97,
+        "fresh": 0,
+        "signal": 55
+      },
+      "stage": "saturated",
+      "stage_multiplier": 0.7,
+      "confidence": 1.0,
+      "base_score": 8.43,
+      "explanation": "增长已饱和；社区健康（forks=66, issues=5）。"
+    }
+  }
+]

@@ -1,0 +1,204 @@
+[
+  {
+    "repo": {
+      "owner": "web-infra-dev",
+      "name": "rslib",
+      "full_name": "web-infra-dev/rslib",
+      "description": "Create JavaScript libraries in a simple and intuitive way.",
+      "stars": 1000,
+      "forks": 63,
+      "open_issues": 34,
+      "created_at": "2024-03-04T08:18:53+00:00",
+      "pushed_at": "2026-07-31T12:02:08+00:00",
+      "updated_at": "2026-07-31T16:04:28+00:00",
+      "topics": [
+        "build-tool",
+        "bundler",
+        "frontend",
+        "javascript",
+        "library",
+        "rsbuild",
+        "rslib",
+        "rspack",
+        "rstack",
+        "typescript",
+        "webpack"
+      ],
+      "language": "TypeScript",
+      "license": "MIT",
+      "homepage": "https://rslib.rs",
+      "html_url": "https://github.com/web-infra-dev/rslib",
+      "default_branch": "main",
+      "archived": false,
+      "search_score": 1.0,
+      "stars_7d_ago": 997
+    },
+    "score": {
+      "score": 20.21,
+      "breakdown": {
+        "vel": 10,
+        "acc": 61,
+        "health": 72,
+        "fresh": 0,
+        "signal": 85
+      },
+      "stage": "mid_late",
+      "stage_multiplier": 1.0,
+      "confidence": 1.0,
+      "base_score": 20.21,
+      "explanation": "基于 rspack/rsbuild 生态的库构建工具，信号分高达 85 且社区活跃（1000 stars / 63 forks），在 Web 构建工具链加速整合的背景下有望成为 JS 库开发的标准选择。"
+    }
+  },
+  {
+    "repo": {
+      "owner": "ninoseki",
+      "name": "uv-dynamic-versioning",
+      "full_name": "ninoseki/uv-dynamic-versioning",
+      "description": "Dynamic versioning based on VCS tags for uv/hatch project",
+      "stars": 200,
+      "forks": 17,
+      "open_issues": 0,
+      "created_at": "2024-08-30T09:02:31+00:00",
+      "pushed_at": "2026-07-25T22:12:08+00:00",
+      "updated_at": "2026-07-30T06:10:53+00:00",
+      "topics": [],
+      "language": "Python",
+      "license": "MIT",
+      "homepage": null,
+      "html_url": "https://github.com/ninoseki/uv-dynamic-versioning",
+      "default_branch": "main",
+      "archived": false,
+      "search_score": 1.0,
+      "stars_7d_ago": 198
+    },
+    "score": {
+      "score": 19.26,
+      "breakdown": {
+        "vel": 7,
+        "acc": 39,
+        "health": 81,
+        "fresh": 0,
+        "signal": 55
+      },
+      "stage": "early",
+      "stage_multiplier": 1.2,
+      "confidence": 1.0,
+      "base_score": 16.05,
+      "explanation": "uv 生态的版本管理痛点场景明确，200 Stars 且零 Open Issues 体现工具成熟度与维护效率；加速度 39 叠加 81 的社区健康度，说明正处需求驱动的早期扩散阶段，值得关注。"
+    }
+  },
+  {
+    "repo": {
+      "owner": "databrickslabs",
+      "name": "ontos",
+      "full_name": "databrickslabs/ontos",
+      "description": "A Business Catalog for Unity Catalog",
+      "stars": 200,
+      "forks": 67,
+      "open_issues": 236,
+      "created_at": "2025-02-25T11:50:01+00:00",
+      "pushed_at": "2026-07-31T15:05:57+00:00",
+      "updated_at": "2026-07-30T06:17:31+00:00",
+      "topics": [],
+      "language": "Python",
+      "license": "NOASSERTION",
+      "homepage": null,
+      "html_url": "https://github.com/databrickslabs/ontos",
+      "default_branch": "development",
+      "archived": false,
+      "search_score": 1.0,
+      "stars_7d_ago": 198
+    },
+    "score": {
+      "score": 18.18,
+      "breakdown": {
+        "vel": 7,
+        "acc": 50,
+        "health": 70,
+        "fresh": 0,
+        "signal": 55
+      },
+      "stage": "mid_early",
+      "stage_multiplier": 1.1,
+      "confidence": 1.0,
+      "base_score": 16.53,
+      "explanation": "处于中早期增长。"
+    }
+  },
+  {
+    "repo": {
+      "owner": "paean-ai",
+      "name": "deeptide",
+      "full_name": "paean-ai/deeptide",
+      "description": "Built by DeepSeek, for DeepSeek — a Swift-native macOS coding agent",
+      "stars": 1000,
+      "forks": 132,
+      "open_issues": 1,
+      "created_at": "2026-05-05T16:40:06+00:00",
+      "pushed_at": "2026-07-08T09:37:30+00:00",
+      "updated_at": "2026-07-12T10:56:25+00:00",
+      "topics": [],
+      "language": "Rust",
+      "license": "MIT",
+      "homepage": "https://deeptide.sh",
+      "html_url": "https://github.com/paean-ai/deeptide",
+      "default_branch": "main",
+      "archived": false,
+      "search_score": 1.0,
+      "stars_7d_ago": 1000
+    },
+    "score": {
+      "score": 18.15,
+      "breakdown": {
+        "vel": 0,
+        "acc": 50,
+        "health": 85,
+        "fresh": 76,
+        "signal": 70
+      },
+      "stage": "mid_late",
+      "stage_multiplier": 1.0,
+      "confidence": 1.0,
+      "base_score": 18.15,
+      "explanation": "处于中后期增长；社区健康（forks=132, issues=1）。"
+    }
+  },
+  {
+    "repo": {
+      "owner": "lobehub",
+      "name": "lobe-midjourney-webui",
+      "full_name": "lobehub/lobe-midjourney-webui",
+      "description": "⛵️ Midjourney WebUI - This plugin can integrate with Midjourney in LobeChat.",
+      "stars": 200,
+      "forks": 52,
+      "open_issues": 38,
+      "created_at": "2024-01-14T14:36:42+00:00",
+      "pushed_at": "2026-07-12T02:07:29+00:00",
+      "updated_at": "2026-07-08T22:53:54+00:00",
+      "topics": [],
+      "language": "TypeScript",
+      "license": "MIT",
+      "homepage": "https://midjourney-webui.lobehub.com",
+      "html_url": "https://github.com/lobehub/lobe-midjourney-webui",
+      "default_branch": "main",
+      "archived": false,
+      "search_score": 1.0,
+      "stars_7d_ago": 200
+    },
+    "score": {
+      "score": 8.15,
+      "breakdown": {
+        "vel": 0,
+        "acc": 50,
+        "health": 55,
+        "fresh": 0,
+        "signal": 70
+      },
+      "stage": "mid_late",
+      "stage_multiplier": 1.0,
+      "confidence": 1.0,
+      "base_score": 8.15,
+      "explanation": "处于中后期增长。"
+    }
+  }
+]
