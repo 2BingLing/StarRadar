@@ -27,7 +27,7 @@ logger = logging.getLogger(__name__)
 # 按模型名前缀推断 OpenAI 兼容 API base_url
 # （.env 中 LLM_BASE_URL 未设置时使用）
 _DEFAULT_BASE_URLS: dict[str, str] = {
-    "deepseek": "https://api.deepseek.com/v1",
+    "deepseek": "https://api.deepseek.com",
     "glm": "https://open.bigmodel.cn/api/paas/v4",
     "qwen": "https://dashscope.aliyuncs.com/compatible-mode/v1",
     "moonshot": "https://api.moonshot.cn/v1",

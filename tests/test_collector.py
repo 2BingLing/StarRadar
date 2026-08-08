@@ -281,13 +281,14 @@ def test_save_and_get_snapshot(tmp_path, monkeypatch):
     snapshot_file = tmp_path / "snapshots.json"
     monkeypatch.setattr(star_history, "SNAPSHOT_FILE", snapshot_file)
 
+    now = datetime.now(timezone.utc)
     repo = _make_repo(stars=100, full_name="owner/repo")
-    save_snapshot(repo, when=datetime(2026, 7, 30, tzinfo=timezone.utc))
+    save_snapshot(repo, when=now)
 
     assert snapshot_file.exists()
     data = json.loads(snapshot_file.read_text(encoding="utf-8"))
     assert "owner/repo" in data
-    assert data["owner/repo"] == [{"date": "2026-07-30", "stars": 100}]
+    assert data["owner/repo"] == [{"date": now.strftime("%Y-%m-%d"), "stars": 100}]
 
     # 0 天前精确命中
     result = star_history.get_snapshot_stars("owner/repo", 0)

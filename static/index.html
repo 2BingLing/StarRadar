@@ -1,435 +1,281 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="zh-CN">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>StarRadar · 星探</title>
-  <link rel="preconnect" href="https://fonts.googleapis.com" />
-  <link rel="stylesheet" href="css/style.css" />
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>StarRadar · 星探</title>
+<link rel="stylesheet" href="css/style.css">
 </head>
 <body>
+<div class="ambient a"></div>
+<div class="ambient b"></div>
 
-  <!-- 背景层：mesh 光晕 + dot grid -->
-  <div class="bg-layer" aria-hidden="true">
-    <div class="bg-mesh"></div>
-    <div class="bg-dots"></div>
-  </div>
-
-  <main class="page">
-
-    <!-- ===== 品牌区（含雷达扫描动画） ===== -->
-    <header class="brand">
-      <div class="radar" aria-hidden="true">
-        <svg class="radar-svg" width="84" height="84" viewBox="0 0 84 84" fill="none">
-          <!-- 同心圆 -->
-          <circle cx="42" cy="42" r="38" stroke="currentColor" stroke-width="1" opacity="0.18"/>
-          <circle cx="42" cy="42" r="26" stroke="currentColor" stroke-width="1" opacity="0.28"/>
-          <circle cx="42" cy="42" r="14" stroke="currentColor" stroke-width="1" opacity="0.42"/>
-          <!-- 十字线 -->
-          <line x1="42" y1="4" x2="42" y2="80" stroke="currentColor" stroke-width="0.6" opacity="0.18"/>
-          <line x1="4" y1="42" x2="80" y2="42" stroke="currentColor" stroke-width="0.6" opacity="0.18"/>
-          <!-- 中心点 -->
-          <circle cx="42" cy="42" r="3" fill="currentColor"/>
-          <!-- 扫描扇形（旋转） -->
-          <g class="radar-sweep">
-            <defs>
-              <linearGradient id="sweepGrad" x1="0" y1="0" x2="1" y2="0">
-                <stop offset="0%" stop-color="currentColor" stop-opacity="0"/>
-                <stop offset="100%" stop-color="currentColor" stop-opacity="0.45"/>
-              </linearGradient>
-            </defs>
-            <path d="M 42 42 L 80 42 A 38 38 0 0 0 56.9 8.6 Z" fill="url(#sweepGrad)"/>
-          </g>
-          <!-- 信号点（闪烁） -->
-          <circle class="signal signal-1" cx="60" cy="28" r="2" fill="currentColor"/>
-          <circle class="signal signal-2" cx="28" cy="58" r="1.6" fill="currentColor"/>
-          <circle class="signal signal-3" cx="62" cy="56" r="1.4" fill="currentColor"/>
+<main class="page">
+  <!-- ===== 顶部导航 ===== -->
+  <nav class="topbar">
+    <a class="brand" href="#top">
+      <span class="mark" aria-hidden="true">
+        <svg width="20" height="20" viewBox="0 0 20 20" fill="none">
+          <circle cx="10" cy="10" r="8.2" stroke="currentColor" stroke-width="1.1" opacity="0.5"/>
+          <circle cx="10" cy="10" r="5.2" stroke="currentColor" stroke-width="1.1" opacity="0.7"/>
+          <path d="M10 10 L17.5 6" stroke="currentColor" stroke-width="1.4" stroke-linecap="round"/>
+          <circle cx="10" cy="10" r="1.8" fill="currentColor"/>
+          <circle cx="14.4" cy="6.4" r="1.1" fill="currentColor" opacity="0.9"/>
         </svg>
+      </span>
+      <span><strong>StarRadar</strong><small>星探 · 潜力雷达</small></span>
+    </a>
+    <div class="actions">
+      <button class="icon" id="search" title="语义搜索">⌗</button>
+      <button class="profile" id="profile"><span>林</span><em>我的雷达</em>⌄</button>
+    </div>
+  </nav>
+
+  <!-- ===== Hero：雷达扫描 + 概览 ===== -->
+  <section class="hero" id="top">
+    <div>
+      <div class="eyebrow"><i></i> Weekly signal · <span id="sigDate">—</span></div>
+      <h1>看见下一颗<br><em>明日之星。</em></h1>
+      <p>从正在加速的开源项目里，找到真正值得你关注的那一颗。本周，雷达捕捉到 <strong id="sigCount">…</strong> 个新信号。</p>
+      <div class="meta">
+        <div><strong id="mSignals">—</strong><br>本周新信号</div>
+        <span class="rule"></span>
+        <div><strong id="mDeep">—</strong><br>值得深入</div>
+        <span class="rule"></span>
+        <div><strong id="mMatch">—</strong><br>为你精选</div>
       </div>
-      <h1 class="brand-title">StarRadar</h1>
-      <p class="brand-tagline">中文 AI 驱动的 GitHub 潜力项目发现周报</p>
-      <p class="brand-meta">
-        <span>2026 年第 31 周</span>
-        <span class="dot">·</span>
-        <span>07.28 — 08.03</span>
-      </p>
-    </header>
-
-    <!-- ===== 周报状态 ===== -->
-    <section class="status">
-      <div class="status-row">
-        <span class="status-pulse" aria-hidden="true"></span>
-        <span class="status-text">本周报正在生成中</span>
-        <span class="status-time">预计周一 10:00 发布</span>
+    </div>
+    <div class="radar-card">
+      <div class="radar-head">
+        <div><small>Live Observatory</small><strong>今日星图</strong></div>
+        <span class="live">正在扫描</span>
       </div>
-    </section>
+      <div class="radar" aria-hidden="true">
+        <i class="star s1"></i><i class="star s2"></i><i class="star s3"></i><i class="star s4"></i>
+      </div>
+      <div class="radar-foot">
+        <span>扫描范围 <strong>GitHub 全量</strong></span>
+        <span>更新于 <strong id="radarUpd">—</strong></span>
+      </div>
+    </div>
+  </section>
 
-    <!-- ===== 概览统计 ===== -->
-    <section class="overview" aria-label="本周概览">
-      <article class="stat">
-        <div class="stat-value">
-          <span class="stat-placeholder">—</span>
-        </div>
-        <div class="stat-label">追踪项目</div>
-      </article>
-      <article class="stat">
-        <div class="stat-value">
-          <span class="stat-placeholder">—</span>
-        </div>
-        <div class="stat-label">热门榜</div>
-      </article>
-      <article class="stat">
-        <div class="stat-value">
-          <span class="stat-placeholder">—</span>
-        </div>
-        <div class="stat-label">潜力雷达</div>
-      </article>
-    </section>
-
-    <!-- ===== 栏目骨架 ===== -->
-    <section class="sections">
-
-      <!-- 跳转索引 -->
-      <nav class="nav-tabs" role="tablist">
-        <button class="nav-tab active" data-target="#hot">热门榜</button>
-        <button class="nav-tab" data-target="#potential">潜力雷达</button>
-        <button class="nav-tab" data-target="#foryou">为你精选</button>
-      </nav>
-
-      <!-- 热门榜 -->
-      <article class="section" id="hot">
-        <header class="section-head">
-          <div class="section-head-left">
-            <span class="section-icon" aria-hidden="true">
-              <svg width="16" height="16" viewBox="0 0 16 16" fill="none">
-                <path d="M2 13L5 8L8 11L11 4L14 9" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/>
-                <path d="M2 13L14 13" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" opacity="0.4"/>
-              </svg>
-            </span>
-            <h2 class="section-title">热门榜 TOP 20</h2>
+  <!-- ===== 项目卡片区 ===== -->
+  <section>
+    <div class="section-head">
+      <div><h2>为你发现</h2><p>综合潜力评分 · 个性化排序 · 越用越懂你</p></div>
+        <div class="tools">
+          <div class="tabs" role="tablist">
+            <button class="active" data-tab="potential" role="tab">潜力雷达</button>
+            <button data-tab="trending" role="tab">正在升温</button>
+            <button data-tab="picks" role="tab">我的收藏</button>
           </div>
-          <span class="section-sub">本周星增绝对值前 20</span>
-        </header>
-        <div class="section-body section-empty">
-          <div class="empty-glyph" aria-hidden="true">
-            <svg width="40" height="40" viewBox="0 0 40 40" fill="none">
-              <rect x="6" y="22" width="6" height="12" rx="1" stroke="currentColor" stroke-width="1.4" opacity="0.5"/>
-              <rect x="17" y="14" width="6" height="20" rx="1" stroke="currentColor" stroke-width="1.4" opacity="0.7"/>
-              <rect x="28" y="8" width="6" height="26" rx="1" stroke="currentColor" stroke-width="1.4"/>
-            </svg>
+          <select class="sort" id="sortBy" title="排序">
+            <option value="score">按潜力分</option>
+            <option value="stars">按 Star</option>
+            <option value="gain">按周增</option>
+          </select>
+          <div class="views" role="group" aria-label="视图切换">
+            <button class="active" data-view="grid" title="卡片视图">▦</button>
+            <button data-view="list" title="列表视图">☷</button>
           </div>
-          <p class="empty-hint">等待数据采集</p>
-          <p class="empty-sub">GitHub Search API · 每周两次抓取</p>
         </div>
-      </article>
+    </div>
+    <div class="cards" id="cards"></div>
+  </section>
 
-      <!-- 潜力雷达（评分结果渲染于此） -->
-      <article class="section section-accent" id="potential">
-        <header class="section-head">
-          <div class="section-head-left">
-            <span class="section-icon section-icon-accent" aria-hidden="true">
-              <svg width="16" height="16" viewBox="0 0 16 16" fill="none">
-                <circle cx="8" cy="8" r="6" stroke="currentColor" stroke-width="1.5"/>
-                <circle cx="8" cy="8" r="2" fill="currentColor"/>
-                <line x1="8" y1="2" x2="8" y2="4" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/>
-                <line x1="8" y1="12" x2="8" y2="14" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/>
-                <line x1="2" y1="8" x2="4" y2="8" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/>
-                <line x1="12" y1="8" x2="14" y2="8" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/>
-              </svg>
-            </span>
-            <h2 class="section-title">潜力雷达 TOP 10</h2>
-          </div>
-          <span class="section-sub">5 维加权评分 · 几何平均 · 阶段调整</span>
-        </header>
-        <div class="section-body section-empty">
-          <div class="empty-glyph empty-glyph-radar" aria-hidden="true">
-            <svg width="40" height="40" viewBox="0 0 40 40" fill="none">
-              <circle cx="20" cy="20" r="14" stroke="currentColor" stroke-width="1.4" opacity="0.4"/>
-              <circle cx="20" cy="20" r="9" stroke="currentColor" stroke-width="1.4" opacity="0.6"/>
-              <circle cx="20" cy="20" r="4" stroke="currentColor" stroke-width="1.4"/>
-              <circle cx="20" cy="20" r="1.5" fill="currentColor"/>
-            </svg>
-          </div>
-          <p class="empty-hint">等待潜力评分</p>
-          <p class="empty-sub">速度 · 加速度 · 社区健康 · 新鲜度 · 信号</p>
+  <footer class="foot">
+    <span>StarRadar 以每周节奏更新你的私人星图 · 5 维潜力评分（速度 / 加速度 / 健康 / 新鲜 / 信号）</span>
+    <a href="#top" id="refresh">重新扫描本周信号&nbsp; ↗</a>
+  </footer>
+</main>
+
+<div class="toast" id="toast"></div>
+
+<!-- ===== 语义搜索面板 ===== -->
+<div class="search-overlay" id="searchPanel" aria-hidden="true">
+  <div class="search-box">
+    <div class="search-bar">
+      <span class="search-ico">⌗</span>
+      <input id="searchInput" type="search" placeholder="搜索项目 · 支持名称 / 描述 / 主题 / 语言" autocomplete="off">
+      <button class="search-clear" id="searchClear" title="清空" hidden>×</button>
+    </div>
+    <div class="search-filters">
+      <select id="fLang" title="语言">
+        <option value="">全部语言</option>
+      </select>
+      <select id="fStage" title="阶段">
+        <option value="">全部阶段</option>
+        <option value="early">早期</option>
+        <option value="mid_early">中早期</option>
+        <option value="mid_late">中后期</option>
+        <option value="late">后期</option>
+        <option value="saturated">已饱和</option>
+      </select>
+      <label class="f-min" title="最低潜力分">
+        <span>≥<b id="fMinVal">50</b></span>
+        <input id="fMin" type="range" min="0" max="100" step="5" value="50">
+      </label>
+      <span class="search-count" id="searchCount"></span>
+    </div>
+    <div class="search-results" id="searchResults"></div>
+  </div>
+</div>
+
+<!-- ===== 潜力雷达全屏详情页 ===== -->
+<div class="detail-overlay" id="detail" aria-hidden="true">
+  <div class="detail-panel" role="dialog" aria-modal="true">
+    <button class="detail-close" id="detailClose" title="关闭 (Esc)">×</button>
+    <div class="detail-head">
+      <span class="repo-icon" id="dIcon">—</span>
+      <div class="d-meta">
+        <div class="d-name">
+          <strong id="dName">—</strong>
+          <span class="stage-chip" id="dStage">—</span>
         </div>
-      </article>
-
-      <!-- 为你精选 -->
-      <article class="section" id="foryou">
-        <header class="section-head">
-          <div class="section-head-left">
-            <span class="section-icon" aria-hidden="true">
-              <svg width="16" height="16" viewBox="0 0 16 16" fill="none">
-                <path d="M8 2L9.8 6.2L14 6.6L10.8 9.4L11.8 13.6L8 11.4L4.2 13.6L5.2 9.4L2 6.6L6.2 6.2L8 2Z" stroke="currentColor" stroke-width="1.4" stroke-linejoin="round"/>
-              </svg>
-            </span>
-            <h2 class="section-title">为你精选</h2>
-          </div>
-          <span class="section-sub">基于个人兴趣档案</span>
-        </header>
-        <div class="section-body section-empty">
-          <div class="empty-glyph" aria-hidden="true">
-            <svg width="40" height="40" viewBox="0 0 40 40" fill="none">
-              <path d="M20 6L23.4 14.6L32 15.2L25.4 21L27.6 29.4L20 25L12.4 29.4L14.6 21L8 15.2L16.6 14.6L20 6Z" stroke="currentColor" stroke-width="1.4" stroke-linejoin="round" opacity="0.7"/>
-            </svg>
-          </div>
-          <p class="empty-hint">等待兴趣模型构建</p>
-          <p class="empty-sub">越用越懂你 · 数据仅存本地</p>
-        </div>
-      </article>
-
-    </section>
-
-    <!-- ===== 流程指示 ===== -->
-    <section class="pipeline" aria-label="生成流程">
-      <ol class="pipeline-list">
-        <li class="step step-done">
-          <span class="step-index">
-            <svg class="step-check" width="10" height="10" viewBox="0 0 10 10" fill="none">
-              <path d="M2 5L4 7L8 3" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/>
-            </svg>
+        <small id="dOwner">—</small>
+      </div>
+      <div class="d-stats">
+        <span><b id="dScore">—</b><em>/ 100</em><small>综合潜力</small></span>
+        <span><b id="dTrend">—</b><em>本周</em></span>
+      </div>
+    </div>
+    <div class="detail-body">
+      <div class="d-radar">
+        <div class="d-radar-title"><small>五维潜力画像</small><span class="rd-legend"><i style="background:#1677ff"></i>本仓库</span></div>
+        <div id="dRadar"></div>
+        <p id="dDesc">—</p>
+      </div>
+      <div class="d-info">
+        <div class="d-info-title"><small>AI 解读 · 为什么值得关注</small></div>
+        <p id="dExplain">—</p>
+        <div class="d-dims-title"><small>维度明细</small></div>
+        <div id="dDims" class="d-dims"></div>
+      </div>
+    </div>
+    <div class="detail-foot">
+      <div class="d-spark-wrap">
+        <div class="d-spark-title">
+          <small>Stars 近 30 天</small>
+          <span class="d-range" id="dRange">
+            <button data-r="7">7d</button>
+            <button data-r="14">14d</button>
+            <button class="active" data-r="30">30d</button>
           </span>
-          <span class="step-name">数据采集</span>
-        </li>
-        <li class="step step-done">
-          <span class="step-index">
-            <svg class="step-check" width="10" height="10" viewBox="0 0 10 10" fill="none">
-              <path d="M2 5L4 7L8 3" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/>
-            </svg>
-          </span>
-          <span class="step-name">潜力评分</span>
-        </li>
-        <li class="step step-active">
-          <span class="step-index">3</span>
-          <span class="step-name">个性化推荐</span>
-        </li>
-        <li class="step">
-          <span class="step-index">4</span>
-          <span class="step-name">LLM 摘要</span>
-        </li>
-        <li class="step">
-          <span class="step-index">5</span>
-          <span class="step-name">渲染发布</span>
-        </li>
-      </ol>
-    </section>
+          <b id="dSparkVal">—</b>
+        </div>
+        <svg class="d-spark" id="dSpark" viewBox="0 0 720 120" fill="none"></svg>
+      </div>
+      <div class="d-actions">
+        <button class="detail-save" id="dSave">☆ 加入我的雷达</button>
+        <a class="detail-link" id="dLink" href="#" target="_blank" rel="noopener">在 GitHub 打开 ↗</a>
+      </div>
+    </div>
+  </div>
+</div>
 
-    <!-- ===== 底部 ===== -->
-    <footer class="footer">
-      <span>StarRadar · 自动生成</span>
-      <span class="dot">·</span>
-      <a href="#" class="footer-link">订阅</a>
-      <span class="dot">·</span>
-      <a href="https://github.com/2BingLing/StarRadar" class="footer-link" target="_blank" rel="noopener">GitHub</a>
-    </footer>
-
-  </main>
-
-  <script>
-    // 示例数据：模拟 compute_potential_scores() 的输出格式
-    // 真实数据将由后端注入并调用 window.StarRadarScores.renderScoreBoard(data, container)
-    window.SAMPLE_SCORES = [
+<script>
+  // ===== 降级示例数据（fetch 失败时使用，与 static/data/*.json 同构） =====
+  window.SAMPLE_DATA = {
+    potential: [
       {
         repo: {
-          owner: "shadcn-ui", name: "ui", full_name: "shadcn-ui/ui",
-          description: "Beautifully designed components built with Radix UI and Tailwind CSS.",
-          stars: 75200, forks: 4200, open_issues: 1280,
-          created_at: "2023-01-04T00:00:00Z", pushed_at: "2026-07-29T00:00:00Z",
-          stars_7d_ago: 74360,
-          language: "TypeScript", html_url: "https://github.com/shadcn-ui/ui",
-          topics: ["react", "tailwind", "radix-ui"]
+          owner: "zzet", name: "gortex", full_name: "zzet/gortex",
+          description: "High-performance code-intelligence engine for AI agents and IDE, supports 257 languages.",
+          stars: 999, forks: 86, open_issues: 17,
+          created_at: "2026-04-06T13:47:15+00:00", pushed_at: "2026-07-30T16:03:39+00:00",
+          stars_7d_ago: 951, language: "Go",
+          html_url: "https://github.com/zzet/gortex",
+          topics: ["ai-tools", "mcp-server", "local-first"]
         },
         score: {
-          score: 92.5,
-          breakdown: { vel: 95, acc: 92, health: 88, fresh: 78, signal: 90 },
-          stage: "mid_early", stage_multiplier: 1.1, confidence: 0.94, base_score: 89.7,
-          explanation: "处于中早期增长；本周涨速 12 star/天；涨速在加快。"
+          score: 100.0, confidence: 1.0, stage: "mid_early",
+          breakdown: { vel: 100, acc: 99, health: 85, fresh: 68, signal: 100 },
+          explanation: "图结构代码分析引擎，可把 AI 编码代理的 token 消耗压缩最高 50 倍，完全本地运行，增速加快，正在成为开发者工具链的关键基础设施。"
         }
       },
       {
         repo: {
-          owner: "withastro", name: "astro", full_name: "withastro/astro",
-          description: "The web framework for content-driven websites.",
-          stars: 46000, forks: 2100, open_issues: 410,
-          created_at: "2021-03-15T00:00:00Z", pushed_at: "2026-07-30T00:00:00Z",
-          stars_7d_ago: 45440,
-          language: "TypeScript", html_url: "https://github.com/withastro/astro",
-          topics: ["astro", "ssg", "framework"]
+          owner: "qwq233", name: "OhMyKeymint", full_name: "qwq233/OhMyKeymint",
+          description: null,
+          stars: 200, forks: 23, open_issues: 2,
+          created_at: "2025-10-02T11:49:31+00:00", pushed_at: "2026-07-29T18:50:21+00:00",
+          stars_7d_ago: 165, language: "Rust",
+          html_url: "https://github.com/qwq233/OhMyKeymint", topics: []
         },
         score: {
-          score: 88.1,
-          breakdown: { vel: 86, acc: 82, health: 84, fresh: 72, signal: 92 },
-          stage: "mid_early", stage_multiplier: 1.1, confidence: 0.97, base_score: 82.5,
-          explanation: "处于中早期增长；本周涨速 8 star/天；社区健康（forks=2100, issues=410）。"
+          score: 77.09, confidence: 1.0, stage: "early",
+          breakdown: { vel: 88, acc: 87, health: 90, fresh: 18, signal: 40 },
+          explanation: "Rust 语言的密钥管理项目，健康度 90 且涨速加快至 5 star/天，早期阶段即获 200+ Stars，信号虽弱但增长势头强劲。"
         }
       },
       {
         repo: {
-          owner: "mui", name: "mui-x", full_name: "mui/mui-x",
-          description: "MUI X: Build complex and data-rich applications using advanced components.",
-          stars: 23500, forks: 5500, open_issues: 890,
-          created_at: "2020-08-20T00:00:00Z", pushed_at: "2026-07-29T00:00:00Z",
-          stars_7d_ago: 23220,
-          language: "TypeScript", html_url: "https://github.com/mui/mui-x",
-          topics: ["react", "material-ui", "datagrid"]
+          owner: "Green-PT", name: "honey-for-devs", full_name: "Green-PT/honey-for-devs",
+          description: "A cross-tool coding skill that cuts AI coding-agent token usage and LLM API costs.",
+          stars: 200, forks: 10, open_issues: 0,
+          created_at: "2026-06-19T11:58:06+00:00", pushed_at: "2026-07-30T16:05:33+00:00",
+          stars_7d_ago: 184, language: "JavaScript",
+          html_url: "https://github.com/Green-PT/honey-for-devs", topics: ["agents", "llm"]
         },
         score: {
-          score: 78.3,
-          breakdown: { vel: 72, acc: 58, health: 86, fresh: 50, signal: 88 },
-          stage: "mid_late", stage_multiplier: 1.0, confidence: 1.0, base_score: 78.3,
-          explanation: "处于中后期增长；本周涨速 4 star/天；社区健康（forks=5500, issues=890）。"
-        }
-      },
-      {
-        repo: {
-          owner: "vercel", name: "next.js", full_name: "vercel/next.js",
-          description: "The React Framework for the Web.",
-          stars: 128400, forks: 27300, open_issues: 2400,
-          created_at: "2016-10-06T00:00:00Z", pushed_at: "2026-07-30T00:00:00Z",
-          stars_7d_ago: 127100,
-          language: "TypeScript", html_url: "https://github.com/vercel/next.js",
-          topics: ["react", "ssr", "framework"]
-        },
-        score: {
-          score: 76.8,
-          breakdown: { vel: 68, acc: 54, health: 82, fresh: 28, signal: 95 },
-          stage: "mid_late", stage_multiplier: 1.0, confidence: 1.0, base_score: 76.8,
-          explanation: "处于中后期增长；本周涨速 186 star/天；元数据完整。"
-        }
-      },
-      {
-        repo: {
-          owner: "tailwindlabs", name: "tailwindcss", full_name: "tailwindlabs/tailwindcss",
-          description: "A utility-first CSS framework for rapid UI development.",
-          stars: 84200, forks: 4400, open_issues: 1200,
-          created_at: "2017-11-01T00:00:00Z", pushed_at: "2026-07-28T00:00:00Z",
-          stars_7d_ago: 83650,
-          language: "JavaScript", html_url: "https://github.com/tailwindlabs/tailwindcss",
-          topics: ["css", "utility-first", "design-system"]
-        },
-        score: {
-          score: 74.2,
-          breakdown: { vel: 64, acc: 50, health: 80, fresh: 32, signal: 90 },
-          stage: "mid_late", stage_multiplier: 1.0, confidence: 0.98, base_score: 74.2,
-          explanation: "处于中后期增长；本周涨速 79 star/天；社区健康。"
-        }
-      },
-      {
-        repo: {
-          owner: "pmndrs", name: "zustand", full_name: "pmndrs/zustand",
-          description: "Bear necessities for state management in React.",
-          stars: 48300, forks: 1520, open_issues: 280,
-          created_at: "2019-02-12T00:00:00Z", pushed_at: "2026-07-27T00:00:00Z",
-          stars_7d_ago: 47800,
-          language: "TypeScript", html_url: "https://github.com/pmndrs/zustand",
-          topics: ["react", "state-management", "hooks"]
-        },
-        score: {
-          score: 71.5,
-          breakdown: { vel: 62, acc: 48, health: 78, fresh: 38, signal: 84 },
-          stage: "mid_late", stage_multiplier: 1.0, confidence: 0.92, base_score: 71.5,
-          explanation: "处于中后期增长；本周涨速 71 star/天；社区健康。"
-        }
-      },
-      {
-        repo: {
-          owner: "tldraw", name: "tldraw", full_name: "tldraw/tldraw",
-          description: "A very good whiteboard SDK.",
-          stars: 38900, forks: 2350, open_issues: 420,
-          created_at: "2021-06-15T00:00:00Z", pushed_at: "2026-07-29T00:00:00Z",
-          stars_7d_ago: 38350,
-          language: "TypeScript", html_url: "https://github.com/tldraw/tldraw",
-          topics: ["whiteboard", "canvas", "sdk"]
-        },
-        score: {
-          score: 68.9,
-          breakdown: { vel: 58, acc: 44, health: 74, fresh: 42, signal: 86 },
-          stage: "mid_late", stage_multiplier: 1.0, confidence: 0.88, base_score: 68.9,
-          explanation: "处于中后期增长；本周涨速 79 star/天；元数据完整。"
-        }
-      },
-      {
-        repo: {
-          owner: "public-apis", name: "public-apis", full_name: "public-apis/public-apis",
-          description: "A collective list of free APIs.",
-          stars: 321500, forks: 34200, open_issues: 300,
-          created_at: "2016-03-22T00:00:00Z", pushed_at: "2026-06-15T00:00:00Z",
-          stars_7d_ago: 321290,
-          language: "Python", html_url: "https://github.com/public-apis/public-apis",
-          topics: ["api", "public-apis", "list"]
-        },
-        score: {
-          score: 62.4,
-          breakdown: { vel: 45, acc: 35, health: 80, fresh: 12, signal: 75 },
-          stage: "saturated", stage_multiplier: 0.7, confidence: 1.0, base_score: 89.1,
-          explanation: "增长已饱和；本周涨速 30 star/天；社区健康。"
-        }
-      },
-      {
-        repo: {
-          owner: "facebook", name: "react", full_name: "facebook/react",
-          description: "The library for web and native user interfaces.",
-          stars: 234600, forks: 48200, open_issues: 980,
-          created_at: "2013-05-25T00:00:00Z", pushed_at: "2026-07-29T00:00:00Z",
-          stars_7d_ago: 234450,
-          language: "JavaScript", html_url: "https://github.com/facebook/react",
-          topics: ["react", "ui", "frontend"]
-        },
-        score: {
-          score: 60.3,
-          breakdown: { vel: 42, acc: 32, health: 85, fresh: 4, signal: 92 },
-          stage: "saturated", stage_multiplier: 0.7, confidence: 1.0, base_score: 86.1,
-          explanation: "增长已饱和；本周涨速 21 star/天；社区健康。"
-        }
-      },
-      {
-        repo: {
-          owner: "freeCodeCamp", name: "freeCodeCamp", full_name: "freeCodeCamp/freeCodeCamp",
-          description: "freeCodeCamp.org's open-source codebase and curriculum.",
-          stars: 405800, forks: 38200, open_issues: 180,
-          created_at: "2014-12-25T00:00:00Z", pushed_at: "2026-07-28T00:00:00Z",
-          stars_7d_ago: 405600,
-          language: "TypeScript", html_url: "https://github.com/freeCodeCamp/freeCodeCamp",
-          topics: ["education", "learn-to-code", "curriculum"]
-        },
-        score: {
-          score: 58.7,
-          breakdown: { vel: 38, acc: 30, health: 82, fresh: 6, signal: 85 },
-          stage: "late", stage_multiplier: 0.85, confidence: 1.0, base_score: 69.1,
-          explanation: "接近增长天花板；涨速在放缓；元数据完整。"
+          score: 45.98, confidence: 1.0, stage: "saturated",
+          breakdown: { vel: 58, acc: 54, health: 71, fresh: 89, signal: 85 },
+          explanation: "无损降低 AI 编码代理 token 消耗 53% 的实用工具，直接帮开发者省下 API 调用费，硬需求的提效降本工具。"
         }
       }
-    ];
-  </script>
-  <script src="js/score_card.js"></script>
-  <script src="js/trending_card.js"></script>
-  <script src="js/picks_card.js"></script>
-  <script src="js/app.js"></script>
-  <script>
-    // 跳转索引：点击平滑滚动 + 滚动高亮
-    (function () {
-      var tabs = document.querySelectorAll(".nav-tab");
-      var targets = ["#hot", "#potential", "#foryou"].map(function (s) {
-        return document.querySelector(s);
-      });
-      tabs.forEach(function (tab) {
-        tab.addEventListener("click", function () {
-          var el = document.querySelector(tab.dataset.target);
-          if (el) el.scrollIntoView({ behavior: "smooth", block: "start" });
-        });
-      });
-      window.addEventListener("scroll", function () {
-        var y = window.scrollY + 140;
-        var idx = 0;
-        for (var i = 0; i < targets.length; i++) {
-          if (targets[i] && targets[i].offsetTop <= y) idx = i;
-        }
-        tabs.forEach(function (t, i) {
-          t.classList.toggle("active", i === idx);
-        });
-      }, { passive: true });
-    })();
-  </script>
+    ],
+    trending: [
+      {
+        repo: {
+          owner: "paean-ai", name: "deeptide", full_name: "paean-ai/deeptide",
+          description: "Built by DeepSeek — a Swift-native macOS coding agent.",
+          stars: 1000, forks: 132, open_issues: 1,
+          created_at: "2026-05-05T16:40:06+00:00", pushed_at: "2026-07-08T09:37:30+00:00",
+          stars_7d_ago: 1000, language: "Rust",
+          html_url: "https://github.com/paean-ai/deeptide", topics: []
+        },
+        score: { score: 18.15, confidence: 1.0, stage: "mid_late", breakdown: { vel: 0, acc: 50, health: 85, fresh: 76, signal: 70 }, explanation: "" }
+      },
+      {
+        repo: {
+          owner: "mfat", name: "sshpilot", full_name: "mfat/sshpilot",
+          description: "User-friendly, cross-platform SSH connection manager.",
+          stars: 999, forks: 59, open_issues: 86,
+          created_at: "2025-07-30T18:24:23+00:00", pushed_at: "2026-07-30T05:16:22+00:00",
+          stars_7d_ago: 993, language: "Python",
+          html_url: "https://github.com/mfat/sshpilot", topics: ["ssh", "terminal"]
+        },
+        score: { score: 30.07, confidence: 1.0, stage: "mid_early", breakdown: { vel: 30, acc: 57, health: 57, fresh: 0, signal: 85 }, explanation: "" }
+      },
+      {
+        repo: {
+          owner: "lobehub", name: "lobe-midjourney-webui", full_name: "lobehub/lobe-midjourney-webui",
+          description: "Midjourney WebUI — integrate Midjourney in LobeChat.",
+          stars: 200, forks: 52, open_issues: 38,
+          created_at: "2024-01-14T14:36:42+00:00", pushed_at: "2026-07-12T02:07:29+00:00",
+          stars_7d_ago: 200, language: "TypeScript",
+          html_url: "https://github.com/lobehub/lobe-midjourney-webui", topics: []
+        },
+        score: { score: 8.97, confidence: 1.0, stage: "mid_early", breakdown: { vel: 0, acc: 50, health: 55, fresh: 0, signal: 70 }, explanation: "" }
+      }
+    ],
+    picks: [
+      {
+        repo: {
+          owner: "zzet", name: "gortex", full_name: "zzet/gortex",
+          description: "High-performance code-intelligence engine for AI agents and IDE.",
+          stars: 999, forks: 86, open_issues: 17,
+          created_at: "2026-04-06T13:47:15+00:00", pushed_at: "2026-07-30T16:03:39+00:00",
+          stars_7d_ago: 951, language: "Go",
+          html_url: "https://github.com/zzet/gortex", topics: ["ai-tools"]
+        },
+        score: { score: 100.0, confidence: 1.0, stage: "mid_early", breakdown: { vel: 100, acc: 99, health: 85, fresh: 68, signal: 100 },
+          explanation: "和你关注的「AI Agent 工具链 + 本地优先」方向高度匹配。" }
+      }
+    ]
+  };
+</script>
+<script src="js/app.js"></script>
 </body>
 </html>

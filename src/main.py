@@ -13,7 +13,7 @@ from __future__ import annotations
 import json
 import logging
 import sys
-from datetime import datetime, timezone
+from datetime import datetime, timedelta, timezone
 from pathlib import Path
 
 # 将项目根目录加入 sys.path，使 `python src/main.py` 能导入根目录的 config
@@ -174,6 +174,22 @@ def serialize_scored(
         stars_7d = stars_at_days_ago(history, 7, repo.stars, now)
         repo_dict = repo.to_dict()
         repo_dict["stars_7d_ago"] = stars_7d
+        # sparkline 序列：最近 30 天每日 star 数（不足 30 天时跳跃填充，
+        # 保证前端始终能画出一条曲线；全部缺失时回退 2 点直线）
+        star_series: list[dict] = []
+        if history:
+            by_date = {p.date: p.star_count for p in history}
+            cur = now.date()
+            for back in range(29, -1, -1):
+                d = (cur - timedelta(days=back)).isoformat()
+                if d in by_date:
+                    star_series.append({"d": d[5:], "s": by_date[d]})
+        if len(star_series) < 2:
+            star_series = [
+                {"d": (now - timedelta(days=7)).strftime("%m-%d"), "s": stars_7d},
+                {"d": now.strftime("%m-%d"), "s": repo.stars},
+            ]
+        repo_dict["star_series"] = star_series
         out.append({
             "repo": repo_dict,
             "score": {
@@ -395,17 +411,84 @@ def main() -> None:
         picks_data = serialize_scored(picks, repos_with_history)
         picks_path = write_picks_json(picks_data)
         print(f"  ✓ 已写入 {picks_path.relative_to(PROJECT_ROOT)}（{len(picks_data)} 个项目）")
-    # TODO: src.profile.interest_model.update(...)
-    # TODO: src.profile.recommender.rank(...)
-    # TODO: src.search.hybrid_retriever.search(...)
 
-    # ⑤ 渲染发布
-    print("[5/5] HTML 渲染 + 部署")
+        # ① 兴趣模型：加载画像 → 按本周评分结果更新 → 漂移检测 → 保存
+        from src.profile.feedback_collector import load_snapshots, save_weekly_snapshot
+        from src.profile.interest_model import (
+            apply_drift_adjustment,
+            detect_drift,
+            load_profile,
+            save_profile,
+            update_on_action,
+        )
+
+        profile = load_profile()
+        print(f"  → 兴趣画像：{len(profile.topics)} 主题 / {len(profile.languages)} 语言")
+        for repo, ps in scored[:10]:
+            update_on_action(
+                profile, "click",
+                topics=repo.topics or [],
+                language=repo.language,
+                owner=repo.owner,
+                repo_full_name=repo.full_name,
+            )
+        drift = detect_drift(load_snapshots(limit=16))
+        if drift and drift["detected"]:
+            apply_drift_adjustment(drift, profile)
+            print(f"  → 检测到兴趣漂移：{drift['direction']}（JS 散度 {drift['score']}）")
+        save_weekly_snapshot(profile.data)
+        save_profile(profile)
+        print(f"  ✓ 兴趣画像已更新（{len(profile.topics)} 主题 / {len(profile.languages)} 语言）")
+
+        # ② 推荐引擎：候选池 = 评分结果，个性化重排 Top 5 覆盖 picks
+        from src.profile.recommender import rank_candidates
+
+        candidates = [
+            {
+                "repo_full_name": repo.full_name,
+                "description": repo.description,
+                "topics": repo.topics or [],
+                "language": repo.language,
+                "owner": repo.owner,
+                "stars": repo.stars,
+                "potential_score": ps.score,
+                "acceleration": ps.breakdown.acc,
+            }
+            for repo, ps in scored
+        ]
+        recs = rank_candidates(profile, candidates, top_n=5, mmr=True)
+        print(f"  → 推荐引擎：候选 {len(candidates)} → Top {len(recs)}（含理由）")
+        for r in recs:
+            print(f"      - {r.repo_full_name}  score={r.score:.3f}  {r.reason}")
+
+        # ③ 语义搜索：构建索引并跑一次示例查询（无 token 时跳过 API 嵌入，仅 BM25+RRF）
+        from src.search.hybrid_retriever import HybridRetriever
+
+        search_projects = [
+            {
+                "repo_full_name": repo.full_name,
+                "description": repo.description,
+                "topics": repo.topics or [],
+                "language": repo.language,
+                "potential_score": ps.score,
+                "embedding": None,
+            }
+            for repo, ps in scored
+        ]
+        retriever = HybridRetriever(search_projects, profile)
+        sample_query = " ".join(
+            sorted(profile.topics, key=lambda t: -float(profile.topics[t].get("score", 0)))[:2]
+        ) or "ai"
+        results = retriever.search(sample_query, top_n=3)
+        print(f"  → 语义搜索示例：「{sample_query}」")
+        for r in results:
+            print(f"      - {r['repo']['repo_full_name']}  score={r['score']:.4f}  {r['reason']}")
     # TODO: src.publisher.html_renderer.render(...)
     # TODO: src.publisher.email_sender.send(...)
 
     print()
-    print("  ⏳ 后续模块待实现（参见 docs/ 下算法设计文档）")
+    print("  ✓ 算法链路已落地：潜力评分 / 兴趣画像 / 推荐引擎 / 语义搜索")
+    print("  ⏳ 待实现：HTML 渲染（html_renderer）与邮件推送（email_sender）")
     print("=" * 60)
 
 
