@@ -105,6 +105,12 @@ pytest                      # 143 passed
 
 ---
 
+## License
+
+[GNU Affero General Public License v3.0](LICENSE) — 允许自由使用与修改，但**衍生作品及基于本项目的网络服务必须同样以 AGPL 开源**。
+
+---
+
 <p align="center">
   <img src="static/starlogo.png" alt="StarRadar" width="40">
   <br>
