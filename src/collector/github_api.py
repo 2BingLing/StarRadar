@@ -382,6 +382,7 @@ class GitHubAPIClient:
         pushed_within_days: int = 7,
         language: str | None = None,
         limit: int = 50,
+        max_stars: int | None = None,
     ) -> SearchResult:
         """便利方法：搜索近期活跃热门仓库。
 
@@ -393,11 +394,17 @@ class GitHubAPIClient:
             pushed_within_days: 近 N 天内有 push
             language: 限定语言（可选）
             limit: 返回数量上限（1-100）
+            max_stars: 最高 star 数（可选）。周榜数据池建议 500-20000 中量级，
+                       避免按星降序取到全是巨无霸，挤占中小趋势项目。
         """
         cutoff = (
             datetime.now(timezone.utc) - timedelta(days=pushed_within_days)
         ).strftime("%Y-%m-%d")
-        query = f"stars:>{min_stars} pushed:>{cutoff}"
+        if max_stars is not None:
+            # GitHub 搜索不支持重复 stars: 条件（后者被忽略），必须用区间语法
+            query = f"stars:{min_stars}..{max_stars} pushed:>{cutoff}"
+        else:
+            query = f"stars:>{min_stars} pushed:>{cutoff}"
         if language:
             query += f" language:{language}"
         logger.info("fetch_trending 查询: %s", query)

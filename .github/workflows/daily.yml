@@ -1,0 +1,54 @@
+name: StarRadar 每日数据刷新
+
+on:
+  schedule:
+    - cron: '0 6 * * *'
+  workflow_dispatch:
+
+permissions:
+  contents: write
+  pages: write
+  id-token: write
+
+concurrency:
+  group: starradar-daily
+  cancel-in-progress: false
+
+jobs:
+  update:
+    runs-on: ubuntu-latest
+    timeout-minutes: 30
+    env:
+      GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+      LLM_API_KEY: ${{ secrets.LLM_API_KEY }}
+      LLM_BASE_URL: ${{ secrets.LLM_BASE_URL }}
+      LLM_MODEL: ${{ secrets.LLM_MODEL }}
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          persist-credentials: true
+
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+          cache: pip
+
+      - run: pip install -r requirements.txt
+
+      - name: 每日采集 + 评分 + 增量解读 + 快照落库
+        run: python src/main.py
+
+      - name: 提交静态数据 + SQLite（快照/画像/行为/解读缓存）
+        run: |
+          git config user.name "starradar-bot"
+          git config user.email "starradar-bot@users.noreply.github.com"
+          git add static/data data
+          git commit -m "chore(data): 每日数据刷新 $(date -u +%Y-%m-%d)" || echo "无变更"
+          git push
+
+      - name: 部署 GitHub Pages
+        uses: actions/configure-pages@v5
+      - uses: actions/upload-pages-artifact@v3
+        with:
+          path: static
+      - uses: actions/deploy-pages@v4

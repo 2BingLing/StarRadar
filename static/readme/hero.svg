@@ -1,0 +1,27 @@
+<svg width="1200" height="430" viewBox="0 0 1200 430" fill="none" xmlns="http://www.w3.org/2000/svg" role="img" aria-labelledby="title desc">
+  <title id="title">StarRadar 星探 · 看见下一颗明星</title>
+  <desc id="desc">GitHub 潜力项目发现雷达：深蓝星空背景，左侧品牌 logo（蓝色雷达弧线与橙色星形），右侧中文标题与五维潜力评分、每周趋势信号徽章。</desc>
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1200" y2="430" gradientUnits="userSpaceOnUse"><stop stop-color="#071529"/><stop offset="0.52" stop-color="#0E2746"/><stop offset="1" stop-color="#07101F"/></linearGradient>
+    <linearGradient id="titleBlue" x1="480" y1="0" x2="900" y2="140" gradientUnits="userSpaceOnUse"><stop stop-color="#DCEBFF"/><stop offset="1" stop-color="#6FA8FF"/></linearGradient>
+    <linearGradient id="arcLogo" x1="300" y1="85" x2="85" y2="315" gradientUnits="userSpaceOnUse"><stop stop-color="#7DB5FF"/><stop offset="1" stop-color="#2471EE"/></linearGradient>
+    <linearGradient id="starLogo" x1="170" y1="130" x2="250" y2="260" gradientUnits="userSpaceOnUse"><stop stop-color="#FFD166"/><stop offset="1" stop-color="#FF9F2D"/></linearGradient>
+    <pattern id="grid" width="32" height="32" patternUnits="userSpaceOnUse"><path d="M32 0H0V32" stroke="#A9C9F8" stroke-opacity="0.07"/></pattern>
+  </defs>
+  <rect width="1200" height="430" rx="26" fill="url(#bg)"/><rect width="1200" height="430" rx="26" fill="url(#grid)"/>
+  <circle cx="1020" cy="-40" r="250" fill="#2471EE" fill-opacity="0.11"/><circle cx="80" cy="470" r="230" fill="#FF9F2D" fill-opacity="0.06"/>
+  <g transform="translate(90 58)">
+    <g transform="translate(30 10) scale(0.75)">
+      <path fill="url(#arcLogo)" d="M219 78C176 73 135 87 103 113C69 140 62 183 72 226C85 286 136 326 194 328C259 330 312 288 324 231C328 215 328 199 325 182L300 186C302 201 302 216 298 231C287 274 247 303 200 303C152 303 112 275 97 232C82 189 94 151 124 123C148 101 181 93 215 103Z"/>
+      <path fill="url(#starLogo)" d="M147 154L198 172L300 101L228 203L246 251L198 234L147 251L165 203Z"/>
+    </g>
+  </g>
+  <g transform="translate(480 74)">
+    <text fill="#8FB9F7" font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, monospace" font-size="14" letter-spacing="3">STAR RADAR · 开源观测台</text>
+    <text y="78" fill="url(#titleBlue)" font-family="-apple-system, BlinkMacSystemFont, 'PingFang SC', 'Microsoft YaHei', 'Segoe UI', sans-serif" font-size="58" font-weight="800">看见下一颗明星</text>
+    <text y="132" fill="#B5C7DE" font-family="-apple-system, BlinkMacSystemFont, 'PingFang SC', 'Microsoft YaHei', 'Segoe UI', sans-serif" font-size="19">GitHub 潜力项目发现雷达 · 每日扫描 · AI 中文解读</text>
+    <text y="162" fill="#8FB9F7" font-family="-apple-system, BlinkMacSystemFont, 'PingFang SC', 'Microsoft YaHei', 'Segoe UI', sans-serif" font-size="18">专挑 50–5000 星的中量级潜力股，用增长动能发现新星</text>
+    <g transform="translate(0 216)"><rect width="160" height="42" rx="21" fill="#1D63D5" fill-opacity="0.32" stroke="#5EA2FF" stroke-opacity="0.7"/><text x="80" y="27" text-anchor="middle" fill="#DCEBFF" font-family="-apple-system, BlinkMacSystemFont, 'PingFang SC', 'Microsoft YaHei', 'Segoe UI', sans-serif" font-size="15">五维潜力评分</text><rect x="176" width="168" height="42" rx="21" fill="#FF9F2D" fill-opacity="0.14" stroke="#FFB84B" stroke-opacity="0.7"/><text x="260" y="27" text-anchor="middle" fill="#FFE4B1" font-family="-apple-system, BlinkMacSystemFont, 'PingFang SC', 'Microsoft YaHei', 'Segoe UI', sans-serif" font-size="15">每周趋势信号</text></g>
+  </g>
+  <text x="1080" y="386" text-anchor="end" fill="#7895B7" font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, monospace" font-size="12" letter-spacing="2">STARRADAR / DAILY 06:00 UTC</text>
+</svg>

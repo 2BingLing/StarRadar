@@ -39,6 +39,13 @@ class LLMConfig:
 
 
 @dataclass
+class OAuthConfig:
+    """GitHub OAuth 跳转登录配置（环境变量，.env 可写；secret 勿入库）。"""
+    client_id: str | None = field(default_factory=lambda: os.getenv("GH_OAUTH_CLIENT_ID"))
+    client_secret: str | None = field(default_factory=lambda: os.getenv("GH_OAUTH_CLIENT_SECRET"))
+
+
+@dataclass
 class SearchConfig:
     """语义搜索配置（参见 docs/algorithm-semantic-search.md）。"""
     embedding_model: str = "BAAI/bge-small-zh-v1.5"      # BGE 中文嵌入
@@ -70,6 +77,7 @@ class RecommenderConfig:
 class Settings:
     github: GitHubConfig = field(default_factory=GitHubConfig)
     llm: LLMConfig = field(default_factory=LLMConfig)
+    oauth: OAuthConfig = field(default_factory=OAuthConfig)
     search: SearchConfig = field(default_factory=SearchConfig)
     memory: MemoryConfig = field(default_factory=MemoryConfig)
     recommender: RecommenderConfig = field(default_factory=RecommenderConfig)

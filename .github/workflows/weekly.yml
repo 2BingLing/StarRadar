@@ -1,0 +1,51 @@
+name: StarRadar 每周趋势周报
+
+on:
+  schedule:
+    - cron: '0 8 * * 1'
+  workflow_dispatch:
+
+permissions:
+  contents: write
+  pages: write
+  id-token: write
+
+concurrency:
+  group: starradar-weekly
+  cancel-in-progress: false
+
+jobs:
+  weekly:
+    runs-on: ubuntu-latest
+    timeout-minutes: 20
+    env:
+      GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          persist-credentials: true
+
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+          cache: pip
+
+      - run: pip install -r requirements.txt
+
+      - name: 生成每周趋势周报（对比本周 vs 上周快照）
+        run: python src/main.py --weekly
+
+      - name: 提交周报 JSON
+        run: |
+          git config user.name "starradar-bot"
+          git config user.email "starradar-bot@users.noreply.github.com"
+          git add static/data/trends.json data
+          git commit -m "chore(data): 每周趋势周报 $(date -u +%Y-%m-%d)" || echo "无变更"
+          git push
+
+      - name: 部署 GitHub Pages（周报页面更新）
+        uses: actions/configure-pages@v5
+      - uses: actions/upload-pages-artifact@v3
+        with:
+          path: static
+      - uses: actions/deploy-pages@v4

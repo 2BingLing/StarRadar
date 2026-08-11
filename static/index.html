@@ -1,10 +1,11 @@
-<!doctype html>
+﻿<!doctype html>
 <html lang="zh-CN">
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width,initial-scale=1">
 <title>StarRadar · 星探</title>
-<link rel="stylesheet" href="css/style.css">
+<link rel="icon" type="image/png" href="favicon.png">
+<link rel="stylesheet" href="css/style.css?v=20260810d">
 </head>
 <body>
 <div class="ambient a"></div>
@@ -15,18 +16,17 @@
   <nav class="topbar">
     <a class="brand" href="#top">
       <span class="mark" aria-hidden="true">
-        <svg width="20" height="20" viewBox="0 0 20 20" fill="none">
-          <circle cx="10" cy="10" r="8.2" stroke="currentColor" stroke-width="1.1" opacity="0.5"/>
-          <circle cx="10" cy="10" r="5.2" stroke="currentColor" stroke-width="1.1" opacity="0.7"/>
-          <path d="M10 10 L17.5 6" stroke="currentColor" stroke-width="1.4" stroke-linecap="round"/>
-          <circle cx="10" cy="10" r="1.8" fill="currentColor"/>
-          <circle cx="14.4" cy="6.4" r="1.1" fill="currentColor" opacity="0.9"/>
-        </svg>
+        <img src="starlogo.png" alt="" width="22" height="22">
       </span>
       <span><strong>StarRadar</strong><small>星探 · 潜力雷达</small></span>
     </a>
     <div class="actions">
+      <a class="gh-repo" href="https://github.com/2BingLing/StarRadar" target="_blank" rel="noopener" title="StarRadar 仓库">
+        <svg viewBox="0 0 24 24" fill="currentColor" width="15" height="15" aria-hidden="true"><path d="M12 2C6.5 2 2 6.6 2 12.2c0 4.5 2.9 8.3 6.8 9.7.5.1.7-.2.7-.5v-1.7c-2.8.6-3.4-1.2-3.4-1.2-.5-1.2-1.1-1.5-1.1-1.5-.9-.6.1-.6.1-.6 1 .1 1.5 1 1.5 1 .9 1.6 2.4 1.1 3 .9.1-.7.4-1.1.6-1.4-2.2-.3-4.6-1.1-4.6-5 0-1.1.4-2 1-2.7-.1-.3-.4-1.3.1-2.7 0 0 .8-.3 2.7 1a9.4 9.4 0 0 1 5 0c1.9-1.3 2.7-1 2.7-1 .5 1.4.2 2.4.1 2.7.6.7 1 1.6 1 2.7 0 3.9-2.4 4.7-4.6 5 .4.3.7.9.7 1.9v2.8c0 .3.2.6.7.5 4-1.4 6.8-5.2 6.8-9.7C22 6.6 17.5 2 12 2z"/></svg>
+        <span>Star 本仓库</span>
+      </a>
       <button class="icon" id="search" title="语义搜索">⌗</button>
+      <button class="icon" id="ghConn" title="连接 GitHub，解锁一键加星 / Fork"></button>
       <button class="profile" id="profile"><span>林</span><em>我的雷达</em>⌄</button>
     </div>
   </nav>
@@ -67,7 +67,7 @@
         <div class="tools">
           <div class="tabs" role="tablist">
             <button class="active" data-tab="potential" role="tab">潜力雷达</button>
-            <button data-tab="trending" role="tab">正在升温</button>
+            <button data-tab="trends" role="tab">每周趋势</button>
             <button data-tab="picks" role="tab">我的收藏</button>
           </div>
           <select class="sort" id="sortBy" title="排序">
@@ -86,11 +86,123 @@
 
   <footer class="foot">
     <span>StarRadar 以每周节奏更新你的私人星图 · 5 维潜力评分（速度 / 加速度 / 健康 / 新鲜 / 信号）</span>
-    <a href="#top" id="refresh">重新扫描本周信号&nbsp; ↗</a>
+    <span class="foot-links">
+      <a href="https://github.com/2BingLing/StarRadar" target="_blank" rel="noopener" id="repoLink">StarRadar 仓库 ↗</a>
+      <a href="#top" id="refresh">重新扫描本周信号&nbsp; ↗</a>
+      <button id="syncBtn" title="把本机问卷与行为记录同步到本地服务库（需已运行 python src/main.py --serve）">⇄ 同步数据</button>
+    </span>
   </footer>
 </main>
 
+<!-- ===== 冷启动问卷（首次访问 / 点击"我的雷达"） ===== -->
+<div class="survey-overlay" id="surveyPanel" aria-hidden="true">
+  <div class="survey-box" role="dialog" aria-modal="true">
+    <button class="detail-close" id="surveyClose" title="跳过，稍后再来">×</button>
+    <div class="survey-head">
+      <span class="survey-ico" aria-hidden="true">
+        <img src="starlogo.png" alt="" width="30" height="30">
+      </span>
+      <div>
+        <h3>告诉雷达，你在寻找什么</h3>
+        <p>只需 30 秒 · 你的雷达会更懂你 · 数据只存本机浏览器</p>
+      </div>
+    </div>
+    <div class="survey-progress" aria-hidden="true">
+      <i class="fill" id="surveyBar"></i>
+    </div>
+    <div class="survey-step" data-step="1">
+      <div class="survey-title"><small>STEP 1 / 3</small><b>你想发现哪类项目？<em>2026 热门方向</em></b></div>
+      <div class="survey-group">
+        <div class="survey-group-name">热门前沿</div>
+        <div class="survey-tags" data-group="hot"></div>
+      </div>
+      <div class="survey-group">
+        <div class="survey-group-name">经典领域</div>
+        <div class="survey-tags" data-group="classic"></div>
+      </div>
+    </div>
+    <div class="survey-step" data-step="2" hidden>
+      <div class="survey-title"><small>STEP 2 / 3</small><b>你通常关注多大体量的项目？</b></div>
+      <div class="survey-stars">
+        <label>最低星数
+          <select id="surveyMin">
+            <option value="0">不限</option><option value="100">100+</option>
+            <option value="500" selected>500+</option><option value="1000">1000+</option>
+          </select>
+        </label>
+        <label>最高星数
+          <select id="surveyMax">
+            <option value="0" selected>不限</option><option value="1000">1000 以下</option>
+            <option value="5000">5000 以下</option><option value="10000">10000 以下</option>
+          </select>
+        </label>
+      </div>
+    </div>
+    <div class="survey-step" data-step="3" hidden>
+      <div class="survey-title"><small>STEP 3 / 3</small><b>选填 · 你的 GitHub 用户名</b></div>
+      <p class="survey-tip">填写后我们会参考你 Star 过的项目（后续版本支持），不填也可以</p>
+      <input class="survey-input" id="surveyGithub" type="text" placeholder="例如 2BingLing" autocomplete="off">
+    </div>
+    <div class="survey-step" data-step="4" hidden>
+      <div class="survey-title"><small>完成</small><b>你的雷达已就绪</b><em>为你生成个性化建议</em></div>
+      <div class="suggest-box" id="suggestBox">
+        <div class="suggest-loading">正在生成建议…</div>
+      </div>
+    </div>
+    <div class="survey-foot">
+      <button class="survey-skip" id="surveySkip">跳过</button>
+      <span class="survey-count" id="surveyCount">1 / 3</span>
+      <button class="survey-next" id="surveyNext">下一步 →</button>
+      <button class="survey-done" id="surveyDone" hidden>完成 ✓</button>
+    </div>
+  </div>
+</div>
+
 <div class="toast" id="toast"></div>
+
+<!-- ===== GitHub 连接面板（PAT / OAuth Device Flow） ===== -->
+<div class="gh-overlay" id="ghPanel" aria-hidden="true">
+  <div class="gh-box" role="dialog" aria-modal="true">
+    <button class="detail-close" id="ghClose" title="关闭">×</button>
+    <div class="gh-head">
+      <span class="gh-ico" aria-hidden="true">
+        <svg viewBox="0 0 24 24" fill="currentColor" width="22" height="22"><path d="M12 2C6.5 2 2 6.6 2 12.2c0 4.5 2.9 8.3 6.8 9.7.5.1.7-.2.7-.5v-1.7c-2.8.6-3.4-1.2-3.4-1.2-.5-1.2-1.1-1.5-1.1-1.5-.9-.6.1-.6.1-.6 1 .1 1.5 1 1.5 1 .9 1.6 2.4 1.1 3 .9.1-.7.4-1.1.6-1.4-2.2-.3-4.6-1.1-4.6-5 0-1.1.4-2 1-2.7-.1-.3-.4-1.3.1-2.7 0 0 .8-.3 2.7 1a9.4 9.4 0 0 1 5 0c1.9-1.3 2.7-1 2.7-1 .5 1.4.2 2.4.1 2.7.6.7 1 1.6 1 2.7 0 3.9-2.4 4.7-4.6 5 .4.3.7.9.7 1.9v2.8c0 .3.2.6.7.5 4-1.4 6.8-5.2 6.8-9.7C22 6.6 17.5 2 12 2z"/></svg>
+      </span>
+      <div>
+        <h3 id="ghTitle">连接 GitHub</h3>
+        <p>解锁一键加星 / Fork / 克隆 · Token 只存本机浏览器</p>
+      </div>
+    </div>
+    <div class="gh-body" id="ghBody"></div>
+    <div class="gh-foot" id="ghFoot"></div>
+  </div>
+</div>
+
+<!-- ===== 随行笔记 ===== -->
+<div class="gh-overlay" id="notePanel" aria-hidden="true">
+  <div class="gh-box" role="dialog" aria-modal="true">
+    <button class="detail-close" id="noteClose" title="关闭">×</button>
+    <div class="gh-head">
+      <span class="gh-ico" aria-hidden="true">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" width="22" height="22"><path d="M12 20h9"/><path d="M16.5 3.5a2.1 2.1 0 0 1 3 3L7 19l-4 1 1-4z"/></svg>
+      </span>
+      <div>
+        <h3 id="noteTitle">随行笔记</h3>
+        <p>记下为什么关注它 · 数据只存本机浏览器</p>
+      </div>
+    </div>
+    <div class="note-body">
+      <textarea id="noteText" rows="5" placeholder="这个项目可以解决我的…"></textarea>
+      <small class="note-date" id="noteDate"></small>
+    </div>
+    <div class="gh-foot">
+      <button class="gh-btn ghost" id="noteDel" hidden>删除</button>
+      <span class="gh-spacer"></span>
+      <button class="gh-btn ghost" id="noteCancel">取消</button>
+      <button class="gh-btn primary" id="noteSave">保存笔记</button>
+    </div>
+  </div>
+</div>
 
 <!-- ===== 语义搜索面板 ===== -->
 <div class="search-overlay" id="searchPanel" aria-hidden="true">
@@ -101,6 +213,9 @@
       <button class="search-clear" id="searchClear" title="清空" hidden>×</button>
     </div>
     <div class="search-filters">
+      <select id="fTopic" title="主题方向">
+        <option value="">全部方向</option>
+      </select>
       <select id="fLang" title="语言">
         <option value="">全部语言</option>
       </select>
@@ -134,6 +249,7 @@
           <span class="stage-chip" id="dStage">—</span>
         </div>
         <small id="dOwner">—</small>
+        <div class="card-tags d-tags" id="dTags"></div>
       </div>
       <div class="d-stats">
         <span><b id="dScore">—</b><em>/ 100</em><small>综合潜力</small></span>
@@ -144,13 +260,14 @@
       <div class="d-radar">
         <div class="d-radar-title"><small>五维潜力画像</small><span class="rd-legend"><i style="background:#1677ff"></i>本仓库</span></div>
         <div id="dRadar"></div>
-        <p id="dDesc">—</p>
       </div>
       <div class="d-info">
         <div class="d-info-title"><small>AI 解读 · 为什么值得关注</small></div>
         <p id="dExplain">—</p>
         <div class="d-dims-title"><small>维度明细</small></div>
         <div id="dDims" class="d-dims"></div>
+        <div class="d-dims-title d-desc-title"><small>项目介绍</small></div>
+        <p id="dDesc" class="d-desc">—</p>
       </div>
     </div>
     <div class="detail-foot">
@@ -167,7 +284,8 @@
         <svg class="d-spark" id="dSpark" viewBox="0 0 720 120" fill="none"></svg>
       </div>
       <div class="d-actions">
-        <button class="detail-save" id="dSave">☆ 加入我的雷达</button>
+        <div class="opbar" id="dOpbar"></div>
+        <button class="detail-save" id="dSave"><svg class="star-ico" width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linejoin="round" aria-hidden="true"><path d="M12 2l2.9 6.6 7.1.6-5.4 4.7 1.6 7-6.2-3.7-6.2 3.7 1.6-7L2 9.2l7.1-.6z"/></svg> 加入我的雷达</button>
         <a class="detail-link" id="dLink" href="#" target="_blank" rel="noopener">在 GitHub 打开 ↗</a>
       </div>
     </div>
@@ -225,41 +343,25 @@
         }
       }
     ],
-    trending: [
-      {
-        repo: {
-          owner: "paean-ai", name: "deeptide", full_name: "paean-ai/deeptide",
-          description: "Built by DeepSeek — a Swift-native macOS coding agent.",
-          stars: 1000, forks: 132, open_issues: 1,
-          created_at: "2026-05-05T16:40:06+00:00", pushed_at: "2026-07-08T09:37:30+00:00",
-          stars_7d_ago: 1000, language: "Rust",
-          html_url: "https://github.com/paean-ai/deeptide", topics: []
-        },
-        score: { score: 18.15, confidence: 1.0, stage: "mid_late", breakdown: { vel: 0, acc: 50, health: 85, fresh: 76, signal: 70 }, explanation: "" }
-      },
-      {
-        repo: {
-          owner: "mfat", name: "sshpilot", full_name: "mfat/sshpilot",
-          description: "User-friendly, cross-platform SSH connection manager.",
-          stars: 999, forks: 59, open_issues: 86,
-          created_at: "2025-07-30T18:24:23+00:00", pushed_at: "2026-07-30T05:16:22+00:00",
-          stars_7d_ago: 993, language: "Python",
-          html_url: "https://github.com/mfat/sshpilot", topics: ["ssh", "terminal"]
-        },
-        score: { score: 30.07, confidence: 1.0, stage: "mid_early", breakdown: { vel: 30, acc: 57, health: 57, fresh: 0, signal: 85 }, explanation: "" }
-      },
-      {
-        repo: {
-          owner: "lobehub", name: "lobe-midjourney-webui", full_name: "lobehub/lobe-midjourney-webui",
-          description: "Midjourney WebUI — integrate Midjourney in LobeChat.",
-          stars: 200, forks: 52, open_issues: 38,
-          created_at: "2024-01-14T14:36:42+00:00", pushed_at: "2026-07-12T02:07:29+00:00",
-          stars_7d_ago: 200, language: "TypeScript",
-          html_url: "https://github.com/lobehub/lobe-midjourney-webui", topics: []
-        },
-        score: { score: 8.97, confidence: 1.0, stage: "mid_early", breakdown: { vel: 0, acc: 50, health: 55, fresh: 0, signal: 70 }, explanation: "" }
-      }
-    ],
+    trends: {
+      weeks: [
+        {
+          week: "2026W31", range: "2026.07.27 — 08.02",
+          generated_at: "2026-08-03T08:00:00+00:00",
+          new_stars: [
+            { repo: "paean-ai/deeptide", stars: 1000, delta: 0, topics: ["ai-agent"], language: "Rust" }
+          ],
+          hot_top: [
+            { repo: "paean-ai/deeptide", stars: 1000, delta: 120, topics: ["ai-agent"], language: "Rust" }
+          ],
+          hot_topics: [
+            { tag: "ai-agent", label: "AI Agent", count: 8, delta: 3 },
+            { tag: "mcp", label: "MCP 服务器", count: 5, delta: 2 }
+          ],
+          my_follows: []
+        }
+      ]
+    },
     picks: [
       {
         repo: {
@@ -276,6 +378,11 @@
     ]
   };
 </script>
-<script src="js/app.js"></script>
+<script src="js/app.js?v=20260810d"></script>
+<script src="js/github.js"></script>
+<script src="js/llm.js"></script>
 </body>
 </html>
+
+
+

@@ -62,6 +62,30 @@ CREATE TABLE IF NOT EXISTS interest_snapshots (
     topic_distribution TEXT,
     created_at DATETIME DEFAULT CURRENT_TIMESTAMP
 );
+
+CREATE TABLE IF NOT EXISTS survey_profiles (
+    uid TEXT PRIMARY KEY,
+    survey TEXT NOT NULL,
+    updated_at DATETIME DEFAULT CURRENT_TIMESTAMP
+);
+
+CREATE TABLE IF NOT EXISTS daily_snapshots (
+    snapshot_date TEXT NOT NULL,
+    full_name TEXT NOT NULL,
+    stars INTEGER NOT NULL,
+    topics TEXT,
+    language TEXT,
+    week_key TEXT,
+    PRIMARY KEY (snapshot_date, full_name)
+);
+CREATE INDEX IF NOT EXISTS idx_snapshots_week ON daily_snapshots(week_key);
+
+CREATE TABLE IF NOT EXISTS summary_cache (
+    full_name TEXT PRIMARY KEY,
+    stars_at_generation INTEGER NOT NULL,
+    summary TEXT NOT NULL,
+    updated_at DATETIME DEFAULT CURRENT_TIMESTAMP
+);
 """
 
 
@@ -119,6 +143,21 @@ def record_interaction(
         logger.warning("交互记录失败 (%s/%s)：%s", repo_full_name, action, e)
 
 
+def has_interaction(repo_full_name: str, action: str, ts_iso: str) -> bool:
+    """同仓库同动作同秒是否已记录（上报幂等去重）。"""
+    try:
+        with _connect() as conn:
+            row = conn.execute(
+                "SELECT 1 FROM interactions "
+                "WHERE repo_full_name=? AND action=? AND timestamp=? LIMIT 1",
+                (repo_full_name, action, ts_iso),
+            ).fetchone()
+        return row is not None
+    except sqlite3.Error as e:
+        logger.warning("幂等检查失败 (%s/%s)：%s", repo_full_name, action, e)
+        return False
+
+
 def log_project(
     repo_full_name: str,
     *,
@@ -150,6 +189,180 @@ def log_project(
             )
     except sqlite3.Error as e:
         logger.warning("项目缓存写入失败 (%s)：%s", repo_full_name, e)
+
+
+# ===== 问卷档案（前端上报，供冷启动画像） =====
+
+def save_survey(uid: str, survey: dict[str, Any]) -> None:
+    """保存/更新一份问卷档案（uid 为前端匿名标识）。"""
+    try:
+        with _connect() as conn:
+            conn.execute(
+                "INSERT INTO survey_profiles (uid, survey, updated_at) "
+                "VALUES (?,?,CURRENT_TIMESTAMP) "
+                "ON CONFLICT(uid) DO UPDATE SET "
+                "survey=excluded.survey, updated_at=CURRENT_TIMESTAMP",
+                (uid, json.dumps(survey, ensure_ascii=False)),
+            )
+    except sqlite3.Error as e:
+        logger.warning("问卷保存失败 (%s)：%s", uid, e)
+
+
+def load_latest_survey() -> dict[str, Any] | None:
+    """读取最近提交的问卷档案（按更新时间倒序）。"""
+    try:
+        with _connect() as conn:
+            row = conn.execute(
+                "SELECT survey FROM survey_profiles ORDER BY updated_at DESC LIMIT 1"
+            ).fetchone()
+        if not row:
+            return None
+        data = json.loads(row[0])
+        return data if isinstance(data, dict) else None
+    except (sqlite3.Error, json.JSONDecodeError) as e:
+        logger.warning("问卷读取失败：%s", e)
+        return None
+
+
+# ===== 每日快照（周报对比数据源） =====
+
+def save_daily_snapshot(
+    full_name: str,
+    stars: int,
+    *,
+    topics: list[str] | None = None,
+    language: str | None = None,
+    snapshot_date: str | None = None,
+) -> None:
+    """记录某项目在某日的 star 快照（upsert，供每周趋势对比）。"""
+    date = snapshot_date or datetime.now(timezone.utc).strftime("%Y-%m-%d")
+    try:
+        ts = datetime.fromisoformat(date + "T00:00:00+00:00")
+    except ValueError:
+        ts = datetime.now(timezone.utc)
+    wk = week_key(ts)
+    try:
+        with _connect() as conn:
+            conn.execute(
+                "INSERT INTO daily_snapshots "
+                "(snapshot_date, full_name, stars, topics, language, week_key) "
+                "VALUES (?,?,?,?,?,?) "
+                "ON CONFLICT(snapshot_date, full_name) DO UPDATE SET "
+                "stars=excluded.stars, topics=excluded.topics, "
+                "language=excluded.language, week_key=excluded.week_key",
+                (date, full_name, int(stars),
+                 json.dumps(topics or [], ensure_ascii=False),
+                 language, wk),
+            )
+    except sqlite3.Error as e:
+        logger.warning("每日快照写入失败 (%s/%s)：%s", date, full_name, e)
+
+
+def load_week_snapshots(week: str | None = None) -> dict[str, dict[str, Any]]:
+    """加载某周（默认本周）所有项目快照：{full_name: {stars, topics, language, date}}。
+
+    同项目多日记录时取最后一次（当周最新状态）。
+    """
+    wk = week or week_key()
+    try:
+        with _connect() as conn:
+            rows = conn.execute(
+                "SELECT full_name, stars, topics, language, snapshot_date "
+                "FROM daily_snapshots WHERE week_key=? "
+                "ORDER BY snapshot_date ASC",
+                (wk,),
+            ).fetchall()
+    except sqlite3.Error as e:
+        logger.warning("周快照读取失败 (%s)：%s", wk, e)
+        return {}
+    out: dict[str, dict[str, Any]] = {}
+    for full_name, stars, topics, language, date in rows:
+        try:
+            topics_list = json.loads(topics or "[]")
+        except json.JSONDecodeError:
+            topics_list = []
+        out[full_name] = {
+            "stars": int(stars),
+            "topics": topics_list,
+            "language": language,
+            "date": date,
+        }
+    return out
+
+
+def list_snapshot_weeks(limit: int = 12) -> list[str]:
+    """按时间倒序列出有快照数据的周。"""
+    try:
+        with _connect() as conn:
+            rows = conn.execute(
+                "SELECT DISTINCT week_key FROM daily_snapshots "
+                "ORDER BY week_key DESC LIMIT ?",
+                (limit,),
+            ).fetchall()
+        return [r[0] for r in rows]
+    except sqlite3.Error as e:
+        logger.warning("周列表读取失败：%s", e)
+        return []
+
+
+def load_week_daily_totals(week: str) -> list[dict[str, Any]]:
+    """某周每日快照汇总（按日升序）：[{date, count, total}, ...]。
+
+    供周报 timeline（本周逐日热度走势）使用。
+    """
+    try:
+        with _connect() as conn:
+            rows = conn.execute(
+                "SELECT snapshot_date, COUNT(*) AS c, SUM(stars) AS s "
+                "FROM daily_snapshots WHERE week_key=? "
+                "GROUP BY snapshot_date ORDER BY snapshot_date",
+                (week,),
+            ).fetchall()
+    except sqlite3.Error as e:
+        logger.warning("每日汇总读取失败 (%s)：%s", week, e)
+        return []
+    return [
+        {"date": date[5:], "count": int(c), "total": int(s or 0)}
+        for date, c, s in rows
+    ]
+
+
+# ===== LLM 解读缓存（每日增量：已解读项目不重复调用） =====
+
+def get_cached_summary(full_name: str, stars: int) -> str | None:
+    """读取缓存的 LLM 解读；星数变化超过 20% 视为过期（项目明显变化需重读）。"""
+    try:
+        with _connect() as conn:
+            row = conn.execute(
+                "SELECT stars_at_generation, summary FROM summary_cache "
+                "WHERE full_name=?",
+                (full_name,),
+            ).fetchone()
+    except sqlite3.Error as e:
+        logger.warning("解读缓存读取失败 (%s)：%s", full_name, e)
+        return None
+    if not row:
+        return None
+    cached_stars, summary = row
+    if stars and cached_stars and abs(stars - cached_stars) / max(1, cached_stars) > 0.2:
+        return None
+    return summary
+
+
+def set_cached_summary(full_name: str, stars: int, summary: str) -> None:
+    """写入/更新 LLM 解读缓存。"""
+    try:
+        with _connect() as conn:
+            conn.execute(
+                "INSERT INTO summary_cache (full_name, stars_at_generation, summary) "
+                "VALUES (?,?,?) "
+                "ON CONFLICT(full_name) DO UPDATE SET "
+                "stars_at_generation=excluded.stars_at_generation, "
+                "summary=excluded.summary, updated_at=CURRENT_TIMESTAMP",
+                (full_name, int(stars), summary),
+            )
+    except sqlite3.Error as e:
+        logger.warning("解读缓存写入失败 (%s)：%s", full_name, e)
 
 
 # ===== 查询 =====

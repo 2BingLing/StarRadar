@@ -1,231 +1,858 @@
 [
   {
     "repo": {
-      "owner": "zzet",
-      "name": "gortex",
-      "full_name": "zzet/gortex",
-      "description": "High-performance code-intelligence engine for AI agents and IDE, supports 257 languages, multi repositories, based on graph, with access via CLI, MCP Server, and API. AI coding agents teammate - expose only needed information, cutting token usage up to 50x. 100% local. Discord: https://discord.gg/ysC2prTGD",
+      "owner": "tsingyuai",
+      "name": "growth-lab",
+      "full_name": "tsingyuai/growth-lab",
+      "description": "An end-to-end growth tool that understands the product, fetch the data it needs, researches the market, executes campaigns, and reviews results to improve the next round of growth. 从代码到市场的开源端到端增长工具。理解产品、接入信息渠道、研究市场、执行增长行动，并基于真实数据自我改进。",
       "stars": 999,
-      "forks": 86,
-      "open_issues": 17,
-      "created_at": "2026-04-06T13:47:15+00:00",
-      "pushed_at": "2026-07-30T16:03:39+00:00",
-      "updated_at": "2026-07-30T16:10:30+00:00",
+      "forks": 83,
+      "open_issues": 0,
+      "created_at": "2026-07-24T05:33:56+00:00",
+      "pushed_at": "2026-08-03T07:04:03+00:00",
+      "updated_at": "2026-08-10T10:13:37+00:00",
       "topics": [
-        "ai-tools",
-        "antigravity",
+        "agentic-marketing",
+        "ai-agent",
         "claude-code",
-        "code-analysis",
-        "code-assistant",
-        "context-window",
-        "context-window-optimization",
-        "context-window-optimizer",
-        "copilot",
-        "cursor",
-        "developer-tools",
-        "graphrag",
-        "kiro",
-        "knowledge-graph",
-        "local-first",
-        "mcp-server",
-        "prompts",
+        "codex",
+        "growth",
+        "growth-hacking",
+        "marketing-automation",
+        "open-source",
+        "seo",
         "skills",
-        "tokens",
-        "windsurf"
+        "xiaohongshu"
       ],
-      "language": "Go",
+      "language": "Python",
       "license": "Apache-2.0",
-      "homepage": "https://gortex.dev/",
-      "html_url": "https://github.com/zzet/gortex",
+      "homepage": "https://growthlab.tsingyuai.com",
+      "html_url": "https://github.com/tsingyuai/growth-lab",
       "default_branch": "main",
       "archived": false,
       "search_score": 1.0,
-      "stars_7d_ago": 951
+      "stars_7d_ago": 717,
+      "star_series": [
+        {
+          "d": "07-12",
+          "s": 717
+        },
+        {
+          "d": "07-13",
+          "s": 717
+        },
+        {
+          "d": "07-14",
+          "s": 717
+        },
+        {
+          "d": "07-15",
+          "s": 717
+        },
+        {
+          "d": "07-16",
+          "s": 717
+        },
+        {
+          "d": "07-17",
+          "s": 717
+        },
+        {
+          "d": "07-18",
+          "s": 717
+        },
+        {
+          "d": "07-19",
+          "s": 717
+        },
+        {
+          "d": "07-20",
+          "s": 717
+        },
+        {
+          "d": "07-21",
+          "s": 717
+        },
+        {
+          "d": "07-22",
+          "s": 717
+        },
+        {
+          "d": "07-23",
+          "s": 717
+        },
+        {
+          "d": "07-24",
+          "s": 717
+        },
+        {
+          "d": "07-25",
+          "s": 717
+        },
+        {
+          "d": "07-26",
+          "s": 717
+        },
+        {
+          "d": "07-27",
+          "s": 717
+        },
+        {
+          "d": "07-28",
+          "s": 717
+        },
+        {
+          "d": "07-29",
+          "s": 717
+        },
+        {
+          "d": "07-30",
+          "s": 717
+        },
+        {
+          "d": "07-31",
+          "s": 717
+        },
+        {
+          "d": "08-01",
+          "s": 717
+        },
+        {
+          "d": "08-02",
+          "s": 717
+        },
+        {
+          "d": "08-03",
+          "s": 717
+        },
+        {
+          "d": "08-04",
+          "s": 717
+        },
+        {
+          "d": "08-05",
+          "s": 717
+        },
+        {
+          "d": "08-06",
+          "s": 717
+        },
+        {
+          "d": "08-07",
+          "s": 726
+        },
+        {
+          "d": "08-08",
+          "s": 850
+        },
+        {
+          "d": "08-09",
+          "s": 952
+        },
+        {
+          "d": "08-10",
+          "s": 999
+        }
+      ]
     },
     "score": {
       "score": 100.0,
       "breakdown": {
         "vel": 100,
         "acc": 99,
-        "health": 85,
-        "fresh": 68,
-        "signal": 100
-      },
-      "stage": "mid_early",
-      "stage_multiplier": 1.1,
-      "confidence": 1.0,
-      "base_score": 91.29,
-      "explanation": "该项目通过图结构代码分析实现高达50倍的token压缩，且完全本地运行，在AI编码代理爆发期精准解决了大模型上下文窗口瓶颈，近千星且增速加快，意味着它正在成为开发者工具链的关键基础设施。"
-    }
-  },
-  {
-    "repo": {
-      "owner": "qwq233",
-      "name": "OhMyKeymint",
-      "full_name": "qwq233/OhMyKeymint",
-      "description": null,
-      "stars": 200,
-      "forks": 23,
-      "open_issues": 2,
-      "created_at": "2025-10-02T11:49:31+00:00",
-      "pushed_at": "2026-07-29T18:50:21+00:00",
-      "updated_at": "2026-07-30T14:28:40+00:00",
-      "topics": [],
-      "language": "Rust",
-      "license": "AGPL-3.0",
-      "homepage": null,
-      "html_url": "https://github.com/qwq233/OhMyKeymint",
-      "default_branch": "master",
-      "archived": false,
-      "search_score": 1.0,
-      "stars_7d_ago": 165
-    },
-    "score": {
-      "score": 77.09,
-      "breakdown": {
-        "vel": 88,
-        "acc": 87,
-        "health": 90,
-        "fresh": 18,
-        "signal": 40
+        "health": 87,
+        "fresh": 95,
+        "signal": 85
       },
       "stage": "early",
       "stage_multiplier": 1.2,
       "confidence": 1.0,
-      "base_score": 64.24,
-      "explanation": "Rust 语言的密钥管理项目，健康度 90 且涨速加快至 5 star/天，早期阶段即获 200+ Stars，信号虽弱但增长势头强劲，值得关注其技术实现与社区反馈。"
+      "base_score": 94.85,
+      "explanation": "AI营销代理赛道正缺一个“从代码到市场”的闭环工具，growth-lab 以40星/天的爆",
+      "reason": "本周加速增长、潜力分 100，可能是明日之星、全新发现，不在你的已看列表"
     }
   },
   {
     "repo": {
-      "owner": "Green-PT",
-      "name": "honey-for-devs",
-      "full_name": "Green-PT/honey-for-devs",
-      "description": "Honey (I Shrunk the AI) by GreenPT: a cross-tool coding skill that cuts AI coding-agent token usage and LLM API costs — write less code, less prose, and denser agent-to-agent handoffs (−53%, lossless in benchmarks) with no loss of quality. Works with Claude Code, Cursor, GitHub Copilot, Codex, Gemini CLI, Windsurf, Cline & Kiro.",
-      "stars": 200,
-      "forks": 10,
-      "open_issues": 0,
-      "created_at": "2026-06-19T11:58:06+00:00",
-      "pushed_at": "2026-07-30T16:05:33+00:00",
-      "updated_at": "2026-07-30T15:35:32+00:00",
-      "topics": [
-        "agents",
-        "ai",
-        "claude",
-        "claude-code",
-        "codex",
-        "cursor",
-        "developer-tools",
-        "llm",
-        "prompt-engineering",
-        "token-optimization"
-      ],
-      "language": "JavaScript",
-      "license": "MIT",
-      "homepage": "https://github.com/Green-PT/honey-for-devs",
-      "html_url": "https://github.com/Green-PT/honey-for-devs",
-      "default_branch": "main",
-      "archived": false,
-      "search_score": 1.0,
-      "stars_7d_ago": 184
-    },
-    "score": {
-      "score": 45.98,
-      "breakdown": {
-        "vel": 58,
-        "acc": 54,
-        "health": 71,
-        "fresh": 89,
-        "signal": 85
-      },
-      "stage": "saturated",
-      "stage_multiplier": 0.7,
-      "confidence": 1.0,
-      "base_score": 65.68,
-      "explanation": "一款能无损降低AI编码代理token消耗53%的实用工具，直接帮开发者省下真金白银的API调用费——即便增长放缓，这类“提效降本”的硬需求项目仍有长期采用潜力。"
-    }
-  },
-  {
-    "repo": {
-      "owner": "mfat",
-      "name": "sshpilot",
-      "full_name": "mfat/sshpilot",
-      "description": "User-friendly, cross-platform SSH connection manager",
+      "owner": "kritishmohapatra",
+      "name": "100_Days_100_IoT_Projects",
+      "full_name": "kritishmohapatra/100_Days_100_IoT_Projects",
+      "description": "A 100-day challenge exploring IoT and embedded systems using ESP32, ESP8266, and Raspberry Pi Pico with MicroPython. Each day covers a new sensor or module with complete code, circuit diagram, and explanation.",
       "stars": 999,
-      "forks": 59,
-      "open_issues": 86,
-      "created_at": "2025-07-30T18:24:23+00:00",
-      "pushed_at": "2026-07-30T05:16:22+00:00",
-      "updated_at": "2026-07-30T16:46:06+00:00",
+      "forks": 129,
+      "open_issues": 0,
+      "created_at": "2025-10-11T03:14:54+00:00",
+      "pushed_at": "2026-07-17T11:45:15+00:00",
+      "updated_at": "2026-08-10T00:46:40+00:00",
       "topics": [
-        "gnome",
-        "linux",
-        "ssh",
-        "ssh-client",
-        "ssh-tunnel",
-        "terminal"
+        "100daysofcode",
+        "adafruit",
+        "cpp",
+        "embedded-systems",
+        "embedded-systems-and-iot",
+        "esp32",
+        "esp8266",
+        "iot",
+        "iot-application",
+        "microcontroller",
+        "micropython",
+        "project",
+        "python",
+        "python-3",
+        "python-iot",
+        "python3",
+        "raspberry-pi",
+        "raspberry-pi-pico",
+        "wokwi-example"
       ],
       "language": "Python",
-      "license": "GPL-3.0",
-      "homepage": "https://sshpilot.app",
-      "html_url": "https://github.com/mfat/sshpilot",
+      "license": null,
+      "homepage": null,
+      "html_url": "https://github.com/kritishmohapatra/100_Days_100_IoT_Projects",
       "default_branch": "main",
       "archived": false,
       "search_score": 1.0,
-      "stars_7d_ago": 993
+      "stars_7d_ago": 982,
+      "star_series": [
+        {
+          "d": "07-12",
+          "s": 887
+        },
+        {
+          "d": "07-13",
+          "s": 887
+        },
+        {
+          "d": "07-14",
+          "s": 889
+        },
+        {
+          "d": "07-15",
+          "s": 890
+        },
+        {
+          "d": "07-16",
+          "s": 894
+        },
+        {
+          "d": "07-17",
+          "s": 895
+        },
+        {
+          "d": "07-18",
+          "s": 897
+        },
+        {
+          "d": "07-19",
+          "s": 898
+        },
+        {
+          "d": "07-20",
+          "s": 904
+        },
+        {
+          "d": "07-21",
+          "s": 906
+        },
+        {
+          "d": "07-22",
+          "s": 908
+        },
+        {
+          "d": "07-23",
+          "s": 909
+        },
+        {
+          "d": "07-24",
+          "s": 909
+        },
+        {
+          "d": "07-25",
+          "s": 909
+        },
+        {
+          "d": "07-26",
+          "s": 913
+        },
+        {
+          "d": "07-27",
+          "s": 914
+        },
+        {
+          "d": "07-28",
+          "s": 917
+        },
+        {
+          "d": "07-29",
+          "s": 921
+        },
+        {
+          "d": "07-30",
+          "s": 930
+        },
+        {
+          "d": "07-31",
+          "s": 931
+        },
+        {
+          "d": "08-01",
+          "s": 931
+        },
+        {
+          "d": "08-02",
+          "s": 943
+        },
+        {
+          "d": "08-03",
+          "s": 968
+        },
+        {
+          "d": "08-04",
+          "s": 982
+        },
+        {
+          "d": "08-05",
+          "s": 989
+        },
+        {
+          "d": "08-06",
+          "s": 991
+        },
+        {
+          "d": "08-07",
+          "s": 992
+        },
+        {
+          "d": "08-08",
+          "s": 994
+        },
+        {
+          "d": "08-09",
+          "s": 999
+        }
+      ]
     },
     "score": {
-      "score": 30.07,
+      "score": 45.54,
       "breakdown": {
-        "vel": 30,
-        "acc": 57,
-        "health": 57,
-        "fresh": 0,
-        "signal": 85
+        "vel": 34,
+        "acc": 32,
+        "health": 85,
+        "fresh": 17,
+        "signal": 50
       },
-      "stage": "mid_early",
-      "stage_multiplier": 1.1,
+      "stage": "early",
+      "stage_multiplier": 1.2,
       "confidence": 1.0,
-      "base_score": 27.34,
-      "explanation": "跨平台SSH连接管理器，信号值85表明社区活跃度远超同类早期项目；近千星且无基础星数（新0），说明增长源自真实用户需求，填补了自定义SSH管理工具的空白。"
+      "base_score": 37.95,
+      "explanation": "100天IoT挑战以ESP32/树莓派Pico为主角，把传感器模块拆成90天日更级学习路径，叠加999星、0 issue的干净状态，正卡在初学者与硬件创客的流量峰值上——涨速4.4星/天说明它可能成为MicroPython硬件入门的默认参考答案。",
+      "reason": "本周加速增长、全新发现，不在你的已看列表"
     }
   },
   {
     "repo": {
-      "owner": "paean-ai",
-      "name": "deeptide",
-      "full_name": "paean-ai/deeptide",
-      "description": "Built by DeepSeek, for DeepSeek — a Swift-native macOS coding agent",
+      "owner": "vibe-motion",
+      "name": "skills",
+      "full_name": "vibe-motion/skills",
+      "description": "agent skills for vibe motion",
       "stars": 1000,
-      "forks": 132,
+      "forks": 70,
       "open_issues": 1,
-      "created_at": "2026-05-05T16:40:06+00:00",
-      "pushed_at": "2026-07-08T09:37:30+00:00",
-      "updated_at": "2026-07-12T10:56:25+00:00",
-      "topics": [],
-      "language": "Rust",
-      "license": "MIT",
-      "homepage": "https://deeptide.sh",
-      "html_url": "https://github.com/paean-ai/deeptide",
+      "created_at": "2026-03-17T17:29:31+00:00",
+      "pushed_at": "2026-07-25T04:31:42+00:00",
+      "updated_at": "2026-08-10T07:22:05+00:00",
+      "topics": [
+        "agent",
+        "skills",
+        "vibe-coding",
+        "vibe-motion"
+      ],
+      "language": "Python",
+      "license": null,
+      "homepage": null,
+      "html_url": "https://github.com/vibe-motion/skills",
       "default_branch": "main",
       "archived": false,
       "search_score": 1.0,
-      "stars_7d_ago": 1000
+      "stars_7d_ago": 985,
+      "star_series": [
+        {
+          "d": "07-12",
+          "s": 889
+        },
+        {
+          "d": "07-13",
+          "s": 893
+        },
+        {
+          "d": "07-14",
+          "s": 898
+        },
+        {
+          "d": "07-15",
+          "s": 903
+        },
+        {
+          "d": "07-16",
+          "s": 905
+        },
+        {
+          "d": "07-17",
+          "s": 911
+        },
+        {
+          "d": "07-18",
+          "s": 916
+        },
+        {
+          "d": "07-19",
+          "s": 916
+        },
+        {
+          "d": "07-20",
+          "s": 917
+        },
+        {
+          "d": "07-21",
+          "s": 920
+        },
+        {
+          "d": "07-22",
+          "s": 927
+        },
+        {
+          "d": "07-23",
+          "s": 938
+        },
+        {
+          "d": "07-24",
+          "s": 942
+        },
+        {
+          "d": "07-25",
+          "s": 943
+        },
+        {
+          "d": "07-26",
+          "s": 946
+        },
+        {
+          "d": "07-27",
+          "s": 950
+        },
+        {
+          "d": "07-28",
+          "s": 959
+        },
+        {
+          "d": "07-29",
+          "s": 963
+        },
+        {
+          "d": "07-30",
+          "s": 967
+        },
+        {
+          "d": "07-31",
+          "s": 971
+        },
+        {
+          "d": "08-01",
+          "s": 974
+        },
+        {
+          "d": "08-02",
+          "s": 977
+        },
+        {
+          "d": "08-03",
+          "s": 981
+        },
+        {
+          "d": "08-04",
+          "s": 985
+        },
+        {
+          "d": "08-05",
+          "s": 991
+        },
+        {
+          "d": "08-06",
+          "s": 994
+        },
+        {
+          "d": "08-07",
+          "s": 997
+        },
+        {
+          "d": "08-08",
+          "s": 999
+        },
+        {
+          "d": "08-09",
+          "s": 999
+        }
+      ]
     },
     "score": {
-      "score": 18.15,
+      "score": 44.96,
       "breakdown": {
-        "vel": 0,
-        "acc": 50,
-        "health": 85,
-        "fresh": 76,
-        "signal": 70
+        "vel": 32,
+        "acc": 40,
+        "health": 67,
+        "fresh": 60,
+        "signal": 50
       },
       "stage": "mid_late",
       "stage_multiplier": 1.0,
       "confidence": 1.0,
-      "base_score": 18.15,
-      "explanation": "处于中后期增长；社区健康（forks=132, issues=1）。"
+      "base_score": 44.96,
+      "explanation": "《vibe-motion/skills》精准卡位“vibe coding”生态的工具层，以不足千星验证了垂直场景的强需求，且健康度67、近期仍活跃迭代，说明在agent技能标准化演进中具备成为基础组件的先发优势。",
+      "reason": "本周加速增长、全新发现，不在你的已看列表"
+    }
+  },
+  {
+    "repo": {
+      "owner": "ArcadeAI",
+      "name": "arcade-mcp",
+      "full_name": "ArcadeAI/arcade-mcp",
+      "description": "MCP Server Framework and Tool Development library for building custom capabilities into agents. ",
+      "stars": 999,
+      "forks": 105,
+      "open_issues": 17,
+      "created_at": "2024-04-26T22:25:48+00:00",
+      "pushed_at": "2026-08-10T05:08:09+00:00",
+      "updated_at": "2026-08-10T03:27:16+00:00",
+      "topics": [
+        "ai",
+        "arcade",
+        "arcade-ai",
+        "claude",
+        "claude-code",
+        "claude-mcp",
+        "mcp",
+        "mcp-framework",
+        "mcp-gateway",
+        "mcp-runtime",
+        "mcp-server",
+        "mcp-servers",
+        "mcp-tools",
+        "mcpserver",
+        "model-context-protocol",
+        "model-context-protocol-sdk",
+        "python"
+      ],
+      "language": "Python",
+      "license": "MIT",
+      "homepage": "https://docs.arcade.dev",
+      "html_url": "https://github.com/ArcadeAI/arcade-mcp",
+      "default_branch": "main",
+      "archived": false,
+      "search_score": 1.0,
+      "stars_7d_ago": 992,
+      "star_series": [
+        {
+          "d": "07-12",
+          "s": 957
+        },
+        {
+          "d": "07-13",
+          "s": 957
+        },
+        {
+          "d": "07-14",
+          "s": 962
+        },
+        {
+          "d": "07-15",
+          "s": 968
+        },
+        {
+          "d": "07-16",
+          "s": 970
+        },
+        {
+          "d": "07-17",
+          "s": 971
+        },
+        {
+          "d": "07-18",
+          "s": 972
+        },
+        {
+          "d": "07-19",
+          "s": 972
+        },
+        {
+          "d": "07-20",
+          "s": 974
+        },
+        {
+          "d": "07-21",
+          "s": 974
+        },
+        {
+          "d": "07-22",
+          "s": 975
+        },
+        {
+          "d": "07-23",
+          "s": 975
+        },
+        {
+          "d": "07-24",
+          "s": 977
+        },
+        {
+          "d": "07-25",
+          "s": 978
+        },
+        {
+          "d": "07-26",
+          "s": 980
+        },
+        {
+          "d": "07-27",
+          "s": 981
+        },
+        {
+          "d": "07-28",
+          "s": 982
+        },
+        {
+          "d": "07-29",
+          "s": 982
+        },
+        {
+          "d": "07-30",
+          "s": 982
+        },
+        {
+          "d": "07-31",
+          "s": 982
+        },
+        {
+          "d": "08-01",
+          "s": 982
+        },
+        {
+          "d": "08-02",
+          "s": 984
+        },
+        {
+          "d": "08-03",
+          "s": 988
+        },
+        {
+          "d": "08-04",
+          "s": 992
+        },
+        {
+          "d": "08-05",
+          "s": 994
+        },
+        {
+          "d": "08-06",
+          "s": 994
+        },
+        {
+          "d": "08-07",
+          "s": 994
+        },
+        {
+          "d": "08-08",
+          "s": 994
+        },
+        {
+          "d": "08-09",
+          "s": 997
+        }
+      ]
+    },
+    "score": {
+      "score": 16.7,
+      "breakdown": {
+        "vel": 19,
+        "acc": 43,
+        "health": 92,
+        "fresh": 0,
+        "signal": 100
+      },
+      "stage": "saturated",
+      "stage_multiplier": 0.7,
+      "confidence": 1.0,
+      "base_score": 23.86,
+      "explanation": "作为 MCP 服务端开发框架，它在 Model Context Protocol 生态爆发期提供了标准化的工具构建层，999 stars 但 fork 率达 10.5%，叠加 100 的信号分和近乎满分的社区健康度，说明其被开发者深度复用的潜力极高，是 agent 基础设施中值得提前布局的底层选择。",
+      "reason": "本周加速增长、全新发现，不在你的已看列表"
+    }
+  },
+  {
+    "repo": {
+      "owner": "wzyabcas",
+      "name": "InterAct",
+      "full_name": "wzyabcas/InterAct",
+      "description": "[CVPR 2025] InterAct: Advancing Large-Scale Versatile 3D Human-Object Interaction Generation",
+      "stars": 200,
+      "forks": 16,
+      "open_issues": 1,
+      "created_at": "2025-03-25T05:21:52+00:00",
+      "pushed_at": "2026-08-09T16:50:51+00:00",
+      "updated_at": "2026-08-09T01:30:33+00:00",
+      "topics": [
+        "3d-generation",
+        "animation",
+        "dataset",
+        "human-motion-generation",
+        "human-object-interaction",
+        "motion",
+        "motion-generation",
+        "motion-synthesis",
+        "text-annotation",
+        "text-driven",
+        "text-to-motion"
+      ],
+      "language": "Python",
+      "license": "NOASSERTION",
+      "homepage": null,
+      "html_url": "https://github.com/wzyabcas/InterAct",
+      "default_branch": "main",
+      "archived": false,
+      "search_score": 1.0,
+      "stars_7d_ago": 198,
+      "star_series": [
+        {
+          "d": "07-12",
+          "s": 191
+        },
+        {
+          "d": "07-13",
+          "s": 191
+        },
+        {
+          "d": "07-14",
+          "s": 192
+        },
+        {
+          "d": "07-15",
+          "s": 193
+        },
+        {
+          "d": "07-16",
+          "s": 195
+        },
+        {
+          "d": "07-17",
+          "s": 195
+        },
+        {
+          "d": "07-18",
+          "s": 195
+        },
+        {
+          "d": "07-19",
+          "s": 195
+        },
+        {
+          "d": "07-20",
+          "s": 197
+        },
+        {
+          "d": "07-21",
+          "s": 197
+        },
+        {
+          "d": "07-22",
+          "s": 197
+        },
+        {
+          "d": "07-23",
+          "s": 197
+        },
+        {
+          "d": "07-24",
+          "s": 197
+        },
+        {
+          "d": "07-25",
+          "s": 198
+        },
+        {
+          "d": "07-26",
+          "s": 198
+        },
+        {
+          "d": "07-27",
+          "s": 198
+        },
+        {
+          "d": "07-28",
+          "s": 198
+        },
+        {
+          "d": "07-29",
+          "s": 198
+        },
+        {
+          "d": "07-30",
+          "s": 198
+        },
+        {
+          "d": "07-31",
+          "s": 198
+        },
+        {
+          "d": "08-01",
+          "s": 198
+        },
+        {
+          "d": "08-02",
+          "s": 198
+        },
+        {
+          "d": "08-03",
+          "s": 198
+        },
+        {
+          "d": "08-04",
+          "s": 198
+        },
+        {
+          "d": "08-05",
+          "s": 198
+        },
+        {
+          "d": "08-06",
+          "s": 199
+        },
+        {
+          "d": "08-07",
+          "s": 200
+        },
+        {
+          "d": "08-08",
+          "s": 200
+        },
+        {
+          "d": "08-09",
+          "s": 200
+        }
+      ]
+    },
+    "score": {
+      "score": 12.57,
+      "breakdown": {
+        "vel": 7,
+        "acc": 57,
+        "health": 80,
+        "fresh": 0,
+        "signal": 70
+      },
+      "stage": "saturated",
+      "stage_multiplier": 0.7,
+      "confidence": 1.0,
+      "base_score": 17.96,
+      "explanation": "CVPR 2025 论文级开源项目，面向大规模 3D 人-物交互生成这一高价值方向；虽然星标仅 200 但社区极健康（fork 比 8%、几乎无 issue），文本驱动的交互生成正是具身智能与动画合成的关键缺口，论文背书和低维护成本使其后续爆发概率高。",
+      "reason": "本周加速增长"
     }
   }
 ]

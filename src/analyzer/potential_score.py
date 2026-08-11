@@ -423,9 +423,18 @@ def generate_explanation(
     stage_label: str,
     vel_this_week: float,
 ) -> str:
-    """生成可读的"为什么推荐"理由（最多 3 条）。"""
-    reasons: list[str] = []
+    """生成可读的"为什么推荐"理由（最多 3 段，段内信息丰满）。"""
+    parts: list[str] = []
 
+    # ① 项目定位：名称 + 语言 + 描述摘要
+    lang = repo.language or "未知语言"
+    desc = (repo.description or "").replace("\r", " ").replace("\n", " ").strip()
+    if desc:
+        parts.append(f"{repo.name} 是 {lang} 开源项目，主打「{desc}」")
+    else:
+        parts.append(f"{repo.name} 是 {lang} 方向的开源项目")
+
+    # ② 增长段：阶段 + 涨速 + 加速度方向
     stage_text = {
         "early": "处于增长早期",
         "mid_early": "处于中早期增长",
@@ -433,29 +442,29 @@ def generate_explanation(
         "late": "接近增长天花板",
         "saturated": "增长已饱和",
     }.get(stage_label, "")
-    if stage_text:
-        reasons.append(stage_text)
-
-    if scores["vel"] > 70:
-        reasons.append(f"本周涨速 {vel_this_week:.0f} star/天")
-    elif scores["vel"] > 40:
-        reasons.append(f"本周涨速 {vel_this_week:.0f} star/天")
-
+    seg2 = stage_text or f"目前 {repo.stars} stars"
+    if scores["vel"] > 40:
+        vel_txt = f"{vel_this_week:.0f}" if vel_this_week >= 10 else f"{vel_this_week:.1f}"
+        seg2 += f"，本周涨速 {vel_txt} star/天"
     if scores["acc"] > 70:
-        reasons.append("涨速在加快")
+        seg2 += "，涨速在加快"
     elif scores["acc"] < 30:
-        reasons.append("涨速在放缓")
+        seg2 += "，涨速已放缓"
+    parts.append(seg2)
 
+    # ③ 质量段：社区健康 + 元数据 + 活跃度
+    quality: list[str] = []
     if scores["health"] > 70:
-        reasons.append(f"社区健康（forks={repo.forks}, issues={repo.open_issues}）")
-
+        ratio = repo.forks / max(repo.stars, 1) * 100
+        quality.append(f"社区健康（fork/star 比 {ratio:.1f}%，{repo.open_issues} 个 open issue）")
     if scores["signal"] >= 85:
-        reasons.append("元数据完整")
+        quality.append("项目元数据完整")
+    if scores["fresh"] > 70:
+        quality.append("开发活跃")
+    if quality:
+        parts.append("、".join(quality))
 
-    if not reasons:
-        reasons.append(f"{repo.stars} stars，{repo.language or '未知语言'}")
-
-    return "；".join(reasons[:3]) + "。"
+    return "；".join(parts[:3]) + "。"
 
 
 # ===== 主入口 =====
