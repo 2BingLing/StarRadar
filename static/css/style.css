@@ -1004,11 +1004,11 @@ h1 em { color: var(--blue); font-style: normal; }
 #ghConn.account em { font-style: normal; font-size: 12.5px; font-weight: 600; color: var(--muted); max-width: 96px; overflow: hidden; text-overflow: ellipsis; white-space: nowrap; }
 #ghConn.account:hover { border-color: #1677ff4d; background: #f8fbff; }
 #ghConn.account:hover em { color: var(--ink); }
-#ghConn.account.login { background: linear-gradient(135deg, #1677ff 0%, #3f8bff 100%); border-color: transparent; padding: 6px 18px; box-shadow: 0 6px 16px #1677ff38; }
+#ghConn.account.login { background: linear-gradient(135deg, #247FE0 0%, #1F6FD8 100%); border-color: transparent; padding: 6px 18px; box-shadow: 0 3px 8px rgba(31, 111, 216, 0.16); }
 #ghConn.account.login .acc-ico { display: inline-flex; align-items: center; }
 #ghConn.account.login svg { width: 15px; height: 15px; color: #fff; }
 #ghConn.account.login em { color: #fff; }
-#ghConn.account.login:hover { background: linear-gradient(135deg, #0f6ae0 0%, #3f8bff 100%); box-shadow: 0 8px 20px #1677ff4d; }
+#ghConn.account.login:hover { background: #1859C0; box-shadow: 0 5px 12px rgba(31, 111, 216, 0.22); }
 
 .gh-overlay {
   position: fixed;
