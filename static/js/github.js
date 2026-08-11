@@ -254,8 +254,12 @@
     }
     ghTitle.textContent = "连接 GitHub";
     var clientId = getClientId();
+    var isPersonal = location.search.indexOf("personal=1") !== -1;
     ghBody.innerHTML =
       '<button class="gh-btn primary gh-big" id="ghDevice">通过 GitHub 登录</button>' +
+      (isPersonal
+        ? '<button class="gh-btn ghost gh-big" id="ghLocalToken" style="margin-top:8px">使用本地 Token（.env）</button>'
+        : "") +
       "<div id='ghDeviceBody'></div>" +
       (clientId ? "" :
         '<details class="gh-cid">' +
@@ -285,6 +289,26 @@
     });
     var dev = document.querySelector("#ghDevice");
     if (dev) dev.addEventListener("click", startOAuthOrDevice);
+    var localToken = document.querySelector("#ghLocalToken");
+    if (localToken) localToken.addEventListener("click", function () {
+      fetch("/api/gh_token", {
+        method: "POST",
+        headers: { "Content-Type": "application/json" },
+        body: JSON.stringify({ use_local: true }),
+      }).then(function (r) { return r.json(); })
+        .then(function (d) {
+          if (!d || !d.ok) throw new Error(d && d.error ? d.error : "failed");
+          try {
+            localStorage.setItem(TOKEN_KEY, d.token);
+            localStorage.setItem(USER_KEY, JSON.stringify({ login: d.login, avatar_url: "" }));
+          } catch (e) {}
+          notify("已用本地 Token 登录：" + d.login);
+          setTimeout(function () { location.reload(); }, 800);
+        })
+        .catch(function (e) {
+          notify("本地 Token 登录失败：" + (e.message || "请确认 .env 已配置 GITHUB_TOKEN"));
+        });
+    });
     document.querySelector("#ghConnect").addEventListener("click", function () {
       var pat = document.querySelector("#ghPat").value.trim();
       if (!pat) { notify("请先粘贴 Token"); return; }

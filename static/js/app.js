@@ -11,6 +11,9 @@
     trends: "data/trends.json",
     picks: "data/picks.json",
   };
+  // 个人特化模式（?personal=1）：同一套 UI，数据源切换为本地后端 /api/personal/*
+  var IS_PERSONAL = location.search.indexOf("personal=1") !== -1;
+  var PERSONAL_MISSING = { potential: false, trends: false };
   var TAB_LABEL = { potential: "潜力雷达", trends: "每周趋势", picks: "我的收藏" };
   var STAGE_LABELS = {
     early: "早期", mid_early: "中早期", mid_late: "中后期",
@@ -402,15 +405,27 @@
   function loadAll(cb) {
     var pending = 3;
     TABS.forEach(function (key) {
-      fetchJson(DATA_FILES[key])
+      var url = IS_PERSONAL
+        ? "/api/personal/" + (key === "trends" ? "trends" : "scores")
+        : DATA_FILES[key];
+      fetchJson(url)
         .then(function (d) {
-          data[key] = key === "trends"
-            ? (d && d.weeks ? d : { weeks: [] })
-            : d;
+          if (key === "trends") {
+            data[key] = (d && d.weeks) ? d : { weeks: [] };
+          } else if (IS_PERSONAL) {
+            data[key] = (d && Array.isArray(d.items)) ? d.items : [];
+          } else {
+            data[key] = d;
+          }
         })
         .catch(function () {
-          console.warn("[StarRadar] " + key + ".json 加载失败，降级到示例数据");
-          data[key] = (window.SAMPLE_DATA && window.SAMPLE_DATA[key]) || [];
+          if (IS_PERSONAL) {
+            PERSONAL_MISSING[key] = true;
+            data[key] = key === "trends" ? { weeks: [] } : [];
+          } else {
+            console.warn("[StarRadar] " + key + ".json 加载失败，降级到示例数据");
+            data[key] = (window.SAMPLE_DATA && window.SAMPLE_DATA[key]) || [];
+          }
         })
         .then(function () {
           pending--;
@@ -1098,6 +1113,28 @@
     cardsEl.classList.remove("trends");
     var items = itemsForTab();
     if (!items.length) {
+      if (IS_PERSONAL && tab !== "trends") {
+        cardsEl.innerHTML =
+          '<div class="load-error"><svg width="36" height="36" viewBox="0 0 36 36" fill="none">' +
+          '<circle cx="18" cy="18" r="15" stroke="currentColor" stroke-width="1.4" opacity="0.45"/>' +
+          '<path d="M18 10v8.5" stroke="currentColor" stroke-width="1.6" stroke-linecap="round"/>' +
+          '<circle cx="18" cy="24.5" r="1.3" fill="currentColor"/></svg>' +
+          "<p>个人雷达还没有数据。</p>" +
+          "<p style='font-size:12.5px;line-height:2'>① 点击右上角 GitHub 图标登录（或「使用本地 Token」）<br>" +
+          "② 运行 <code>python src/main.py --personal</code> 生成你的专属雷达<br>" +
+          "③ 之后每次打开本页都是为你定制的内容，已看项目自动排除</p>" +
+          '<button class="retry-btn" type="button" id="pOpenLogin">登录 GitHub</button> ' +
+          '<button class="retry-btn" type="button">重新加载</button></div>';
+        var lg = cardsEl.querySelector("#pOpenLogin");
+        if (lg) lg.addEventListener("click", function () {
+          if (typeof window.GH !== "undefined") window.GH.openPanel();
+        });
+        var rt = cardsEl.querySelectorAll(".retry-btn");
+        Array.prototype.forEach.call(rt, function (b) {
+          if (b.id !== "pOpenLogin") b.addEventListener("click", function () { init(); });
+        });
+        return;
+      }
       cardsEl.innerHTML =
         '<div class="load-error"><svg width="36" height="36" viewBox="0 0 36 36" fill="none">' +
         '<circle cx="18" cy="18" r="15" stroke="currentColor" stroke-width="1.4" opacity="0.45"/>' +
@@ -1139,11 +1176,32 @@
     document.querySelector('[data-view="grid"]').classList.add("active");
     document.querySelector('[data-view="list"]').classList.remove("active");
     syncSectionHead();
+    if (IS_PERSONAL) applyPersonalUI();
     loadAll(function () {
       renderHero();
       renderCards();
       fillLangFilter();
     });
+  }
+
+  // 个人模式 UI：hero 文案 / 顶部导航标识（其余界面与公版完全一致）
+  function applyPersonalUI() {
+    var eb = document.querySelector(".eyebrow");
+    if (eb) eb.innerHTML = "<i></i> Personal signal · <span id='sigDate'>—</span>";
+    var h1 = document.querySelector(".hero h1");
+    if (h1) h1.innerHTML = "只为你发现<br><em>下一颗明星。</em>";
+    var hp = document.querySelector(".hero p");
+    if (hp) {
+      hp.innerHTML = "基于你的加星、仓库与行为画像，专门搜索并解读——每个人看到的雷达都不一样。" +
+        '<strong id="sigCount" style="display:none">0</strong>';
+    }
+    var brand = document.querySelector(".topbar .brand small");
+    if (brand) brand.textContent = "个人特化雷达";
+    var plink = document.querySelector("#pLink");
+    if (plink) {
+      plink.setAttribute("href", "index.html");
+      plink.textContent = "返回公有版";
+    }
   }
 
   function fillLangFilter() {

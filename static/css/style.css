@@ -332,15 +332,6 @@ h1 em { color: var(--blue); font-style: normal; }
   background: #f2f6fb;
 }
 .card-tags b { color: var(--blue); font-weight: 600; background: var(--pale); }
-/* ===== 个人特化页（personal.html） ===== */
-.card-desc { margin: 6px 0 0; font-size: 12.5px; color: var(--muted); line-height: 1.7; display: -webkit-box; -webkit-line-clamp: 2; -webkit-box-orient: vertical; overflow: hidden; }
-.card-explain { margin: 10px 0 0; font-size: 12.5px; line-height: 1.85; color: #3d556e; background: #1677ff0a; border: 1px solid #1677ff26; border-radius: 12px; padding: 10px 13px; }
-.p-dims { display: flex; gap: 12px; margin-top: 12px; flex-wrap: wrap; }
-.p-dims .pd { display: flex; align-items: center; gap: 5px; font-size: 11px; color: var(--muted); }
-.p-dims .pd b { font-size: 10.5px; color: var(--faint); }
-.p-dims .pd i { width: 46px; height: 5px; border-radius: 3px; background: var(--line); overflow: hidden; display: inline-block; }
-.p-dims .pd em { display: block; height: 100%; background: var(--blue); border-radius: 3px; }
-.p-score { color: var(--blue); font-weight: 700; font-size: 12.5px; }
 .card p {
   display: -webkit-box;
   min-height: 45px;

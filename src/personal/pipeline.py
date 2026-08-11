@@ -28,6 +28,8 @@ logger = logging.getLogger(__name__)
 
 PERSONAL_DIR = Path(__file__).resolve().parent.parent.parent / "data" / "personal"
 SCORES_PATH = PERSONAL_DIR / "scores.json"
+TRENDS_PATH = PERSONAL_DIR / "trends.json"
+SNAPSHOT_PATH = PERSONAL_DIR / "snapshots.json"
 TOKEN_PATH = PROFILE_DIR / "gh_token.json"
 
 STAR_BUCKETS: list[tuple[int, int]] = [
@@ -301,7 +303,7 @@ def run_personal_pipeline() -> Path:
         })
 
     # ⑥ 记录已看 + 持久化
-    print("[6/6] 更新画像 · 已看项目记录")
+    print("[6/6] 更新画像 · 已看项目记录 + 周榜快照")
     PERSONAL_DIR.mkdir(parents=True, exist_ok=True)
     SCORES_PATH.write_text(
         json.dumps({"generated_at": now_iso, "login": login["login"], "items": out},
@@ -309,8 +311,9 @@ def run_personal_pipeline() -> Path:
         encoding="utf-8",
     )
     save_seen(profile, [r.full_name for r, _ in scored], now)
+    build_personal_trends([(r, ps) for r, ps in scored[:FINAL_LIMIT]], now)
     print(f"  ✓ 已输出 {SCORES_PATH}（{len(out)} 个项目）")
-    print(f"\n  查看：python src/main.py --serve → 打开 http://127.0.0.1:8970/personal.html")
+    print(f"\n  查看：python src/main.py --serve → 打开 http://127.0.0.1:8970/?personal=1")
     return SCORES_PATH
 
 
@@ -337,8 +340,68 @@ def build_profile_text(profile: dict, seed_topics: Counter) -> str:
     return "\n".join(parts)
 
 
+def build_personal_trends(scored: list, now: datetime) -> None:
+    """个人周榜：对比上次快照 → 热度（增星降序）+ 新星 → 写 data/personal/trends.json。
+    首次运行只有快照（前端显示「运行两周后生成周榜」），此后每次运行生成当周对比。
+    """
+    current = {
+        r.full_name: {
+            "stars": r.stars,
+            "topics": r.topics or [],
+            "language": r.language,
+        }
+        for r, _ in scored
+    }
+    prev: dict = {}
+    if SNAPSHOT_PATH.is_file():
+        try:
+            prev = json.loads(SNAPSHOT_PATH.read_text(encoding="utf-8"))
+        except (json.JSONDecodeError, OSError):
+            prev = {}
+
+    hot_top: list[dict] = []
+    new_stars: list[dict] = []
+    for name, meta in current.items():
+        old = prev.get(name, {}).get("stars")
+        item = {
+            "repo": name,
+            "stars": meta["stars"],
+            "topics": meta["topics"][:8],
+            "language": meta["language"],
+        }
+        if old is None:
+            new_stars.append(item)
+        else:
+            delta = meta["stars"] - old
+            if delta > 0:
+                hot_top.append({**item, "delta": delta})
+    hot_top.sort(key=lambda x: -x["delta"])
+    new_stars.sort(key=lambda x: -x["stars"])
+
+    week_key = now.strftime("%Y-W%W")
+    monday = now - timedelta(days=now.weekday())
+    week_range = f"{monday.strftime('%Y.%m.%d')} — {(monday + timedelta(days=6)).strftime('%m.%d')}"
+
+    report = {
+        "weeks": [{
+            "week": week_key,
+            "range": week_range,
+            "generated_at": now.isoformat(timespec="seconds"),
+            "new_stars": new_stars[:10],
+            "hot_top": hot_top[:10],
+            "hot_topics": [],
+            "my_follows": [],
+        }],
+    }
+    TRENDS_PATH.write_text(json.dumps(report, ensure_ascii=False, indent=2), encoding="utf-8")
+    SNAPSHOT_PATH.write_text(json.dumps(current, ensure_ascii=False), encoding="utf-8")
+    if not prev:
+        print("  → 个人周榜：首次快照已存（下次运行生成对比周榜）")
+    else:
+        print(f"  → 个人周榜：新星 {len(new_stars)} · 热度 {len(hot_top)}（已写 trends.json）")
+
+
 def save_seen(profile: dict, new_seen: list[str], now: datetime) -> None:
-    """已看项目写回 interests.json（带时间戳，21 天后过期）。"""
     try:
         from src.profile.interest_model import load_profile, save_profile
         ip = load_profile()

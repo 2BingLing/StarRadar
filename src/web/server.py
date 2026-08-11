@@ -126,6 +126,8 @@ class StarRadarHandler(BaseHTTPRequestHandler):
             self._personal_status()
         elif path == "/api/personal/scores":
             self._personal_scores()
+        elif path == "/api/personal/trends":
+            self._personal_trends()
         else:
             self._serve_static(path)
 
@@ -486,6 +488,24 @@ class StarRadarHandler(BaseHTTPRequestHandler):
             data = scores.read_text(encoding="utf-8")
         except OSError:
             self._json(500, {"ok": False, "error": "read failed"})
+            return
+        self.send_response(200)
+        self.send_header("Content-Type", "application/json; charset=utf-8")
+        self.send_header("Content-Length", str(len(data.encode("utf-8"))))
+        self._cors()
+        self.end_headers()
+        self.wfile.write(data.encode("utf-8"))
+
+    def _personal_trends(self) -> None:
+        """GET /api/personal/trends：个人版每周趋势（未生成时返回空周报）。"""
+        trends = Path(__file__).resolve().parent.parent.parent / "data" / "personal" / "trends.json"
+        if not trends.is_file():
+            self._json(200, {"weeks": []})
+            return
+        try:
+            data = trends.read_text(encoding="utf-8")
+        except OSError:
+            self._json(200, {"weeks": []})
             return
         self.send_response(200)
         self.send_header("Content-Type", "application/json; charset=utf-8")
