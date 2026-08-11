@@ -122,6 +122,10 @@ class StarRadarHandler(BaseHTTPRequestHandler):
             self._oauth_callback(query)
         elif path == "/api/oauth/ticket":
             self._oauth_ticket(query)
+        elif path == "/api/personal/status":
+            self._personal_status()
+        elif path == "/api/personal/scores":
+            self._personal_scores()
         else:
             self._serve_static(path)
 
@@ -143,6 +147,9 @@ class StarRadarHandler(BaseHTTPRequestHandler):
                 need=("client_id", "device_code", "grant_type"),
                 optional=(),
             )
+            return
+        if path == "/api/gh_token":
+            self._save_gh_token()
             return
         if path != "/api/events":
             self._bad("not found")
@@ -376,6 +383,79 @@ class StarRadarHandler(BaseHTTPRequestHandler):
             self._json(404, {"ok": False, "error": "ticket expired"})
             return
         self._json(200, {"ok": True, "token": token})
+
+    # ===== 个人特化版（本地后端，数据不公开） =====
+
+    def _save_gh_token(self) -> None:
+        """POST /api/gh_token：浏览器 GitHub 登录成功后，把 token 交给本地后端。
+        存 data/profile/gh_token.json（已被 .gitignore 忽略，绝不上传）。
+        """
+        try:
+            length = int(self.headers.get("Content-Length") or 0)
+        except (TypeError, ValueError):
+            self._bad("bad content-length")
+            return
+        if length <= 0 or length > 1 << 16:
+            self._bad("payload too large")
+            return
+        try:
+            payload = json.loads(self.rfile.read(length).decode("utf-8"))
+        except (json.JSONDecodeError, UnicodeDecodeError):
+            self._bad("invalid json")
+            return
+        token = str(payload.get("token") or "").strip()
+        login = str(payload.get("login") or "").strip()[:64]
+        if not token or not login:
+            self._bad("missing token/login")
+            return
+        from config import PROFILE_DIR
+        try:
+            (PROFILE_DIR / "gh_token.json").write_text(
+                json.dumps({"login": login, "token": token}, ensure_ascii=False),
+                encoding="utf-8",
+            )
+        except OSError:
+            self._json(500, {"ok": False, "error": "write failed"})
+            return
+        self._json(200, {"ok": True, "saved": login})
+
+    def _personal_status(self) -> None:
+        """GET /api/personal/status：个人版状态（登录 / LLM / 数据是否就绪）。"""
+        from config import PROFILE_DIR
+        gh = PROFILE_DIR / "gh_token.json"
+        scores = Path(__file__).resolve().parent.parent.parent / "data" / "personal" / "scores.json"
+        logged = gh.is_file()
+        login = ""
+        try:
+            if logged:
+                login = json.loads(gh.read_text(encoding="utf-8")).get("login", "")
+        except (json.JSONDecodeError, OSError):
+            pass
+        self._json(200, {
+            "ok": True,
+            "logged_in": logged,
+            "login": login,
+            "llm_configured": bool(settings.llm.api_key),
+            "data_exists": scores.is_file(),
+        })
+
+    def _personal_scores(self) -> None:
+        """GET /api/personal/scores：返回个人版雷达数据（仅本机可访问）。"""
+        scores = Path(__file__).resolve().parent.parent.parent / "data" / "personal" / "scores.json"
+        if not scores.is_file():
+            self._json(404, {"ok": False, "error": "personal data not generated"})
+            return
+        try:
+            data = scores.read_text(encoding="utf-8")
+        except OSError:
+            self._json(500, {"ok": False, "error": "read failed"})
+            return
+        self.send_response(200)
+        self.send_header("Content-Type", "application/json; charset=utf-8")
+        self.send_header("Content-Length", str(len(data.encode("utf-8"))))
+        self._cors()
+        self.end_headers()
+        self.wfile.write(data.encode("utf-8"))
 
     # ===== 静态文件 =====
 

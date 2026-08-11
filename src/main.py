@@ -709,6 +709,11 @@ if __name__ == "__main__":
         action="store_true",
         help="生成每周趋势周报（对比本周 vs 上周快照）→ 写 static/data/trends.json",
     )
+    parser.add_argument(
+        "--personal",
+        action="store_true",
+        help="运行个人特化雷达管道（种子画像 → 画像驱动搜索 → 评分 → 个性化解读，仅本机）",
+    )
     args = parser.parse_args()
     if args.weekly:
         setup_logging()
@@ -737,6 +742,12 @@ if __name__ == "__main__":
         print("  StarRadar · 行为档案导入")
         print("=" * 60)
         import_history(args.import_history)
+    elif args.personal:
+        setup_logging()
+        ensure_dirs()
+        from src.personal.pipeline import run_personal_pipeline
+
+        run_personal_pipeline()
         print("=" * 60)
     else:
         main()

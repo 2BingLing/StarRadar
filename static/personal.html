@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="zh">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>StarRadar · 个人特化雷达</title>
+<link rel="icon" href="favicon.png">
+<link rel="stylesheet" href="css/style.css">
+<style>
+  .p-top { display: flex; align-items: center; gap: 12px; padding: 14px 0; border-bottom: 1px solid var(--line); margin-bottom: 22px; }
+  .p-top img { width: 34px; height: 34px; }
+  .p-top b { font-size: 16px; color: var(--ink); }
+  .p-top small { color: var(--faint); font-size: 11.5px; }
+  .p-top .sp { flex: 1; }
+  .p-back { color: var(--blue); text-decoration: none; font-size: 13px; }
+  .p-status { border: 1px solid var(--line); border-radius: 16px; background: #fff; padding: 18px 20px; margin-bottom: 22px; }
+  .p-status h3 { margin: 0 0 12px; font-size: 15px; color: var(--ink); }
+  .p-status-grid { display: grid; grid-template-columns: 1fr 1.15fr; gap: 18px; }
+  .p-row { display: flex; align-items: center; gap: 10px; font-size: 13px; color: var(--muted); padding: 5px 0; }
+  .p-dot { width: 8px; height: 8px; border-radius: 50%; background: #c9d6e5; flex: none; }
+  .p-dot.ok { background: var(--green); }
+  .p-dot.no { background: #ff4d4f; }
+  .p-actions { display: flex; gap: 10px; margin-top: 12px; flex-wrap: wrap; }
+  .p-note-wrap { background: #f8fbff; border: 1px dashed var(--line); border-radius: 12px; padding: 14px 16px; display: flex; align-items: center; }
+  .p-note { font-size: 12.5px; color: var(--faint); line-height: 2; margin: 0; }
+  .p-note b { color: var(--muted); }
+  .p-note code { background: #eef4fb; padding: 1px 6px; border-radius: 5px; color: #c2491e; }
+  .p-empty { text-align: center; padding: 70px 20px; color: var(--faint); font-size: 13.5px; line-height: 2; }
+  .p-empty b { color: var(--muted); }
+  .p-gen { margin-top: 6px; font-size: 12px; color: var(--faint); }
+  .p-gen code { background: #f0f5fb; padding: 2px 6px; border-radius: 5px; color: #c2491e; }
+  .cards .card { cursor: default; overflow: visible; }
+</style>
+</head>
+<body>
+
+<main class="wrap">
+  <div class="p-top">
+    <img src="starlogo.png" alt="StarRadar">
+    <div>
+      <b>个人特化雷达</b><br>
+      <small>版本 2 · 只为你搜索与解读 · 数据仅存本机</small>
+    </div>
+    <span class="sp"></span>
+    <button class="icon" id="ghConn" title="连接 GitHub"></button>
+    <a class="p-back" href="index.html">返回公有版 ↗</a>
+  </div>
+
+  <div class="p-status" id="pStatus">
+    <h3>状态</h3>
+    <div class="p-status-grid">
+      <div>
+        <div class="p-row"><span class="p-dot" id="stLogin"></span>GitHub 登录（拉取我的加星 / 仓库 + 加星 / Fork）</div>
+        <div class="p-row"><span class="p-dot" id="stLLM"></span>LLM 解读（.env 配置 LLM_API_KEY）</div>
+        <div class="p-row"><span class="p-dot" id="stData"></span>个人雷达数据（运行管道后生成）</div>
+        <div class="p-actions">
+          <button class="gh-btn primary" id="pGoLogin">通过 GitHub 登录</button>
+          <button class="gh-btn" id="pRefresh">刷新状态</button>
+        </div>
+      </div>
+      <div class="p-note-wrap"><p class="p-note" id="pHint"></p></div>
+    </div>
+  </div>
+
+  <div class="cards" id="pCards">
+    <div class="p-empty">
+      <b>还没有你的专属雷达。</b><br>
+      完成两步即可：<br>
+      1. 点击上方「通过 GitHub 登录」（跳转授权一次）<br>
+      2. 在项目目录运行 <code>python src/main.py --personal</code><br>
+      <span class="p-gen">管道会拉取你的加星 / 仓库主题 → 画像驱动搜索 → 为你解读 → 生成数据。<br>
+      之后每次打开本页都是为你定制的内容，且已看项目自动排除，每天不重样。</span>
+    </div>
+  </div>
+</main>
+
+<div class="toast" id="toast"></div>
+
+<!-- ===== GitHub 连接面板（登录 / 加星 / Fork） ===== -->
+<div class="gh-overlay" id="ghPanel" aria-hidden="true">
+  <div class="gh-box" role="dialog" aria-modal="true">
+    <button class="detail-close" id="ghClose" title="关闭">×</button>
+    <div class="gh-head">
+      <span class="gh-ico" aria-hidden="true">
+        <svg viewBox="0 0 24 24" fill="currentColor" width="22" height="22"><path d="M12 2C6.5 2 2 6.6 2 12.2c0 4.5 2.9 8.3 6.8 9.7.5.1.7-.2.7-.5v-1.7c-2.8.6-3.4-1.2-3.4-1.2-.5-1.2-1.1-1.5-1.1-1.5-.9-.6.1-.6.1-.6 1 .1 1.5 1 1.5 1 .9 1.6 2.4 1.1 3 .9.1-.7.4-1.1.6-1.4-2.2-.3-4.6-1.1-4.6-5 0-1.1.4-2 1-2.7-.1-.3-.4-1.3.1-2.7 0 0 .8-.3 2.7 1a9.4 9.4 0 0 1 5 0c1.9-1.3 2.7-1 2.7-1 .5 1.4.2 2.4.1 2.7.6.7 1 1.6 1 2.7 0 3.9-2.4 4.7-4.6 5 .4.3.7.9.7 1.9v2.8c0 .3.2.6.7.5 4-1.4 6.8-5.2 6.8-9.7C22 6.6 17.5 2 12 2z"/></svg>
+      </span>
+      <div>
+        <h3 id="ghTitle">连接 GitHub</h3>
+        <p>解锁一键加星 / Fork / 克隆 · 登录一次，数据交给本地后端</p>
+      </div>
+    </div>
+    <div class="gh-body" id="ghBody"></div>
+    <div class="gh-foot" id="ghFoot"></div>
+  </div>
+</div>
+
+<!-- ===== 随行笔记 ===== -->
+<div class="gh-overlay" id="notePanel" aria-hidden="true">
+  <div class="gh-box" role="dialog" aria-modal="true">
+    <button class="detail-close" id="noteClose" title="关闭">×</button>
+    <div class="gh-head">
+      <span class="gh-ico" aria-hidden="true">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" width="22" height="22"><path d="M12 20h9"/><path d="M16.5 3.5a2.1 2.1 0 0 1 3 3L7 19l-4 1 1-4z"/></svg>
+      </span>
+      <div>
+        <h3 id="noteTitle">随行笔记</h3>
+        <p>记下为什么关注它 · 数据只存本机浏览器</p>
+      </div>
+    </div>
+    <div class="note-body">
+      <textarea id="noteText" rows="5" placeholder="这个项目可以解决我的…"></textarea>
+      <small class="note-date" id="noteDate"></small>
+    </div>
+    <div class="gh-foot">
+      <button class="gh-btn ghost" id="noteDel" hidden>删除</button>
+      <span class="gh-spacer"></span>
+      <button class="gh-btn ghost" id="noteCancel">取消</button>
+      <button class="gh-btn primary" id="noteSave">保存笔记</button>
+    </div>
+  </div>
+</div>
+
+<script src="js/github.js"></script>
+<script src="js/personal.js"></script>
+</body>
+</html>

@@ -135,6 +135,67 @@ def summarize_repo(repo: Repository, score: PotentialScore) -> str:
     return fallback
 
 
+def summarize_repo_personal(repo: Repository, score: PotentialScore, profile_text: str) -> str:
+    """个人特化解读：prompt 注入用户画像（兴趣主题/语言/加星主题）。
+
+    解读角度贴合个人：「为什么适合你」而非泛化的「为什么值得关注」。
+    失败时返回规则文本（与 summarize_repo 相同的降级策略）。
+    """
+    fallback = score.explanation
+
+    if not settings.llm.api_key:
+        return fallback
+
+    base_url = settings.llm.base_url or _infer_base_url(settings.llm.model)
+    try:
+        from openai import OpenAI
+    except ImportError:
+        return fallback
+
+    system = (
+        "你是 StarRadar 的个人专属项目顾问。用户请你在 GitHub 潜在项目中"
+        "挑选与他高度契合的一个，用中文写一段 60-90 字的推荐解读。"
+        "必须结合用户画像，解释这个项目为什么适合他（兴趣、语言、主题契合点），"
+        "再给一句项目本身的亮点。语气自然，不要使用列表，不要出现「为您」这类翻译腔。"
+    )
+    user = (
+        f"用户画像：\n{profile_text}\n\n"
+        f"候选项目：{repo.full_name}（{repo.stars} 星，{repo.language or '未知语言'}）\n"
+        f"描述：{repo.description or '无'}\n"
+        f"主题：{'、'.join(repo.topics or []) or '无'}\n"
+        f"潜力分：{score.score:.0f}（速度 {score.breakdown.vel} / 加速度 {score.breakdown.acc} / "
+        f"健康 {score.breakdown.health} / 新鲜 {score.breakdown.fresh} / 信号 {score.breakdown.signal}）\n\n"
+        "输出：只输出解读正文，不要任何前缀。"
+    )
+
+    last_err: Exception | None = None
+    for attempt in (1, 2, 3):
+        try:
+            client = OpenAI(api_key=settings.llm.api_key, base_url=base_url)
+            resp = client.chat.completions.create(
+                model=settings.llm.model,
+                messages=[
+                    {"role": "system", "content": system},
+                    {"role": "user", "content": user},
+                ],
+                max_tokens=settings.llm.max_tokens_per_summary,
+                temperature=0.6,
+            )
+            summary = (resp.choices[0].message.content or "").strip()
+            if not summary:
+                return fallback
+            if len(summary) >= 2 and summary[0] in "\"'" and summary[-1] == summary[0]:
+                summary = summary[1:-1].strip()
+            return summary
+        except Exception as e:  # noqa: BLE001
+            last_err = e
+            logger.warning("个人解读失败 (%s) 第 %d 次: %s", repo.full_name, attempt, e)
+            if attempt < 3:
+                time.sleep(1.5 * attempt)
+    logger.warning("个人解读失败 (%s): %s，规则文本降级", repo.full_name, last_err)
+    return fallback
+
+
 def summarize_repo_simple(repo: Repository) -> str:
     """为不在评分池的项目（如热门榜采集）生成 1-2 句中文趋势解读。
 

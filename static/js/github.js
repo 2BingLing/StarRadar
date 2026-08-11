@@ -328,9 +328,26 @@
       window.dispatchEvent(new CustomEvent("sr:gh-login",
         { detail: { login: u.login, avatar_url: u.avatar_url || "" } }));
     } catch (e) {}
+    // 个人特化版：登录 token 上交给本地后端（供 --personal 管道拉取加星/仓库）
+    handoffTokenToBackend(u.login);
     loadStarredAll().then(function () {
       notify("已连接 " + u.login + "，同步 " + Object.keys(starred).length + " 个星标");
     });
+  }
+
+  function handoffTokenToBackend(login) {
+    var t = null;
+    try { t = localStorage.getItem(TOKEN_KEY); } catch (e) {}
+    if (!t || !login) return;
+    fetch("/api/gh_token", {
+      method: "POST",
+      headers: { "Content-Type": "application/json" },
+      body: JSON.stringify({ login: login, token: t }),
+    }).then(function (r) { return r.json(); })
+      .then(function (d) {
+        if (d && d.ok) notify("登录已同步到本地后端（个人版可用）");
+      })
+      .catch(function () {});
   }
 
   // ===== OAuth Device Flow（一键登录；client_id 公开值，token 只存本机） =====
