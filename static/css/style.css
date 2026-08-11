@@ -1149,6 +1149,10 @@ h1 em { color: var(--blue); font-style: normal; }
 #noteText:focus { outline: none; border-color: #1677ff; background: #fff; box-shadow: 0 0 0 3px #1677ff1f; }
 .note-date { font-size: 11px; color: var(--faint); }
 
+/* Fork 确认弹窗 */
+.fork-text { font-size: 13.5px; line-height: 1.7; color: var(--ink); padding: 4px 0; }
+.fork-text b { color: #1677ff; font-weight: 600; word-break: break-all; }
+
 /* ===== 操作栏（卡片 + 详情页） ===== */
 .opbar {
   display: flex;

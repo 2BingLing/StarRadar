@@ -85,8 +85,16 @@ class StarRadarHandler(BaseHTTPRequestHandler):
         logger.info("[%s] %s", self.address_string(), fmt % args)
 
     def _cors(self) -> None:
-        self.send_header("Access-Control-Allow-Origin", "*")
-        self.send_header("Access-Control-Allow-Methods", "GET, POST, OPTIONS")
+        """CORS 响应头：配置了 CORS_ORIGINS 白名单则按 Origin 校验，否则全放开。"""
+        origins = settings.cors_origins
+        if origins:
+            origin = self.headers.get("Origin") or ""
+            if origin in origins:
+                self.send_header("Access-Control-Allow-Origin", origin)
+                self.send_header("Vary", "Origin")
+        else:
+            self.send_header("Access-Control-Allow-Origin", "*")
+        self.send_header("Access-Control-Allow-Methods", "GET, POST, DELETE, OPTIONS")
         self.send_header("Access-Control-Allow-Headers", "Content-Type")
 
     def _json(self, code: int, payload: dict) -> None:
@@ -260,6 +268,7 @@ class StarRadarHandler(BaseHTTPRequestHandler):
             )
             with urlopen(req, timeout=10) as resp:
                 data = resp.read(1 << 16)
+                logger.info("gh proxy %s → %s: %s", url, resp.status, data[:160])
         except Exception as exc:  # noqa: BLE001
             logger.warning("gh proxy %s failed: %s", url, exc)
             self._json(502, {"ok": False, "error": "upstream failed"})
@@ -316,6 +325,17 @@ class StarRadarHandler(BaseHTTPRequestHandler):
         self.send_header("Content-Length", "0")
         self.end_headers()
 
+    def _build_redirect_uri(self) -> str:
+        """跳转回调地址：OAUTH_REDIRECT_BASE 配置优先（服务器部署铺垫）；
+        否则按 Host 推导，并把 localhost 规范化为 127.0.0.1（GitHub 推荐的 loopback 字面量，
+        避免用户用 localhost 打开时与注册的 127.0.0.1 回调不匹配）。"""
+        base = settings.oauth.redirect_base
+        if base:
+            return base.rstrip("/") + "/api/oauth/callback"
+        host = self.headers.get("Host") or "127.0.0.1:8970"
+        host = host.replace("localhost", "127.0.0.1")
+        return f"http://{host}/api/oauth/callback"
+
     def _oauth_start(self, query: dict) -> None:
         """GET /api/oauth/start → 302 跳 GitHub 授权页；?probe=1 探测是否已配置。"""
         if query.get("probe", [""])[0] == "1":
@@ -324,8 +344,7 @@ class StarRadarHandler(BaseHTTPRequestHandler):
         if not _oauth_configured():
             self._json(400, {"ok": False, "error": "oauth not configured"})
             return
-        host = self.headers.get("Host") or "127.0.0.1:8970"
-        redirect_uri = f"http://{host}/api/oauth/callback"
+        redirect_uri = self._build_redirect_uri()
         state = secrets.token_urlsafe(16)
         with _oauth_lock:
             _oauth_states[state] = (time.time(), redirect_uri)
@@ -557,9 +576,59 @@ class StarRadarHandler(BaseHTTPRequestHandler):
         self.wfile.write(body)
 
 
+def _bind_server(host: str, port: int) -> ThreadingHTTPServer:
+    """绑定端口并启动 HTTP server。
+
+    Windows 下必须显式 SO_EXCLUSIVEADDRUSE 独占绑定——否则多个 --serve 实例
+    会同时监听同一端口、请求随机分发（设备流/行为上报随机 502），这是真实踩过的坑。
+    """
+    import socket
+
+    sock = socket.socket(socket.AF_INET, socket.SOCK_STREAM)
+    if hasattr(socket, "SO_EXCLUSIVEADDRUSE"):  # Windows only
+        sock.setsockopt(socket.SOL_SOCKET, socket.SO_EXCLUSIVEADDRUSE, 1)
+    try:
+        sock.bind((host, port))
+    except OSError as exc:
+        sock.close()
+        print(f"  ✗ 端口 {port} 已被占用——可能已有 StarRadar 在运行。")
+        print("    请先关闭旧实例（或换端口：python src/main.py --serve --port 8971）")
+        print("    若旧进程残留：任务管理器结束 python.exe 后重试")
+        raise SystemExit(1) from exc
+    httpd = ThreadingHTTPServer((host, port), StarRadarHandler, bind_and_activate=False)
+    httpd.socket.close()  # 丢弃内部未绑定 socket，替换为已独占绑定的
+    httpd.socket = sock
+    httpd.server_activate()
+    return httpd
+
+
+def _tls_self_check() -> None:
+    """启动时 HTTPS 自检：当前 Python 环境无法访问 HTTPS 时提前警告。
+
+    真实案例：conda 环境 Python 3.10 + OpenSSL 3.6 组合 TLS 全坏（ASN1:
+    NOT_ENOUGH_DATA），所有 HTTPS 请求失败——server 转发 GitHub 全部 502，
+    设备流/跳转登录/采集全部静默不可用，且极难排查。
+    """
+    from urllib.request import Request, urlopen
+
+    try:
+        with urlopen(
+            Request("https://api.github.com", headers={"User-Agent": "StarRadar"}),
+            timeout=5,
+        ) as resp:
+            resp.read(64)
+            return
+    except Exception as exc:  # noqa: BLE001
+        print("  ⚠️ HTTPS 自检失败——当前 Python 环境无法访问 HTTPS：")
+        print(f"    {type(exc).__name__}: {exc}")
+        print("    登录（设备流/跳转）与 GitHub API 转发将不可用。")
+        print("    建议：conda deactivate 后用系统 Python 运行，或升级环境：conda install python=3.12")
+
+
 def serve(*, port: int = 8970, host: str = "127.0.0.1") -> None:
     logging.basicConfig(level=logging.INFO, format="%(asctime)s %(message)s")
-    httpd = ThreadingHTTPServer((host, port), StarRadarHandler)
+    _tls_self_check()
+    httpd = _bind_server(host, port)
     print(f"StarRadar 服务已启动 → http://{host}:{port}/")
     print(f"  静态站点：{STATIC_DIR}")
     print(f"  行为信号：POST /api/events（memory.db 落库）")

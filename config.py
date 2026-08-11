@@ -38,11 +38,25 @@ class LLMConfig:
     max_tokens_per_summary: int = 300
 
 
+# 内置默认 OAuth App Client ID（公开值，非 Secret——设备流只需 client_id，克隆者零配置）。
+# GitHub 的 secret scanning 只针对 secret 类凭证，client_id 可安全内置。
+DEFAULT_GH_CLIENT_ID = "Ov23lidxHa5chVTqVBXX"
+
+
 @dataclass
 class OAuthConfig:
-    """GitHub OAuth 跳转登录配置（环境变量，.env 可写；secret 勿入库）。"""
-    client_id: str | None = field(default_factory=lambda: os.getenv("GH_OAUTH_CLIENT_ID"))
+    """GitHub OAuth 跳转登录配置（环境变量，.env 可写；secret 勿入库）。
+
+    - client_id：.env 覆盖，否则用内置默认值（设备流零配置）
+    - client_secret：仅 .env 可配——配置后个人版升级为「跳转授权」（平常网站体验）
+    - redirect_base：未来服务器部署铺垫——指定固定回调 base（默认按 Host 推导，
+      如 http://127.0.0.1:8970），部署到公网时设为 https://你的域名
+    """
+    client_id: str = field(
+        default_factory=lambda: os.getenv("GH_OAUTH_CLIENT_ID") or DEFAULT_GH_CLIENT_ID
+    )
     client_secret: str | None = field(default_factory=lambda: os.getenv("GH_OAUTH_CLIENT_SECRET"))
+    redirect_base: str | None = field(default_factory=lambda: os.getenv("OAUTH_REDIRECT_BASE"))
 
 
 @dataclass
@@ -81,6 +95,13 @@ class Settings:
     search: SearchConfig = field(default_factory=SearchConfig)
     memory: MemoryConfig = field(default_factory=MemoryConfig)
     recommender: RecommenderConfig = field(default_factory=RecommenderConfig)
+    # CORS 白名单（逗号分隔，如 CORS_ORIGINS=https://2bingling.github.io,http://127.0.0.1:8970）。
+    # 空 = 全放开（现状，GitHub Pages 跨域上报需要）；未来部署服务器时可收紧。
+    cors_origins: list[str] = field(
+        default_factory=lambda: [
+            s.strip() for s in os.getenv("CORS_ORIGINS", "").split(",") if s.strip()
+        ]
+    )
     debug: bool = field(default_factory=lambda: os.getenv("DEBUG", "0") == "1")
 
 

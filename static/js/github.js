@@ -10,12 +10,14 @@
   var STAR_KEY = "starradar:gh_starred";
   var NOTES_KEY = "starradar:notes";
 
-  // ===== 可配置：OAuth App 注册后填入 client_id，解锁 Device Flow 方式 =====
+  // ===== OAuth App：内置默认 client_id（公开值，非 Secret，克隆者零配置） =====
+  // 设备流只需 client_id；localStorage 可覆盖（自建 App 场景）。
   var CLIENT_KEY = "starradar:gh_client_id";
+  var DEFAULT_CLIENT_ID = "Ov23lidxHa5chVTqVBXX";
   var OAUTH_CLIENT_ID = "";
   var CORS_PROXY = "https://corsproxy.io/?";
   function getClientId() {
-    try { return localStorage.getItem(CLIENT_KEY) || ""; } catch (e) { return ""; }
+    try { return localStorage.getItem(CLIENT_KEY) || DEFAULT_CLIENT_ID; } catch (e) { return DEFAULT_CLIENT_ID; }
   }
   function saveClientId(id) {
     try {
@@ -91,18 +93,56 @@
   function saveNotes() { lsSet(NOTES_KEY, notes); }
 
   // ===== GitHub API（api.github.com 支持 CORS，token 直连） =====
+  // 错误统一抛出带 status 与中文提示的 Error，操作失败时能给出明确原因
+  function githubErrMsg(status, data) {
+    if (status === 401) return "Token 无效或已过期，请重新登录";
+    if (status === 403) return "权限不足或请求被限流，请确认 Token 含 public_repo 权限";
+    if (status === 404) return "仓库不存在或无权访问";
+    return (data && data.message) || "GitHub API 错误（" + status + "）";
+  }
+  // 仓库路径分段编码：GitHub 路由 /user/starred/{owner}/{repo} 要求两个路径段，
+  // 整体 encodeURIComponent 会把 / 编成 %2F 导致路由 404（真实踩坑）
+  function fullPathEnc(fullName) {
+    return String(fullName).split("/").map(function (p) { return encodeURIComponent(p); }).join("/");
+  }
   function api(path, method, body) {
-    return fetch("https://api.github.com" + path, {
+    var hasBody = body !== undefined;
+    var headers = {
+      "Authorization": "token " + token,
+      "Accept": "application/vnd.github+json",
+      "X-GitHub-Api-Version": "2022-11-28",
+    };
+    if (hasBody) headers["Content-Type"] = "application/json";  // GitHub 要求 JSON body
+    var opts = {
       method: method || "GET",
-      headers: {
-        "Authorization": "token " + token,
-        "Accept": "application/vnd.github+json",
-        "X-GitHub-Api-Version": "2022-11-28",
-      },
-      body: body ? JSON.stringify(body) : undefined,
-    }).then(function (r) {
-      if (r.status === 204) return null;
-      return r.json().catch(function () { return null; });
+      headers: headers,
+      body: hasBody ? JSON.stringify(body) : undefined,
+    };
+    function attempt() {
+      return fetch("https://api.github.com" + path, opts).then(function (r) {
+        if (r.status === 204) return null;
+        return r.json().catch(function () { return null; }).then(function (data) {
+          if (!r.ok) {
+            var err = new Error(githubErrMsg(r.status, data));
+            err.status = r.status;
+            throw err;
+          }
+          return data;
+        });
+      });
+    }
+    return attempt().catch(function (e) {
+      var m = (method || "GET").toUpperCase();
+      // 网络层失败（TypeError: Failed to fetch）→ 幂等请求（GET/PUT/DELETE）自动重试一次
+      if (e instanceof TypeError) {
+        if (m !== "POST") {
+          return attempt().catch(function () {
+            throw new Error("网络请求失败，请检查网络后重试");
+          });
+        }
+        throw new Error("网络请求失败，请检查网络后重试");
+      }
+      throw e;
     });
   }
 
@@ -130,7 +170,7 @@
   }
 
   function starRepo(fullName) {
-    return api("/user/starred/" + encodeURIComponent(fullName), "PUT").then(function () {
+    return api("/user/starred/" + fullPathEnc(fullName), "PUT").then(function () {
       starred[fullName] = true;
       saveStarred();
       emit();
@@ -139,7 +179,7 @@
     });
   }
   function unstarRepo(fullName) {
-    return api("/user/starred/" + encodeURIComponent(fullName), "DELETE").then(function () {
+    return api("/user/starred/" + fullPathEnc(fullName), "DELETE").then(function () {
       delete starred[fullName];
       saveStarred();
       emit();
@@ -147,9 +187,14 @@
     });
   }
   function forkRepo(fullName) {
-    return api("/repos/" + encodeURIComponent(fullName) + "/forks", "POST").then(function (data) {
+    // GitHub POST 端点要求 JSON body（空 body 会返回 400 "Body should be a JSON object"）
+    return api("/repos/" + fullPathEnc(fullName) + "/forks", "POST", {}).then(function (data) {
       if (data && data.html_url) return data;
       throw new Error("fork-failed");
+    }).catch(function (e) {
+      // 422 = 已 fork 过（name already exists）→ 统一标记，前端跳我的副本
+      if (e && e.status === 422) throw new Error("fork-failed");
+      throw e;
     });
   }
 
@@ -222,7 +267,7 @@
       ghConnBtn.innerHTML = '<span class="acc-ico">' + githubLogoSVG() + '</span><em>登录</em>';
       ghConnBtn.classList.remove("connected");
       ghConnBtn.classList.add("account", "login");
-      ghConnBtn.title = "登录 GitHub（跳转授权 / 本地 Token 一键登录）";
+      ghConnBtn.title = "登录 GitHub（设备流 / 跳转授权 / 本地 Token）";
     } else {
       ghConnBtn.innerHTML = githubLogoSVG();
       ghConnBtn.classList.remove("connected", "account", "login");
@@ -275,14 +320,15 @@
     var clientId = getClientId();
     var isPersonal = location.search.indexOf("personal=1") !== -1;
     if (isPersonal) {
-      // 个人版：无 PAT、无设备流——跳转授权（已配置 OAuth）或本地 Token 一键登录
+      // 个人版：跳转授权（.env 配了 secret）→ 设备流（内置 client_id，零配置）→ 本地 Token 兜底
       ghBody.innerHTML =
         '<button class="gh-btn primary gh-big" id="ghDevice">' + githubLogoSVG() + " 通过 GitHub 登录</button>" +
         '<button class="gh-btn ghost gh-big" id="ghLocalToken" style="margin-top:8px">使用本地 Token 登录（免输入）</button>' +
         "<div id='ghDeviceBody'></div>" +
-        '<p class="gh-tip" style="margin-top:10px"><b>无需输入任何 Token：</b><br>' +
-        "· 已配置 OAuth App → 跳转 GitHub 授权页（像普通网站一样，点一次 Authorize 即回跳）<br>" +
-        "· 未配置 → 自动使用 .env 的 GITHUB_TOKEN 一键登录</p>";
+        '<p class="gh-tip" style="margin-top:10px"><b>零配置登录，无需输入任何 Token：</b><br>' +
+        "· 默认：设备流——跳转 GitHub 页面输一次 8 位授权码，自动登录（内置 OAuth App）<br>" +
+        "· 作者配置过 Secret → 自动跳转授权页（平常网站体验）<br>" +
+        "· 或使用本地 Token（.env GITHUB_TOKEN）一键登录</p>";
       ghFoot.innerHTML = "";
       var dev2 = document.querySelector("#ghDevice");
       if (dev2) dev2.addEventListener("click", startPersonalLogin);
@@ -345,10 +391,18 @@
     }
   }
 
-  // ===== GitHub OAuth 端点不支持 CORS → 优先同源代理（本地 server），降级公共 CORS 代理 =====
+  // ===== GitHub OAuth 端点不支持 CORS（预检 404，浏览器直连必被拦） =====
+  // 两级路由：① 同源本地 server 转发（/api/gh/device · /api/gh/token，本地 --serve 场景）
+  //          ② 无本地后端（404/502）→ 降级公共 CORS 代理
+  var GH_DEVICE_URL = "https://github.com/login/device/code";
+  var GH_TOKEN_URL = "https://github.com/login/oauth/access_token";
   function ghProxyFetch(url, opts) {
-    return fetch(url, opts).then(function (r) {
-      if (!r.ok && r.status === 404) throw { code: "no-backend" };  // GitHub Pages 无后端
+    var local = "";
+    if (url.indexOf("/device/code") !== -1) local = "/api/gh/device";
+    else if (url.indexOf("/oauth/access_token") !== -1) local = "/api/gh/token";
+    var p = local ? fetch(local, opts) : fetch(url, opts);
+    return p.then(function (r) {
+      if (!r.ok && (r.status === 404 || r.status === 502)) throw { code: "no-backend" };
       return r;
     }).catch(function (e) {
       if (e && e.code === "no-backend") {
@@ -398,46 +452,71 @@
       box.innerHTML = "<p class='gh-tip'>请先在上方展开「配置 OAuth Client ID」并粘贴你的 Client ID</p>";
       return;
     }
-    box.innerHTML = "<p class='gh-tip'>正在获取授权码…</p>";
-    ghProxyFetch("https://github.com/login/device/code", {
-      method: "POST",
-      headers: { "Content-Type": "application/json", "Accept": "application/json" },
-      body: JSON.stringify({ client_id: clientId, scope: "public_repo read:user" }),
-    }).then(function (r) { return r.json(); }).then(function (d) {
-      if (!d.device_code) throw new Error("device");
-      var uri = d.verification_uri || "https://github.com/login/device";
-      box.innerHTML =
-        '<div class="gh-device">' +
-          '<p>在 GitHub 输入授权码：</p>' +
-          '<code>' + escapeHtml(d.user_code) + "</code>" +
-          '<a class="gh-btn ghost" href="' + escapeHtml(uri) + '" target="_blank" rel="noopener">前往授权 ↗</a>' +
-        "</div>";
-      var tries = 0;
-      var iv = setInterval(function () {
-        ghProxyFetch("https://github.com/login/oauth/access_token", {
-          method: "POST",
-          headers: { "Content-Type": "application/json", "Accept": "application/json" },
-          body: JSON.stringify({ client_id: clientId, device_code: d.device_code,
-            grant_type: "urn:ietf:params:oauth:grant-type:device_code" }),
-        }).then(function (r) { return r.json(); }).then(function (a) {
-          if (a.access_token) {
-            clearInterval(iv);
-            saveToken(a.access_token);
-            verifyToken(a.access_token).then(function (u) { onGhLogin(u); });
-            return;
-          }
-          if (a.error === "authorization_pending") return;
-          if (a.error === "slow_down") { tries--; return; }
-          if (a.error === "access_denied") {
-            clearInterval(iv);
-            box.innerHTML = "<p class='gh-tip'>你取消了授权</p>";
-          }
-        }).catch(function () {});
-        if (++tries > 300) clearInterval(iv);
-      }, 5000);
-    }).catch(function () {
-      box.innerHTML = "<p class='gh-tip'>设备流请求失败（网络 / 代理不可用），可改用 Token 方式</p>";
-    });
+    var tries = 0;  // 最多 3 次尝试（网络抖动 / 多实例窗口期自动恢复）
+    function attempt() {
+      box.innerHTML = "<p class='gh-tip'>正在获取授权码" + (tries > 0 ? "（重试 " + tries + "/2）" : "") + "…</p>";
+      ghProxyFetch("https://github.com/login/device/code", {
+        method: "POST",
+        headers: { "Content-Type": "application/json", "Accept": "application/json" },
+        body: JSON.stringify({ client_id: clientId, scope: "public_repo read:user" }),
+      }).then(function (r) { return r.json(); }).then(function (d) {
+        if (!d.device_code) throw new Error("device");
+        var uri = d.verification_uri || "https://github.com/login/device";
+        box.innerHTML =
+          '<div class="gh-device">' +
+            '<p>在 GitHub 输入授权码：</p>' +
+            '<code>' + escapeHtml(d.user_code) + "</code>" +
+            '<a class="gh-btn ghost" href="' + escapeHtml(uri) + '" target="_blank" rel="noopener">前往授权 ↗</a>' +
+          "</div>";
+        // 动态间隔轮询：GitHub 返回 slow_down 时按 interval 延长等待，
+        // 否则授权完成后会被限流判定持续拦截（间隔从 10s 一路涨到 35s+，token 永远拿不到）
+        var delay = (d.interval || 5) * 1000;
+        var poll = 0;
+        function pollOnce() {
+          ghProxyFetch(GH_TOKEN_URL, {
+            method: "POST",
+            headers: { "Content-Type": "application/json", "Accept": "application/json" },
+            body: JSON.stringify({ client_id: clientId, device_code: d.device_code,
+              grant_type: "urn:ietf:params:oauth:grant-type:device_code" }),
+          }).then(function (r) { return r.json(); }).then(function (a) {
+            if (a.access_token) {
+              saveToken(a.access_token);
+              box.innerHTML = "<p class='gh-tip'>授权成功，正在登录…</p>";
+              verifyToken(a.access_token).then(function (u) { onGhLogin(u); });
+              return;
+            }
+            if (a.error === "authorization_pending") { setTimeout(pollOnce, delay); return; }
+            if (a.error === "slow_down") {
+              delay = (a.interval || delay / 1000 + 5) * 1000;  // 按 GitHub 要求延长
+              setTimeout(pollOnce, delay);
+              return;
+            }
+            if (a.error === "access_denied") {
+              box.innerHTML = "<p class='gh-tip'>你取消了授权，可重新点「通过 GitHub 登录」</p>";
+              return;
+            }
+            // 其他错误（expired_token / rate_limit / invalid_grant …）：停止并提示，
+            // 否则无限静默轮询会让用户误以为「网页没变化」
+            box.innerHTML = "<p class='gh-tip'>授权失败：" + escapeHtml(a.error_description || a.error || "未知错误") +
+              "，请重新点「通过 GitHub 登录」</p>";
+          }).catch(function () {
+            setTimeout(pollOnce, delay);  // 网络抖动：按当前间隔重试
+          });
+          if (++poll > 360) return;  // 约 30 分钟上限（动态间隔下足够）
+        }
+        setTimeout(pollOnce, delay);
+      }).catch(function () {
+        tries++;
+        if (tries < 3) {
+          setTimeout(attempt, 2000);  // 自动重试（多实例窗口期 / 网络抖动）
+          return;
+        }
+        box.innerHTML = "<p class='gh-tip'>设备流请求失败（本地服务转发不可用）。<br>" +
+          "请确认已运行 <code>python src/main.py --serve</code> 且没有重复启动（端口 8970 被多实例占用会随机失败）；<br>" +
+          "或改用下方 Token 方式。</p>";
+      });
+    }
+    attempt();
   }
 
   // ===== 跳转式登录（Authorization Code Flow，本地 server 场景） =====
@@ -508,7 +587,7 @@
       });
   }
 
-  // 个人版主按钮：探测 OAuth → 已配置跳转 GitHub 授权页；否则本地 Token 一键登录
+  // 个人版主按钮：跳转授权（已配 secret）→ 设备流（内置 client_id，零配置）→ 本地 Token 兜底
   function startPersonalLogin() {
     var box = document.querySelector("#ghDeviceBody");
     if (box) box.innerHTML = "<p class='gh-tip'>正在登录…</p>";
@@ -516,12 +595,12 @@
       .then(function (r) { return r.ok ? r.json() : null; })
       .then(function (d) {
         if (d && d.configured) {
-          window.location = "/api/oauth/start";
+          window.location = "/api/oauth/start";   // 作者已配 secret：跳转授权（平常网站体验）
         } else {
-          localTokenLogin();
+          startDeviceFlow();                       // 默认：设备流（内置 client_id，输一次授权码）
         }
       })
-      .catch(function () { localTokenLogin(); });
+      .catch(function () { startDeviceFlow(); });
   }
 
   // ===== 操作分发（document 委托，卡片 + 详情共用） =====
@@ -542,30 +621,15 @@
     if (btn.classList.contains("gh-star")) {
       if (!isConnected()) { openPanel(); notify("请先连接 GitHub"); return; }
       if (isStarred(full)) {
-        unstarRepo(full).catch(function () { notify("操作失败，请检查网络"); });
+        unstarRepo(full).catch(function (e) { notify(e.message || "取消加星失败，请检查网络"); });
       } else {
-        starRepo(full).catch(function () { notify("加星失败，请检查网络或 Token 权限"); });
+        starRepo(full).catch(function (e) { notify(e.message || "加星失败，请检查网络或 Token 权限"); });
       }
       return;
     }
     if (btn.classList.contains("gh-fork")) {
-      if (!isConnected()) { openPanel(); notify("请先连接 GitHub"); return; }
-      var forkURL = "https://github.com/" + full + "/forks";
-      if (!window.confirm("Fork「" + full + "」到你的账号？")) return;
-      notify("正在 Fork…");
-      forkRepo(full).then(function (data) {
-        fireAction(full, "fork");
-        notify("Fork 成功");
-        window.open(data.html_url, "_blank");
-      }).catch(function (err) {
-        if (err && err.message === "fork-failed") {
-          // 422 → 可能已 fork 过：跳到我的 fork
-          notify("你可能已经 Fork 过，正在打开你的副本");
-          window.open("https://github.com/" + (user ? user.login : "") + "/" + full.split("/")[1], "_blank");
-        } else {
-          notify("Fork 失败，请检查网络");
-        }
-      });
+      if (!isConnected() || !user) { openPanel(); notify("请先连接 GitHub"); return; }
+      openForkConfirm(full);
       return;
     }
     if (btn.classList.contains("gh-clone")) {
@@ -598,6 +662,55 @@
     }
   }
 
+  // ===== Fork 确认弹窗（自定义样式，替代原生 confirm） =====
+  var forkPanel = null;
+  var forkTarget = "";
+  function openForkConfirm(full) {
+    forkTarget = full;
+    var login = user ? user.login : "";
+    document.querySelector("#forkText").innerHTML =
+      "将 Fork「<b>" + escapeHtml(full) + "</b>」到你的账号" +
+      (login ? "（<b>" + escapeHtml(login) + "</b>）" : "") + "？";
+    forkPanel.classList.add("open");
+    forkPanel.setAttribute("aria-hidden", "false");
+    document.body.style.overflow = "hidden";
+  }
+  function closeFork() {
+    forkPanel.classList.remove("open");
+    forkPanel.setAttribute("aria-hidden", "true");
+    if (!ghPanel.classList.contains("open") && !notePanel.classList.contains("open")) {
+      document.body.style.overflow = "";
+    }
+    forkTarget = "";
+  }
+  function doFork() {
+    var full = forkTarget;
+    closeFork();
+    if (!full) return;
+    notify("正在 Fork…");
+    forkRepo(full).then(function (data) {
+      fireAction(full, "fork");
+      notify("Fork 成功");
+      // 优先用 GitHub 返回的副本地址；兜底按登录名构造（登录名缺失时不应拼出 // 的 404 URL）
+      var url = (data && data.html_url) || (user && user.login
+        ? "https://github.com/" + user.login + "/" + full.split("/")[1] : "");
+      if (url) window.open(url, "_blank");
+      else notify("登录信息丢失，请重新登录后 Fork");
+    }).catch(function (err) {
+      if (err && err.message === "fork-failed") {
+        // 422 → 可能已 fork 过：打开我的副本（登录名缺失时不再跳 404，改为提示）
+        if (user && user.login) {
+          notify("你可能已经 Fork 过，正在打开你的副本");
+          window.open("https://github.com/" + user.login + "/" + full.split("/")[1], "_blank");
+        } else {
+          notify("登录信息丢失，请重新登录后 Fork");
+        }
+      } else {
+        notify(err.message || "Fork 失败，请检查网络");
+      }
+    });
+  }
+
   // ===== 笔记编辑器 =====
   function openNoteEditor(fullName) {
     noteTarget = fullName;
@@ -625,6 +738,7 @@
     ghFoot = document.querySelector("#ghFoot");
     ghConnBtn = document.querySelector("#ghConn");
     notePanel = document.querySelector("#notePanel");
+    forkPanel = document.querySelector("#forkPanel");
 
     var ghTitle = document.querySelector("#ghTitle");
     window.ghTitle = ghTitle;
@@ -654,10 +768,15 @@
         closeNote();
         notify("笔记已删除");
       });
+      document.querySelector("#forkClose").addEventListener("click", closeFork);
+      document.querySelector("#forkCancel").addEventListener("click", closeFork);
+      forkPanel.addEventListener("click", function (e) { if (e.target === forkPanel) closeFork(); });
+      document.querySelector("#forkOk").addEventListener("click", doFork);
       document.addEventListener("click", handleOpClick, true);
       document.addEventListener("keydown", function (e) {
         if (e.key !== "Escape") return;
-        if (notePanel.classList.contains("open")) closeNote();
+        if (forkPanel.classList.contains("open")) closeFork();
+        else if (notePanel.classList.contains("open")) closeNote();
         else if (ghPanel.classList.contains("open")) closePanel();
       });
     }

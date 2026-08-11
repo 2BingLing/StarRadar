@@ -179,6 +179,30 @@
   </div>
 </div>
 
+<!-- ===== Fork 确认弹窗 ===== -->
+<div class="gh-overlay" id="forkPanel" aria-hidden="true">
+  <div class="gh-box" role="dialog" aria-modal="true">
+    <button class="detail-close" id="forkClose" title="关闭">×</button>
+    <div class="gh-head">
+      <span class="gh-ico" aria-hidden="true">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><circle cx="6" cy="4" r="2"/><circle cx="18" cy="4" r="2"/><circle cx="18" cy="20" r="2"/><path d="M6 6v2a3 3 0 0 0 3 3h6a3 3 0 0 1 3 3v2"/></svg>
+      </span>
+      <div>
+        <h3 id="forkTitle">Fork 确认</h3>
+        <p>Fork 后可在你的账号下自由修改</p>
+      </div>
+    </div>
+    <div class="note-body">
+      <p class="fork-text" id="forkText"></p>
+    </div>
+    <div class="gh-foot">
+      <span class="gh-spacer"></span>
+      <button class="gh-btn ghost" id="forkCancel">取消</button>
+      <button class="gh-btn primary" id="forkOk">确认 Fork</button>
+    </div>
+  </div>
+</div>
+
 <!-- ===== 随行笔记 ===== -->
 <div class="gh-overlay" id="notePanel" aria-hidden="true">
   <div class="gh-box" role="dialog" aria-modal="true">
