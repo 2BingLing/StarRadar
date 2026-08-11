@@ -1,79 +1,84 @@
-<!DOCTYPE html>
-<html lang="zh">
+<!doctype html>
+<html lang="zh-CN">
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
 <title>StarRadar · 个人特化雷达</title>
-<link rel="icon" href="favicon.png">
-<link rel="stylesheet" href="css/style.css">
+<link rel="icon" type="image/png" href="favicon.png">
+<link rel="stylesheet" href="css/style.css?v=20260811p">
 <style>
-  .p-top { display: flex; align-items: center; gap: 12px; padding: 14px 0; border-bottom: 1px solid var(--line); margin-bottom: 22px; }
-  .p-top img { width: 34px; height: 34px; }
-  .p-top b { font-size: 16px; color: var(--ink); }
-  .p-top small { color: var(--faint); font-size: 11.5px; }
-  .p-top .sp { flex: 1; }
-  .p-back { color: var(--blue); text-decoration: none; font-size: 13px; }
-  .p-status { border: 1px solid var(--line); border-radius: 16px; background: #fff; padding: 18px 20px; margin-bottom: 22px; }
-  .p-status h3 { margin: 0 0 12px; font-size: 15px; color: var(--ink); }
-  .p-status-grid { display: grid; grid-template-columns: 1fr 1.15fr; gap: 18px; }
-  .p-row { display: flex; align-items: center; gap: 10px; font-size: 13px; color: var(--muted); padding: 5px 0; }
+  .p-row { display: flex; align-items: center; gap: 8px; font-size: 12.5px; color: var(--muted); padding: 3.5px 0; }
   .p-dot { width: 8px; height: 8px; border-radius: 50%; background: #c9d6e5; flex: none; }
   .p-dot.ok { background: var(--green); }
   .p-dot.no { background: #ff4d4f; }
-  .p-actions { display: flex; gap: 10px; margin-top: 12px; flex-wrap: wrap; }
-  .p-note-wrap { background: #f8fbff; border: 1px dashed var(--line); border-radius: 12px; padding: 14px 16px; display: flex; align-items: center; }
-  .p-note { font-size: 12.5px; color: var(--faint); line-height: 2; margin: 0; }
-  .p-note b { color: var(--muted); }
+  .p-note { font-size: 12px; color: var(--faint); line-height: 1.8; margin: 10px 0 0; }
   .p-note code { background: #eef4fb; padding: 1px 6px; border-radius: 5px; color: #c2491e; }
+  .cards .card .card-explain { display: block; -webkit-line-clamp: unset; -webkit-box-orient: unset; overflow: visible; }
+  .cards .card .score-desc.explain { -webkit-line-clamp: 5; }
   .p-empty { text-align: center; padding: 70px 20px; color: var(--faint); font-size: 13.5px; line-height: 2; }
   .p-empty b { color: var(--muted); }
-  .p-gen { margin-top: 6px; font-size: 12px; color: var(--faint); }
-  .p-gen code { background: #f0f5fb; padding: 2px 6px; border-radius: 5px; color: #c2491e; }
-  .cards .card { cursor: default; overflow: visible; }
-  .cards .card .card-explain { display: block; -webkit-line-clamp: unset; -webkit-box-orient: unset; overflow: visible; }
-  .cards .card .card-desc { -webkit-line-clamp: 3; }
+  .p-empty code { background: #eef4fb; padding: 1px 6px; border-radius: 5px; color: #c2491e; }
 </style>
 </head>
 <body>
+<div class="ambient a"></div>
+<div class="ambient b"></div>
 
-<main class="wrap">
-  <div class="p-top">
-    <img src="starlogo.png" alt="StarRadar">
-    <div>
-      <b>个人特化雷达</b><br>
-      <small>版本 2 · 只为你搜索与解读 · 数据仅存本机</small>
+<main class="page">
+  <!-- ===== 顶部导航（沿用公版） ===== -->
+  <nav class="topbar">
+    <a class="brand" href="personal.html">
+      <span class="mark" aria-hidden="true">
+        <img src="starlogo.png" alt="" width="22" height="22">
+      </span>
+      <span><strong>StarRadar</strong><small>个人特化雷达</small></span>
+    </a>
+    <div class="actions">
+      <button class="icon" id="ghConn" title="连接 GitHub，解锁一键加星 / Fork"></button>
+      <a class="gh-repo" href="index.html" title="公有版（所有人同一份榜单）">公有版 ↗</a>
     </div>
-    <span class="sp"></span>
-    <button class="icon" id="ghConn" title="连接 GitHub"></button>
-    <a class="p-back" href="index.html">返回公有版 ↗</a>
-  </div>
+  </nav>
 
-  <div class="p-status" id="pStatus">
-    <h3>状态</h3>
-    <div class="p-status-grid">
-      <div>
-        <div class="p-row"><span class="p-dot" id="stLogin"></span>GitHub 登录（拉取我的加星 / 仓库 + 加星 / Fork）</div>
-        <div class="p-row"><span class="p-dot" id="stLLM"></span>LLM 解读（.env 配置 LLM_API_KEY）</div>
-        <div class="p-row"><span class="p-dot" id="stData"></span>个人雷达数据（运行管道后生成）</div>
-        <div class="p-actions">
+  <!-- ===== Hero：状态 + 个人观测站（沿用公版双栏） ===== -->
+  <section class="hero" id="top">
+    <div>
+      <div class="eyebrow"><i></i> Personal signal · 只为你扫描</div>
+      <h1>只为你发现<br><em>下一颗明星。</em></h1>
+      <p>基于你的加星、仓库与行为画像，专门搜索并解读——每个人看到的都是不一样的雷达。</p>
+      <div class="p-note" id="pHint"></div>
+    </div>
+    <div class="radar-card">
+      <div class="radar-head">
+        <div><small>Personal Observatory</small><strong>个人观测站</strong></div>
+        <span class="live">为你定制</span>
+      </div>
+      <div class="p-status">
+        <div class="p-row"><span class="p-dot" id="stLogin"></span>GitHub 登录</div>
+        <div class="p-row"><span class="p-dot" id="stLLM"></span>LLM 解读</div>
+        <div class="p-row"><span class="p-dot" id="stData"></span>个人数据</div>
+        <div class="p-actions" style="margin-top:10px;display:flex;gap:8px;flex-wrap:wrap;">
           <button class="gh-btn primary" id="pGoLogin">通过 GitHub 登录</button>
-          <button class="gh-btn" id="pRefresh">刷新状态</button>
+          <button class="gh-btn" id="pLocalLogin" title="使用 .env 中的 GITHUB_TOKEN 建立登录（无需 OAuth App）">使用本地 Token</button>
+          <button class="gh-btn ghost" id="pRefresh">刷新</button>
         </div>
       </div>
-      <div class="p-note-wrap"><p class="p-note" id="pHint"></p></div>
     </div>
-  </div>
+  </section>
 
-  <div class="cards" id="pCards">
-    <div class="p-empty">
-      <b>还没有你的专属雷达。</b><br>
-      完成两步即可：<br>
-      1. 点击上方「通过 GitHub 登录」（跳转授权一次）<br>
-      2. 在项目目录运行 <code>python src/main.py --personal</code><br>
-      <span class="p-gen">管道会拉取你的加星 / 仓库主题 → 画像驱动搜索 → 为你解读 → 生成数据。<br>
-      之后每次打开本页都是为你定制的内容，且已看项目自动排除，每天不重样。</span>
+  <!-- ===== 卡片区（沿用公版 section-head + cards） ===== -->
+  <section>
+    <div class="section-head">
+      <div><h2>为你发现</h2><p>基于你的画像 · 越用越贴切 · 每天不重样</p></div>
     </div>
-  </div>
+    <div class="cards" id="pCards"></div>
+  </section>
+
+  <footer class="foot">
+    <span>个人特化雷达 · 数据仅存本机（data/personal · 不上传）· 公开版见 <a href="index.html">index.html</a></span>
+    <span class="foot-links">
+      <a href="https://github.com/2BingLing/StarRadar" target="_blank" rel="noopener">StarRadar 仓库 ↗</a>
+    </span>
+  </footer>
 </main>
 
 <div class="toast" id="toast"></div>

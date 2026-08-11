@@ -387,7 +387,11 @@ class StarRadarHandler(BaseHTTPRequestHandler):
     # ===== 个人特化版（本地后端，数据不公开） =====
 
     def _save_gh_token(self) -> None:
-        """POST /api/gh_token：浏览器 GitHub 登录成功后，把 token 交给本地后端。
+        """POST /api/gh_token：建立本地后端登录态。
+        两种模式：
+        - {use_local: true}        用 .env 的 GITHUB_TOKEN 建立登录（无需 OAuth App），
+                                  返回 login + token 给浏览器（本机场景）
+        - {login, token}           浏览器 GitHub 登录成功后上交给后端
         存 data/profile/gh_token.json（已被 .gitignore 忽略，绝不上传）。
         """
         try:
@@ -403,12 +407,45 @@ class StarRadarHandler(BaseHTTPRequestHandler):
         except (json.JSONDecodeError, UnicodeDecodeError):
             self._bad("invalid json")
             return
+
+        from config import PROFILE_DIR
+
+        if payload.get("use_local"):
+            token = settings.github.token
+            if not token:
+                self._bad("GITHUB_TOKEN 未配置（.env）")
+                return
+            try:
+                import urllib.request
+                req = urllib.request.Request(
+                    "https://api.github.com/user",
+                    headers={"Authorization": "Bearer " + token, "User-Agent": "StarRadar"},
+                )
+                with urllib.request.urlopen(req, timeout=15) as resp:
+                    login = json.loads(resp.read().decode("utf-8")).get("login", "")
+            except Exception as exc:  # noqa: BLE001
+                logger.warning("local token 验证失败: %s", exc)
+                self._json(502, {"ok": False, "error": "token 验证失败"})
+                return
+            if not login:
+                self._json(502, {"ok": False, "error": "token 无效"})
+                return
+            try:
+                (PROFILE_DIR / "gh_token.json").write_text(
+                    json.dumps({"login": login, "token": token}, ensure_ascii=False),
+                    encoding="utf-8",
+                )
+            except OSError:
+                self._json(500, {"ok": False, "error": "write failed"})
+                return
+            self._json(200, {"ok": True, "saved": login, "login": login, "token": token})
+            return
+
         token = str(payload.get("token") or "").strip()
         login = str(payload.get("login") or "").strip()[:64]
         if not token or not login:
             self._bad("missing token/login")
             return
-        from config import PROFILE_DIR
         try:
             (PROFILE_DIR / "gh_token.json").write_text(
                 json.dumps({"login": login, "token": token}, ensure_ascii=False),
