@@ -967,12 +967,46 @@ h1 em { color: var(--blue); font-style: normal; }
   justify-content: center;
   width: 20px;
   height: 20px;
-  border-radius: 50%;
-  background: #1677ff;
+  border-radius: 50%;  background: #1677ff;
   color: #fff;
   font-size: 11px;
   font-weight: 700;
 }
+
+/* ===== 个人版账号按钮（?personal=1） ===== */
+#ghConn.account {
+  display: inline-flex;
+  align-items: center;
+  gap: 7px;
+  width: auto;
+  height: auto;
+  padding: 3px 14px 3px 3px;
+  border-radius: 999px;
+  border: 1px solid var(--line);
+  background: #fff;
+  transition: 0.2s;
+}
+#ghConn.account .acc-avatar {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 24px;
+  height: 24px;
+  border-radius: 50%;
+  background: #1677ff;
+  color: #fff;
+  font-size: 12px;
+  font-weight: 700;
+  overflow: hidden;
+  flex: none;
+}
+#ghConn.account .acc-avatar img { width: 24px; height: 24px; display: block; border-radius: 50%; }
+#ghConn.account em { font-style: normal; font-size: 12.5px; font-weight: 600; color: var(--muted); max-width: 96px; overflow: hidden; text-overflow: ellipsis; white-space: nowrap; }
+#ghConn.account:hover { border-color: #1677ff4d; background: #f8fbff; }
+#ghConn.account:hover em { color: var(--ink); }
+#ghConn.account.login { background: #1677ff; border-color: #1677ff; padding: 6px 18px; }
+#ghConn.account.login em { color: #fff; }
+#ghConn.account.login:hover { background: #0f6ae0; }
 
 .gh-overlay {
   position: fixed;

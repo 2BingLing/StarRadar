@@ -271,6 +271,20 @@ class StarRadarHandler(BaseHTTPRequestHandler):
         self.end_headers()
         self.wfile.write(data)
 
+    def do_DELETE(self) -> None:
+        path = unquote(self.path.split("?", 1)[0])
+        if path == "/api/gh_token":
+            from config import PROFILE_DIR
+            f = PROFILE_DIR / "gh_token.json"
+            try:
+                if f.is_file():
+                    f.unlink()
+            except OSError:
+                pass
+            self._json(200, {"ok": True, "logged_out": True})
+            return
+        self._json(404, {"ok": False, "error": "not found"})
+
     def _receive_survey(self) -> None:
         """POST /api/survey：接收问卷档案（前端 saveSurvey/skipSurvey 上报）。"""
         try:

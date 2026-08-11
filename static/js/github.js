@@ -207,15 +207,25 @@
   // ===== 顶部连接按钮 =====
   function renderConnBtn() {
     if (!ghConnBtn) return;
+    var isPersonal = location.search.indexOf("personal=1") !== -1;
     if (isConnected() && user) {
-      ghConnBtn.innerHTML = user.avatar_url
-        ? '<img src="' + escapeHtml(user.avatar_url) + '" alt="" width="20" height="20">'
-        : "<span>" + escapeHtml((user.login || "G").charAt(0).toUpperCase()) + "</span>";
-      ghConnBtn.classList.add("connected");
-      ghConnBtn.title = user.login + " · 点击管理连接";
+      ghConnBtn.innerHTML =
+        '<span class="acc-avatar">' +
+          (user.avatar_url
+            ? '<img src="' + escapeHtml(user.avatar_url) + '" alt="">'
+            : escapeHtml((user.login || "G").charAt(0).toUpperCase())) +
+        "</span>" +
+        "<em>" + escapeHtml(user.login) + "</em>";
+      ghConnBtn.classList.add("connected", "account");
+      ghConnBtn.title = user.login + " · 点击管理 / 退出登录";
+    } else if (isPersonal) {
+      ghConnBtn.innerHTML = "<em>登录</em>";
+      ghConnBtn.classList.remove("connected");
+      ghConnBtn.classList.add("account", "login");
+      ghConnBtn.title = "登录 GitHub（跳转授权 / 本地 Token）";
     } else {
       ghConnBtn.innerHTML = githubLogoSVG();
-      ghConnBtn.classList.remove("connected");
+      ghConnBtn.classList.remove("connected", "account", "login");
       ghConnBtn.title = "连接 GitHub，解锁一键加星 / Fork";
     }
   }
@@ -242,12 +252,21 @@
             '<span class="gh-avatar-letter">' + escapeHtml((user.login || "G").charAt(0).toUpperCase()) + "</span>") +
           "<div><strong>" + escapeHtml(user.login) + "</strong>" +
           "<small>加星 / Fork 将以你的身份操作</small></div></div>";
-      ghFoot.innerHTML = '<button class="gh-btn danger" id="ghDisconnect">断开连接</button>';
+      ghFoot.innerHTML = '<button class="gh-btn danger" id="ghDisconnect">退出登录</button>' +
+        '<button class="gh-btn ghost" id="ghDisconnectAll" title="同时清除本地后端的登录态">退出并清除后端登录</button>';
       var dc = document.querySelector("#ghDisconnect");
       if (dc) dc.addEventListener("click", function () {
         saveToken(""); saveUser(null); starred = {}; saveStarred();
         closePanel();
-        notify("已断开 GitHub 连接");
+        notify("已退出登录");
+        emit();
+      });
+      var dcAll = document.querySelector("#ghDisconnectAll");
+      if (dcAll) dcAll.addEventListener("click", function () {
+        saveToken(""); saveUser(null); starred = {}; saveStarred();
+        fetch("/api/gh_token", { method: "DELETE" }).catch(function () {});
+        closePanel();
+        notify("已退出登录（后端登录态已清除）");
         emit();
       });
       return;
