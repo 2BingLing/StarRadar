@@ -467,11 +467,11 @@ def main() -> None:
     print_scored_repos(scored, top_n=5)
 
     # ④ LLM 中文解读（合并到 ② 序列化前，覆盖规则化 explanation）
-    # 全量解读：每个项目都用 LLM 生成中文"为什么值得关注"（规则模板仅作 API 失败兜底）
-    # P9：只对评分前 15 解读（其余用规则模板，控制成本与响应时间）
+    # 全量解读：潜力池 30 个项目全部用 LLM 生成中文"为什么值得关注"（规则模板仅作 API 失败兜底）
+    # 成本：增量缓存（星数变化 >20% 才重读），稳定期每日新增调用通常 0-3 项
     if scored:
         print()
-        print("[4/5] LLM 中文解读 · 增量模式（Top 15，缓存命中跳过，仅新项目/大变化调用）")
+        print("[4/5] LLM 中文解读 · 增量模式（潜力池全量，缓存命中跳过，仅新项目/大变化调用）")
         from src.profile.feedback_collector import (
             get_cached_summary,
             set_cached_summary,
@@ -480,9 +480,7 @@ def main() -> None:
 
         need_llm: list[tuple[Repository, PotentialScore]] = []
         hit = 0
-        for idx, (repo, ps) in enumerate(scored):
-            if idx >= 15:
-                break
+        for repo, ps in scored:
             cached = get_cached_summary(repo.full_name, repo.stars)
             if cached:
                 ps.explanation = cached

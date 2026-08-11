@@ -1,837 +1,472 @@
 [
   {
     "repo": {
-      "owner": "torlando-tech",
-      "name": "columba",
-      "full_name": "torlando-tech/columba",
-      "description": "Native Android messaging app using Bluetooth LE, TCP, or RNode (LoRa) over LXMF and Reticulum",
-      "stars": 998,
-      "forks": 103,
-      "open_issues": 86,
-      "created_at": "2025-10-22T22:49:38+00:00",
-      "pushed_at": "2026-08-10T13:36:33+00:00",
-      "updated_at": "2026-08-11T02:30:34+00:00",
+      "owner": "vorssaint",
+      "name": "vorssaint-utils",
+      "full_name": "vorssaint/vorssaint-utils",
+      "description": "Free and open-source macOS menu bar toolkit.",
+      "stars": 4992,
+      "forks": 183,
+      "open_issues": 135,
+      "created_at": "2026-06-12T15:25:43+00:00",
+      "pushed_at": "2026-08-09T14:57:12+00:00",
+      "updated_at": "2026-08-11T07:11:27+00:00",
       "topics": [
-        "ble",
-        "lora",
-        "lxmf",
-        "mesh-networks",
-        "off-grid",
-        "privacy",
-        "reticulum",
-        "rns"
+        "alt-tab",
+        "app-uninstaller",
+        "appkit",
+        "finder",
+        "free",
+        "keep-awake",
+        "mac-os",
+        "menu-bar",
+        "menubar",
+        "open-source",
+        "swift",
+        "swift-ui",
+        "system-monitor",
+        "uninstaller",
+        "volume-mixer",
+        "window-switcher"
       ],
-      "language": "Kotlin",
-      "license": "MPL-2.0",
-      "homepage": "https://columba.network/",
-      "html_url": "https://github.com/torlando-tech/columba",
+      "language": "Swift",
+      "license": "GPL-3.0",
+      "homepage": "https://vorssaint.com",
+      "html_url": "https://github.com/vorssaint/vorssaint-utils",
       "default_branch": "main",
       "archived": false,
       "search_score": 1.0,
-      "stars_7d_ago": 946,
+      "stars_7d_ago": 4876,
       "star_series": [
         {
           "d": "07-13",
-          "s": 944
+          "s": 4876
         },
         {
           "d": "07-14",
-          "s": 944
+          "s": 4876
         },
         {
           "d": "07-15",
-          "s": 944
+          "s": 4876
         },
         {
           "d": "07-16",
-          "s": 944
+          "s": 4876
         },
         {
           "d": "07-17",
-          "s": 944
+          "s": 4876
         },
         {
           "d": "07-18",
-          "s": 944
+          "s": 4876
         },
         {
           "d": "07-19",
-          "s": 944
+          "s": 4876
         },
         {
           "d": "07-20",
-          "s": 944
+          "s": 4876
         },
         {
           "d": "07-21",
-          "s": 944
+          "s": 4876
         },
         {
           "d": "07-22",
-          "s": 944
+          "s": 4876
         },
         {
           "d": "07-23",
-          "s": 944
+          "s": 4876
         },
         {
           "d": "07-24",
-          "s": 944
+          "s": 4876
         },
         {
           "d": "07-25",
-          "s": 944
+          "s": 4876
         },
         {
           "d": "07-26",
-          "s": 944
+          "s": 4876
         },
         {
           "d": "07-27",
-          "s": 944
+          "s": 4876
         },
         {
           "d": "07-28",
-          "s": 944
+          "s": 4876
         },
         {
           "d": "07-29",
-          "s": 944
+          "s": 4876
         },
         {
           "d": "07-30",
-          "s": 944
+          "s": 4876
         },
         {
           "d": "07-31",
-          "s": 944
+          "s": 4876
         },
         {
           "d": "08-01",
-          "s": 944
+          "s": 4876
         },
         {
           "d": "08-02",
-          "s": 944
+          "s": 4876
         },
         {
           "d": "08-03",
-          "s": 944
+          "s": 4876
         },
         {
           "d": "08-04",
-          "s": 945
+          "s": 4876
         },
         {
           "d": "08-05",
-          "s": 946
+          "s": 4876
         },
         {
           "d": "08-06",
-          "s": 946
+          "s": 4876
         },
         {
           "d": "08-07",
-          "s": 955
+          "s": 4876
         },
         {
           "d": "08-08",
-          "s": 957
+          "s": 4876
         },
         {
           "d": "08-09",
-          "s": 977
+          "s": 4896
         },
         {
           "d": "08-10",
-          "s": 997
+          "s": 4973
         },
         {
           "d": "08-11",
-          "s": 998
+          "s": 4992
         }
       ]
     },
     "score": {
-      "score": 74.51,
+      "score": 96.8,
       "breakdown": {
-        "vel": 79,
+        "vel": 100,
         "acc": 99,
-        "health": 73,
-        "fresh": 20,
+        "health": 66,
+        "fresh": 84,
         "signal": 85
       },
       "stage": "mid_early",
       "stage_multiplier": 1.1,
       "confidence": 1.0,
-      "base_score": 67.73,
-      "explanation": "Columba 锚定「无网通信」刚需，通过蓝牙/LoRa 等物理层 + Reticulum 路由栈实现不依赖运营商的对等消息传递，在断网或敏感场景具备不可替代性；当前周增 7.4 星且加速，社区 fork 比达 10.3%，验证了早期开发者对去中心化硬核通讯栈的强关注。"
+      "base_score": 88.0,
+      "explanation": "开源免费的 macOS 菜单栏全家桶，集窗口切换、系统监控、音量混合等高频工具于一体，叠加 17/天 的加速涨速与活跃维护，正快速成为替代商业付费工具的必装选择。",
+      "reason": "本周加速增长、潜力分 97，可能是明日之星、全新发现，不在你的已看列表"
     }
   },
   {
     "repo": {
-      "owner": "agentscope-ai",
-      "name": "agentscope-java",
-      "full_name": "agentscope-ai/agentscope-java",
-      "description": "Build distributed, production-grade, long-running agents.",
-      "stars": 4998,
-      "forks": 1155,
-      "open_issues": 791,
-      "created_at": "2025-09-23T04:37:43+00:00",
-      "pushed_at": "2026-08-11T06:35:23+00:00",
-      "updated_at": "2026-08-11T06:42:57+00:00",
-      "topics": [
-        "adk",
-        "agent",
-        "agent-framework",
-        "agentic",
-        "agentic-ai",
-        "agentscope",
-        "ai",
-        "harness",
-        "llm"
-      ],
-      "language": "Java",
-      "license": null,
-      "homepage": "https://java.agentscope.io/",
-      "html_url": "https://github.com/agentscope-ai/agentscope-java",
-      "default_branch": "main",
-      "archived": false,
-      "search_score": 1.0,
-      "stars_7d_ago": 4958,
-      "star_series": [
-        {
-          "d": "07-13",
-          "s": 4958
-        },
-        {
-          "d": "07-14",
-          "s": 4958
-        },
-        {
-          "d": "07-15",
-          "s": 4958
-        },
-        {
-          "d": "07-16",
-          "s": 4958
-        },
-        {
-          "d": "07-17",
-          "s": 4958
-        },
-        {
-          "d": "07-18",
-          "s": 4958
-        },
-        {
-          "d": "07-19",
-          "s": 4958
-        },
-        {
-          "d": "07-20",
-          "s": 4958
-        },
-        {
-          "d": "07-21",
-          "s": 4958
-        },
-        {
-          "d": "07-22",
-          "s": 4958
-        },
-        {
-          "d": "07-23",
-          "s": 4958
-        },
-        {
-          "d": "07-24",
-          "s": 4958
-        },
-        {
-          "d": "07-25",
-          "s": 4958
-        },
-        {
-          "d": "07-26",
-          "s": 4958
-        },
-        {
-          "d": "07-27",
-          "s": 4958
-        },
-        {
-          "d": "07-28",
-          "s": 4958
-        },
-        {
-          "d": "07-29",
-          "s": 4958
-        },
-        {
-          "d": "07-30",
-          "s": 4958
-        },
-        {
-          "d": "07-31",
-          "s": 4958
-        },
-        {
-          "d": "08-01",
-          "s": 4958
-        },
-        {
-          "d": "08-02",
-          "s": 4958
-        },
-        {
-          "d": "08-03",
-          "s": 4958
-        },
-        {
-          "d": "08-04",
-          "s": 4958
-        },
-        {
-          "d": "08-05",
-          "s": 4958
-        },
-        {
-          "d": "08-06",
-          "s": 4958
-        },
-        {
-          "d": "08-07",
-          "s": 4958
-        },
-        {
-          "d": "08-08",
-          "s": 4958
-        },
-        {
-          "d": "08-09",
-          "s": 4961
-        },
-        {
-          "d": "08-10",
-          "s": 4982
-        },
-        {
-          "d": "08-11",
-          "s": 4998
-        }
-      ]
-    },
-    "score": {
-      "score": 59.79,
-      "breakdown": {
-        "vel": 71,
-        "acc": 99,
-        "health": 70,
-        "fresh": 12,
-        "signal": 80
-      },
-      "stage": "mid_late",
-      "stage_multiplier": 1.0,
-      "confidence": 1.0,
-      "base_score": 59.79,
-      "explanation": "Java 生态稀缺的生产级 Agent 框架，5.7 star/天的加速增长印证了其「分布式、长运行」定位正填补企业级落地空白；信号分 80 且增速加快，值得关注。"
-    }
-  },
-  {
-    "repo": {
-      "owner": "clidey",
-      "name": "whodb",
-      "full_name": "clidey/whodb",
-      "description": "Where data access meets operational intelligence",
-      "stars": 5000,
-      "forks": 237,
-      "open_issues": 20,
-      "created_at": "2024-06-11T10:10:59+00:00",
-      "pushed_at": "2026-08-11T03:53:33+00:00",
-      "updated_at": "2026-08-11T03:53:39+00:00",
-      "topics": [
-        "ai-agent",
-        "data-catalog",
-        "data-governance",
-        "data-integration",
-        "data-lineage",
-        "data-pipeline",
-        "data-platform",
-        "database-management",
-        "er-diagram",
-        "internal-tools",
-        "mcp-server",
-        "model-context-protocol",
-        "mysql",
-        "oracle",
-        "postgresql",
-        "self-hosted",
-        "sql-editor",
-        "sqlserver",
-        "text-to-sql",
-        "visual-query-builder"
-      ],
-      "language": "Go",
-      "license": "Apache-2.0",
-      "homepage": "https://whodb.com",
-      "html_url": "https://github.com/clidey/whodb",
-      "default_branch": "main",
-      "archived": false,
-      "search_score": 1.0,
-      "stars_7d_ago": 4942,
-      "star_series": [
-        {
-          "d": "07-13",
-          "s": 4931
-        },
-        {
-          "d": "07-14",
-          "s": 4931
-        },
-        {
-          "d": "07-15",
-          "s": 4931
-        },
-        {
-          "d": "07-16",
-          "s": 4931
-        },
-        {
-          "d": "07-17",
-          "s": 4931
-        },
-        {
-          "d": "07-18",
-          "s": 4931
-        },
-        {
-          "d": "07-19",
-          "s": 4931
-        },
-        {
-          "d": "07-20",
-          "s": 4931
-        },
-        {
-          "d": "07-21",
-          "s": 4931
-        },
-        {
-          "d": "07-22",
-          "s": 4931
-        },
-        {
-          "d": "07-23",
-          "s": 4931
-        },
-        {
-          "d": "07-24",
-          "s": 4931
-        },
-        {
-          "d": "07-25",
-          "s": 4931
-        },
-        {
-          "d": "07-26",
-          "s": 4931
-        },
-        {
-          "d": "07-27",
-          "s": 4931
-        },
-        {
-          "d": "07-28",
-          "s": 4931
-        },
-        {
-          "d": "07-29",
-          "s": 4931
-        },
-        {
-          "d": "07-30",
-          "s": 4932
-        },
-        {
-          "d": "07-31",
-          "s": 4935
-        },
-        {
-          "d": "08-01",
-          "s": 4935
-        },
-        {
-          "d": "08-02",
-          "s": 4937
-        },
-        {
-          "d": "08-03",
-          "s": 4939
-        },
-        {
-          "d": "08-04",
-          "s": 4941
-        },
-        {
-          "d": "08-05",
-          "s": 4942
-        },
-        {
-          "d": "08-06",
-          "s": 4988
-        },
-        {
-          "d": "08-07",
-          "s": 4994
-        },
-        {
-          "d": "08-08",
-          "s": 4996
-        },
-        {
-          "d": "08-09",
-          "s": 4999
-        },
-        {
-          "d": "08-10",
-          "s": 5000
-        },
-        {
-          "d": "08-11",
-          "s": 5000
-        }
-      ]
-    },
-    "score": {
-      "score": 47.69,
-      "breakdown": {
-        "vel": 83,
-        "acc": 99,
-        "health": 76,
-        "fresh": 0,
-        "signal": 85
-      },
-      "stage": "mid_early",
-      "stage_multiplier": 1.1,
-      "confidence": 1.0,
-      "base_score": 43.35,
-      "explanation": "whodb 以 5000 星在数据库管理赛道跑出 8.3 星/天的加速涨势，精准卡位「AI Agent + 数据治理」的中间层——用 text-to-sql 和 MCP 协议把元数据管理与 AI 原生工作流打通，正好承接企业从传统 SQL 编辑器向智能数据平台迁移的窗口期，而 4.7% 的 fork 比和仅 20 个 issue 表明工程成熟度足以支撑社区快速迭代。"
-    }
-  },
-  {
-    "repo": {
-      "owner": "LingFrame",
-      "name": "LingFrame",
-      "full_name": "LingFrame/LingFrame",
-      "description": "LingFrame: A JVM Runtime Security Governance Solution for Long-Running Systems. It implements modular isolation and zero-trust permission control to deliver automatic method-level full-link tracing, security auditing, and zero-downtime canary releases.",
-      "stars": 200,
-      "forks": 19,
-      "open_issues": 1,
-      "created_at": "2025-12-02T14:01:38+00:00",
-      "pushed_at": "2026-08-06T14:14:43+00:00",
-      "updated_at": "2026-08-09T03:25:44+00:00",
-      "topics": [
-        "canary-deployment",
-        "framework",
-        "java",
-        "jvm",
-        "ling",
-        "lingframe",
-        "linglong",
-        "plugin",
-        "plugin-framework",
-        "runtime",
-        "runtime-governance",
-        "spring",
-        "springboot",
-        "zero-trust"
-      ],
-      "language": "Java",
-      "license": "Apache-2.0",
-      "homepage": null,
-      "html_url": "https://github.com/LingFrame/LingFrame",
-      "default_branch": "main",
-      "archived": false,
-      "search_score": 1.0,
-      "stars_7d_ago": 197,
-      "star_series": [
-        {
-          "d": "07-13",
-          "s": 191
-        },
-        {
-          "d": "07-14",
-          "s": 191
-        },
-        {
-          "d": "07-15",
-          "s": 191
-        },
-        {
-          "d": "07-16",
-          "s": 191
-        },
-        {
-          "d": "07-17",
-          "s": 191
-        },
-        {
-          "d": "07-18",
-          "s": 191
-        },
-        {
-          "d": "07-19",
-          "s": 191
-        },
-        {
-          "d": "07-20",
-          "s": 191
-        },
-        {
-          "d": "07-21",
-          "s": 191
-        },
-        {
-          "d": "07-22",
-          "s": 191
-        },
-        {
-          "d": "07-23",
-          "s": 191
-        },
-        {
-          "d": "07-24",
-          "s": 191
-        },
-        {
-          "d": "07-25",
-          "s": 192
-        },
-        {
-          "d": "07-26",
-          "s": 193
-        },
-        {
-          "d": "07-27",
-          "s": 193
-        },
-        {
-          "d": "07-28",
-          "s": 193
-        },
-        {
-          "d": "07-29",
-          "s": 193
-        },
-        {
-          "d": "07-30",
-          "s": 195
-        },
-        {
-          "d": "07-31",
-          "s": 195
-        },
-        {
-          "d": "08-01",
-          "s": 195
-        },
-        {
-          "d": "08-02",
-          "s": 196
-        },
-        {
-          "d": "08-03",
-          "s": 196
-        },
-        {
-          "d": "08-04",
-          "s": 197
-        },
-        {
-          "d": "08-05",
-          "s": 197
-        },
-        {
-          "d": "08-06",
-          "s": 197
-        },
-        {
-          "d": "08-07",
-          "s": 197
-        },
-        {
-          "d": "08-08",
-          "s": 198
-        },
-        {
-          "d": "08-09",
-          "s": 200
-        },
-        {
-          "d": "08-10",
-          "s": 200
-        },
-        {
-          "d": "08-11",
-          "s": 200
-        }
-      ]
-    },
-    "score": {
-      "score": 42.62,
-      "breakdown": {
-        "vel": 13,
-        "acc": 46,
-        "health": 84,
-        "fresh": 31,
-        "signal": 70
-      },
-      "stage": "early",
-      "stage_multiplier": 1.2,
-      "confidence": 1.0,
-      "base_score": 35.52,
-      "explanation": "定位JVM长运行系统的运行时治理，以模块隔离+零信任权限控制切入，同时覆盖方法级全链路追踪和金丝雀发布，切中了云原生时代对安全与稳定性的双重刚需；fork比例接近10%且仅1个open issue，社区认可度高，早期增长势头值得关注。"
-    }
-  },
-  {
-    "repo": {
-      "owner": "Kieirra",
-      "name": "murmure",
-      "full_name": "Kieirra/murmure",
-      "description": "Fully local, private and cross platform Speech-to-Text with LLM Post-processing",
+      "owner": "Misaka-blog",
+      "name": "chromego_merge",
+      "full_name": "Misaka-blog/chromego_merge",
+      "description": "Not only for ChromeGo",
       "stars": 994,
-      "forks": 90,
-      "open_issues": 14,
-      "created_at": "2025-10-12T19:30:44+00:00",
-      "pushed_at": "2026-08-10T08:43:59+00:00",
-      "updated_at": "2026-08-10T20:30:45+00:00",
-      "topics": [
-        "asr",
-        "asr-model",
-        "debian-packages",
-        "linux",
-        "macos",
-        "privacy",
-        "speech-to-text",
-        "windows"
-      ],
-      "language": "TypeScript",
-      "license": "AGPL-3.0",
-      "homepage": "https://www.murmure.app",
-      "html_url": "https://github.com/Kieirra/murmure",
+      "forks": 441,
+      "open_issues": 7,
+      "created_at": "2024-03-09T00:12:14+00:00",
+      "pushed_at": "2026-08-11T06:48:12+00:00",
+      "updated_at": "2026-08-11T06:48:18+00:00",
+      "topics": [],
+      "language": "Python",
+      "license": "WTFPL",
+      "homepage": null,
+      "html_url": "https://github.com/Misaka-blog/chromego_merge",
       "default_branch": "main",
       "archived": false,
       "search_score": 1.0,
-      "stars_7d_ago": 988,
+      "stars_7d_ago": 989,
       "star_series": [
         {
           "d": "07-13",
-          "s": 973
+          "s": 980
         },
         {
           "d": "07-14",
-          "s": 973
-        },
-        {
-          "d": "07-15",
-          "s": 973
-        },
-        {
-          "d": "07-16",
-          "s": 973
-        },
-        {
-          "d": "07-17",
-          "s": 973
-        },
-        {
-          "d": "07-18",
-          "s": 973
-        },
-        {
-          "d": "07-19",
-          "s": 973
-        },
-        {
-          "d": "07-20",
-          "s": 973
-        },
-        {
-          "d": "07-21",
-          "s": 973
-        },
-        {
-          "d": "07-22",
-          "s": 973
-        },
-        {
-          "d": "07-23",
-          "s": 973
-        },
-        {
-          "d": "07-24",
-          "s": 973
-        },
-        {
-          "d": "07-25",
-          "s": 973
-        },
-        {
-          "d": "07-26",
-          "s": 973
-        },
-        {
-          "d": "07-27",
-          "s": 973
-        },
-        {
-          "d": "07-28",
-          "s": 973
-        },
-        {
-          "d": "07-29",
-          "s": 973
-        },
-        {
-          "d": "07-30",
-          "s": 976
-        },
-        {
-          "d": "07-31",
-          "s": 978
-        },
-        {
-          "d": "08-01",
           "s": 981
         },
         {
-          "d": "08-02",
+          "d": "07-15",
+          "s": 981
+        },
+        {
+          "d": "07-16",
           "s": 982
         },
         {
-          "d": "08-03",
+          "d": "07-17",
+          "s": 982
+        },
+        {
+          "d": "07-18",
+          "s": 982
+        },
+        {
+          "d": "07-19",
+          "s": 982
+        },
+        {
+          "d": "07-20",
+          "s": 982
+        },
+        {
+          "d": "07-21",
+          "s": 982
+        },
+        {
+          "d": "07-22",
+          "s": 982
+        },
+        {
+          "d": "07-23",
+          "s": 982
+        },
+        {
+          "d": "07-24",
+          "s": 982
+        },
+        {
+          "d": "07-25",
           "s": 983
         },
         {
+          "d": "07-26",
+          "s": 983
+        },
+        {
+          "d": "07-27",
+          "s": 983
+        },
+        {
+          "d": "07-28",
+          "s": 983
+        },
+        {
+          "d": "07-29",
+          "s": 983
+        },
+        {
+          "d": "07-30",
+          "s": 984
+        },
+        {
+          "d": "07-31",
+          "s": 986
+        },
+        {
+          "d": "08-01",
+          "s": 986
+        },
+        {
+          "d": "08-02",
+          "s": 986
+        },
+        {
+          "d": "08-03",
+          "s": 986
+        },
+        {
           "d": "08-04",
-          "s": 985
+          "s": 986
         },
         {
           "d": "08-05",
-          "s": 988
-        },
-        {
-          "d": "08-06",
           "s": 989
         },
         {
+          "d": "08-06",
+          "s": 991
+        },
+        {
           "d": "08-07",
-          "s": 990
+          "s": 994
         },
         {
           "d": "08-08",
+          "s": 994
+        },
+        {
+          "d": "08-09",
+          "s": 994
+        },
+        {
+          "d": "08-10",
+          "s": 994
+        },
+        {
+          "d": "08-11",
+          "s": 994
+        }
+      ]
+    },
+    "score": {
+      "score": 24.52,
+      "breakdown": {
+        "vel": 20,
+        "acc": 46,
+        "health": 76,
+        "fresh": 0,
+        "signal": 55
+      },
+      "stage": "mid_early",
+      "stage_multiplier": 1.1,
+      "confidence": 1.0,
+      "base_score": 22.29,
+      "explanation": "星数近千且 Fork 率高达 44%，社区认可度极强；项目定位“不止于 ChromeGo”的通用合并工具，健康指数 76 且 issue 极少，处于中早期爆发前夜，值得关注其扩展边界。",
+      "reason": "本周加速增长、全新发现，不在你的已看列表"
+    }
+  },
+  {
+    "repo": {
+      "owner": "MoonshotAI",
+      "name": "checkpoint-engine",
+      "full_name": "MoonshotAI/checkpoint-engine",
+      "description": "Checkpoint-engine is a simple middleware to update model weights in LLM inference engines",
+      "stars": 994,
+      "forks": 101,
+      "open_issues": 7,
+      "created_at": "2025-09-08T08:04:20+00:00",
+      "pushed_at": "2026-08-05T04:03:14+00:00",
+      "updated_at": "2026-08-10T18:31:37+00:00",
+      "topics": [],
+      "language": "Python",
+      "license": "MIT",
+      "homepage": null,
+      "html_url": "https://github.com/MoonshotAI/checkpoint-engine",
+      "default_branch": "main",
+      "archived": false,
+      "search_score": 1.0,
+      "stars_7d_ago": 991,
+      "star_series": [
+        {
+          "d": "07-13",
+          "s": 963
+        },
+        {
+          "d": "07-14",
+          "s": 964
+        },
+        {
+          "d": "07-15",
+          "s": 964
+        },
+        {
+          "d": "07-16",
+          "s": 964
+        },
+        {
+          "d": "07-17",
+          "s": 965
+        },
+        {
+          "d": "07-18",
+          "s": 966
+        },
+        {
+          "d": "07-19",
+          "s": 967
+        },
+        {
+          "d": "07-20",
+          "s": 969
+        },
+        {
+          "d": "07-21",
+          "s": 970
+        },
+        {
+          "d": "07-22",
+          "s": 973
+        },
+        {
+          "d": "07-23",
+          "s": 975
+        },
+        {
+          "d": "07-24",
+          "s": 979
+        },
+        {
+          "d": "07-25",
+          "s": 980
+        },
+        {
+          "d": "07-26",
+          "s": 981
+        },
+        {
+          "d": "07-27",
+          "s": 982
+        },
+        {
+          "d": "07-28",
+          "s": 983
+        },
+        {
+          "d": "07-29",
+          "s": 984
+        },
+        {
+          "d": "07-30",
+          "s": 988
+        },
+        {
+          "d": "07-31",
+          "s": 989
+        },
+        {
+          "d": "08-01",
+          "s": 990
+        },
+        {
+          "d": "08-02",
           "s": 991
+        },
+        {
+          "d": "08-03",
+          "s": 991
+        },
+        {
+          "d": "08-04",
+          "s": 991
+        },
+        {
+          "d": "08-05",
+          "s": 991
+        },
+        {
+          "d": "08-06",
+          "s": 991
+        },
+        {
+          "d": "08-07",
+          "s": 993
+        },
+        {
+          "d": "08-08",
+          "s": 993
         },
         {
           "d": "08-09",
@@ -848,19 +483,352 @@
       ]
     },
     "score": {
-      "score": 40.32,
+      "score": 18.99,
+      "breakdown": {
+        "vel": 13,
+        "acc": 36,
+        "health": 93,
+        "fresh": 8,
+        "signal": 55
+      },
+      "stage": "saturated",
+      "stage_multiplier": 0.7,
+      "confidence": 1.0,
+      "base_score": 27.13,
+      "explanation": "作为 MoonshotAI 开源的推理引擎热更新中间件，精准切中 LLM 服务动态权重升级的工程痛点，社区 fork/star 比达 10.2% 且仅有 7 个 open issue，健康度高，值得关注其后续生态化潜力。",
+      "reason": "本周加速增长、全新发现，不在你的已看列表"
+    }
+  },
+  {
+    "repo": {
+      "owner": "ArcadeAI",
+      "name": "arcade-mcp",
+      "full_name": "ArcadeAI/arcade-mcp",
+      "description": "MCP Server Framework and Tool Development library for building custom capabilities into agents. ",
+      "stars": 1000,
+      "forks": 105,
+      "open_issues": 16,
+      "created_at": "2024-04-26T22:25:48+00:00",
+      "pushed_at": "2026-08-10T20:10:21+00:00",
+      "updated_at": "2026-08-10T20:12:18+00:00",
+      "topics": [
+        "ai",
+        "arcade",
+        "arcade-ai",
+        "claude",
+        "claude-code",
+        "claude-mcp",
+        "mcp",
+        "mcp-framework",
+        "mcp-gateway",
+        "mcp-runtime",
+        "mcp-server",
+        "mcp-servers",
+        "mcp-tools",
+        "mcpserver",
+        "model-context-protocol",
+        "model-context-protocol-sdk",
+        "python"
+      ],
+      "language": "Python",
+      "license": "MIT",
+      "homepage": "https://docs.arcade.dev",
+      "html_url": "https://github.com/ArcadeAI/arcade-mcp",
+      "default_branch": "main",
+      "archived": false,
+      "search_score": 1.0,
+      "stars_7d_ago": 994,
+      "star_series": [
+        {
+          "d": "07-13",
+          "s": 957
+        },
+        {
+          "d": "07-14",
+          "s": 962
+        },
+        {
+          "d": "07-15",
+          "s": 968
+        },
+        {
+          "d": "07-16",
+          "s": 970
+        },
+        {
+          "d": "07-17",
+          "s": 971
+        },
+        {
+          "d": "07-18",
+          "s": 972
+        },
+        {
+          "d": "07-19",
+          "s": 972
+        },
+        {
+          "d": "07-20",
+          "s": 974
+        },
+        {
+          "d": "07-21",
+          "s": 974
+        },
+        {
+          "d": "07-22",
+          "s": 975
+        },
+        {
+          "d": "07-23",
+          "s": 975
+        },
+        {
+          "d": "07-24",
+          "s": 977
+        },
+        {
+          "d": "07-25",
+          "s": 978
+        },
+        {
+          "d": "07-26",
+          "s": 980
+        },
+        {
+          "d": "07-27",
+          "s": 981
+        },
+        {
+          "d": "07-28",
+          "s": 982
+        },
+        {
+          "d": "07-29",
+          "s": 982
+        },
+        {
+          "d": "07-30",
+          "s": 982
+        },
+        {
+          "d": "07-31",
+          "s": 982
+        },
+        {
+          "d": "08-01",
+          "s": 982
+        },
+        {
+          "d": "08-02",
+          "s": 984
+        },
+        {
+          "d": "08-03",
+          "s": 988
+        },
+        {
+          "d": "08-04",
+          "s": 992
+        },
+        {
+          "d": "08-05",
+          "s": 994
+        },
+        {
+          "d": "08-06",
+          "s": 994
+        },
+        {
+          "d": "08-07",
+          "s": 994
+        },
+        {
+          "d": "08-08",
+          "s": 994
+        },
+        {
+          "d": "08-09",
+          "s": 997
+        }
+      ]
+    },
+    "score": {
+      "score": 17.05,
       "breakdown": {
         "vel": 23,
-        "acc": 35,
-        "health": 87,
-        "fresh": 17,
+        "acc": 38,
+        "health": 92,
+        "fresh": 0,
+        "signal": 100
+      },
+      "stage": "saturated",
+      "stage_multiplier": 0.7,
+      "confidence": 1.0,
+      "base_score": 24.35,
+      "explanation": "作为 MCP 服务端开发框架，它在 Model Context Protocol 生态爆发期提供了标准化的工具构建层，999 stars 但 fork 率达 10.5%，叠加 100 的信号分和近乎满分的社区健康度，说明其被开发者深度复用的潜力极高，是 agent 基础设施中值得提前布局的底层选择。",
+      "reason": "本周加速增长、全新发现，不在你的已看列表"
+    }
+  },
+  {
+    "repo": {
+      "owner": "bugsfreeweb",
+      "name": "LiveTVCollector",
+      "full_name": "bugsfreeweb/LiveTVCollector",
+      "description": "Auto m3u collections for World LiveTV",
+      "stars": 200,
+      "forks": 87,
+      "open_issues": 3,
+      "created_at": "2025-03-01T08:30:25+00:00",
+      "pushed_at": "2026-08-11T02:16:10+00:00",
+      "updated_at": "2026-08-11T02:16:14+00:00",
+      "topics": [],
+      "language": "Python",
+      "license": "MIT",
+      "homepage": "https://bugsfreeweb.github.io/LiveTVCollector",
+      "html_url": "https://github.com/bugsfreeweb/LiveTVCollector",
+      "default_branch": "main",
+      "archived": false,
+      "search_score": 1.0,
+      "stars_7d_ago": 199,
+      "star_series": [
+        {
+          "d": "07-13",
+          "s": 199
+        },
+        {
+          "d": "07-14",
+          "s": 199
+        },
+        {
+          "d": "07-15",
+          "s": 199
+        },
+        {
+          "d": "07-16",
+          "s": 199
+        },
+        {
+          "d": "07-17",
+          "s": 199
+        },
+        {
+          "d": "07-18",
+          "s": 199
+        },
+        {
+          "d": "07-19",
+          "s": 199
+        },
+        {
+          "d": "07-20",
+          "s": 199
+        },
+        {
+          "d": "07-21",
+          "s": 199
+        },
+        {
+          "d": "07-22",
+          "s": 199
+        },
+        {
+          "d": "07-23",
+          "s": 199
+        },
+        {
+          "d": "07-24",
+          "s": 199
+        },
+        {
+          "d": "07-25",
+          "s": 199
+        },
+        {
+          "d": "07-26",
+          "s": 199
+        },
+        {
+          "d": "07-27",
+          "s": 199
+        },
+        {
+          "d": "07-28",
+          "s": 199
+        },
+        {
+          "d": "07-29",
+          "s": 199
+        },
+        {
+          "d": "07-30",
+          "s": 199
+        },
+        {
+          "d": "07-31",
+          "s": 199
+        },
+        {
+          "d": "08-01",
+          "s": 199
+        },
+        {
+          "d": "08-02",
+          "s": 199
+        },
+        {
+          "d": "08-03",
+          "s": 199
+        },
+        {
+          "d": "08-04",
+          "s": 199
+        },
+        {
+          "d": "08-05",
+          "s": 199
+        },
+        {
+          "d": "08-06",
+          "s": 199
+        },
+        {
+          "d": "08-07",
+          "s": 199
+        },
+        {
+          "d": "08-08",
+          "s": 199
+        },
+        {
+          "d": "08-09",
+          "s": 200
+        },
+        {
+          "d": "08-10",
+          "s": 200
+        },
+        {
+          "d": "08-11",
+          "s": 200
+        }
+      ]
+    },
+    "score": {
+      "score": 16.62,
+      "breakdown": {
+        "vel": 5,
+        "acc": 54,
+        "health": 85,
+        "fresh": 0,
         "signal": 85
       },
-      "stage": "mid_early",
-      "stage_multiplier": 1.1,
+      "stage": "mid_late",
+      "stage_multiplier": 1.0,
       "confidence": 1.0,
-      "base_score": 36.66,
-      "explanation": "本地隐私语音识别叠加LLM后处理，精准踩中AI时代数据主权与跨平台刚需；社区健康度（fork/star 9.1%）和活跃度信号强，中早期即逼近千星，具备成为主流自托管ASR方案的潜力。"
+      "base_score": 16.62,
+      "explanation": "LiveTVCollector 以 200+ Stars 实现 54 的加速比和 85% 的健康度，证明其自动聚合全球直播源的实用价值正被快速验证；在 IPTV 工具链中，这类低维护、高复用的 m3u 采集方案具备持续增长的基础。",
+      "reason": "本周加速增长、全新发现，不在你的已看列表"
     }
   }
 ]
