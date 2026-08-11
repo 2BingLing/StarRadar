@@ -1968,11 +1968,12 @@
       items.push({ title: "兴趣聚焦", text: "先收藏 / 点开几个项目，雷达会从你的行为中学习偏好。" });
     }
     var min = Number(val.min) || 0, max = Number(val.max) || 0;
+    var minTxt = formatCount(min) + " 星", maxTxt = formatCount(max) + " 星";
     items.push({
       title: "体量区间",
       text: max > 0
-        ? "已过滤 " + starNum(min) + " 以下与 " + starNum(max) + " 以上的项目，可在「我的雷达」随时调整。"
-        : "已过滤 " + starNum(min) + " 以下的小众项目，可在「我的雷达」随时调整。",
+        ? "已过滤 " + minTxt + " 以下与 " + maxTxt + " 以上的项目，可在「我的雷达」随时调整。"
+        : "已过滤 " + minTxt + " 以下的小众项目，可在「我的雷达」随时调整。",
     });
     items.push({ title: "下周一见", text: "每周一 08:00 自动生成周报：热度榜 / 新星发现 / 关注动态，并附你的专属解读。" });
     return items;
