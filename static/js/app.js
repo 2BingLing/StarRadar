@@ -1985,8 +1985,15 @@
     var cached = null;
     try { cached = JSON.parse(localStorage.getItem(SUGGEST_KEY)); } catch (e) {}
     if (cached && Array.isArray(cached.items) && cached.items.length) {
-      box.innerHTML = suggestionHTML(cached.items);
-      return;
+      // 清洗历史脏缓存（旧版建议文本混入过未转义的 SVG 源码）
+      var dirty = cached.items.some(function (it) {
+        return it.text && it.text.indexOf("<svg") !== -1;
+      });
+      if (!dirty) {
+        box.innerHTML = suggestionHTML(cached.items);
+        return;
+      }
+      try { localStorage.removeItem(SUGGEST_KEY); } catch (e) {}
     }
     var hasLLM = typeof window.LLM !== "undefined" && window.LLM.isConfigured() && window.LLM.canCall("survey");
     if (!hasLLM) {
