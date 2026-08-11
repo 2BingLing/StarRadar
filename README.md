@@ -1,4 +1,8 @@
 <p align="center">
+  <b>中文</b> · <a href="README.en.md">English</a>
+</p>
+
+<p align="center">
   <img src="static/readme/hero.svg" width="100%" alt="StarRadar 星探 · 看见下一颗明星 · GitHub 潜力项目发现雷达">
 </p>
 

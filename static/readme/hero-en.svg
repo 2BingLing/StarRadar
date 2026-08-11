@@ -1,0 +1,28 @@
+<svg width="1200" height="430" viewBox="0 0 1200 430" fill="none" xmlns="http://www.w3.org/2000/svg" role="img" aria-labelledby="title desc">
+  <title id="title">StarRadar · See the next rising star</title>
+  <desc id="desc">A radar for discovering rising GitHub projects: deep-blue starfield background, brand logo on the left (blue arc and orange star), English title and capability badges on the right.</desc>
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1200" y2="430" gradientUnits="userSpaceOnUse"><stop stop-color="#071529"/><stop offset="0.52" stop-color="#0E2746"/><stop offset="1" stop-color="#07101F"/></linearGradient>
+    <linearGradient id="orange" x1="290" y1="120" x2="470" y2="280" gradientUnits="userSpaceOnUse"><stop stop-color="#FFD166"/><stop offset="1" stop-color="#FF9F2D"/></linearGradient>
+    <linearGradient id="arcLogo" x1="300" y1="85" x2="85" y2="315" gradientUnits="userSpaceOnUse"><stop stop-color="#7DB5FF"/><stop offset="1" stop-color="#2471EE"/></linearGradient>
+    <linearGradient id="starLogo" x1="170" y1="130" x2="250" y2="260" gradientUnits="userSpaceOnUse"><stop stop-color="#FFD166"/><stop offset="1" stop-color="#FF9F2D"/></linearGradient>
+    <pattern id="grid" width="32" height="32" patternUnits="userSpaceOnUse"><path d="M32 0H0V32" stroke="#A9C9F8" stroke-opacity="0.07"/></pattern>
+  </defs>
+  <rect width="1200" height="430" rx="26" fill="url(#bg)"/><rect width="1200" height="430" rx="26" fill="url(#grid)"/>
+  <circle cx="1020" cy="-40" r="250" fill="#2471EE" fill-opacity="0.11"/><circle cx="80" cy="470" r="230" fill="#FF9F2D" fill-opacity="0.06"/>
+  <g transform="translate(90 58)">
+    <g transform="translate(30 10) scale(0.75)">
+      <path fill="url(#arcLogo)" d="M219 78C176 73 135 87 103 113C69 140 62 183 72 226C85 286 136 326 194 328C259 330 312 288 324 231C328 215 328 199 325 182L300 186C302 201 302 216 298 231C287 274 247 303 200 303C152 303 112 275 97 232C82 189 94 151 124 123C148 101 181 93 215 103Z"/>
+      <path fill="url(#starLogo)" d="M147 154L198 172L300 101L228 203L246 251L198 234L147 251L165 203Z"/>
+    </g>
+  </g>
+  <g transform="translate(480 74)">
+    <text fill="#8FB9F7" font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, monospace" font-size="14" letter-spacing="3">OPEN SOURCE OBSERVATORY</text>
+    <text y="70" fill="white" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif" font-size="52" font-weight="750">See the next</text>
+    <text y="132" fill="url(#orange)" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif" font-size="58" font-weight="800">rising star.</text>
+    <text y="196" fill="#B5C7DE" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif" font-size="19">A personal radar for GitHub projects with momentum.</text>
+    <text y="230" fill="#8FB9F7" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif" font-size="18">50–5000 star mid-tier repos, ranked by growth momentum</text>
+    <g transform="translate(0 278)"><rect width="142" height="42" rx="21" fill="#1D63D5" fill-opacity="0.32" stroke="#5EA2FF" stroke-opacity="0.7"/><text x="22" y="27" fill="#DCEBFF" font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, monospace" font-size="13" letter-spacing="1">5D POTENTIAL</text><rect x="158" width="148" height="42" rx="21" fill="#FF9F2D" fill-opacity="0.14" stroke="#FFB84B" stroke-opacity="0.7"/><text x="178" y="27" fill="#FFE4B1" font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, monospace" font-size="13" letter-spacing="1">WEEKLY SIGNAL</text></g>
+  </g>
+  <text x="1080" y="386" text-anchor="end" fill="#7895B7" font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, monospace" font-size="12" letter-spacing="2">STARRADAR / DAILY 06:00 UTC</text>
+</svg>

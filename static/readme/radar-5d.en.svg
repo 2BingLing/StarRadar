@@ -1,0 +1,38 @@
+<svg width="1200" height="420" viewBox="0 0 1200 420" fill="none" xmlns="http://www.w3.org/2000/svg" role="img" aria-labelledby="title desc">
+  <title id="title">StarRadar 5D potential scoring</title>
+  <desc id="desc">Five-dimension radar showing velocity, acceleration, health, freshness and signal, with sample data from the real project tsingyuai/growth-lab (999 stars).</desc>
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1200" y2="420" gradientUnits="userSpaceOnUse"><stop stop-color="#071529"/><stop offset="0.52" stop-color="#0E2746"/><stop offset="1" stop-color="#07101F"/></linearGradient>
+    <linearGradient id="dataGrad" x1="180" y1="80" x2="440" y2="340" gradientUnits="userSpaceOnUse"><stop stop-color="#5EA2FF"/><stop offset="1" stop-color="#2471EE"/></linearGradient>
+    <filter id="glow" x="-100%" y="-100%" width="300%" height="300%"><feGaussianBlur stdDeviation="6" result="blur"/><feMerge><feMergeNode in="blur"/><feMergeNode in="SourceGraphic"/></feMerge></filter>
+    <pattern id="grid" width="32" height="32" patternUnits="userSpaceOnUse"><path d="M32 0H0V32" stroke="#A9C9F8" stroke-opacity="0.07"/></pattern>
+  </defs>
+  <rect width="1200" height="420" rx="26" fill="url(#bg)"/><rect width="1200" height="420" rx="26" fill="url(#grid)"/>
+  <circle cx="1060" cy="20" r="210" fill="#2471EE" fill-opacity="0.10"/><circle cx="120" cy="430" r="200" fill="#FF9F2D" fill-opacity="0.05"/>
+
+  <text x="56" y="52" fill="#8FB9F7" font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, monospace" font-size="14" letter-spacing="3">SCORING ENGINE · 5D POTENTIAL</text>
+
+  <g transform="translate(0 0)">
+    <polygon points="300,70 442.7,173.7 388.2,341.4 211.8,341.4 157.3,173.7" stroke="#B8D6FF" stroke-opacity="0.20"/>
+    <polygon points="300,120 395.1,149.1 358.8,300.9 241.2,300.9 204.9,149.1" stroke="#B8D6FF" stroke-opacity="0.16"/>
+    <polygon points="300,170 347.6,174.5 329.4,260.5 270.6,260.5 252.4,174.5" stroke="#B8D6FF" stroke-opacity="0.16"/>
+    <g stroke="#B8D6FF" stroke-opacity="0.14"><path d="M300 220L300 70"/><path d="M300 220L442.7 173.7"/><path d="M300 220L388.2 341.4"/><path d="M300 220L211.8 341.4"/><path d="M300 220L157.3 173.7"/></g>
+    <polygon points="300,70 441.2,174.1 376.7,325.6 216.2,335.3 178.7,180.6" fill="url(#dataGrad)" fill-opacity="0.32" stroke="#4F98FF" stroke-width="2.5" stroke-linejoin="round"/>
+    <circle cx="300" cy="70" r="5" fill="#FFD166" filter="url(#glow)"/><circle cx="441.2" cy="174.1" r="4" fill="#7DB5FF"/><circle cx="376.7" cy="325.6" r="4" fill="#7DB5FF"/><circle cx="216.2" cy="335.3" r="4" fill="#7DB5FF"/><circle cx="178.7" cy="180.6" r="4" fill="#7DB5FF"/>
+    <text x="300" y="44" text-anchor="middle" fill="#DCEBFF" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif" font-size="18" font-weight="600">Vel</text>
+    <text x="476" y="152" fill="#DCEBFF" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif" font-size="18" font-weight="600">Acc</text>
+    <text x="398" y="364" fill="#DCEBFF" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif" font-size="18" font-weight="600">Health</text>
+    <text x="176" y="364" text-anchor="end" fill="#DCEBFF" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif" font-size="18" font-weight="600">Fresh</text>
+    <text x="122" y="152" text-anchor="end" fill="#DCEBFF" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif" font-size="18" font-weight="600">Signal</text>
+  </g>
+
+  <g transform="translate(620 96)" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif">
+    <text y="0" fill="#7DB5FF" font-size="22" font-weight="700">Velocity vel</text><text x="180" y="0" fill="#B5C7DE" font-size="18">Recent star growth vs peer baseline</text>
+    <text y="54" fill="#7DB5FF" font-size="22" font-weight="700">Acceleration acc</text><text x="180" y="54" fill="#B5C7DE" font-size="18">Momentum change — taking off</text>
+    <text y="108" fill="#7DB5FF" font-size="22" font-weight="700">Health health</text><text x="180" y="108" fill="#B5C7DE" font-size="18">Forks / issues / active maintenance</text>
+    <text y="162" fill="#7DB5FF" font-size="22" font-weight="700">Freshness fresh</text><text x="180" y="162" fill="#B5C7DE" font-size="18">Young and new, the newer the better</text>
+    <text y="216" fill="#7DB5FF" font-size="22" font-weight="700">Signal signal</text><text x="180" y="216" fill="#B5C7DE" font-size="18">Community engagement beyond stars</text>
+  </g>
+
+  <text x="1080" y="384" text-anchor="end" fill="#7895B7" font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, monospace" font-size="14" letter-spacing="1">SAMPLE · tsingyuai/growth-lab · 999 STARS</text>
+</svg>
