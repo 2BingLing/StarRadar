@@ -77,6 +77,26 @@ Data flow: browser (localStorage) → local `--serve` persistence (SQLite) → d
 
 ---
 
+## Sign-in mechanism & permissions
+
+"Sign in with GitHub" uses the **OAuth Device Flow** (the Client ID is bundled as a public value — zero configuration for anyone who clones):
+
+1. Click sign in → GitHub asks for an 8-digit code → authorize once
+2. The GitHub-issued token returns directly to **your browser and stays local** (localStorage; the personal pipeline also keeps a copy in a local file to fetch "my stars / my repos")
+3. The scopes shown on the authorization page are `public_repo` (star / fork public repos) and `read:user` (read your username and avatar)
+
+**Safety boundaries**:
+
+- **The token never passes through any third party** — not the author's server, not the hosting platform, not a public proxy; on GitHub Pages (no backend) the token stays in your browser only
+- **The bundled Client ID is a public value** (not a secret, no risk); the Client Secret is never bundled or committed — GitHub auto-revokes any publicly leaked secret, which is exactly why sign-in uses device flow instead of an embedded-secret redirect
+- **The app only calls**: star/unstar, fork, and reading your starred/repo info. It never uses your token for anything else (no code changes, no private repos, no other apps)
+- **Sign out anytime**: the page's "Sign out" clears the local token instantly; you can also revoke at GitHub → Settings → Applications → StarRadar and the token dies immediately
+- **No data uploads**: questionnaire / behavior data is only persisted locally via `--serve` (memory.db); the GitHub Pages deployment contains no personal data
+
+> Want the one-click "authorize & bounce back" website experience? Register your own OAuth App and set `GH_OAUTH_CLIENT_ID / GH_OAUTH_CLIENT_SECRET` in your local `.env` — sign-in auto-upgrades to the redirect flow (callback URL `http://127.0.0.1/api/oauth/callback`).
+
+---
+
 ## Quick start
 
 ```bash

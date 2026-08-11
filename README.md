@@ -77,6 +77,26 @@ GitHub Trending 上榜时，热度红利早已被瓜分。StarRadar 反着来—
 
 ---
 
+## 登录机制与权限说明
+
+「通过 GitHub 登录」采用 **OAuth 设备流**（Client ID 已内置为公开值，克隆者零配置）：
+
+1. 点击登录 → 打开 GitHub 页面输入 8 位授权码 → 确认授权
+2. GitHub 签发的 token 直接回到你的浏览器，**仅存本机**（localStorage；个人版本地管道会另存一份到本地文件，用于拉取「我的加星 / 我的仓库」）
+3. 授权页展示的权限为 `public_repo`（对公开仓库加星 / Fork）与 `read:user`（读取用户名与头像）
+
+**安全边界**：
+
+- **Token 不经过任何第三方**——不经作者服务器、不经托管平台、不经公共代理；GitHub Pages 在线版（无后端）时 token 只在你的浏览器里
+- **内置 Client ID 是公开值**（非机密，无风险）；Client Secret 永不内置、永不入库——GitHub 会自动撤销任何公开泄露的 secret，这也是登录采用设备流而非「内置密钥跳转」的原因
+- **应用只调用**：加星/取消星、Fork、读取你的星标与仓库信息。不会用你的 token 做任何其他操作（不改代码、不读私有仓库、不碰你的其他应用）
+- **随时可退出**：页面「退出登录」立即清除本机 token；也可在 GitHub → Settings → Applications → StarRadar 撤销授权，token 即刻失效
+- **数据不上传**：问卷 / 行为数据仅在本地 `--serve` 时落库（memory.db），GitHub Pages 部署不含任何个人数据
+
+> 想获得「点一下即回跳」的网站式登录体验？自行注册 OAuth App 后在本机 `.env` 配置 `GH_OAUTH_CLIENT_ID / GH_OAUTH_CLIENT_SECRET` 即可自动升级为跳转授权（回调地址 `http://127.0.0.1/api/oauth/callback`）。
+
+---
+
 ## 快速开始
 
 ```bash
