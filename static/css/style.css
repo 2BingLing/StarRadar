@@ -536,6 +536,17 @@ h1 em { color: var(--blue); font-style: normal; }
 .search-bar input { flex: 1; min-width: 0; border: 0; outline: 0; padding: 10px 0; color: var(--ink); font-size: 16px; background: transparent; }
 .search-bar input::placeholder { color: var(--faint); }
 .search-clear { width: 30px; height: 30px; border: 0; border-radius: 9px; color: var(--muted); font-size: 17px; background: #eef3f9; cursor: pointer; }
+/* 搜索历史 + 关键词高亮（搜索增强） */
+.search-hist { display: flex; gap: 8px; align-items: center; flex-wrap: wrap; margin-top: 10px; }
+.search-hist-label { font-size: 11.5px; color: var(--faint); }
+.search-hist-item {
+  padding: 5px 12px; border: 1px solid var(--line); border-radius: 999px;
+  background: #f7f9fd; color: var(--muted); font-size: 12px; cursor: pointer; transition: 0.15s;
+}
+.search-hist-item:hover { border-color: #1677ff66; color: var(--blue); background: #f0f6ff; }
+.search-results mark {
+  background: #fff3bf; color: inherit; border-radius: 3px; padding: 0 1px;
+}
 .search-filters { display: flex; gap: 10px; align-items: center; margin-top: 12px; flex-wrap: wrap; }
 .search-filters select {
   padding: 7px 12px;

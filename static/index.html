@@ -28,6 +28,7 @@
       <a class="gh-repo" href="?personal=1" id="pLink" title="个人特化雷达：基于你的画像搜索与解读">个人版 ↗</a>
       <button class="icon" id="search" title="语义搜索">⌗</button>
       <button class="icon" id="ghConn" title="连接 GitHub，解锁一键加星 / Fork"></button>
+      <button class="icon" id="llmBtn" title="AI 个性化配置（个人版 · Key 仅存本机）" hidden>⚡</button>
       <button class="profile" id="profile"><span>林</span><em>我的雷达</em>⌄</button>
     </div>
   </nav>
@@ -179,6 +180,41 @@
   </div>
 </div>
 
+<!-- ===== LLM 配置面板（个人版 · AI 个性化） ===== -->
+<div class="gh-overlay" id="llmPanel" aria-hidden="true">
+  <div class="gh-box" role="dialog" aria-modal="true">
+    <button class="detail-close" id="llmClose" title="关闭">×</button>
+    <div class="gh-head">
+      <span class="gh-ico" aria-hidden="true">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" width="22" height="22"><path d="M13 2L4.5 13.5H11L9.5 22 19 10h-6.5z"/></svg>
+      </span>
+      <div>
+        <h3 id="llmTitle">AI 个性化配置</h3>
+        <p>填入你自己的 LLM Key · 推荐 / 解读 / 周报按你的画像生成</p>
+      </div>
+    </div>
+    <div class="note-body">
+      <label class="gh-field">API Base URL
+        <input id="llmBase" type="text" placeholder="https://api.openai.com/v1" autocomplete="off">
+      </label>
+      <label class="gh-field">API Key
+        <input id="llmKey" type="password" placeholder="sk-…" autocomplete="off">
+      </label>
+      <label class="gh-field">模型
+        <input id="llmModel" type="text" placeholder="gpt-4o-mini" autocomplete="off">
+      </label>
+      <p class="llm-status" id="llmStatus"></p>
+      <small class="note-date">Key 仅存本机浏览器，并同步到本地后端（data/profile/llm_config.json，供每日管道调用）；不上传任何第三方。</small>
+    </div>
+    <div class="gh-foot">
+      <button class="gh-btn ghost" id="llmClear" hidden>清除</button>
+      <span class="gh-spacer"></span>
+      <button class="gh-btn ghost" id="llmTest">测试</button>
+      <button class="gh-btn primary" id="llmSave">保存</button>
+    </div>
+  </div>
+</div>
+
 <!-- ===== Fork 确认弹窗 ===== -->
 <div class="gh-overlay" id="forkPanel" aria-hidden="true">
   <div class="gh-box" role="dialog" aria-modal="true">
@@ -237,6 +273,7 @@
       <input id="searchInput" type="search" placeholder="搜索项目 · 支持名称 / 描述 / 主题 / 语言" autocomplete="off">
       <button class="search-clear" id="searchClear" title="清空" hidden>×</button>
     </div>
+    <div class="search-hist" id="searchHist" hidden></div>
     <div class="search-filters">
       <select id="fTopic" title="主题方向">
         <option value="">全部方向</option>

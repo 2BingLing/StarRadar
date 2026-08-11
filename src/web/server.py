@@ -161,6 +161,9 @@ class StarRadarHandler(BaseHTTPRequestHandler):
         if path == "/api/gh_token":
             self._save_gh_token()
             return
+        if path == "/api/llm_key":
+            self._save_llm_key()
+            return
         if path != "/api/events":
             self._bad("not found")
             return
@@ -291,6 +294,16 @@ class StarRadarHandler(BaseHTTPRequestHandler):
             except OSError:
                 pass
             self._json(200, {"ok": True, "logged_out": True})
+            return
+        if path == "/api/llm_key":
+            from config import PROFILE_DIR
+            f = PROFILE_DIR / "llm_config.json"
+            try:
+                if f.is_file():
+                    f.unlink()
+            except OSError:
+                pass
+            self._json(200, {"ok": True, "cleared": True})
             return
         self._json(404, {"ok": False, "error": "not found"})
 
@@ -490,6 +503,47 @@ class StarRadarHandler(BaseHTTPRequestHandler):
             self._json(500, {"ok": False, "error": "write failed"})
             return
         self._json(200, {"ok": True, "saved": login})
+
+    def _save_llm_key(self) -> None:
+        """POST /api/llm_key：浏览器配置的 LLM key 上交本地后端（供 --personal 管道调用）。
+        存 data/profile/llm_config.json（.gitignore 忽略，绝不上传）。
+        body: {base_url?, key, model?} —— 与前端 localStorage starradar:llm_config 同构。
+        """
+        try:
+            length = int(self.headers.get("Content-Length") or 0)
+        except (TypeError, ValueError):
+            self._bad("bad content-length")
+            return
+        if length <= 0 or length > 1 << 16:
+            self._bad("payload too large")
+            return
+        try:
+            payload = json.loads(self.rfile.read(length).decode("utf-8"))
+        except (json.JSONDecodeError, UnicodeDecodeError):
+            self._bad("invalid json")
+            return
+        if not isinstance(payload, dict):
+            self._bad("payload must be object")
+            return
+        key = str(payload.get("key") or "").strip()
+        if not key:
+            self._bad("missing key")
+            return
+        from config import PROFILE_DIR
+
+        cfg = {
+            "key": key,
+            "base_url": str(payload.get("base_url") or "").strip() or None,
+            "model": str(payload.get("model") or "").strip() or None,
+        }
+        try:
+            (PROFILE_DIR / "llm_config.json").write_text(
+                json.dumps(cfg, ensure_ascii=False), encoding="utf-8"
+            )
+        except OSError:
+            self._json(500, {"ok": False, "error": "write failed"})
+            return
+        self._json(200, {"ok": True, "saved": True})
 
     def _personal_status(self) -> None:
         """GET /api/personal/status：个人版状态（登录 / LLM / 数据是否就绪）。"""

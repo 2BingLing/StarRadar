@@ -386,7 +386,7 @@
       var x, y;
       if (sortBy === "stars") { x = repoOf(a).stars; y = repoOf(b).stars; }
       else if (sortBy === "gain") { x = weekGain(a); y = weekGain(b); }
-      else if (tab === "potential") { x = personalScore(a); y = personalScore(b); }
+      else if (tab === "potential" && IS_PERSONAL) { x = personalScore(a); y = personalScore(b); }
       else { x = Number(scoreOf(a).score) || 0; y = Number(scoreOf(b).score) || 0; }
       return (y - x) || (fullName(a) < fullName(b) ? -1 : 1);
     });
@@ -624,6 +624,64 @@
     return q.toLowerCase().split(/[\s,，、]+/).filter(function (t) { return t.length >= 1; });
   }
 
+  // ===== 搜索增强：同义词扩展 / 关键词高亮 / 搜索历史 =====
+  var HIST_KEY = "starradar:search_hist";
+  function loadHist() { try { return JSON.parse(localStorage.getItem(HIST_KEY)) || []; } catch (e) { return []; } }
+  function saveHist(list) { try { localStorage.setItem(HIST_KEY, JSON.stringify(list.slice(0, 8))); } catch (e) {} }
+  function addHist(q) {
+    var t = q.trim().toLowerCase();
+    if (!t) return;
+    var list = loadHist().filter(function (x) { return x !== t; });
+    list.unshift(t);
+    saveHist(list);
+  }
+  // 同义词扩展：搜索词命中 40 标签关键词时，扩展出该标签与全部关联关键词
+  // （搜 "ai agent" 也能命中带 "Agent" 标签的项目）
+  function expandTokens(tokens) {
+    var out = tokens.slice();
+    tokens.forEach(function (t) {
+      Object.keys(SURVEY_KEYWORDS).forEach(function (label) {
+        var kws = SURVEY_KEYWORDS[label] || [];
+        var hit = kws.some(function (k) { return k.length >= 2 && t.indexOf(k) !== -1; });
+        if (!hit && t.length >= 2) hit = label.toLowerCase().indexOf(t) !== -1;
+        if (!hit) return;
+        out.push(label.toLowerCase());
+        kws.forEach(function (k) { if (k.length >= 2) out.push(k); });
+      });
+    });
+    return out.filter(function (v, i) { return out.indexOf(v) === i; });
+  }
+  function highlight(text, tokens) {
+    var esc = escapeHtml(text || "");
+    tokens.forEach(function (t) {
+      if (t.length < 2) return;
+      try {
+        var re = new RegExp("(" + t.replace(/[.*+?^${}()|[\]\\]/g, "\\$&") + ")", "ig");
+        esc = esc.replace(re, "<mark>$1</mark>");
+      } catch (e) {}
+    });
+    return esc;
+  }
+  function renderHist() {
+    var box = document.querySelector("#searchHist");
+    if (!box) return;
+    var list = loadHist();
+    if (!list.length || searchInput.value.trim()) { box.hidden = true; return; }
+    box.hidden = false;
+    box.innerHTML = '<span class="search-hist-label">最近搜索</span>' + list.map(function (q) {
+      return '<button class="search-hist-item" data-q="' + escapeHtml(q) + '">' + escapeHtml(q) + "</button>";
+    }).join("");
+    Array.prototype.forEach.call(box.querySelectorAll(".search-hist-item"), function (b) {
+      b.addEventListener("click", function () {
+        searchInput.value = b.dataset.q;
+        var cl = document.querySelector("#searchClear");
+        if (cl) cl.hidden = false;
+        box.hidden = true;
+        renderSearch();
+      });
+    });
+  }
+
   function searchScore(item, tokens) {
     var r = repoOf(item);
     var hay = {
@@ -665,6 +723,7 @@
     setTimeout(function () { searchInput.focus(); }, 60);
     fillTopicFilter();
     renderSearch();
+    renderHist();
   }
   function closeSearch() {
     searchPanel.classList.remove("open");
@@ -678,7 +737,7 @@
     var lang = document.querySelector("#fLang").value;
     var stage = document.querySelector("#fStage").value;
     var minScore = Number(document.querySelector("#fMin").value) || 0;
-    var tokens = searchTokens(q);
+    var tokens = expandTokens(searchTokens(q));
 
     var items = searchIndex().filter(function (it) {
       var r = repoOf(it);
@@ -733,8 +792,8 @@
         '<div class="s-item" data-i="' + i + '">' +
           '<span class="repo-icon">' + langLetter(it) + "</span>" +
           '<div class="s-main">' +
-            "<strong>" + escapeHtml(fullName(it)) + "</strong>" +
-            '<small>' + escapeHtml(r.description || (s.explanation || "")) + "</small>" +
+            "<strong>" + highlight(fullName(it), tokens) + "</strong>" +
+            '<small>' + highlight(r.description || (s.explanation || ""), tokens) + "</small>" +
           "</div>" +
           '<span class="s-meta">' +
             "<i>" + escapeHtml(r.language || "?") + "</i>" +
@@ -744,9 +803,10 @@
     });
     searchResultsEl.innerHTML = html;
 
-    // 绑定点击 → 打开全屏详情
+    // 绑定点击 → 打开全屏详情 + 记录搜索历史
     Array.prototype.forEach.call(searchResultsEl.querySelectorAll(".s-item"), function (el) {
       el.addEventListener("click", function () {
+        addHist(searchInput.value);
         var item = ranked[Number(el.dataset.i)].it;
         closeSearch();
         openDetail(item);
@@ -1796,6 +1856,7 @@
   searchInput.addEventListener("input", function () {
     document.querySelector("#searchClear").hidden = !searchInput.value;
     renderSearch();
+    renderHist();
   });
   searchInput.addEventListener("keydown", function (e) {
     if (e.key === "Escape") closeSearch();
@@ -2157,7 +2218,9 @@
     saveSurvey();
     closeSurvey();
     var aiOn = typeof window.LLM !== "undefined" && window.LLM.isConfigured();
-    notify(aiOn ? "兴趣档案已建立 · AI 个性化已开启" : "兴趣档案已建立 · 为你精选会越来越准");
+    // 个人版：问卷修改在下次管道生成时生效（管道每次读最新问卷）
+    notify(IS_PERSONAL ? "问卷已保存 · 改动将于下次生成时生效"
+      : (aiOn ? "兴趣档案已建立 · AI 个性化已开启" : "兴趣档案已建立"));
   });
   document.querySelector("#surveySkip").addEventListener("click", skipSurvey);
   document.querySelector("#surveyClose").addEventListener("click", skipSurvey);
@@ -2165,11 +2228,16 @@
     if (e.target === surveyEl) skipSurvey();
   });
 
-  // 我的雷达按钮：随时可调出 / 重新设置兴趣档案
-  document.querySelector("#profile").addEventListener("click", function () {
-    openSurvey(true);
-    notify("可随时调整你的兴趣方向");
-  });
+  // 我的雷达按钮：仅个人版显示（公版回归客观，无问卷）
+  var profileBtn = document.querySelector("#profile");
+  if (!IS_PERSONAL) {
+    if (profileBtn) profileBtn.style.display = "none";
+  } else if (profileBtn) {
+    profileBtn.addEventListener("click", function () {
+      openSurvey(true);
+      notify("可随时调整你的兴趣方向");
+    });
+  }
 
   loadFavs();
   loadHistory();
@@ -2180,8 +2248,9 @@
   var syncBtn = document.querySelector("#syncBtn");
   if (syncBtn) syncBtn.addEventListener("click", function () { syncLocalData(true); });
   init();
-  setTimeout(function () { openSurvey(false); }, 900);
-  console.log("StarRadar · Observatory 已启动");
+  // 冷启动问卷：仅个人版自动弹出（公版打开即用，无问卷）
+  if (IS_PERSONAL) setTimeout(function () { openSurvey(false); }, 900);
+  console.log("StarRadar · Observatory 已启动" + (IS_PERSONAL ? "（个人版）" : "（公版）"));
 
   // ===== GitHub 原生集成（P4）：操作 → 行为日志 =====
   window.addEventListener("sr:gh-action", function (ev) {

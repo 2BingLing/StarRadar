@@ -31,6 +31,7 @@ SCORES_PATH = PERSONAL_DIR / "scores.json"
 TRENDS_PATH = PERSONAL_DIR / "trends.json"
 SNAPSHOT_PATH = PERSONAL_DIR / "snapshots.json"
 TOKEN_PATH = PROFILE_DIR / "gh_token.json"
+LLM_CFG_PATH = PROFILE_DIR / "llm_config.json"
 
 STAR_BUCKETS: list[tuple[int, int]] = [
     (50, 500),      # 萌芽：早期高潜力
@@ -62,6 +63,28 @@ def _load_login() -> dict:
     if not data.get("token") or not data.get("login"):
         raise PersonalError("登录凭据不完整，请重新登录")
     return data
+
+
+def _load_llm_config() -> None:
+    """浏览器上传的 LLM key（data/profile/llm_config.json）覆盖 .env 配置。
+
+    仅 --personal 管道生效（公版 CI 管道不 import 本模块，不受影响）；
+    无 key 时保持 .env 兜底，LLM 调用自动降级规则文本。
+    """
+    if not LLM_CFG_PATH.is_file():
+        return
+    try:
+        cfg = json.loads(LLM_CFG_PATH.read_text(encoding="utf-8"))
+    except (json.JSONDecodeError, OSError):
+        return
+    if cfg.get("key"):
+        settings.llm.api_key = cfg["key"]
+        print(f"  → LLM：已载入浏览器上传的 Key（个人管道使用）")
+    if cfg.get("base_url"):
+        settings.llm.base_url = cfg["base_url"]
+    if cfg.get("model"):
+        settings.llm.model = cfg["model"]
+    logger.info("personal LLM config loaded: base=%s model=%s", settings.llm.base_url, settings.llm.model)
 
 
 def _gh_api(login: dict, path: str) -> list:
@@ -202,6 +225,7 @@ def run_personal_pipeline() -> Path:
 
     login = _load_login()
     print(f"  登录账号：{login['login']}")
+    _load_llm_config()  # 浏览器上传的 LLM key 覆盖 .env（仅个人管道）
 
     # ① 种子
     print("[1/6] 种子画像 · 我的加星 + 我的仓库")
@@ -378,6 +402,30 @@ def build_personal_trends(scored: list, now: datetime) -> None:
     hot_top.sort(key=lambda x: -x["delta"])
     new_stars.sort(key=lambda x: -x["stars"])
 
+    # 主题叙事：LLM 归纳（无 key 返回 [] → 降级话题聚合）。榜单保持客观增量排序，
+    # 个性化体现在解读层（前端「为你解读」按画像生成）。
+    themes: list[dict] = []
+    try:
+        from src.reporter.llm_summary import summarize_themes
+        themes = summarize_themes(hot_top[:12])
+    except Exception as exc:  # noqa: BLE001
+        logger.warning("personal themes LLM failed: %s", exc)
+    if not themes:
+        counter: Counter = Counter()
+        for item in hot_top:
+            for t in item.get("topics") or []:
+                counter[t] += 1
+        themes = [
+            {
+                "tag": t.replace(" ", "-").lower()[:30],
+                "title": t,
+                "summary": f"本周有 {n} 个上榜项目涉及该话题",
+                "repos": [i["repo"] for i in hot_top if t in (i.get("topics") or [])][:3],
+                "total_delta": sum(i.get("delta") or 0 for i in hot_top if t in (i.get("topics") or [])),
+            }
+            for t, n in counter.most_common(3)
+        ]
+
     week_key = now.strftime("%Y-W%W")
     monday = now - timedelta(days=now.weekday())
     week_range = f"{monday.strftime('%Y.%m.%d')} — {(monday + timedelta(days=6)).strftime('%m.%d')}"
@@ -389,6 +437,7 @@ def build_personal_trends(scored: list, now: datetime) -> None:
             "generated_at": now.isoformat(timespec="seconds"),
             "new_stars": new_stars[:10],
             "hot_top": hot_top[:10],
+            "themes": themes,
             "hot_topics": [],
             "my_follows": [],
         }],

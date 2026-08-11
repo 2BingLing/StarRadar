@@ -31,6 +31,23 @@ By the time a project hits GitHub Trending, the hype has already been captured. 
 
 ---
 
+## Two editions
+
+| | **Public edition** (for everyone) | **Personal edition** (for yourself) |
+| --- | --- | --- |
+| Mission | Objective discovery: one shared board, ready out of the box | Personalized picks: searched & interpreted only for you |
+| Entry | GitHub Pages / local `--serve` | "Personal ↗" in the top-right (`?personal=1`, run locally) |
+| Potential board | 5D potential score (objective size-class baseline, same for all) | Profile-driven search × 5D scoring × personalized interpretation |
+| Weekly trends | TrendScore v2 momentum board (objective) | Same objective board + "this week's themes" interpreted for your profile |
+| Cold start | No questionnaire, use immediately | Mandatory questionnaire (40 tags → cold-start profile) |
+| AI interpretation | Rule-based (momentum / signal / stage) | LLM edition: bring your own Key — interpretations, reasons, weekly report all generated from your profile |
+| GitHub sign-in | A tool (star / fork / clone) | Required (fetches "my starred" as seed) |
+| Data | Anonymous stats, no personal data uploaded | Profile + behavior memory + snapshots (local only) |
+
+> In one line: the public edition answers "**which projects are taking off this week**", the personal edition answers "**which projects fit me**". The two editions run completely different ranking & interpretation mechanisms.
+
+---
+
 ## Screenshots
 
 <p align="center">
@@ -47,8 +64,8 @@ By the time a project hits GitHub Trending, the hype has already been captured. 
 | --- | --- |
 | **Daily potential radar** | Multi-bucket sampling across 3 star ranges (50-200 / 200-1000 / 1000-5000), noise filtering (courses / lecture notes / mirrors); 5D scoring: velocity · acceleration · community health · freshness · signal, benchmarked against peers of similar size |
 | **Weekly trend report** | TrendScore v2 momentum ranking: growth 40% + novelty 20% + accel 15% + excess 10% + topic 10% + health 5%; momentum ticket gate keeps giants off the board; four sections: new stars / hot TOP / domain trends / my follows, with cross-week tracking and status badges |
-| **Personalized picks** | 40-tag questionnaire → cold-start profile → topic match + MMR diversity reranking → recommendation reasons; behavior EMA (α=0.3) incremental updates + forgetting curve, improving the more you use it |
-| **AI Chinese explanations** | Each listed project gets a "why it deserves attention" note, incrementally cached (regenerated only when stars change >20%), gracefully falling back to rule text |
+| **Personalized picks** | Personal edition only: questionnaire → cold-start profile → profile-driven search + behavior EMA (α=0.3) incremental updates + forgetting curve, daily personalized recommendations (better the more you use it) |
+| **AI Chinese explanations** | Each listed project gets a "why it deserves attention" note, incrementally cached (regenerated only when stars change >20%), gracefully falling back to rule text; in the personal edition you can bring your own LLM Key so explanations / reasons / weekly report are all generated from your profile |
 | **GitHub native integration** | One-click login (PAT / OAuth device flow / redirect login) → star, fork, copy clone command and take notes right on the page |
 | **Fully automated pipeline** | Daily 06:00 UTC: collect → score → explain → snapshot → deploy Pages; weekly report every Monday 08:00 |
 
@@ -92,6 +109,7 @@ Data flow: browser (localStorage) → local `--serve` persistence (SQLite) → d
 - **The app only calls**: star/unstar, fork, and reading your starred/repo info. It never uses your token for anything else (no code changes, no private repos, no other apps)
 - **Sign out anytime**: the page's "Sign out" clears the local token instantly; you can also revoke at GitHub → Settings → Applications → StarRadar and the token dies immediately
 - **No data uploads**: questionnaire / behavior data is only persisted locally via `--serve` (memory.db); the GitHub Pages deployment contains no personal data
+- **LLM Key is personal-edition only**: the Key you enter circulates only on your machine (browser localStorage + local backend `data/profile/llm_config.json`), used by the daily pipeline to call the service you specify for personalized interpretations; the public edition never touches it and nothing goes to any third party
 
 > Want the one-click "authorize & bounce back" website experience? Register your own OAuth App and set `GH_OAUTH_CLIENT_ID / GH_OAUTH_CLIENT_SECRET` in your local `.env` — sign-in auto-upgrades to the redirect flow (callback URL `http://127.0.0.1/api/oauth/callback`).
 

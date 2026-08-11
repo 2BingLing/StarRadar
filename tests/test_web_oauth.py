@@ -111,3 +111,67 @@ def test_cors_whitelist_restricts_origin(oauth_server):
     resp.read()
     assert resp.getheader("Access-Control-Allow-Origin") is None
     conn.close()
+
+
+def _post_json(port: int, path: str, payload: dict) -> int:
+    conn = http.client.HTTPConnection("127.0.0.1", port, timeout=10)
+    conn.request("POST", path, body=json.dumps(payload), headers={"Content-Type": "application/json"})
+    resp = conn.getresponse()
+    resp.read()
+    status = resp.status
+    conn.close()
+    return status
+
+
+def test_llm_key_save_and_delete(oauth_server):
+    """POST /api/llm_key 落库（供 --personal 管道）+ DELETE 清除。"""
+    from config import PROFILE_DIR
+    f = PROFILE_DIR / "llm_config.json"
+    if f.is_file():
+        f.unlink()
+    try:
+        assert _post_json(oauth_server, "/api/llm_key", {
+            "base_url": "https://api.deepseek.com/v1", "key": "sk-test", "model": "deepseek-chat",
+        }) == 200
+        assert f.is_file()
+        saved = json.loads(f.read_text(encoding="utf-8"))
+        assert saved["key"] == "sk-test"
+        assert saved["base_url"] == "https://api.deepseek.com/v1"
+        assert saved["model"] == "deepseek-chat"
+        # 缺 key 拒绝
+        assert _post_json(oauth_server, "/api/llm_key", {"base_url": "x"}) == 400
+        # DELETE 清除
+        conn = http.client.HTTPConnection("127.0.0.1", oauth_server, timeout=10)
+        conn.request("DELETE", "/api/llm_key")
+        resp = conn.getresponse()
+        resp.read()
+        assert resp.status == 200
+        conn.close()
+        assert not f.is_file()
+    finally:
+        if f.is_file():
+            f.unlink()
+
+
+def test_personal_pipeline_loads_llm_config(oauth_server, tmp_path, monkeypatch):
+    """--personal 管道读取 llm_config.json 覆盖 settings.llm（仅个人管道，公版不受影响）。"""
+    from src.personal import pipeline
+
+    saved = (config.settings.llm.api_key, config.settings.llm.base_url, config.settings.llm.model)
+    try:
+        cfg_file = tmp_path / "llm_config.json"
+        cfg_file.write_text(json.dumps({
+            "key": "sk-personal", "base_url": "https://api.example.com/v1", "model": "custom-model",
+        }), encoding="utf-8")
+        monkeypatch.setattr(pipeline, "LLM_CFG_PATH", cfg_file)
+        pipeline._load_llm_config()
+        assert config.settings.llm.api_key == "sk-personal"
+        assert config.settings.llm.base_url == "https://api.example.com/v1"
+        assert config.settings.llm.model == "custom-model"
+        # 无配置文件时保持原样
+        monkeypatch.setattr(pipeline, "LLM_CFG_PATH", tmp_path / "none.json")
+        config.settings.llm.api_key = "orig-key"
+        pipeline._load_llm_config()
+        assert config.settings.llm.api_key == "orig-key"
+    finally:
+        config.settings.llm.api_key, config.settings.llm.base_url, config.settings.llm.model = saved

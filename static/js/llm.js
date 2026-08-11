@@ -8,10 +8,10 @@
   var CFG_KEY = "starradar:llm_config";
   var USAGE_KEY = "starradar:llm_usage";
 
-  // 暂时停用（2026-08-11）：自定义 LLM Key 目前不参与后端每日管道，仅浏览器实时展示层
-  // 使用；价值有限且增加困惑，先整体禁用入口与调用（所有 LLM 点自动降级规则模式）。
-  // 恢复：DISABLED=false + 恢复 index.html 问卷 STEP 4 表单。
-  var DISABLED = true;
+  // 公版回归客观（无问卷 / 无个性化入口）→ LLM 仅个人版启用；
+  // 个人版配置 key 后：卡片推荐理由 / 记忆画像 / 周报解读 / 搜索建议全部生效。
+  var IS_PERSONAL = location.search.indexOf("personal=1") !== -1;
+  var DISABLED = !IS_PERSONAL;
 
   var DEFAULTS = {
     base_url: "https://api.openai.com/v1",
@@ -43,10 +43,28 @@
     return !!(c && c.key);
   }
   function getConfig() { return loadCfg(); }
+  // key 同步本地后端（供 --personal 每日管道调用 LLM）：存 data/profile/llm_config.json。
+  // 无本地 server（GitHub Pages）时静默失败，不影响浏览器内功能。
+  function syncKeyToBackend(c) {
+    if (c && c.key) {
+      fetch("/api/llm_key", {
+        method: "POST",
+        headers: { "Content-Type": "application/json" },
+        body: JSON.stringify({
+          base_url: c.base_url || "",
+          key: c.key,
+          model: c.model || "",
+        }),
+      }).catch(function () {});
+    } else {
+      fetch("/api/llm_key", { method: "DELETE" }).catch(function () {});
+    }
+  }
   function saveConfig(c) {
     cfg = c || null;
     if (c && c.key) lsSet(CFG_KEY, c);
     else { try { localStorage.removeItem(CFG_KEY); } catch (e) {} }
+    syncKeyToBackend(c);  // 保存/清除均同步后端
   }
   function clearConfig() { saveConfig(null); }
 
@@ -164,6 +182,34 @@
       })
       .then(function () { cfg = cfgBackup; testBtn.disabled = false; });
   }
+  var llmBtn = null;
+  var llmPanel = null;
+
+  function refreshBtn() {
+    if (!llmBtn) return;
+    llmBtn.classList.toggle("on", isConfigured());
+  }
+  function openLlmPanel() {
+    if (!llmPanel) return;
+    llmPanel.classList.add("open");
+    llmPanel.setAttribute("aria-hidden", "false");
+    document.body.style.overflow = "hidden";
+    syncForm();
+  }
+  function closeLlmPanel() {
+    if (!llmPanel) return;
+    llmPanel.classList.remove("open");
+    llmPanel.setAttribute("aria-hidden", "true");
+    try {
+      var others = ["#ghPanel", "#notePanel", "#forkPanel"];
+      var locked = others.some(function (sel) {
+        var el = document.querySelector(sel);
+        return el && el.classList.contains("open");
+      });
+      if (!locked) document.body.style.overflow = "";
+    } catch (e) {}
+  }
+
   function boot() {
     if (booted) return;
     booted = true;
@@ -173,7 +219,9 @@
     statusEl = document.querySelector("#llmStatus");
     clearBtn = document.querySelector("#llmClear");
     testBtn = document.querySelector("#llmTest");
-    if (!baseEl && !testBtn) return; // 无表单（旧页面兜底），API 仍可用
+    llmBtn = document.querySelector("#llmBtn");
+    llmPanel = document.querySelector("#llmPanel");
+    if (llmBtn) llmBtn.hidden = !IS_PERSONAL;  // 仅个人版显示入口
     if (testBtn) testBtn.addEventListener("click", testConnection);
     if (clearBtn) clearBtn.addEventListener("click", function () {
       saveConfig(null);
@@ -182,8 +230,26 @@
       if (modelEl) modelEl.value = DEFAULTS.model;
       setStatus("已清除，回到规则个性化模式", true);
       if (clearBtn) clearBtn.hidden = true;
-      if (window.LLM && window.LLM.refreshState) window.LLM.refreshState();
+      refreshBtn();
     });
+    if (llmBtn && llmPanel) {
+      llmBtn.addEventListener("click", openLlmPanel);
+      var closeBtn = document.querySelector("#llmClose");
+      if (closeBtn) closeBtn.addEventListener("click", closeLlmPanel);
+      llmPanel.addEventListener("click", function (e) { if (e.target === llmPanel) closeLlmPanel(); });
+      var saveBtn = document.querySelector("#llmSave");
+      if (saveBtn) saveBtn.addEventListener("click", function () {
+        var ok = saveFromForm();
+        setStatus(ok ? "已保存并同步到本地后端 · 每日管道将使用该 Key"
+          : "未填 Key，已清除（规则模式）", ok);
+        refreshBtn();
+        if (ok) setTimeout(closeLlmPanel, 400);  // 保存成功后自动关闭
+      });
+      document.addEventListener("keydown", function (e) {
+        if (e.key === "Escape" && llmPanel.classList.contains("open")) closeLlmPanel();
+      });
+      refreshBtn();
+    }
     syncForm();
   }
 
