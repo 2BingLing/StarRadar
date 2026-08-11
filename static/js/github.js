@@ -219,10 +219,10 @@
       ghConnBtn.classList.add("connected", "account");
       ghConnBtn.title = user.login + " · 点击管理 / 退出登录";
     } else if (isPersonal) {
-      ghConnBtn.innerHTML = "<em>登录</em>";
+      ghConnBtn.innerHTML = '<span class="acc-ico">' + githubLogoSVG() + '</span><em>登录</em>';
       ghConnBtn.classList.remove("connected");
       ghConnBtn.classList.add("account", "login");
-      ghConnBtn.title = "登录 GitHub（跳转授权 / 本地 Token）";
+      ghConnBtn.title = "登录 GitHub（跳转授权 / 本地 Token 一键登录）";
     } else {
       ghConnBtn.innerHTML = githubLogoSVG();
       ghConnBtn.classList.remove("connected", "account", "login");
@@ -274,6 +274,22 @@
     ghTitle.textContent = "连接 GitHub";
     var clientId = getClientId();
     var isPersonal = location.search.indexOf("personal=1") !== -1;
+    if (isPersonal) {
+      // 个人版：无 PAT、无设备流——跳转授权（已配置 OAuth）或本地 Token 一键登录
+      ghBody.innerHTML =
+        '<button class="gh-btn primary gh-big" id="ghDevice">' + githubLogoSVG() + " 通过 GitHub 登录</button>" +
+        '<button class="gh-btn ghost gh-big" id="ghLocalToken" style="margin-top:8px">使用本地 Token 登录（免输入）</button>' +
+        "<div id='ghDeviceBody'></div>" +
+        '<p class="gh-tip" style="margin-top:10px"><b>无需输入任何 Token：</b><br>' +
+        "· 已配置 OAuth App → 跳转 GitHub 授权页（像普通网站一样，点一次 Authorize 即回跳）<br>" +
+        "· 未配置 → 自动使用 .env 的 GITHUB_TOKEN 一键登录</p>";
+      ghFoot.innerHTML = "";
+      var dev2 = document.querySelector("#ghDevice");
+      if (dev2) dev2.addEventListener("click", startPersonalLogin);
+      var lt = document.querySelector("#ghLocalToken");
+      if (lt) lt.addEventListener("click", localTokenLogin);
+      return;
+    }
     ghBody.innerHTML =
       '<button class="gh-btn primary gh-big" id="ghDevice">通过 GitHub 登录</button>' +
       (isPersonal
@@ -308,26 +324,6 @@
     });
     var dev = document.querySelector("#ghDevice");
     if (dev) dev.addEventListener("click", startOAuthOrDevice);
-    var localToken = document.querySelector("#ghLocalToken");
-    if (localToken) localToken.addEventListener("click", function () {
-      fetch("/api/gh_token", {
-        method: "POST",
-        headers: { "Content-Type": "application/json" },
-        body: JSON.stringify({ use_local: true }),
-      }).then(function (r) { return r.json(); })
-        .then(function (d) {
-          if (!d || !d.ok) throw new Error(d && d.error ? d.error : "failed");
-          try {
-            localStorage.setItem(TOKEN_KEY, d.token);
-            localStorage.setItem(USER_KEY, JSON.stringify({ login: d.login, avatar_url: "" }));
-          } catch (e) {}
-          notify("已用本地 Token 登录：" + d.login);
-          setTimeout(function () { location.reload(); }, 800);
-        })
-        .catch(function (e) {
-          notify("本地 Token 登录失败：" + (e.message || "请确认 .env 已配置 GITHUB_TOKEN"));
-        });
-    });
     document.querySelector("#ghConnect").addEventListener("click", function () {
       var pat = document.querySelector("#ghPat").value.trim();
       if (!pat) { notify("请先粘贴 Token"); return; }
@@ -485,6 +481,47 @@
       .catch(function () { notify("跳转登录失败，请重试或改用 Token"); })
       .then(clean);
     return true;
+  }
+
+  // ===== 个人版登录：OAuth 跳转优先，未配置时本地 Token 一键登录（无需输入任何 Token） =====
+  function localTokenLogin() {
+    var box = document.querySelector("#ghDeviceBody");
+    if (box) box.innerHTML = "<p class='gh-tip'>正在用本地 Token 登录…</p>";
+    fetch("/api/gh_token", {
+      method: "POST",
+      headers: { "Content-Type": "application/json" },
+      body: JSON.stringify({ use_local: true }),
+    }).then(function (r) { return r.json(); })
+      .then(function (d) {
+        if (!d || !d.ok) throw new Error(d && d.error ? d.error : "failed");
+        try {
+          localStorage.setItem(TOKEN_KEY, d.token);
+          localStorage.setItem(USER_KEY, JSON.stringify({ login: d.login, avatar_url: "" }));
+        } catch (e) {}
+        notify("已登录：" + d.login);
+        setTimeout(function () { location.reload(); }, 700);
+      })
+      .catch(function (e) {
+        var box2 = document.querySelector("#ghDeviceBody");
+        if (box2) box2.innerHTML = "<p class='gh-tip'>" + escapeHtml("登录失败：" + (e.message || "请确认 .env 已配置 GITHUB_TOKEN")) + "</p>";
+        notify("登录失败：" + (e.message || "请确认 .env 已配置 GITHUB_TOKEN"));
+      });
+  }
+
+  // 个人版主按钮：探测 OAuth → 已配置跳转 GitHub 授权页；否则本地 Token 一键登录
+  function startPersonalLogin() {
+    var box = document.querySelector("#ghDeviceBody");
+    if (box) box.innerHTML = "<p class='gh-tip'>正在登录…</p>";
+    fetch("/api/oauth/start?probe=1", { cache: "no-store" })
+      .then(function (r) { return r.ok ? r.json() : null; })
+      .then(function (d) {
+        if (d && d.configured) {
+          window.location = "/api/oauth/start";
+        } else {
+          localTokenLogin();
+        }
+      })
+      .catch(function () { localTokenLogin(); });
   }
 
   // ===== 操作分发（document 委托，卡片 + 详情共用） =====
