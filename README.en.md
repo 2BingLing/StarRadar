@@ -54,6 +54,23 @@ By the time a project hits GitHub Trending, the hype has already been captured. 
 
 ---
 
+
+## Quick start
+
+```bash
+git clone https://github.com/2BingLing/StarRadar.git
+cd StarRadar
+pip install -r requirements.txt
+cp .env.example .env        # GITHUB_TOKEN required; LLM_* optional (any OpenAI-compatible endpoint)
+
+python src/main.py --serve  # local observatory → http://127.0.0.1:8970/
+python src/main.py          # daily pipeline: collect → score → profile → explain → JSON
+python src/main.py --weekly # build / refresh the weekly trend report
+python src/main.py --personal  # personal pipeline (usually not needed manually — server auto-generates daily + refresh button)
+pytest                      # 150 passed
+```
+
+---
 ## Personal edition quick start (5 steps, ~3 minutes)
 
 ```
@@ -85,12 +102,6 @@ By the time a project hits GitHub Trending, the hype has already been captured. 
   <img src="static/screenshots/shot-hero.png" alt="StarRadar homepage" width="780">
   <br>
   <sub>Homepage · Today's star map + potential board</sub>
-</p>
-
-<p align="center">
-  <img src="static/screenshots/shot-survey.png" alt="Personal cold-start questionnaire" width="780">
-  <br>
-  <sub>Personal cold-start questionnaire · guided wizard (40 tags → size → AI)</sub>
 </p>
 
 <p align="center">
@@ -157,23 +168,6 @@ Data flow: browser (localStorage) → local `--serve` persistence (SQLite) → d
 - **LLM Key is personal-edition only**: the Key you enter circulates only on your machine (browser localStorage + local backend `data/profile/llm_config.json`), used by the daily pipeline to call the service you specify for personalized interpretations; the public edition never touches it and nothing goes to any third party
 
 > Want the one-click "authorize & bounce back" website experience? Register your own OAuth App and set `GH_OAUTH_CLIENT_ID / GH_OAUTH_CLIENT_SECRET` in your local `.env` — sign-in auto-upgrades to the redirect flow (callback URL `http://127.0.0.1/api/oauth/callback`).
-
----
-
-## Quick start
-
-```bash
-git clone https://github.com/2BingLing/StarRadar.git
-cd StarRadar
-pip install -r requirements.txt
-cp .env.example .env        # GITHUB_TOKEN required; LLM_* optional (any OpenAI-compatible endpoint)
-
-python src/main.py --serve  # local observatory → http://127.0.0.1:8970/
-python src/main.py          # daily pipeline: collect → score → profile → explain → JSON
-python src/main.py --weekly # build / refresh the weekly trend report
-python src/main.py --personal  # personal pipeline (usually not needed manually — server auto-generates daily + refresh button)
-pytest                      # 150 passed
-```
 
 ---
 

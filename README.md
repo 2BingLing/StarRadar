@@ -54,6 +54,23 @@ GitHub Trending 上榜时，热度红利早已被瓜分。StarRadar 反着来—
 
 ---
 
+
+## 快速开始
+
+```bash
+git clone https://github.com/2BingLing/StarRadar.git
+cd StarRadar
+pip install -r requirements.txt
+cp .env.example .env        # GITHUB_TOKEN 必填；LLM_* 可选（DeepSeek 等 OpenAI 兼容端点）
+
+python src/main.py --serve  # 本地观测台 → http://127.0.0.1:8970/（个人版 ?personal=1）
+python src/main.py          # 每日管道：采集 → 评分 → 画像 → 解读 → 生成 JSON
+python src/main.py --weekly # 生成 / 刷新每周趋势周报
+python src/main.py --personal  # 个人版管道（一般不需要手动跑——server 每日自动 + 页面刷新按钮）
+pytest                      # 150 passed
+```
+
+---
 ## 个人版上手（5 步，约 3 分钟）
 
 ```
@@ -85,12 +102,6 @@ GitHub Trending 上榜时，热度红利早已被瓜分。StarRadar 反着来—
   <img src="static/screenshots/shot-hero.png" alt="StarRadar 首页" width="780">
   <br>
   <sub>首页 · 今日星图 + 潜力榜单</sub>
-</p>
-
-<p align="center">
-  <img src="static/screenshots/shot-survey.png" alt="个人版冷启动问卷" width="780">
-  <br>
-  <sub>个人版冷启动问卷 · 引导式向导（40 标签 → 体量 → AI 个性化）</sub>
 </p>
 
 <p align="center">
@@ -155,23 +166,6 @@ GitHub Trending 上榜时，热度红利早已被瓜分。StarRadar 反着来—
 - **LLM Key 仅个人版使用**：个人版填写的 Key 只在本机流转（浏览器 localStorage + 本地后端 `data/profile/llm_config.json`），供每日管道调用你指定的服务生成专属解读；公版不涉及、不上传任何第三方
 
 > 想获得「点一下即回跳」的网站式登录体验？自行注册 OAuth App 后在本机 `.env` 配置 `GH_OAUTH_CLIENT_ID / GH_OAUTH_CLIENT_SECRET` 即可自动升级为跳转授权（回调地址 `http://127.0.0.1/api/oauth/callback`）。
-
----
-
-## 快速开始
-
-```bash
-git clone https://github.com/2BingLing/StarRadar.git
-cd StarRadar
-pip install -r requirements.txt
-cp .env.example .env        # GITHUB_TOKEN 必填；LLM_* 可选（DeepSeek 等 OpenAI 兼容端点）
-
-python src/main.py --serve  # 本地观测台 → http://127.0.0.1:8970/（个人版 ?personal=1）
-python src/main.py          # 每日管道：采集 → 评分 → 画像 → 解读 → 生成 JSON
-python src/main.py --weekly # 生成 / 刷新每周趋势周报
-python src/main.py --personal  # 个人版管道（一般不需要手动跑——server 每日自动 + 页面刷新按钮）
-pytest                      # 150 passed
-```
 
 ---
 
