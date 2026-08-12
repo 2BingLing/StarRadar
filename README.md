@@ -33,6 +33,10 @@ GitHub Trending 上榜时，热度红利早已被瓜分。StarRadar 反着来—
 
 ## 两个版本 · 两种机制
 
+<p align="center">
+  <img src="static/readme/editions.svg" width="100%" alt="两个版本 · 两种机制：公版同一份客观榜单千人同榜 / 个人版画像驱动的专属雷达千人千面">
+</p>
+
 **StarRadar 是一个产品，两个版本**——公版回答「这周哪些项目在起飞」，个人版回答「哪些项目适合我」。排序、推荐、解读机制完全不同：
 
 | | **公版**（给大家看） | **个人版**（给自己看） |
@@ -118,6 +122,10 @@ pytest                      # 150 passed
 | **GitHub 原生集成** | 一键登录（OAuth 设备流零配置 / 可升级跳转授权）→ 网页内直接加星 · Fork · 复制克隆命令 · 随行笔记 |
 | **全自动管线** | 公版：每日 06:00 采集 → 评分 → 解读 → 快照 → 部署 Pages，每周一 08:00 周报；个人版：本地服务**每日 06:00 自动生成** + 启动补跑 + 页面一键刷新 |
 
+<p align="center">
+  <img src="static/readme/trends-score.svg" width="100%" alt="TrendScore v2 六维加权：growth 40% + novelty 20% + accel 15% + excess 10% + topic 10% + health 5%，增速门票制不进榜">
+</p>
+
 ---
 
 ## 五维潜力评分
@@ -131,6 +139,10 @@ pytest                      # 150 passed
 ---
 
 ## 个性化闭环
+
+<p align="center">
+  <img src="static/readme/pipeline.svg" width="100%" alt="个人版数据流：问卷/行为 → 兴趣画像 → 画像驱动搜索 → 五维评分 → LLM 解读，每日 06:00 自动生成、可随时手动刷新">
+</p>
 
 数据流：浏览器（localStorage）→ 本地 `--serve` 落库（SQLite）→ 每日管道重算画像 → 生成专属推荐。
 

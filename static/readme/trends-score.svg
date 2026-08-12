@@ -1,0 +1,54 @@
+<svg width="1200" height="380" viewBox="0 0 1200 380" fill="none" xmlns="http://www.w3.org/2000/svg" role="img" aria-labelledby="title desc">
+  <title id="title">StarRadar TrendScore v2 · 每周趋势怎么排</title>
+  <desc id="desc">TrendScore v2 六维加权：growth 40% + novelty 20% + accel 15% + excess 10% + topic 10% + health 5%；增速门票制——跑不赢同规模常态增速的项目不上榜。</desc>
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1200" y2="380" gradientUnits="userSpaceOnUse"><stop stop-color="#071529"/><stop offset="0.52" stop-color="#0E2746"/><stop offset="1" stop-color="#07101F"/></linearGradient>
+    <linearGradient id="barG" x1="0" y1="0" x2="1" y2="0"><stop stop-color="#5EA2FF"/><stop offset="1" stop-color="#2471EE"/></linearGradient>
+    <linearGradient id="accentG" x1="0" y1="0" x2="1" y2="0"><stop stop-color="#FFD166"/><stop offset="1" stop-color="#FF9F2D"/></linearGradient>
+    <pattern id="grid" width="32" height="32" patternUnits="userSpaceOnUse"><path d="M32 0H0V32" stroke="#A9C9F8" stroke-opacity="0.07"/></pattern>
+  </defs>
+  <rect width="1200" height="380" rx="26" fill="url(#bg)"/><rect width="1200" height="380" rx="26" fill="url(#grid)"/>
+  <circle cx="1060" cy="20" r="200" fill="#2471EE" fill-opacity="0.10"/><circle cx="100" cy="400" r="190" fill="#FF9F2D" fill-opacity="0.05"/>
+
+  <text x="56" y="50" fill="#8FB9F7" font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, monospace" font-size="14" letter-spacing="3">STARRADAR · TRENDSCORE V2</text>
+  <text x="600" y="94" text-anchor="middle" fill="#DCEBFF" font-family="-apple-system, BlinkMacSystemFont, 'PingFang SC', 'Microsoft YaHei', 'Segoe UI', sans-serif" font-size="28" font-weight="800">TrendScore v2 · 每周趋势怎么排</text>
+  <text x="600" y="126" text-anchor="middle" fill="#8FB9F7" font-family="-apple-system, BlinkMacSystemFont, 'PingFang SC', 'Microsoft YaHei', 'Segoe UI', sans-serif" font-size="17">六维加权 · 增速门票制</text>
+
+  <!-- 权重条：总长 800（x 230-1030），行中心 160 + i*27 -->
+  <g font-family="-apple-system, BlinkMacSystemFont, 'PingFang SC', 'Microsoft YaHei', 'Segoe UI', sans-serif">
+    <!-- growth 40% -->
+    <text x="110" y="166" fill="#DCEBFF" font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, monospace" font-size="16" font-weight="600">growth</text>
+    <rect x="230" y="152" width="800" height="16" rx="8" fill="#14233D"/>
+    <rect x="230" y="152" width="320" height="16" rx="8" fill="url(#accentG)"/>
+    <text x="1090" y="166" text-anchor="end" fill="#FFD166" font-size="17" font-weight="700">40%</text>
+    <!-- novelty 20% -->
+    <text x="110" y="193" fill="#DCEBFF" font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, monospace" font-size="16" font-weight="600">novelty</text>
+    <rect x="230" y="179" width="800" height="16" rx="8" fill="#14233D"/>
+    <rect x="230" y="179" width="160" height="16" rx="8" fill="url(#barG)"/>
+    <text x="1090" y="193" text-anchor="end" fill="#B5C7DE" font-size="17" font-weight="700">20%</text>
+    <!-- accel 15% -->
+    <text x="110" y="220" fill="#DCEBFF" font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, monospace" font-size="16" font-weight="600">accel</text>
+    <rect x="230" y="206" width="800" height="16" rx="8" fill="#14233D"/>
+    <rect x="230" y="206" width="120" height="16" rx="8" fill="url(#barG)"/>
+    <text x="1090" y="220" text-anchor="end" fill="#B5C7DE" font-size="17" font-weight="700">15%</text>
+    <!-- excess 10% -->
+    <text x="110" y="247" fill="#DCEBFF" font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, monospace" font-size="16" font-weight="600">excess</text>
+    <rect x="230" y="233" width="800" height="16" rx="8" fill="#14233D"/>
+    <rect x="230" y="233" width="80" height="16" rx="8" fill="url(#barG)"/>
+    <text x="1090" y="247" text-anchor="end" fill="#B5C7DE" font-size="17" font-weight="700">10%</text>
+    <!-- topic 10% -->
+    <text x="110" y="274" fill="#DCEBFF" font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, monospace" font-size="16" font-weight="600">topic</text>
+    <rect x="230" y="260" width="800" height="16" rx="8" fill="#14233D"/>
+    <rect x="230" y="260" width="80" height="16" rx="8" fill="url(#barG)"/>
+    <text x="1090" y="274" text-anchor="end" fill="#B5C7DE" font-size="17" font-weight="700">10%</text>
+    <!-- health 5% -->
+    <text x="110" y="301" fill="#DCEBFF" font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, monospace" font-size="16" font-weight="600">health</text>
+    <rect x="230" y="287" width="800" height="16" rx="8" fill="#14233D"/>
+    <rect x="230" y="287" width="40" height="16" rx="8" fill="url(#barG)"/>
+    <text x="1090" y="301" text-anchor="end" fill="#B5C7DE" font-size="17" font-weight="700">5%</text>
+  </g>
+
+  <!-- 门票制说明 -->
+  <text x="600" y="340" text-anchor="middle" fill="#8FB9F7" font-family="-apple-system, BlinkMacSystemFont, 'PingFang SC', 'Microsoft YaHei', 'Segoe UI', sans-serif" font-size="16">增速门票制：跑不赢同规模常态增速的项目，星数再多也不上榜</text>
+  <text x="1056" y="360" text-anchor="end" fill="#7895B7" font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, monospace" font-size="13" letter-spacing="1">TICKET GATE · GROWTH BEATS STAR COUNT</text>
+</svg>

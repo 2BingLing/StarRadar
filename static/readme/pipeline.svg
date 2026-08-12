@@ -1,0 +1,76 @@
+<svg width="1200" height="320" viewBox="0 0 1200 320" fill="none" xmlns="http://www.w3.org/2000/svg" role="img" aria-labelledby="title desc">
+  <title id="title">StarRadar 个人版数据流 · 每日自动</title>
+  <desc id="desc">问卷/行为 → 兴趣画像 → 画像驱动搜索 → 五维评分 → LLM 解读，五个环节构成个人版闭环；底部循环弧表示每日 06:00 自动生成、可随时手动刷新。</desc>
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1200" y2="320" gradientUnits="userSpaceOnUse"><stop stop-color="#071529"/><stop offset="0.52" stop-color="#0E2746"/><stop offset="1" stop-color="#07101F"/></linearGradient>
+    <linearGradient id="starG" x1="0" y1="0" x2="0" y2="1"><stop stop-color="#FFD166"/><stop offset="1" stop-color="#FF9F2D"/></linearGradient>
+    <pattern id="grid" width="32" height="32" patternUnits="userSpaceOnUse"><path d="M32 0H0V32" stroke="#A9C9F8" stroke-opacity="0.07"/></pattern>
+  </defs>
+  <rect width="1200" height="320" rx="26" fill="url(#bg)"/><rect width="1200" height="320" rx="26" fill="url(#grid)"/>
+  <circle cx="1080" cy="-20" r="190" fill="#2471EE" fill-opacity="0.10"/><circle cx="80" cy="340" r="180" fill="#FF9F2D" fill-opacity="0.05"/>
+
+  <text x="56" y="50" fill="#8FB9F7" font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, monospace" font-size="14" letter-spacing="3">STARRADAR · PERSONAL PIPELINE</text>
+  <text x="600" y="92" text-anchor="middle" fill="#DCEBFF" font-family="-apple-system, BlinkMacSystemFont, 'PingFang SC', 'Microsoft YaHei', 'Segoe UI', sans-serif" font-size="26" font-weight="800">个人版数据流 · 每日自动</text>
+
+  <!-- 5 个流程节点：圆 r=46，中心 y=170 -->
+  <g font-family="-apple-system, BlinkMacSystemFont, 'PingFang SC', 'Microsoft YaHei', 'Segoe UI', sans-serif">
+    <!-- 1 问卷 / 行为 -->
+    <g transform="translate(120,170)">
+      <circle r="46" fill="#ffffff" fill-opacity="0.04" stroke="#B8D6FF" stroke-opacity="0.28" stroke-width="2"/>
+      <rect x="-18" y="-15" width="20" height="9" rx="4.5" fill="none" stroke="#7DB5FF" stroke-width="2"/>
+      <rect x="-18" y="6" width="20" height="9" rx="4.5" fill="none" stroke="#7DB5FF" stroke-width="2"/>
+      <circle cx="12" cy="-10.5" r="3.5" fill="#5EA2FF"/><circle cx="12" cy="10.5" r="3.5" fill="#5EA2FF"/>
+    </g>
+    <!-- 2 兴趣画像 -->
+    <g transform="translate(360,170)">
+      <circle r="46" fill="#ffffff" fill-opacity="0.04" stroke="#B8D6FF" stroke-opacity="0.28" stroke-width="2"/>
+      <circle r="24" fill="none" stroke="#7DB5FF" stroke-width="2"/>
+      <path d="M -24.5,-20.6 A 32 32 0 0 1 24.5,-20.6" fill="none" stroke="#7DB5FF" stroke-width="3" stroke-linecap="round"/>
+      <circle r="5" fill="url(#starG)"/>
+    </g>
+    <!-- 3 画像驱动搜索 -->
+    <g transform="translate(600,170)">
+      <circle r="46" fill="#ffffff" fill-opacity="0.04" stroke="#B8D6FF" stroke-opacity="0.28" stroke-width="2"/>
+      <circle cx="-8" cy="-5" r="12" fill="none" stroke="#7DB5FF" stroke-width="2.5"/>
+      <line x1="1" y1="4" x2="11.5" y2="14.5" stroke="#7DB5FF" stroke-width="2.5" stroke-linecap="round"/>
+    </g>
+    <!-- 4 五维评分 -->
+    <g transform="translate(840,170)">
+      <circle r="46" fill="#ffffff" fill-opacity="0.04" stroke="#B8D6FF" stroke-opacity="0.28" stroke-width="2"/>
+      <polyline points="-18,11 -6,-1 6,5 16,-9" fill="none" stroke="#7DB5FF" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>
+      <circle cx="-18" cy="11" r="3" fill="#5EA2FF"/><circle cx="-6" cy="-1" r="3" fill="#5EA2FF"/>
+      <circle cx="6" cy="5" r="3" fill="#5EA2FF"/><circle cx="16" cy="-9" r="3" fill="url(#starG)"/>
+    </g>
+    <!-- 5 LLM 解读 -->
+    <g transform="translate(1080,170)">
+      <circle r="46" fill="#ffffff" fill-opacity="0.04" stroke="#B8D6FF" stroke-opacity="0.28" stroke-width="2"/>
+      <rect x="-19" y="-13" width="38" height="26" rx="9" fill="none" stroke="#7DB5FF" stroke-width="2"/>
+      <path d="M -8,13 L -8,21 L 2,13 Z" fill="#7DB5FF"/>
+      <rect x="-12" y="-7" width="24" height="4" rx="2" fill="#4F98FF" fill-opacity="0.85"/>
+      <rect x="-12" y="-0.5" width="24" height="4" rx="2" fill="#4F98FF" fill-opacity="0.85"/>
+      <rect x="-12" y="6" width="24" height="4" rx="2" fill="#4F98FF" fill-opacity="0.85"/>
+    </g>
+
+    <!-- 节点名称 -->
+    <text x="120" y="240" text-anchor="middle" font-size="18" font-weight="600" fill="#DCEBFF">问卷 / 行为</text>
+    <text x="360" y="240" text-anchor="middle" font-size="18" font-weight="600" fill="#DCEBFF">兴趣画像</text>
+    <text x="600" y="240" text-anchor="middle" font-size="18" font-weight="600" fill="#DCEBFF">画像驱动搜索</text>
+    <text x="840" y="240" text-anchor="middle" font-size="18" font-weight="600" fill="#DCEBFF">五维评分</text>
+    <text x="1080" y="240" text-anchor="middle" font-size="18" font-weight="600" fill="#DCEBFF">LLM 解读</text>
+
+    <!-- 连接线 + 箭头 -->
+    <g stroke="#4F98FF" stroke-opacity="0.8" stroke-width="3">
+      <line x1="168" y1="170" x2="312" y2="170"/><line x1="408" y1="170" x2="552" y2="170"/>
+      <line x1="648" y1="170" x2="792" y2="170"/><line x1="888" y1="170" x2="1032" y2="170"/>
+    </g>
+    <g fill="#4F98FF">
+      <path d="M 312,164 L 324,170 L 312,176 Z"/><path d="M 552,164 L 564,170 L 552,176 Z"/>
+      <path d="M 792,164 L 804,170 L 792,176 Z"/><path d="M 1032,164 L 1044,170 L 1032,176 Z"/>
+    </g>
+
+    <!-- 每日循环弧：圆心远在弦上方，弧下垂 20，不穿节点 -->
+    <path d="M 120,262 A 8235 8235 0 0 1 1080,262" fill="none" stroke="#F5C26B" stroke-width="3" stroke-dasharray="8 8" opacity="0.9"/>
+    <path d="M 1080,257 L 1092,262 L 1080,267 Z" fill="#F5C26B"/>
+    <text x="600" y="284" text-anchor="middle" font-size="14" font-weight="600" fill="#E8B35F">每日 06:00 自动生成 · 也可随时手动刷新</text>
+  </g>
+</svg>
