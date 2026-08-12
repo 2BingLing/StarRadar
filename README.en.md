@@ -33,10 +33,6 @@ By the time a project hits GitHub Trending, the hype has already been captured. 
 
 ## Two editions
 
-<p align="center">
-  <img src="static/readme/editions.svg" width="100%" alt="Two editions, two mechanisms: public board for everyone / personal radar for you">
-</p>
-
 | | **Public edition** (for everyone) | **Personal edition** (for yourself) |
 | --- | --- | --- |
 | Mission | Objective discovery: one shared board, ready out of the box | Personalized picks: searched & interpreted only for you |
@@ -135,10 +131,6 @@ All five dimensions are measured against a **dynamic baseline of same-size proje
 ---
 
 ## Personalization loop
-
-<p align="center">
-  <img src="static/readme/pipeline.svg" width="100%" alt="Personal data flow: questionnaire/behavior → profile → search → scoring → LLM interpretation → daily radar">
-</p>
 
 Data flow: browser (localStorage) → local `--serve` persistence (SQLite) → daily pipeline rebuilds your profile → generates picks.
 
