@@ -96,23 +96,16 @@ pytest                      # 150 passed
 ## Screenshots
 
 <p align="center">
-  <img src="static/screenshots/shot-hero.png" alt="StarRadar homepage · today's star map + potential board" width="780" style="border-radius:14px;box-shadow:0 10px 32px #07101e22">
+  <img src="static/screenshots/shot-potential.png" alt="Homepage · today's star map + potential radar" width="780" style="border-radius:14px;box-shadow:0 10px 32px #07101e22">
+  <br>
+  <sub>Homepage · star map + potential radar (5D scoring)</sub>
 </p>
 
-<table>
-  <tr>
-    <td align="center" width="50%" style="padding:0 10px">
-      <img src="static/screenshots/shot-trends.png" alt="Weekly trends · TrendScore v2 momentum board" width="100%" style="border-radius:12px;box-shadow:0 8px 24px #07101e1c">
-      <br><sub>Weekly trends · momentum board</sub>
-    </td>
-    <td align="center" width="50%" style="padding:0 10px">
-      <img src="static/screenshots/shot-potential.png" alt="Potential radar · 5D scoring full page" width="100%" style="border-radius:12px;box-shadow:0 8px 24px #07101e1c">
-      <br><sub>Potential radar · 5D scoring</sub>
-    </td>
-  </tr>
-</table>
-
----
+<p align="center">
+  <img src="static/screenshots/shot-trends.png" alt="Weekly trends · TrendScore v2 momentum board" width="780" style="border-radius:14px;box-shadow:0 10px 32px #07101e22">
+  <br>
+  <sub>Weekly trends · momentum board</sub>
+</p>
 
 ## Core capabilities
 

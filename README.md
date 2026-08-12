@@ -96,23 +96,16 @@ pytest                      # 150 passed
 ## 界面
 
 <p align="center">
-  <img src="static/screenshots/shot-hero.png" alt="StarRadar 首页 · 今日星图 + 潜力榜单" width="780" style="border-radius:14px;box-shadow:0 10px 32px #07101e22">
+  <img src="static/screenshots/shot-potential.png" alt="首页 · 今日星图 + 潜力雷达" width="780" style="border-radius:14px;box-shadow:0 10px 32px #07101e22">
+  <br>
+  <sub>首页 · 今日星图 + 潜力雷达（五维评分）</sub>
 </p>
 
-<table>
-  <tr>
-    <td align="center" width="50%" style="padding:0 10px">
-      <img src="static/screenshots/shot-trends.png" alt="每周趋势 · TrendScore v2 增长动能周榜" width="100%" style="border-radius:12px;box-shadow:0 8px 24px #07101e1c">
-      <br><sub>每周趋势 · 增长动能周榜</sub>
-    </td>
-    <td align="center" width="50%" style="padding:0 10px">
-      <img src="static/screenshots/shot-potential.png" alt="潜力雷达 · 五维评分全页" width="100%" style="border-radius:12px;box-shadow:0 8px 24px #07101e1c">
-      <br><sub>潜力雷达 · 五维评分</sub>
-    </td>
-  </tr>
-</table>
-
----
+<p align="center">
+  <img src="static/screenshots/shot-trends.png" alt="每周趋势 · TrendScore v2 增长动能周榜" width="780" style="border-radius:14px;box-shadow:0 10px 32px #07101e22">
+  <br>
+  <sub>每周趋势 · 增长动能周榜</sub>
+</p>
 
 ## 核心能力
 
