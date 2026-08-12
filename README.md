@@ -47,10 +47,7 @@ GitHub Trending 上榜时，热度红利早已被瓜分。StarRadar 反着来—
 | 数据更新 | GitHub Actions 每日 06:00 / 每周一 08:00 自动部署 | 本地服务**每日自动生成** + 页面「刷新数据」随时手动触发 |
 | 数据 | 匿名统计，不上传个人数据 | 画像 + 行为记忆 + 快照（仅存本机） |
 
-**为什么是两套机制**：
-
-- **公版的核心是「公信力」**——榜单必须对所有人一致，大家才能讨论、引用、转发。任何个性化排序都会稀释它，所以公版：无问卷、无个性化排序、登录只是加星/Fork 工具。
-- **个人版的核心是「懂你」**——榜单对你有意义的前提是它基于你的画像：问卷标签 + 我的加星 + 行为记忆（EMA 遗忘曲线）→ 画像驱动搜索 → LLM 按画像解读。千人千面是特性不是缺陷。
+**为什么是两套机制**：公版的核心是「公信力」——榜单必须对所有人一致才能被讨论、引用、转发，所以无问卷、无个性化；个人版的核心是「懂你」——画像（问卷 + 我的加星 + 行为记忆）驱动搜索与解读，千人千面是特性不是缺陷。
 
 ---
 
@@ -71,7 +68,7 @@ pytest                      # 150 passed
 ```
 
 ---
-## 个人版上手（5 步，约 3 分钟）
+## 个人版上手
 
 ```
 ① 运行 python src/main.py --serve → 打开 http://127.0.0.1:8970/?personal=1
@@ -99,16 +96,21 @@ pytest                      # 150 passed
 ## 界面
 
 <p align="center">
-  <img src="static/screenshots/shot-hero.png" alt="StarRadar 首页" width="780">
-  <br>
-  <sub>首页 · 今日星图 + 潜力榜单</sub>
+  <img src="static/screenshots/shot-hero.png" alt="StarRadar 首页 · 今日星图 + 潜力榜单" width="780" style="border-radius:14px;box-shadow:0 10px 32px #07101e22">
 </p>
 
-<p align="center">
-  <img src="static/screenshots/shot-trends.png" alt="每周趋势周报" width="780">
-  <br>
-  <sub>每周趋势 · TrendScore v2 增长动能周榜</sub>
-</p>
+<table>
+  <tr>
+    <td align="center" width="50%" style="padding:0 10px">
+      <img src="static/screenshots/shot-trends.png" alt="每周趋势 · TrendScore v2 增长动能周榜" width="100%" style="border-radius:12px;box-shadow:0 8px 24px #07101e1c">
+      <br><sub>每周趋势 · 增长动能周榜</sub>
+    </td>
+    <td align="center" width="50%" style="padding:0 10px">
+      <img src="static/screenshots/shot-potential.png" alt="潜力雷达 · 五维评分全页" width="100%" style="border-radius:12px;box-shadow:0 8px 24px #07101e1c">
+      <br><sub>潜力雷达 · 五维评分</sub>
+    </td>
+  </tr>
+</table>
 
 ---
 
@@ -182,13 +184,7 @@ pytest                      # 150 passed
 
 ---
 
-<p align="center">
-  <img src="static/screenshots/shot-potential.png" alt="潜力雷达全页" width="780">
-  <br>
-  <sub>潜力雷达 · 全页</sub>
-</p>
 
----
 
 ## License
 

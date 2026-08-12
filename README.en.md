@@ -47,10 +47,7 @@ By the time a project hits GitHub Trending, the hype has already been captured. 
 
 > In one line: the public edition answers "**which projects are taking off this week**", the personal edition answers "**which projects fit me**". The two editions run completely different ranking & interpretation mechanisms.
 
-**Why two separate mechanisms**:
-
-- **The public edition is about credibility** — the board must be identical for everyone so it can be discussed, quoted and shared. Any personalization would dilute it. Hence: no questionnaire, no personalized ranking; sign-in is only a star/fork tool.
-- **The personal edition is about knowing you** — the board is only meaningful because it is built on your profile: questionnaire tags + my starred repos + behavior memory (EMA forgetting curve) → profile-driven search → LLM interpretation from your profile. A thousand people, a thousand boards — that is the feature, not a flaw.
+**Why two separate mechanisms**: the public edition is about credibility — the board must be identical for everyone to discuss, quote and share, so no questionnaire and no personalization; the personal edition is about knowing you — your profile (questionnaire + starred repos + behavior memory) drives search and interpretation. A thousand people, a thousand boards — that is the feature, not a flaw.
 
 ---
 
@@ -71,7 +68,7 @@ pytest                      # 150 passed
 ```
 
 ---
-## Personal edition quick start (5 steps, ~3 minutes)
+## Personal edition quick start
 
 ```
 ① Run python src/main.py --serve → open http://127.0.0.1:8970/?personal=1
@@ -99,16 +96,21 @@ pytest                      # 150 passed
 ## Screenshots
 
 <p align="center">
-  <img src="static/screenshots/shot-hero.png" alt="StarRadar homepage" width="780">
-  <br>
-  <sub>Homepage · Today's star map + potential board</sub>
+  <img src="static/screenshots/shot-hero.png" alt="StarRadar homepage · today's star map + potential board" width="780" style="border-radius:14px;box-shadow:0 10px 32px #07101e22">
 </p>
 
-<p align="center">
-  <img src="static/screenshots/shot-trends.png" alt="Weekly trend report" width="780">
-  <br>
-  <sub>Weekly trends · TrendScore v2 momentum board</sub>
-</p>
+<table>
+  <tr>
+    <td align="center" width="50%" style="padding:0 10px">
+      <img src="static/screenshots/shot-trends.png" alt="Weekly trends · TrendScore v2 momentum board" width="100%" style="border-radius:12px;box-shadow:0 8px 24px #07101e1c">
+      <br><sub>Weekly trends · momentum board</sub>
+    </td>
+    <td align="center" width="50%" style="padding:0 10px">
+      <img src="static/screenshots/shot-potential.png" alt="Potential radar · 5D scoring full page" width="100%" style="border-radius:12px;box-shadow:0 8px 24px #07101e1c">
+      <br><sub>Potential radar · 5D scoring</sub>
+    </td>
+  </tr>
+</table>
 
 ---
 
@@ -184,13 +186,7 @@ Data flow: browser (localStorage) → local `--serve` persistence (SQLite) → d
 
 ---
 
-<p align="center">
-  <img src="static/screenshots/shot-potential.png" alt="Potential radar full page" width="780">
-  <br>
-  <sub>Potential radar · full page</sub>
-</p>
 
----
 
 ## License
 
