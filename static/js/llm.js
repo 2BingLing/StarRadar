@@ -173,21 +173,43 @@
     return true;
   }
   // 服务商【预设】快捷填充：点击填入 base_url + model，Key 留空由用户粘贴（预设可自行修改）
-  function renderPresets() {
-    var box = document.querySelector("#llmPresets");
+  // box/inputs 参数用于问卷内表单（默认 llmPanel 表单）
+  function renderPresets(box, baseInput, modelInput) {
+    if (!box) box = document.querySelector("#llmPresets");
     if (!box) return;
+    baseInput = baseInput || baseEl;
+    modelInput = modelInput || modelEl;
     box.innerHTML = '<span class="llm-presets-label">快捷预设</span>' + PRESETS.map(function (p) {
       return '<button class="llm-preset" type="button" data-base="' + p.base_url + '" data-model="' + p.model + '">' +
         p.name + "</button>";
     }).join("");
     Array.prototype.forEach.call(box.querySelectorAll(".llm-preset"), function (b) {
       b.addEventListener("click", function () {
-        if (baseEl) baseEl.value = b.dataset.base;
-        if (modelEl) modelEl.value = b.dataset.model;
+        if (baseInput) baseInput.value = b.dataset.base;
+        if (modelInput) modelInput.value = b.dataset.model;
         setStatus("已填入「" + b.textContent + "」预设（可改），请粘贴你的 API Key", true);
-        if (keyEl) keyEl.focus();
+        var keyInput = document.querySelector("#llmKey") || document.querySelector("#qLLMKey");
+        if (keyInput) keyInput.focus();
       });
     });
+  }
+  // 测试连通 → 通过才保存（含同步后端）；返回 Promise，失败抛中文原因
+  function saveWithValues(c) {
+    var cfgBackup = cfg;
+    cfg = c || {};
+    if (!cfg.key) { cfg = cfgBackup; return Promise.reject(new Error("请先填入 API Key")); }
+    return chat([{ role: "user", content: "ping" }], { max_tokens: 8, feature: "test" })
+      .then(function () {
+        saveConfig(c);
+        refreshBtn();
+        return true;
+      })
+      .catch(function (err) {
+        if (err.message === "auth-failed") throw new Error("Key 无效或权限不足");
+        if (err.message === "rate-limit") throw new Error("今日测试调用已达上限");
+        throw new Error("连接失败：" + (err.message || "请检查 Base URL / 网络"));
+      })
+      .then(function (v) { cfg = cfgBackup; return v; }, function (e) { cfg = cfgBackup; throw e; });
   }
   // 保存前先测试连通：通过才保存（含同步后端）并关闭面板；失败停留并给出原因
   function saveWithTest() {
@@ -295,12 +317,19 @@
     syncForm();
   }
 
+  // 问卷 STEP 3 的 LLM 预设渲染（目标为问卷内表单）
+  function renderSurveyPresets() {
+    renderPresets(document.querySelector("#qLLMPresets"), document.querySelector("#qLLMBase"), document.querySelector("#qLLMModel"));
+  }
+
   // ===== 对外接口 =====
   window.LLM = {
     isConfigured: isConfigured,
     getConfig: getConfig,
     saveConfig: saveConfig,
     clearConfig: clearConfig,
+    saveWithValues: saveWithValues,
+    renderSurveyPresets: renderSurveyPresets,
     chat: chat,
     parseJSON: parseJSON,
     canCall: canCall,

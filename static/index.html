@@ -141,9 +141,21 @@
       </div>
     </div>
     <div class="survey-step" data-step="3" hidden>
-      <div class="survey-title"><small>STEP 3 / 3</small><b>选填 · 你的 GitHub 用户名</b></div>
-      <p class="survey-tip">填写后我们会参考你 Star 过的项目（后续版本支持），不填也可以</p>
-      <input class="survey-input" id="surveyGithub" type="text" placeholder="例如 2BingLing" autocomplete="off">
+      <div class="survey-title"><small>STEP 3 / 4</small><b>AI 个性化（可选）</b><em>填 LLM Key，解读 / 推荐理由 / 周报全部按你的画像生成</em></div>
+      <div class="note-body">
+        <label class="gh-field">API Base URL
+          <input id="qLLMBase" type="text" placeholder="https://api.openai.com/v1" autocomplete="off">
+        </label>
+        <label class="gh-field">API Key
+          <input id="qLLMKey" type="password" placeholder="sk-…（不填则规则模式）" autocomplete="off">
+        </label>
+        <label class="gh-field">模型
+          <input id="qLLMModel" type="text" placeholder="gpt-5-mini" autocomplete="off">
+        </label>
+        <div class="llm-presets" id="qLLMPresets"></div>
+        <small class="note-date">仅支持 <b>OpenAI 兼容接口</b>（Anthropic 原生 API 不兼容）；预设可改；
+          保存时自动测试连通，失败不生效；可跳过，之后随时在 ⚡ 面板配置。</small>
+      </div>
     </div>
     <div class="survey-step" data-step="4" hidden>
       <div class="survey-title"><small>完成</small><b>你的雷达已就绪</b><em>为你生成个性化建议</em></div>

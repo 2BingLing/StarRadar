@@ -1991,9 +1991,11 @@
     if (!el) return;
     var letter = "?";
     try {
-      var raw = JSON.parse(localStorage.getItem(SURVEY_KEY));
-      var gh = ((raw && raw.step3 && raw.step3.github_username) || "").trim();
-      if (gh) letter = gh.charAt(0).toUpperCase();
+      // 头像首字母 = GitHub 登录用户名（问卷用户名已移除）
+      if (window.GH && window.GH.getUserInfo) {
+        var u = window.GH.getUserInfo();
+        if (u && u.login) letter = u.login.charAt(0).toUpperCase();
+      }
     } catch (e) {}
     el.textContent = letter;
   }
@@ -2030,21 +2032,55 @@
     var survey = {
       step1: { selected: selected },
       step2: { value: value },
-      step3: { github_username: document.querySelector("#surveyGithub").value.trim() },
     };
     localStorage.setItem(SURVEY_KEY, JSON.stringify(survey));
     updateProfileAvatar();
     surveySelected = loadSurveySelected();
     renderCards();
     reportSurvey(survey);
-    if (typeof window.LLM !== "undefined" && window.LLM.saveFromForm) window.LLM.saveFromForm();
+    // 问卷 STEP 3 的 LLM 配置（可选）：填了 key → 测试连通 → 通过才保存（失败提示不落库）
+    var lc = readSurveyLlmForm();
+    if (lc && lc.key) {
+      if (window.LLM && window.LLM.saveWithValues) {
+        window.LLM.saveWithValues(lc).then(function () {
+          notify("AI 个性化已开启（LLM 连接测试通过）");
+        }).catch(function (err) {
+          notify("LLM 配置未保存：" + (err && err.message || "连接失败"));
+        });
+      }
+    }
     return survey;
+  }
+
+  // 问卷 STEP 3 LLM 表单 → 配置对象（未填 key 返回 null）
+  function readSurveyLlmForm() {
+    var base = document.querySelector("#qLLMBase");
+    var key = document.querySelector("#qLLMKey");
+    var model = document.querySelector("#qLLMModel");
+    if (!key || !key.value.trim()) return null;
+    return {
+      base_url: (base && base.value.trim()) || "https://api.openai.com/v1",
+      key: key.value.trim(),
+      model: (model && model.value.trim()) || "gpt-5-mini",
+    };
   }
 
   function openSurvey(force) {
     if (!force && localStorage.getItem(SURVEY_KEY)) return;
     surveyStep = 1;
-    if (typeof window.LLM !== "undefined" && window.LLM.syncForm) window.LLM.syncForm();
+    // 回填问卷 STEP 3 LLM 表单（已有配置则显示）+ 渲染预设
+    try {
+      if (window.LLM && window.LLM.getConfig) {
+        var lc = window.LLM.getConfig() || {};
+        var qb = document.querySelector("#qLLMBase");
+        var qk = document.querySelector("#qLLMKey");
+        var qm = document.querySelector("#qLLMModel");
+        if (qb) qb.value = lc.base_url || "https://api.openai.com/v1";
+        if (qk) qk.value = lc.key || "";
+        if (qm) qm.value = lc.model || "gpt-5-mini";
+      }
+      if (window.LLM && window.LLM.renderSurveyPresets) window.LLM.renderSurveyPresets();
+    } catch (e) {}
     surveyEl.classList.add("open");
     surveyEl.setAttribute("aria-hidden", "false");
     document.body.style.overflow = "hidden";
@@ -2173,7 +2209,6 @@
       var empty = {
         step1: { selected: [] },
         step2: { value: { min: 500, max: null } },
-        step3: { github_username: "" },
       };
       localStorage.setItem(SURVEY_KEY, JSON.stringify(empty));
       reportSurvey(empty);
@@ -2184,25 +2219,11 @@
     renderCards();
   }
 
-  // GitHub 登录成功 → 自动填入问卷用户名（免手动输入）
-  window.addEventListener("sr:gh-login", function (e) {
-    var login = e && e.detail && e.detail.login;
-    if (!login) return;
-    var hadSurvey = !!localStorage.getItem(SURVEY_KEY);
-    try {
-      var raw = JSON.parse(localStorage.getItem(SURVEY_KEY) || "{}");
-      raw.step3 = raw.step3 || {};
-      if (raw.step3.github_username !== login) {
-        raw.step3.github_username = login;
-        localStorage.setItem(SURVEY_KEY, JSON.stringify(raw));
-        if (hadSurvey) reportSurvey(raw);
-        surveySelected = loadSurveySelected();
-        renderCards();
-      }
-    } catch (err) {}
-    var input = document.querySelector("#surveyGithub");
-    if (input) input.value = login;
+  // GitHub 登录成功 → 刷新头像（问卷用户名步骤已移除，登录即关联）
+  window.addEventListener("sr:gh-login", function () {
     updateProfileAvatar();
+    surveySelected = loadSurveySelected();
+    renderCards();
   });
 
   document.querySelector("#surveyNext").addEventListener("click", function () {
