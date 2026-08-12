@@ -55,7 +55,10 @@
   function getConfig() { return loadCfg(); }
   // key 同步本地后端（供 --personal 每日管道调用 LLM）：存 data/profile/llm_config.json。
   // 无本地 server（GitHub Pages）时静默失败，不影响浏览器内功能。
+  // 同步标记：本地配置的哈希，启动时与后端比对，不一致自动补报（防「填过但没落库」）
+  var SYNC_KEY = "starradar:llm_synced";
   function syncKeyToBackend(c) {
+    var mark = c && c.key ? String(c.base_url || "") + "|" + c.key + "|" + String(c.model || "") : "";
     if (c && c.key) {
       fetch("/api/llm_key", {
         method: "POST",
@@ -65,10 +68,25 @@
           key: c.key,
           model: c.model || "",
         }),
-      }).catch(function () {});
+      }).then(function (r) {
+        if (r.ok) { try { localStorage.setItem(SYNC_KEY, mark); } catch (e) {} }
+        else { try { localStorage.removeItem(SYNC_KEY); } catch (e) {} }
+      }).catch(function () {
+        try { localStorage.removeItem(SYNC_KEY); } catch (e) {}
+      });
     } else {
       fetch("/api/llm_key", { method: "DELETE" }).catch(function () {});
+      try { localStorage.removeItem(SYNC_KEY); } catch (e) {}
     }
+  }
+  // 启动补报：本地有 key 且与后端不一致（无标记/标记不符）→ 重新同步一次
+  function resyncToBackend() {
+    var c = loadCfg();
+    if (!c || !c.key) return;
+    var mark = String(c.base_url || "") + "|" + c.key + "|" + String(c.model || "");
+    var synced = "";
+    try { synced = localStorage.getItem(SYNC_KEY) || ""; } catch (e) {}
+    if (synced !== mark) syncKeyToBackend(c);
   }
   function saveConfig(c) {
     cfg = c || null;
@@ -284,6 +302,7 @@
       if (clearBtn) clearBtn.hidden = true;
     });
     syncForm();
+    resyncToBackend();  // 启动补报：本地有 key 但后端未同步时自动补
   }
 
   // 问卷 STEP 3 的 LLM 预设渲染（目标为问卷内表单）
