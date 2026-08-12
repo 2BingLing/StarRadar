@@ -25,6 +25,7 @@ import time
 from datetime import datetime, timezone
 from http.server import BaseHTTPRequestHandler, ThreadingHTTPServer
 from pathlib import Path
+from urllib.error import HTTPError
 from urllib.parse import parse_qs, unquote, urlencode
 from urllib.request import Request, urlopen
 
@@ -677,6 +678,9 @@ def _tls_self_check() -> None:
             ) as resp:
                 resp.read(64)
                 return True
+        except HTTPError:
+            # 收到 HTTP 响应（403 限流等）→ TLS 握手已成功，环境正常
+            return True
         except Exception:  # noqa: BLE001
             return False
 
