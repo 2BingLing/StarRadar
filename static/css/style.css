@@ -269,6 +269,7 @@ h1 em { color: var(--blue); font-style: normal; }
   display: flex; gap: 12px; align-items: center; justify-content: flex-end;
   margin: 4px 0 14px; font-size: 12.5px; color: var(--muted);
 }
+.p-bar[hidden] { display: none; }  /* display:flex 覆盖 hidden 的修复（公版隐藏） */
 .p-bar.stale .p-time { color: #f5a623; font-weight: 600; }
 .p-refresh { padding: 6px 14px; border: 1px solid var(--line); border-radius: 10px; font-size: 12.5px; }
 .p-refresh:hover { border-color: #1677ff66; color: var(--blue); background: #f0f6ff; }
