@@ -13,6 +13,8 @@
   };
   // 个人特化模式（?personal=1）：同一套 UI，数据源切换为本地后端 /api/personal/*
   var IS_PERSONAL = location.search.indexOf("personal=1") !== -1;
+  // 调试/预览参数：?fresh=1 强制显示「首次填写」向导（跳过档案恢复与自动弹窗检查）
+  var FORCE_FRESH = location.search.indexOf("fresh=1") !== -1;
   var PERSONAL_MISSING = { potential: false, trends: false };
   var TAB_LABEL = { potential: "潜力雷达", trends: "每周趋势", picks: "我的收藏" };
   var STAGE_LABELS = {
@@ -2097,12 +2099,12 @@
         selected.push(el.textContent.trim());
       });
     }
-    var card = isEdit
-      ? document.querySelector("#editSize button.sel")
-      : document.querySelector("#rangeCards .range-card.sel");
-    var value = card
-      ? { min: Number(card.dataset.min) || 0, max: Number(card.dataset.max) || null }
-      : { min: 500, max: 2000 };
+    var minEl = document.querySelector(isEdit ? "#eMin" : "#surveyMin");
+    var maxEl = document.querySelector(isEdit ? "#eMax" : "#surveyMax");
+    var value = {
+      min: minEl ? Number(minEl.value) || 0 : 0,
+      max: maxEl ? Number(maxEl.value) || null : null,
+    };
     var survey = {
       step1: { selected: selected },
       step2: { value: value },
@@ -2164,8 +2166,8 @@
   function openSurvey(force) {
     var editEl = document.querySelector("#surveyEdit");
     var wizardEl = document.querySelector("#surveyWizard");
-    var isModify = !!force && !!localStorage.getItem(SURVEY_KEY);
-    if (!force && localStorage.getItem(SURVEY_KEY)) return;  // 首次自动弹：已有档案不弹
+    var isModify = !!force && !!localStorage.getItem(SURVEY_KEY) && !FORCE_FRESH;
+    if (!force && localStorage.getItem(SURVEY_KEY) && !FORCE_FRESH) return;  // 首次自动弹：已有档案不弹
     surveyStep = 1;
     if (isModify) {
       // 界面二 · 再次修改：紧凑编辑面板
@@ -2194,21 +2196,14 @@
     });
     updateHotCount();
   }
-  // wizard 步骤 2 体量回填（默认中档 500-2000）
+  // wizard 步骤 2 体量回填（默认 500 以上 + 不限）
   function syncWizardSize() {
     var doc = loadSurveyDoc();
     var val = (doc.step2 && doc.step2.value) || {};
-    var any = false;
-    Array.prototype.forEach.call(document.querySelectorAll("#rangeCards .range-card"), function (c) {
-      var match = val.min != null && Number(c.dataset.min) === Number(val.min);
-      c.classList.toggle("sel", match);
-      if (match) any = true;
-    });
-    if (!any) {
-      Array.prototype.forEach.call(document.querySelectorAll("#rangeCards .range-card"), function (c) {
-        c.classList.toggle("sel", Number(c.dataset.max) === 2000);
-      });
-    }
+    var minEl = document.querySelector("#surveyMin");
+    var maxEl = document.querySelector("#surveyMax");
+    if (minEl) minEl.value = val.min != null && val.min ? String(val.min) : (val.min === 0 ? "0" : "500");
+    if (maxEl) maxEl.value = val.max ? String(val.max) : "0";
   }
   function closeSurvey() {
     surveyEl.classList.remove("open");
@@ -2406,11 +2401,12 @@
     var doc = loadSurveyDoc();
     var sel = (doc.step1 && doc.step1.selected) || [];
     renderEditTags(sel);
-    // 体量回填
+    // 体量回填（双下拉）
     var val = (doc.step2 && doc.step2.value) || {};
-    Array.prototype.forEach.call(document.querySelectorAll("#editSize button"), function (b) {
-      b.classList.toggle("sel", val.min != null && Number(b.dataset.min) === Number(val.min));
-    });
+    var minEl = document.querySelector("#eMin");
+    var maxEl = document.querySelector("#eMax");
+    if (minEl) minEl.value = val.min != null && val.min ? String(val.min) : (val.min === 0 ? "0" : "500");
+    if (maxEl) maxEl.value = val.max ? String(val.max) : "0";
     updateEditCount();
   }
   function renderEditTags(sel) {
@@ -2452,22 +2448,6 @@
       if (go > surveyStep) return;  // 未来步锁定
       surveyStep = go;
       renderSurveyStep();
-    });
-  });
-  // 体量三档卡选择（向导步骤 2）
-  Array.prototype.forEach.call(document.querySelectorAll("#rangeCards .range-card"), function (c) {
-    c.addEventListener("click", function () {
-      Array.prototype.forEach.call(document.querySelectorAll("#rangeCards .range-card"), function (x) {
-        x.classList.toggle("sel", x === c);
-      });
-    });
-  });
-  // 修改面板：体量分段选择
-  Array.prototype.forEach.call(document.querySelectorAll("#editSize button"), function (b) {
-    b.addEventListener("click", function () {
-      Array.prototype.forEach.call(document.querySelectorAll("#editSize button"), function (x) {
-        x.classList.toggle("sel", x === b);
-      });
     });
   });
   // 修改面板：已选标签删除（委托）
@@ -2556,7 +2536,7 @@
   // 冷启动问卷：仅个人版自动弹出（公版打开即用，无问卷）；
   // 先尝试从后端恢复档案，恢复成功则不再弹
   if (IS_PERSONAL) {
-    var restoreP = restoreSurveyFromBackend();
+    var restoreP = FORCE_FRESH ? Promise.resolve() : restoreSurveyFromBackend();  // fresh=1 预览时不恢复档案
     setTimeout(function () {
       restoreP.then(function () { openSurvey(false); });
     }, 900);

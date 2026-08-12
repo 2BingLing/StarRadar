@@ -175,22 +175,26 @@
             <p>星数无意义，增长动能才上榜——体量决定我们为你搜索的池子</p>
           </div>
           <div class="step-body">
-            <div class="range-cards" id="rangeCards">
-              <button class="range-card" type="button" data-min="50" data-max="500">
-                <svg class="rc-star" viewBox="0 0 26 26" fill="none"><path d="M13 3l2.9 6.2 6.6 1-4.8 4.5 1.2 6.5L13 18.2 7.1 21.2l1.2-6.5L3.5 10.2l6.6-1z" stroke="#1677ff" stroke-width="1.6" stroke-linejoin="round"/></svg>
-                <span class="rc-main"><b>50 – 500</b><span>萌芽 · 早期高潜力</span></span>
-                <span class="rc-check"><svg viewBox="0 0 12 12" fill="none"><path d="M2.2 6.4 L4.8 9 L9.8 3.4" stroke="#fff" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/></svg></span>
-              </button>
-              <button class="range-card" type="button" data-min="500" data-max="2000">
-                <svg class="rc-star" viewBox="0 0 26 26" fill="none"><path d="M13 3l2.9 6.2 6.6 1-4.8 4.5 1.2 6.5L13 18.2 7.1 21.2l1.2-6.5L3.5 10.2l6.6-1z" stroke="#1677ff" stroke-width="1.6" stroke-linejoin="round"/></svg>
-                <span class="rc-main"><b>500 – 2,000</b><span>加速 · 正在突破</span></span>
-                <span class="rc-check"><svg viewBox="0 0 12 12" fill="none"><path d="M2.2 6.4 L4.8 9 L9.8 3.4" stroke="#fff" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/></svg></span>
-              </button>
-              <button class="range-card" type="button" data-min="2000" data-max="8000">
-                <svg class="rc-star" viewBox="0 0 26 26" fill="none"><path d="M13 3l2.9 6.2 6.6 1-4.8 4.5 1.2 6.5L13 18.2 7.1 21.2l1.2-6.5L3.5 10.2l6.6-1z" stroke="#1677ff" stroke-width="1.6" stroke-linejoin="round"/></svg>
-                <span class="rc-main"><b>2,000 – 8,000</b><span>规模 · 已有验证</span></span>
-                <span class="rc-check"><svg viewBox="0 0 12 12" fill="none"><path d="M2.2 6.4 L4.8 9 L9.8 3.4" stroke="#fff" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/></svg></span>
-              </button>
+            <div class="size-picker">
+              <div class="field">
+                <label class="field-label">最低星数</label>
+                <select id="surveyMin">
+                  <option value="0">不限</option>
+                  <option value="50">50 以上</option>
+                  <option value="100">100 以上</option>
+                  <option value="500" selected>500 以上</option>
+                  <option value="1000">1000 以上</option>
+                </select>
+              </div>
+              <div class="field">
+                <label class="field-label">最高星数</label>
+                <select id="surveyMax">
+                  <option value="0" selected>不限</option>
+                  <option value="1000">1000 以下</option>
+                  <option value="5000">5000 以下</option>
+                  <option value="10000">10000 以下</option>
+                </select>
+              </div>
             </div>
             <p class="range-hint">区间会随你的行为记忆动态微调——越用越准</p>
           </div>
@@ -262,10 +266,22 @@
       </div>
       <div class="edit-sec">
         <div class="sec-head"><h3>体量区间</h3><span class="sec-note">决定搜索池</span></div>
-        <div class="seg" id="editSize">
-          <button type="button" data-min="50" data-max="500"><b>50 – 500</b><span>萌芽</span></button>
-          <button type="button" data-min="500" data-max="2000"><b>500 – 2,000</b><span>加速</span></button>
-          <button type="button" data-min="2000" data-max="8000"><b>2,000 – 8,000</b><span>规模</span></button>
+        <div class="field-row">
+          <div class="field"><label class="field-label">最低星数</label>
+            <select id="eMin">
+              <option value="0">不限</option>
+              <option value="50">50 以上</option>
+              <option value="100">100 以上</option>
+              <option value="500">500 以上</option>
+              <option value="1000">1000 以上</option>
+            </select></div>
+          <div class="field"><label class="field-label">最高星数</label>
+            <select id="eMax">
+              <option value="0">不限</option>
+              <option value="1000">1000 以下</option>
+              <option value="5000">5000 以下</option>
+              <option value="10000">10000 以下</option>
+            </select></div>
         </div>
       </div>
       <div class="edit-sec">

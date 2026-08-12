@@ -974,6 +974,12 @@ h1 em { color: var(--blue); font-style: normal; }
 }
 .field input:focus { outline: none; border-color: var(--blue); background: #fff; box-shadow: 0 0 0 3px rgba(22, 119, 255, 0.15); }
 .field-row { display: grid; grid-template-columns: 1fr 1fr; gap: 12px; }
+.field select {
+  width: 100%; padding: 9px 12px; border: 1px solid var(--line); border-radius: 10px;
+  font-size: 13.5px; color: var(--ink); background: #f7f9fd; transition: 0.2s; box-sizing: border-box;
+}
+.field select:focus { outline: none; border-color: var(--blue); background: #fff; box-shadow: 0 0 0 3px rgba(22, 119, 255, 0.15); }
+.size-picker { display: grid; grid-template-columns: 1fr 1fr; gap: 12px; }
 .preset-row { display: flex; align-items: center; gap: 8px; margin: 4px 0 14px; flex-wrap: wrap; }
 .preset-row .pr-label { font-size: 12.5px; color: var(--faint); margin-right: 2px; }
 .llm-preset {
