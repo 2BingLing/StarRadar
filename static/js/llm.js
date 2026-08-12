@@ -15,15 +15,16 @@
 
   var DEFAULTS = {
     base_url: "https://api.openai.com/v1",
-    model: "gpt-4o-mini",
+    model: "gpt-5-mini",
   };
-  // 常见 OpenAI 兼容服务商快捷配置（点击自动填入地址与模型）
+  // 常见 OpenAI 兼容服务商【预设】——点击自动填入地址与模型，可自行修改；
+  // 模型名以各服务商最新文档为准（2026-08：deepseek-chat 已停用，官方为 deepseek-v4-flash）
   var PRESETS = [
-    { name: "OpenAI", base_url: "https://api.openai.com/v1", model: "gpt-4o-mini" },
-    { name: "DeepSeek", base_url: "https://api.deepseek.com/v1", model: "deepseek-chat" },
-    { name: "智谱 GLM", base_url: "https://open.bigmodel.cn/api/paas/v4", model: "glm-4-flash" },
-    { name: "通义千问", base_url: "https://dashscope.aliyuncs.com/compatible-mode/v1", model: "qwen-plus" },
-    { name: "Moonshot", base_url: "https://api.moonshot.cn/v1", model: "moonshot-v1-8k" },
+    { name: "OpenAI", base_url: "https://api.openai.com/v1", model: "gpt-5-mini" },
+    { name: "DeepSeek", base_url: "https://api.deepseek.com/v1", model: "deepseek-v4-flash" },
+    { name: "智谱 GLM", base_url: "https://open.bigmodel.cn/api/paas/v4", model: "glm-5.2" },
+    { name: "通义千问", base_url: "https://dashscope.aliyuncs.com/compatible-mode/v1", model: "qwen3-flash" },
+    { name: "Moonshot", base_url: "https://api.moonshot.cn/v1", model: "kimi-k2-turbo" },
   ];
   // 每功能每日限额（用户自己的 key，不能乱烧）
   var LIMITS = { profile: 1, report: 1, survey: 1, reason: 20, ask: 30 };
@@ -172,11 +173,11 @@
     syncForm();
     return true;
   }
-  // 常见服务商快捷填充：点击填入 base_url + model，Key 留空由用户粘贴
+  // 服务商【预设】快捷填充：点击填入 base_url + model，Key 留空由用户粘贴（预设可自行修改）
   function renderPresets() {
     var box = document.querySelector("#llmPresets");
     if (!box) return;
-    box.innerHTML = PRESETS.map(function (p) {
+    box.innerHTML = '<span class="llm-presets-label">快捷预设</span>' + PRESETS.map(function (p) {
       return '<button class="llm-preset" type="button" data-base="' + p.base_url + '" data-model="' + p.model + '">' +
         p.name + "</button>";
     }).join("");
@@ -184,7 +185,7 @@
       b.addEventListener("click", function () {
         if (baseEl) baseEl.value = b.dataset.base;
         if (modelEl) modelEl.value = b.dataset.model;
-        setStatus("已填入 " + b.textContent + " 配置，请粘贴你的 API Key", true);
+        setStatus("已填入「" + b.textContent + "」预设（可改），请粘贴你的 API Key", true);
         if (keyEl) keyEl.focus();
       });
     });
