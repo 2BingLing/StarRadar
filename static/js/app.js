@@ -1286,58 +1286,66 @@
     if (btn && !btn.dataset.bound) {
       btn.dataset.bound = "1";
       btn.addEventListener("click", function () {
-        if (btn.disabled) return;  // 防重复点击
+        if (_refreshState.active) { notify("正在刷新中，请稍候"); return; }  // 防重复
+        _refreshState.active = true;
         btn.disabled = true;
-        var timer = openRefreshPanel();
+        openRefreshPanel();
         var before = window.__personalGen || "";
         fetch("/api/personal/refresh", { method: "POST" })
           .then(function (r) { return r.json(); })
           .then(function () {
             // 轮询生成完成：generated_at 变化或数据出现 → 自动刷新
             var tries = 0;
-            var iv = setInterval(function () {
+            _refreshState.poll = setInterval(function () {
               tries++;
               fetch("/api/personal/scores", { cache: "no-store" })
                 .then(function (r) { return r.json(); })
                 .then(function (j) {
                   var g = (j && j.generated_at) || "";
                   if (g && g !== before) {
-                    clearInterval(iv);
-                    closeRefreshPanel(timer, "✓ 刷新完成，即将更新页面…");
+                    clearRefreshTimers();  // 停轮询（防多个循环并存）
+                    closeRefreshPanel("✓ 刷新完成，即将更新页面…");
                     setTimeout(function () { location.reload(); }, 900);
                   }
                 }).catch(function () {});
               if (tries > 24) {  // 最多等 6 分钟
-                clearInterval(iv);
-                closeRefreshPanel(timer, "刷新超时：请确认本地服务与网络正常，可稍后重试", true);
+                clearRefreshTimers();
+                closeRefreshPanel("刷新超时：请确认本地服务与网络正常，可稍后重试", true);
                 btn.disabled = false;
               }
             }, 15000);
           })
           .catch(function () {
-            closeRefreshPanel(timer, "刷新失败：请确认已运行 python src/main.py --serve", true);
+            clearRefreshTimers();
+            closeRefreshPanel("刷新失败：请确认已运行 python src/main.py --serve", true);
             btn.disabled = false;
           });
       });
     }
   }
-  // 刷新进度弹窗：打开（返回计时器）/ 关闭
+  // 刷新状态全局管理：任意时刻只有一个计时器 + 一个轮询（防叠加导致秒数来回跳）
+  var _refreshState = { timer: null, poll: null, active: false };
+  function clearRefreshTimers() {
+    if (_refreshState.timer) { clearInterval(_refreshState.timer); _refreshState.timer = null; }
+    if (_refreshState.poll) { clearInterval(_refreshState.poll); _refreshState.poll = null; }
+    _refreshState.active = false;
+  }
   function openRefreshPanel() {
+    clearRefreshTimers();  // 清理遗留计时/轮询后再开
     var p = document.querySelector("#refreshPanel");
-    if (!p) return null;
+    if (!p) return;
     p.classList.add("open");
     p.setAttribute("aria-hidden", "false");
     var st = document.querySelector("#refreshStatus");
     if (st) { st.style.color = ""; st.innerHTML = "正在生成中…（已用时 <b id='refreshElapsed'>0</b> 秒）"; }
     var t0 = Date.now();
-    var timer = setInterval(function () {
+    _refreshState.timer = setInterval(function () {
       var el = document.querySelector("#refreshElapsed");
       if (el) el.textContent = Math.round((Date.now() - t0) / 1000);
     }, 1000);
-    return timer;
   }
-  function closeRefreshPanel(timer, statusText, isError) {
-    if (timer) clearInterval(timer);
+  function closeRefreshPanel(statusText, isError) {
+    clearRefreshTimers();
     var p = document.querySelector("#refreshPanel");
     if (!p) return;
     var st = document.querySelector("#refreshStatus");
@@ -1351,7 +1359,8 @@
   var refreshCloseBtn = document.querySelector("#refreshClose");
   if (refreshCloseBtn) {
     refreshCloseBtn.addEventListener("click", function () {
-      closeRefreshPanel(null, null, false);
+      clearRefreshTimers();  // 停止计时与轮询（后台管道继续跑，下次打开会重新检测）
+      closeRefreshPanel(null, false);
       var btn = document.querySelector("#personalRefresh");
       if (btn) btn.disabled = false;
     });
