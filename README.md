@@ -33,6 +33,10 @@ GitHub Trending 上榜时，热度红利早已被瓜分。StarRadar 反着来—
 
 ## 两个版本 · 两种机制
 
+<p align="center">
+  <img src="static/readme/editions.svg" width="100%" alt="两个版本 · 两种机制：公版千人同榜 / 个人版千人千面">
+</p>
+
 **StarRadar 是一个产品，两个版本**——公版回答「这周哪些项目在起飞」，个人版回答「哪些项目适合我」。排序、推荐、解读机制完全不同：
 
 | | **公版**（给大家看） | **个人版**（给自己看） |
@@ -131,6 +135,10 @@ pytest                      # 150 passed
 ---
 
 ## 个性化闭环
+
+<p align="center">
+  <img src="static/readme/pipeline.svg" width="100%" alt="个人版数据流：问卷/行为 → 画像 → 搜索 → 评分 → LLM 解读 → 每日专属雷达">
+</p>
 
 数据流：浏览器（localStorage）→ 本地 `--serve` 落库（SQLite）→ 每日管道重算画像 → 生成专属推荐。
 

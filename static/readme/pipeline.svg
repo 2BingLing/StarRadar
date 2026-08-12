@@ -1,0 +1,79 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 262" width="100%" role="img" aria-labelledby="t d">
+  <title id="t">StarRadar 个人版数据流</title>
+  <desc id="d">问卷与行为 → 画像 → 画像驱动搜索 → 五维评分 → LLM 解读 → 每日专属雷达</desc>
+  <defs>
+    <linearGradient id="starG" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#FFD166"/><stop offset="1" stop-color="#FF9F2D"/>
+    </linearGradient>
+  </defs>
+
+  <rect x="12" y="12" width="1176" height="238" rx="24" fill="#f5f9ff"/>
+  <rect x="12" y="12" width="1176" height="238" rx="24" fill="none" stroke="#d6e6fb" stroke-width="2"/>
+
+  <text x="600" y="56" text-anchor="middle" font-family="Segoe UI, PingFang SC, Microsoft YaHei, sans-serif" font-size="24" font-weight="700" fill="#122033">个人版数据流 · 每日自动</text>
+
+  <!-- 5 个流程节点 -->
+  <g font-family="Segoe UI, PingFang SC, Microsoft YaHei, sans-serif">
+    <!-- 1 问卷 -->
+    <g transform="translate(140,150)">
+      <rect x="-70" y="-46" width="140" height="92" rx="18" fill="#ffffff" stroke="#dceaf7" stroke-width="2"/>
+      <rect x="-24" y="-30" width="48" height="10" rx="5" fill="#e8f1ff"/>
+      <rect x="-24" y="-14" width="48" height="10" rx="5" fill="#e8f1ff"/>
+      <circle cx="24" cy="-12" r="6" fill="#1677ff"/>
+      <circle cx="24" cy="4" r="6" fill="#1677ff"/>
+      <text x="0" y="58" text-anchor="middle" font-size="17" font-weight="600" fill="#122033">问卷 / 行为</text>
+    </g>
+    <!-- 2 画像 -->
+    <g transform="translate(360,150)">
+      <circle r="46" fill="#ffffff" stroke="#dceaf7" stroke-width="2"/>
+      <circle r="28" fill="none" stroke="#e8f0fb" stroke-width="2"/>
+      <path d="M 44,30 A 46 46 0 1 0 44,58" fill="none" stroke="#1677ff" stroke-width="4" stroke-linecap="round"/>
+      <circle r="7" fill="url(#starG)"/>
+      <text x="0" y="62" text-anchor="middle" font-size="17" font-weight="600" fill="#122033">兴趣画像</text>
+    </g>
+    <!-- 3 搜索 -->
+    <g transform="translate(590,150)">
+      <rect x="-70" y="-46" width="140" height="92" rx="18" fill="#ffffff" stroke="#dceaf7" stroke-width="2"/>
+      <circle cx="-24" cy="-8" r="10" fill="none" stroke="#1677ff" stroke-width="2.5"/>
+      <path d="M -16,0 L -6,10" stroke="#1677ff" stroke-width="2.5" stroke-linecap="round"/>
+      <rect x="6" y="-22" width="44" height="9" rx="4.5" fill="#e8f1ff"/>
+      <rect x="6" y="-6" width="44" height="9" rx="4.5" fill="#e8f1ff"/>
+      <text x="0" y="58" text-anchor="middle" font-size="17" font-weight="600" fill="#122033">画像驱动搜索</text>
+    </g>
+    <!-- 4 评分 -->
+    <g transform="translate(820,150)">
+      <rect x="-70" y="-46" width="140" height="92" rx="18" fill="#ffffff" stroke="#dceaf7" stroke-width="2"/>
+      <g fill="none" stroke="#1677ff" stroke-width="4" stroke-linecap="round">
+        <path d="M -24,-20 L -12,-6 L 0,-20"/><path d="M -4,-4 L 8,8 L 18,-4"/><path d="M 16,18 L 26,28"/>
+      </g>
+      <text x="0" y="58" text-anchor="middle" font-size="17" font-weight="600" fill="#122033">五维评分</text>
+    </g>
+    <!-- 5 解读 + 雷达 -->
+    <g transform="translate(1050,150)">
+      <circle r="46" fill="#ffffff" stroke="#dceaf7" stroke-width="2"/>
+      <circle r="28" fill="none" stroke="#e8f0fb" stroke-width="2"/>
+      <path d="M 44,30 A 46 46 0 1 0 44,58" fill="none" stroke="#1677ff" stroke-width="4" stroke-linecap="round"/>
+      <circle r="7" fill="url(#starG)"/>
+      <text x="0" y="62" text-anchor="middle" font-size="17" font-weight="600" fill="#122033">LLM 解读</text>
+    </g>
+
+    <!-- 连接线 + 箭头 -->
+    <g stroke="#9ec4f7" stroke-width="3" fill="none">
+      <path d="M 210,150 L 314,150"/>
+      <path d="M 406,150 L 520,150"/>
+      <path d="M 660,150 L 750,150"/>
+      <path d="M 890,150 L 1004,150"/>
+    </g>
+    <g fill="#9ec4f7">
+      <path d="M 314,145 L 326,150 L 314,155 Z"/>
+      <path d="M 520,145 L 532,150 L 520,155 Z"/>
+      <path d="M 750,145 L 762,150 L 750,155 Z"/>
+      <path d="M 1004,145 L 1016,150 L 1004,155 Z"/>
+    </g>
+
+    <!-- 每日循环弧（底部） -->
+    <path d="M 140,236 A 455 86 0 0 1 1060,236" fill="none" stroke="#f5c26b" stroke-width="3" stroke-dasharray="8 8" opacity="0.8"/>
+    <path d="M 1060,231 L 1072,236 L 1060,241 Z" fill="#f5c26b"/>
+    <text x="600" y="252" text-anchor="middle" font-size="15" fill="#b58a3c" font-weight="600">每日 06:00 自动生成 · 也可随时手动刷新</text>
+  </g>
+</svg>
