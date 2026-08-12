@@ -87,6 +87,18 @@ GitHub Trending 上榜时，热度红利早已被瓜分。StarRadar 反着来—
   <sub>首页 · 今日星图 + 潜力榜单</sub>
 </p>
 
+<p align="center">
+  <img src="static/screenshots/shot-survey.png" alt="个人版冷启动问卷" width="780">
+  <br>
+  <sub>个人版冷启动问卷 · 引导式向导（40 标签 → 体量 → AI 个性化）</sub>
+</p>
+
+<p align="center">
+  <img src="static/screenshots/shot-trends.png" alt="每周趋势周报" width="780">
+  <br>
+  <sub>每周趋势 · TrendScore v2 增长动能周榜</sub>
+</p>
+
 ---
 
 ## 核心能力

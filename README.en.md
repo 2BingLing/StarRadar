@@ -87,6 +87,18 @@ By the time a project hits GitHub Trending, the hype has already been captured. 
   <sub>Homepage · Today's star map + potential board</sub>
 </p>
 
+<p align="center">
+  <img src="static/screenshots/shot-survey.png" alt="Personal cold-start questionnaire" width="780">
+  <br>
+  <sub>Personal cold-start questionnaire · guided wizard (40 tags → size → AI)</sub>
+</p>
+
+<p align="center">
+  <img src="static/screenshots/shot-trends.png" alt="Weekly trend report" width="780">
+  <br>
+  <sub>Weekly trends · TrendScore v2 momentum board</sub>
+</p>
+
 ---
 
 ## Core capabilities
