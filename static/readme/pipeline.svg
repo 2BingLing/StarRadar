@@ -17,44 +17,44 @@
     <!-- 1 问卷 -->
     <g transform="translate(140,150)">
       <rect x="-70" y="-46" width="140" height="92" rx="18" fill="#ffffff" stroke="#dceaf7" stroke-width="2"/>
-      <rect x="-24" y="-18" width="48" height="10" rx="5" fill="#e8f1ff"/>
-      <rect x="-24" y="-2" width="48" height="10" rx="5" fill="#e8f1ff"/>
-      <circle cx="24" cy="0" r="6" fill="#1677ff"/>
-      <circle cx="24" cy="16" r="6" fill="#1677ff"/>
-      <text x="0" y="34" text-anchor="middle" font-size="17" font-weight="600" fill="#122033">问卷 / 行为</text>
+      <rect x="-24" y="-30" width="48" height="10" rx="5" fill="#e8f1ff"/>
+      <rect x="-24" y="-14" width="48" height="10" rx="5" fill="#e8f1ff"/>
+      <circle cx="24" cy="-12" r="6" fill="#1677ff"/>
+      <circle cx="24" cy="4" r="6" fill="#1677ff"/>
+      <text x="0" y="58" text-anchor="middle" font-size="17" font-weight="600" fill="#122033">问卷 / 行为</text>
     </g>
     <!-- 2 画像 -->
     <g transform="translate(360,150)">
       <circle r="46" fill="#ffffff" stroke="#dceaf7" stroke-width="2"/>
       <circle r="28" fill="none" stroke="#e8f0fb" stroke-width="2"/>
-      <path d="M 46,0 A 46 46 0 1 1 42,20" fill="none" stroke="#1677ff" stroke-width="4" stroke-linecap="round"/>
+      <path d="M 44,30 A 46 46 0 1 0 44,58" fill="none" stroke="#1677ff" stroke-width="4" stroke-linecap="round"/>
       <circle r="7" fill="url(#starG)"/>
-      <text x="0" y="56" text-anchor="middle" font-size="17" font-weight="600" fill="#122033">兴趣画像</text>
+      <text x="0" y="62" text-anchor="middle" font-size="17" font-weight="600" fill="#122033">兴趣画像</text>
     </g>
     <!-- 3 搜索 -->
     <g transform="translate(590,150)">
       <rect x="-70" y="-46" width="140" height="92" rx="18" fill="#ffffff" stroke="#dceaf7" stroke-width="2"/>
-      <circle cx="-10" cy="-8" r="10" fill="none" stroke="#1677ff" stroke-width="2.5"/>
-      <path d="M -2,0 L 8,10" stroke="#1677ff" stroke-width="2.5" stroke-linecap="round"/>
-      <rect x="16" y="-22" width="44" height="9" rx="4.5" fill="#e8f1ff"/>
-      <rect x="16" y="-6" width="44" height="9" rx="4.5" fill="#e8f1ff"/>
-      <text x="0" y="34" text-anchor="middle" font-size="17" font-weight="600" fill="#122033">画像驱动搜索</text>
+      <circle cx="-24" cy="-8" r="10" fill="none" stroke="#1677ff" stroke-width="2.5"/>
+      <path d="M -16,0 L -6,10" stroke="#1677ff" stroke-width="2.5" stroke-linecap="round"/>
+      <rect x="6" y="-22" width="44" height="9" rx="4.5" fill="#e8f1ff"/>
+      <rect x="6" y="-6" width="44" height="9" rx="4.5" fill="#e8f1ff"/>
+      <text x="0" y="58" text-anchor="middle" font-size="17" font-weight="600" fill="#122033">画像驱动搜索</text>
     </g>
     <!-- 4 评分 -->
     <g transform="translate(820,150)">
       <rect x="-70" y="-46" width="140" height="92" rx="18" fill="#ffffff" stroke="#dceaf7" stroke-width="2"/>
       <g fill="none" stroke="#1677ff" stroke-width="4" stroke-linecap="round">
-        <path d="M -24,-24 L -12,-10 L 0,-24"/><path d="M -4,-8 L 8,4 L 18,-8"/><path d="M 16,14 L 26,24"/>
+        <path d="M -24,-20 L -12,-6 L 0,-20"/><path d="M -4,-4 L 8,8 L 18,-4"/><path d="M 16,18 L 26,28"/>
       </g>
-      <text x="0" y="34" text-anchor="middle" font-size="17" font-weight="600" fill="#122033">五维评分</text>
+      <text x="0" y="58" text-anchor="middle" font-size="17" font-weight="600" fill="#122033">五维评分</text>
     </g>
     <!-- 5 解读 + 雷达 -->
     <g transform="translate(1050,150)">
       <circle r="46" fill="#ffffff" stroke="#dceaf7" stroke-width="2"/>
       <circle r="28" fill="none" stroke="#e8f0fb" stroke-width="2"/>
-      <path d="M 46,0 A 46 46 0 1 1 42,20" fill="none" stroke="#1677ff" stroke-width="4" stroke-linecap="round"/>
+      <path d="M 44,30 A 46 46 0 1 0 44,58" fill="none" stroke="#1677ff" stroke-width="4" stroke-linecap="round"/>
       <circle r="7" fill="url(#starG)"/>
-      <text x="0" y="56" text-anchor="middle" font-size="17" font-weight="600" fill="#122033">LLM 解读</text>
+      <text x="0" y="62" text-anchor="middle" font-size="17" font-weight="600" fill="#122033">LLM 解读</text>
     </g>
 
     <!-- 连接线 + 箭头 -->
@@ -71,7 +71,9 @@
       <path d="M 1004,145 L 1016,150 L 1004,155 Z"/>
     </g>
 
-    <!-- 每日循环提示（底部，不穿节点） -->
-    <text x="600" y="242" text-anchor="middle" font-size="15" fill="#b58a3c" font-weight="600">↺ 每日 06:00 自动生成 · 也可随时手动刷新</text>
+    <!-- 每日循环弧（底部） -->
+    <path d="M 140,236 A 455 86 0 0 1 1060,236" fill="none" stroke="#f5c26b" stroke-width="3" stroke-dasharray="8 8" opacity="0.8"/>
+    <path d="M 1060,231 L 1072,236 L 1060,241 Z" fill="#f5c26b"/>
+    <text x="600" y="252" text-anchor="middle" font-size="15" fill="#b58a3c" font-weight="600">每日 06:00 自动生成 · 也可随时手动刷新</text>
   </g>
 </svg>
