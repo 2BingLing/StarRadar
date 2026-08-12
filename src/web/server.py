@@ -205,6 +205,8 @@ class StarRadarHandler(BaseHTTPRequestHandler):
             self._oauth_ticket(query)
         elif path == "/api/personal/status":
             self._personal_status()
+        elif path == "/api/survey/latest":
+            self._survey_latest()
         elif path == "/api/personal/scores":
             self._personal_scores()
         elif path == "/api/personal/trends":
@@ -621,6 +623,21 @@ class StarRadarHandler(BaseHTTPRequestHandler):
             self._json(500, {"ok": False, "error": "write failed"})
             return
         self._json(200, {"ok": True, "saved": True})
+
+    def _survey_latest(self) -> None:
+        """GET /api/survey/latest：返回最近一条问卷（浏览器 localStorage 丢失时恢复用）。
+        前端启动时若本地无问卷且此处有 → 自动恢复，避免「重启后问卷又弹、又要重填」。
+        """
+        try:
+            survey = load_latest_survey()
+        except Exception as exc:  # noqa: BLE001
+            logger.warning("survey latest failed: %s", exc)
+            self._json(500, {"ok": False, "error": "load failed"})
+            return
+        if survey is None:
+            self._json(200, {"ok": True, "survey": None})
+            return
+        self._json(200, {"ok": True, "survey": survey})
 
     def _personal_status(self) -> None:
         """GET /api/personal/status：个人版状态（登录 / LLM / 数据是否就绪）。"""

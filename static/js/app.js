@@ -2330,9 +2330,30 @@
   setTimeout(function () { syncLocalData(false); }, 8000);
   var syncBtn = document.querySelector("#syncBtn");
   if (syncBtn) syncBtn.addEventListener("click", function () { syncLocalData(true); });
+  // 问卷从本地后端恢复：浏览器 localStorage 丢失（换浏览器/隐私模式/重启服务）时，
+  // 从 memory.db 取回最近档案，避免「又要重新点类别和填区间」
+  function restoreSurveyFromBackend() {
+    return fetch("/api/survey/latest", { cache: "no-store" })
+      .then(function (r) { return r.json(); })
+      .then(function (d) {
+        if (!d || !d.survey) return;
+        if (localStorage.getItem(SURVEY_KEY)) return;  // 本地已有，不覆盖
+        localStorage.setItem(SURVEY_KEY, JSON.stringify(d.survey));
+        updateProfileAvatar();
+        surveySelected = loadSurveySelected();
+      })
+      .catch(function () {});
+  }
+
   init();
-  // 冷启动问卷：仅个人版自动弹出（公版打开即用，无问卷）
-  if (IS_PERSONAL) setTimeout(function () { openSurvey(false); }, 900);
+  // 冷启动问卷：仅个人版自动弹出（公版打开即用，无问卷）；
+  // 先尝试从后端恢复档案，恢复成功则不再弹
+  if (IS_PERSONAL) {
+    var restoreP = restoreSurveyFromBackend();
+    setTimeout(function () {
+      restoreP.then(function () { openSurvey(false); });
+    }, 900);
+  }
   console.log("StarRadar · Observatory 已启动" + (IS_PERSONAL ? "（个人版）" : "（公版）"));
 
   // ===== GitHub 原生集成（P4）：操作 → 行为日志 =====

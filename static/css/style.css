@@ -1147,7 +1147,6 @@ h1 em { color: var(--blue); font-style: normal; }
 .gh-cid-row input:focus { outline: none; border-color: #1677ff; }
 
 /* ===== AI 个性化设置（LLM Key 面板） ===== */
-#llmBtn.on { color: var(--blue); background: var(--pale); border-color: #1677ff4d; }
 .llm-status { margin: 2px 0 0; font-size: 12px; min-height: 17px; font-weight: 600; }
 .llm-status:empty { display: none; }
 /* LLM 服务商快捷预设 */

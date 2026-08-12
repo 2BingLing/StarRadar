@@ -211,7 +211,7 @@
       })
       .then(function (v) { cfg = cfgBackup; return v; }, function (e) { cfg = cfgBackup; throw e; });
   }
-  // 保存前先测试连通：通过才保存（含同步后端）并关闭面板；失败停留并给出原因
+  // 保存前先测试连通：通过才保存（含同步后端）；失败停留并给出原因
   function saveWithTest() {
     var c = readForm();
     if (!c.key) { setStatus("请先填入 API Key", false); if (keyEl) keyEl.focus(); return; }
@@ -223,8 +223,6 @@
         cfg = cfgBackup;
         saveConfig(c);  // 测试通过才落库（自动同步 /api/llm_key）
         setStatus("连接成功 · 已保存并同步到本地后端", true);
-        refreshBtn();
-        setTimeout(closeLlmPanel, 500);
       })
       .catch(function (err) {
         cfg = cfgBackup;
@@ -251,32 +249,10 @@
       })
       .then(function () { cfg = cfgBackup; testBtn.disabled = false; });
   }
-  var llmBtn = null;
-  var llmPanel = null;
-
   function refreshBtn() {
-    if (!llmBtn) return;
-    llmBtn.classList.toggle("on", isConfigured());
-  }
-  function openLlmPanel() {
-    if (!llmPanel) return;
-    llmPanel.classList.add("open");
-    llmPanel.setAttribute("aria-hidden", "false");
-    document.body.style.overflow = "hidden";
-    syncForm();
-  }
-  function closeLlmPanel() {
-    if (!llmPanel) return;
-    llmPanel.classList.remove("open");
-    llmPanel.setAttribute("aria-hidden", "true");
-    try {
-      var others = ["#ghPanel", "#notePanel", "#forkPanel"];
-      var locked = others.some(function (sel) {
-        var el = document.querySelector(sel);
-        return el && el.classList.contains("open");
-      });
-      if (!locked) document.body.style.overflow = "";
-    } catch (e) {}
+    // ⚡ 顶部入口已移除（LLM 并入问卷）；保留函数兼容 saveWithValues 调用
+    var b = document.querySelector("#llmBtn");
+    if (b) b.classList.toggle("on", isConfigured());
   }
 
   function boot() {
@@ -288,9 +264,7 @@
     statusEl = document.querySelector("#llmStatus");
     clearBtn = document.querySelector("#llmClear");
     testBtn = document.querySelector("#llmTest");
-    llmBtn = document.querySelector("#llmBtn");
-    llmPanel = document.querySelector("#llmPanel");
-    if (llmBtn) llmBtn.hidden = !IS_PERSONAL;  // 仅个人版显示入口
+    // 顶部 ⚡ 面板已移除（LLM 配置并入问卷 STEP 3）；表单元素若存在仍可绑定（旧页面兜底）
     if (testBtn) testBtn.addEventListener("click", testConnection);
     if (clearBtn) clearBtn.addEventListener("click", function () {
       saveConfig(null);
@@ -299,21 +273,7 @@
       if (modelEl) modelEl.value = DEFAULTS.model;
       setStatus("已清除，回到规则个性化模式", true);
       if (clearBtn) clearBtn.hidden = true;
-      refreshBtn();
     });
-    if (llmBtn && llmPanel) {
-      llmBtn.addEventListener("click", openLlmPanel);
-      var closeBtn = document.querySelector("#llmClose");
-      if (closeBtn) closeBtn.addEventListener("click", closeLlmPanel);
-      llmPanel.addEventListener("click", function (e) { if (e.target === llmPanel) closeLlmPanel(); });
-      var saveBtn = document.querySelector("#llmSave");
-      if (saveBtn) saveBtn.addEventListener("click", saveWithTest);
-      renderPresets();
-      document.addEventListener("keydown", function (e) {
-        if (e.key === "Escape" && llmPanel.classList.contains("open")) closeLlmPanel();
-      });
-      refreshBtn();
-    }
     syncForm();
   }
 
