@@ -2082,15 +2082,27 @@
   }
 
   function saveSurvey() {
+    var editEl = document.querySelector("#surveyEdit");
+    var isEdit = editEl && !editEl.hidden;
     var selected = [];
-    Array.prototype.forEach.call(
-      surveyEl.querySelectorAll(".survey-tags .st-tag.sel"),
-      function (el) { selected.push(el.textContent.trim()); }
-    );
-    var value = {
-      min: Number(document.querySelector("#surveyMin").value) || 0,
-      max: Number(document.querySelector("#surveyMax").value) || null,
-    };
+    if (isEdit) {
+      // 修改形态：从已选标签区收集
+      Array.prototype.forEach.call(document.querySelectorAll("#editTags .sel-tag"), function (el) {
+        var t = el.dataset.label || el.textContent.trim();
+        if (t) selected.push(t);
+      });
+    } else {
+      // 向导形态：收集 wizard 内所有标签（保存可能在完成页触发，不能限定当前步骤）
+      Array.prototype.forEach.call(document.querySelectorAll("#surveyWizard .survey-tags .st-tag.sel"), function (el) {
+        selected.push(el.textContent.trim());
+      });
+    }
+    var card = isEdit
+      ? document.querySelector("#editSize button.sel")
+      : document.querySelector("#rangeCards .range-card.sel");
+    var value = card
+      ? { min: Number(card.dataset.min) || 0, max: Number(card.dataset.max) || null }
+      : { min: 500, max: 2000 };
     var survey = {
       step1: { selected: selected },
       step2: { value: value },
@@ -2100,7 +2112,7 @@
     surveySelected = loadSurveySelected();
     renderCards();
     reportSurvey(survey);
-    // 问卷 STEP 3 的 LLM 配置（可选）：填了 key → 测试连通 → 通过才保存（失败提示不落库）
+    // 问卷 STEP 3 / 修改面板的 LLM 配置（可选）：填了 key → 测试连通 → 通过才保存（失败提示不落库）
     var lc = readSurveyLlmForm();
     if (lc && lc.key) {
       if (window.LLM && window.LLM.saveWithValues) {
@@ -2110,15 +2122,19 @@
           notify("LLM 配置未保存：" + (err && err.message || "连接失败"));
         });
       }
+    } else if (isEdit && window.LLM && window.LLM.clearConfig) {
+      window.LLM.clearConfig();  // 修改面板 Key 留空 = 清除 LLM 配置
     }
     return survey;
   }
 
-  // 问卷 STEP 3 LLM 表单 → 配置对象（未填 key 返回 null）
+  // 当前形态的 LLM 表单 → 配置对象（未填 key 返回 null）
   function readSurveyLlmForm() {
-    var base = document.querySelector("#qLLMBase");
-    var key = document.querySelector("#qLLMKey");
-    var model = document.querySelector("#qLLMModel");
+    var editEl = document.querySelector("#surveyEdit");
+    var isEdit = editEl && !editEl.hidden;
+    var base = document.querySelector(isEdit ? "#eLLMBase" : "#qLLMBase");
+    var key = document.querySelector(isEdit ? "#eLLMKey" : "#qLLMKey");
+    var model = document.querySelector(isEdit ? "#eLLMModel" : "#qLLMModel");
     if (!key || !key.value.trim()) return null;
     return {
       base_url: (base && base.value.trim()) || "https://api.openai.com/v1",
@@ -2126,27 +2142,73 @@
       model: (model && model.value.trim()) || "gpt-5-mini",
     };
   }
+  // 双形态 LLM 表单回填 + 预设渲染
+  function syncLlmForms() {
+    try {
+      var lc = (window.LLM && window.LLM.getConfig) ? window.LLM.getConfig() : null;
+      var pairs = [
+        ["#qLLMBase", "#qLLMKey", "#qLLMModel", "#qLLMPresets"],
+        ["#eLLMBase", "#eLLMKey", "#eLLMModel", "#editPresets"],
+      ];
+      pairs.forEach(function (ids) {
+        var b = document.querySelector(ids[0]), k = document.querySelector(ids[1]), m = document.querySelector(ids[2]);
+        if (b) b.value = (lc && lc.base_url) || "https://api.openai.com/v1";
+        if (k) k.value = (lc && lc.key) || "";
+        if (m) m.value = (lc && lc.model) || "gpt-5-mini";
+      });
+      if (window.LLM && window.LLM.renderSurveyPresets) window.LLM.renderSurveyPresets();
+      if (window.LLM && window.LLM.renderEditPresets) window.LLM.renderEditPresets();
+    } catch (e) {}
+  }
 
   function openSurvey(force) {
-    if (!force && localStorage.getItem(SURVEY_KEY)) return;
+    var editEl = document.querySelector("#surveyEdit");
+    var wizardEl = document.querySelector("#surveyWizard");
+    var isModify = !!force && !!localStorage.getItem(SURVEY_KEY);
+    if (!force && localStorage.getItem(SURVEY_KEY)) return;  // 首次自动弹：已有档案不弹
     surveyStep = 1;
-    // 回填问卷 STEP 3 LLM 表单（已有配置则显示）+ 渲染预设
-    try {
-      if (window.LLM && window.LLM.getConfig) {
-        var lc = window.LLM.getConfig() || {};
-        var qb = document.querySelector("#qLLMBase");
-        var qk = document.querySelector("#qLLMKey");
-        var qm = document.querySelector("#qLLMModel");
-        if (qb) qb.value = lc.base_url || "https://api.openai.com/v1";
-        if (qk) qk.value = lc.key || "";
-        if (qm) qm.value = lc.model || "gpt-5-mini";
-      }
-      if (window.LLM && window.LLM.renderSurveyPresets) window.LLM.renderSurveyPresets();
-    } catch (e) {}
+    if (isModify) {
+      // 界面二 · 再次修改：紧凑编辑面板
+      wizardEl.hidden = true;
+      editEl.hidden = false;
+      renderEditForm();
+    } else {
+      // 界面一 · 初次填写：引导式向导
+      wizardEl.hidden = false;
+      editEl.hidden = true;
+      syncWizardTags();
+      syncWizardSize();
+    }
+    syncLlmForms();
     surveyEl.classList.add("open");
     surveyEl.setAttribute("aria-hidden", "false");
     document.body.style.overflow = "hidden";
     renderSurveyStep();
+  }
+  // wizard 步骤 1 标签回填（有档案则高亮）
+  function syncWizardTags() {
+    var doc = loadSurveyDoc();
+    var sel = (doc.step1 && doc.step1.selected) || [];
+    Array.prototype.forEach.call(document.querySelectorAll("#surveyWizard .survey-tags .st-tag"), function (t) {
+      t.classList.toggle("sel", sel.indexOf(t.textContent.trim()) !== -1);
+    });
+    updateHotCount();
+  }
+  // wizard 步骤 2 体量回填（默认中档 500-2000）
+  function syncWizardSize() {
+    var doc = loadSurveyDoc();
+    var val = (doc.step2 && doc.step2.value) || {};
+    var any = false;
+    Array.prototype.forEach.call(document.querySelectorAll("#rangeCards .range-card"), function (c) {
+      var match = val.min != null && Number(c.dataset.min) === Number(val.min);
+      c.classList.toggle("sel", match);
+      if (match) any = true;
+    });
+    if (!any) {
+      Array.prototype.forEach.call(document.querySelectorAll("#rangeCards .range-card"), function (c) {
+        c.classList.toggle("sel", Number(c.dataset.max) === 2000);
+      });
+    }
   }
   function closeSurvey() {
     surveyEl.classList.remove("open");
@@ -2155,15 +2217,20 @@
   }
   var SURVEY_STEPS = 4;
   function renderSurveyStep() {
-    Array.prototype.forEach.call(surveyEl.querySelectorAll(".survey-step"), function (s) {
-      s.hidden = Number(s.dataset.step) !== surveyStep;
+    Array.prototype.forEach.call(surveyEl.querySelectorAll(".step-pane"), function (s) {
+      s.classList.toggle("on", Number(s.dataset.step) === surveyStep);
+    });
+    Array.prototype.forEach.call(surveyEl.querySelectorAll(".rail-item"), function (r) {
+      var go = Number(r.dataset.go);
+      r.classList.toggle("active", go === surveyStep);
+      r.classList.toggle("done", go < surveyStep);
+      r.classList.toggle("future", go > surveyStep);
     });
     document.querySelector("#surveyCount").textContent = surveyStep + " / " + SURVEY_STEPS;
     document.querySelector("#surveyNext").hidden = surveyStep === SURVEY_STEPS;
+    document.querySelector("#surveyNext").disabled = surveyStep === 1 && !surveyEl.querySelector(".step-pane.on .st-tag.sel");
     document.querySelector("#surveyDone").hidden = surveyStep !== SURVEY_STEPS;
-    document.querySelector("#surveyBar").style.width = (surveyStep / SURVEY_STEPS * 100) + "%";
     if (surveyStep === SURVEY_STEPS) renderSuggestions();
-    if (surveyStep === SURVEY_STEPS && typeof window.LLM !== "undefined" && window.LLM.syncForm) window.LLM.syncForm();
   }
 
   // ===== 调研 AI 区：问卷完成页生成个性化建议（有 key → LLM；无 key → 规则模板） =====
@@ -2246,23 +2313,69 @@
     }).join("") + '</div><p class="suggest-note">建议只存本机 · 行为越多越准 · 可随时重做问卷刷新</p>';
   }
 
-  // 领域标签渲染（首次打开时）
-  var tagsBoxes = surveyEl.querySelectorAll(".survey-tags");
-  if (!tagsBoxes.length || !tagsBoxes[0].children.length) {
-    SURVEY_TOPICS.forEach(function (g) {
-      var box = surveyEl.querySelector('.survey-tags[data-group="' + g.group + '"]');
-      if (!box) return;
-      g.items.forEach(function (t) {
-        var b = document.createElement("button");
-        b.type = "button";
-        b.className = "st-tag";
-        b.textContent = t;
-        b.addEventListener("click", function () {
-          b.classList.toggle("sel");
-        });
-        box.appendChild(b);
+  // 领域标签渲染（wizard 步骤 1 + 修改面板添加弹层共用）
+  function updateHotCount() {
+    var n = surveyEl.querySelectorAll('.step-pane.on .survey-tags[data-group="hot"] .st-tag.sel').length;
+    var c = document.querySelector("#hotCount");
+    if (c) c.textContent = n + " / 8";
+  }
+  function updateNextState() {
+    var nextBtn = document.querySelector("#surveyNext");
+    if (nextBtn && surveyStep === 1) {
+      nextBtn.disabled = !surveyEl.querySelector(".step-pane.on .st-tag.sel");
+    }
+  }
+  Array.prototype.forEach.call(surveyEl.querySelectorAll(".survey-tags"), function (box) {
+    if (box.children.length) return;
+    var grp = box.dataset.group;
+    var g = null;
+    SURVEY_TOPICS.forEach(function (gg) { if (gg.group === grp) g = gg; });
+    if (!g) return;
+    g.items.forEach(function (t) {
+      var b = document.createElement("button");
+      b.type = "button";
+      b.className = "st-tag";
+      b.textContent = t;
+      var inEditPop = box.closest("#editPop") !== null;
+      b.addEventListener("click", function () {
+        if (inEditPop) { editPopPick(t, b); return; }
+        // wizard 步骤 1：多选（上限 8）
+        var selCount = surveyEl.querySelectorAll('.step-pane.on .survey-tags .st-tag.sel').length;
+        if (!b.classList.contains("sel") && selCount >= 8) { notify("最多选 8 个领域"); return; }
+        b.classList.toggle("sel");
+        updateHotCount();
+        updateNextState();
       });
+      box.appendChild(b);
     });
+  });
+  // 修改面板「＋ 添加领域」弹层：点击标签 → 添加/移除
+  function editPopPick(label, btn) {
+    var sel = editSelectedTags();
+    if (btn.classList.contains("sel")) {
+      // 移除
+      btn.classList.remove("sel");
+      Array.prototype.forEach.call(document.querySelectorAll("#editTags .sel-tag"), function (el) {
+        if (el.dataset.label === label) el.remove();
+      });
+    } else {
+      if (sel.length >= 8) { notify("最多选 8 个领域"); return; }
+      btn.classList.add("sel");
+      var box = document.querySelector("#editTags");
+      var span = document.createElement("span");
+      span.className = "sel-tag";
+      span.dataset.label = label;
+      span.innerHTML = escapeHtml(label) + '<button type="button" title="移除">×</button>';
+      box.appendChild(span);
+    }
+    updateEditCount();
+  }
+  function editSelectedTags() {
+    var out = [];
+    Array.prototype.forEach.call(document.querySelectorAll("#editTags .sel-tag"), function (el) {
+      out.push(el.dataset.label);
+    });
+    return out;
   }
 
   function skipSurvey() {
@@ -2288,14 +2401,108 @@
     renderCards();
   });
 
+  // ===== 界面二 · 再次修改（紧凑编辑面板） =====
+  function renderEditForm() {
+    var doc = loadSurveyDoc();
+    var sel = (doc.step1 && doc.step1.selected) || [];
+    renderEditTags(sel);
+    // 体量回填
+    var val = (doc.step2 && doc.step2.value) || {};
+    Array.prototype.forEach.call(document.querySelectorAll("#editSize button"), function (b) {
+      b.classList.toggle("sel", val.min != null && Number(b.dataset.min) === Number(val.min));
+    });
+    updateEditCount();
+  }
+  function renderEditTags(sel) {
+    var box = document.querySelector("#editTags");
+    if (!box) return;
+    box.innerHTML = sel.map(function (t) {
+      return '<span class="sel-tag" data-label="' + escapeHtml(t) + '">' + escapeHtml(t) +
+        '<button type="button" title="移除" aria-label="移除 ' + escapeHtml(t) + '">×</button></span>';
+    }).join("");
+  }
+  function updateEditCount() {
+    var n = document.querySelectorAll("#editTags .sel-tag").length;
+    var c = document.querySelector("#editCount");
+    if (c) c.textContent = n + " / 8";
+    syncEditPop();
+  }
+  function syncEditPop() {
+    var sel = editSelectedTags();
+    Array.prototype.forEach.call(document.querySelectorAll("#editPop .st-tag"), function (t) {
+      var hit = sel.indexOf(t.textContent.trim()) !== -1;
+      t.classList.toggle("sel", hit);
+      t.classList.toggle("full", !hit && sel.length >= 8);
+    });
+  }
+
   document.querySelector("#surveyNext").addEventListener("click", function () {
-    if (surveyStep === 1 && !surveyEl.querySelector(".survey-tags .st-tag.sel")) {
+    if (surveyStep === 1 && !surveyEl.querySelector(".step-pane.on .st-tag.sel")) {
       notify("至少选一个领域，或点跳过");
       return;
     }
     surveyStep++;
     if (surveyStep === SURVEY_STEPS) saveSurvey();
     renderSurveyStep();
+  });
+  // 步骤条点击跳步（仅已完成步可回看，未来步锁定）
+  Array.prototype.forEach.call(surveyEl.querySelectorAll(".rail-item"), function (r) {
+    r.addEventListener("click", function () {
+      var go = Number(r.dataset.go);
+      if (go > surveyStep) return;  // 未来步锁定
+      surveyStep = go;
+      renderSurveyStep();
+    });
+  });
+  // 体量三档卡选择（向导步骤 2）
+  Array.prototype.forEach.call(document.querySelectorAll("#rangeCards .range-card"), function (c) {
+    c.addEventListener("click", function () {
+      Array.prototype.forEach.call(document.querySelectorAll("#rangeCards .range-card"), function (x) {
+        x.classList.toggle("sel", x === c);
+      });
+    });
+  });
+  // 修改面板：体量分段选择
+  Array.prototype.forEach.call(document.querySelectorAll("#editSize button"), function (b) {
+    b.addEventListener("click", function () {
+      Array.prototype.forEach.call(document.querySelectorAll("#editSize button"), function (x) {
+        x.classList.toggle("sel", x === b);
+      });
+    });
+  });
+  // 修改面板：已选标签删除（委托）
+  var editTagsEl = document.querySelector("#editTags");
+  if (editTagsEl) {
+    editTagsEl.addEventListener("click", function (e) {
+      var btn = e.target.closest("button");
+      if (!btn) return;
+      var tag = btn.closest(".sel-tag");
+      if (!tag) return;
+      tag.remove();
+      updateEditCount();
+    });
+  }
+  // 修改面板：「＋ 添加领域」弹层开关
+  var editAddBtn = document.querySelector("#editAdd");
+  var editPopEl = document.querySelector("#editPop");
+  if (editAddBtn && editPopEl) {
+    editAddBtn.addEventListener("click", function (e) {
+      e.stopPropagation();
+      editPopEl.hidden = !editPopEl.hidden;
+      if (!editPopEl.hidden) syncEditPop();
+    });
+    document.addEventListener("click", function (e) {
+      if (!editPopEl.hidden && !e.target.closest("#editPop") && !e.target.closest("#editAdd")) {
+        editPopEl.hidden = true;
+      }
+    });
+  }
+  // 修改面板：取消 / 保存
+  document.querySelector("#editCancel").addEventListener("click", closeSurvey);
+  document.querySelector("#editSave").addEventListener("click", function () {
+    saveSurvey();
+    closeSurvey();
+    notify(IS_PERSONAL ? "档案已更新 · 改动将于下次生成时生效" : "兴趣档案已更新");
   });
   document.querySelector("#surveyDone").addEventListener("click", function () {
     saveSurvey();

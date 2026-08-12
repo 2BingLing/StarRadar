@@ -281,6 +281,10 @@
   function renderSurveyPresets() {
     renderPresets(document.querySelector("#qLLMPresets"), document.querySelector("#qLLMBase"), document.querySelector("#qLLMModel"));
   }
+  // 修改面板的 LLM 预设渲染（目标为修改面板表单）
+  function renderEditPresets() {
+    renderPresets(document.querySelector("#editPresets"), document.querySelector("#eLLMBase"), document.querySelector("#eLLMModel"));
+  }
 
   // ===== 对外接口 =====
   window.LLM = {
@@ -290,6 +294,7 @@
     clearConfig: clearConfig,
     saveWithValues: saveWithValues,
     renderSurveyPresets: renderSurveyPresets,
+    renderEditPresets: renderEditPresets,
     chat: chat,
     parseJSON: parseJSON,
     canCall: canCall,
