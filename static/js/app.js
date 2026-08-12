@@ -414,6 +414,7 @@
             data[key] = (d && d.weeks) ? d : { weeks: [] };
           } else if (IS_PERSONAL) {
             data[key] = (d && Array.isArray(d.items)) ? d.items : [];
+            if (key === "potential") window.__personalGen = (d && d.generated_at) || "";
           } else {
             data[key] = d;
           }
@@ -1241,7 +1242,68 @@
       renderHero();
       renderCards();
       fillLangFilter();
+      setupPersonalBar();  // 个人版：数据更新时间 + 刷新按钮
     });
+  }
+
+  // ===== 个人版：数据更新时间提示 + 刷新（自动生成由本地 server 后台调度） =====
+  function timeAgo(iso) {
+    if (!iso) return "";
+    var t = new Date(iso).getTime();
+    if (!t) return "";
+    var diff = Date.now() - t;
+    var min = Math.floor(diff / 60000);
+    if (min < 60) return min + " 分钟前";
+    var h = Math.floor(min / 60);
+    if (h < 24) return h + " 小时前";
+    return Math.floor(h / 24) + " 天前";
+  }
+  function setupPersonalBar() {
+    var bar = document.querySelector("#personalBar");
+    if (!bar) return;
+    if (!IS_PERSONAL) { bar.hidden = true; return; }
+    bar.hidden = false;
+    var timeEl = document.querySelector("#personalTime");
+    var gen = window.__personalGen || "";
+    var stale = false;
+    if (gen) {
+      var ageMs = Date.now() - new Date(gen).getTime();
+      stale = ageMs > 48 * 3600 * 1000;  // 超过 2 天视为过期
+    }
+    if (timeEl) {
+      timeEl.textContent = gen
+        ? "数据更新于 " + timeAgo(gen) + (stale ? " · 已过期，建议刷新" : "")
+        : "暂无个人数据：未登录或未生成，点刷新自动生成";
+    }
+    bar.classList.toggle("stale", stale);
+    var btn = document.querySelector("#personalRefresh");
+    if (btn && !btn.dataset.bound) {
+      btn.dataset.bound = "1";
+      btn.addEventListener("click", function () {
+        var before = window.__personalGen || "";
+        fetch("/api/personal/refresh", { method: "POST" })
+          .then(function (r) { return r.json(); })
+          .then(function (d) {
+            notify(d && d.started === false ? "已在生成中，请稍候" : "正在生成个人雷达（约 1-3 分钟），完成后自动刷新…");
+            // 轮询生成完成：generated_at 变化或数据出现 → 刷新
+            var tries = 0;
+            var iv = setInterval(function () {
+              tries++;
+              fetch("/api/personal/scores", { cache: "no-store" })
+                .then(function (r) { return r.json(); })
+                .then(function (j) {
+                  var g = (j && j.generated_at) || "";
+                  if (g && g !== before) {
+                    clearInterval(iv);
+                    location.reload();
+                  }
+                }).catch(function () {});
+              if (tries > 24) clearInterval(iv);  // 最多等 6 分钟
+            }, 15000);
+          })
+          .catch(function () { notify("刷新失败：请确认已运行 python src/main.py --serve"); });
+      });
+    }
   }
 
   // 个人模式 UI：hero 文案 / 顶部导航标识（其余界面与公版完全一致）

@@ -20,6 +20,8 @@ import json
 import logging
 import re
 import secrets
+import subprocess
+import sys
 import threading
 import time
 from datetime import datetime, timezone
@@ -75,6 +77,76 @@ def _oauth_configured() -> bool:
 
 def _iso_now() -> str:
     return datetime.now(timezone.utc).isoformat(timespec="seconds")
+
+
+# ===== 个人版自动生成（后台调度） =====
+# 目标：用户只需开着 --serve，数据每天自动更新（启动补跑 + 每日 06:00 定时），
+# 也可通过 POST /api/personal/refresh 手动触发。生成在子进程异步执行，不阻塞服务。
+_PERSONAL_DIR = Path(__file__).resolve().parent.parent.parent / "data" / "personal"
+_personal_proc: subprocess.Popen | None = None
+_personal_lock = threading.Lock()
+
+
+def _personal_scores_gen_date() -> str:
+    """个人雷达数据最后生成日期（YYYY-MM-DD），无数据返回空串。"""
+    f = _PERSONAL_DIR / "scores.json"
+    if not f.is_file():
+        return ""
+    try:
+        data = json.loads(f.read_text(encoding="utf-8"))
+        return str(data.get("generated_at") or "")[:10]
+    except (json.JSONDecodeError, OSError):
+        return ""
+
+
+def _spawn_personal() -> None:
+    """子进程异步跑个人管道（不阻塞服务）；日志写 data/profile/personal_run.log。"""
+    global _personal_proc
+    with _personal_lock:
+        if _personal_proc and _personal_proc.poll() is None:
+            return  # 已在跑，防并发
+        from config import PROFILE_DIR
+
+        logf = open(PROFILE_DIR / "personal_run.log", "a", encoding="utf-8")
+        root = Path(__file__).resolve().parent.parent.parent
+        _personal_proc = subprocess.Popen(
+            [sys.executable, "src/main.py", "--personal"],
+            cwd=root,
+            stdout=logf,
+            stderr=subprocess.STDOUT,
+        )
+
+
+def _maybe_run_personal(force: bool = False) -> bool:
+    """触发个人管道（条件：已登录 + [force 或 今天未生成]）。返回是否触发。"""
+    from config import PROFILE_DIR
+
+    if not (PROFILE_DIR / "gh_token.json").is_file():
+        return False  # 未登录不触发
+    if not force and _personal_scores_gen_date() == datetime.now(timezone.utc).strftime("%Y-%m-%d"):
+        return False  # 今天已生成
+    _spawn_personal()
+    return True
+
+
+def _personal_scheduler() -> None:
+    """后台线程：每小时检查，当日 06:00 后若今天还没生成 → 自动跑个人管道。"""
+    while True:
+        try:
+            hour = datetime.now().hour
+            if hour >= 6:
+                _maybe_run_personal(force=False)
+        except Exception:  # noqa: BLE001
+            pass
+        time.sleep(3600)
+
+
+def _start_personal_scheduler() -> None:
+    threading.Thread(target=_personal_scheduler, daemon=True).start()
+    try:
+        _maybe_run_personal(force=False)  # 启动即检查补跑（子进程异步，不阻塞）
+    except Exception:  # noqa: BLE001
+        pass
 
 
 class StarRadarHandler(BaseHTTPRequestHandler):
@@ -164,6 +236,10 @@ class StarRadarHandler(BaseHTTPRequestHandler):
             return
         if path == "/api/llm_key":
             self._save_llm_key()
+            return
+        if path == "/api/personal/refresh":
+            started = _maybe_run_personal(force=True)
+            self._json(200, {"ok": True, "started": started})
             return
         if path != "/api/events":
             self._bad("not found")
@@ -701,6 +777,7 @@ def _tls_self_check() -> None:
 def serve(*, port: int = 8970, host: str = "127.0.0.1") -> None:
     logging.basicConfig(level=logging.INFO, format="%(asctime)s %(message)s")
     _tls_self_check()
+    _start_personal_scheduler()  # 个人版自动生成（启动补跑 + 每日 06:00）
     httpd = _bind_server(host, port)
     print(f"StarRadar 服务已启动 → http://{host}:{port}/")
     print(f"  静态站点：{STATIC_DIR}")
