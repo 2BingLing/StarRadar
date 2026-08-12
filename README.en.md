@@ -12,7 +12,7 @@
   <img src="https://img.shields.io/badge/Frontend-Vanilla%20JS-1677ff" alt="Frontend">
   <img src="https://img.shields.io/badge/Automation-Daily%2006_00-28a86b" alt="Automation">
   <img src="https://img.shields.io/badge/AI-Chinese%20explanations-f5a623" alt="AI">
-  <img src="https://img.shields.io/badge/Tests-143%20passed-28a86b" alt="Tests">
+  <img src="https://img.shields.io/badge/Tests-150%20passed-28a86b" alt="Tests">
 </p>
 
 ---
@@ -42,9 +42,40 @@ By the time a project hits GitHub Trending, the hype has already been captured. 
 | Cold start | No questionnaire, use immediately | Mandatory questionnaire (40 tags → cold-start profile) |
 | AI interpretation | Rule-based (momentum / signal / stage) | LLM edition: bring your own Key — interpretations, reasons, weekly report all generated from your profile |
 | GitHub sign-in | A tool (star / fork / clone) | Required (fetches "my starred" as seed) |
+| Data updates | GitHub Actions: daily 06:00 / weekly Monday 08:00 auto-deploy | Local server **auto-generates daily** + "Refresh data" button for on-demand refresh |
 | Data | Anonymous stats, no personal data uploaded | Profile + behavior memory + snapshots (local only) |
 
 > In one line: the public edition answers "**which projects are taking off this week**", the personal edition answers "**which projects fit me**". The two editions run completely different ranking & interpretation mechanisms.
+
+**Why two separate mechanisms**:
+
+- **The public edition is about credibility** — the board must be identical for everyone so it can be discussed, quoted and shared. Any personalization would dilute it. Hence: no questionnaire, no personalized ranking; sign-in is only a star/fork tool.
+- **The personal edition is about knowing you** — the board is only meaningful because it is built on your profile: questionnaire tags + my starred repos + behavior memory (EMA forgetting curve) → profile-driven search → LLM interpretation from your profile. A thousand people, a thousand boards — that is the feature, not a flaw.
+
+---
+
+## Personal edition quick start (5 steps, ~3 minutes)
+
+```
+① Run python src/main.py --serve → open http://127.0.0.1:8970/?personal=1
+② Click "Sign in with GitHub" → enter the 8-digit code once (zero config, token stays local)
+③ Complete the cold-start questionnaire (guided wizard: 40 tags → star range → AI personalization optional)
+④ Data generates automatically: server runs the pipeline daily at 06:00; click "⇄ Refresh data" anytime for on-demand refresh (progress dialog)
+⑤ Done ✓ — your personal radar is live and updates daily
+```
+
+**Questionnaire, two forms**:
+
+- **First-time wizard** (auto-pops on first visit): guided 4-step flow — left rail (domains → size → AI → done) + right content; 40 hot 2026 tags (multi-select, max 8) + flexible star range (any / 50+ / 100+ / 500+ / 1000+ × any / 1000 / 5000 / 10000 below)
+- **Edit panel** (via "My Radar"): compact editor — remove/add selected tags (＋ add domains popup), star range, LLM Key all on one screen; **changes take effect on the next generation**
+
+**AI personalization (optional, STEP 3 or edit panel)**: bring your own LLM Key (OpenAI / DeepSeek / Zhipu / Qwen one-click presets; OpenAI-compatible endpoints only) → auto-tested before saving → explanations / recommendation reasons / weekly report all generated from your profile. No key = rule mode.
+
+**Data guarantees**:
+
+- Questionnaire is stored **twice** — browser localStorage + local backend memory.db; if browser storage is lost (new browser / cleared data) it auto-restores from the backend, no re-filling
+- The top bar shows two **independent timestamps** — "radar updated X ago · weekly updated Y ago"; a stale banner appears after 2 days
+- Personal data lives only in local `data/` (gitignored, never in the repo or on Pages)
 
 ---
 
@@ -66,8 +97,8 @@ By the time a project hits GitHub Trending, the hype has already been captured. 
 | **Weekly trend report** | TrendScore v2 momentum ranking: growth 40% + novelty 20% + accel 15% + excess 10% + topic 10% + health 5%; momentum ticket gate keeps giants off the board; four sections: new stars / hot TOP / domain trends / my follows, with cross-week tracking and status badges |
 | **Personalized picks** | Personal edition only: questionnaire → cold-start profile → profile-driven search + behavior EMA (α=0.3) incremental updates + forgetting curve, daily personalized recommendations (better the more you use it) |
 | **AI Chinese explanations** | Each listed project gets a "why it deserves attention" note, incrementally cached (regenerated only when stars change >20%), gracefully falling back to rule text; in the personal edition you can bring your own LLM Key so explanations / reasons / weekly report are all generated from your profile |
-| **GitHub native integration** | One-click login (PAT / OAuth device flow / redirect login) → star, fork, copy clone command and take notes right on the page |
-| **Fully automated pipeline** | Daily 06:00 UTC: collect → score → explain → snapshot → deploy Pages; weekly report every Monday 08:00 |
+| **GitHub native integration** | One-click login (OAuth device flow, zero config; upgradable to redirect login) → star, fork, copy clone command and take notes right on the page |
+| **Fully automated pipeline** | Public: daily 06:00 collect → score → explain → snapshot → deploy Pages, weekly report Monday 08:00; Personal: local server **auto-generates daily at 06:00** + startup catch-up + one-click refresh |
 
 ---
 
@@ -91,6 +122,8 @@ Data flow: browser (localStorage) → local `--serve` persistence (SQLite) → d
 | Backend long-term layer | Personalized picks, cross-device memory, daily rebuild | Yes (questionnaire / behavior must reach memory.db) |
 
 **How the long-term layer becomes active**: run `python src/main.py --serve` locally and open the page — it auto-syncs everything after ~8 seconds (the footer "Sync data" button also works manually). CI then rebuilds your picks daily with the freshest profile. If you only browse GitHub Pages and never sync, the long-term layer stays at the last synced profile (the browser real-time layer is unaffected).
+
+**Personal edition full loop**: questionnaire (wizard / edit panel) → saved to localStorage + reported to memory.db (auto-restored if browser storage is lost) → the local server runs the pipeline daily at 06:00 (profile-driven search → 5D scoring → LLM personalized interpretation) → overwrites your personal radar data → visible on refresh.
 
 ---
 
@@ -126,7 +159,8 @@ cp .env.example .env        # GITHUB_TOKEN required; LLM_* optional (any OpenAI-
 python src/main.py --serve  # local observatory → http://127.0.0.1:8970/
 python src/main.py          # daily pipeline: collect → score → profile → explain → JSON
 python src/main.py --weekly # build / refresh the weekly trend report
-pytest                      # 143 passed
+python src/main.py --personal  # personal pipeline (usually not needed manually — server auto-generates daily + refresh button)
+pytest                      # 150 passed
 ```
 
 ---
