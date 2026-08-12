@@ -193,23 +193,27 @@
       });
     });
   }
-  // 测试连通 → 通过才保存（含同步后端）；返回 Promise，失败抛中文原因
-  function saveWithValues(c) {
+  // 测试连通（不保存）：成功 resolve true；失败 reject 中文原因
+  function testValues(c) {
     var cfgBackup = cfg;
     cfg = c || {};
     if (!cfg.key) { cfg = cfgBackup; return Promise.reject(new Error("请先填入 API Key")); }
     return chat([{ role: "user", content: "ping" }], { max_tokens: 8, feature: "test" })
-      .then(function () {
-        saveConfig(c);
-        refreshBtn();
-        return true;
-      })
+      .then(function () { cfg = cfgBackup; return true; })
       .catch(function (err) {
-        if (err.message === "auth-failed") throw new Error("Key 无效或权限不足");
+        cfg = cfgBackup;
+        if (err.message === "auth-failed") throw new Error("鉴权失败：Key 无效或权限不足");
         if (err.message === "rate-limit") throw new Error("今日测试调用已达上限");
         throw new Error("连接失败：" + (err.message || "请检查 Base URL / 网络"));
-      })
-      .then(function (v) { cfg = cfgBackup; return v; }, function (e) { cfg = cfgBackup; throw e; });
+      });
+  }
+  // 测试连通 → 通过才保存（含同步后端）；返回 Promise，失败抛中文原因
+  function saveWithValues(c) {
+    return testValues(c).then(function () {
+      saveConfig(c);
+      refreshBtn();
+      return true;
+    });
   }
   // 保存前先测试连通：通过才保存（含同步后端）；失败停留并给出原因
   function saveWithTest() {
@@ -293,6 +297,7 @@
     saveConfig: saveConfig,
     clearConfig: clearConfig,
     saveWithValues: saveWithValues,
+    testValues: testValues,
     renderSurveyPresets: renderSurveyPresets,
     renderEditPresets: renderEditPresets,
     chat: chat,

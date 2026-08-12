@@ -2162,6 +2162,37 @@
       if (window.LLM && window.LLM.renderEditPresets) window.LLM.renderEditPresets();
     } catch (e) {}
   }
+  // LLM「测试连接」按钮绑定（问卷 step3 + 修改面板）
+  function bindLlmTest(btnId, statusId, baseSel, keySel, modelSel) {
+    var btn = document.querySelector(btnId);
+    if (!btn || !window.LLM || !window.LLM.testValues) return;
+    btn.addEventListener("click", function () {
+      var baseEl = document.querySelector(baseSel);
+      var keyEl = document.querySelector(keySel);
+      var modelEl = document.querySelector(modelSel);
+      var st = document.querySelector(statusId);
+      var cfg = {
+        base_url: (baseEl && baseEl.value.trim()) || "https://api.openai.com/v1",
+        key: keyEl ? keyEl.value.trim() : "",
+        model: (modelEl && modelEl.value.trim()) || "gpt-5-mini",
+      };
+      if (!cfg.key) {
+        if (st) { st.textContent = "请先填入 API Key"; st.style.color = "#ff4d4f"; }
+        return;
+      }
+      if (st) { st.textContent = "测试中…"; st.style.color = "#1677ff"; }
+      window.LLM.testValues(cfg).then(function () {
+        if (st) { st.textContent = "✓ 连接成功"; st.style.color = "#28a86b"; }
+      }).catch(function (err) {
+        if (st) { st.textContent = "✗ " + ((err && err.message) || "连接失败"); st.style.color = "#ff4d4f"; }
+      });
+    });
+  }
+  // llm.js 在 app.js 之后加载 → load 事件（全部脚本就绪）后再绑定测试按钮
+  window.addEventListener("load", function () {
+    bindLlmTest("#qLlmTest", "#qLlmStatus", "#qLLMBase", "#qLLMKey", "#qLLMModel");
+    bindLlmTest("#eLlmTest", "#eLlmStatus", "#eLLMBase", "#eLLMKey", "#eLLMModel");
+  });
 
   function openSurvey(force) {
     var editEl = document.querySelector("#surveyEdit");

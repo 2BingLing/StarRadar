@@ -216,6 +216,10 @@
               <div class="field"><label class="field-label">模型</label>
                 <input id="qLLMModel" type="text" placeholder="gpt-5-mini" autocomplete="off"></div>
             </div>
+            <div class="llm-test-row">
+              <button class="llm-test" id="qLlmTest" type="button">测试连接</button>
+              <span class="llm-status" id="qLlmStatus"></span>
+            </div>
             <p class="form-note">仅支持 <b>OpenAI 兼容接口</b>（Anthropic 原生 API 不兼容）；保存时自动测试连通，失败不生效。</p>
           </div>
         </div>
@@ -295,6 +299,10 @@
         </div>
         <div class="field"><label class="field-label">API Key</label>
           <input id="eLLMKey" type="password" placeholder="sk-…（留空则清除）" autocomplete="off"></div>
+        <div class="llm-test-row">
+          <button class="llm-test" id="eLlmTest" type="button">测试连接</button>
+          <span class="llm-status" id="eLlmStatus"></span>
+        </div>
       </div>
       <div class="edit-foot">
         <button class="survey-skip" id="editCancel">取消</button>
