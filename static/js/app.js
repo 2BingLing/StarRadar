@@ -414,6 +414,7 @@
         .then(function (d) {
           if (key === "trends") {
             data[key] = (d && d.weeks) ? d : { weeks: [] };
+            if (IS_PERSONAL) window.__trendsGen = (d && d.generated_at) || "";
           } else if (IS_PERSONAL) {
             data[key] = (d && Array.isArray(d.items)) ? d.items : [];
             if (key === "potential") window.__personalGen = (d && d.generated_at) || "";
@@ -1267,27 +1268,32 @@
     bar.hidden = false;
     var timeEl = document.querySelector("#personalTime");
     var gen = window.__personalGen || "";
+    var tGen = window.__trendsGen || "";
     var stale = false;
     if (gen) {
       var ageMs = Date.now() - new Date(gen).getTime();
       stale = ageMs > 48 * 3600 * 1000;  // 超过 2 天视为过期
     }
     if (timeEl) {
-      timeEl.textContent = gen
-        ? "数据更新于 " + timeAgo(gen) + (stale ? " · 已过期，建议刷新" : "")
-        : "暂无个人数据：未登录或未生成，点刷新自动生成";
+      // 雷达与周报时间独立显示（同一管道同时生成时可能相同，但各自取各自文件的 generated_at）
+      var txt = gen ? "雷达更新于 " + timeAgo(gen) : "暂无个人数据：未登录或未生成，点刷新自动生成";
+      if (tGen) txt += " · 周报更新于 " + timeAgo(tGen);
+      if (gen && stale) txt += " · 已过期，建议刷新";
+      timeEl.textContent = txt;
     }
     bar.classList.toggle("stale", stale);
     var btn = document.querySelector("#personalRefresh");
     if (btn && !btn.dataset.bound) {
       btn.dataset.bound = "1";
       btn.addEventListener("click", function () {
+        if (btn.disabled) return;  // 防重复点击
+        btn.disabled = true;
+        var timer = openRefreshPanel();
         var before = window.__personalGen || "";
         fetch("/api/personal/refresh", { method: "POST" })
           .then(function (r) { return r.json(); })
-          .then(function (d) {
-            notify(d && d.started === false ? "已在生成中，请稍候" : "正在生成个人雷达（约 1-3 分钟），完成后自动刷新…");
-            // 轮询生成完成：generated_at 变化或数据出现 → 刷新
+          .then(function () {
+            // 轮询生成完成：generated_at 变化或数据出现 → 自动刷新
             var tries = 0;
             var iv = setInterval(function () {
               tries++;
@@ -1297,15 +1303,58 @@
                   var g = (j && j.generated_at) || "";
                   if (g && g !== before) {
                     clearInterval(iv);
-                    location.reload();
+                    closeRefreshPanel(timer, "✓ 刷新完成，即将更新页面…");
+                    setTimeout(function () { location.reload(); }, 900);
                   }
                 }).catch(function () {});
-              if (tries > 24) clearInterval(iv);  // 最多等 6 分钟
+              if (tries > 24) {  // 最多等 6 分钟
+                clearInterval(iv);
+                closeRefreshPanel(timer, "刷新超时：请确认本地服务与网络正常，可稍后重试", true);
+                btn.disabled = false;
+              }
             }, 15000);
           })
-          .catch(function () { notify("刷新失败：请确认已运行 python src/main.py --serve"); });
+          .catch(function () {
+            closeRefreshPanel(timer, "刷新失败：请确认已运行 python src/main.py --serve", true);
+            btn.disabled = false;
+          });
       });
     }
+  }
+  // 刷新进度弹窗：打开（返回计时器）/ 关闭
+  function openRefreshPanel() {
+    var p = document.querySelector("#refreshPanel");
+    if (!p) return null;
+    p.classList.add("open");
+    p.setAttribute("aria-hidden", "false");
+    var st = document.querySelector("#refreshStatus");
+    if (st) { st.style.color = ""; st.innerHTML = "正在生成中…（已用时 <b id='refreshElapsed'>0</b> 秒）"; }
+    var t0 = Date.now();
+    var timer = setInterval(function () {
+      var el = document.querySelector("#refreshElapsed");
+      if (el) el.textContent = Math.round((Date.now() - t0) / 1000);
+    }, 1000);
+    return timer;
+  }
+  function closeRefreshPanel(timer, statusText, isError) {
+    if (timer) clearInterval(timer);
+    var p = document.querySelector("#refreshPanel");
+    if (!p) return;
+    var st = document.querySelector("#refreshStatus");
+    if (statusText && st) { st.textContent = statusText; st.style.color = isError ? "#ff4d4f" : "#28a86b"; }
+    // 延迟关闭（让用户看到成功/失败状态）
+    setTimeout(function () {
+      p.classList.remove("open");
+      p.setAttribute("aria-hidden", "true");
+    }, isError ? 2500 : 900);
+  }
+  var refreshCloseBtn = document.querySelector("#refreshClose");
+  if (refreshCloseBtn) {
+    refreshCloseBtn.addEventListener("click", function () {
+      closeRefreshPanel(null, null, false);
+      var btn = document.querySelector("#personalRefresh");
+      if (btn) btn.disabled = false;
+    });
   }
 
   // 个人模式 UI：hero 文案 / 顶部导航标识（其余界面与公版完全一致）
@@ -1534,7 +1583,7 @@
     cardsEl.classList.add("trends");
     if (!rep) {
       cardsEl.innerHTML =
-        '<div class="load-error"><p>暂无周报数据（周一 08:00 自动生成，或先跑 <code>python src/main.py --weekly</code>）</p></div>';
+        '<div class="load-error"><p>暂无周报数据（每周一 08:00 自动生成，请稍后再来看）</p></div>';
       return;
     }
     var ws = trendWeeks();
