@@ -661,22 +661,37 @@ def _tls_self_check() -> None:
 
     真实案例：conda 环境 Python 3.10 + OpenSSL 3.6 组合 TLS 全坏（ASN1:
     NOT_ENOUGH_DATA），所有 HTTPS 请求失败——server 转发 GitHub 全部 502，
-    设备流/跳转登录/采集全部静默不可用，且极难排查。
+    新登录（设备流/跳转）静默不可用，且极难排查。
+
+    注意：浏览器能访问 GitHub 不代表 Python 环境正常（两者 TLS 实现独立）；
+    已登录浏览/加星/Fork 是浏览器直连 api.github.com，不走本服务，不受影响。
+    连测 2 次均失败才警告（防偶发网络抖动误报）。
     """
     from urllib.request import Request, urlopen
 
-    try:
-        with urlopen(
-            Request("https://api.github.com", headers={"User-Agent": "StarRadar"}),
-            timeout=5,
-        ) as resp:
-            resp.read(64)
-            return
-    except Exception as exc:  # noqa: BLE001
-        print("  ⚠️ HTTPS 自检失败——当前 Python 环境无法访问 HTTPS：")
-        print(f"    {type(exc).__name__}: {exc}")
-        print("    登录（设备流/跳转）与 GitHub API 转发将不可用。")
-        print("    建议：conda deactivate 后用系统 Python 运行，或升级环境：conda install python=3.12")
+    def probe() -> bool:
+        try:
+            with urlopen(
+                Request("https://api.github.com", headers={"User-Agent": "StarRadar"}),
+                timeout=5,
+            ) as resp:
+                resp.read(64)
+                return True
+        except Exception:  # noqa: BLE001
+            return False
+
+    if probe():
+        return
+    if probe():  # 第二次确认（首次可能偶发抖动）
+        return
+    print("  ⚠️ HTTPS 自检失败——当前 Python 环境无法访问 HTTPS（已确认两次）：")
+    print("    SSLError [ASN1: NOT_ENOUGH_DATA] 一类错误 = Python 与 OpenSSL 版本不兼容")
+    print("    影响：仅「新登录」（设备流/跳转的授权码获取与 token 交换）会失败；")
+    print("          已登录的浏览 / 加星 / Fork 走浏览器直连，不受影响。")
+    print("    自验：python -c \"import urllib.request; print(urllib.request.urlopen")
+    print("          ('https://api.github.com').status)\"  → 报错即环境问题")
+    print("    解决：conda deactivate 后用系统 Python 运行，或升级本环境：")
+    print("          conda install python=3.12")
 
 
 def serve(*, port: int = 8970, host: str = "127.0.0.1") -> None:
