@@ -7,7 +7,7 @@
 </p>
 
 <p align="center">
-  <img src="https://img.shields.io/badge/在线体验-GitHub%20Pages-1677ff" alt="在线体验">
+  <a href="https://2bingling.github.io/StarRadar/"><img src="https://img.shields.io/badge/在线体验-GitHub%20Pages-1677ff" alt="在线体验"></a>
   <img src="https://img.shields.io/badge/Python-3.10%2B-1677ff" alt="Python">
   <img src="https://img.shields.io/badge/前端-原生JS零框架-1677ff" alt="前端">
   <img src="https://img.shields.io/badge/自动化-每日06_00-28a86b" alt="自动化">
@@ -42,7 +42,7 @@ GitHub Trending 上榜时，热度红利早已被瓜分。StarRadar 反着来—
 | | **公版**（给大家看） | **个人版**（给自己看） |
 | --- | --- | --- |
 | 定位 | 客观潜力发掘：同一份榜单，打开即用 | 专属雷达：只为你搜索与解读 |
-| 入口 | GitHub Pages / 本地 `--serve` | 右上角「个人版 ↗」（`?personal=1`，本地运行） |
+| 入口 | **GitHub Pages 在线版**（无需安装）或本地 `--serve` | 右上角「个人版 ↗」（`?personal=1`，**需本地运行 `--serve`**） |
 | 潜力雷达 | 五维潜力分排序（客观动态基准，**千人同榜**） | 画像驱动搜索 × 五维评分 × 个性化解读（**千人千面**） |
 | 每周趋势 | TrendScore v2 增长动能周榜（客观） | 同一份客观榜单 + 按你的画像解读「本周主线」 |
 | 冷启动 | 无问卷，打开即用 | **问卷强制引导**（40 标签 → 冷启动画像） |
@@ -73,6 +73,11 @@ pytest                      # 150 passed
 
 ---
 ## 个人版上手
+
+> ⚠️ **个人版需要本地后端**：专属雷达数据（画像搜索 / LLM AI 解读 / 问卷落库 / 每日自动生成）全部依赖本地 `--serve`。GitHub Pages 在线版仅提供**公版**功能（数据由 CI 自动生成，含管道预生成的 AI 解读）；在线版打开个人版只会看到空态引导——请本地运行后使用。
+> 在线体验：https://2bingling.github.io/StarRadar/（公版）
+
+
 
 ```
 ① 运行 python src/main.py --serve → 打开 http://127.0.0.1:8970/?personal=1
