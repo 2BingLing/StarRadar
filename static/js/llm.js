@@ -24,7 +24,6 @@
     { name: "DeepSeek", base_url: "https://api.deepseek.com/v1", model: "deepseek-v4-flash" },
     { name: "智谱 GLM", base_url: "https://open.bigmodel.cn/api/paas/v4", model: "glm-5.2" },
     { name: "通义千问", base_url: "https://dashscope.aliyuncs.com/compatible-mode/v1", model: "qwen3-flash" },
-    { name: "Moonshot", base_url: "https://api.moonshot.cn/v1", model: "kimi-k2-turbo" },
   ];
   // 每功能每日限额（用户自己的 key，不能乱烧）
   var LIMITS = { profile: 1, report: 1, survey: 1, reason: 20, ask: 30 };
