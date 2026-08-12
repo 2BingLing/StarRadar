@@ -899,6 +899,7 @@ h1 em { color: var(--blue); font-style: normal; }
 .rail-item.star-node .node .num, .rail-item.star-node .node > svg { display: none; }
 .rail-item.star-node .node .star-node { display: block; }
 .rail-item.star-node.future .node .star-node { filter: grayscale(1); opacity: 0.55; }
+.rail-item.star-node .node .star-node svg { display: block; }  /* 修复：.node svg{display:none} 误伤星形 */
 .rail-item.future { cursor: default; }
 .rail-item.future:hover { background: transparent; }
 .rail-item.future .rail-label { color: var(--faint); }
@@ -1010,6 +1011,12 @@ h1 em { color: var(--blue); font-style: normal; }
   animation: scan 4.8s linear infinite;
 }
 @keyframes scan { to { transform: rotate(360deg); } }
+.step-pane.on[data-step="4"] .radar-hero { animation: doneIn 0.55s var(--ease) both; }
+.step-pane.on[data-step="4"] .done-stage h2 { animation: paneIn 0.4s 0.15s var(--ease) both; }
+.step-pane.on[data-step="4"] .done-stage .done-sub { animation: paneIn 0.4s 0.25s var(--ease) both; }
+.step-pane.on[data-step="4"] .sum-card { animation: paneIn 0.45s 0.35s var(--ease) both; }
+.step-pane.on[data-step="4"] .done-status { animation: paneIn 0.4s 0.55s var(--ease) both; }
+@keyframes doneIn { from { opacity: 0; transform: scale(0.82); } to { opacity: 1; transform: none; } }
 .done-stage h2 { font-size: 17px; margin: 0 0 5px; }
 .done-stage .done-sub { font-size: 13px; color: var(--muted); margin: 0 0 18px; }
 .done-status { display: flex; align-items: center; gap: 9px; font-size: 13px; color: var(--muted); }
