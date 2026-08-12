@@ -25,7 +25,9 @@
     { name: "智谱 GLM", base_url: "https://open.bigmodel.cn/api/paas/v4", model: "glm-5.2" },
     { name: "通义千问", base_url: "https://dashscope.aliyuncs.com/compatible-mode/v1", model: "qwen3-flash" },
   ];
-  // 每功能每日限额（用户自己的 key，不能乱烧）
+  // 每功能每日限额（保护用户自己的 key 不被误调用乱烧）：
+  // profile/report/survey 每日 1 次（重操作），reason/ask 适度；
+  // test（连接测试）是轻量 ping，不限额——配置/调试时不该被卡。
   var LIMITS = { profile: 1, report: 1, survey: 1, reason: 20, ask: 30 };
 
   var cfg = null;
@@ -84,6 +86,7 @@
     return u;
   }
   function usageLeft(feature) {
+    if (feature === "test") return 999999;  // 连接测试不限额（轻量 ping，用户自己的 key）
     var limit = LIMITS[feature] != null ? LIMITS[feature] : 20;
     return limit - (usageAll()[feature] || 0);
   }
