@@ -270,12 +270,38 @@ def run_personal_pipeline() -> Path:
     if not pool:
         raise PersonalError("本轮没有新候选，明天再来（或先加星更多项目）")
 
-    # ③ 评分
+    # ③ 评分（star 历史并发拉取：3 并发 + 单项目 15s 超时 + 连续 8 个无历史提前结束）
     print("[3/6] 五维评分 · star 历史 + 动态基准")
+    import itertools
+    from concurrent.futures import ThreadPoolExecutor
+
+    def _fetch_one(repo):
+        history = fetch_star_history(
+            repo.owner, repo.name, days=30, client=client,
+            current_stars=repo.stars, timeout=15,
+        )
+        return repo, history
+
     repos_with_history = []
-    for repo in pool:
-        history = fetch_star_history(repo.owner, repo.name, days=30, client=client, current_stars=repo.stars)
-        repos_with_history.append((repo, history))
+    consecutive_fail = 0
+    it = iter(pool)
+    with ThreadPoolExecutor(max_workers=3) as ex:
+        futs = [ex.submit(_fetch_one, r) for r in list(itertools.islice(it, 3))]
+        while futs:
+            fut = futs.pop(0)
+            repo, history = fut.result()
+            repos_with_history.append((repo, history))
+            if history:
+                consecutive_fail = 0
+            else:
+                consecutive_fail += 1
+                if consecutive_fail >= 8:
+                    print(f"  → 连续 {consecutive_fail} 个项目无历史，提前结束拉取")
+                    break
+            try:
+                futs.append(ex.submit(_fetch_one, next(it)))
+            except StopIteration:
+                pass
     scored = compute_potential_scores(repos_with_history)
     scored.sort(key=lambda x: -x[1].score)
 

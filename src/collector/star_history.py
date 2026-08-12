@@ -3,7 +3,8 @@
 职责：获取仓库的 star 增长时间序列，用于潜力评分的速度/加速度计算。
 
 数据源优先级：
-1. GitHub REST stargazers 端点（需 token，最可靠，按 starred_at 时间戳）
+1. GitHub events 端点（需 token；stargazers 自 2026-06-30 起仅管理员/协作者可访问，
+   对第三方仓库返回 404/403/空——已停用该路径）
 2. star-history.com 公开 API（免 token，按日粒度，常返回 404）
 3. 本地快照（每周抓 current_stars 存档，构建 7d/14d/30d 快照）
 
@@ -48,8 +49,8 @@ def fetch_star_history(
     repo: str,
     days: int = 30,
     cache_dir: Path | None = None,
-    cache_ttl_days: int = 7,
-    timeout: int = 30,
+    cache_ttl_days: float = 0.5,   # 12 小时：当日重复运行命中缓存，次日自动重拉
+    timeout: int = 15,
     client: "GitHubAPIClient | None" = None,
     current_stars: int | None = None,
 ) -> list[StarHistoryPoint]:
@@ -85,19 +86,8 @@ def fetch_star_history(
         ]
         return _filter_last_days(all_points, days)
 
-    # 优先使用 GitHub stargazers 端点（最可靠）
+    # GitHub events 端点（stargazers 已受限停用，2026-06-30 GitHub changelog）
     if client is not None:
-        points = _fetch_from_github_stargazers(
-            client, owner, repo, current_stars, timeout, days=days,
-        )
-        if points:
-            logger.debug("stargazers 端点成功: %s/%s (%d 点)", owner, repo, len(points))
-            _write_cache(
-                cache_file,
-                [{"date": p.date, "star_count": p.star_count} for p in points],
-            )
-            return _filter_last_days(points, days)
-        # stargazers 失败（403/404 等），降级到 events 端点
         points = _fetch_from_github_events(
             client, owner, repo, current_stars, timeout, days=days,
         )
@@ -108,7 +98,7 @@ def fetch_star_history(
                 [{"date": p.date, "star_count": p.star_count} for p in points],
             )
             return _filter_last_days(points, days)
-        logger.debug("GitHub 端点均未返回数据，降级到 star-history.com")
+        logger.debug("GitHub events 未返回数据，降级到 star-history.com")
 
     # fallback：star-history.com
     points = _fetch_from_star_history_com(owner, repo, timeout)
