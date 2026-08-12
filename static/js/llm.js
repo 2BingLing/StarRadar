@@ -17,6 +17,14 @@
     base_url: "https://api.openai.com/v1",
     model: "gpt-4o-mini",
   };
+  // 常见 OpenAI 兼容服务商快捷配置（点击自动填入地址与模型）
+  var PRESETS = [
+    { name: "OpenAI", base_url: "https://api.openai.com/v1", model: "gpt-4o-mini" },
+    { name: "DeepSeek", base_url: "https://api.deepseek.com/v1", model: "deepseek-chat" },
+    { name: "智谱 GLM", base_url: "https://open.bigmodel.cn/api/paas/v4", model: "glm-4-flash" },
+    { name: "通义千问", base_url: "https://dashscope.aliyuncs.com/compatible-mode/v1", model: "qwen-plus" },
+    { name: "Moonshot", base_url: "https://api.moonshot.cn/v1", model: "moonshot-v1-8k" },
+  ];
   // 每功能每日限额（用户自己的 key，不能乱烧）
   var LIMITS = { profile: 1, report: 1, survey: 1, reason: 20, ask: 30 };
 
@@ -164,6 +172,45 @@
     syncForm();
     return true;
   }
+  // 常见服务商快捷填充：点击填入 base_url + model，Key 留空由用户粘贴
+  function renderPresets() {
+    var box = document.querySelector("#llmPresets");
+    if (!box) return;
+    box.innerHTML = PRESETS.map(function (p) {
+      return '<button class="llm-preset" type="button" data-base="' + p.base_url + '" data-model="' + p.model + '">' +
+        p.name + "</button>";
+    }).join("");
+    Array.prototype.forEach.call(box.querySelectorAll(".llm-preset"), function (b) {
+      b.addEventListener("click", function () {
+        if (baseEl) baseEl.value = b.dataset.base;
+        if (modelEl) modelEl.value = b.dataset.model;
+        setStatus("已填入 " + b.textContent + " 配置，请粘贴你的 API Key", true);
+        if (keyEl) keyEl.focus();
+      });
+    });
+  }
+  // 保存前先测试连通：通过才保存（含同步后端）并关闭面板；失败停留并给出原因
+  function saveWithTest() {
+    var c = readForm();
+    if (!c.key) { setStatus("请先填入 API Key", false); if (keyEl) keyEl.focus(); return; }
+    var cfgBackup = cfg;
+    cfg = c;  // 用表单值测试（未保存）
+    setStatus("正在测试连接…", true);
+    chat([{ role: "user", content: "ping" }], { max_tokens: 8, feature: "test" })
+      .then(function () {
+        cfg = cfgBackup;
+        saveConfig(c);  // 测试通过才落库（自动同步 /api/llm_key）
+        setStatus("连接成功 · 已保存并同步到本地后端", true);
+        refreshBtn();
+        setTimeout(closeLlmPanel, 500);
+      })
+      .catch(function (err) {
+        cfg = cfgBackup;
+        setStatus(err.message === "auth-failed" ? "鉴权失败：Key 无效或权限不足"
+          : (err.message === "rate-limit" ? "今日测试调用已达上限"
+          : "连接失败：" + (err.message || "请检查 Base URL / 网络 / CORS")), false);
+      });
+  }
   function testConnection() {
     var c = readForm();
     if (!c.key) { setStatus("请先填入 API Key", false); return; }
@@ -238,13 +285,8 @@
       if (closeBtn) closeBtn.addEventListener("click", closeLlmPanel);
       llmPanel.addEventListener("click", function (e) { if (e.target === llmPanel) closeLlmPanel(); });
       var saveBtn = document.querySelector("#llmSave");
-      if (saveBtn) saveBtn.addEventListener("click", function () {
-        var ok = saveFromForm();
-        setStatus(ok ? "已保存并同步到本地后端 · 每日管道将使用该 Key"
-          : "未填 Key，已清除（规则模式）", ok);
-        refreshBtn();
-        if (ok) setTimeout(closeLlmPanel, 400);  // 保存成功后自动关闭
-      });
+      if (saveBtn) saveBtn.addEventListener("click", saveWithTest);
+      renderPresets();
       document.addEventListener("keydown", function (e) {
         if (e.key === "Escape" && llmPanel.classList.contains("open")) closeLlmPanel();
       });

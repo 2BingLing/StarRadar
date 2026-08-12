@@ -203,8 +203,10 @@
       <label class="gh-field">模型
         <input id="llmModel" type="text" placeholder="gpt-4o-mini" autocomplete="off">
       </label>
+      <div class="llm-presets" id="llmPresets"></div>
       <p class="llm-status" id="llmStatus"></p>
-      <small class="note-date">Key 仅存本机浏览器，并同步到本地后端（data/profile/llm_config.json，供每日管道调用）；不上传任何第三方。</small>
+      <small class="note-date">仅支持 <b>OpenAI 兼容接口</b>（/chat/completions）——Anthropic 原生 API 不兼容。
+        点击上方服务商自动填入地址与模型，粘贴你自己的 Key 即可；保存前会自动测试连通。</small>
     </div>
     <div class="gh-foot">
       <button class="gh-btn ghost" id="llmClear" hidden>清除</button>

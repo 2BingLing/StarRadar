@@ -1141,6 +1141,13 @@ h1 em { color: var(--blue); font-style: normal; }
 #llmBtn.on { color: var(--blue); background: var(--pale); border-color: #1677ff4d; }
 .llm-status { margin: 2px 0 0; font-size: 12px; min-height: 17px; font-weight: 600; }
 .llm-status:empty { display: none; }
+/* LLM 服务商快捷配置 */
+.llm-presets { display: flex; gap: 6px; flex-wrap: wrap; }
+.llm-preset {
+  padding: 5px 11px; border: 1px solid var(--line); border-radius: 8px;
+  background: #f7f9fd; color: var(--muted); font-size: 12px; cursor: pointer; transition: 0.15s;
+}
+.llm-preset:hover { border-color: #1677ff66; color: var(--blue); background: #f0f6ff; }
 .gh-spacer { flex: 1; }
 
 .note-body { display: flex; flex-direction: column; gap: 8px; }
