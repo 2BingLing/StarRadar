@@ -123,9 +123,11 @@
       return r.json();
     }).then(function (j) {
       markCall(feature);
-      var text = j && j.choices && j.choices[0] && j.choices[0].message && j.choices[0].message.content;
+      var msg = j && j.choices && j.choices[0] && j.choices[0].message;
+      // 推理模型（如 deepseek-v4-flash）可能只回 reasoning_content 或 content 为空
+      var text = (msg && msg.content) || (msg && msg.reasoning_content) || "";
       if (!text) throw new Error("empty");
-      return String(text).trim();
+      return String(text).trim().slice(0, 2000);
     });
   }
 
@@ -198,7 +200,7 @@
     var cfgBackup = cfg;
     cfg = c || {};
     if (!cfg.key) { cfg = cfgBackup; return Promise.reject(new Error("请先填入 API Key")); }
-    return chat([{ role: "user", content: "ping" }], { max_tokens: 8, feature: "test" })
+    return chat([{ role: "user", content: "ping" }], { max_tokens: 128, feature: "test" })
       .then(function () { cfg = cfgBackup; return true; })
       .catch(function (err) {
         cfg = cfgBackup;

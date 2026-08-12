@@ -2289,54 +2289,30 @@
     return items;
   }
   function renderSuggestions() {
-    var box = document.querySelector("#suggestBox");
-    if (!box || box.dataset.done) return;
-    box.dataset.done = "1";
-    var cached = null;
-    try { cached = JSON.parse(localStorage.getItem(SUGGEST_KEY)); } catch (e) {}
-    if (cached && Array.isArray(cached.items) && cached.items.length) {
-      // 清洗历史脏缓存（旧版建议文本混入过未转义的 SVG 源码）
-      var dirty = cached.items.some(function (it) {
-        return it.text && it.text.indexOf("<svg") !== -1;
-      });
-      if (!dirty) {
-        box.innerHTML = suggestionHTML(cached.items);
-        return;
-      }
-      try { localStorage.removeItem(SUGGEST_KEY); } catch (e) {}
-    }
-    var hasLLM = typeof window.LLM !== "undefined" && window.LLM.isConfigured() && window.LLM.canCall("survey");
-    if (!hasLLM) {
-      var items = ruleSuggestions();
-      box.innerHTML = suggestionHTML(items);
-      try { localStorage.setItem(SUGGEST_KEY, JSON.stringify({ items: items })); } catch (e) {}
-      return;
-    }
-    box.innerHTML = '<div class="suggest-loading">AI 正在分析你的兴趣画像…</div>';
-    window.LLM.chat([
-      { role: "system", content: "你是 StarRadar 的个性化雷达顾问。基于用户刚填写的冷启动问卷，给 3 条可执行的个性化建议（兴趣方向、使用技巧、预期收获各 1 条），语气亲切、每条 ≤40 字。输出 JSON。" },
-      { role: "user", content: "我的选择：" + JSON.stringify(loadSurveyDoc()) },
-    ], { feature: "survey", temperature: 0.7, max_tokens: 400 })
-      .then(function (txt) {
-        var j = window.LLM.parseJSON(txt);
-        var arr = Array.isArray(j.items) ? j.items : [];
-        var items = arr.slice(0, 3).map(function (it) {
-          return { title: String(it.title || "").slice(0, 12), text: String(it.text || it.body || "").slice(0, 60) };
-        }).filter(function (it) { return it.text; });
-        if (!items.length) items = ruleSuggestions();
-        box.innerHTML = suggestionHTML(items);
-        try { localStorage.setItem(SUGGEST_KEY, JSON.stringify({ items: items })); } catch (e) {}
-      })
-      .catch(function () {
-        var items = ruleSuggestions();
-        box.innerHTML = suggestionHTML(items);
-        try { localStorage.setItem(SUGGEST_KEY, JSON.stringify({ items: items })); } catch (e) {}
-      });
-  }
-  function suggestionHTML(items) {
-    return '<div class="suggest-list">' + items.map(function (it) {
-      return '<div class="suggest-item"><b>' + escapeHtml(it.title) + "</b><span>" + escapeHtml(it.text) + "</span></div>";
-    }).join("") + '</div><p class="suggest-note">建议只存本机 · 行为越多越准 · 可随时重做问卷刷新</p>';
+    // 完成页总结：同步立即渲染（不再等 LLM「分析」——过程意思意思，结果即见）
+    var card = document.querySelector("#sumCard");
+    if (!card || card.dataset.done) return;
+    card.dataset.done = "1";
+    var doc = loadSurveyDoc();
+    var sel = (doc.step1 && doc.step1.selected) || [];
+    var val = (doc.step2 && doc.step2.value) || {};
+    var rangeTxt = (val.min ? val.min + "+" : "不限") + " ~ " + (val.max ? val.max + " 以下" : "不限");
+    var sumTags = sel.slice(0, 5).map(function (t) {
+      return '<span class="sum-tag">' + escapeHtml(t) + "</span>";
+    }).join("");
+    if (sel.length > 5) sumTags += '<span class="sum-tag more">+' + (sel.length - 5) + "</span>";
+    var aiOn = typeof window.LLM !== "undefined" && window.LLM.isConfigured();
+    card.innerHTML =
+      '<div class="sum-row"><span class="k">扫描领域</span><span class="v"><span class="sum-tags">' +
+        (sumTags || '<span class="sum-tag">未选择（稍后可改）</span>') + "</span></span></div>" +
+      '<div class="sum-row"><span class="k">体量区间</span><span class="v">' + escapeHtml(rangeTxt) + "</span></div>" +
+      '<div class="sum-row"><span class="k">AI 解读</span><span class="v">' +
+        (aiOn ? '<span class="ai-ok">已开启 · 按你的画像生成</span>' : '<span class="ai-off">规则模式 · 在 STEP 3 填 Key 解锁</span>') +
+      "</span></div>";
+    var sub = document.querySelector("#doneSub");
+    if (sub) sub.textContent = "专属雷达已就绪，每日自动为你搜索与解读";
+    var status = document.querySelector("#doneStatus");
+    if (status) { status.textContent = "✓ 已就绪 · 数据将于下次生成时更新"; }
   }
 
   // 领域标签渲染（wizard 步骤 1 + 修改面板添加弹层共用）
