@@ -1,175 +1,499 @@
 [
   {
     "repo": {
-      "owner": "3441293738",
-      "name": "creatorhub",
-      "full_name": "3441293738/creatorhub",
-      "description": "多平台内容监控·采集·搬运 一个 Web 面板管起抖音 / 小红书 / 快手",
-      "stars": 1000,
-      "forks": 182,
-      "open_issues": 10,
-      "created_at": "2026-07-03T08:43:10+00:00",
-      "pushed_at": "2026-08-13T03:06:36+00:00",
-      "updated_at": "2026-08-13T07:11:38+00:00",
-      "topics": [
-        "automation",
-        "content-monitoring",
-        "crawler",
-        "douyin",
-        "fastapi",
-        "kuaishou",
-        "playwright",
-        "python",
-        "rednote",
-        "tiktok",
-        "web-scraping",
-        "xiaohongshu"
-      ],
-      "language": "Python",
-      "license": null,
-      "homepage": "https://3441293738.github.io/creatorhub/",
-      "html_url": "https://github.com/3441293738/creatorhub",
+      "owner": "amiralibg",
+      "name": "unstream",
+      "full_name": "amiralibg/unstream",
+      "description": "paste a Spotify / Deezer / Apple Music / YouTube / SoundCloud track, album or playlist URL — or search every catalog at once — and get tagged mp3 files. No accounts, no API keys, nothing paid.",
+      "stars": 200,
+      "forks": 41,
+      "open_issues": 2,
+      "created_at": "2026-08-08T14:16:05+00:00",
+      "pushed_at": "2026-08-13T14:21:28+00:00",
+      "updated_at": "2026-08-13T21:30:52+00:00",
+      "topics": [],
+      "language": "TypeScript",
+      "license": "NOASSERTION",
+      "homepage": "https://unstream.amiralibg.xyz",
+      "html_url": "https://github.com/amiralibg/unstream",
       "default_branch": "main",
       "archived": false,
       "search_score": 1.0,
-      "stars_7d_ago": 925,
+      "stars_7d_ago": 66,
       "star_series": [
         {
-          "d": "07-15",
-          "s": 925
-        },
-        {
           "d": "07-16",
-          "s": 925
+          "s": 66
         },
         {
           "d": "07-17",
-          "s": 925
+          "s": 66
         },
         {
           "d": "07-18",
-          "s": 925
+          "s": 66
         },
         {
           "d": "07-19",
-          "s": 925
+          "s": 66
         },
         {
           "d": "07-20",
-          "s": 925
+          "s": 66
         },
         {
           "d": "07-21",
-          "s": 925
+          "s": 66
         },
         {
           "d": "07-22",
-          "s": 925
+          "s": 66
         },
         {
           "d": "07-23",
-          "s": 925
+          "s": 66
         },
         {
           "d": "07-24",
-          "s": 925
+          "s": 66
         },
         {
           "d": "07-25",
-          "s": 925
+          "s": 66
         },
         {
           "d": "07-26",
-          "s": 925
+          "s": 66
         },
         {
           "d": "07-27",
-          "s": 925
+          "s": 66
         },
         {
           "d": "07-28",
-          "s": 925
+          "s": 66
         },
         {
           "d": "07-29",
-          "s": 925
+          "s": 66
         },
         {
           "d": "07-30",
-          "s": 925
+          "s": 66
         },
         {
           "d": "07-31",
-          "s": 925
+          "s": 66
         },
         {
           "d": "08-01",
-          "s": 925
+          "s": 66
         },
         {
           "d": "08-02",
-          "s": 925
+          "s": 66
         },
         {
           "d": "08-03",
-          "s": 925
+          "s": 66
         },
         {
           "d": "08-04",
-          "s": 925
+          "s": 66
         },
         {
           "d": "08-05",
-          "s": 925
+          "s": 66
         },
         {
           "d": "08-06",
-          "s": 925
+          "s": 66
         },
         {
           "d": "08-07",
-          "s": 925
+          "s": 66
         },
         {
           "d": "08-08",
-          "s": 925
+          "s": 66
         },
         {
           "d": "08-09",
-          "s": 925
+          "s": 74
         },
         {
           "d": "08-10",
-          "s": 925
+          "s": 170
         },
         {
           "d": "08-11",
-          "s": 925
+          "s": 188
         },
         {
           "d": "08-12",
-          "s": 978
+          "s": 196
         },
         {
           "d": "08-13",
-          "s": 1000
+          "s": 200
+        },
+        {
+          "d": "08-14",
+          "s": 200
         }
       ]
     },
     "score": {
-      "score": 98.28,
+      "score": 100.0,
       "breakdown": {
-        "vel": 80,
+        "vel": 89,
         "acc": 99,
-        "health": 98,
-        "fresh": 89,
-        "signal": 80
+        "health": 99,
+        "fresh": 99,
+        "signal": 70
       },
-      "stage": "mid_early",
-      "stage_multiplier": 1.1,
+      "stage": "early",
+      "stage_multiplier": 1.2,
       "confidence": 1.0,
-      "base_score": 89.34,
-      "explanation": "月增千星且增速加快，18.2% 的 fork 率印证了「多平台内容搬运」"
+      "base_score": 92.58,
+      "explanation": "unstream 用“粘贴链接即得带标签 MP3”的一站式聚合体验，同时覆盖五大平台且零门槛，直接命中用户长期痛点；当前以 19 star/天加速增长、社区健康，早期信号已足够强，值得关注。"
+    }
+  },
+  {
+    "repo": {
+      "owner": "GanyuanRan",
+      "name": "Aegis",
+      "full_name": "GanyuanRan/Aegis",
+      "description": "Make AI coding agents architecture-aware: baseline-first, evidence-verified, drift-checked, and safe across long tasks.",
+      "stars": 997,
+      "forks": 45,
+      "open_issues": 0,
+      "created_at": "2026-04-30T17:40:49+00:00",
+      "pushed_at": "2026-08-13T11:13:13+00:00",
+      "updated_at": "2026-08-14T06:21:53+00:00",
+      "topics": [
+        "agent-skills",
+        "ai-agents",
+        "ai-coding",
+        "architecture-driven-development",
+        "awsome-coding-plugin",
+        "baseline-first",
+        "claude-code",
+        "codex",
+        "coding-agents",
+        "dive",
+        "evidence-driven",
+        "first-principles",
+        "opencode",
+        "software-architecture",
+        "spec-driven-development",
+        "spec-kit"
+      ],
+      "language": "Python",
+      "license": "MIT",
+      "homepage": "https://github.com/GanyuanRan/Aegis",
+      "html_url": "https://github.com/GanyuanRan/Aegis",
+      "default_branch": "main",
+      "archived": false,
+      "search_score": 1.0,
+      "stars_7d_ago": 934,
+      "star_series": [
+        {
+          "d": "07-16",
+          "s": 825
+        },
+        {
+          "d": "07-17",
+          "s": 825
+        },
+        {
+          "d": "07-18",
+          "s": 825
+        },
+        {
+          "d": "07-19",
+          "s": 825
+        },
+        {
+          "d": "07-20",
+          "s": 825
+        },
+        {
+          "d": "07-21",
+          "s": 825
+        },
+        {
+          "d": "07-22",
+          "s": 825
+        },
+        {
+          "d": "07-23",
+          "s": 825
+        },
+        {
+          "d": "07-24",
+          "s": 825
+        },
+        {
+          "d": "07-25",
+          "s": 825
+        },
+        {
+          "d": "07-26",
+          "s": 825
+        },
+        {
+          "d": "07-27",
+          "s": 825
+        },
+        {
+          "d": "07-28",
+          "s": 825
+        },
+        {
+          "d": "07-29",
+          "s": 825
+        },
+        {
+          "d": "07-30",
+          "s": 825
+        },
+        {
+          "d": "07-31",
+          "s": 832
+        },
+        {
+          "d": "08-01",
+          "s": 843
+        },
+        {
+          "d": "08-02",
+          "s": 854
+        },
+        {
+          "d": "08-03",
+          "s": 871
+        },
+        {
+          "d": "08-04",
+          "s": 880
+        },
+        {
+          "d": "08-05",
+          "s": 896
+        },
+        {
+          "d": "08-06",
+          "s": 903
+        },
+        {
+          "d": "08-07",
+          "s": 916
+        },
+        {
+          "d": "08-08",
+          "s": 934
+        },
+        {
+          "d": "08-09",
+          "s": 951
+        },
+        {
+          "d": "08-10",
+          "s": 969
+        },
+        {
+          "d": "08-11",
+          "s": 985
+        },
+        {
+          "d": "08-12",
+          "s": 990
+        },
+        {
+          "d": "08-13",
+          "s": 993
+        },
+        {
+          "d": "08-14",
+          "s": 997
+        }
+      ]
+    },
+    "score": {
+      "score": 75.87,
+      "breakdown": {
+        "vel": 68,
+        "acc": 42,
+        "health": 74,
+        "fresh": 71,
+        "signal": 85
+      },
+      "stage": "early",
+      "stage_multiplier": 1.2,
+      "confidence": 1.0,
+      "base_score": 63.22,
+      "explanation": "Aegis 瞄准 AI 编码代理在长任务中的架构漂移痛点，以「基线优先+证据验证」建立可信任的架构约束层，填补了当前 coding agent 只重代码生成、不重架构一致性的空白；早期即达近千星且零 open issue，信号极强。"
+    }
+  },
+  {
+    "repo": {
+      "owner": "csyqlz",
+      "name": "VOZEB-PRO",
+      "full_name": "csyqlz/VOZEB-PRO",
+      "description": "VOZEB PRO：从创作简报、视觉方向、物料规划到一致性生成与自动视觉复盘的 AI 创作工作台。",
+      "stars": 200,
+      "forks": 73,
+      "open_issues": 5,
+      "created_at": "2026-07-17T07:36:47+00:00",
+      "pushed_at": "2026-08-11T06:21:54+00:00",
+      "updated_at": "2026-08-14T06:22:32+00:00",
+      "topics": [],
+      "language": "TypeScript",
+      "license": "AGPL-3.0",
+      "homepage": null,
+      "html_url": "https://github.com/csyqlz/VOZEB-PRO",
+      "default_branch": "main",
+      "archived": false,
+      "search_score": 1.0,
+      "stars_7d_ago": 163,
+      "star_series": [
+        {
+          "d": "07-16",
+          "s": 103
+        },
+        {
+          "d": "07-17",
+          "s": 103
+        },
+        {
+          "d": "07-18",
+          "s": 103
+        },
+        {
+          "d": "07-19",
+          "s": 103
+        },
+        {
+          "d": "07-20",
+          "s": 103
+        },
+        {
+          "d": "07-21",
+          "s": 103
+        },
+        {
+          "d": "07-22",
+          "s": 103
+        },
+        {
+          "d": "07-23",
+          "s": 103
+        },
+        {
+          "d": "07-24",
+          "s": 103
+        },
+        {
+          "d": "07-25",
+          "s": 103
+        },
+        {
+          "d": "07-26",
+          "s": 103
+        },
+        {
+          "d": "07-27",
+          "s": 103
+        },
+        {
+          "d": "07-28",
+          "s": 103
+        },
+        {
+          "d": "07-29",
+          "s": 103
+        },
+        {
+          "d": "07-30",
+          "s": 103
+        },
+        {
+          "d": "07-31",
+          "s": 103
+        },
+        {
+          "d": "08-01",
+          "s": 103
+        },
+        {
+          "d": "08-02",
+          "s": 103
+        },
+        {
+          "d": "08-03",
+          "s": 103
+        },
+        {
+          "d": "08-04",
+          "s": 124
+        },
+        {
+          "d": "08-05",
+          "s": 143
+        },
+        {
+          "d": "08-06",
+          "s": 150
+        },
+        {
+          "d": "08-07",
+          "s": 157
+        },
+        {
+          "d": "08-08",
+          "s": 163
+        },
+        {
+          "d": "08-09",
+          "s": 168
+        },
+        {
+          "d": "08-10",
+          "s": 174
+        },
+        {
+          "d": "08-11",
+          "s": 180
+        },
+        {
+          "d": "08-12",
+          "s": 184
+        },
+        {
+          "d": "08-13",
+          "s": 198
+        },
+        {
+          "d": "08-14",
+          "s": 200
+        }
+      ]
+    },
+    "score": {
+      "score": 73.76,
+      "breakdown": {
+        "vel": 54,
+        "acc": 41,
+        "health": 97,
+        "fresh": 93,
+        "signal": 55
+      },
+      "stage": "early",
+      "stage_multiplier": 1.2,
+      "confidence": 1.0,
+      "base_score": 61.47,
+      "explanation": "VOZEB-PRO 以“简报到视觉复盘”的全链路 AI 创作工作台定位切入，早期即实现 5.3 star/天增速，且 36.5% 的 fork 比和仅 5 个 open issue 说明社区吸纳与健康度俱佳，具备从工具型项目向标准化工作流平台演进的潜力。"
     }
   },
   {
@@ -178,12 +502,12 @@
       "name": "k-dense-byok",
       "full_name": "K-Dense-AI/k-dense-byok",
       "description": "An AI co-scientist powered by Scientific Agent Skills running on your desktop.",
-      "stars": 998,
-      "forks": 122,
+      "stars": 1000,
+      "forks": 123,
       "open_issues": 0,
       "created_at": "2026-03-19T22:43:52+00:00",
-      "pushed_at": "2026-08-12T20:49:21+00:00",
-      "updated_at": "2026-08-13T05:57:45+00:00",
+      "pushed_at": "2026-08-13T20:12:44+00:00",
+      "updated_at": "2026-08-13T20:10:07+00:00",
       "topics": [
         "agentic-ai",
         "ai-agent",
@@ -207,135 +531,135 @@
       "default_branch": "main",
       "archived": false,
       "search_score": 1.0,
-      "stars_7d_ago": 979,
+      "stars_7d_ago": 981,
       "star_series": [
         {
-          "d": "07-15",
+          "d": "07-16",
           "s": 915
         },
         {
-          "d": "07-16",
-          "s": 916
-        },
-        {
           "d": "07-17",
-          "s": 918
+          "s": 917
         },
         {
           "d": "07-18",
-          "s": 919
+          "s": 918
         },
         {
           "d": "07-19",
-          "s": 920
+          "s": 919
         },
         {
           "d": "07-20",
-          "s": 923
+          "s": 922
         },
         {
           "d": "07-21",
-          "s": 927
+          "s": 926
         },
         {
           "d": "07-22",
-          "s": 929
+          "s": 928
         },
         {
           "d": "07-23",
-          "s": 929
+          "s": 928
         },
         {
           "d": "07-24",
-          "s": 931
+          "s": 930
         },
         {
           "d": "07-25",
-          "s": 935
+          "s": 934
         },
         {
           "d": "07-26",
-          "s": 937
+          "s": 936
         },
         {
           "d": "07-27",
-          "s": 940
+          "s": 939
         },
         {
           "d": "07-28",
-          "s": 943
+          "s": 942
         },
         {
           "d": "07-29",
-          "s": 945
+          "s": 944
         },
         {
           "d": "07-30",
-          "s": 953
+          "s": 952
         },
         {
           "d": "07-31",
-          "s": 955
+          "s": 954
         },
         {
           "d": "08-01",
-          "s": 956
+          "s": 955
         },
         {
           "d": "08-02",
-          "s": 958
+          "s": 957
         },
         {
           "d": "08-03",
-          "s": 961
+          "s": 960
         },
         {
           "d": "08-04",
-          "s": 969
+          "s": 968
         },
         {
           "d": "08-05",
-          "s": 974
+          "s": 973
         },
         {
           "d": "08-06",
-          "s": 974
+          "s": 973
         },
         {
           "d": "08-07",
-          "s": 979
+          "s": 978
         },
         {
           "d": "08-08",
-          "s": 982
+          "s": 981
         },
         {
           "d": "08-09",
-          "s": 984
+          "s": 983
         },
         {
           "d": "08-10",
-          "s": 989
+          "s": 988
         },
         {
           "d": "08-11",
-          "s": 992
+          "s": 991
         },
         {
           "d": "08-12",
-          "s": 995
+          "s": 994
         },
         {
           "d": "08-13",
-          "s": 998
+          "s": 1000
+        },
+        {
+          "d": "08-14",
+          "s": 1000
         }
       ]
     },
     "score": {
-      "score": 69.29,
+      "score": 66.78,
       "breakdown": {
-        "vel": 43,
-        "acc": 45,
+        "vel": 39,
+        "acc": 43,
         "health": 100,
         "fresh": 60,
         "signal": 85
@@ -343,507 +667,173 @@
       "stage": "early",
       "stage_multiplier": 1.2,
       "confidence": 1.0,
-      "base_score": 57.74,
-      "explanation": "k-dense-byok 以 998 星、零 open issue 和 12.2% 的 fork 比站稳早期增长位，7 天 2.7 star/天说明科学发现场景对「本地优先 + BYOK + 多模型接入」的刚需正在释放；在 agentic 工具同质化时，它把 ADK、LiteLLM、MCP 串成可落地的桌面科研工作流，差异化清晰。"
+      "base_score": 55.65,
+      "explanation": "该项目的核心亮点是“科学代理技能+本地优先+自带密钥（BYOK）”，直接把 AI 共同科学家塞进桌面端，切入药物发现与科研计算这一高壁垒场景；尽管增速温和，但其 100% 健康度（0 个 open issue、fork/star 比 12.3%）和高达 85 的信号分，说明技术方向与社区共识已初步验证，早期布局价值明显。"
     }
   },
   {
     "repo": {
-      "owner": "mouldybread",
-      "name": "adb-auto-enable",
-      "full_name": "mouldybread/adb-auto-enable",
-      "description": "Automatically enable wireless ADB and switch to port 5555 on Android device boot - no root required. Seamless wireless debugging on Chromecast with Google TV and other Android devices.",
-      "stars": 200,
-      "forks": 31,
-      "open_issues": 0,
-      "created_at": "2025-10-12T14:12:23+00:00",
-      "pushed_at": "2026-08-12T13:10:59+00:00",
-      "updated_at": "2026-08-12T13:10:26+00:00",
+      "owner": "manycoretech",
+      "name": "aholo-viewer",
+      "full_name": "manycoretech/aholo-viewer",
+      "description": "A high performance 3DGS renderer",
+      "stars": 996,
+      "forks": 102,
+      "open_issues": 1,
+      "created_at": "2026-05-12T02:54:28+00:00",
+      "pushed_at": "2026-08-13T03:24:08+00:00",
+      "updated_at": "2026-08-14T02:52:24+00:00",
       "topics": [
-        "adb",
-        "android",
-        "automation",
-        "home-assistant"
+        "3d",
+        "3d-gaussian-splatting",
+        "3dgs",
+        "3dgs-lod"
       ],
-      "language": "Java",
+      "language": "TypeScript",
       "license": "MIT",
-      "homepage": null,
-      "html_url": "https://github.com/mouldybread/adb-auto-enable",
-      "default_branch": "main",
+      "homepage": "https://aholojs.dev/",
+      "html_url": "https://github.com/manycoretech/aholo-viewer",
+      "default_branch": "master",
       "archived": false,
       "search_score": 1.0,
-      "stars_7d_ago": 188,
+      "stars_7d_ago": 979,
       "star_series": [
         {
-          "d": "07-15",
-          "s": 166
-        },
-        {
           "d": "07-16",
-          "s": 166
+          "s": 903
         },
         {
           "d": "07-17",
-          "s": 166
+          "s": 905
         },
         {
           "d": "07-18",
-          "s": 166
+          "s": 907
         },
         {
           "d": "07-19",
-          "s": 166
+          "s": 909
         },
         {
           "d": "07-20",
-          "s": 166
+          "s": 911
         },
         {
           "d": "07-21",
-          "s": 166
+          "s": 914
         },
         {
           "d": "07-22",
-          "s": 166
+          "s": 917
         },
         {
           "d": "07-23",
-          "s": 166
-        },
-        {
-          "d": "07-24",
-          "s": 166
-        },
-        {
-          "d": "07-25",
-          "s": 166
-        },
-        {
-          "d": "07-26",
-          "s": 166
-        },
-        {
-          "d": "07-27",
-          "s": 166
-        },
-        {
-          "d": "07-28",
-          "s": 166
-        },
-        {
-          "d": "07-29",
-          "s": 166
-        },
-        {
-          "d": "07-30",
-          "s": 166
-        },
-        {
-          "d": "07-31",
-          "s": 166
-        },
-        {
-          "d": "08-01",
-          "s": 171
-        },
-        {
-          "d": "08-02",
-          "s": 179
-        },
-        {
-          "d": "08-03",
-          "s": 181
-        },
-        {
-          "d": "08-04",
-          "s": 181
-        },
-        {
-          "d": "08-05",
-          "s": 185
-        },
-        {
-          "d": "08-06",
-          "s": 187
-        },
-        {
-          "d": "08-07",
-          "s": 188
-        },
-        {
-          "d": "08-08",
-          "s": 189
-        },
-        {
-          "d": "08-09",
-          "s": 191
-        },
-        {
-          "d": "08-10",
-          "s": 199
-        },
-        {
-          "d": "08-11",
-          "s": 199
-        },
-        {
-          "d": "08-12",
-          "s": 200
-        },
-        {
-          "d": "08-13",
-          "s": 200
-        }
-      ]
-    },
-    "score": {
-      "score": 50.01,
-      "breakdown": {
-        "vel": 32,
-        "acc": 39,
-        "health": 100,
-        "fresh": 17,
-        "signal": 70
-      },
-      "stage": "early",
-      "stage_multiplier": 1.2,
-      "confidence": 1.0,
-      "base_score": 41.68,
-      "explanation": "免root自动开启无线ADB并固定5555端口，精准解决Google TV等设备频繁重启后需手动调试的痛点；200星、0 open issue且fork占比15.5%，社区健康度高，配合Home Assistant生态，有望成为Android无线调试的标配基建。"
-    }
-  },
-  {
-    "repo": {
-      "owner": "DmytroVasin",
-      "name": "DrawPen",
-      "full_name": "DmytroVasin/DrawPen",
-      "description": "DrawPen is a simple screen annotation. Available on macOS, Windows & Linux.",
-      "stars": 994,
-      "forks": 80,
-      "open_issues": 37,
-      "created_at": "2024-05-19T07:01:42+00:00",
-      "pushed_at": "2026-08-09T14:44:02+00:00",
-      "updated_at": "2026-08-13T01:51:22+00:00",
-      "topics": [
-        "annotation",
-        "annotation-tool",
-        "canvas",
-        "electron",
-        "macos",
-        "presentation",
-        "screen-annotation"
-      ],
-      "language": "JavaScript",
-      "license": "MIT",
-      "homepage": "https://drawpen.app",
-      "html_url": "https://github.com/DmytroVasin/DrawPen",
-      "default_branch": "main",
-      "archived": false,
-      "search_score": 1.0,
-      "stars_7d_ago": 939,
-      "star_series": [
-        {
-          "d": "07-15",
-          "s": 917
-        },
-        {
-          "d": "07-16",
-          "s": 917
-        },
-        {
-          "d": "07-17",
-          "s": 919
-        },
-        {
-          "d": "07-18",
-          "s": 919
-        },
-        {
-          "d": "07-19",
           "s": 920
         },
         {
-          "d": "07-20",
-          "s": 921
-        },
-        {
-          "d": "07-21",
-          "s": 923
-        },
-        {
-          "d": "07-22",
+          "d": "07-24",
           "s": 925
         },
         {
-          "d": "07-23",
-          "s": 926
-        },
-        {
-          "d": "07-24",
-          "s": 927
-        },
-        {
           "d": "07-25",
           "s": 927
         },
         {
           "d": "07-26",
-          "s": 927
+          "s": 930
         },
         {
           "d": "07-27",
-          "s": 929
-        },
-        {
-          "d": "07-28",
-          "s": 930
-        },
-        {
-          "d": "07-29",
-          "s": 930
-        },
-        {
-          "d": "07-30",
-          "s": 932
-        },
-        {
-          "d": "07-31",
-          "s": 932
-        },
-        {
-          "d": "08-01",
-          "s": 932
-        },
-        {
-          "d": "08-02",
-          "s": 932
-        },
-        {
-          "d": "08-03",
           "s": 935
         },
         {
-          "d": "08-04",
-          "s": 936
-        },
-        {
-          "d": "08-05",
-          "s": 936
-        },
-        {
-          "d": "08-06",
-          "s": 937
-        },
-        {
-          "d": "08-07",
-          "s": 939
-        },
-        {
-          "d": "08-08",
-          "s": 943
-        },
-        {
-          "d": "08-09",
-          "s": 965
-        },
-        {
-          "d": "08-10",
-          "s": 990
-        },
-        {
-          "d": "08-11",
-          "s": 992
-        },
-        {
-          "d": "08-12",
-          "s": 993
-        },
-        {
-          "d": "08-13",
-          "s": 994
-        }
-      ]
-    },
-    "score": {
-      "score": 49.97,
-      "breakdown": {
-        "vel": 71,
-        "acc": 99,
-        "health": 78,
-        "fresh": 0,
-        "signal": 85
-      },
-      "stage": "early",
-      "stage_multiplier": 1.2,
-      "confidence": 1.0,
-      "base_score": 41.64,
-      "explanation": "DrawPen 以 Electron 实现跨平台屏幕标注，覆盖 mac/Windows/Linux 三大系统，精准切中演示与教学场景的轻量刚需；当前周增速 7.9 star/天且社区健康度良好，说明产品定位与交付质量已获初步验证，正处在需求放量的早期增长窗口。"
-    }
-  },
-  {
-    "repo": {
-      "owner": "AlexSergey",
-      "name": "opensa",
-      "full_name": "AlexSergey/opensa",
-      "description": "A from-scratch, high-performance WebGPU engine compatible with RenderWare (GTA San Andreas). Not a reimplementation: SA's worlds and mods in the browser, without its limits.",
-      "stars": 200,
-      "forks": 9,
-      "open_issues": 0,
-      "created_at": "2026-06-04T13:40:13+00:00",
-      "pushed_at": "2026-08-12T20:20:37+00:00",
-      "updated_at": "2026-08-12T20:20:50+00:00",
-      "topics": [
-        "gta",
-        "gtasa",
-        "react",
-        "threejs",
-        "webgl"
-      ],
-      "language": "TypeScript",
-      "license": "AGPL-3.0",
-      "homepage": "https://opensa.cc",
-      "html_url": "https://github.com/AlexSergey/opensa",
-      "default_branch": "main",
-      "archived": false,
-      "search_score": 1.0,
-      "stars_7d_ago": 197,
-      "star_series": [
-        {
-          "d": "07-15",
-          "s": 185
-        },
-        {
-          "d": "07-16",
-          "s": 187
-        },
-        {
-          "d": "07-17",
-          "s": 187
-        },
-        {
-          "d": "07-18",
-          "s": 187
-        },
-        {
-          "d": "07-19",
-          "s": 187
-        },
-        {
-          "d": "07-20",
-          "s": 187
-        },
-        {
-          "d": "07-21",
-          "s": 189
-        },
-        {
-          "d": "07-22",
-          "s": 189
-        },
-        {
-          "d": "07-23",
-          "s": 189
-        },
-        {
-          "d": "07-24",
-          "s": 189
-        },
-        {
-          "d": "07-25",
-          "s": 189
-        },
-        {
-          "d": "07-26",
-          "s": 189
-        },
-        {
-          "d": "07-27",
-          "s": 189
-        },
-        {
           "d": "07-28",
-          "s": 189
+          "s": 940
         },
         {
           "d": "07-29",
-          "s": 189
+          "s": 942
         },
         {
           "d": "07-30",
-          "s": 190
+          "s": 951
         },
         {
           "d": "07-31",
-          "s": 191
+          "s": 954
         },
         {
           "d": "08-01",
-          "s": 191
+          "s": 957
         },
         {
           "d": "08-02",
-          "s": 191
+          "s": 961
         },
         {
           "d": "08-03",
-          "s": 192
+          "s": 962
         },
         {
           "d": "08-04",
-          "s": 194
+          "s": 966
         },
         {
           "d": "08-05",
-          "s": 194
+          "s": 969
         },
         {
           "d": "08-06",
-          "s": 197
+          "s": 971
         },
         {
           "d": "08-07",
-          "s": 197
+          "s": 975
         },
         {
           "d": "08-08",
-          "s": 197
+          "s": 979
         },
         {
           "d": "08-09",
-          "s": 198
+          "s": 983
         },
         {
           "d": "08-10",
-          "s": 199
+          "s": 985
         },
         {
           "d": "08-11",
-          "s": 199
+          "s": 986
         },
         {
           "d": "08-12",
-          "s": 200
+          "s": 988
         },
         {
           "d": "08-13",
-          "s": 200
+          "s": 995
+        },
+        {
+          "d": "08-14",
+          "s": 996
         }
       ]
     },
     "score": {
-      "score": 44.6,
+      "score": 56.99,
       "breakdown": {
-        "vel": 12,
-        "acc": 39,
-        "health": 70,
-        "fresh": 81,
-        "signal": 85
+        "vel": 36,
+        "acc": 44,
+        "health": 94,
+        "fresh": 74,
+        "signal": 100
       },
-      "stage": "early",
-      "stage_multiplier": 1.2,
+      "stage": "mid_late",
+      "stage_multiplier": 1.0,
       "confidence": 1.0,
-      "base_score": 37.16,
-      "explanation": "从零构建的WebGPU引擎直接兼容RenderWare，让GTA SA原版世界和Mod在浏览器无限制运行，而非重制——这切中了怀旧与跨平台两大痛点；项目刚起步即保持活跃开发且零Open Issue，技术路线差异化明显，潜力值得关注。"
+      "base_score": 56.99,
+      "explanation": "在 3DGS 渲染器几乎被 C++/CUDA 垄断的背景下，aholo-viewer 以 TypeScript 实现高性能路径，且信号满分、近 996 star 仅 1 个 issue，社区健康度与开发活跃度兼备，有望成为 Web 端实时 3DGS 的关键基础设施。"
     }
   }
 ]
