@@ -1,305 +1,653 @@
 [
   {
     "repo": {
-      "owner": "aslost",
-      "name": "pixtale",
-      "full_name": "aslost/pixtale",
-      "description": "An immersive masonry photo gallery | 一个沉浸式瀑布流相册应用",
+      "owner": "Manak-hash",
+      "name": "LinkBreeze",
+      "full_name": "Manak-hash/LinkBreeze",
+      "description": "The self-hosted Linktree alternative. Import from any competitor in 30 seconds. Multi-page, privacy-respecting analytics, one-line install.",
       "stars": 200,
-      "forks": 20,
-      "open_issues": 0,
-      "created_at": "2026-06-24T04:43:15+00:00",
-      "pushed_at": "2026-08-15T05:31:25+00:00",
-      "updated_at": "2026-08-16T01:39:35+00:00",
+      "forks": 18,
+      "open_issues": 12,
+      "created_at": "2026-06-28T23:19:39+00:00",
+      "pushed_at": "2026-08-16T15:30:17+00:00",
+      "updated_at": "2026-08-17T03:00:16+00:00",
       "topics": [
-        "gallery",
+        "analytics",
+        "creator-tool",
+        "docker",
+        "docker-image",
+        "link-in-bio",
+        "link-in-bio-page",
+        "links",
+        "linkspage",
+        "linktree",
+        "linktree-alternative",
         "nextjs",
-        "photo-album",
-        "photo-gallery",
-        "photography",
-        "photos",
-        "vercel",
-        "vercel-deployment"
+        "open-source",
+        "opensource",
+        "privacy",
+        "privacy-respecting",
+        "privacy-tools",
+        "react",
+        "self-hosted",
+        "sqlite",
+        "typescipt"
       ],
       "language": "TypeScript",
-      "license": "AGPL-3.0",
-      "homepage": null,
-      "html_url": "https://github.com/aslost/pixtale",
+      "license": "MIT",
+      "homepage": "https://linkbreeze.omnirise.dev",
+      "html_url": "https://github.com/Manak-hash/LinkBreeze",
       "default_branch": "main",
       "archived": false,
       "search_score": 1.0,
-      "stars_7d_ago": 131,
+      "stars_7d_ago": 153,
       "star_series": [
         {
-          "d": "07-18",
-          "s": 131
-        },
-        {
           "d": "07-19",
-          "s": 131
+          "s": 153
         },
         {
           "d": "07-20",
-          "s": 131
+          "s": 153
         },
         {
           "d": "07-21",
-          "s": 131
+          "s": 153
         },
         {
           "d": "07-22",
-          "s": 131
+          "s": 153
         },
         {
           "d": "07-23",
-          "s": 131
+          "s": 153
         },
         {
           "d": "07-24",
-          "s": 131
+          "s": 153
         },
         {
           "d": "07-25",
-          "s": 131
+          "s": 153
         },
         {
           "d": "07-26",
-          "s": 131
+          "s": 153
         },
         {
           "d": "07-27",
-          "s": 131
+          "s": 153
         },
         {
           "d": "07-28",
-          "s": 131
+          "s": 153
         },
         {
           "d": "07-29",
-          "s": 131
+          "s": 153
         },
         {
           "d": "07-30",
-          "s": 131
+          "s": 153
         },
         {
           "d": "07-31",
-          "s": 131
+          "s": 153
         },
         {
           "d": "08-01",
-          "s": 131
+          "s": 153
         },
         {
           "d": "08-02",
-          "s": 131
+          "s": 153
         },
         {
           "d": "08-03",
-          "s": 131
+          "s": 153
         },
         {
           "d": "08-04",
-          "s": 131
+          "s": 153
         },
         {
           "d": "08-05",
-          "s": 131
+          "s": 153
         },
         {
           "d": "08-06",
-          "s": 131
+          "s": 153
         },
         {
           "d": "08-07",
-          "s": 131
+          "s": 153
         },
         {
           "d": "08-08",
-          "s": 131
+          "s": 153
         },
         {
           "d": "08-09",
-          "s": 131
+          "s": 153
         },
         {
           "d": "08-10",
-          "s": 131
+          "s": 153
         },
         {
           "d": "08-11",
-          "s": 131
+          "s": 153
         },
         {
           "d": "08-12",
-          "s": 135
+          "s": 153
         },
         {
           "d": "08-13",
-          "s": 158
+          "s": 173
         },
         {
           "d": "08-14",
-          "s": 187
+          "s": 184
         },
         {
           "d": "08-15",
-          "s": 199
+          "s": 193
         },
         {
           "d": "08-16",
+          "s": 199
+        },
+        {
+          "d": "08-17",
           "s": 200
         }
       ]
     },
     "score": {
-      "score": 98.69,
+      "score": 94.54,
       "breakdown": {
-        "vel": 70,
+        "vel": 60,
         "acc": 99,
-        "health": 86,
-        "fresh": 85,
-        "signal": 70
+        "health": 73,
+        "fresh": 87,
+        "signal": 100
       },
       "stage": "early",
       "stage_multiplier": 1.2,
       "confidence": 1.0,
-      "base_score": 82.24,
-      "explanation": "瀑布流相册是 Next.js 生态的高频场景，pixtale 不到两个月拿下 200 星且涨速仍在加快（9.9 star/天），0 个 open issue 和 10% 的 fork 率说明代码质量与社区认可度俱佳，"
+      "base_score": 78.78,
+      "explanation": "LinkBreeze 是 TypeScript 开源项目，主打「The self-hosted Linktree alternative. Import from any competitor in 30 seconds. Multi-page, privacy-respecting analytics, one-line install.」；处于增长早期，本周涨速 6.7 star/天，涨速在加快；社区健康（fork/star 比 9.0%，12 个 open issue）、项目元数据完整、开发活跃。"
     }
   },
   {
     "repo": {
-      "owner": "Optim-Agent",
-      "name": "optim-agent",
-      "full_name": "Optim-Agent/optim-agent",
-      "description": "LLM agents as your hyperparameter optimizer.",
-      "stars": 998,
-      "forks": 42,
-      "open_issues": 0,
-      "created_at": "2026-07-07T17:05:54+00:00",
-      "pushed_at": "2026-08-14T19:09:11+00:00",
-      "updated_at": "2026-08-15T23:47:13+00:00",
+      "owner": "mateaix",
+      "name": "mateclaw",
+      "full_name": "mateaix/mateclaw",
+      "description": "🤖 MateClaw — Your second brain with Multi-Agent Orchestration, MCP Protocol, Skills & Memory, Dream, and Multi-Channel Support. Built on Spring AI Alibaba.",
+      "stars": 997,
+      "forks": 305,
+      "open_issues": 145,
+      "created_at": "2026-04-04T10:53:35+00:00",
+      "pushed_at": "2026-08-16T08:26:12+00:00",
+      "updated_at": "2026-08-17T06:26:32+00:00",
       "topics": [
-        "agent-skills",
-        "ai-agents",
-        "automl",
-        "claude-code",
-        "codex-cli",
-        "developer-tools",
-        "hyperparameter-optimization",
-        "machine-learning",
-        "optimization",
-        "skill"
+        "agent",
+        "agent-harness",
+        "ai-agent",
+        "dingtalk-robot",
+        "feishu-bot",
+        "llm-wiki",
+        "loop-engineering",
+        "mcp-protocol",
+        "multi-agent",
+        "multiagent",
+        "openclaw",
+        "plan-and-execute",
+        "skills",
+        "spring-ai",
+        "spring-boot",
+        "telegrambot",
+        "tool-calling"
       ],
-      "language": "Python",
-      "license": "MIT",
-      "homepage": "https://optim-agent.github.io/optim-agent/",
-      "html_url": "https://github.com/Optim-Agent/optim-agent",
-      "default_branch": "main",
+      "language": "Java",
+      "license": "Apache-2.0",
+      "homepage": "https://claw.mate.vip",
+      "html_url": "https://github.com/mateaix/mateclaw",
+      "default_branch": "dev",
       "archived": false,
       "search_score": 1.0,
-      "stars_7d_ago": 932,
+      "stars_7d_ago": 945,
       "star_series": [
         {
-          "d": "07-18",
-          "s": 909
-        },
-        {
           "d": "07-19",
-          "s": 909
+          "s": 945
         },
         {
           "d": "07-20",
-          "s": 909
+          "s": 945
         },
         {
           "d": "07-21",
-          "s": 909
+          "s": 945
         },
         {
           "d": "07-22",
-          "s": 909
+          "s": 945
         },
         {
           "d": "07-23",
-          "s": 909
+          "s": 945
         },
         {
           "d": "07-24",
-          "s": 909
+          "s": 945
         },
         {
           "d": "07-25",
-          "s": 909
+          "s": 945
         },
         {
           "d": "07-26",
-          "s": 909
+          "s": 945
         },
         {
           "d": "07-27",
-          "s": 909
+          "s": 945
         },
         {
           "d": "07-28",
-          "s": 909
+          "s": 945
         },
         {
           "d": "07-29",
-          "s": 909
+          "s": 945
         },
         {
           "d": "07-30",
-          "s": 909
+          "s": 945
         },
         {
           "d": "07-31",
-          "s": 909
+          "s": 945
         },
         {
           "d": "08-01",
-          "s": 909
+          "s": 945
         },
         {
           "d": "08-02",
-          "s": 909
+          "s": 945
         },
         {
           "d": "08-03",
-          "s": 909
+          "s": 945
         },
         {
           "d": "08-04",
-          "s": 909
+          "s": 945
         },
         {
           "d": "08-05",
-          "s": 909
+          "s": 945
         },
         {
           "d": "08-06",
-          "s": 909
+          "s": 945
         },
         {
           "d": "08-07",
-          "s": 909
+          "s": 945
         },
         {
           "d": "08-08",
-          "s": 909
+          "s": 945
         },
         {
           "d": "08-09",
-          "s": 911
+          "s": 945
         },
         {
           "d": "08-10",
-          "s": 932
+          "s": 945
         },
         {
           "d": "08-11",
+          "s": 945
+        },
+        {
+          "d": "08-12",
           "s": 957
+        },
+        {
+          "d": "08-13",
+          "s": 972
+        },
+        {
+          "d": "08-14",
+          "s": 984
+        },
+        {
+          "d": "08-15",
+          "s": 990
+        },
+        {
+          "d": "08-16",
+          "s": 993
+        },
+        {
+          "d": "08-17",
+          "s": 997
+        }
+      ]
+    },
+    "score": {
+      "score": 89.2,
+      "breakdown": {
+        "vel": 63,
+        "acc": 99,
+        "health": 70,
+        "fresh": 63,
+        "signal": 85
+      },
+      "stage": "early",
+      "stage_multiplier": 1.2,
+      "confidence": 1.0,
+      "base_score": 74.34,
+      "explanation": "mateclaw 是 Java 开源项目，主打「🤖 MateClaw — Your second brain with Multi-Agent Orchestration, MCP Protocol, Skills & Memory, Dream, and Multi-Channel Support. Built on Spring AI Alibaba.」；处于增长早期，本周涨速 7.4 star/天，涨速在加快；项目元数据完整。"
+    }
+  },
+  {
+    "repo": {
+      "owner": "Evokoa",
+      "name": "pgGraph",
+      "full_name": "Evokoa/pgGraph",
+      "description": "Open-source graph database superpowers for your existing Postgres data.",
+      "stars": 995,
+      "forks": 85,
+      "open_issues": 12,
+      "created_at": "2026-05-13T09:04:07+00:00",
+      "pushed_at": "2026-08-16T07:58:36+00:00",
+      "updated_at": "2026-08-17T06:24:38+00:00",
+      "topics": [
+        "ai",
+        "ai-agents",
+        "ai-agents-framework",
+        "graph",
+        "graph-database",
+        "pgrx",
+        "postgres",
+        "postgresql-database",
+        "postgresql-extension",
+        "relationship-graph",
+        "rust",
+        "traversal"
+      ],
+      "language": "Rust",
+      "license": "NOASSERTION",
+      "homepage": "https://www.evokoa.com",
+      "html_url": "https://github.com/Evokoa/pgGraph",
+      "default_branch": "main",
+      "archived": false,
+      "search_score": 1.0,
+      "stars_7d_ago": 968,
+      "star_series": [
+        {
+          "d": "07-19",
+          "s": 745
+        },
+        {
+          "d": "07-20",
+          "s": 745
+        },
+        {
+          "d": "07-21",
+          "s": 745
+        },
+        {
+          "d": "07-22",
+          "s": 745
+        },
+        {
+          "d": "07-23",
+          "s": 745
+        },
+        {
+          "d": "07-24",
+          "s": 745
+        },
+        {
+          "d": "07-25",
+          "s": 745
+        },
+        {
+          "d": "07-26",
+          "s": 745
+        },
+        {
+          "d": "07-27",
+          "s": 745
+        },
+        {
+          "d": "07-28",
+          "s": 745
+        },
+        {
+          "d": "07-29",
+          "s": 745
+        },
+        {
+          "d": "07-30",
+          "s": 745
+        },
+        {
+          "d": "07-31",
+          "s": 745
+        },
+        {
+          "d": "08-01",
+          "s": 754
+        },
+        {
+          "d": "08-02",
+          "s": 793
+        },
+        {
+          "d": "08-03",
+          "s": 821
+        },
+        {
+          "d": "08-04",
+          "s": 885
+        },
+        {
+          "d": "08-05",
+          "s": 903
+        },
+        {
+          "d": "08-06",
+          "s": 929
+        },
+        {
+          "d": "08-07",
+          "s": 941
+        },
+        {
+          "d": "08-08",
+          "s": 945
+        },
+        {
+          "d": "08-09",
+          "s": 952
+        },
+        {
+          "d": "08-10",
+          "s": 965
+        },
+        {
+          "d": "08-11",
+          "s": 968
+        },
+        {
+          "d": "08-12",
+          "s": 972
+        },
+        {
+          "d": "08-13",
+          "s": 977
+        },
+        {
+          "d": "08-14",
+          "s": 984
+        },
+        {
+          "d": "08-15",
+          "s": 992
+        },
+        {
+          "d": "08-16",
+          "s": 993
+        },
+        {
+          "d": "08-17",
+          "s": 995
+        }
+      ]
+    },
+    "score": {
+      "score": 66.44,
+      "breakdown": {
+        "vel": 47,
+        "acc": 34,
+        "health": 86,
+        "fresh": 74,
+        "signal": 85
+      },
+      "stage": "early",
+      "stage_multiplier": 1.2,
+      "confidence": 1.0,
+      "base_score": 55.37,
+      "explanation": "pgGraph 是 Rust 开源项目，主打「Open-source graph database superpowers for your existing Postgres data.」；处于增长早期，本周涨速 3.9 star/天；社区健康（fork/star 比 8.5%，12 个 open issue）、项目元数据完整、开发活跃。"
+    }
+  },
+  {
+    "repo": {
+      "owner": "RookieEnough",
+      "name": "Morphe-AutoBuilds",
+      "full_name": "RookieEnough/Morphe-AutoBuilds",
+      "description": "A clean and easy workflow that automatically builds Morphe APKs every 24 hours.",
+      "stars": 1000,
+      "forks": 78,
+      "open_issues": 71,
+      "created_at": "2026-01-11T12:16:44+00:00",
+      "pushed_at": "2026-08-11T16:23:20+00:00",
+      "updated_at": "2026-08-17T06:34:49+00:00",
+      "topics": [],
+      "language": "Python",
+      "license": "GPL-3.0",
+      "homepage": null,
+      "html_url": "https://github.com/RookieEnough/Morphe-AutoBuilds",
+      "default_branch": "main",
+      "archived": false,
+      "search_score": 1.0,
+      "stars_7d_ago": 976,
+      "star_series": [
+        {
+          "d": "07-19",
+          "s": 928
+        },
+        {
+          "d": "07-20",
+          "s": 928
+        },
+        {
+          "d": "07-21",
+          "s": 928
+        },
+        {
+          "d": "07-22",
+          "s": 928
+        },
+        {
+          "d": "07-23",
+          "s": 928
+        },
+        {
+          "d": "07-24",
+          "s": 928
+        },
+        {
+          "d": "07-25",
+          "s": 928
+        },
+        {
+          "d": "07-26",
+          "s": 928
+        },
+        {
+          "d": "07-27",
+          "s": 929
+        },
+        {
+          "d": "07-28",
+          "s": 934
+        },
+        {
+          "d": "07-29",
+          "s": 939
+        },
+        {
+          "d": "07-30",
+          "s": 944
+        },
+        {
+          "d": "07-31",
+          "s": 947
+        },
+        {
+          "d": "08-01",
+          "s": 951
+        },
+        {
+          "d": "08-02",
+          "s": 954
+        },
+        {
+          "d": "08-03",
+          "s": 956
+        },
+        {
+          "d": "08-04",
+          "s": 959
+        },
+        {
+          "d": "08-05",
+          "s": 961
+        },
+        {
+          "d": "08-06",
+          "s": 964
+        },
+        {
+          "d": "08-07",
+          "s": 968
+        },
+        {
+          "d": "08-08",
+          "s": 968
+        },
+        {
+          "d": "08-09",
+          "s": 973
+        },
+        {
+          "d": "08-10",
+          "s": 975
+        },
+        {
+          "d": "08-11",
+          "s": 976
         },
         {
           "d": "08-12",
@@ -307,536 +655,221 @@
         },
         {
           "d": "08-13",
-          "s": 993
+          "s": 983
         },
         {
           "d": "08-14",
-          "s": 997
+          "s": 988
         },
         {
           "d": "08-15",
-          "s": 998
+          "s": 992
         },
         {
           "d": "08-16",
-          "s": 998
+          "s": 999
+        },
+        {
+          "d": "08-17",
+          "s": 1000
         }
       ]
     },
     "score": {
-      "score": 95.6,
+      "score": 62.94,
       "breakdown": {
-        "vel": 69,
-        "acc": 87,
-        "health": 73,
-        "fresh": 89,
-        "signal": 100
+        "vel": 44,
+        "acc": 60,
+        "health": 68,
+        "fresh": 41,
+        "signal": 55
       },
       "stage": "early",
       "stage_multiplier": 1.2,
       "confidence": 1.0,
-      "base_score": 79.67,
-      "explanation": "Optim-Agent 将 LLM agent 引入超参数优化，直击 ML 调参效率痛点，且团队交付节奏快（发布一个月涨速 9.4 star/天、0 issues）；在 agent 与 AutoML 交叉赛道上，它有成为「开发者工具层标配」的早期窗口。"
+      "base_score": 52.45,
+      "explanation": "Morphe-AutoBuilds 是 Python 开源项目，主打「A clean and easy workflow that automatically builds Morphe APKs every 24 hours.」；处于增长早期，本周涨速 3.4 star/天。"
     }
   },
   {
     "repo": {
-      "owner": "AdamPlatin123",
-      "name": "awesome-dsh-plugins",
-      "full_name": "AdamPlatin123/awesome-dsh-plugins",
-      "description": "前部索引仓库（Radar）：自动扫描发现的所有 dsh 插件候选；经测试合格的将移入后序精选目录仓库",
-      "stars": 995,
-      "forks": 89,
-      "open_issues": 18,
-      "created_at": "2026-08-04T21:46:54+00:00",
-      "pushed_at": "2026-08-16T06:30:28+00:00",
-      "updated_at": "2026-08-16T06:32:35+00:00",
+      "owner": "beizhu-1209",
+      "name": "AIHelms",
+      "full_name": "beizhu-1209/AIHelms",
+      "description": "企业级 AI 资源纳管平台，提供统一 AI网关、Token调度能力，纳管 OpenAI、Azure、Claude、DeepSeek 等主流模型，并支持 MCP 工具与 Skill 的集中注册分发。具备内外双轨定价、成本归因、统一身份认证、安全审计与效能报表，帮助企业精准控制成本、量化 ROI，高效治理 AI 资产。",
+      "stars": 998,
+      "forks": 99,
+      "open_issues": 2,
+      "created_at": "2026-05-09T05:03:05+00:00",
+      "pushed_at": "2026-08-14T08:28:43+00:00",
+      "updated_at": "2026-08-17T06:45:37+00:00",
       "topics": [
-        "dsh-plugin"
+        "agent",
+        "ai-gateway",
+        "ai-management",
+        "ai-observability",
+        "aihub",
+        "claude",
+        "cost-control",
+        "deepseek",
+        "docker",
+        "enterprise-ai",
+        "fastapi",
+        "llm-governance",
+        "mcp",
+        "model-gateway",
+        "openai",
+        "skill-management",
+        "skillspector",
+        "token-hub",
+        "tokenhub",
+        "vue3"
       ],
       "language": "Python",
-      "license": "MIT",
-      "homepage": null,
-      "html_url": "https://github.com/AdamPlatin123/awesome-dsh-plugins",
+      "license": "GPL-3.0",
+      "homepage": "http://www.aihelms.cn/",
+      "html_url": "https://github.com/beizhu-1209/AIHelms",
       "default_branch": "main",
       "archived": false,
       "search_score": 1.0,
-      "stars_7d_ago": 917,
+      "stars_7d_ago": 938,
       "star_series": [
         {
-          "d": "07-18",
-          "s": 917
-        },
-        {
           "d": "07-19",
-          "s": 917
+          "s": 752
         },
         {
           "d": "07-20",
-          "s": 917
+          "s": 752
         },
         {
           "d": "07-21",
-          "s": 917
+          "s": 752
         },
         {
           "d": "07-22",
-          "s": 917
+          "s": 752
         },
         {
           "d": "07-23",
-          "s": 917
+          "s": 752
         },
         {
           "d": "07-24",
-          "s": 917
+          "s": 759
         },
         {
           "d": "07-25",
-          "s": 917
+          "s": 779
         },
         {
           "d": "07-26",
-          "s": 917
+          "s": 802
         },
         {
           "d": "07-27",
-          "s": 917
+          "s": 830
         },
         {
           "d": "07-28",
-          "s": 917
+          "s": 852
         },
         {
           "d": "07-29",
-          "s": 917
+          "s": 865
         },
         {
           "d": "07-30",
-          "s": 917
+          "s": 883
         },
         {
           "d": "07-31",
-          "s": 917
+          "s": 904
         },
         {
           "d": "08-01",
-          "s": 917
+          "s": 923
         },
         {
           "d": "08-02",
-          "s": 917
+          "s": 923
         },
         {
           "d": "08-03",
-          "s": 917
+          "s": 923
         },
         {
           "d": "08-04",
-          "s": 917
+          "s": 924
         },
         {
           "d": "08-05",
-          "s": 917
+          "s": 925
         },
         {
           "d": "08-06",
-          "s": 917
+          "s": 926
         },
         {
           "d": "08-07",
-          "s": 917
+          "s": 926
         },
         {
           "d": "08-08",
-          "s": 917
+          "s": 926
         },
         {
           "d": "08-09",
-          "s": 917
+          "s": 926
         },
         {
           "d": "08-10",
-          "s": 917
+          "s": 933
         },
         {
           "d": "08-11",
-          "s": 917
+          "s": 938
         },
         {
           "d": "08-12",
-          "s": 917
+          "s": 949
         },
         {
           "d": "08-13",
-          "s": 917
+          "s": 960
         },
         {
           "d": "08-14",
-          "s": 917
+          "s": 972
         },
         {
           "d": "08-15",
-          "s": 966
+          "s": 983
         },
         {
           "d": "08-16",
-          "s": 995
+          "s": 992
+        },
+        {
+          "d": "08-17",
+          "s": 998
         }
       ]
     },
     "score": {
-      "score": 93.38,
+      "score": 56.74,
       "breakdown": {
-        "vel": 74,
-        "acc": 99,
-        "health": 86,
-        "fresh": 97,
-        "signal": 70
-      },
-      "stage": "mid_early",
-      "stage_multiplier": 1.1,
-      "confidence": 1.0,
-      "base_score": 84.89,
-      "explanation": "以雷达索引自动筛选、精选目录沉淀的“双仓库”机制建立 dsh 插件生态的标准化入口，增速 11 star/天且健康度扎实，有潜力成为该生态的默认发现层。"
-    }
-  },
-  {
-    "repo": {
-      "owner": "aiptimizer",
-      "name": "TurboOCR",
-      "full_name": "aiptimizer/TurboOCR",
-      "description": "TurboOCR, >200 img/s OmnidocBench. TensorRT FP16, PP-OCRv6, HTTP + gRPC",
-      "stars": 995,
-      "forks": 97,
-      "open_issues": 1,
-      "created_at": "2026-03-20T10:42:34+00:00",
-      "pushed_at": "2026-08-14T11:29:16+00:00",
-      "updated_at": "2026-08-16T06:27:56+00:00",
-      "topics": [
-        "document-ai",
-        "document-parsing",
-        "easyocr",
-        "fastapi",
-        "fp16",
-        "gpu-ocr",
-        "grpc",
-        "inference-server",
-        "nvidia",
-        "ocr",
-        "paddleocr",
-        "pdf-extraction",
-        "qwen-vl",
-        "rag",
-        "tensorrt",
-        "text-detection",
-        "text-recognition"
-      ],
-      "language": "C++",
-      "license": "MIT",
-      "homepage": "https://turboocr.com",
-      "html_url": "https://github.com/aiptimizer/TurboOCR",
-      "default_branch": "main",
-      "archived": false,
-      "search_score": 1.0,
-      "stars_7d_ago": 952,
-      "star_series": [
-        {
-          "d": "07-18",
-          "s": 747
-        },
-        {
-          "d": "07-19",
-          "s": 747
-        },
-        {
-          "d": "07-20",
-          "s": 747
-        },
-        {
-          "d": "07-21",
-          "s": 747
-        },
-        {
-          "d": "07-22",
-          "s": 747
-        },
-        {
-          "d": "07-23",
-          "s": 747
-        },
-        {
-          "d": "07-24",
-          "s": 747
-        },
-        {
-          "d": "07-25",
-          "s": 747
-        },
-        {
-          "d": "07-26",
-          "s": 747
-        },
-        {
-          "d": "07-27",
-          "s": 747
-        },
-        {
-          "d": "07-28",
-          "s": 747
-        },
-        {
-          "d": "07-29",
-          "s": 747
-        },
-        {
-          "d": "07-30",
-          "s": 747
-        },
-        {
-          "d": "07-31",
-          "s": 774
-        },
-        {
-          "d": "08-01",
-          "s": 822
-        },
-        {
-          "d": "08-02",
-          "s": 838
-        },
-        {
-          "d": "08-03",
-          "s": 861
-        },
-        {
-          "d": "08-04",
-          "s": 892
-        },
-        {
-          "d": "08-05",
-          "s": 902
-        },
-        {
-          "d": "08-06",
-          "s": 909
-        },
-        {
-          "d": "08-07",
-          "s": 918
-        },
-        {
-          "d": "08-08",
-          "s": 931
-        },
-        {
-          "d": "08-09",
-          "s": 941
-        },
-        {
-          "d": "08-10",
-          "s": 952
-        },
-        {
-          "d": "08-11",
-          "s": 957
-        },
-        {
-          "d": "08-12",
-          "s": 961
-        },
-        {
-          "d": "08-13",
-          "s": 974
-        },
-        {
-          "d": "08-14",
-          "s": 987
-        },
-        {
-          "d": "08-15",
-          "s": 994
-        },
-        {
-          "d": "08-16",
-          "s": 995
-        }
-      ]
-    },
-    "score": {
-      "score": 71.3,
-      "breakdown": {
-        "vel": 58,
-        "acc": 37,
-        "health": 92,
-        "fresh": 59,
+        "vel": 67,
+        "acc": 96,
+        "health": 93,
+        "fresh": 73,
         "signal": 85
       },
-      "stage": "early",
-      "stage_multiplier": 1.2,
+      "stage": "saturated",
+      "stage_multiplier": 0.7,
       "confidence": 1.0,
-      "base_score": 59.42,
-      "explanation": "TurboOCR 以 TensorRT FP16 实现 >200 img/s 的推理性能，直接对标 EasyOCR/PaddleOCR 的工程化痛点，叠加 HTTP+gRPC 双协议使其极易嵌入现有 RAG 或文档解析流水线；早期阶段已保持 6.1 star/天增速且仅 1 个 open issue，社区健康度与信号双重验证其技术壁垒和落地价值。"
-    }
-  },
-  {
-    "repo": {
-      "owner": "bradAGI",
-      "name": "awesome-cli-coding-agents",
-      "full_name": "bradAGI/awesome-cli-coding-agents",
-      "description": "Curated directory of terminal-native AI coding agents and the harnesses that orchestrate them. Covers open-source tools (Pi, OpenCode, Aider, Goose), platform agents (Claude Code, Codex, Gemini CLI), parallel runners, autonomous loops, and agent infrastructure. ",
-      "stars": 1000,
-      "forks": 284,
-      "open_issues": 49,
-      "created_at": "2026-02-07T00:53:24+00:00",
-      "pushed_at": "2026-08-13T04:40:45+00:00",
-      "updated_at": "2026-08-15T12:42:44+00:00",
-      "topics": [],
-      "language": "Python",
-      "license": null,
-      "homepage": null,
-      "html_url": "https://github.com/bradAGI/awesome-cli-coding-agents",
-      "default_branch": "main",
-      "archived": false,
-      "search_score": 1.0,
-      "stars_7d_ago": 972,
-      "star_series": [
-        {
-          "d": "07-18",
-          "s": 972
-        },
-        {
-          "d": "07-19",
-          "s": 972
-        },
-        {
-          "d": "07-20",
-          "s": 972
-        },
-        {
-          "d": "07-21",
-          "s": 972
-        },
-        {
-          "d": "07-22",
-          "s": 972
-        },
-        {
-          "d": "07-23",
-          "s": 972
-        },
-        {
-          "d": "07-24",
-          "s": 972
-        },
-        {
-          "d": "07-25",
-          "s": 972
-        },
-        {
-          "d": "07-26",
-          "s": 972
-        },
-        {
-          "d": "07-27",
-          "s": 972
-        },
-        {
-          "d": "07-28",
-          "s": 972
-        },
-        {
-          "d": "07-29",
-          "s": 972
-        },
-        {
-          "d": "07-30",
-          "s": 972
-        },
-        {
-          "d": "07-31",
-          "s": 972
-        },
-        {
-          "d": "08-01",
-          "s": 972
-        },
-        {
-          "d": "08-02",
-          "s": 972
-        },
-        {
-          "d": "08-03",
-          "s": 972
-        },
-        {
-          "d": "08-04",
-          "s": 972
-        },
-        {
-          "d": "08-05",
-          "s": 972
-        },
-        {
-          "d": "08-06",
-          "s": 972
-        },
-        {
-          "d": "08-07",
-          "s": 972
-        },
-        {
-          "d": "08-08",
-          "s": 972
-        },
-        {
-          "d": "08-09",
-          "s": 972
-        },
-        {
-          "d": "08-10",
-          "s": 972
-        },
-        {
-          "d": "08-11",
-          "s": 977
-        },
-        {
-          "d": "08-12",
-          "s": 981
-        },
-        {
-          "d": "08-13",
-          "s": 985
-        },
-        {
-          "d": "08-14",
-          "s": 994
-        },
-        {
-          "d": "08-15",
-          "s": 1000
-        },
-        {
-          "d": "08-16",
-          "s": 1000
-        }
-      ]
-    },
-    "score": {
-      "score": 69.06,
-      "breakdown": {
-        "vel": 48,
-        "acc": 98,
-        "health": 89,
-        "fresh": 48,
-        "signal": 35
-      },
-      "stage": "mid_early",
-      "stage_multiplier": 1.1,
-      "confidence": 1.0,
-      "base_score": 62.78,
-      "explanation": "终端原生 AI 编码 Agent 的“入口级目录”，上线半年斩获 1k stars 且近期加速至 4 star/天，精准卡位 Claude Code、Codex、Gemini CLI 等工具混战期的选型刚需；28.4% 的 fork 比例说明社区主动参与维护，具备成为该领域默认资源枢纽的潜力。"
+      "base_score": 81.06,
+      "explanation": "AIHelms 是 Python 开源项目，主打「企业级 AI 资源纳管平台，提供统一 AI网关、Token调度能力，纳管 OpenAI、Azure、Claude、DeepSeek 等主流模型，并支持 MCP 工具与 Skill 的集中注册分发。具备内外双轨定价、成本归因、统一身份认证、安全审计与效能报表，帮助企业精准控制成本、量化 ROI，高效治理 AI 资产。」；增长已饱和，本周涨速 8.6 star/天，涨速在加快；社区健康（fork/star 比 9.9%，2 个 open issue）、项目元数据完整、开发活跃。"
     }
   }
 ]
