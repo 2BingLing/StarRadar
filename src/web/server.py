@@ -655,7 +655,7 @@ class StarRadarHandler(BaseHTTPRequestHandler):
             "ok": True,
             "logged_in": logged,
             "login": login,
-            "llm_configured": bool(settings.llm.api_key),
+            "llm_configured": bool(settings.llm.enabled and settings.llm.api_key),
             "data_exists": scores.is_file(),
         })
 

@@ -91,8 +91,8 @@ def summarize_repo(repo: Repository, score: PotentialScore) -> str:
     """
     fallback = score.explanation
 
-    if not settings.llm.api_key:
-        logger.debug("LLM_API_KEY 未配置，跳过 LLM 摘要")
+    if not settings.llm.enabled or not settings.llm.api_key:
+        logger.debug("LLM 未启用（LLM_DISABLED=1 或未配置 Key），跳过 LLM 摘要")
         return fallback
 
     base_url = settings.llm.base_url or _infer_base_url(settings.llm.model)
@@ -143,7 +143,7 @@ def summarize_repo_personal(repo: Repository, score: PotentialScore, profile_tex
     """
     fallback = score.explanation
 
-    if not settings.llm.api_key:
+    if not settings.llm.enabled or not settings.llm.api_key:
         return fallback
 
     base_url = settings.llm.base_url or _infer_base_url(settings.llm.model)
@@ -202,7 +202,7 @@ def summarize_repo_simple(repo: Repository) -> str:
     与 summarize_repo 的区别：不依赖 PotentialScore（无五维数据），失败返回空串
     （调用方决定是否写缓存），保证周报热榜全池都有 AI 解读。
     """
-    if not settings.llm.api_key:
+    if not settings.llm.enabled or not settings.llm.api_key:
         return ""
     base_url = settings.llm.base_url or _infer_base_url(settings.llm.model)
     try:
@@ -277,9 +277,9 @@ def summarize_themes(items: list[dict[str, Any]]) -> list[dict[str, Any]]:
 
     Returns:
         [{"tag", "title", "summary", "repos": [...], "total_delta"}]；
-        无 key / 失败 / 返回不合法时为空列表（调用方降级为话题聚合）。
+        无 key / 未启用 / 失败 / 返回不合法时为空列表（调用方降级为话题聚合）。
     """
-    if not settings.llm.api_key:
+    if not settings.llm.enabled or not settings.llm.api_key:
         return []
     base_url = settings.llm.base_url or _infer_base_url(settings.llm.model)
     try:

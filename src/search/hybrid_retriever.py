@@ -386,8 +386,8 @@ class HybridRetriever:
             return np.asarray(model.encode(text), dtype=np.float32)
         except Exception as e:
             logger.debug("本地嵌入不可用（%s），尝试 API 嵌入", e)
-        # LLM API 嵌入（可选）
-        if settings.llm.api_key:
+        # LLM API 嵌入（可选，LLM_DISABLED=1 时跳过）
+        if settings.llm.enabled and settings.llm.api_key:
             try:
                 from openai import OpenAI
 

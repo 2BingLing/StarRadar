@@ -34,8 +34,8 @@ jobs:
         run: python src/main.py
         env:
           GITHUB_TOKEN: ${{ secrets.STARRADAR_TOKEN }}
-          LLM_API_KEY: ${{ secrets.LLM_API_KEY }}
-          LLM_MODEL: ${{ secrets.LLM_MODEL }}
+          # LLM 已停用（零花费）。恢复：删除下一行并配置 LLM_API_KEY / LLM_MODEL secrets。
+          LLM_DISABLED: "1"
 
       - name: Upload Pages artifact
         uses: actions/upload-pages-artifact@v3

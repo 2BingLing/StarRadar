@@ -36,6 +36,9 @@ class LLMConfig:
     model: str = field(default_factory=lambda: os.getenv("LLM_MODEL", "gpt-4o-mini"))
     base_url: str | None = field(default_factory=lambda: os.getenv("LLM_BASE_URL"))
     max_tokens_per_summary: int = 300
+    # LLM_DISABLED=1 时公版管道跳过所有 LLM 调用（解读/主题归纳/查询扩展），
+    # 自动降级规则文本——零花费。个人版管道载入用户自填 Key 时会被重新启用。
+    enabled: bool = field(default_factory=lambda: os.getenv("LLM_DISABLED", "0") != "1")
 
 
 # 内置默认 OAuth App Client ID（公开值，非 Secret——设备流只需 client_id，克隆者零配置）。

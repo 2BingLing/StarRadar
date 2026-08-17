@@ -79,6 +79,8 @@ def _load_llm_config() -> None:
         return
     if cfg.get("key"):
         settings.llm.api_key = cfg["key"]
+        # 个人版用访问者自填 Key（访问者自费），不受作者 LLM_DISABLED 开关影响
+        settings.llm.enabled = True
         print(f"  → LLM：已载入浏览器上传的 Key（个人管道使用）")
     if cfg.get("base_url"):
         settings.llm.base_url = cfg["base_url"]

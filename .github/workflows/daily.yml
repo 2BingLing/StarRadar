@@ -20,9 +20,10 @@ jobs:
     timeout-minutes: 30
     env:
       GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
-      LLM_API_KEY: ${{ secrets.LLM_API_KEY }}
-      LLM_BASE_URL: ${{ secrets.LLM_BASE_URL }}
-      LLM_MODEL: ${{ secrets.LLM_MODEL }}
+      # LLM 已停用（零花费：解读/主题归纳自动降级为规则文本，榜单数据不受影响）。
+      # 想恢复 AI 解读：删除下一行，并在仓库 Settings → Secrets and variables 配好
+      # LLM_API_KEY（必需）、LLM_BASE_URL、LLM_MODEL。
+      LLM_DISABLED: "1"
     steps:
       - uses: actions/checkout@v4
         with:

@@ -20,6 +20,9 @@ jobs:
     timeout-minutes: 20
     env:
       GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+      # LLM 已停用（零花费，周报主题叙事降级为话题聚合）。
+      # 恢复 AI 主题叙事：删除下一行并配置 LLM_API_KEY / LLM_BASE_URL / LLM_MODEL secrets。
+      LLM_DISABLED: "1"
     steps:
       - uses: actions/checkout@v4
         with:
