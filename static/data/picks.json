@@ -1,496 +1,691 @@
 [
   {
     "repo": {
-      "owner": "pocket-stack",
-      "name": "pocketjs",
-      "full_name": "pocket-stack/pocketjs",
-      "description": "Compact JavaScript runtime family for building user interfaces, games, 3D experiences, and AI-native applications across radically different devices.",
-      "stars": 994,
-      "forks": 61,
-      "open_issues": 46,
-      "created_at": "2026-07-03T07:28:28+00:00",
-      "pushed_at": "2026-08-19T05:41:49+00:00",
-      "updated_at": "2026-08-19T06:24:57+00:00",
+      "owner": "notatestuser",
+      "name": "ds4-control",
+      "full_name": "notatestuser/ds4-control",
+      "description": "macOS menubar app for fast local DeepSeek V4 Pro/Flash, with 1M context.",
+      "stars": 998,
+      "forks": 36,
+      "open_issues": 10,
+      "created_at": "2026-05-29T15:41:13+00:00",
+      "pushed_at": "2026-08-16T14:27:43+00:00",
+      "updated_at": "2026-08-20T06:04:46+00:00",
       "topics": [
-        "embedded-ui",
-        "flexbox",
-        "frontend",
-        "jsx",
-        "native-ui",
-        "psp",
-        "quickjs",
-        "rust",
-        "solidjs",
-        "tailwindcss",
-        "vue",
-        "vue-vapor",
-        "webassembly"
+        "deepseek",
+        "deepseek-v4",
+        "deepseek-v4-flash",
+        "deepseek-v4-pro",
+        "ds4",
+        "dwarfstar",
+        "local-llm",
+        "macos"
       ],
-      "language": "TypeScript",
+      "language": "Swift",
       "license": "MIT",
-      "homepage": "https://pocketjs.dev",
-      "html_url": "https://github.com/pocket-stack/pocketjs",
+      "homepage": "https://github.com/antirez/ds4",
+      "html_url": "https://github.com/notatestuser/ds4-control",
       "default_branch": "main",
       "archived": false,
       "search_score": 1.0,
-      "stars_7d_ago": 960,
+      "stars_7d_ago": 736,
       "star_series": [
         {
-          "d": "07-21",
-          "s": 943
-        },
-        {
           "d": "07-22",
-          "s": 943
+          "s": 736
         },
         {
           "d": "07-23",
-          "s": 943
+          "s": 736
         },
         {
           "d": "07-24",
-          "s": 943
+          "s": 736
         },
         {
           "d": "07-25",
-          "s": 943
+          "s": 736
         },
         {
           "d": "07-26",
-          "s": 943
+          "s": 736
         },
         {
           "d": "07-27",
-          "s": 943
+          "s": 736
         },
         {
           "d": "07-28",
-          "s": 943
+          "s": 736
         },
         {
           "d": "07-29",
-          "s": 943
+          "s": 736
         },
         {
           "d": "07-30",
-          "s": 943
+          "s": 736
         },
         {
           "d": "07-31",
-          "s": 943
+          "s": 736
         },
         {
           "d": "08-01",
-          "s": 943
+          "s": 736
         },
         {
           "d": "08-02",
-          "s": 943
+          "s": 736
         },
         {
           "d": "08-03",
-          "s": 943
+          "s": 736
         },
         {
           "d": "08-04",
-          "s": 943
+          "s": 736
         },
         {
           "d": "08-05",
-          "s": 943
+          "s": 736
         },
         {
           "d": "08-06",
-          "s": 943
+          "s": 736
         },
         {
           "d": "08-07",
-          "s": 943
+          "s": 736
         },
         {
           "d": "08-08",
-          "s": 943
+          "s": 736
         },
         {
           "d": "08-09",
-          "s": 943
+          "s": 736
         },
         {
           "d": "08-10",
-          "s": 945
+          "s": 736
         },
         {
           "d": "08-11",
-          "s": 947
+          "s": 736
         },
         {
           "d": "08-12",
-          "s": 951
+          "s": 736
         },
         {
           "d": "08-13",
-          "s": 960
+          "s": 736
         },
         {
           "d": "08-14",
-          "s": 963
+          "s": 736
         },
         {
           "d": "08-15",
-          "s": 973
+          "s": 738
         },
         {
           "d": "08-16",
-          "s": 976
+          "s": 840
         },
         {
           "d": "08-17",
-          "s": 983
+          "s": 905
         },
         {
           "d": "08-18",
-          "s": 987
+          "s": 958
         },
         {
           "d": "08-19",
-          "s": 994
+          "s": 995
+        },
+        {
+          "d": "08-20",
+          "s": 998
         }
       ]
     },
     "score": {
-      "score": 83.04,
+      "score": 100.0,
       "breakdown": {
-        "vel": 52,
-        "acc": 73,
+        "vel": 100,
+        "acc": 99,
         "health": 69,
-        "fresh": 87,
-        "signal": 100
-      },
-      "stage": "early",
-      "stage_multiplier": 1.2,
-      "confidence": 1.0,
-      "base_score": 69.2,
-      "explanation": "pocketjs 是 TypeScript 开源项目，主打「Compact JavaScript runtime family for building user interfaces, games, 3D experiences, and AI-native applications across radically different devices.」；处于增长早期，本周涨速 4.9 star/天，涨速在加快；项目元数据完整、开发活跃。"
-    }
-  },
-  {
-    "repo": {
-      "owner": "denoland",
-      "name": "clawpatrol",
-      "full_name": "denoland/clawpatrol",
-      "description": "Security firewall for agents",
-      "stars": 1000,
-      "forks": 48,
-      "open_issues": 101,
-      "created_at": "2026-04-28T10:05:23+00:00",
-      "pushed_at": "2026-08-19T03:28:21+00:00",
-      "updated_at": "2026-08-19T00:33:26+00:00",
-      "topics": [],
-      "language": "Go",
-      "license": "MIT",
-      "homepage": "https://clawpatrol.dev",
-      "html_url": "https://github.com/denoland/clawpatrol",
-      "default_branch": "main",
-      "archived": false,
-      "search_score": 1.0,
-      "stars_7d_ago": 976,
-      "star_series": [
-        {
-          "d": "07-21",
-          "s": 952
-        },
-        {
-          "d": "07-22",
-          "s": 952
-        },
-        {
-          "d": "07-23",
-          "s": 952
-        },
-        {
-          "d": "07-24",
-          "s": 952
-        },
-        {
-          "d": "07-25",
-          "s": 952
-        },
-        {
-          "d": "07-26",
-          "s": 952
-        },
-        {
-          "d": "07-27",
-          "s": 954
-        },
-        {
-          "d": "07-28",
-          "s": 956
-        },
-        {
-          "d": "07-29",
-          "s": 957
-        },
-        {
-          "d": "07-30",
-          "s": 960
-        },
-        {
-          "d": "07-31",
-          "s": 960
-        },
-        {
-          "d": "08-01",
-          "s": 961
-        },
-        {
-          "d": "08-02",
-          "s": 962
-        },
-        {
-          "d": "08-03",
-          "s": 963
-        },
-        {
-          "d": "08-04",
-          "s": 965
-        },
-        {
-          "d": "08-05",
-          "s": 968
-        },
-        {
-          "d": "08-06",
-          "s": 968
-        },
-        {
-          "d": "08-07",
-          "s": 969
-        },
-        {
-          "d": "08-08",
-          "s": 970
-        },
-        {
-          "d": "08-09",
-          "s": 970
-        },
-        {
-          "d": "08-10",
-          "s": 971
-        },
-        {
-          "d": "08-11",
-          "s": 974
-        },
-        {
-          "d": "08-12",
-          "s": 975
-        },
-        {
-          "d": "08-13",
-          "s": 976
-        },
-        {
-          "d": "08-14",
-          "s": 977
-        },
-        {
-          "d": "08-15",
-          "s": 981
-        },
-        {
-          "d": "08-16",
-          "s": 982
-        },
-        {
-          "d": "08-17",
-          "s": 989
-        },
-        {
-          "d": "08-18",
-          "s": 999
-        },
-        {
-          "d": "08-19",
-          "s": 1000
-        }
-      ]
-    },
-    "score": {
-      "score": 73.52,
-      "breakdown": {
-        "vel": 44,
-        "acc": 88,
-        "health": 49,
-        "fresh": 69,
+        "fresh": 78,
         "signal": 85
       },
       "stage": "early",
       "stage_multiplier": 1.2,
       "confidence": 1.0,
-      "base_score": 61.26,
-      "explanation": "clawpatrol 是 Go 开源项目，主打「Security firewall for agents」；处于增长早期，本周涨速 3.4 star/天，涨速在加快；项目元数据完整。"
+      "base_score": 87.75,
+      "explanation": "ds4-control 是 Swift 开源项目，主打「macOS menubar app for fast local DeepSeek V4 Pro/Flash, with 1M context.」；处于增长早期，本周涨速 37 star/天，涨速在加快；项目元数据完整、开发活跃。"
     }
   },
   {
     "repo": {
-      "owner": "jia070310",
-      "name": "4K-IPTV-M3U",
-      "full_name": "jia070310/4K-IPTV-M3U",
-      "description": "实时更新全国地区4K iptv直播源 m3u m3u8",
-      "stars": 200,
-      "forks": 61,
-      "open_issues": 4,
-      "created_at": "2026-04-19T12:48:32+00:00",
-      "pushed_at": "2026-08-19T01:10:33+00:00",
-      "updated_at": "2026-08-19T01:10:47+00:00",
-      "topics": [],
-      "language": "Python",
-      "license": null,
-      "homepage": null,
-      "html_url": "https://github.com/jia070310/4K-IPTV-M3U",
+      "owner": "Nasiko-Labs",
+      "name": "nasiko",
+      "full_name": "Nasiko-Labs/nasiko",
+      "description": "Developer Control Plane for your AI Agents",
+      "stars": 5000,
+      "forks": 1058,
+      "open_issues": 90,
+      "created_at": "2026-02-12T10:45:29+00:00",
+      "pushed_at": "2026-08-19T17:56:35+00:00",
+      "updated_at": "2026-08-20T06:40:51+00:00",
+      "topics": [
+        "agent-security",
+        "ai",
+        "ai-agents",
+        "cli",
+        "hacktoberfest",
+        "llms",
+        "mcp-gateway",
+        "multi-agent",
+        "rust",
+        "tokenomics",
+        "tokenops"
+      ],
+      "language": "Rust",
+      "license": "NOASSERTION",
+      "homepage": "https://www.nasiko.com",
+      "html_url": "https://github.com/Nasiko-Labs/nasiko",
       "default_branch": "main",
       "archived": false,
       "search_score": 1.0,
-      "stars_7d_ago": 185,
+      "stars_7d_ago": 4937,
       "star_series": [
         {
-          "d": "07-21",
-          "s": 159
-        },
-        {
           "d": "07-22",
-          "s": 159
+          "s": 4937
         },
         {
           "d": "07-23",
-          "s": 159
+          "s": 4937
         },
         {
           "d": "07-24",
-          "s": 159
+          "s": 4937
         },
         {
           "d": "07-25",
-          "s": 159
+          "s": 4937
         },
         {
           "d": "07-26",
-          "s": 159
+          "s": 4937
         },
         {
           "d": "07-27",
-          "s": 162
+          "s": 4937
         },
         {
           "d": "07-28",
-          "s": 164
+          "s": 4937
         },
         {
           "d": "07-29",
-          "s": 165
+          "s": 4937
         },
         {
           "d": "07-30",
-          "s": 167
+          "s": 4937
         },
         {
           "d": "07-31",
-          "s": 169
+          "s": 4937
         },
         {
           "d": "08-01",
-          "s": 171
+          "s": 4937
         },
         {
           "d": "08-02",
-          "s": 173
+          "s": 4937
         },
         {
           "d": "08-03",
-          "s": 175
+          "s": 4937
         },
         {
           "d": "08-04",
-          "s": 176
+          "s": 4937
         },
         {
           "d": "08-05",
-          "s": 177
+          "s": 4937
         },
         {
           "d": "08-06",
-          "s": 178
+          "s": 4937
         },
         {
           "d": "08-07",
-          "s": 180
+          "s": 4937
         },
         {
           "d": "08-08",
-          "s": 181
+          "s": 4937
         },
         {
           "d": "08-09",
-          "s": 181
+          "s": 4937
         },
         {
           "d": "08-10",
-          "s": 181
+          "s": 4937
         },
         {
           "d": "08-11",
-          "s": 184
+          "s": 4937
         },
         {
           "d": "08-12",
-          "s": 185
+          "s": 4937
         },
         {
           "d": "08-13",
-          "s": 185
+          "s": 4937
         },
         {
           "d": "08-14",
-          "s": 188
+          "s": 4937
         },
         {
           "d": "08-15",
-          "s": 188
+          "s": 4937
         },
         {
           "d": "08-16",
-          "s": 190
+          "s": 4937
         },
         {
           "d": "08-17",
-          "s": 197
+          "s": 4937
         },
         {
           "d": "08-18",
-          "s": 200
+          "s": 4937
         },
         {
           "d": "08-19",
+          "s": 4957
+        },
+        {
+          "d": "08-20",
+          "s": 5000
+        }
+      ]
+    },
+    "score": {
+      "score": 85.07,
+      "breakdown": {
+        "vel": 67,
+        "acc": 99,
+        "health": 96,
+        "fresh": 48,
+        "signal": 85
+      },
+      "stage": "mid_early",
+      "stage_multiplier": 1.1,
+      "confidence": 1.0,
+      "base_score": 77.33,
+      "explanation": "nasiko 是 Rust 开源项目，主打「Developer Control Plane for your AI Agents」；处于中早期增长，本周涨速 9.0 star/天，涨速在加快；社区健康（fork/star 比 21.2%，90 个 open issue）、项目元数据完整。"
+    }
+  },
+  {
+    "repo": {
+      "owner": "AnnaSuSu",
+      "name": "TechSpar",
+      "full_name": "AnnaSuSu/TechSpar",
+      "description": "把专项训练、简历面试、JD 备面、实时 Copilot 与录音复盘，串成一个持续进化的技术面试闭环。在线体验地址：https://techspar.top",
+      "stars": 994,
+      "forks": 121,
+      "open_issues": 1,
+      "created_at": "2026-03-16T20:32:18+00:00",
+      "pushed_at": "2026-08-20T04:52:06+00:00",
+      "updated_at": "2026-08-20T04:52:25+00:00",
+      "topics": [
+        "ai-interview",
+        "interview-coaching",
+        "interview-preparation",
+        "interview-training",
+        "long-term-memory",
+        "mem0",
+        "mock-interviews",
+        "technical-interview"
+      ],
+      "language": "TypeScript",
+      "license": "NOASSERTION",
+      "homepage": "https://ansusu.gitbook.io/techspar",
+      "html_url": "https://github.com/AnnaSuSu/TechSpar",
+      "default_branch": "main",
+      "archived": false,
+      "search_score": 1.0,
+      "stars_7d_ago": 956,
+      "star_series": [
+        {
+          "d": "07-22",
+          "s": 848
+        },
+        {
+          "d": "07-23",
+          "s": 848
+        },
+        {
+          "d": "07-24",
+          "s": 848
+        },
+        {
+          "d": "07-25",
+          "s": 848
+        },
+        {
+          "d": "07-26",
+          "s": 848
+        },
+        {
+          "d": "07-27",
+          "s": 848
+        },
+        {
+          "d": "07-28",
+          "s": 848
+        },
+        {
+          "d": "07-29",
+          "s": 848
+        },
+        {
+          "d": "07-30",
+          "s": 848
+        },
+        {
+          "d": "07-31",
+          "s": 848
+        },
+        {
+          "d": "08-01",
+          "s": 848
+        },
+        {
+          "d": "08-02",
+          "s": 848
+        },
+        {
+          "d": "08-03",
+          "s": 848
+        },
+        {
+          "d": "08-04",
+          "s": 848
+        },
+        {
+          "d": "08-05",
+          "s": 848
+        },
+        {
+          "d": "08-06",
+          "s": 848
+        },
+        {
+          "d": "08-07",
+          "s": 848
+        },
+        {
+          "d": "08-08",
+          "s": 848
+        },
+        {
+          "d": "08-09",
+          "s": 848
+        },
+        {
+          "d": "08-10",
+          "s": 848
+        },
+        {
+          "d": "08-11",
+          "s": 848
+        },
+        {
+          "d": "08-12",
+          "s": 887
+        },
+        {
+          "d": "08-13",
+          "s": 949
+        },
+        {
+          "d": "08-14",
+          "s": 956
+        },
+        {
+          "d": "08-15",
+          "s": 962
+        },
+        {
+          "d": "08-16",
+          "s": 971
+        },
+        {
+          "d": "08-17",
+          "s": 973
+        },
+        {
+          "d": "08-18",
+          "s": 976
+        },
+        {
+          "d": "08-19",
+          "s": 984
+        },
+        {
+          "d": "08-20",
+          "s": 994
+        }
+      ]
+    },
+    "score": {
+      "score": 70.24,
+      "breakdown": {
+        "vel": 54,
+        "acc": 34,
+        "health": 100,
+        "fresh": 57,
+        "signal": 100
+      },
+      "stage": "early",
+      "stage_multiplier": 1.2,
+      "confidence": 1.0,
+      "base_score": 58.54,
+      "explanation": "TechSpar 是 TypeScript 开源项目，主打「把专项训练、简历面试、JD 备面、实时 Copilot 与录音复盘，串成一个持续进化的技术面试闭环。在线体验地址：https://techspar.top」；处于增长早期，本周涨速 5.4 star/天；社区健康（fork/star 比 12.2%，1 个 open issue）、项目元数据完整。"
+    }
+  },
+  {
+    "repo": {
+      "owner": "bagidea",
+      "name": "bagidea-office",
+      "full_name": "bagidea/bagidea-office",
+      "description": "A living AI-agent office on your desktop wallpaper — Claude Code agents that walk, work, delegate, learn & hold meetings. Per-agent swappable models (Claude/GLM/DeepSeek/Qwen/Kimi/OpenAI/Gemini/Groq/Ollama…), workflows, plugins, voice & Telegram/Discord/LINE. Open source.",
+      "stars": 200,
+      "forks": 62,
+      "open_issues": 2,
+      "created_at": "2026-06-03T21:21:42+00:00",
+      "pushed_at": "2026-08-19T12:21:19+00:00",
+      "updated_at": "2026-08-20T05:59:45+00:00",
+      "topics": [
+        "agent-orchestration",
+        "ai",
+        "ai-agents",
+        "anthropic",
+        "automation",
+        "autonomous-agents",
+        "claude",
+        "claude-code",
+        "desktop-wallpaper",
+        "gemini",
+        "godot",
+        "llm",
+        "llm-agents",
+        "local-llm",
+        "mcp",
+        "multi-agent",
+        "ollama",
+        "openai"
+      ],
+      "language": "JavaScript",
+      "license": "MIT",
+      "homepage": "https://bagidea.github.io/bagidea-office/",
+      "html_url": "https://github.com/bagidea/bagidea-office",
+      "default_branch": "main",
+      "archived": false,
+      "search_score": 1.0,
+      "stars_7d_ago": 194,
+      "star_series": [
+        {
+          "d": "07-22",
+          "s": 170
+        },
+        {
+          "d": "07-23",
+          "s": 171
+        },
+        {
+          "d": "07-24",
+          "s": 174
+        },
+        {
+          "d": "07-25",
+          "s": 174
+        },
+        {
+          "d": "07-26",
+          "s": 174
+        },
+        {
+          "d": "07-27",
+          "s": 175
+        },
+        {
+          "d": "07-28",
+          "s": 178
+        },
+        {
+          "d": "07-29",
+          "s": 179
+        },
+        {
+          "d": "07-30",
+          "s": 180
+        },
+        {
+          "d": "07-31",
+          "s": 180
+        },
+        {
+          "d": "08-01",
+          "s": 181
+        },
+        {
+          "d": "08-02",
+          "s": 181
+        },
+        {
+          "d": "08-03",
+          "s": 183
+        },
+        {
+          "d": "08-04",
+          "s": 183
+        },
+        {
+          "d": "08-05",
+          "s": 184
+        },
+        {
+          "d": "08-06",
+          "s": 185
+        },
+        {
+          "d": "08-07",
+          "s": 186
+        },
+        {
+          "d": "08-08",
+          "s": 187
+        },
+        {
+          "d": "08-09",
+          "s": 188
+        },
+        {
+          "d": "08-10",
+          "s": 188
+        },
+        {
+          "d": "08-11",
+          "s": 189
+        },
+        {
+          "d": "08-12",
+          "s": 191
+        },
+        {
+          "d": "08-13",
+          "s": 193
+        },
+        {
+          "d": "08-14",
+          "s": 194
+        },
+        {
+          "d": "08-15",
+          "s": 198
+        },
+        {
+          "d": "08-16",
+          "s": 198
+        },
+        {
+          "d": "08-17",
+          "s": 199
+        },
+        {
+          "d": "08-18",
+          "s": 199
+        },
+        {
+          "d": "08-19",
+          "s": 199
+        },
+        {
+          "d": "08-20",
           "s": 200
         }
       ]
     },
     "score": {
-      "score": 68.34,
+      "score": 56.46,
       "breakdown": {
-        "vel": 34,
-        "acc": 76,
-        "health": 98,
-        "fresh": 67,
-        "signal": 35
+        "vel": 18,
+        "acc": 44,
+        "health": 99,
+        "fresh": 79,
+        "signal": 100
       },
       "stage": "early",
       "stage_multiplier": 1.2,
       "confidence": 1.0,
-      "base_score": 56.95,
-      "explanation": "4K-IPTV-M3U 是 Python 开源项目，主打「实时更新全国地区4K iptv直播源 m3u m3u8」；处于增长早期，涨速在加快；社区健康（fork/star 比 30.5%，4 个 open issue）。"
+      "base_score": 47.05,
+      "explanation": "bagidea-office 是 JavaScript 开源项目，主打「A living AI-agent office on your desktop wallpaper — Claude Code agents that walk, work, delegate, learn & hold meetings. Per-agent swappable models (Claude/GLM/DeepSeek/Qwen/Kimi/OpenAI/Gemini/Groq/Ollama…), workflows, plugins, voice & Telegram/Discord/LINE. Open source.」；处于增长早期；社区健康（fork/star 比 31.0%，2 个 open issue）、项目元数据完整、开发活跃。"
     }
   },
   {
@@ -500,7 +695,7 @@
       "full_name": "nottelabs/reverse-api-engineer",
       "description": "The agent that turns websites into APIs!",
       "stars": 996,
-      "forks": 88,
+      "forks": 89,
       "open_issues": 12,
       "created_at": "2025-12-23T14:04:45+00:00",
       "pushed_at": "2026-08-18T16:16:05+00:00",
@@ -523,12 +718,8 @@
       "default_branch": "main",
       "archived": false,
       "search_score": 1.0,
-      "stars_7d_ago": 961,
+      "stars_7d_ago": 981,
       "star_series": [
-        {
-          "d": "07-21",
-          "s": 885
-        },
         {
           "d": "07-22",
           "s": 886
@@ -644,14 +835,18 @@
         {
           "d": "08-19",
           "s": 996
+        },
+        {
+          "d": "08-20",
+          "s": 996
         }
       ]
     },
     "score": {
-      "score": 67.41,
+      "score": 53.85,
       "breakdown": {
-        "vel": 53,
-        "acc": 45,
+        "vel": 33,
+        "acc": 32,
         "health": 87,
         "fresh": 35,
         "signal": 100
@@ -659,188 +854,8 @@
       "stage": "early",
       "stage_multiplier": 1.2,
       "confidence": 1.0,
-      "base_score": 56.17,
-      "explanation": "reverse-api-engineer 是 Python 开源项目，主打「The agent that turns websites into APIs!」；处于增长早期，本周涨速 5.0 star/天；社区健康（fork/star 比 8.8%，12 个 open issue）、项目元数据完整。"
-    }
-  },
-  {
-    "repo": {
-      "owner": "TraceApps",
-      "name": "nutritrace",
-      "full_name": "TraceApps/nutritrace",
-      "description": "Self-hosted personal nutrition tracker — single Docker container, AGPL-3.0, no telemetry, no cloud sync.",
-      "stars": 200,
-      "forks": 15,
-      "open_issues": 9,
-      "created_at": "2026-04-09T01:06:19+00:00",
-      "pushed_at": "2026-08-17T18:35:23+00:00",
-      "updated_at": "2026-08-19T02:28:29+00:00",
-      "topics": [
-        "android",
-        "calorie-counter",
-        "capacitor",
-        "docker",
-        "fitbit",
-        "food-tracker",
-        "garmin",
-        "health",
-        "health-connect",
-        "nutrition",
-        "nutrition-tracker",
-        "oidc",
-        "pwa",
-        "self-hosted",
-        "selfhosted",
-        "sso",
-        "svelte",
-        "wellness",
-        "withings"
-      ],
-      "language": "Svelte",
-      "license": "AGPL-3.0",
-      "homepage": null,
-      "html_url": "https://github.com/TraceApps/nutritrace",
-      "default_branch": "main",
-      "archived": false,
-      "search_score": 1.0,
-      "stars_7d_ago": 187,
-      "star_series": [
-        {
-          "d": "07-21",
-          "s": 186
-        },
-        {
-          "d": "07-22",
-          "s": 186
-        },
-        {
-          "d": "07-23",
-          "s": 186
-        },
-        {
-          "d": "07-24",
-          "s": 186
-        },
-        {
-          "d": "07-25",
-          "s": 186
-        },
-        {
-          "d": "07-26",
-          "s": 186
-        },
-        {
-          "d": "07-27",
-          "s": 186
-        },
-        {
-          "d": "07-28",
-          "s": 186
-        },
-        {
-          "d": "07-29",
-          "s": 186
-        },
-        {
-          "d": "07-30",
-          "s": 186
-        },
-        {
-          "d": "07-31",
-          "s": 186
-        },
-        {
-          "d": "08-01",
-          "s": 186
-        },
-        {
-          "d": "08-02",
-          "s": 186
-        },
-        {
-          "d": "08-03",
-          "s": 186
-        },
-        {
-          "d": "08-04",
-          "s": 186
-        },
-        {
-          "d": "08-05",
-          "s": 186
-        },
-        {
-          "d": "08-06",
-          "s": 186
-        },
-        {
-          "d": "08-07",
-          "s": 186
-        },
-        {
-          "d": "08-08",
-          "s": 186
-        },
-        {
-          "d": "08-09",
-          "s": 186
-        },
-        {
-          "d": "08-10",
-          "s": 186
-        },
-        {
-          "d": "08-11",
-          "s": 186
-        },
-        {
-          "d": "08-12",
-          "s": 186
-        },
-        {
-          "d": "08-13",
-          "s": 187
-        },
-        {
-          "d": "08-14",
-          "s": 188
-        },
-        {
-          "d": "08-15",
-          "s": 189
-        },
-        {
-          "d": "08-16",
-          "s": 189
-        },
-        {
-          "d": "08-17",
-          "s": 190
-        },
-        {
-          "d": "08-18",
-          "s": 198
-        },
-        {
-          "d": "08-19",
-          "s": 200
-        }
-      ]
-    },
-    "score": {
-      "score": 62.71,
-      "breakdown": {
-        "vel": 31,
-        "acc": 85,
-        "health": 71,
-        "fresh": 64,
-        "signal": 70
-      },
-      "stage": "mid_early",
-      "stage_multiplier": 1.1,
-      "confidence": 1.0,
-      "base_score": 57.01,
-      "explanation": "nutritrace 是 Svelte 开源项目，主打「Self-hosted personal nutrition tracker — single Docker container, AGPL-3.0, no telemetry, no cloud sync.」；处于中早期增长，涨速在加快；社区健康（fork/star 比 7.5%，9 个 open issue）。"
+      "base_score": 44.88,
+      "explanation": "reverse-api-engineer 是 Python 开源项目，主打「The agent that turns websites into APIs!」；处于增长早期；社区健康（fork/star 比 8.9%，12 个 open issue）、项目元数据完整。"
     }
   }
 ]
