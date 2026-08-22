@@ -1,618 +1,465 @@
 [
   {
     "repo": {
-      "owner": "AnnaSuSu",
-      "name": "TechSpar",
-      "full_name": "AnnaSuSu/TechSpar",
-      "description": "把专项训练、简历面试、JD 备面、实时 Copilot 与录音复盘，串成一个持续进化的技术面试闭环。在线体验地址：https://techspar.top",
-      "stars": 998,
-      "forks": 122,
-      "open_issues": 0,
-      "created_at": "2026-03-16T20:32:18+00:00",
-      "pushed_at": "2026-08-21T01:49:54+00:00",
-      "updated_at": "2026-08-21T01:50:27+00:00",
+      "owner": "NoizAI",
+      "name": "HelixWorld",
+      "full_name": "NoizAI/HelixWorld",
+      "description": "🪐 HelixWorld: real-time interactive audio-visual world model.",
+      "stars": 200,
+      "forks": 19,
+      "open_issues": 1,
+      "created_at": "2026-08-03T03:34:11+00:00",
+      "pushed_at": "2026-08-17T08:35:56+00:00",
+      "updated_at": "2026-08-22T05:33:29+00:00",
       "topics": [
-        "ai-interview",
-        "interview-coaching",
-        "interview-preparation",
-        "interview-training",
-        "long-term-memory",
-        "mem0",
-        "mock-interviews",
-        "technical-interview"
+        "audio-visual",
+        "generative-ai",
+        "realtime",
+        "spatial-audio",
+        "world-model"
       ],
-      "language": "TypeScript",
-      "license": "NOASSERTION",
-      "homepage": "https://ansusu.gitbook.io/techspar",
-      "html_url": "https://github.com/AnnaSuSu/TechSpar",
+      "language": "Python",
+      "license": "Apache-2.0",
+      "homepage": "helixworld.io",
+      "html_url": "https://github.com/NoizAI/HelixWorld",
       "default_branch": "main",
       "archived": false,
       "search_score": 1.0,
-      "stars_7d_ago": 962,
+      "stars_7d_ago": 0,
       "star_series": [
         {
-          "d": "07-23",
-          "s": 860
-        },
-        {
           "d": "07-24",
-          "s": 860
+          "s": 0
         },
         {
           "d": "07-25",
-          "s": 860
+          "s": 0
         },
         {
           "d": "07-26",
-          "s": 860
+          "s": 0
         },
         {
           "d": "07-27",
-          "s": 860
+          "s": 0
         },
         {
           "d": "07-28",
-          "s": 860
+          "s": 0
         },
         {
           "d": "07-29",
-          "s": 860
+          "s": 0
         },
         {
           "d": "07-30",
-          "s": 860
+          "s": 0
         },
         {
           "d": "07-31",
-          "s": 860
+          "s": 0
         },
         {
           "d": "08-01",
-          "s": 860
+          "s": 0
         },
         {
           "d": "08-02",
-          "s": 860
+          "s": 0
         },
         {
           "d": "08-03",
-          "s": 860
+          "s": 0
         },
         {
           "d": "08-04",
-          "s": 860
+          "s": 0
         },
         {
           "d": "08-05",
-          "s": 860
+          "s": 0
         },
         {
           "d": "08-06",
-          "s": 860
+          "s": 0
         },
         {
           "d": "08-07",
-          "s": 860
+          "s": 0
         },
         {
           "d": "08-08",
-          "s": 860
+          "s": 0
         },
         {
           "d": "08-09",
-          "s": 860
+          "s": 0
         },
         {
           "d": "08-10",
-          "s": 860
+          "s": 0
         },
         {
           "d": "08-11",
-          "s": 860
+          "s": 0
         },
         {
           "d": "08-12",
-          "s": 887
+          "s": 0
         },
         {
           "d": "08-13",
-          "s": 949
+          "s": 0
         },
         {
           "d": "08-14",
-          "s": 956
+          "s": 0
         },
         {
           "d": "08-15",
-          "s": 962
+          "s": 0
         },
         {
           "d": "08-16",
-          "s": 971
+          "s": 0
         },
         {
           "d": "08-17",
-          "s": 973
+          "s": 92
         },
         {
           "d": "08-18",
-          "s": 976
+          "s": 139
         },
         {
           "d": "08-19",
-          "s": 984
+          "s": 145
         },
         {
           "d": "08-20",
-          "s": 998
+          "s": 160
         },
         {
           "d": "08-21",
-          "s": 998
+          "s": 199
+        },
+        {
+          "d": "08-22",
+          "s": 200
         }
       ]
     },
     "score": {
-      "score": 70.13,
+      "score": 67.01,
       "breakdown": {
-        "vel": 54,
-        "acc": 34,
-        "health": 100,
-        "fresh": 57,
+        "vel": 100,
+        "acc": 99,
+        "health": 84,
+        "fresh": 95,
         "signal": 100
       },
-      "stage": "early",
-      "stage_multiplier": 1.2,
+      "stage": "saturated",
+      "stage_multiplier": 0.7,
       "confidence": 1.0,
-      "base_score": 58.44,
-      "explanation": "TechSpar 是 TypeScript 开源项目，主打「把专项训练、简历面试、JD 备面、实时 Copilot 与录音复盘，串成一个持续进化的技术面试闭环。在线体验地址：https://techspar.top」；处于增长早期，本周涨速 5.1 star/天；社区健康（fork/star 比 12.2%，0 个 open issue）、项目元数据完整。"
+      "base_score": 95.73,
+      "explanation": "HelixWorld 是 Python 开源项目，主打「🪐 HelixWorld: real-time interactive audio-visual world model.」；增长已饱和，本周涨速 29 star/天，涨速在加快；社区健康（fork/star 比 9.5%，1 个 open issue）、项目元数据完整、开发活跃。"
     }
   },
   {
     "repo": {
-      "owner": "microsoft",
-      "name": "skills-for-fabric",
-      "full_name": "microsoft/skills-for-fabric",
-      "description": "A collection of skills and MCP systems to enable users of CLI, VSCode, Claude to operate over Microsoft Fabric",
-      "stars": 999,
-      "forks": 284,
-      "open_issues": 26,
-      "created_at": "2026-02-17T20:02:53+00:00",
-      "pushed_at": "2026-08-20T13:24:37+00:00",
-      "updated_at": "2026-08-20T23:49:25+00:00",
-      "topics": [],
-      "language": "Python",
-      "license": "MIT",
-      "homepage": null,
-      "html_url": "https://github.com/microsoft/skills-for-fabric",
-      "default_branch": "main",
-      "archived": false,
-      "search_score": 1.0,
-      "stars_7d_ago": 972,
-      "star_series": [
-        {
-          "d": "07-23",
-          "s": 944
-        },
-        {
-          "d": "07-24",
-          "s": 944
-        },
-        {
-          "d": "07-25",
-          "s": 944
-        },
-        {
-          "d": "07-26",
-          "s": 944
-        },
-        {
-          "d": "07-27",
-          "s": 944
-        },
-        {
-          "d": "07-28",
-          "s": 944
-        },
-        {
-          "d": "07-29",
-          "s": 944
-        },
-        {
-          "d": "07-30",
-          "s": 944
-        },
-        {
-          "d": "07-31",
-          "s": 944
-        },
-        {
-          "d": "08-01",
-          "s": 944
-        },
-        {
-          "d": "08-02",
-          "s": 944
-        },
-        {
-          "d": "08-03",
-          "s": 944
-        },
-        {
-          "d": "08-04",
-          "s": 944
-        },
-        {
-          "d": "08-05",
-          "s": 944
-        },
-        {
-          "d": "08-06",
-          "s": 944
-        },
-        {
-          "d": "08-07",
-          "s": 944
-        },
-        {
-          "d": "08-08",
-          "s": 948
-        },
-        {
-          "d": "08-09",
-          "s": 949
-        },
-        {
-          "d": "08-10",
-          "s": 952
-        },
-        {
-          "d": "08-11",
-          "s": 959
-        },
-        {
-          "d": "08-12",
-          "s": 966
-        },
-        {
-          "d": "08-13",
-          "s": 967
-        },
-        {
-          "d": "08-14",
-          "s": 972
-        },
-        {
-          "d": "08-15",
-          "s": 972
-        },
-        {
-          "d": "08-16",
-          "s": 977
-        },
-        {
-          "d": "08-17",
-          "s": 978
-        },
-        {
-          "d": "08-18",
-          "s": 986
-        },
-        {
-          "d": "08-19",
-          "s": 996
-        },
-        {
-          "d": "08-20",
-          "s": 999
-        },
-        {
-          "d": "08-21",
-          "s": 999
-        }
-      ]
-    },
-    "score": {
-      "score": 68.39,
-      "breakdown": {
-        "vel": 47,
-        "acc": 53,
-        "health": 95,
-        "fresh": 50,
-        "signal": 55
-      },
-      "stage": "early",
-      "stage_multiplier": 1.2,
-      "confidence": 1.0,
-      "base_score": 56.99,
-      "explanation": "skills-for-fabric 是 Python 开源项目，主打「A collection of skills and MCP systems to enable users of CLI, VSCode, Claude to operate over Microsoft Fabric」；处于增长早期，本周涨速 3.9 star/天；社区健康（fork/star 比 28.4%，26 个 open issue）。"
-    }
-  },
-  {
-    "repo": {
-      "owner": "liyangpengs",
-      "name": "qq-farm-bot",
-      "full_name": "liyangpengs/qq-farm-bot",
-      "description": null,
-      "stars": 200,
-      "forks": 68,
-      "open_issues": 28,
-      "created_at": "2026-05-09T09:36:59+00:00",
-      "pushed_at": "2026-08-20T23:16:22+00:00",
-      "updated_at": "2026-08-20T23:16:34+00:00",
-      "topics": [],
+      "owner": "pireel",
+      "name": "pireel",
+      "full_name": "pireel/pireel",
+      "description": "The open-source alternative to Capcut、ChatCut. Drivable by any AI agent over MCP.",
+      "stars": 995,
+      "forks": 88,
+      "open_issues": 1,
+      "created_at": "2026-07-20T09:34:24+00:00",
+      "pushed_at": "2026-08-22T05:54:57+00:00",
+      "updated_at": "2026-08-22T05:55:06+00:00",
+      "topics": [
+        "ai-video",
+        "capcut",
+        "captions",
+        "chatcut",
+        "hyperframes",
+        "openchatcut",
+        "talking-head",
+        "video-editor"
+      ],
       "language": "TypeScript",
-      "license": null,
-      "homepage": null,
-      "html_url": "https://github.com/liyangpengs/qq-farm-bot",
-      "default_branch": "master",
-      "archived": false,
-      "search_score": 1.0,
-      "stars_7d_ago": 183,
-      "star_series": [
-        {
-          "d": "07-23",
-          "s": 121
-        },
-        {
-          "d": "07-24",
-          "s": 121
-        },
-        {
-          "d": "07-25",
-          "s": 121
-        },
-        {
-          "d": "07-26",
-          "s": 121
-        },
-        {
-          "d": "07-27",
-          "s": 121
-        },
-        {
-          "d": "07-28",
-          "s": 121
-        },
-        {
-          "d": "07-29",
-          "s": 121
-        },
-        {
-          "d": "07-30",
-          "s": 121
-        },
-        {
-          "d": "07-31",
-          "s": 128
-        },
-        {
-          "d": "08-01",
-          "s": 130
-        },
-        {
-          "d": "08-02",
-          "s": 132
-        },
-        {
-          "d": "08-03",
-          "s": 136
-        },
-        {
-          "d": "08-04",
-          "s": 141
-        },
-        {
-          "d": "08-05",
-          "s": 153
-        },
-        {
-          "d": "08-06",
-          "s": 157
-        },
-        {
-          "d": "08-07",
-          "s": 158
-        },
-        {
-          "d": "08-08",
-          "s": 161
-        },
-        {
-          "d": "08-09",
-          "s": 162
-        },
-        {
-          "d": "08-10",
-          "s": 163
-        },
-        {
-          "d": "08-11",
-          "s": 166
-        },
-        {
-          "d": "08-12",
-          "s": 175
-        },
-        {
-          "d": "08-13",
-          "s": 179
-        },
-        {
-          "d": "08-14",
-          "s": 182
-        },
-        {
-          "d": "08-15",
-          "s": 183
-        },
-        {
-          "d": "08-16",
-          "s": 187
-        },
-        {
-          "d": "08-17",
-          "s": 192
-        },
-        {
-          "d": "08-18",
-          "s": 194
-        },
-        {
-          "d": "08-19",
-          "s": 195
-        },
-        {
-          "d": "08-20",
-          "s": 200
-        },
-        {
-          "d": "08-21",
-          "s": 200
-        }
-      ]
-    },
-    "score": {
-      "score": 54.69,
-      "breakdown": {
-        "vel": 36,
-        "acc": 44,
-        "health": 70,
-        "fresh": 72,
-        "signal": 20
-      },
-      "stage": "early",
-      "stage_multiplier": 1.2,
-      "confidence": 1.0,
-      "base_score": 45.58,
-      "explanation": "qq-farm-bot 是 TypeScript 方向的开源项目；处于增长早期；社区健康（fork/star 比 34.0%，28 个 open issue）、开发活跃。"
-    }
-  },
-  {
-    "repo": {
-      "owner": "170-carry",
-      "name": "codex-tools",
-      "full_name": "170-carry/codex-tools",
-      "description": "代理,快捷切换codex 账号, 监控codex用量的工具,以及对codex进行api反代 , 支持多语言",
-      "stars": 997,
-      "forks": 123,
-      "open_issues": 3,
-      "created_at": "2026-02-27T04:31:27+00:00",
-      "pushed_at": "2026-08-16T16:44:42+00:00",
-      "updated_at": "2026-08-21T03:52:40+00:00",
-      "topics": [],
-      "language": "Rust",
-      "license": "MIT",
-      "homepage": null,
-      "html_url": "https://github.com/170-carry/codex-tools",
+      "license": "AGPL-3.0",
+      "homepage": "https://www.pireel.com",
+      "html_url": "https://github.com/pireel/pireel",
       "default_branch": "main",
       "archived": false,
       "search_score": 1.0,
-      "stars_7d_ago": 979,
+      "stars_7d_ago": 930,
       "star_series": [
         {
-          "d": "07-23",
-          "s": 896
-        },
-        {
           "d": "07-24",
-          "s": 900
+          "s": 751
         },
         {
           "d": "07-25",
-          "s": 901
+          "s": 751
         },
         {
           "d": "07-26",
-          "s": 901
+          "s": 760
         },
         {
           "d": "07-27",
-          "s": 908
+          "s": 784
         },
         {
           "d": "07-28",
+          "s": 799
+        },
+        {
+          "d": "07-29",
+          "s": 814
+        },
+        {
+          "d": "07-30",
+          "s": 840
+        },
+        {
+          "d": "07-31",
+          "s": 853
+        },
+        {
+          "d": "08-01",
+          "s": 863
+        },
+        {
+          "d": "08-02",
+          "s": 877
+        },
+        {
+          "d": "08-03",
+          "s": 882
+        },
+        {
+          "d": "08-04",
+          "s": 888
+        },
+        {
+          "d": "08-05",
+          "s": 893
+        },
+        {
+          "d": "08-06",
+          "s": 902
+        },
+        {
+          "d": "08-07",
+          "s": 909
+        },
+        {
+          "d": "08-08",
+          "s": 912
+        },
+        {
+          "d": "08-09",
           "s": 913
         },
         {
-          "d": "07-29",
-          "s": 918
-        },
-        {
-          "d": "07-30",
-          "s": 921
-        },
-        {
-          "d": "07-31",
-          "s": 923
-        },
-        {
-          "d": "08-01",
-          "s": 924
-        },
-        {
-          "d": "08-02",
-          "s": 927
-        },
-        {
-          "d": "08-03",
-          "s": 933
-        },
-        {
-          "d": "08-04",
-          "s": 939
-        },
-        {
-          "d": "08-05",
-          "s": 948
-        },
-        {
-          "d": "08-06",
-          "s": 954
-        },
-        {
-          "d": "08-07",
-          "s": 960
-        },
-        {
-          "d": "08-08",
-          "s": 965
-        },
-        {
-          "d": "08-09",
-          "s": 967
-        },
-        {
           "d": "08-10",
-          "s": 968
+          "s": 914
         },
         {
           "d": "08-11",
-          "s": 971
+          "s": 920
         },
         {
           "d": "08-12",
-          "s": 974
+          "s": 922
         },
         {
           "d": "08-13",
-          "s": 974
+          "s": 925
         },
         {
           "d": "08-14",
-          "s": 978
+          "s": 925
         },
         {
           "d": "08-15",
-          "s": 979
+          "s": 928
         },
         {
           "d": "08-16",
-          "s": 982
+          "s": 930
         },
         {
           "d": "08-17",
+          "s": 946
+        },
+        {
+          "d": "08-18",
+          "s": 963
+        },
+        {
+          "d": "08-19",
+          "s": 963
+        },
+        {
+          "d": "08-20",
+          "s": 967
+        },
+        {
+          "d": "08-21",
+          "s": 988
+        },
+        {
+          "d": "08-22",
+          "s": 995
+        }
+      ]
+    },
+    "score": {
+      "score": 58.47,
+      "breakdown": {
+        "vel": 69,
+        "acc": 94,
+        "health": 89,
+        "fresh": 91,
+        "signal": 85
+      },
+      "stage": "saturated",
+      "stage_multiplier": 0.7,
+      "confidence": 1.0,
+      "base_score": 83.53,
+      "explanation": "pireel 是 TypeScript 开源项目，主打「The open-source alternative to Capcut、ChatCut. Drivable by any AI agent over MCP.」；增长已饱和，本周涨速 9.3 star/天，涨速在加快；社区健康（fork/star 比 8.8%，1 个 open issue）、项目元数据完整、开发活跃。"
+    }
+  },
+  {
+    "repo": {
+      "owner": "DataDog",
+      "name": "pup",
+      "full_name": "DataDog/pup",
+      "description": "Give your AI agent a Pup — a CLI companion with 200+ commands across 33+ Datadog products.",
+      "stars": 992,
+      "forks": 105,
+      "open_issues": 13,
+      "created_at": "2026-02-03T19:56:25+00:00",
+      "pushed_at": "2026-08-21T13:26:12+00:00",
+      "updated_at": "2026-08-22T06:27:18+00:00",
+      "topics": [
+        "cli",
+        "client",
+        "datadog",
+        "observability"
+      ],
+      "language": "Rust",
+      "license": "Apache-2.0",
+      "homepage": "https://www.datadoghq.com",
+      "html_url": "https://github.com/DataDog/pup",
+      "default_branch": "main",
+      "archived": false,
+      "search_score": 1.0,
+      "stars_7d_ago": 985,
+      "star_series": [
+        {
+          "d": "07-24",
+          "s": 977
+        },
+        {
+          "d": "07-25",
+          "s": 977
+        },
+        {
+          "d": "07-26",
+          "s": 977
+        },
+        {
+          "d": "07-27",
+          "s": 977
+        },
+        {
+          "d": "07-28",
+          "s": 977
+        },
+        {
+          "d": "07-29",
+          "s": 977
+        },
+        {
+          "d": "07-30",
+          "s": 977
+        },
+        {
+          "d": "07-31",
+          "s": 977
+        },
+        {
+          "d": "08-01",
+          "s": 977
+        },
+        {
+          "d": "08-02",
+          "s": 977
+        },
+        {
+          "d": "08-03",
+          "s": 977
+        },
+        {
+          "d": "08-04",
+          "s": 977
+        },
+        {
+          "d": "08-05",
+          "s": 977
+        },
+        {
+          "d": "08-06",
+          "s": 977
+        },
+        {
+          "d": "08-07",
+          "s": 977
+        },
+        {
+          "d": "08-08",
+          "s": 977
+        },
+        {
+          "d": "08-09",
+          "s": 977
+        },
+        {
+          "d": "08-10",
+          "s": 977
+        },
+        {
+          "d": "08-11",
+          "s": 979
+        },
+        {
+          "d": "08-12",
+          "s": 980
+        },
+        {
+          "d": "08-13",
           "s": 983
+        },
+        {
+          "d": "08-14",
+          "s": 985
+        },
+        {
+          "d": "08-15",
+          "s": 985
+        },
+        {
+          "d": "08-16",
+          "s": 985
+        },
+        {
+          "d": "08-17",
+          "s": 986
         },
         {
           "d": "08-18",
@@ -620,211 +467,398 @@
         },
         {
           "d": "08-19",
-          "s": 991
+          "s": 988
         },
         {
           "d": "08-20",
-          "s": 996
+          "s": 989
         },
         {
           "d": "08-21",
+          "s": 991
+        },
+        {
+          "d": "08-22",
+          "s": 992
+        }
+      ]
+    },
+    "score": {
+      "score": 48.91,
+      "breakdown": {
+        "vel": 20,
+        "acc": 47,
+        "health": 93,
+        "fresh": 45,
+        "signal": 85
+      },
+      "stage": "mid_early",
+      "stage_multiplier": 1.1,
+      "confidence": 1.0,
+      "base_score": 44.47,
+      "explanation": "pup 是 Rust 开源项目，主打「Give your AI agent a Pup — a CLI companion with 200+ commands across 33+ Datadog products.」；处于中早期增长；社区健康（fork/star 比 10.6%，13 个 open issue）、项目元数据完整。"
+    }
+  },
+  {
+    "repo": {
+      "owner": "aklofas",
+      "name": "kicad-happy",
+      "full_name": "aklofas/kicad-happy",
+      "description": "AI coding agent skills for KiCad electronics design. Works with Claude Code and OpenAI Codex. Analyze schematics, review PCB layouts, EMC pre-compliance, SPICE simulation, download datasheets, source components, and prep boards for fabrication.",
+      "stars": 997,
+      "forks": 82,
+      "open_issues": 2,
+      "created_at": "2026-03-09T06:19:59+00:00",
+      "pushed_at": "2026-08-20T23:05:13+00:00",
+      "updated_at": "2026-08-21T21:42:48+00:00",
+      "topics": [
+        "ai-skills",
+        "bom-management",
+        "claude-code",
+        "codex",
+        "design-review",
+        "digikey",
+        "eda",
+        "electronics",
+        "emc",
+        "emc-compliance",
+        "gerber",
+        "hardware-design",
+        "jlcpcb",
+        "kicad",
+        "kicad-pcb",
+        "openai-codex",
+        "pcb-design",
+        "schematic-analysis",
+        "signal-integrity",
+        "spice-simulation"
+      ],
+      "language": "Python",
+      "license": "MIT",
+      "homepage": "https://github.com/aklofas/kicad-happy",
+      "html_url": "https://github.com/aklofas/kicad-happy",
+      "default_branch": "main",
+      "archived": false,
+      "search_score": 1.0,
+      "stars_7d_ago": 972,
+      "star_series": [
+        {
+          "d": "07-24",
+          "s": 797
+        },
+        {
+          "d": "07-25",
+          "s": 805
+        },
+        {
+          "d": "07-26",
+          "s": 816
+        },
+        {
+          "d": "07-27",
+          "s": 824
+        },
+        {
+          "d": "07-28",
+          "s": 833
+        },
+        {
+          "d": "07-29",
+          "s": 840
+        },
+        {
+          "d": "07-30",
+          "s": 853
+        },
+        {
+          "d": "07-31",
+          "s": 859
+        },
+        {
+          "d": "08-01",
+          "s": 867
+        },
+        {
+          "d": "08-02",
+          "s": 873
+        },
+        {
+          "d": "08-03",
+          "s": 878
+        },
+        {
+          "d": "08-04",
+          "s": 891
+        },
+        {
+          "d": "08-05",
+          "s": 897
+        },
+        {
+          "d": "08-06",
+          "s": 901
+        },
+        {
+          "d": "08-07",
+          "s": 907
+        },
+        {
+          "d": "08-08",
+          "s": 914
+        },
+        {
+          "d": "08-09",
+          "s": 917
+        },
+        {
+          "d": "08-10",
+          "s": 927
+        },
+        {
+          "d": "08-11",
+          "s": 937
+        },
+        {
+          "d": "08-12",
+          "s": 945
+        },
+        {
+          "d": "08-13",
+          "s": 955
+        },
+        {
+          "d": "08-14",
+          "s": 961
+        },
+        {
+          "d": "08-15",
+          "s": 965
+        },
+        {
+          "d": "08-16",
+          "s": 972
+        },
+        {
+          "d": "08-17",
+          "s": 976
+        },
+        {
+          "d": "08-18",
+          "s": 980
+        },
+        {
+          "d": "08-19",
+          "s": 982
+        },
+        {
+          "d": "08-20",
+          "s": 989
+        },
+        {
+          "d": "08-21",
+          "s": 997
+        },
+        {
+          "d": "08-22",
           "s": 997
         }
       ]
     },
     "score": {
-      "score": 47.07,
+      "score": 45.44,
       "breakdown": {
-        "vel": 38,
-        "acc": 57,
-        "health": 100,
-        "fresh": 52,
-        "signal": 55
+        "vel": 45,
+        "acc": 37,
+        "health": 87,
+        "fresh": 55,
+        "signal": 85
       },
       "stage": "late",
       "stage_multiplier": 0.85,
       "confidence": 1.0,
-      "base_score": 55.38,
-      "explanation": "codex-tools 是 Rust 开源项目，主打「代理,快捷切换codex 账号, 监控codex用量的工具,以及对codex进行api反代 , 支持多语言」；接近增长天花板；社区健康（fork/star 比 12.3%，3 个 open issue）。"
+      "base_score": 53.46,
+      "explanation": "kicad-happy 是 Python 开源项目，主打「AI coding agent skills for KiCad electronics design. Works with Claude Code and OpenAI Codex. Analyze schematics, review PCB layouts, EMC pre-compliance, SPICE simulation, download datasheets, source components, and prep boards for fabrication.」；接近增长天花板，本周涨速 3.6 star/天；社区健康（fork/star 比 8.2%，2 个 open issue）、项目元数据完整。"
     }
   },
   {
     "repo": {
-      "owner": "bagidea",
-      "name": "bagidea-office",
-      "full_name": "bagidea/bagidea-office",
-      "description": "A living AI-agent office on your desktop wallpaper — Claude Code agents that walk, work, delegate, learn & hold meetings. Per-agent swappable models (Claude/GLM/DeepSeek/Qwen/Kimi/OpenAI/Gemini/Groq/Ollama…), workflows, plugins, voice & Telegram/Discord/LINE. Open source.",
+      "owner": "geolens-io",
+      "name": "geolens",
+      "full_name": "geolens-io/geolens",
+      "description": "Self-hosted geospatial data catalog with semantic search (pgvector), OGC/STAC APIs, and map builder. Built on FastAPI, PostGIS, React, and MapLibre.",
       "stars": 200,
-      "forks": 62,
-      "open_issues": 2,
-      "created_at": "2026-06-03T21:21:42+00:00",
-      "pushed_at": "2026-08-19T12:21:19+00:00",
-      "updated_at": "2026-08-20T05:59:45+00:00",
+      "forks": 26,
+      "open_issues": 12,
+      "created_at": "2026-03-22T00:11:06+00:00",
+      "pushed_at": "2026-08-21T18:59:04+00:00",
+      "updated_at": "2026-08-21T23:05:15+00:00",
       "topics": [
-        "agent-orchestration",
-        "ai",
-        "ai-agents",
-        "anthropic",
-        "automation",
-        "autonomous-agents",
-        "claude",
-        "claude-code",
-        "desktop-wallpaper",
-        "gemini",
-        "godot",
-        "llm",
-        "llm-agents",
-        "local-llm",
-        "mcp",
-        "multi-agent",
-        "ollama",
-        "openai"
+        "cloud-optimized-geotiff",
+        "data-catalog",
+        "docker",
+        "fastapi",
+        "geojson",
+        "geospatial",
+        "gis",
+        "maplibre",
+        "ogc-api",
+        "pgvector",
+        "postgis",
+        "postgresql",
+        "python",
+        "react",
+        "self-hosted",
+        "semantic-search",
+        "spatial-analysis",
+        "stac",
+        "typescript",
+        "vector-tiles"
       ],
-      "language": "JavaScript",
-      "license": "MIT",
-      "homepage": "https://bagidea.github.io/bagidea-office/",
-      "html_url": "https://github.com/bagidea/bagidea-office",
+      "language": "Python",
+      "license": "Apache-2.0",
+      "homepage": "https://getgeolens.com",
+      "html_url": "https://github.com/geolens-io/geolens",
       "default_branch": "main",
       "archived": false,
       "search_score": 1.0,
-      "stars_7d_ago": 198,
+      "stars_7d_ago": 197,
       "star_series": [
         {
-          "d": "07-23",
-          "s": 171
-        },
-        {
           "d": "07-24",
-          "s": 174
+          "s": 197
         },
         {
           "d": "07-25",
-          "s": 174
+          "s": 197
         },
         {
           "d": "07-26",
-          "s": 174
+          "s": 197
         },
         {
           "d": "07-27",
-          "s": 175
+          "s": 197
         },
         {
           "d": "07-28",
-          "s": 178
+          "s": 197
         },
         {
           "d": "07-29",
-          "s": 179
+          "s": 197
         },
         {
           "d": "07-30",
-          "s": 180
+          "s": 197
         },
         {
           "d": "07-31",
-          "s": 180
+          "s": 197
         },
         {
           "d": "08-01",
-          "s": 181
+          "s": 197
         },
         {
           "d": "08-02",
-          "s": 181
+          "s": 197
         },
         {
           "d": "08-03",
-          "s": 183
+          "s": 197
         },
         {
           "d": "08-04",
-          "s": 183
+          "s": 197
         },
         {
           "d": "08-05",
-          "s": 184
+          "s": 197
         },
         {
           "d": "08-06",
-          "s": 185
+          "s": 197
         },
         {
           "d": "08-07",
-          "s": 186
+          "s": 197
         },
         {
           "d": "08-08",
-          "s": 187
+          "s": 197
         },
         {
           "d": "08-09",
-          "s": 188
+          "s": 197
         },
         {
           "d": "08-10",
-          "s": 188
+          "s": 197
         },
         {
           "d": "08-11",
-          "s": 189
+          "s": 197
         },
         {
           "d": "08-12",
-          "s": 191
+          "s": 197
         },
         {
           "d": "08-13",
-          "s": 193
+          "s": 197
         },
         {
           "d": "08-14",
-          "s": 194
+          "s": 197
         },
         {
           "d": "08-15",
-          "s": 198
+          "s": 197
         },
         {
           "d": "08-16",
-          "s": 198
+          "s": 197
         },
         {
           "d": "08-17",
-          "s": 199
+          "s": 197
         },
         {
           "d": "08-18",
-          "s": 199
+          "s": 197
         },
         {
           "d": "08-19",
-          "s": 199
+          "s": 197
         },
         {
           "d": "08-20",
-          "s": 200
+          "s": 197
         },
         {
           "d": "08-21",
+          "s": 200
+        },
+        {
+          "d": "08-22",
           "s": 200
         }
       ]
     },
     "score": {
-      "score": 40.25,
+      "score": 43.99,
       "breakdown": {
-        "vel": 7,
-        "acc": 31,
-        "health": 99,
-        "fresh": 79,
-        "signal": 100
+        "vel": 11,
+        "acc": 61,
+        "health": 86,
+        "fresh": 58,
+        "signal": 85
       },
-      "stage": "early",
-      "stage_multiplier": 1.2,
+      "stage": "mid_early",
+      "stage_multiplier": 1.1,
       "confidence": 1.0,
-      "base_score": 33.54,
-      "explanation": "bagidea-office 是 JavaScript 开源项目，主打「A living AI-agent office on your desktop wallpaper — Claude Code agents that walk, work, delegate, learn & hold meetings. Per-agent swappable models (Claude/GLM/DeepSeek/Qwen/Kimi/OpenAI/Gemini/Groq/Ollama…), workflows, plugins, voice & Telegram/Discord/LINE. Open source.」；处于增长早期；社区健康（fork/star 比 31.0%，2 个 open issue）、项目元数据完整、开发活跃。"
+      "base_score": 39.99,
+      "explanation": "geolens 是 Python 开源项目，主打「Self-hosted geospatial data catalog with semantic search (pgvector), OGC/STAC APIs, and map builder. Built on FastAPI, PostGIS, React, and MapLibre.」；处于中早期增长；社区健康（fork/star 比 13.0%，12 个 open issue）、项目元数据完整。"
     }
   }
 ]
