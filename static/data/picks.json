@@ -1,759 +1,457 @@
 [
   {
     "repo": {
-      "owner": "vercel-labs",
-      "name": "eve-software-factory-template",
-      "full_name": "vercel-labs/eve-software-factory-template",
-      "description": "Meet Foreman, an eve Software Factory.",
-      "stars": 994,
-      "forks": 63,
+      "owner": "heymrun",
+      "name": "heym",
+      "full_name": "heymrun/heym",
+      "description": "Build agentic systems. Run them with confidence. Orchestrate agents, automate business processes, inspect every execution, and keep humans in control. Deploy Heym on your own infrastructure.",
+      "stars": 995,
+      "forks": 87,
       "open_issues": 0,
-      "created_at": "2026-08-12T12:34:43+00:00",
-      "pushed_at": "2026-08-20T03:28:12+00:00",
-      "updated_at": "2026-08-24T06:00:46+00:00",
+      "created_at": "2026-03-28T08:08:49+00:00",
+      "pushed_at": "2026-08-24T07:24:00+00:00",
+      "updated_at": "2026-08-25T03:27:30+00:00",
       "topics": [
-        "agent",
-        "ai",
-        "eve",
-        "vercel"
+        "ai-agents",
+        "ai-agents-framework",
+        "ai-assistant",
+        "automation",
+        "automation-tool",
+        "autonomous-agents",
+        "coding-agent",
+        "evals",
+        "human-in-the-loop",
+        "mcp",
+        "mcp-server",
+        "mcp-servers",
+        "mcp-tool",
+        "n8n-alternative",
+        "no-code",
+        "no-code-automation",
+        "rag",
+        "self-hosted",
+        "workflow-automation",
+        "workflows"
       ],
-      "language": "TypeScript",
-      "license": "MIT",
-      "homepage": "https://ask-foreman.dev",
-      "html_url": "https://github.com/vercel-labs/eve-software-factory-template",
+      "language": "Python",
+      "license": "NOASSERTION",
+      "homepage": "https://heym.run",
+      "html_url": "https://github.com/heymrun/heym",
       "default_branch": "main",
       "archived": false,
       "search_score": 1.0,
-      "stars_7d_ago": 892,
+      "stars_7d_ago": 950,
       "star_series": [
         {
-          "d": "07-26",
-          "s": 818
-        },
-        {
           "d": "07-27",
-          "s": 818
+          "s": 934
         },
         {
           "d": "07-28",
-          "s": 818
+          "s": 934
         },
         {
           "d": "07-29",
-          "s": 818
+          "s": 934
         },
         {
           "d": "07-30",
-          "s": 818
+          "s": 934
         },
         {
           "d": "07-31",
-          "s": 818
+          "s": 934
         },
         {
           "d": "08-01",
-          "s": 818
+          "s": 934
         },
         {
           "d": "08-02",
-          "s": 818
+          "s": 934
         },
         {
           "d": "08-03",
-          "s": 818
+          "s": 934
         },
         {
           "d": "08-04",
-          "s": 818
+          "s": 934
         },
         {
           "d": "08-05",
-          "s": 818
+          "s": 934
         },
         {
           "d": "08-06",
-          "s": 818
+          "s": 934
         },
         {
           "d": "08-07",
-          "s": 818
+          "s": 934
         },
         {
           "d": "08-08",
-          "s": 818
+          "s": 934
         },
         {
           "d": "08-09",
-          "s": 818
+          "s": 934
         },
         {
           "d": "08-10",
-          "s": 818
+          "s": 934
         },
         {
           "d": "08-11",
-          "s": 818
+          "s": 934
         },
         {
           "d": "08-12",
-          "s": 818
+          "s": 934
         },
         {
           "d": "08-13",
-          "s": 818
+          "s": 934
         },
         {
           "d": "08-14",
-          "s": 818
+          "s": 934
         },
         {
           "d": "08-15",
-          "s": 818
+          "s": 934
         },
         {
           "d": "08-16",
-          "s": 818
+          "s": 934
         },
         {
           "d": "08-17",
-          "s": 864
+          "s": 935
         },
         {
           "d": "08-18",
-          "s": 892
+          "s": 944
         },
         {
           "d": "08-19",
-          "s": 920
+          "s": 950
         },
         {
           "d": "08-20",
-          "s": 936
+          "s": 953
         },
         {
           "d": "08-21",
-          "s": 983
+          "s": 959
         },
         {
           "d": "08-22",
+          "s": 969
+        },
+        {
+          "d": "08-23",
+          "s": 982
+        },
+        {
+          "d": "08-24",
           "s": 992
         },
         {
-          "d": "08-23",
-          "s": 993
-        },
-        {
-          "d": "08-24",
-          "s": 994
+          "d": "08-25",
+          "s": 995
         }
       ]
     },
     "score": {
-      "score": 94.5,
+      "score": 89.65,
       "breakdown": {
-        "vel": 82,
-        "acc": 59,
-        "health": 80,
-        "fresh": 97,
-        "signal": 100
+        "vel": 64,
+        "acc": 86,
+        "health": 89,
+        "fresh": 59,
+        "signal": 85
       },
       "stage": "early",
       "stage_multiplier": 1.2,
       "confidence": 1.0,
-      "base_score": 78.75,
-      "explanation": "eve-software-factory-template 是 TypeScript 开源项目，主打「Meet Foreman, an eve Software Factory.」；处于增长早期，本周涨速 15 star/天；社区健康（fork/star 比 6.3%，0 个 open issue）、项目元数据完整、开发活跃。"
+      "base_score": 74.71,
+      "explanation": "heym 是 Python 开源项目，主打「Build agentic systems. Run them with confidence. Orchestrate agents, automate business processes, inspect every execution, and keep humans in control. Deploy Heym on your own infrastructure.」；处于增长早期，本周涨速 6.4 star/天，涨速在加快；社区健康（fork/star 比 8.7%，0 个 open issue）、项目元数据完整。"
     }
   },
   {
     "repo": {
-      "owner": "chiba233",
-      "name": "atm10-zh-cn",
-      "full_name": "chiba233/atm10-zh-cn",
-      "description": "这是个ATM10汉化补丁，嗯....似乎也没啥好说的。哦对了，不收费不收费，如果遇到骗捐赠或收费的都不是本人。",
-      "stars": 200,
-      "forks": 2,
-      "open_issues": 0,
-      "created_at": "2026-07-24T09:49:17+00:00",
-      "pushed_at": "2026-08-23T16:02:23+00:00",
-      "updated_at": "2026-08-24T02:49:49+00:00",
+      "owner": "hoo-dles",
+      "name": "morphe-patches",
+      "full_name": "hoo-dles/morphe-patches",
+      "description": "🍃 Patches for Morphe",
+      "stars": 996,
+      "forks": 31,
+      "open_issues": 39,
+      "created_at": "2026-01-20T20:33:21+00:00",
+      "pushed_at": "2026-08-24T16:56:14+00:00",
+      "updated_at": "2026-08-25T05:50:36+00:00",
       "topics": [],
-      "language": "Python",
-      "license": "NOASSERTION",
+      "language": "Kotlin",
+      "license": "GPL-3.0",
       "homepage": null,
-      "html_url": "https://github.com/chiba233/atm10-zh-cn",
+      "html_url": "https://github.com/hoo-dles/morphe-patches",
       "default_branch": "main",
       "archived": false,
       "search_score": 1.0,
-      "stars_7d_ago": 176,
+      "stars_7d_ago": 962,
       "star_series": [
         {
-          "d": "07-26",
-          "s": 169
-        },
-        {
           "d": "07-27",
-          "s": 169
+          "s": 962
         },
         {
           "d": "07-28",
-          "s": 169
+          "s": 962
         },
         {
           "d": "07-29",
-          "s": 169
+          "s": 962
         },
         {
           "d": "07-30",
-          "s": 169
+          "s": 962
         },
         {
           "d": "07-31",
-          "s": 169
+          "s": 962
         },
         {
           "d": "08-01",
-          "s": 169
+          "s": 962
         },
         {
           "d": "08-02",
-          "s": 169
+          "s": 962
         },
         {
           "d": "08-03",
-          "s": 169
+          "s": 962
         },
         {
           "d": "08-04",
-          "s": 169
+          "s": 962
         },
         {
           "d": "08-05",
-          "s": 169
+          "s": 962
         },
         {
           "d": "08-06",
-          "s": 169
+          "s": 962
         },
         {
           "d": "08-07",
-          "s": 169
+          "s": 962
         },
         {
           "d": "08-08",
-          "s": 169
+          "s": 962
         },
         {
           "d": "08-09",
-          "s": 169
+          "s": 962
         },
         {
           "d": "08-10",
-          "s": 169
+          "s": 962
         },
         {
           "d": "08-11",
-          "s": 169
+          "s": 962
         },
         {
           "d": "08-12",
-          "s": 169
+          "s": 962
         },
         {
           "d": "08-13",
-          "s": 169
+          "s": 962
         },
         {
           "d": "08-14",
-          "s": 169
+          "s": 962
         },
         {
           "d": "08-15",
-          "s": 169
+          "s": 962
         },
         {
           "d": "08-16",
-          "s": 169
+          "s": 962
         },
         {
           "d": "08-17",
-          "s": 171
+          "s": 962
         },
         {
           "d": "08-18",
-          "s": 176
+          "s": 962
         },
         {
           "d": "08-19",
-          "s": 177
+          "s": 962
         },
         {
           "d": "08-20",
-          "s": 182
+          "s": 964
         },
         {
           "d": "08-21",
-          "s": 182
+          "s": 970
         },
         {
           "d": "08-22",
-          "s": 187
+          "s": 977
         },
         {
           "d": "08-23",
-          "s": 198
-        },
-        {
-          "d": "08-24",
-          "s": 200
-        }
-      ]
-    },
-    "score": {
-      "score": 77.7,
-      "breakdown": {
-        "vel": 44,
-        "acc": 92,
-        "health": 61,
-        "fresh": 92,
-        "signal": 55
-      },
-      "stage": "early",
-      "stage_multiplier": 1.2,
-      "confidence": 1.0,
-      "base_score": 64.75,
-      "explanation": "atm10-zh-cn 是 Python 开源项目，主打「这是个ATM10汉化补丁，嗯....似乎也没啥好说的。哦对了，不收费不收费，如果遇到骗捐赠或收费的都不是本人。」；处于增长早期，本周涨速 3.4 star/天，涨速在加快；开发活跃。"
-    }
-  },
-  {
-    "repo": {
-      "owner": "DataDog",
-      "name": "pup",
-      "full_name": "DataDog/pup",
-      "description": "Give your AI agent a Pup — a CLI companion with 200+ commands across 33+ Datadog products.",
-      "stars": 994,
-      "forks": 105,
-      "open_issues": 14,
-      "created_at": "2026-02-03T19:56:25+00:00",
-      "pushed_at": "2026-08-24T00:20:58+00:00",
-      "updated_at": "2026-08-24T00:29:09+00:00",
-      "topics": [
-        "cli",
-        "client",
-        "datadog",
-        "observability"
-      ],
-      "language": "Rust",
-      "license": "Apache-2.0",
-      "homepage": "https://www.datadoghq.com",
-      "html_url": "https://github.com/DataDog/pup",
-      "default_branch": "main",
-      "archived": false,
-      "search_score": 1.0,
-      "stars_7d_ago": 987,
-      "star_series": [
-        {
-          "d": "07-26",
-          "s": 977
-        },
-        {
-          "d": "07-27",
-          "s": 977
-        },
-        {
-          "d": "07-28",
-          "s": 977
-        },
-        {
-          "d": "07-29",
-          "s": 977
-        },
-        {
-          "d": "07-30",
-          "s": 977
-        },
-        {
-          "d": "07-31",
-          "s": 977
-        },
-        {
-          "d": "08-01",
-          "s": 977
-        },
-        {
-          "d": "08-02",
-          "s": 977
-        },
-        {
-          "d": "08-03",
-          "s": 977
-        },
-        {
-          "d": "08-04",
-          "s": 977
-        },
-        {
-          "d": "08-05",
-          "s": 977
-        },
-        {
-          "d": "08-06",
-          "s": 977
-        },
-        {
-          "d": "08-07",
-          "s": 977
-        },
-        {
-          "d": "08-08",
-          "s": 977
-        },
-        {
-          "d": "08-09",
-          "s": 977
-        },
-        {
-          "d": "08-10",
-          "s": 977
-        },
-        {
-          "d": "08-11",
-          "s": 979
-        },
-        {
-          "d": "08-12",
-          "s": 980
-        },
-        {
-          "d": "08-13",
-          "s": 983
-        },
-        {
-          "d": "08-14",
-          "s": 985
-        },
-        {
-          "d": "08-15",
-          "s": 985
-        },
-        {
-          "d": "08-16",
-          "s": 985
-        },
-        {
-          "d": "08-17",
           "s": 986
         },
         {
-          "d": "08-18",
-          "s": 987
-        },
-        {
-          "d": "08-19",
-          "s": 988
-        },
-        {
-          "d": "08-20",
-          "s": 989
-        },
-        {
-          "d": "08-21",
-          "s": 991
-        },
-        {
-          "d": "08-22",
-          "s": 993
-        },
-        {
-          "d": "08-23",
-          "s": 993
-        },
-        {
           "d": "08-24",
-          "s": 994
+          "s": 993
+        },
+        {
+          "d": "08-25",
+          "s": 996
         }
       ]
     },
     "score": {
-      "score": 48.97,
+      "score": 68.78,
       "breakdown": {
-        "vel": 21,
-        "acc": 47,
-        "health": 93,
-        "fresh": 45,
-        "signal": 85
+        "vel": 56,
+        "acc": 99,
+        "health": 60,
+        "fresh": 41,
+        "signal": 55
       },
       "stage": "mid_early",
       "stage_multiplier": 1.1,
       "confidence": 1.0,
-      "base_score": 44.52,
-      "explanation": "pup 是 Rust 开源项目，主打「Give your AI agent a Pup — a CLI companion with 200+ commands across 33+ Datadog products.」；处于中早期增长；社区健康（fork/star 比 10.6%，14 个 open issue）、项目元数据完整。"
+      "base_score": 62.52,
+      "explanation": "morphe-patches 是 Kotlin 开源项目，主打「🍃 Patches for Morphe」；处于中早期增长，本周涨速 4.9 star/天，涨速在加快。"
     }
   },
   {
     "repo": {
-      "owner": "espressoplease",
-      "name": "smalldocs",
-      "full_name": "espressoplease/smalldocs",
-      "description": "Read, style, and share markdown files - privately. Formerly SDocs.",
-      "stars": 200,
-      "forks": 20,
-      "open_issues": 12,
-      "created_at": "2026-03-11T18:00:07+00:00",
-      "pushed_at": "2026-08-24T06:26:09+00:00",
-      "updated_at": "2026-08-23T22:04:06+00:00",
-      "topics": [],
-      "language": "JavaScript",
-      "license": "NOASSERTION",
-      "homepage": "https://smalldocs.org",
-      "html_url": "https://github.com/espressoplease/smalldocs",
-      "default_branch": "main",
-      "archived": false,
-      "search_score": 1.0,
-      "stars_7d_ago": 198,
-      "star_series": [
-        {
-          "d": "07-26",
-          "s": 198
-        },
-        {
-          "d": "07-27",
-          "s": 198
-        },
-        {
-          "d": "07-28",
-          "s": 198
-        },
-        {
-          "d": "07-29",
-          "s": 198
-        },
-        {
-          "d": "07-30",
-          "s": 198
-        },
-        {
-          "d": "07-31",
-          "s": 198
-        },
-        {
-          "d": "08-01",
-          "s": 198
-        },
-        {
-          "d": "08-02",
-          "s": 198
-        },
-        {
-          "d": "08-03",
-          "s": 198
-        },
-        {
-          "d": "08-04",
-          "s": 198
-        },
-        {
-          "d": "08-05",
-          "s": 198
-        },
-        {
-          "d": "08-06",
-          "s": 198
-        },
-        {
-          "d": "08-07",
-          "s": 198
-        },
-        {
-          "d": "08-08",
-          "s": 198
-        },
-        {
-          "d": "08-09",
-          "s": 198
-        },
-        {
-          "d": "08-10",
-          "s": 198
-        },
-        {
-          "d": "08-11",
-          "s": 198
-        },
-        {
-          "d": "08-12",
-          "s": 198
-        },
-        {
-          "d": "08-13",
-          "s": 198
-        },
-        {
-          "d": "08-14",
-          "s": 198
-        },
-        {
-          "d": "08-15",
-          "s": 198
-        },
-        {
-          "d": "08-16",
-          "s": 198
-        },
-        {
-          "d": "08-17",
-          "s": 198
-        },
-        {
-          "d": "08-18",
-          "s": 198
-        },
-        {
-          "d": "08-19",
-          "s": 198
-        },
-        {
-          "d": "08-20",
-          "s": 198
-        },
-        {
-          "d": "08-21",
-          "s": 198
-        },
-        {
-          "d": "08-22",
-          "s": 200
-        },
-        {
-          "d": "08-23",
-          "s": 200
-        },
-        {
-          "d": "08-24",
-          "s": 200
-        }
-      ]
-    },
-    "score": {
-      "score": 38.17,
-      "breakdown": {
-        "vel": 8,
-        "acc": 57,
-        "health": 76,
-        "fresh": 55,
-        "signal": 85
-      },
-      "stage": "mid_early",
-      "stage_multiplier": 1.1,
-      "confidence": 1.0,
-      "base_score": 34.7,
-      "explanation": "smalldocs 是 JavaScript 开源项目，主打「Read, style, and share markdown files - privately. Formerly SDocs.」；处于中早期增长；社区健康（fork/star 比 10.0%，12 个 open issue）、项目元数据完整。"
-    }
-  },
-  {
-    "repo": {
-      "owner": "shy1132",
-      "name": "VacuumTube",
-      "full_name": "shy1132/VacuumTube",
-      "description": "YouTube Leanback on the desktop, with enhancements",
-      "stars": 994,
-      "forks": 59,
-      "open_issues": 68,
-      "created_at": "2024-03-24T01:07:04+00:00",
-      "pushed_at": "2026-08-23T05:39:22+00:00",
-      "updated_at": "2026-08-24T06:09:03+00:00",
-      "topics": [],
-      "language": "JavaScript",
+      "owner": "johannesjo",
+      "name": "parallel-code",
+      "full_name": "johannesjo/parallel-code",
+      "description": "Run Claude Code, Codex, and Gemini side by side — each in      its own git worktree",
+      "stars": 992,
+      "forks": 131,
+      "open_issues": 49,
+      "created_at": "2026-02-18T09:53:27+00:00",
+      "pushed_at": "2026-08-21T17:08:41+00:00",
+      "updated_at": "2026-08-25T02:38:45+00:00",
+      "topics": [
+        "ai-agents",
+        "ai-coding",
+        "ai-tools",
+        "claude-code",
+        "codex-cli",
+        "coding-agent",
+        "developer-tools",
+        "gemini-cli",
+        "git-worktree",
+        "terminal"
+      ],
+      "language": "TypeScript",
       "license": "MIT",
-      "homepage": null,
-      "html_url": "https://github.com/shy1132/VacuumTube",
+      "homepage": "https://parallelcode.app",
+      "html_url": "https://github.com/johannesjo/parallel-code",
       "default_branch": "main",
       "archived": false,
       "search_score": 1.0,
-      "stars_7d_ago": 978,
+      "stars_7d_ago": 981,
       "star_series": [
         {
-          "d": "07-26",
-          "s": 952
-        },
-        {
           "d": "07-27",
-          "s": 952
+          "s": 916
         },
         {
           "d": "07-28",
-          "s": 952
+          "s": 916
         },
         {
           "d": "07-29",
-          "s": 952
+          "s": 916
         },
         {
           "d": "07-30",
-          "s": 952
+          "s": 916
         },
         {
           "d": "07-31",
-          "s": 952
+          "s": 916
         },
         {
           "d": "08-01",
-          "s": 952
+          "s": 916
         },
         {
           "d": "08-02",
-          "s": 952
+          "s": 916
         },
         {
           "d": "08-03",
-          "s": 952
+          "s": 916
         },
         {
           "d": "08-04",
-          "s": 952
+          "s": 916
         },
         {
           "d": "08-05",
-          "s": 952
+          "s": 916
         },
         {
           "d": "08-06",
-          "s": 952
+          "s": 916
         },
         {
           "d": "08-07",
-          "s": 952
+          "s": 921
         },
         {
           "d": "08-08",
-          "s": 952
+          "s": 921
         },
         {
           "d": "08-09",
-          "s": 955
+          "s": 921
         },
         {
           "d": "08-10",
-          "s": 958
+          "s": 940
         },
         {
           "d": "08-11",
-          "s": 961
+          "s": 964
         },
         {
           "d": "08-12",
-          "s": 961
-        },
-        {
-          "d": "08-13",
-          "s": 965
-        },
-        {
-          "d": "08-14",
           "s": 968
         },
         {
-          "d": "08-15",
+          "d": "08-13",
+          "s": 969
+        },
+        {
+          "d": "08-14",
           "s": 970
+        },
+        {
+          "d": "08-15",
+          "s": 971
         },
         {
           "d": "08-16",
@@ -761,52 +459,376 @@
         },
         {
           "d": "08-17",
-          "s": 975
+          "s": 977
         },
         {
           "d": "08-18",
-          "s": 978
-        },
-        {
-          "d": "08-19",
           "s": 979
         },
         {
+          "d": "08-19",
+          "s": 981
+        },
+        {
           "d": "08-20",
-          "s": 984
+          "s": 982
         },
         {
           "d": "08-21",
-          "s": 984
+          "s": 986
         },
         {
           "d": "08-22",
-          "s": 987
+          "s": 986
         },
         {
           "d": "08-23",
-          "s": 992
+          "s": 989
         },
         {
           "d": "08-24",
-          "s": 994
+          "s": 991
+        },
+        {
+          "d": "08-25",
+          "s": 992
         }
       ]
     },
     "score": {
-      "score": 30.92,
+      "score": 59.59,
       "breakdown": {
-        "vel": 36,
-        "acc": 49,
-        "health": 62,
-        "fresh": 0,
-        "signal": 55
+        "vel": 30,
+        "acc": 46,
+        "health": 89,
+        "fresh": 49,
+        "signal": 85
       },
       "stage": "early",
       "stage_multiplier": 1.2,
       "confidence": 1.0,
-      "base_score": 25.77,
-      "explanation": "VacuumTube 是 JavaScript 开源项目，主打「YouTube Leanback on the desktop, with enhancements」；处于增长早期。"
+      "base_score": 49.66,
+      "explanation": "parallel-code 是 TypeScript 开源项目，主打「Run Claude Code, Codex, and Gemini side by side — each in      its own git worktree」；处于增长早期；社区健康（fork/star 比 13.2%，49 个 open issue）、项目元数据完整。"
+    }
+  },
+  {
+    "repo": {
+      "owner": "YuanShiJiLoong",
+      "name": "author",
+      "full_name": "YuanShiJiLoong/author",
+      "description": "Author - AI-powered writing platform for novelists and screenwriters",
+      "stars": 200,
+      "forks": 51,
+      "open_issues": 12,
+      "created_at": "2026-03-24T08:51:39+00:00",
+      "pushed_at": "2026-08-24T12:36:17+00:00",
+      "updated_at": "2026-08-24T12:39:47+00:00",
+      "topics": [],
+      "language": "JavaScript",
+      "license": "AGPL-3.0",
+      "homepage": "https://free.author2.com/app",
+      "html_url": "https://github.com/YuanShiJiLoong/author",
+      "default_branch": "main",
+      "archived": false,
+      "search_score": 1.0,
+      "stars_7d_ago": 195,
+      "star_series": [
+        {
+          "d": "07-27",
+          "s": 189
+        },
+        {
+          "d": "07-28",
+          "s": 189
+        },
+        {
+          "d": "07-29",
+          "s": 189
+        },
+        {
+          "d": "07-30",
+          "s": 190
+        },
+        {
+          "d": "07-31",
+          "s": 191
+        },
+        {
+          "d": "08-01",
+          "s": 192
+        },
+        {
+          "d": "08-02",
+          "s": 192
+        },
+        {
+          "d": "08-03",
+          "s": 192
+        },
+        {
+          "d": "08-04",
+          "s": 192
+        },
+        {
+          "d": "08-05",
+          "s": 192
+        },
+        {
+          "d": "08-06",
+          "s": 194
+        },
+        {
+          "d": "08-07",
+          "s": 194
+        },
+        {
+          "d": "08-08",
+          "s": 194
+        },
+        {
+          "d": "08-09",
+          "s": 194
+        },
+        {
+          "d": "08-10",
+          "s": 194
+        },
+        {
+          "d": "08-11",
+          "s": 194
+        },
+        {
+          "d": "08-12",
+          "s": 194
+        },
+        {
+          "d": "08-13",
+          "s": 194
+        },
+        {
+          "d": "08-14",
+          "s": 194
+        },
+        {
+          "d": "08-15",
+          "s": 194
+        },
+        {
+          "d": "08-16",
+          "s": 195
+        },
+        {
+          "d": "08-17",
+          "s": 195
+        },
+        {
+          "d": "08-18",
+          "s": 195
+        },
+        {
+          "d": "08-19",
+          "s": 195
+        },
+        {
+          "d": "08-20",
+          "s": 195
+        },
+        {
+          "d": "08-21",
+          "s": 197
+        },
+        {
+          "d": "08-22",
+          "s": 199
+        },
+        {
+          "d": "08-23",
+          "s": 200
+        },
+        {
+          "d": "08-24",
+          "s": 200
+        },
+        {
+          "d": "08-25",
+          "s": 200
+        }
+      ]
+    },
+    "score": {
+      "score": 55.32,
+      "breakdown": {
+        "vel": 17,
+        "acc": 64,
+        "health": 90,
+        "fresh": 58,
+        "signal": 70
+      },
+      "stage": "early",
+      "stage_multiplier": 1.2,
+      "confidence": 1.0,
+      "base_score": 46.1,
+      "explanation": "author 是 JavaScript 开源项目，主打「Author - AI-powered writing platform for novelists and screenwriters」；处于增长早期；社区健康（fork/star 比 25.5%，12 个 open issue）。"
+    }
+  },
+  {
+    "repo": {
+      "owner": "qnmlgbd250",
+      "name": "weather-none",
+      "full_name": "qnmlgbd250/weather-none",
+      "description": "基于彩云天气Api的安卓天气APP应用程序，无广告，界面简洁易用",
+      "stars": 200,
+      "forks": 21,
+      "open_issues": 0,
+      "created_at": "2026-05-02T14:47:28+00:00",
+      "pushed_at": "2026-08-24T23:57:11+00:00",
+      "updated_at": "2026-08-25T01:37:00+00:00",
+      "topics": [],
+      "language": "Kotlin",
+      "license": null,
+      "homepage": null,
+      "html_url": "https://github.com/qnmlgbd250/weather-none",
+      "default_branch": "main",
+      "archived": false,
+      "search_score": 1.0,
+      "stars_7d_ago": 193,
+      "star_series": [
+        {
+          "d": "07-27",
+          "s": 181
+        },
+        {
+          "d": "07-28",
+          "s": 181
+        },
+        {
+          "d": "07-29",
+          "s": 181
+        },
+        {
+          "d": "07-30",
+          "s": 181
+        },
+        {
+          "d": "07-31",
+          "s": 181
+        },
+        {
+          "d": "08-01",
+          "s": 181
+        },
+        {
+          "d": "08-02",
+          "s": 181
+        },
+        {
+          "d": "08-03",
+          "s": 181
+        },
+        {
+          "d": "08-04",
+          "s": 181
+        },
+        {
+          "d": "08-05",
+          "s": 181
+        },
+        {
+          "d": "08-06",
+          "s": 181
+        },
+        {
+          "d": "08-07",
+          "s": 181
+        },
+        {
+          "d": "08-08",
+          "s": 181
+        },
+        {
+          "d": "08-09",
+          "s": 182
+        },
+        {
+          "d": "08-10",
+          "s": 183
+        },
+        {
+          "d": "08-11",
+          "s": 184
+        },
+        {
+          "d": "08-12",
+          "s": 185
+        },
+        {
+          "d": "08-13",
+          "s": 185
+        },
+        {
+          "d": "08-14",
+          "s": 187
+        },
+        {
+          "d": "08-15",
+          "s": 187
+        },
+        {
+          "d": "08-16",
+          "s": 187
+        },
+        {
+          "d": "08-17",
+          "s": 188
+        },
+        {
+          "d": "08-18",
+          "s": 189
+        },
+        {
+          "d": "08-19",
+          "s": 193
+        },
+        {
+          "d": "08-20",
+          "s": 194
+        },
+        {
+          "d": "08-21",
+          "s": 194
+        },
+        {
+          "d": "08-22",
+          "s": 196
+        },
+        {
+          "d": "08-23",
+          "s": 196
+        },
+        {
+          "d": "08-24",
+          "s": 199
+        },
+        {
+          "d": "08-25",
+          "s": 200
+        }
+      ]
+    },
+    "score": {
+      "score": 52.51,
+      "breakdown": {
+        "vel": 22,
+        "acc": 47,
+        "health": 88,
+        "fresh": 69,
+        "signal": 35
+      },
+      "stage": "early",
+      "stage_multiplier": 1.2,
+      "confidence": 1.0,
+      "base_score": 43.75,
+      "explanation": "weather-none 是 Kotlin 开源项目，主打「基于彩云天气Api的安卓天气APP应用程序，无广告，界面简洁易用」；处于增长早期；社区健康（fork/star 比 10.5%，0 个 open issue）。"
     }
   }
 ]
