@@ -1,852 +1,823 @@
 [
   {
     "repo": {
-      "owner": "917Dhj",
-      "name": "DeepPaperNote",
-      "full_name": "917Dhj/DeepPaperNote",
-      "description": "DeepPaperNote is an agent skill for deep-reading a single paper and generating high-quality Obsidian-style research notes. Works with Claude Code, Codex, Cursor, Copilot, Gemini CLI, and more.",
+      "owner": "SPlayer-Dev",
+      "name": "SPlayer-Next",
+      "full_name": "SPlayer-Dev/SPlayer-Next",
+      "description": "🎵 Cross-platform desktop music player with rich lyric support and wide audio format compatibility. 跨平台桌面音乐播放器，支持丰富歌词与多种音频格式",
       "stars": 1000,
-      "forks": 71,
-      "open_issues": 5,
-      "created_at": "2026-03-21T13:50:42+00:00",
-      "pushed_at": "2026-08-29T09:15:59+00:00",
-      "updated_at": "2026-08-29T09:12:33+00:00",
+      "forks": 89,
+      "open_issues": 43,
+      "created_at": "2026-03-15T15:37:41+00:00",
+      "pushed_at": "2026-08-28T15:46:08+00:00",
+      "updated_at": "2026-08-30T07:47:30+00:00",
       "topics": [
-        "agent-skills",
-        "claude-code",
-        "codex",
-        "copilot",
-        "cursor",
-        "gemini-cli",
-        "markdown",
-        "obsidian",
-        "paper-reading",
-        "research-notes",
-        "zotero"
+        "cross-platform",
+        "ffmpeg",
+        "media-services",
+        "music",
+        "music-library",
+        "music-player",
+        "rust",
+        "vue"
       ],
-      "language": "Python",
-      "license": "MIT",
-      "homepage": "https://917dhj.github.io/DeepPaperNote/",
-      "html_url": "https://github.com/917Dhj/DeepPaperNote",
-      "default_branch": "main",
+      "language": "TypeScript",
+      "license": "AGPL-3.0",
+      "homepage": "http://splayer-next.imsyy.top/",
+      "html_url": "https://github.com/SPlayer-Dev/SPlayer-Next",
+      "default_branch": "dev",
       "archived": false,
       "search_score": 1.0,
-      "stars_7d_ago": 766,
+      "stars_7d_ago": 966,
       "star_series": [
         {
-          "d": "07-31",
-          "s": 766
-        },
-        {
           "d": "08-01",
-          "s": 766
-        },
-        {
-          "d": "08-02",
-          "s": 766
-        },
-        {
-          "d": "08-03",
-          "s": 766
-        },
-        {
-          "d": "08-04",
-          "s": 766
-        },
-        {
-          "d": "08-05",
-          "s": 766
-        },
-        {
-          "d": "08-06",
-          "s": 766
-        },
-        {
-          "d": "08-07",
-          "s": 766
-        },
-        {
-          "d": "08-08",
-          "s": 766
-        },
-        {
-          "d": "08-09",
-          "s": 766
-        },
-        {
-          "d": "08-10",
-          "s": 766
-        },
-        {
-          "d": "08-11",
-          "s": 766
-        },
-        {
-          "d": "08-12",
-          "s": 766
-        },
-        {
-          "d": "08-13",
-          "s": 766
-        },
-        {
-          "d": "08-14",
-          "s": 766
-        },
-        {
-          "d": "08-15",
-          "s": 766
-        },
-        {
-          "d": "08-16",
-          "s": 766
-        },
-        {
-          "d": "08-17",
-          "s": 766
-        },
-        {
-          "d": "08-18",
-          "s": 766
-        },
-        {
-          "d": "08-19",
-          "s": 766
-        },
-        {
-          "d": "08-20",
-          "s": 766
-        },
-        {
-          "d": "08-21",
-          "s": 766
-        },
-        {
-          "d": "08-22",
-          "s": 766
-        },
-        {
-          "d": "08-23",
-          "s": 766
-        },
-        {
-          "d": "08-24",
-          "s": 852
-        },
-        {
-          "d": "08-25",
-          "s": 936
-        },
-        {
-          "d": "08-26",
           "s": 966
         },
         {
-          "d": "08-27",
-          "s": 992
-        },
-        {
-          "d": "08-28",
-          "s": 998
-        },
-        {
-          "d": "08-29",
-          "s": 1000
-        }
-      ]
-    },
-    "score": {
-      "score": 100.0,
-      "breakdown": {
-        "vel": 96,
-        "acc": 99,
-        "health": 82,
-        "fresh": 56,
-        "signal": 100
-      },
-      "stage": "early",
-      "stage_multiplier": 1.2,
-      "confidence": 1.0,
-      "base_score": 87.02,
-      "explanation": "DeepPaperNote 是 Python 开源项目，主打「DeepPaperNote is an agent skill for deep-reading a single paper and generating high-quality Obsidian-style research notes. Works with Claude Code, Codex, Cursor, Copilot, Gemini CLI, and more.」；处于增长早期，本周涨速 33 star/天，涨速在加快；社区健康（fork/star 比 7.1%，5 个 open issue）、项目元数据完整。"
-    }
-  },
-  {
-    "repo": {
-      "owner": "handsomejustin",
-      "name": "easy_tdx",
-      "full_name": "handsomejustin/easy_tdx",
-      "description": "免费Python量化SDK:通达信协议直连 A股/港股/美股数据,内置技术指标、缠论分析、回测引擎与 Web 可视化,JSON 输出适配 AI Agent",
-      "stars": 1000,
-      "forks": 293,
-      "open_issues": 2,
-      "created_at": "2026-05-21T04:20:17+00:00",
-      "pushed_at": "2026-08-28T14:41:40+00:00",
-      "updated_at": "2026-08-29T12:15:26+00:00",
-      "topics": [
-        "a-share-tdx",
-        "chinese-stock-market",
-        "financial-data",
-        "mootdx",
-        "pytdx",
-        "stock-analysis",
-        "stock-data",
-        "stock-trading",
-        "tdx",
-        "technical-analysis"
-      ],
-      "language": "Python",
-      "license": "NOASSERTION",
-      "homepage": null,
-      "html_url": "https://github.com/handsomejustin/easy_tdx",
-      "default_branch": "main",
-      "archived": false,
-      "search_score": 1.0,
-      "stars_7d_ago": 784,
-      "star_series": [
-        {
-          "d": "07-31",
-          "s": 784
-        },
-        {
-          "d": "08-01",
-          "s": 784
-        },
-        {
           "d": "08-02",
-          "s": 784
+          "s": 966
         },
         {
           "d": "08-03",
-          "s": 784
+          "s": 966
         },
         {
           "d": "08-04",
-          "s": 784
+          "s": 966
         },
         {
           "d": "08-05",
-          "s": 784
+          "s": 966
         },
         {
           "d": "08-06",
-          "s": 784
+          "s": 966
         },
         {
           "d": "08-07",
-          "s": 784
+          "s": 966
         },
         {
           "d": "08-08",
-          "s": 784
+          "s": 966
         },
         {
           "d": "08-09",
-          "s": 784
+          "s": 966
         },
         {
           "d": "08-10",
-          "s": 784
+          "s": 966
         },
         {
           "d": "08-11",
-          "s": 784
+          "s": 966
         },
         {
           "d": "08-12",
-          "s": 784
+          "s": 966
         },
         {
           "d": "08-13",
-          "s": 784
+          "s": 966
         },
         {
           "d": "08-14",
-          "s": 784
+          "s": 966
         },
         {
           "d": "08-15",
-          "s": 784
+          "s": 966
         },
         {
           "d": "08-16",
-          "s": 784
+          "s": 966
         },
         {
           "d": "08-17",
-          "s": 784
+          "s": 966
         },
         {
           "d": "08-18",
-          "s": 784
+          "s": 966
         },
         {
           "d": "08-19",
-          "s": 784
+          "s": 966
         },
         {
           "d": "08-20",
-          "s": 784
+          "s": 966
         },
         {
           "d": "08-21",
-          "s": 784
+          "s": 966
         },
         {
           "d": "08-22",
-          "s": 784
+          "s": 966
         },
         {
           "d": "08-23",
-          "s": 784
+          "s": 966
         },
         {
           "d": "08-24",
-          "s": 790
+          "s": 966
         },
         {
           "d": "08-25",
-          "s": 860
+          "s": 966
         },
         {
           "d": "08-26",
-          "s": 928
-        },
-        {
-          "d": "08-27",
-          "s": 969
-        },
-        {
-          "d": "08-28",
-          "s": 986
-        },
-        {
-          "d": "08-29",
-          "s": 1000
-        }
-      ]
-    },
-    "score": {
-      "score": 100.0,
-      "breakdown": {
-        "vel": 94,
-        "acc": 99,
-        "health": 100,
-        "fresh": 73,
-        "signal": 70
-      },
-      "stage": "early",
-      "stage_multiplier": 1.2,
-      "confidence": 1.0,
-      "base_score": 90.15,
-      "explanation": "easy_tdx 是 Python 开源项目，主打「免费Python量化SDK:通达信协议直连 A股/港股/美股数据,内置技术指标、缠论分析、回测引擎与 Web 可视化,JSON 输出适配 AI Agent」；处于增长早期，本周涨速 31 star/天，涨速在加快；社区健康（fork/star 比 29.3%，2 个 open issue）、开发活跃。"
-    }
-  },
-  {
-    "repo": {
-      "owner": "matlab",
-      "name": "simulink-agentic-toolkit",
-      "full_name": "matlab/simulink-agentic-toolkit",
-      "description": "The Simulink Agentic Toolkit gives your AI agent both the tools and the expertise to work effectively with Simulink and Model-Based Design.",
-      "stars": 1000,
-      "forks": 97,
-      "open_issues": 17,
-      "created_at": "2026-04-15T14:41:36+00:00",
-      "pushed_at": "2026-08-26T21:06:01+00:00",
-      "updated_at": "2026-08-29T08:49:04+00:00",
-      "topics": [
-        "agent-skills",
-        "claude-code",
-        "codex-plugin",
-        "engineering-agents",
-        "github-copilot",
-        "matlab",
-        "matlab-mcp-server",
-        "mcp-tools",
-        "simulink"
-      ],
-      "language": "HTML",
-      "license": "NOASSERTION",
-      "homepage": null,
-      "html_url": "https://github.com/matlab/simulink-agentic-toolkit",
-      "default_branch": "main",
-      "archived": false,
-      "search_score": 1.0,
-      "stars_7d_ago": 969,
-      "star_series": [
-        {
-          "d": "07-31",
-          "s": 934
-        },
-        {
-          "d": "08-01",
-          "s": 934
-        },
-        {
-          "d": "08-02",
-          "s": 934
-        },
-        {
-          "d": "08-03",
-          "s": 934
-        },
-        {
-          "d": "08-04",
-          "s": 934
-        },
-        {
-          "d": "08-05",
-          "s": 934
-        },
-        {
-          "d": "08-06",
-          "s": 934
-        },
-        {
-          "d": "08-07",
-          "s": 934
-        },
-        {
-          "d": "08-08",
-          "s": 934
-        },
-        {
-          "d": "08-09",
-          "s": 934
-        },
-        {
-          "d": "08-10",
-          "s": 934
-        },
-        {
-          "d": "08-11",
-          "s": 934
-        },
-        {
-          "d": "08-12",
-          "s": 934
-        },
-        {
-          "d": "08-13",
-          "s": 934
-        },
-        {
-          "d": "08-14",
-          "s": 938
-        },
-        {
-          "d": "08-15",
-          "s": 941
-        },
-        {
-          "d": "08-16",
-          "s": 944
-        },
-        {
-          "d": "08-17",
-          "s": 947
-        },
-        {
-          "d": "08-18",
-          "s": 950
-        },
-        {
-          "d": "08-19",
-          "s": 954
-        },
-        {
-          "d": "08-20",
-          "s": 962
-        },
-        {
-          "d": "08-21",
-          "s": 967
-        },
-        {
-          "d": "08-22",
-          "s": 969
-        },
-        {
-          "d": "08-23",
-          "s": 969
-        },
-        {
-          "d": "08-24",
-          "s": 973
-        },
-        {
-          "d": "08-25",
-          "s": 979
-        },
-        {
-          "d": "08-26",
-          "s": 987
-        },
-        {
-          "d": "08-27",
-          "s": 992
-        },
-        {
-          "d": "08-28",
-          "s": 997
-        },
-        {
-          "d": "08-29",
-          "s": 1000
-        }
-      ]
-    },
-    "score": {
-      "score": 72.35,
-      "breakdown": {
-        "vel": 46,
-        "acc": 56,
-        "health": 89,
-        "fresh": 63,
-        "signal": 70
-      },
-      "stage": "early",
-      "stage_multiplier": 1.2,
-      "confidence": 1.0,
-      "base_score": 60.29,
-      "explanation": "simulink-agentic-toolkit 是 HTML 开源项目，主打「The Simulink Agentic Toolkit gives your AI agent both the tools and the expertise to work effectively with Simulink and Model-Based Design.」；处于增长早期，本周涨速 4.4 star/天；社区健康（fork/star 比 9.7%，17 个 open issue）。"
-    }
-  },
-  {
-    "repo": {
-      "owner": "chrisbanes",
-      "name": "skills",
-      "full_name": "chrisbanes/skills",
-      "description": "Skills for Kotlin, Jetpack Compose, and Android development",
-      "stars": 996,
-      "forks": 46,
-      "open_issues": 1,
-      "created_at": "2026-05-12T07:34:30+00:00",
-      "pushed_at": "2026-08-27T15:15:46+00:00",
-      "updated_at": "2026-08-28T13:05:59+00:00",
-      "topics": [
-        "android",
-        "compose-multiplatform",
-        "coroutines",
-        "jetpack-compose",
-        "kotlin",
-        "kotlin-multiplatform",
-        "skills"
-      ],
-      "language": "Python",
-      "license": "Apache-2.0",
-      "homepage": null,
-      "html_url": "https://github.com/chrisbanes/skills",
-      "default_branch": "main",
-      "archived": false,
-      "search_score": 1.0,
-      "stars_7d_ago": 977,
-      "star_series": [
-        {
-          "d": "07-31",
-          "s": 963
-        },
-        {
-          "d": "08-01",
-          "s": 963
-        },
-        {
-          "d": "08-02",
-          "s": 963
-        },
-        {
-          "d": "08-03",
-          "s": 963
-        },
-        {
-          "d": "08-04",
-          "s": 963
-        },
-        {
-          "d": "08-05",
-          "s": 963
-        },
-        {
-          "d": "08-06",
-          "s": 963
-        },
-        {
-          "d": "08-07",
-          "s": 963
-        },
-        {
-          "d": "08-08",
-          "s": 963
-        },
-        {
-          "d": "08-09",
-          "s": 963
-        },
-        {
-          "d": "08-10",
-          "s": 963
-        },
-        {
-          "d": "08-11",
-          "s": 963
-        },
-        {
-          "d": "08-12",
-          "s": 963
-        },
-        {
-          "d": "08-13",
-          "s": 963
-        },
-        {
-          "d": "08-14",
-          "s": 963
-        },
-        {
-          "d": "08-15",
-          "s": 963
-        },
-        {
-          "d": "08-16",
-          "s": 963
-        },
-        {
-          "d": "08-17",
-          "s": 963
-        },
-        {
-          "d": "08-18",
-          "s": 963
-        },
-        {
-          "d": "08-19",
-          "s": 963
-        },
-        {
-          "d": "08-20",
-          "s": 968
-        },
-        {
-          "d": "08-21",
-          "s": 971
-        },
-        {
-          "d": "08-22",
           "s": 972
         },
         {
-          "d": "08-23",
-          "s": 977
-        },
-        {
-          "d": "08-24",
-          "s": 980
-        },
-        {
-          "d": "08-25",
-          "s": 987
-        },
-        {
-          "d": "08-26",
-          "s": 991
-        },
-        {
           "d": "08-27",
-          "s": 993
+          "s": 978
         },
         {
           "d": "08-28",
-          "s": 996
+          "s": 989
         },
         {
           "d": "08-29",
-          "s": 996
+          "s": 998
+        },
+        {
+          "d": "08-30",
+          "s": 1000
         }
       ]
     },
     "score": {
-      "score": 60.96,
+      "score": 78.3,
       "breakdown": {
-        "vel": 36,
-        "acc": 59,
-        "health": 74,
-        "fresh": 70,
-        "signal": 70
+        "vel": 54,
+        "acc": 99,
+        "health": 80,
+        "fresh": 54,
+        "signal": 85
       },
       "stage": "mid_early",
       "stage_multiplier": 1.1,
       "confidence": 1.0,
-      "base_score": 55.42,
-      "explanation": "skills 是 Python 开源项目，主打「Skills for Kotlin, Jetpack Compose, and Android development」；处于中早期增长；社区健康（fork/star 比 4.6%，1 个 open issue）、开发活跃。"
+      "base_score": 71.18,
+      "explanation": "SPlayer-Next 是 TypeScript 开源项目，主打「🎵 Cross-platform desktop music player with rich lyric support and wide audio format compatibility. 跨平台桌面音乐播放器，支持丰富歌词与多种音频格式」；处于中早期增长，本周涨速 4.9 star/天，涨速在加快；社区健康（fork/star 比 8.9%，43 个 open issue）、项目元数据完整。"
     }
   },
   {
     "repo": {
-      "owner": "kavinsood",
-      "name": "yaos",
-      "full_name": "kavinsood/yaos",
-      "description": "A zero-terminal, real-time sync engine powered by your own Cloudflare Worker.",
-      "stars": 998,
-      "forks": 80,
-      "open_issues": 4,
-      "created_at": "2026-02-16T15:39:57+00:00",
-      "pushed_at": "2026-08-28T21:10:15+00:00",
-      "updated_at": "2026-08-28T22:52:33+00:00",
-      "topics": [
-        "cloudflare-workers",
-        "crdt",
-        "obsidian",
-        "obsidian-plugin",
-        "real-time",
-        "self-hosted",
-        "sync",
-        "yjs"
-      ],
-      "language": "TypeScript",
-      "license": "0BSD",
-      "homepage": "https://yaos.dev",
-      "html_url": "https://github.com/kavinsood/yaos",
+      "owner": "AML-memory",
+      "name": "agent-memory-leaderboard",
+      "full_name": "AML-memory/agent-memory-leaderboard",
+      "description": null,
+      "stars": 996,
+      "forks": 54,
+      "open_issues": 10,
+      "created_at": "2026-07-29T06:24:13+00:00",
+      "pushed_at": "2026-08-27T04:15:58+00:00",
+      "updated_at": "2026-08-30T10:30:39+00:00",
+      "topics": [],
+      "language": "Python",
+      "license": null,
+      "homepage": null,
+      "html_url": "https://github.com/AML-memory/agent-memory-leaderboard",
       "default_branch": "main",
       "archived": false,
       "search_score": 1.0,
-      "stars_7d_ago": 982,
+      "stars_7d_ago": 874,
       "star_series": [
         {
-          "d": "07-31",
-          "s": 958
-        },
-        {
           "d": "08-01",
-          "s": 958
+          "s": 735
         },
         {
           "d": "08-02",
-          "s": 958
+          "s": 735
         },
         {
           "d": "08-03",
-          "s": 958
+          "s": 735
         },
         {
           "d": "08-04",
-          "s": 958
+          "s": 735
         },
         {
           "d": "08-05",
-          "s": 958
+          "s": 735
         },
         {
           "d": "08-06",
-          "s": 958
+          "s": 735
         },
         {
           "d": "08-07",
-          "s": 958
+          "s": 735
         },
         {
           "d": "08-08",
-          "s": 958
+          "s": 735
         },
         {
           "d": "08-09",
-          "s": 958
+          "s": 735
         },
         {
           "d": "08-10",
-          "s": 958
+          "s": 735
         },
         {
           "d": "08-11",
-          "s": 958
+          "s": 735
         },
         {
           "d": "08-12",
-          "s": 958
+          "s": 735
         },
         {
           "d": "08-13",
-          "s": 958
+          "s": 735
         },
         {
           "d": "08-14",
-          "s": 958
+          "s": 735
         },
         {
           "d": "08-15",
-          "s": 958
+          "s": 735
         },
         {
           "d": "08-16",
-          "s": 958
+          "s": 735
         },
         {
           "d": "08-17",
-          "s": 958
+          "s": 735
         },
         {
           "d": "08-18",
-          "s": 968
+          "s": 741
         },
         {
           "d": "08-19",
-          "s": 977
+          "s": 782
         },
         {
           "d": "08-20",
-          "s": 980
+          "s": 812
         },
         {
           "d": "08-21",
-          "s": 981
+          "s": 841
         },
         {
           "d": "08-22",
-          "s": 981
+          "s": 852
         },
         {
           "d": "08-23",
-          "s": 982
+          "s": 865
         },
         {
           "d": "08-24",
-          "s": 987
+          "s": 874
         },
         {
           "d": "08-25",
-          "s": 991
+          "s": 901
         },
         {
           "d": "08-26",
-          "s": 995
+          "s": 925
         },
         {
           "d": "08-27",
-          "s": 995
+          "s": 950
         },
         {
           "d": "08-28",
-          "s": 998
+          "s": 962
         },
         {
           "d": "08-29",
+          "s": 981
+        },
+        {
+          "d": "08-30",
+          "s": 996
+        }
+      ]
+    },
+    "score": {
+      "score": 76.24,
+      "breakdown": {
+        "vel": 89,
+        "acc": 47,
+        "health": 75,
+        "fresh": 91,
+        "signal": 20
+      },
+      "stage": "early",
+      "stage_multiplier": 1.2,
+      "confidence": 1.0,
+      "base_score": 63.53,
+      "explanation": "agent-memory-leaderboard 是 Python 方向的开源项目；处于增长早期，本周涨速 17 star/天；社区健康（fork/star 比 5.4%，10 个 open issue）、开发活跃。"
+    }
+  },
+  {
+    "repo": {
+      "owner": "Formsmith746",
+      "name": "SketchForge-3D",
+      "full_name": "Formsmith746/SketchForge-3D",
+      "description": "A local-first browser 3D design editor for building, cutting, importing STL files, and exporting models.",
+      "stars": 998,
+      "forks": 93,
+      "open_issues": 14,
+      "created_at": "2026-06-06T14:19:11+00:00",
+      "pushed_at": "2026-08-28T10:24:38+00:00",
+      "updated_at": "2026-08-30T05:00:34+00:00",
+      "topics": [],
+      "language": "TypeScript",
+      "license": "AGPL-3.0",
+      "homepage": "https://sketchforge3d.com",
+      "html_url": "https://github.com/Formsmith746/SketchForge-3D",
+      "default_branch": "main",
+      "archived": false,
+      "search_score": 1.0,
+      "stars_7d_ago": 962,
+      "star_series": [
+        {
+          "d": "08-01",
+          "s": 830
+        },
+        {
+          "d": "08-02",
+          "s": 830
+        },
+        {
+          "d": "08-03",
+          "s": 830
+        },
+        {
+          "d": "08-04",
+          "s": 830
+        },
+        {
+          "d": "08-05",
+          "s": 830
+        },
+        {
+          "d": "08-06",
+          "s": 830
+        },
+        {
+          "d": "08-07",
+          "s": 830
+        },
+        {
+          "d": "08-08",
+          "s": 830
+        },
+        {
+          "d": "08-09",
+          "s": 832
+        },
+        {
+          "d": "08-10",
+          "s": 834
+        },
+        {
+          "d": "08-11",
+          "s": 837
+        },
+        {
+          "d": "08-12",
+          "s": 839
+        },
+        {
+          "d": "08-13",
+          "s": 842
+        },
+        {
+          "d": "08-14",
+          "s": 843
+        },
+        {
+          "d": "08-15",
+          "s": 844
+        },
+        {
+          "d": "08-16",
+          "s": 848
+        },
+        {
+          "d": "08-17",
+          "s": 850
+        },
+        {
+          "d": "08-18",
+          "s": 851
+        },
+        {
+          "d": "08-19",
+          "s": 853
+        },
+        {
+          "d": "08-20",
+          "s": 856
+        },
+        {
+          "d": "08-21",
+          "s": 858
+        },
+        {
+          "d": "08-22",
+          "s": 871
+        },
+        {
+          "d": "08-23",
+          "s": 905
+        },
+        {
+          "d": "08-24",
+          "s": 962
+        },
+        {
+          "d": "08-25",
+          "s": 971
+        },
+        {
+          "d": "08-26",
+          "s": 976
+        },
+        {
+          "d": "08-27",
+          "s": 985
+        },
+        {
+          "d": "08-28",
+          "s": 993
+        },
+        {
+          "d": "08-29",
+          "s": 997
+        },
+        {
+          "d": "08-30",
           "s": 998
         }
       ]
     },
     "score": {
-      "score": 59.62,
+      "score": 69.38,
       "breakdown": {
-        "vel": 32,
-        "acc": 42,
-        "health": 85,
-        "fresh": 47,
-        "signal": 100
+        "vel": 55,
+        "acc": 34,
+        "health": 88,
+        "fresh": 77,
+        "signal": 70
       },
       "stage": "early",
       "stage_multiplier": 1.2,
       "confidence": 1.0,
-      "base_score": 49.68,
-      "explanation": "yaos 是 TypeScript 开源项目，主打「A zero-terminal, real-time sync engine powered by your own Cloudflare Worker.」；处于增长早期；社区健康（fork/star 比 8.0%，4 个 open issue）、项目元数据完整。"
+      "base_score": 57.82,
+      "explanation": "SketchForge-3D 是 TypeScript 开源项目，主打「A local-first browser 3D design editor for building, cutting, importing STL files, and exporting models.」；处于增长早期，本周涨速 5.1 star/天；社区健康（fork/star 比 9.3%，14 个 open issue）、开发活跃。"
+    }
+  },
+  {
+    "repo": {
+      "owner": "AndrianBdn",
+      "name": "oddk",
+      "full_name": "AndrianBdn/oddk",
+      "description": "Opinionated Database Deployment Kit — locally running RDS for PostgreSQL",
+      "stars": 200,
+      "forks": 1,
+      "open_issues": 0,
+      "created_at": "2026-06-13T14:37:38+00:00",
+      "pushed_at": "2026-08-26T07:43:39+00:00",
+      "updated_at": "2026-08-30T09:51:03+00:00",
+      "topics": [
+        "backup",
+        "devops",
+        "docker",
+        "postgres",
+        "postgresql",
+        "postgresql-database"
+      ],
+      "language": "Go",
+      "license": "MIT",
+      "homepage": "https://oddk.dev",
+      "html_url": "https://github.com/AndrianBdn/oddk",
+      "default_branch": "main",
+      "archived": false,
+      "search_score": 1.0,
+      "stars_7d_ago": 0,
+      "star_series": [
+        {
+          "d": "08-01",
+          "s": 0
+        },
+        {
+          "d": "08-02",
+          "s": 0
+        },
+        {
+          "d": "08-03",
+          "s": 0
+        },
+        {
+          "d": "08-04",
+          "s": 0
+        },
+        {
+          "d": "08-05",
+          "s": 0
+        },
+        {
+          "d": "08-06",
+          "s": 0
+        },
+        {
+          "d": "08-07",
+          "s": 0
+        },
+        {
+          "d": "08-08",
+          "s": 0
+        },
+        {
+          "d": "08-09",
+          "s": 0
+        },
+        {
+          "d": "08-10",
+          "s": 0
+        },
+        {
+          "d": "08-11",
+          "s": 0
+        },
+        {
+          "d": "08-12",
+          "s": 0
+        },
+        {
+          "d": "08-13",
+          "s": 0
+        },
+        {
+          "d": "08-14",
+          "s": 0
+        },
+        {
+          "d": "08-15",
+          "s": 0
+        },
+        {
+          "d": "08-16",
+          "s": 0
+        },
+        {
+          "d": "08-17",
+          "s": 0
+        },
+        {
+          "d": "08-18",
+          "s": 0
+        },
+        {
+          "d": "08-19",
+          "s": 0
+        },
+        {
+          "d": "08-20",
+          "s": 0
+        },
+        {
+          "d": "08-21",
+          "s": 0
+        },
+        {
+          "d": "08-22",
+          "s": 0
+        },
+        {
+          "d": "08-23",
+          "s": 0
+        },
+        {
+          "d": "08-24",
+          "s": 0
+        },
+        {
+          "d": "08-25",
+          "s": 0
+        },
+        {
+          "d": "08-26",
+          "s": 0
+        },
+        {
+          "d": "08-27",
+          "s": 0
+        },
+        {
+          "d": "08-28",
+          "s": 118
+        },
+        {
+          "d": "08-29",
+          "s": 200
+        },
+        {
+          "d": "08-30",
+          "s": 200
+        }
+      ]
+    },
+    "score": {
+      "score": 60.98,
+      "breakdown": {
+        "vel": 100,
+        "acc": 99,
+        "health": 60,
+        "fresh": 79,
+        "signal": 100
+      },
+      "stage": "saturated",
+      "stage_multiplier": 0.7,
+      "confidence": 1.0,
+      "base_score": 87.11,
+      "explanation": "oddk 是 Go 开源项目，主打「Opinionated Database Deployment Kit — locally running RDS for PostgreSQL」；增长已饱和，本周涨速 29 star/天，涨速在加快；项目元数据完整、开发活跃。"
+    }
+  },
+  {
+    "repo": {
+      "owner": "binance",
+      "name": "binance-skills-hub",
+      "full_name": "binance/binance-skills-hub",
+      "description": "Binance Skills Hub is an open skills marketplace that gives AI agents native access to crypto",
+      "stars": 997,
+      "forks": 208,
+      "open_issues": 52,
+      "created_at": "2026-03-03T08:15:46+00:00",
+      "pushed_at": "2026-08-28T03:29:03+00:00",
+      "updated_at": "2026-08-30T10:57:59+00:00",
+      "topics": [
+        "agents",
+        "ai",
+        "crypto",
+        "skills"
+      ],
+      "language": "Python",
+      "license": null,
+      "homepage": null,
+      "html_url": "https://github.com/binance/binance-skills-hub",
+      "default_branch": "main",
+      "archived": false,
+      "search_score": 1.0,
+      "stars_7d_ago": 980,
+      "star_series": [
+        {
+          "d": "08-01",
+          "s": 957
+        },
+        {
+          "d": "08-02",
+          "s": 957
+        },
+        {
+          "d": "08-03",
+          "s": 957
+        },
+        {
+          "d": "08-04",
+          "s": 957
+        },
+        {
+          "d": "08-05",
+          "s": 957
+        },
+        {
+          "d": "08-06",
+          "s": 957
+        },
+        {
+          "d": "08-07",
+          "s": 957
+        },
+        {
+          "d": "08-08",
+          "s": 957
+        },
+        {
+          "d": "08-09",
+          "s": 957
+        },
+        {
+          "d": "08-10",
+          "s": 957
+        },
+        {
+          "d": "08-11",
+          "s": 957
+        },
+        {
+          "d": "08-12",
+          "s": 957
+        },
+        {
+          "d": "08-13",
+          "s": 957
+        },
+        {
+          "d": "08-14",
+          "s": 957
+        },
+        {
+          "d": "08-15",
+          "s": 957
+        },
+        {
+          "d": "08-16",
+          "s": 957
+        },
+        {
+          "d": "08-17",
+          "s": 957
+        },
+        {
+          "d": "08-18",
+          "s": 962
+        },
+        {
+          "d": "08-19",
+          "s": 964
+        },
+        {
+          "d": "08-20",
+          "s": 969
+        },
+        {
+          "d": "08-21",
+          "s": 972
+        },
+        {
+          "d": "08-22",
+          "s": 975
+        },
+        {
+          "d": "08-23",
+          "s": 977
+        },
+        {
+          "d": "08-24",
+          "s": 980
+        },
+        {
+          "d": "08-25",
+          "s": 982
+        },
+        {
+          "d": "08-26",
+          "s": 984
+        },
+        {
+          "d": "08-27",
+          "s": 988
+        },
+        {
+          "d": "08-28",
+          "s": 993
+        },
+        {
+          "d": "08-29",
+          "s": 994
+        },
+        {
+          "d": "08-30",
+          "s": 997
+        }
+      ]
+    },
+    "score": {
+      "score": 59.78,
+      "breakdown": {
+        "vel": 38,
+        "acc": 44,
+        "health": 88,
+        "fresh": 51,
+        "signal": 50
+      },
+      "stage": "early",
+      "stage_multiplier": 1.2,
+      "confidence": 1.0,
+      "base_score": 49.81,
+      "explanation": "binance-skills-hub 是 Python 开源项目，主打「Binance Skills Hub is an open skills marketplace that gives AI agents native access to crypto」；处于增长早期；社区健康（fork/star 比 20.9%，52 个 open issue）。"
     }
   }
 ]
