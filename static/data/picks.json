@@ -1,658 +1,511 @@
 [
   {
     "repo": {
-      "owner": "SPlayer-Dev",
-      "name": "SPlayer-Next",
-      "full_name": "SPlayer-Dev/SPlayer-Next",
-      "description": "🎵 Cross-platform desktop music player with rich lyric support and wide audio format compatibility. 跨平台桌面音乐播放器，支持丰富歌词与多种音频格式",
-      "stars": 1000,
-      "forks": 89,
-      "open_issues": 43,
-      "created_at": "2026-03-15T15:37:41+00:00",
-      "pushed_at": "2026-08-28T15:46:08+00:00",
-      "updated_at": "2026-08-30T07:47:30+00:00",
+      "owner": "agentconnect-md",
+      "name": "agentconnect",
+      "full_name": "agentconnect-md/agentconnect",
+      "description": "The open-source, multi-agent alternative to Claude Tag.  @ any agent, wherever work happens, they work alongside your team, learning as they go.",
+      "stars": 996,
+      "forks": 26,
+      "open_issues": 25,
+      "created_at": "2026-07-24T02:17:34+00:00",
+      "pushed_at": "2026-08-31T06:24:48+00:00",
+      "updated_at": "2026-08-31T12:25:19+00:00",
       "topics": [
-        "cross-platform",
-        "ffmpeg",
-        "media-services",
-        "music",
-        "music-library",
-        "music-player",
-        "rust",
-        "vue"
+        "agent-client-protocol",
+        "agent-sandbox",
+        "ai-agent",
+        "claude-tag-alternative",
+        "codereview",
+        "developer-tools",
+        "github",
+        "kubernetes",
+        "multi-agent",
+        "slack",
+        "typescript"
       ],
       "language": "TypeScript",
-      "license": "AGPL-3.0",
-      "homepage": "http://splayer-next.imsyy.top/",
-      "html_url": "https://github.com/SPlayer-Dev/SPlayer-Next",
-      "default_branch": "dev",
-      "archived": false,
-      "search_score": 1.0,
-      "stars_7d_ago": 966,
-      "star_series": [
-        {
-          "d": "08-01",
-          "s": 966
-        },
-        {
-          "d": "08-02",
-          "s": 966
-        },
-        {
-          "d": "08-03",
-          "s": 966
-        },
-        {
-          "d": "08-04",
-          "s": 966
-        },
-        {
-          "d": "08-05",
-          "s": 966
-        },
-        {
-          "d": "08-06",
-          "s": 966
-        },
-        {
-          "d": "08-07",
-          "s": 966
-        },
-        {
-          "d": "08-08",
-          "s": 966
-        },
-        {
-          "d": "08-09",
-          "s": 966
-        },
-        {
-          "d": "08-10",
-          "s": 966
-        },
-        {
-          "d": "08-11",
-          "s": 966
-        },
-        {
-          "d": "08-12",
-          "s": 966
-        },
-        {
-          "d": "08-13",
-          "s": 966
-        },
-        {
-          "d": "08-14",
-          "s": 966
-        },
-        {
-          "d": "08-15",
-          "s": 966
-        },
-        {
-          "d": "08-16",
-          "s": 966
-        },
-        {
-          "d": "08-17",
-          "s": 966
-        },
-        {
-          "d": "08-18",
-          "s": 966
-        },
-        {
-          "d": "08-19",
-          "s": 966
-        },
-        {
-          "d": "08-20",
-          "s": 966
-        },
-        {
-          "d": "08-21",
-          "s": 966
-        },
-        {
-          "d": "08-22",
-          "s": 966
-        },
-        {
-          "d": "08-23",
-          "s": 966
-        },
-        {
-          "d": "08-24",
-          "s": 966
-        },
-        {
-          "d": "08-25",
-          "s": 966
-        },
-        {
-          "d": "08-26",
-          "s": 972
-        },
-        {
-          "d": "08-27",
-          "s": 978
-        },
-        {
-          "d": "08-28",
-          "s": 989
-        },
-        {
-          "d": "08-29",
-          "s": 998
-        },
-        {
-          "d": "08-30",
-          "s": 1000
-        }
-      ]
-    },
-    "score": {
-      "score": 78.3,
-      "breakdown": {
-        "vel": 54,
-        "acc": 99,
-        "health": 80,
-        "fresh": 54,
-        "signal": 85
-      },
-      "stage": "mid_early",
-      "stage_multiplier": 1.1,
-      "confidence": 1.0,
-      "base_score": 71.18,
-      "explanation": "SPlayer-Next 是 TypeScript 开源项目，主打「🎵 Cross-platform desktop music player with rich lyric support and wide audio format compatibility. 跨平台桌面音乐播放器，支持丰富歌词与多种音频格式」；处于中早期增长，本周涨速 4.9 star/天，涨速在加快；社区健康（fork/star 比 8.9%，43 个 open issue）、项目元数据完整。"
-    }
-  },
-  {
-    "repo": {
-      "owner": "AML-memory",
-      "name": "agent-memory-leaderboard",
-      "full_name": "AML-memory/agent-memory-leaderboard",
-      "description": null,
-      "stars": 996,
-      "forks": 54,
-      "open_issues": 10,
-      "created_at": "2026-07-29T06:24:13+00:00",
-      "pushed_at": "2026-08-27T04:15:58+00:00",
-      "updated_at": "2026-08-30T10:30:39+00:00",
-      "topics": [],
-      "language": "Python",
-      "license": null,
-      "homepage": null,
-      "html_url": "https://github.com/AML-memory/agent-memory-leaderboard",
+      "license": "Apache-2.0",
+      "homepage": "https://www.agentconnect.md",
+      "html_url": "https://github.com/agentconnect-md/agentconnect",
       "default_branch": "main",
       "archived": false,
       "search_score": 1.0,
-      "stars_7d_ago": 874,
+      "stars_7d_ago": 864,
       "star_series": [
         {
-          "d": "08-01",
-          "s": 735
-        },
-        {
           "d": "08-02",
-          "s": 735
+          "s": 864
         },
         {
           "d": "08-03",
-          "s": 735
+          "s": 864
         },
         {
           "d": "08-04",
-          "s": 735
+          "s": 864
         },
         {
           "d": "08-05",
-          "s": 735
+          "s": 864
         },
         {
           "d": "08-06",
-          "s": 735
+          "s": 864
         },
         {
           "d": "08-07",
-          "s": 735
+          "s": 864
         },
         {
           "d": "08-08",
-          "s": 735
+          "s": 864
         },
         {
           "d": "08-09",
-          "s": 735
+          "s": 864
         },
         {
           "d": "08-10",
-          "s": 735
+          "s": 864
         },
         {
           "d": "08-11",
-          "s": 735
+          "s": 864
         },
         {
           "d": "08-12",
-          "s": 735
+          "s": 864
         },
         {
           "d": "08-13",
-          "s": 735
+          "s": 864
         },
         {
           "d": "08-14",
-          "s": 735
+          "s": 864
         },
         {
           "d": "08-15",
-          "s": 735
+          "s": 864
         },
         {
           "d": "08-16",
-          "s": 735
+          "s": 864
         },
         {
           "d": "08-17",
-          "s": 735
+          "s": 864
         },
         {
           "d": "08-18",
-          "s": 741
+          "s": 864
         },
         {
           "d": "08-19",
-          "s": 782
+          "s": 864
         },
         {
           "d": "08-20",
-          "s": 812
+          "s": 864
         },
         {
           "d": "08-21",
-          "s": 841
+          "s": 864
         },
         {
           "d": "08-22",
-          "s": 852
+          "s": 864
         },
         {
           "d": "08-23",
-          "s": 865
+          "s": 864
         },
         {
           "d": "08-24",
-          "s": 874
+          "s": 864
         },
         {
           "d": "08-25",
-          "s": 901
+          "s": 864
         },
         {
           "d": "08-26",
-          "s": 925
+          "s": 864
         },
         {
           "d": "08-27",
-          "s": 950
+          "s": 864
         },
         {
           "d": "08-28",
-          "s": 962
+          "s": 864
         },
         {
           "d": "08-29",
-          "s": 981
+          "s": 864
         },
         {
           "d": "08-30",
+          "s": 908
+        },
+        {
+          "d": "08-31",
           "s": 996
         }
       ]
     },
     "score": {
-      "score": 76.24,
+      "score": 93.9,
       "breakdown": {
-        "vel": 89,
-        "acc": 47,
-        "health": 75,
-        "fresh": 91,
-        "signal": 20
-      },
-      "stage": "early",
-      "stage_multiplier": 1.2,
-      "confidence": 1.0,
-      "base_score": 63.53,
-      "explanation": "agent-memory-leaderboard 是 Python 方向的开源项目；处于增长早期，本周涨速 17 star/天；社区健康（fork/star 比 5.4%，10 个 open issue）、开发活跃。"
-    }
-  },
-  {
-    "repo": {
-      "owner": "Formsmith746",
-      "name": "SketchForge-3D",
-      "full_name": "Formsmith746/SketchForge-3D",
-      "description": "A local-first browser 3D design editor for building, cutting, importing STL files, and exporting models.",
-      "stars": 998,
-      "forks": 93,
-      "open_issues": 14,
-      "created_at": "2026-06-06T14:19:11+00:00",
-      "pushed_at": "2026-08-28T10:24:38+00:00",
-      "updated_at": "2026-08-30T05:00:34+00:00",
-      "topics": [],
-      "language": "TypeScript",
-      "license": "AGPL-3.0",
-      "homepage": "https://sketchforge3d.com",
-      "html_url": "https://github.com/Formsmith746/SketchForge-3D",
-      "default_branch": "main",
-      "archived": false,
-      "search_score": 1.0,
-      "stars_7d_ago": 962,
-      "star_series": [
-        {
-          "d": "08-01",
-          "s": 830
-        },
-        {
-          "d": "08-02",
-          "s": 830
-        },
-        {
-          "d": "08-03",
-          "s": 830
-        },
-        {
-          "d": "08-04",
-          "s": 830
-        },
-        {
-          "d": "08-05",
-          "s": 830
-        },
-        {
-          "d": "08-06",
-          "s": 830
-        },
-        {
-          "d": "08-07",
-          "s": 830
-        },
-        {
-          "d": "08-08",
-          "s": 830
-        },
-        {
-          "d": "08-09",
-          "s": 832
-        },
-        {
-          "d": "08-10",
-          "s": 834
-        },
-        {
-          "d": "08-11",
-          "s": 837
-        },
-        {
-          "d": "08-12",
-          "s": 839
-        },
-        {
-          "d": "08-13",
-          "s": 842
-        },
-        {
-          "d": "08-14",
-          "s": 843
-        },
-        {
-          "d": "08-15",
-          "s": 844
-        },
-        {
-          "d": "08-16",
-          "s": 848
-        },
-        {
-          "d": "08-17",
-          "s": 850
-        },
-        {
-          "d": "08-18",
-          "s": 851
-        },
-        {
-          "d": "08-19",
-          "s": 853
-        },
-        {
-          "d": "08-20",
-          "s": 856
-        },
-        {
-          "d": "08-21",
-          "s": 858
-        },
-        {
-          "d": "08-22",
-          "s": 871
-        },
-        {
-          "d": "08-23",
-          "s": 905
-        },
-        {
-          "d": "08-24",
-          "s": 962
-        },
-        {
-          "d": "08-25",
-          "s": 971
-        },
-        {
-          "d": "08-26",
-          "s": 976
-        },
-        {
-          "d": "08-27",
-          "s": 985
-        },
-        {
-          "d": "08-28",
-          "s": 993
-        },
-        {
-          "d": "08-29",
-          "s": 997
-        },
-        {
-          "d": "08-30",
-          "s": 998
-        }
-      ]
-    },
-    "score": {
-      "score": 69.38,
-      "breakdown": {
-        "vel": 55,
-        "acc": 34,
-        "health": 88,
-        "fresh": 77,
-        "signal": 70
-      },
-      "stage": "early",
-      "stage_multiplier": 1.2,
-      "confidence": 1.0,
-      "base_score": 57.82,
-      "explanation": "SketchForge-3D 是 TypeScript 开源项目，主打「A local-first browser 3D design editor for building, cutting, importing STL files, and exporting models.」；处于增长早期，本周涨速 5.1 star/天；社区健康（fork/star 比 9.3%，14 个 open issue）、开发活跃。"
-    }
-  },
-  {
-    "repo": {
-      "owner": "AndrianBdn",
-      "name": "oddk",
-      "full_name": "AndrianBdn/oddk",
-      "description": "Opinionated Database Deployment Kit — locally running RDS for PostgreSQL",
-      "stars": 200,
-      "forks": 1,
-      "open_issues": 0,
-      "created_at": "2026-06-13T14:37:38+00:00",
-      "pushed_at": "2026-08-26T07:43:39+00:00",
-      "updated_at": "2026-08-30T09:51:03+00:00",
-      "topics": [
-        "backup",
-        "devops",
-        "docker",
-        "postgres",
-        "postgresql",
-        "postgresql-database"
-      ],
-      "language": "Go",
-      "license": "MIT",
-      "homepage": "https://oddk.dev",
-      "html_url": "https://github.com/AndrianBdn/oddk",
-      "default_branch": "main",
-      "archived": false,
-      "search_score": 1.0,
-      "stars_7d_ago": 0,
-      "star_series": [
-        {
-          "d": "08-01",
-          "s": 0
-        },
-        {
-          "d": "08-02",
-          "s": 0
-        },
-        {
-          "d": "08-03",
-          "s": 0
-        },
-        {
-          "d": "08-04",
-          "s": 0
-        },
-        {
-          "d": "08-05",
-          "s": 0
-        },
-        {
-          "d": "08-06",
-          "s": 0
-        },
-        {
-          "d": "08-07",
-          "s": 0
-        },
-        {
-          "d": "08-08",
-          "s": 0
-        },
-        {
-          "d": "08-09",
-          "s": 0
-        },
-        {
-          "d": "08-10",
-          "s": 0
-        },
-        {
-          "d": "08-11",
-          "s": 0
-        },
-        {
-          "d": "08-12",
-          "s": 0
-        },
-        {
-          "d": "08-13",
-          "s": 0
-        },
-        {
-          "d": "08-14",
-          "s": 0
-        },
-        {
-          "d": "08-15",
-          "s": 0
-        },
-        {
-          "d": "08-16",
-          "s": 0
-        },
-        {
-          "d": "08-17",
-          "s": 0
-        },
-        {
-          "d": "08-18",
-          "s": 0
-        },
-        {
-          "d": "08-19",
-          "s": 0
-        },
-        {
-          "d": "08-20",
-          "s": 0
-        },
-        {
-          "d": "08-21",
-          "s": 0
-        },
-        {
-          "d": "08-22",
-          "s": 0
-        },
-        {
-          "d": "08-23",
-          "s": 0
-        },
-        {
-          "d": "08-24",
-          "s": 0
-        },
-        {
-          "d": "08-25",
-          "s": 0
-        },
-        {
-          "d": "08-26",
-          "s": 0
-        },
-        {
-          "d": "08-27",
-          "s": 0
-        },
-        {
-          "d": "08-28",
-          "s": 118
-        },
-        {
-          "d": "08-29",
-          "s": 200
-        },
-        {
-          "d": "08-30",
-          "s": 200
-        }
-      ]
-    },
-    "score": {
-      "score": 60.98,
-      "breakdown": {
-        "vel": 100,
+        "vel": 91,
         "acc": 99,
-        "health": 60,
-        "fresh": 79,
-        "signal": 100
+        "health": 62,
+        "fresh": 90,
+        "signal": 85
       },
-      "stage": "saturated",
-      "stage_multiplier": 0.7,
+      "stage": "mid_early",
+      "stage_multiplier": 1.1,
       "confidence": 1.0,
-      "base_score": 87.11,
-      "explanation": "oddk 是 Go 开源项目，主打「Opinionated Database Deployment Kit — locally running RDS for PostgreSQL」；增长已饱和，本周涨速 29 star/天，涨速在加快；项目元数据完整、开发活跃。"
+      "base_score": 85.36,
+      "explanation": "agentconnect 是 TypeScript 开源项目，主打「The open-source, multi-agent alternative to Claude Tag.  @ any agent, wherever work happens, they work alongside your team, learning as they go.」；处于中早期增长，本周涨速 19 star/天，涨速在加快；项目元数据完整、开发活跃。"
+    }
+  },
+  {
+    "repo": {
+      "owner": "fuyuxiang",
+      "name": "echo-agent",
+      "full_name": "fuyuxiang/echo-agent",
+      "description": "Echo Agent 是一个可自托管、长期运行、持续学习的 AI Agent，面向个人与团队的私有自动化场景。它可以部署在自有服务器上，统一连接模型、工具、记忆、权限与消息入口。内置四层认知记忆、遗忘曲线与矛盾检测机制，能够在跨会话任务中持续沉淀上下文，并保持长期记忆的质量。针对命令执行、文件操作等高风险行为，它提供基于 LLM 的审批与解释机制，为关键操作建立可审计、可追溯的安全边界。原生支持 MCP、A2A、多模型路由、任务调度、工具调用和多通道接入，覆盖 CLI、Gateway API、微信、Telegram 等入口。它让 Agent 带着长期记忆和可进化技能，持续、安全地为你工作。",
+      "stars": 997,
+      "forks": 25,
+      "open_issues": 3,
+      "created_at": "2026-03-15T03:17:38+00:00",
+      "pushed_at": "2026-08-30T14:56:19+00:00",
+      "updated_at": "2026-08-31T10:09:03+00:00",
+      "topics": [
+        "agent",
+        "agent-memory",
+        "memory"
+      ],
+      "language": "Python",
+      "license": "MIT",
+      "homepage": "http://www.ojlab.com/",
+      "html_url": "https://github.com/fuyuxiang/echo-agent",
+      "default_branch": "master",
+      "archived": false,
+      "search_score": 1.0,
+      "stars_7d_ago": 939,
+      "star_series": [
+        {
+          "d": "08-02",
+          "s": 862
+        },
+        {
+          "d": "08-03",
+          "s": 862
+        },
+        {
+          "d": "08-04",
+          "s": 862
+        },
+        {
+          "d": "08-05",
+          "s": 862
+        },
+        {
+          "d": "08-06",
+          "s": 862
+        },
+        {
+          "d": "08-07",
+          "s": 862
+        },
+        {
+          "d": "08-08",
+          "s": 862
+        },
+        {
+          "d": "08-09",
+          "s": 862
+        },
+        {
+          "d": "08-10",
+          "s": 862
+        },
+        {
+          "d": "08-11",
+          "s": 862
+        },
+        {
+          "d": "08-12",
+          "s": 862
+        },
+        {
+          "d": "08-13",
+          "s": 862
+        },
+        {
+          "d": "08-14",
+          "s": 875
+        },
+        {
+          "d": "08-15",
+          "s": 892
+        },
+        {
+          "d": "08-16",
+          "s": 907
+        },
+        {
+          "d": "08-17",
+          "s": 919
+        },
+        {
+          "d": "08-18",
+          "s": 930
+        },
+        {
+          "d": "08-19",
+          "s": 930
+        },
+        {
+          "d": "08-20",
+          "s": 931
+        },
+        {
+          "d": "08-21",
+          "s": 932
+        },
+        {
+          "d": "08-22",
+          "s": 934
+        },
+        {
+          "d": "08-23",
+          "s": 935
+        },
+        {
+          "d": "08-24",
+          "s": 936
+        },
+        {
+          "d": "08-25",
+          "s": 939
+        },
+        {
+          "d": "08-26",
+          "s": 939
+        },
+        {
+          "d": "08-27",
+          "s": 951
+        },
+        {
+          "d": "08-28",
+          "s": 965
+        },
+        {
+          "d": "08-29",
+          "s": 979
+        },
+        {
+          "d": "08-30",
+          "s": 989
+        },
+        {
+          "d": "08-31",
+          "s": 997
+        }
+      ]
+    },
+    "score": {
+      "score": 88.1,
+      "breakdown": {
+        "vel": 68,
+        "acc": 99,
+        "health": 67,
+        "fresh": 54,
+        "signal": 85
+      },
+      "stage": "early",
+      "stage_multiplier": 1.2,
+      "confidence": 1.0,
+      "base_score": 73.41,
+      "explanation": "echo-agent 是 Python 开源项目，主打「Echo Agent 是一个可自托管、长期运行、持续学习的 AI Agent，面向个人与团队的私有自动化场景。它可以部署在自有服务器上，统一连接模型、工具、记忆、权限与消息入口。内置四层认知记忆、遗忘曲线与矛盾检测机制，能够在跨会话任务中持续沉淀上下文，并保持长期记忆的质量。针对命令执行、文件操作等高风险行为，它提供基于 LLM 的审批与解释机制，为关键操作建立可审计、可追溯的安全边界。原生支持 MCP、A2A、多模型路由、任务调度、工具调用和多通道接入，覆盖 CLI、Gateway API、微信、Telegram 等入口。它让 Agent 带着长期记忆和可进化技能，持续、安全地为你工作。」；处于增长早期，本周涨速 8.3 star/天，涨速在加快；项目元数据完整。"
+    }
+  },
+  {
+    "repo": {
+      "owner": "bulaofen0036-coder",
+      "name": "TIA_Portal_Openness_MCP",
+      "full_name": "bulaofen0036-coder/TIA_Portal_Openness_MCP",
+      "description": "Drive Siemens TIA Portal V20/V21 (STEP 7, WinCC Unified) from any MCP client — create projects, generate PLC & HMI, compile & diagnose. Prebuilt runtime, no Openness coding required.",
+      "stars": 200,
+      "forks": 51,
+      "open_issues": 4,
+      "created_at": "2026-05-14T02:09:06+00:00",
+      "pushed_at": "2026-08-31T09:09:09+00:00",
+      "updated_at": "2026-08-31T12:09:35+00:00",
+      "topics": [
+        "industrial-automation",
+        "ladder-logic",
+        "mcp",
+        "model-context-protocol",
+        "openness",
+        "plc",
+        "s7-1200",
+        "s7-1500",
+        "scl",
+        "siemens",
+        "tia-portal",
+        "wincc"
+      ],
+      "language": "C#",
+      "license": "MIT",
+      "homepage": "https://github.com/bulaofen0036-coder/TIA_Portal_Openness_MCP/releases/latest",
+      "html_url": "https://github.com/bulaofen0036-coder/TIA_Portal_Openness_MCP",
+      "default_branch": "master",
+      "archived": false,
+      "search_score": 1.0,
+      "stars_7d_ago": 181,
+      "star_series": [
+        {
+          "d": "08-02",
+          "s": 137
+        },
+        {
+          "d": "08-03",
+          "s": 137
+        },
+        {
+          "d": "08-04",
+          "s": 137
+        },
+        {
+          "d": "08-05",
+          "s": 138
+        },
+        {
+          "d": "08-06",
+          "s": 139
+        },
+        {
+          "d": "08-07",
+          "s": 139
+        },
+        {
+          "d": "08-08",
+          "s": 142
+        },
+        {
+          "d": "08-09",
+          "s": 143
+        },
+        {
+          "d": "08-10",
+          "s": 144
+        },
+        {
+          "d": "08-11",
+          "s": 147
+        },
+        {
+          "d": "08-12",
+          "s": 149
+        },
+        {
+          "d": "08-13",
+          "s": 151
+        },
+        {
+          "d": "08-14",
+          "s": 153
+        },
+        {
+          "d": "08-15",
+          "s": 154
+        },
+        {
+          "d": "08-16",
+          "s": 154
+        },
+        {
+          "d": "08-17",
+          "s": 157
+        },
+        {
+          "d": "08-18",
+          "s": 163
+        },
+        {
+          "d": "08-19",
+          "s": 164
+        },
+        {
+          "d": "08-20",
+          "s": 168
+        },
+        {
+          "d": "08-21",
+          "s": 170
+        },
+        {
+          "d": "08-22",
+          "s": 173
+        },
+        {
+          "d": "08-23",
+          "s": 174
+        },
+        {
+          "d": "08-24",
+          "s": 176
+        },
+        {
+          "d": "08-25",
+          "s": 181
+        },
+        {
+          "d": "08-26",
+          "s": 186
+        },
+        {
+          "d": "08-27",
+          "s": 190
+        },
+        {
+          "d": "08-28",
+          "s": 194
+        },
+        {
+          "d": "08-29",
+          "s": 197
+        },
+        {
+          "d": "08-30",
+          "s": 198
+        },
+        {
+          "d": "08-31",
+          "s": 200
+        }
+      ]
+    },
+    "score": {
+      "score": 71.69,
+      "breakdown": {
+        "vel": 40,
+        "acc": 51,
+        "health": 98,
+        "fresh": 70,
+        "signal": 85
+      },
+      "stage": "early",
+      "stage_multiplier": 1.2,
+      "confidence": 1.0,
+      "base_score": 59.74,
+      "explanation": "TIA_Portal_Openness_MCP 是 C# 开源项目，主打「Drive Siemens TIA Portal V20/V21 (STEP 7, WinCC Unified) from any MCP client — create projects, generate PLC & HMI, compile & diagnose. Prebuilt runtime, no Openness coding required.」；处于增长早期；社区健康（fork/star 比 25.5%，4 个 open issue）、项目元数据完整、开发活跃。"
     }
   },
   {
@@ -661,12 +514,12 @@
       "name": "binance-skills-hub",
       "full_name": "binance/binance-skills-hub",
       "description": "Binance Skills Hub is an open skills marketplace that gives AI agents native access to crypto",
-      "stars": 997,
-      "forks": 208,
-      "open_issues": 52,
+      "stars": 1000,
+      "forks": 211,
+      "open_issues": 53,
       "created_at": "2026-03-03T08:15:46+00:00",
       "pushed_at": "2026-08-28T03:29:03+00:00",
-      "updated_at": "2026-08-30T10:57:59+00:00",
+      "updated_at": "2026-08-31T01:36:39+00:00",
       "topics": [
         "agents",
         "ai",
@@ -680,75 +533,71 @@
       "default_branch": "main",
       "archived": false,
       "search_score": 1.0,
-      "stars_7d_ago": 980,
+      "stars_7d_ago": 982,
       "star_series": [
         {
-          "d": "08-01",
-          "s": 957
-        },
-        {
           "d": "08-02",
-          "s": 957
+          "s": 959
         },
         {
           "d": "08-03",
-          "s": 957
+          "s": 959
         },
         {
           "d": "08-04",
-          "s": 957
+          "s": 959
         },
         {
           "d": "08-05",
-          "s": 957
+          "s": 959
         },
         {
           "d": "08-06",
-          "s": 957
+          "s": 959
         },
         {
           "d": "08-07",
-          "s": 957
+          "s": 959
         },
         {
           "d": "08-08",
-          "s": 957
+          "s": 959
         },
         {
           "d": "08-09",
-          "s": 957
+          "s": 959
         },
         {
           "d": "08-10",
-          "s": 957
+          "s": 959
         },
         {
           "d": "08-11",
-          "s": 957
+          "s": 959
         },
         {
           "d": "08-12",
-          "s": 957
+          "s": 959
         },
         {
           "d": "08-13",
-          "s": 957
+          "s": 959
         },
         {
           "d": "08-14",
-          "s": 957
+          "s": 959
         },
         {
           "d": "08-15",
-          "s": 957
+          "s": 959
         },
         {
           "d": "08-16",
-          "s": 957
+          "s": 959
         },
         {
           "d": "08-17",
-          "s": 957
+          "s": 959
         },
         {
           "d": "08-18",
@@ -800,24 +649,209 @@
         },
         {
           "d": "08-30",
-          "s": 997
+          "s": 998
+        },
+        {
+          "d": "08-31",
+          "s": 1000
         }
       ]
     },
     "score": {
-      "score": 59.78,
+      "score": 61.52,
       "breakdown": {
-        "vel": 38,
-        "acc": 44,
+        "vel": 39,
+        "acc": 48,
         "health": 88,
-        "fresh": 51,
+        "fresh": 50,
         "signal": 50
       },
       "stage": "early",
       "stage_multiplier": 1.2,
       "confidence": 1.0,
-      "base_score": 49.81,
-      "explanation": "binance-skills-hub 是 Python 开源项目，主打「Binance Skills Hub is an open skills marketplace that gives AI agents native access to crypto」；处于增长早期；社区健康（fork/star 比 20.9%，52 个 open issue）。"
+      "base_score": 51.27,
+      "explanation": "binance-skills-hub 是 Python 开源项目，主打「Binance Skills Hub is an open skills marketplace that gives AI agents native access to crypto」；处于增长早期；社区健康（fork/star 比 21.1%，53 个 open issue）。"
+    }
+  },
+  {
+    "repo": {
+      "owner": "streamcoreai",
+      "name": "streamcore-server",
+      "full_name": "streamcoreai/streamcore-server",
+      "description": "Open-source realtime voice agent server in Go with WebRTC (WHIP), barge-in, streaming STT/LLM/TTS pipelines, plugin system, multi-language SDKs, SIP telephony, ESP32 support & fully local mode.",
+      "stars": 200,
+      "forks": 27,
+      "open_issues": 19,
+      "created_at": "2026-03-28T13:04:05+00:00",
+      "pushed_at": "2026-08-29T14:44:50+00:00",
+      "updated_at": "2026-08-29T18:34:31+00:00",
+      "topics": [
+        "agent-framework",
+        "ai-voice-agent",
+        "conversational-ai",
+        "esp32",
+        "go",
+        "golang",
+        "local-ai",
+        "open-source-ai",
+        "realtime-ai",
+        "realtime-voice-agent",
+        "sip",
+        "speech-to-text",
+        "stt",
+        "telephony",
+        "text-to-speech",
+        "tts",
+        "voice-agent",
+        "voice-ai",
+        "webrtc",
+        "webrtc-whip"
+      ],
+      "language": "Go",
+      "license": "Apache-2.0",
+      "homepage": "https://www.streamcore.ai",
+      "html_url": "https://github.com/streamcoreai/streamcore-server",
+      "default_branch": "main",
+      "archived": false,
+      "search_score": 1.0,
+      "stars_7d_ago": 187,
+      "star_series": [
+        {
+          "d": "08-02",
+          "s": 136
+        },
+        {
+          "d": "08-03",
+          "s": 136
+        },
+        {
+          "d": "08-04",
+          "s": 136
+        },
+        {
+          "d": "08-05",
+          "s": 136
+        },
+        {
+          "d": "08-06",
+          "s": 136
+        },
+        {
+          "d": "08-07",
+          "s": 136
+        },
+        {
+          "d": "08-08",
+          "s": 136
+        },
+        {
+          "d": "08-09",
+          "s": 136
+        },
+        {
+          "d": "08-10",
+          "s": 141
+        },
+        {
+          "d": "08-11",
+          "s": 144
+        },
+        {
+          "d": "08-12",
+          "s": 151
+        },
+        {
+          "d": "08-13",
+          "s": 154
+        },
+        {
+          "d": "08-14",
+          "s": 157
+        },
+        {
+          "d": "08-15",
+          "s": 157
+        },
+        {
+          "d": "08-16",
+          "s": 159
+        },
+        {
+          "d": "08-17",
+          "s": 161
+        },
+        {
+          "d": "08-18",
+          "s": 172
+        },
+        {
+          "d": "08-19",
+          "s": 173
+        },
+        {
+          "d": "08-20",
+          "s": 174
+        },
+        {
+          "d": "08-21",
+          "s": 181
+        },
+        {
+          "d": "08-22",
+          "s": 185
+        },
+        {
+          "d": "08-23",
+          "s": 186
+        },
+        {
+          "d": "08-24",
+          "s": 186
+        },
+        {
+          "d": "08-25",
+          "s": 187
+        },
+        {
+          "d": "08-26",
+          "s": 188
+        },
+        {
+          "d": "08-27",
+          "s": 190
+        },
+        {
+          "d": "08-28",
+          "s": 192
+        },
+        {
+          "d": "08-29",
+          "s": 200
+        },
+        {
+          "d": "08-30",
+          "s": 200
+        },
+        {
+          "d": "08-31",
+          "s": 200
+        }
+      ]
+    },
+    "score": {
+      "score": 60.97,
+      "breakdown": {
+        "vel": 32,
+        "acc": 47,
+        "health": 79,
+        "fresh": 58,
+        "signal": 85
+      },
+      "stage": "early",
+      "stage_multiplier": 1.2,
+      "confidence": 1.0,
+      "base_score": 50.81,
+      "explanation": "streamcore-server 是 Go 开源项目，主打「Open-source realtime voice agent server in Go with WebRTC (WHIP), barge-in, streaming STT/LLM/TTS pipelines, plugin system, multi-language SDKs, SIP telephony, ESP32 support & fully local mode.」；处于增长早期；社区健康（fork/star 比 13.5%，19 个 open issue）、项目元数据完整。"
     }
   }
 ]
