@@ -1,351 +1,181 @@
 [
   {
     "repo": {
-      "owner": "luli395",
-      "name": "android_everything",
-      "full_name": "luli395/android_everything",
-      "description": "Fast desktop file search for Android devices via ADB, SQLite FTS5, and Tkinter.",
-      "stars": 200,
-      "forks": 13,
-      "open_issues": 0,
-      "created_at": "2026-08-12T13:04:28+00:00",
-      "pushed_at": "2026-09-01T14:23:11+00:00",
-      "updated_at": "2026-09-03T10:24:40+00:00",
+      "owner": "0xsline",
+      "name": "awesome-deepseek-harness",
+      "full_name": "0xsline/awesome-deepseek-harness",
+      "description": "DeepSeek Harness (DSH) ecosystem: curated plugins, tools, and infrastructure from dsh-external/hub and the public dsh-plugin topic.",
+      "stars": 992,
+      "forks": 366,
+      "open_issues": 3,
+      "created_at": "2026-08-11T13:14:49+00:00",
+      "pushed_at": "2026-09-03T11:37:04+00:00",
+      "updated_at": "2026-09-04T08:50:50+00:00",
       "topics": [
-        "adb",
-        "android",
-        "file-search",
-        "fts5",
-        "open-source",
-        "python",
-        "sqlite",
-        "tkinter",
-        "windows"
+        "agent",
+        "ai",
+        "ai-agents",
+        "ai-tools",
+        "awesome",
+        "awesome-list",
+        "coding-assistant",
+        "curated-list",
+        "deepseek",
+        "deepseek-harness",
+        "developer-tools",
+        "dsh",
+        "dsh-plugin",
+        "dsh-plugins",
+        "harness",
+        "llm",
+        "mcp",
+        "plugins"
       ],
       "language": "Python",
-      "license": "MIT",
-      "homepage": null,
-      "html_url": "https://github.com/luli395/android_everything",
+      "license": "CC0-1.0",
+      "homepage": "https://deepseekdocs.com/",
+      "html_url": "https://github.com/0xsline/awesome-deepseek-harness",
       "default_branch": "main",
       "archived": false,
       "search_score": 1.0,
-      "stars_7d_ago": 127,
+      "stars_7d_ago": 937,
       "star_series": [
         {
-          "d": "08-05",
-          "s": 36
-        },
-        {
           "d": "08-06",
-          "s": 36
+          "s": 906
         },
         {
           "d": "08-07",
-          "s": 36
+          "s": 906
         },
         {
           "d": "08-08",
-          "s": 36
+          "s": 906
         },
         {
           "d": "08-09",
-          "s": 36
+          "s": 906
         },
         {
           "d": "08-10",
-          "s": 36
+          "s": 906
         },
         {
           "d": "08-11",
-          "s": 36
+          "s": 906
         },
         {
           "d": "08-12",
-          "s": 36
+          "s": 906
         },
         {
           "d": "08-13",
-          "s": 36
+          "s": 906
         },
         {
           "d": "08-14",
-          "s": 37
+          "s": 906
         },
         {
           "d": "08-15",
-          "s": 50
+          "s": 906
         },
         {
           "d": "08-16",
-          "s": 66
+          "s": 906
         },
         {
           "d": "08-17",
-          "s": 85
+          "s": 906
         },
         {
           "d": "08-18",
-          "s": 97
+          "s": 906
         },
         {
           "d": "08-19",
-          "s": 97
+          "s": 906
         },
         {
           "d": "08-20",
-          "s": 97
+          "s": 906
         },
         {
           "d": "08-21",
-          "s": 97
+          "s": 906
         },
         {
           "d": "08-22",
-          "s": 97
+          "s": 906
         },
         {
           "d": "08-23",
-          "s": 97
+          "s": 906
         },
         {
           "d": "08-24",
-          "s": 100
+          "s": 906
         },
         {
           "d": "08-25",
-          "s": 106
+          "s": 906
         },
         {
           "d": "08-26",
-          "s": 106
+          "s": 906
         },
         {
           "d": "08-27",
-          "s": 112
+          "s": 914
         },
         {
           "d": "08-28",
-          "s": 127
+          "s": 925
         },
         {
           "d": "08-29",
-          "s": 137
+          "s": 937
         },
         {
           "d": "08-30",
-          "s": 148
+          "s": 944
         },
         {
           "d": "08-31",
-          "s": 158
+          "s": 954
         },
         {
           "d": "09-01",
-          "s": 170
+          "s": 965
         },
         {
           "d": "09-02",
-          "s": 194
+          "s": 974
         },
         {
           "d": "09-03",
-          "s": 200
+          "s": 988
+        },
+        {
+          "d": "09-04",
+          "s": 992
         }
       ]
     },
     "score": {
-      "score": 93.14,
+      "score": 93.13,
       "breakdown": {
-        "vel": 72,
-        "acc": 81,
-        "health": 75,
+        "vel": 64,
+        "acc": 68,
+        "health": 92,
         "fresh": 94,
-        "signal": 70
+        "signal": 100
       },
       "stage": "early",
       "stage_multiplier": 1.2,
       "confidence": 1.0,
       "base_score": 77.61,
-      "explanation": "android_everything 是 Python 开源项目，主打「Fast desktop file search for Android devices via ADB, SQLite FTS5, and Tkinter.」；处于增长早期，本周涨速 10 star/天，涨速在加快；社区健康（fork/star 比 6.5%，0 个 open issue）、开发活跃。"
-    }
-  },
-  {
-    "repo": {
-      "owner": "ifer47",
-      "name": "markeron",
-      "full_name": "ifer47/markeron",
-      "description": "Lightweight (~1.5 MB) open-source screen annotation with click-through mode and keyboard-first shortcuts. For demos, teaching, meetings & screen recording. Windows, macOS.",
-      "stars": 996,
-      "forks": 60,
-      "open_issues": 19,
-      "created_at": "2026-03-17T04:46:42+00:00",
-      "pushed_at": "2026-08-31T06:14:23+00:00",
-      "updated_at": "2026-09-03T07:11:32+00:00",
-      "topics": [
-        "canvas",
-        "desktop-annotation",
-        "desktop-app",
-        "drawing",
-        "macos",
-        "productivity",
-        "rust",
-        "screen-annotation",
-        "tailwindcss",
-        "tauri",
-        "tauri-app",
-        "typescript",
-        "vite",
-        "vue",
-        "vue3",
-        "vue3-typescript",
-        "whiteboard",
-        "windows"
-      ],
-      "language": "TypeScript",
-      "license": "MIT",
-      "homepage": "https://markeron.cn/",
-      "html_url": "https://github.com/ifer47/markeron",
-      "default_branch": "master",
-      "archived": false,
-      "search_score": 1.0,
-      "stars_7d_ago": 948,
-      "star_series": [
-        {
-          "d": "08-05",
-          "s": 934
-        },
-        {
-          "d": "08-06",
-          "s": 934
-        },
-        {
-          "d": "08-07",
-          "s": 934
-        },
-        {
-          "d": "08-08",
-          "s": 934
-        },
-        {
-          "d": "08-09",
-          "s": 934
-        },
-        {
-          "d": "08-10",
-          "s": 934
-        },
-        {
-          "d": "08-11",
-          "s": 934
-        },
-        {
-          "d": "08-12",
-          "s": 934
-        },
-        {
-          "d": "08-13",
-          "s": 934
-        },
-        {
-          "d": "08-14",
-          "s": 934
-        },
-        {
-          "d": "08-15",
-          "s": 934
-        },
-        {
-          "d": "08-16",
-          "s": 934
-        },
-        {
-          "d": "08-17",
-          "s": 934
-        },
-        {
-          "d": "08-18",
-          "s": 934
-        },
-        {
-          "d": "08-19",
-          "s": 934
-        },
-        {
-          "d": "08-20",
-          "s": 934
-        },
-        {
-          "d": "08-21",
-          "s": 934
-        },
-        {
-          "d": "08-22",
-          "s": 934
-        },
-        {
-          "d": "08-23",
-          "s": 934
-        },
-        {
-          "d": "08-24",
-          "s": 934
-        },
-        {
-          "d": "08-25",
-          "s": 934
-        },
-        {
-          "d": "08-26",
-          "s": 937
-        },
-        {
-          "d": "08-27",
-          "s": 943
-        },
-        {
-          "d": "08-28",
-          "s": 948
-        },
-        {
-          "d": "08-29",
-          "s": 967
-        },
-        {
-          "d": "08-30",
-          "s": 974
-        },
-        {
-          "d": "08-31",
-          "s": 979
-        },
-        {
-          "d": "09-01",
-          "s": 981
-        },
-        {
-          "d": "09-02",
-          "s": 989
-        },
-        {
-          "d": "09-03",
-          "s": 996
-        }
-      ]
-    },
-    "score": {
-      "score": 85.65,
-      "breakdown": {
-        "vel": 61,
-        "acc": 92,
-        "health": 75,
-        "fresh": 53,
-        "signal": 85
-      },
-      "stage": "early",
-      "stage_multiplier": 1.2,
-      "confidence": 1.0,
-      "base_score": 71.38,
-      "explanation": "markeron 是 TypeScript 开源项目，主打「Lightweight (~1.5 MB) open-source screen annotation with click-through mode and keyboard-first shortcuts. For demos, teaching, meetings & screen recording. Windows, macOS.」；处于增长早期，本周涨速 6.9 star/天，涨速在加快；社区健康（fork/star 比 6.0%，19 个 open issue）、项目元数据完整。"
+      "explanation": "awesome-deepseek-harness 是 Python 开源项目，主打「DeepSeek Harness (DSH) ecosystem: curated plugins, tools, and infrastructure from dsh-external/hub and the public dsh-plugin topic.」；处于增长早期，本周涨速 7.9 star/天；社区健康（fork/star 比 36.9%，3 个 open issue）、项目元数据完整、开发活跃。"
     }
   },
   {
@@ -354,12 +184,12 @@
       "name": "webbrain",
       "full_name": "webbrain-one/webbrain",
       "description": "Open-source AI browser agent for Chrome and Firefox (monorepo) 🧠 ",
-      "stars": 994,
-      "forks": 118,
-      "open_issues": 7,
+      "stars": 998,
+      "forks": 117,
+      "open_issues": 11,
       "created_at": "2026-04-06T15:17:01+00:00",
-      "pushed_at": "2026-09-03T08:38:37+00:00",
-      "updated_at": "2026-09-03T10:17:26+00:00",
+      "pushed_at": "2026-09-04T10:00:40+00:00",
+      "updated_at": "2026-09-04T09:56:56+00:00",
       "topics": [
         "ai-agent",
         "ai-agents",
@@ -389,255 +219,432 @@
       "default_branch": "main",
       "archived": false,
       "search_score": 1.0,
-      "stars_7d_ago": 967,
+      "stars_7d_ago": 961,
       "star_series": [
         {
-          "d": "08-05",
-          "s": 967
-        },
-        {
           "d": "08-06",
-          "s": 967
+          "s": 954
         },
         {
           "d": "08-07",
-          "s": 967
+          "s": 954
         },
         {
           "d": "08-08",
-          "s": 967
+          "s": 954
         },
         {
           "d": "08-09",
-          "s": 967
+          "s": 954
         },
         {
           "d": "08-10",
-          "s": 967
+          "s": 954
         },
         {
           "d": "08-11",
-          "s": 967
+          "s": 954
         },
         {
           "d": "08-12",
-          "s": 967
+          "s": 954
         },
         {
           "d": "08-13",
-          "s": 967
+          "s": 954
         },
         {
           "d": "08-14",
-          "s": 967
+          "s": 954
         },
         {
           "d": "08-15",
-          "s": 967
+          "s": 954
         },
         {
           "d": "08-16",
-          "s": 967
+          "s": 954
         },
         {
           "d": "08-17",
-          "s": 967
+          "s": 954
         },
         {
           "d": "08-18",
-          "s": 967
+          "s": 954
         },
         {
           "d": "08-19",
-          "s": 967
+          "s": 954
         },
         {
           "d": "08-20",
-          "s": 967
+          "s": 954
         },
         {
           "d": "08-21",
-          "s": 967
+          "s": 954
         },
         {
           "d": "08-22",
-          "s": 967
+          "s": 954
         },
         {
           "d": "08-23",
-          "s": 967
+          "s": 954
         },
         {
           "d": "08-24",
-          "s": 967
+          "s": 954
         },
         {
           "d": "08-25",
-          "s": 967
+          "s": 954
         },
         {
           "d": "08-26",
-          "s": 967
+          "s": 954
         },
         {
           "d": "08-27",
-          "s": 967
+          "s": 954
         },
         {
           "d": "08-28",
-          "s": 967
+          "s": 954
         },
         {
           "d": "08-29",
-          "s": 967
+          "s": 961
         },
         {
           "d": "08-30",
-          "s": 977
+          "s": 976
         },
         {
           "d": "08-31",
-          "s": 987
+          "s": 986
         },
         {
           "d": "09-01",
-          "s": 989
+          "s": 988
         },
         {
           "d": "09-02",
-          "s": 990
+          "s": 989
         },
         {
           "d": "09-03",
-          "s": 994
+          "s": 997
+        },
+        {
+          "d": "09-04",
+          "s": 998
         }
       ]
     },
     "score": {
-      "score": 79.07,
+      "score": 82.59,
       "breakdown": {
-        "vel": 47,
-        "acc": 98,
-        "health": 99,
+        "vel": 54,
+        "acc": 99,
+        "health": 98,
         "fresh": 59,
         "signal": 85
       },
       "stage": "mid_early",
       "stage_multiplier": 1.1,
       "confidence": 1.0,
-      "base_score": 71.88,
-      "explanation": "webbrain 是 JavaScript 开源项目，主打「Open-source AI browser agent for Chrome and Firefox (monorepo) 🧠」；处于中早期增长，本周涨速 3.9 star/天，涨速在加快；社区健康（fork/star 比 11.9%，7 个 open issue）、项目元数据完整。"
+      "base_score": 75.08,
+      "explanation": "webbrain 是 JavaScript 开源项目，主打「Open-source AI browser agent for Chrome and Firefox (monorepo) 🧠」；处于中早期增长，本周涨速 5.3 star/天，涨速在加快；社区健康（fork/star 比 11.7%，11 个 open issue）、项目元数据完整。"
     }
   },
   {
     "repo": {
-      "owner": "tontinton",
-      "name": "maki",
-      "full_name": "tontinton/maki",
-      "description": "An efficient AI coding agent extendable by neovim-like Lua plugins",
-      "stars": 999,
-      "forks": 120,
-      "open_issues": 79,
-      "created_at": "2026-02-13T17:04:13+00:00",
-      "pushed_at": "2026-09-02T21:24:49+00:00",
-      "updated_at": "2026-09-03T09:24:20+00:00",
-      "topics": [],
-      "language": "Rust",
+      "owner": "zhitongblog",
+      "name": "solomd",
+      "full_name": "zhitongblog/solomd",
+      "description": "A markdown editor — and the bridge to your LLM. Local-first, MIT, ~15 MB. Bundled MCP server lets Claude Code / Codex / Cursor drive your vault directly. 14 AI providers BYOK.",
+      "stars": 995,
+      "forks": 63,
+      "open_issues": 90,
+      "created_at": "2026-04-08T03:52:45+00:00",
+      "pushed_at": "2026-09-04T06:02:48+00:00",
+      "updated_at": "2026-09-04T09:58:32+00:00",
+      "topics": [
+        "ai",
+        "android",
+        "autogit",
+        "byok",
+        "cross-platform",
+        "ios",
+        "knowledge-base",
+        "local-first",
+        "markdown",
+        "markdown-editor",
+        "mcp",
+        "mcp-server",
+        "note-taking",
+        "obsidian-alternative",
+        "tauri",
+        "tldraw",
+        "typora-alternative",
+        "vue",
+        "whiteboard",
+        "wikilinks"
+      ],
+      "language": "TypeScript",
       "license": "MIT",
-      "homepage": "https://maki.sh",
-      "html_url": "https://github.com/tontinton/maki",
+      "homepage": "https://solomd.app",
+      "html_url": "https://github.com/zhitongblog/solomd",
+      "default_branch": "main",
+      "archived": false,
+      "search_score": 1.0,
+      "stars_7d_ago": 940,
+      "star_series": [
+        {
+          "d": "08-06",
+          "s": 899
+        },
+        {
+          "d": "08-07",
+          "s": 899
+        },
+        {
+          "d": "08-08",
+          "s": 899
+        },
+        {
+          "d": "08-09",
+          "s": 899
+        },
+        {
+          "d": "08-10",
+          "s": 899
+        },
+        {
+          "d": "08-11",
+          "s": 899
+        },
+        {
+          "d": "08-12",
+          "s": 899
+        },
+        {
+          "d": "08-13",
+          "s": 899
+        },
+        {
+          "d": "08-14",
+          "s": 899
+        },
+        {
+          "d": "08-15",
+          "s": 899
+        },
+        {
+          "d": "08-16",
+          "s": 899
+        },
+        {
+          "d": "08-17",
+          "s": 899
+        },
+        {
+          "d": "08-18",
+          "s": 899
+        },
+        {
+          "d": "08-19",
+          "s": 899
+        },
+        {
+          "d": "08-20",
+          "s": 899
+        },
+        {
+          "d": "08-21",
+          "s": 899
+        },
+        {
+          "d": "08-22",
+          "s": 899
+        },
+        {
+          "d": "08-23",
+          "s": 899
+        },
+        {
+          "d": "08-24",
+          "s": 901
+        },
+        {
+          "d": "08-25",
+          "s": 908
+        },
+        {
+          "d": "08-26",
+          "s": 921
+        },
+        {
+          "d": "08-27",
+          "s": 924
+        },
+        {
+          "d": "08-28",
+          "s": 932
+        },
+        {
+          "d": "08-29",
+          "s": 940
+        },
+        {
+          "d": "08-30",
+          "s": 949
+        },
+        {
+          "d": "08-31",
+          "s": 958
+        },
+        {
+          "d": "09-01",
+          "s": 969
+        },
+        {
+          "d": "09-02",
+          "s": 978
+        },
+        {
+          "d": "09-03",
+          "s": 988
+        },
+        {
+          "d": "09-04",
+          "s": 995
+        }
+      ]
+    },
+    "score": {
+      "score": 74.91,
+      "breakdown": {
+        "vel": 64,
+        "acc": 58,
+        "health": 58,
+        "fresh": 59,
+        "signal": 85
+      },
+      "stage": "early",
+      "stage_multiplier": 1.2,
+      "confidence": 1.0,
+      "base_score": 62.43,
+      "explanation": "solomd 是 TypeScript 开源项目，主打「A markdown editor — and the bridge to your LLM. Local-first, MIT, ~15 MB. Bundled MCP server lets Claude Code / Codex / Cursor drive your vault directly. 14 AI providers BYOK.」；处于增长早期，本周涨速 7.9 star/天；项目元数据完整。"
+    }
+  },
+  {
+    "repo": {
+      "owner": "rivet-dev",
+      "name": "dynamic-apps",
+      "full_name": "rivet-dev/dynamic-apps",
+      "description": "Deploy an AI-generated backend for every user.",
+      "stars": 994,
+      "forks": 50,
+      "open_issues": 19,
+      "created_at": "2025-12-15T07:28:09+00:00",
+      "pushed_at": "2026-08-31T21:38:45+00:00",
+      "updated_at": "2026-09-03T08:04:07+00:00",
+      "topics": [],
+      "language": "TypeScript",
+      "license": null,
+      "homepage": "https://rivet.dev/dynamic-apps",
+      "html_url": "https://github.com/rivet-dev/dynamic-apps",
       "default_branch": "main",
       "archived": false,
       "search_score": 1.0,
       "stars_7d_ago": 973,
       "star_series": [
         {
-          "d": "08-05",
-          "s": 973
-        },
-        {
           "d": "08-06",
-          "s": 973
+          "s": 972
         },
         {
           "d": "08-07",
-          "s": 973
+          "s": 972
         },
         {
           "d": "08-08",
-          "s": 973
+          "s": 972
         },
         {
           "d": "08-09",
-          "s": 973
+          "s": 972
         },
         {
           "d": "08-10",
-          "s": 973
+          "s": 972
         },
         {
           "d": "08-11",
-          "s": 973
+          "s": 972
         },
         {
           "d": "08-12",
-          "s": 973
+          "s": 972
         },
         {
           "d": "08-13",
-          "s": 973
+          "s": 972
         },
         {
           "d": "08-14",
-          "s": 973
+          "s": 972
         },
         {
           "d": "08-15",
-          "s": 973
+          "s": 972
         },
         {
           "d": "08-16",
-          "s": 973
+          "s": 972
         },
         {
           "d": "08-17",
-          "s": 973
+          "s": 972
         },
         {
           "d": "08-18",
-          "s": 973
+          "s": 972
         },
         {
           "d": "08-19",
-          "s": 973
+          "s": 972
         },
         {
           "d": "08-20",
-          "s": 973
+          "s": 972
         },
         {
           "d": "08-21",
-          "s": 973
+          "s": 972
         },
         {
           "d": "08-22",
-          "s": 973
+          "s": 972
         },
         {
           "d": "08-23",
-          "s": 973
+          "s": 972
         },
         {
           "d": "08-24",
-          "s": 973
+          "s": 972
         },
         {
           "d": "08-25",
-          "s": 973
+          "s": 972
         },
         {
           "d": "08-26",
-          "s": 973
+          "s": 972
         },
         {
           "d": "08-27",
@@ -649,204 +656,213 @@
         },
         {
           "d": "08-29",
-          "s": 975
+          "s": 973
         },
         {
           "d": "08-30",
-          "s": 977
+          "s": 973
         },
         {
           "d": "08-31",
-          "s": 985
+          "s": 980
         },
         {
           "d": "09-01",
-          "s": 989
+          "s": 991
         },
         {
           "d": "09-02",
-          "s": 993
+          "s": 992
         },
         {
           "d": "09-03",
-          "s": 999
+          "s": 994
+        },
+        {
+          "d": "09-04",
+          "s": 994
         }
       ]
     },
     "score": {
-      "score": 71.0,
+      "score": 61.52,
       "breakdown": {
-        "vel": 46,
-        "acc": 98,
-        "health": 81,
-        "fresh": 45,
-        "signal": 70
+        "vel": 41,
+        "acc": 95,
+        "health": 72,
+        "fresh": 28,
+        "signal": 65
       },
       "stage": "mid_early",
       "stage_multiplier": 1.1,
       "confidence": 1.0,
-      "base_score": 64.55,
-      "explanation": "maki 是 Rust 开源项目，主打「An efficient AI coding agent extendable by neovim-like Lua plugins」；处于中早期增长，本周涨速 3.7 star/天，涨速在加快；社区健康（fork/star 比 12.0%，79 个 open issue）。"
+      "base_score": 55.92,
+      "explanation": "dynamic-apps 是 TypeScript 开源项目，主打「Deploy an AI-generated backend for every user.」；处于中早期增长，本周涨速 3.0 star/天，涨速在加快；社区健康（fork/star 比 5.0%，19 个 open issue）。"
     }
   },
   {
     "repo": {
-      "owner": "gpui-ce",
-      "name": "gpui-ce",
-      "full_name": "gpui-ce/gpui-ce",
-      "description": "GPUI – Community Edition",
-      "stars": 999,
-      "forks": 110,
-      "open_issues": 20,
-      "created_at": "2025-12-12T18:40:34+00:00",
-      "pushed_at": "2026-09-02T18:13:02+00:00",
-      "updated_at": "2026-09-03T09:48:00+00:00",
-      "topics": [],
-      "language": "Rust",
-      "license": "Apache-2.0",
-      "homepage": "https://gpui-ce.github.io/",
-      "html_url": "https://github.com/gpui-ce/gpui-ce",
-      "default_branch": "main",
+      "owner": "cl0nazepamm",
+      "name": "3dsmax-mcp",
+      "full_name": "cl0nazepamm/3dsmax-mcp",
+      "description": "3ds Max MCP server",
+      "stars": 200,
+      "forks": 37,
+      "open_issues": 1,
+      "created_at": "2026-02-06T23:31:18+00:00",
+      "pushed_at": "2026-08-31T20:16:41+00:00",
+      "updated_at": "2026-09-04T08:10:01+00:00",
+      "topics": [
+        "3dsmax",
+        "claude",
+        "codex",
+        "mcp"
+      ],
+      "language": "Python",
+      "license": "MIT",
+      "homepage": "https://clone.llc",
+      "html_url": "https://github.com/cl0nazepamm/3dsmax-mcp",
+      "default_branch": "master",
       "archived": false,
       "search_score": 1.0,
-      "stars_7d_ago": 970,
+      "stars_7d_ago": 191,
       "star_series": [
         {
-          "d": "08-05",
-          "s": 970
-        },
-        {
           "d": "08-06",
-          "s": 970
+          "s": 164
         },
         {
           "d": "08-07",
-          "s": 970
+          "s": 164
         },
         {
           "d": "08-08",
-          "s": 970
+          "s": 165
         },
         {
           "d": "08-09",
-          "s": 970
+          "s": 167
         },
         {
           "d": "08-10",
-          "s": 970
+          "s": 170
         },
         {
           "d": "08-11",
-          "s": 970
+          "s": 170
         },
         {
           "d": "08-12",
-          "s": 970
+          "s": 172
         },
         {
           "d": "08-13",
-          "s": 970
+          "s": 172
         },
         {
           "d": "08-14",
-          "s": 970
+          "s": 175
         },
         {
           "d": "08-15",
-          "s": 970
+          "s": 175
         },
         {
           "d": "08-16",
-          "s": 970
+          "s": 176
         },
         {
           "d": "08-17",
-          "s": 970
+          "s": 177
         },
         {
           "d": "08-18",
-          "s": 970
+          "s": 177
         },
         {
           "d": "08-19",
-          "s": 970
+          "s": 178
         },
         {
           "d": "08-20",
-          "s": 970
+          "s": 182
         },
         {
           "d": "08-21",
-          "s": 970
+          "s": 182
         },
         {
           "d": "08-22",
-          "s": 970
+          "s": 182
         },
         {
           "d": "08-23",
-          "s": 970
+          "s": 182
         },
         {
           "d": "08-24",
-          "s": 970
+          "s": 186
         },
         {
           "d": "08-25",
-          "s": 970
+          "s": 187
         },
         {
           "d": "08-26",
-          "s": 970
+          "s": 188
         },
         {
           "d": "08-27",
-          "s": 970
+          "s": 188
         },
         {
           "d": "08-28",
-          "s": 970
+          "s": 189
         },
         {
           "d": "08-29",
-          "s": 970
+          "s": 191
         },
         {
           "d": "08-30",
-          "s": 970
+          "s": 192
         },
         {
           "d": "08-31",
-          "s": 970
+          "s": 192
         },
         {
           "d": "09-01",
-          "s": 971
+          "s": 192
         },
         {
           "d": "09-02",
-          "s": 994
+          "s": 195
         },
         {
           "d": "09-03",
-          "s": 999
+          "s": 199
+        },
+        {
+          "d": "09-04",
+          "s": 200
         }
       ]
     },
     "score": {
-      "score": 70.59,
+      "score": 52.6,
       "breakdown": {
-        "vel": 48,
-        "acc": 98,
-        "health": 93,
-        "fresh": 28,
+        "vel": 24,
+        "acc": 50,
+        "health": 100,
+        "fresh": 43,
         "signal": 85
       },
       "stage": "mid_early",
       "stage_multiplier": 1.1,
       "confidence": 1.0,
-      "base_score": 64.17,
-      "explanation": "gpui-ce 是 Rust 开源项目，主打「GPUI – Community Edition」；处于中早期增长，本周涨速 4.1 star/天，涨速在加快；社区健康（fork/star 比 11.0%，20 个 open issue）、项目元数据完整。"
+      "base_score": 47.82,
+      "explanation": "3dsmax-mcp 是 Python 开源项目，主打「3ds Max MCP server」；处于中早期增长；社区健康（fork/star 比 18.5%，1 个 open issue）、项目元数据完整。"
     }
   }
 ]
