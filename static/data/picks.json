@@ -1,794 +1,610 @@
 [
   {
     "repo": {
-      "owner": "0xsline",
-      "name": "awesome-deepseek-harness",
-      "full_name": "0xsline/awesome-deepseek-harness",
-      "description": "DeepSeek Harness (DSH) ecosystem: curated plugins, tools, and infrastructure from dsh-external/hub and the public dsh-plugin topic.",
+      "owner": "henryqin1997",
+      "name": "statem",
+      "full_name": "henryqin1997/statem",
+      "description": "CLI runbook for agent long run.",
       "stars": 996,
-      "forks": 365,
+      "forks": 74,
       "open_issues": 3,
-      "created_at": "2026-08-11T13:14:49+00:00",
-      "pushed_at": "2026-09-04T17:51:52+00:00",
-      "updated_at": "2026-09-05T09:44:22+00:00",
-      "topics": [
-        "agent",
-        "ai",
-        "ai-agents",
-        "ai-tools",
-        "awesome",
-        "awesome-list",
-        "coding-assistant",
-        "curated-list",
-        "deepseek",
-        "deepseek-harness",
-        "developer-tools",
-        "dsh",
-        "dsh-plugin",
-        "dsh-plugins",
-        "harness",
-        "llm",
-        "mcp",
-        "plugins"
-      ],
+      "created_at": "2026-06-05T21:30:51+00:00",
+      "pushed_at": "2026-09-02T07:09:22+00:00",
+      "updated_at": "2026-09-06T10:13:23+00:00",
+      "topics": [],
       "language": "Python",
-      "license": "CC0-1.0",
-      "homepage": "https://deepseekdocs.com/",
-      "html_url": "https://github.com/0xsline/awesome-deepseek-harness",
+      "license": "Apache-2.0",
+      "homepage": null,
+      "html_url": "https://github.com/henryqin1997/statem",
       "default_branch": "main",
       "archived": false,
       "search_score": 1.0,
-      "stars_7d_ago": 943,
+      "stars_7d_ago": 796,
       "star_series": [
         {
-          "d": "08-07",
-          "s": 914
-        },
-        {
           "d": "08-08",
-          "s": 914
+          "s": 725
         },
         {
           "d": "08-09",
-          "s": 914
+          "s": 725
         },
         {
           "d": "08-10",
-          "s": 914
+          "s": 725
         },
         {
           "d": "08-11",
-          "s": 914
+          "s": 725
         },
         {
           "d": "08-12",
-          "s": 914
+          "s": 725
         },
         {
           "d": "08-13",
-          "s": 914
+          "s": 725
         },
         {
           "d": "08-14",
-          "s": 914
+          "s": 725
         },
         {
           "d": "08-15",
-          "s": 914
+          "s": 725
         },
         {
           "d": "08-16",
-          "s": 914
+          "s": 725
         },
         {
           "d": "08-17",
-          "s": 914
+          "s": 725
         },
         {
           "d": "08-18",
-          "s": 914
+          "s": 725
         },
         {
           "d": "08-19",
-          "s": 914
+          "s": 725
         },
         {
           "d": "08-20",
-          "s": 914
+          "s": 725
         },
         {
           "d": "08-21",
-          "s": 914
+          "s": 725
         },
         {
           "d": "08-22",
-          "s": 914
+          "s": 725
         },
         {
           "d": "08-23",
-          "s": 914
+          "s": 725
         },
         {
           "d": "08-24",
-          "s": 914
+          "s": 725
         },
         {
           "d": "08-25",
-          "s": 914
+          "s": 725
         },
         {
           "d": "08-26",
-          "s": 914
+          "s": 725
         },
         {
           "d": "08-27",
-          "s": 914
+          "s": 725
         },
         {
           "d": "08-28",
-          "s": 924
+          "s": 725
         },
         {
           "d": "08-29",
-          "s": 936
+          "s": 725
         },
         {
           "d": "08-30",
-          "s": 943
+          "s": 749
         },
         {
           "d": "08-31",
-          "s": 953
+          "s": 796
         },
         {
           "d": "09-01",
-          "s": 964
+          "s": 843
         },
         {
           "d": "09-02",
-          "s": 973
+          "s": 889
         },
         {
           "d": "09-03",
-          "s": 987
+          "s": 946
         },
         {
           "d": "09-04",
-          "s": 993
+          "s": 967
         },
         {
           "d": "09-05",
+          "s": 983
+        },
+        {
+          "d": "09-06",
           "s": 996
         }
       ]
     },
     "score": {
-      "score": 95.01,
+      "score": 100.0,
       "breakdown": {
-        "vel": 68,
-        "acc": 70,
-        "health": 92,
-        "fresh": 93,
-        "signal": 100
+        "vel": 100,
+        "acc": 86,
+        "health": 84,
+        "fresh": 75,
+        "signal": 55
       },
       "stage": "early",
       "stage_multiplier": 1.2,
       "confidence": 1.0,
-      "base_score": 79.18,
-      "explanation": "awesome-deepseek-harness 是 Python 开源项目，主打「DeepSeek Harness (DSH) ecosystem: curated plugins, tools, and infrastructure from dsh-external/hub and the public dsh-plugin topic.」；处于增长早期，本周涨速 7.6 star/天；社区健康（fork/star 比 36.6%，3 个 open issue）、项目元数据完整、开发活跃。"
+      "base_score": 83.79,
+      "explanation": "statem 是 Python 开源项目，主打「CLI runbook for agent long run.」；处于增长早期，本周涨速 29 star/天，涨速在加快；社区健康（fork/star 比 7.4%，3 个 open issue）、开发活跃。"
     }
   },
   {
     "repo": {
-      "owner": "BitMiracle-AI",
-      "name": "Dormice",
-      "full_name": "BitMiracle-AI/Dormice",
-      "description": "The SQLite of agent sandboxes — self-hosted, E2B-compatible. One machine, sandboxes that live forever, idle costs nothing.",
-      "stars": 997,
-      "forks": 72,
-      "open_issues": 66,
-      "created_at": "2026-07-08T13:02:44+00:00",
-      "pushed_at": "2026-09-01T08:17:43+00:00",
-      "updated_at": "2026-09-05T08:59:00+00:00",
+      "owner": "Spielewoy",
+      "name": "autoprompt-skill",
+      "full_name": "Spielewoy/autoprompt-skill",
+      "description": "Autoprompt is a coding-agent skill that cuts failures by 45% on agentic coding tasks.",
+      "stars": 998,
+      "forks": 66,
+      "open_issues": 12,
+      "created_at": "2026-08-17T22:40:47+00:00",
+      "pushed_at": "2026-09-05T19:19:01+00:00",
+      "updated_at": "2026-09-06T07:37:22+00:00",
       "topics": [
-        "agents",
+        "agent-orchestration",
+        "agent-skills",
+        "agentic-workflows",
         "ai-agents",
-        "code-execution",
-        "docker",
-        "e2b",
-        "gvisor",
-        "sandbox",
-        "self-hosted"
+        "ai-coding",
+        "automated-testing",
+        "autonomous-agents",
+        "claude-code",
+        "cli",
+        "code-review",
+        "codex",
+        "coding-agent",
+        "developer-tools",
+        "github-copilot",
+        "multi-agent-systems",
+        "opencode",
+        "prompt-engineering",
+        "subagents",
+        "test-driven-development",
+        "workflow-automation"
       ],
-      "language": "TypeScript",
-      "license": "Apache-2.0",
-      "homepage": null,
-      "html_url": "https://github.com/BitMiracle-AI/Dormice",
+      "language": "JavaScript",
+      "license": "MIT",
+      "homepage": "https://www.npmjs.com/package/autoprompt-skill",
+      "html_url": "https://github.com/Spielewoy/autoprompt-skill",
       "default_branch": "main",
       "archived": false,
       "search_score": 1.0,
       "stars_7d_ago": 936,
       "star_series": [
         {
-          "d": "08-07",
-          "s": 722
-        },
-        {
           "d": "08-08",
-          "s": 722
+          "s": 919
         },
         {
           "d": "08-09",
-          "s": 722
+          "s": 919
         },
         {
           "d": "08-10",
-          "s": 722
+          "s": 919
         },
         {
           "d": "08-11",
-          "s": 722
+          "s": 919
         },
         {
           "d": "08-12",
-          "s": 722
+          "s": 919
         },
         {
           "d": "08-13",
-          "s": 722
+          "s": 919
         },
         {
           "d": "08-14",
-          "s": 722
+          "s": 919
         },
         {
           "d": "08-15",
-          "s": 722
+          "s": 919
         },
         {
           "d": "08-16",
-          "s": 722
+          "s": 919
         },
         {
           "d": "08-17",
-          "s": 722
+          "s": 919
         },
         {
           "d": "08-18",
-          "s": 729
+          "s": 919
         },
         {
           "d": "08-19",
-          "s": 758
+          "s": 919
         },
         {
           "d": "08-20",
-          "s": 778
+          "s": 919
         },
         {
           "d": "08-21",
-          "s": 803
+          "s": 919
         },
         {
           "d": "08-22",
-          "s": 813
+          "s": 919
         },
         {
           "d": "08-23",
-          "s": 830
+          "s": 919
         },
         {
           "d": "08-24",
-          "s": 849
+          "s": 919
         },
         {
           "d": "08-25",
-          "s": 868
+          "s": 919
         },
         {
           "d": "08-26",
-          "s": 886
+          "s": 919
         },
         {
           "d": "08-27",
-          "s": 895
+          "s": 919
         },
         {
           "d": "08-28",
-          "s": 908
+          "s": 919
         },
         {
           "d": "08-29",
-          "s": 922
+          "s": 919
         },
         {
           "d": "08-30",
+          "s": 923
+        },
+        {
+          "d": "08-31",
           "s": 936
         },
         {
-          "d": "08-31",
-          "s": 946
-        },
-        {
           "d": "09-01",
-          "s": 961
-        },
-        {
-          "d": "09-02",
-          "s": 970
-        },
-        {
-          "d": "09-03",
-          "s": 987
-        },
-        {
-          "d": "09-04",
-          "s": 995
-        },
-        {
-          "d": "09-05",
-          "s": 997
-        }
-      ]
-    },
-    "score": {
-      "score": 74.88,
-      "breakdown": {
-        "vel": 72,
-        "acc": 40,
-        "health": 67,
-        "fresh": 84,
-        "signal": 70
-      },
-      "stage": "early",
-      "stage_multiplier": 1.2,
-      "confidence": 1.0,
-      "base_score": 62.4,
-      "explanation": "Dormice 是 TypeScript 开源项目，主打「The SQLite of agent sandboxes — self-hosted, E2B-compatible. One machine, sandboxes that live forever, idle costs nothing.」；处于增长早期，本周涨速 8.7 star/天；开发活跃。"
-    }
-  },
-  {
-    "repo": {
-      "owner": "zhitongblog",
-      "name": "solomd",
-      "full_name": "zhitongblog/solomd",
-      "description": "A markdown editor — and the bridge to your LLM. Local-first, MIT, ~15 MB. Bundled MCP server lets Claude Code / Codex / Cursor drive your vault directly. 14 AI providers BYOK.",
-      "stars": 1000,
-      "forks": 63,
-      "open_issues": 91,
-      "created_at": "2026-04-08T03:52:45+00:00",
-      "pushed_at": "2026-09-05T05:00:34+00:00",
-      "updated_at": "2026-09-05T05:00:38+00:00",
-      "topics": [
-        "ai",
-        "android",
-        "autogit",
-        "byok",
-        "cross-platform",
-        "ios",
-        "knowledge-base",
-        "local-first",
-        "markdown",
-        "markdown-editor",
-        "mcp",
-        "mcp-server",
-        "note-taking",
-        "obsidian-alternative",
-        "tauri",
-        "tldraw",
-        "typora-alternative",
-        "vue",
-        "whiteboard",
-        "wikilinks"
-      ],
-      "language": "TypeScript",
-      "license": "MIT",
-      "homepage": "https://solomd.app",
-      "html_url": "https://github.com/zhitongblog/solomd",
-      "default_branch": "main",
-      "archived": false,
-      "search_score": 1.0,
-      "stars_7d_ago": 949,
-      "star_series": [
-        {
-          "d": "08-07",
-          "s": 852
-        },
-        {
-          "d": "08-08",
-          "s": 852
-        },
-        {
-          "d": "08-09",
-          "s": 852
-        },
-        {
-          "d": "08-10",
-          "s": 852
-        },
-        {
-          "d": "08-11",
-          "s": 852
-        },
-        {
-          "d": "08-12",
-          "s": 852
-        },
-        {
-          "d": "08-13",
-          "s": 852
-        },
-        {
-          "d": "08-14",
-          "s": 852
-        },
-        {
-          "d": "08-15",
-          "s": 852
-        },
-        {
-          "d": "08-16",
-          "s": 852
-        },
-        {
-          "d": "08-17",
-          "s": 852
-        },
-        {
-          "d": "08-18",
-          "s": 852
-        },
-        {
-          "d": "08-19",
-          "s": 863
-        },
-        {
-          "d": "08-20",
-          "s": 874
-        },
-        {
-          "d": "08-21",
-          "s": 880
-        },
-        {
-          "d": "08-22",
-          "s": 890
-        },
-        {
-          "d": "08-23",
-          "s": 897
-        },
-        {
-          "d": "08-24",
-          "s": 901
-        },
-        {
-          "d": "08-25",
-          "s": 908
-        },
-        {
-          "d": "08-26",
-          "s": 921
-        },
-        {
-          "d": "08-27",
-          "s": 924
-        },
-        {
-          "d": "08-28",
-          "s": 932
-        },
-        {
-          "d": "08-29",
-          "s": 940
-        },
-        {
-          "d": "08-30",
           "s": 949
         },
         {
-          "d": "08-31",
-          "s": 958
-        },
-        {
-          "d": "09-01",
-          "s": 969
-        },
-        {
           "d": "09-02",
-          "s": 978
+          "s": 964
         },
         {
           "d": "09-03",
-          "s": 988
+          "s": 974
         },
         {
           "d": "09-04",
-          "s": 998
+          "s": 983
         },
         {
           "d": "09-05",
-          "s": 1000
+          "s": 996
+        },
+        {
+          "d": "09-06",
+          "s": 998
         }
       ]
     },
     "score": {
-      "score": 72.52,
+      "score": 97.62,
       "breakdown": {
-        "vel": 67,
-        "acc": 50,
-        "health": 57,
-        "fresh": 59,
+        "vel": 68,
+        "acc": 93,
+        "health": 79,
+        "fresh": 95,
         "signal": 85
       },
       "stage": "early",
       "stage_multiplier": 1.2,
       "confidence": 1.0,
-      "base_score": 60.43,
-      "explanation": "solomd 是 TypeScript 开源项目，主打「A markdown editor — and the bridge to your LLM. Local-first, MIT, ~15 MB. Bundled MCP server lets Claude Code / Codex / Cursor drive your vault directly. 14 AI providers BYOK.」；处于增长早期，本周涨速 7.3 star/天；项目元数据完整。"
+      "base_score": 81.35,
+      "explanation": "autoprompt-skill 是 JavaScript 开源项目，主打「Autoprompt is a coding-agent skill that cuts failures by 45% on agentic coding tasks.」；处于增长早期，本周涨速 8.9 star/天，涨速在加快；社区健康（fork/star 比 6.6%，12 个 open issue）、项目元数据完整、开发活跃。"
     }
   },
   {
     "repo": {
-      "owner": "gotgenes",
-      "name": "pi-packages",
-      "full_name": "gotgenes/pi-packages",
-      "description": "Monorepo for @gotgenes pi packages",
-      "stars": 200,
-      "forks": 74,
-      "open_issues": 82,
-      "created_at": "2026-05-15T14:53:52+00:00",
-      "pushed_at": "2026-09-05T06:56:43+00:00",
-      "updated_at": "2026-09-05T06:56:47+00:00",
-      "topics": [],
-      "language": "TypeScript",
-      "license": null,
-      "homepage": null,
-      "html_url": "https://github.com/gotgenes/pi-packages",
+      "owner": "xyTom",
+      "name": "coding-tools-mcp",
+      "full_name": "xyTom/coding-tools-mcp",
+      "description": "Give any AI agent the ability to code",
+      "stars": 994,
+      "forks": 166,
+      "open_issues": 17,
+      "created_at": "2026-05-21T05:59:42+00:00",
+      "pushed_at": "2026-09-03T18:18:00+00:00",
+      "updated_at": "2026-09-06T08:05:37+00:00",
+      "topics": [
+        "dsh-plugin",
+        "mcp",
+        "mcp-server"
+      ],
+      "language": "Python",
+      "license": "Apache-2.0",
+      "homepage": "https://coding-1afcb9be.mintlify.app",
+      "html_url": "https://github.com/xyTom/coding-tools-mcp",
       "default_branch": "main",
       "archived": false,
       "search_score": 1.0,
-      "stars_7d_ago": 184,
+      "stars_7d_ago": 945,
       "star_series": [
         {
-          "d": "08-07",
-          "s": 184
-        },
-        {
           "d": "08-08",
-          "s": 184
+          "s": 775
         },
         {
           "d": "08-09",
-          "s": 184
+          "s": 775
         },
         {
           "d": "08-10",
-          "s": 184
+          "s": 775
         },
         {
           "d": "08-11",
-          "s": 184
+          "s": 775
         },
         {
           "d": "08-12",
-          "s": 184
+          "s": 775
         },
         {
           "d": "08-13",
-          "s": 184
+          "s": 775
         },
         {
           "d": "08-14",
-          "s": 184
+          "s": 775
         },
         {
           "d": "08-15",
-          "s": 184
+          "s": 775
         },
         {
           "d": "08-16",
-          "s": 184
+          "s": 789
         },
         {
           "d": "08-17",
-          "s": 184
+          "s": 798
         },
         {
           "d": "08-18",
-          "s": 184
+          "s": 810
         },
         {
           "d": "08-19",
-          "s": 184
+          "s": 818
         },
         {
           "d": "08-20",
-          "s": 184
+          "s": 831
         },
         {
           "d": "08-21",
-          "s": 184
+          "s": 837
         },
         {
           "d": "08-22",
-          "s": 184
+          "s": 849
         },
         {
           "d": "08-23",
-          "s": 184
+          "s": 866
         },
         {
           "d": "08-24",
-          "s": 184
+          "s": 876
         },
         {
           "d": "08-25",
-          "s": 184
+          "s": 891
         },
         {
           "d": "08-26",
-          "s": 184
+          "s": 900
         },
         {
           "d": "08-27",
-          "s": 184
+          "s": 914
         },
         {
           "d": "08-28",
-          "s": 184
+          "s": 929
         },
         {
           "d": "08-29",
-          "s": 184
+          "s": 935
         },
         {
           "d": "08-30",
-          "s": 184
+          "s": 940
         },
         {
           "d": "08-31",
-          "s": 185
+          "s": 945
         },
         {
           "d": "09-01",
-          "s": 190
+          "s": 954
         },
         {
           "d": "09-02",
-          "s": 194
+          "s": 961
         },
         {
           "d": "09-03",
-          "s": 197
+          "s": 969
         },
         {
           "d": "09-04",
-          "s": 199
+          "s": 985
         },
         {
           "d": "09-05",
-          "s": 200
+          "s": 990
+        },
+        {
+          "d": "09-06",
+          "s": 994
         }
       ]
     },
     "score": {
-      "score": 69.11,
+      "score": 77.81,
       "breakdown": {
-        "vel": 38,
-        "acc": 91,
-        "health": 69,
-        "fresh": 69,
-        "signal": 35
+        "vel": 61,
+        "acc": 43,
+        "health": 97,
+        "fresh": 70,
+        "signal": 85
       },
       "stage": "early",
       "stage_multiplier": 1.2,
       "confidence": 1.0,
-      "base_score": 57.59,
-      "explanation": "pi-packages 是 TypeScript 开源项目，主打「Monorepo for @gotgenes pi packages」；处于增长早期，涨速在加快。"
+      "base_score": 64.84,
+      "explanation": "coding-tools-mcp 是 Python 开源项目，主打「Give any AI agent the ability to code」；处于增长早期，本周涨速 7.0 star/天；社区健康（fork/star 比 16.7%，17 个 open issue）、项目元数据完整、开发活跃。"
     }
   },
   {
     "repo": {
-      "owner": "rivet-dev",
-      "name": "dynamic-apps",
-      "full_name": "rivet-dev/dynamic-apps",
-      "description": "Deploy an AI-generated backend for every user.",
-      "stars": 996,
-      "forks": 50,
-      "open_issues": 19,
-      "created_at": "2025-12-15T07:28:09+00:00",
-      "pushed_at": "2026-08-31T21:38:45+00:00",
-      "updated_at": "2026-09-05T05:48:06+00:00",
-      "topics": [],
-      "language": "TypeScript",
-      "license": null,
-      "homepage": "https://rivet.dev/dynamic-apps",
-      "html_url": "https://github.com/rivet-dev/dynamic-apps",
+      "owner": "perplexityai",
+      "name": "numbat",
+      "full_name": "perplexityai/numbat",
+      "description": "Visibility into AI agent activity on endpoints, with on-device detection, optional pre-action blocking, and forensic reconstruction.",
+      "stars": 994,
+      "forks": 103,
+      "open_issues": 10,
+      "created_at": "2026-07-24T06:07:59+00:00",
+      "pushed_at": "2026-09-02T19:42:13+00:00",
+      "updated_at": "2026-09-06T07:03:24+00:00",
+      "topics": [
+        "agent-security",
+        "ai-agent-security",
+        "ai-agents"
+      ],
+      "language": "Go",
+      "license": "Apache-2.0",
+      "homepage": null,
+      "html_url": "https://github.com/perplexityai/numbat",
       "default_branch": "main",
       "archived": false,
       "search_score": 1.0,
-      "stars_7d_ago": 972,
+      "stars_7d_ago": 979,
       "star_series": [
         {
-          "d": "08-07",
-          "s": 971
-        },
-        {
           "d": "08-08",
-          "s": 971
+          "s": 927
         },
         {
           "d": "08-09",
-          "s": 971
+          "s": 927
         },
         {
           "d": "08-10",
-          "s": 971
+          "s": 927
         },
         {
           "d": "08-11",
-          "s": 971
+          "s": 927
         },
         {
           "d": "08-12",
-          "s": 971
+          "s": 927
         },
         {
           "d": "08-13",
-          "s": 971
+          "s": 927
         },
         {
           "d": "08-14",
-          "s": 971
+          "s": 927
         },
         {
           "d": "08-15",
-          "s": 971
+          "s": 927
         },
         {
           "d": "08-16",
-          "s": 971
+          "s": 927
         },
         {
           "d": "08-17",
-          "s": 971
+          "s": 927
         },
         {
           "d": "08-18",
-          "s": 971
+          "s": 929
         },
         {
           "d": "08-19",
-          "s": 971
+          "s": 933
         },
         {
           "d": "08-20",
-          "s": 971
+          "s": 942
         },
         {
           "d": "08-21",
-          "s": 971
+          "s": 944
         },
         {
           "d": "08-22",
-          "s": 971
+          "s": 948
         },
         {
           "d": "08-23",
-          "s": 971
+          "s": 954
         },
         {
           "d": "08-24",
-          "s": 971
+          "s": 958
         },
         {
           "d": "08-25",
-          "s": 971
+          "s": 964
         },
         {
           "d": "08-26",
-          "s": 971
+          "s": 968
         },
         {
           "d": "08-27",
@@ -796,15 +612,15 @@
         },
         {
           "d": "08-28",
-          "s": 972
+          "s": 975
         },
         {
           "d": "08-29",
-          "s": 972
+          "s": 975
         },
         {
           "d": "08-30",
-          "s": 972
+          "s": 976
         },
         {
           "d": "08-31",
@@ -812,11 +628,183 @@
         },
         {
           "d": "09-01",
-          "s": 990
+          "s": 980
         },
         {
           "d": "09-02",
-          "s": 991
+          "s": 983
+        },
+        {
+          "d": "09-03",
+          "s": 984
+        },
+        {
+          "d": "09-04",
+          "s": 986
+        },
+        {
+          "d": "09-05",
+          "s": 992
+        },
+        {
+          "d": "09-06",
+          "s": 994
+        }
+      ]
+    },
+    "score": {
+      "score": 65.53,
+      "breakdown": {
+        "vel": 34,
+        "acc": 43,
+        "health": 93,
+        "fresh": 88,
+        "signal": 70
+      },
+      "stage": "early",
+      "stage_multiplier": 1.2,
+      "confidence": 1.0,
+      "base_score": 54.6,
+      "explanation": "numbat 是 Go 开源项目，主打「Visibility into AI agent activity on endpoints, with on-device detection, optional pre-action blocking, and forensic reconstruction.」；处于增长早期；社区健康（fork/star 比 10.4%，10 个 open issue）、开发活跃。"
+    }
+  },
+  {
+    "repo": {
+      "owner": "FuJacob",
+      "name": "cotabby",
+      "full_name": "FuJacob/cotabby",
+      "description": "Cotabby is local AI autocomplete for your entire Mac. Open source. On device. Everywhere you type.",
+      "stars": 998,
+      "forks": 62,
+      "open_issues": 82,
+      "created_at": "2026-04-04T20:11:50+00:00",
+      "pushed_at": "2026-09-05T02:58:53+00:00",
+      "updated_at": "2026-09-06T05:38:06+00:00",
+      "topics": [
+        "ai",
+        "autocomplete",
+        "cotabby",
+        "cotypist",
+        "llama",
+        "llama-cpp",
+        "local-ai",
+        "macos",
+        "menu-bar",
+        "productivity",
+        "writing-assistant"
+      ],
+      "language": "Swift",
+      "license": "AGPL-3.0",
+      "homepage": "https://cotabby.app",
+      "html_url": "https://github.com/FuJacob/cotabby",
+      "default_branch": "main",
+      "archived": false,
+      "search_score": 1.0,
+      "stars_7d_ago": 982,
+      "star_series": [
+        {
+          "d": "08-08",
+          "s": 930
+        },
+        {
+          "d": "08-09",
+          "s": 932
+        },
+        {
+          "d": "08-10",
+          "s": 933
+        },
+        {
+          "d": "08-11",
+          "s": 933
+        },
+        {
+          "d": "08-12",
+          "s": 933
+        },
+        {
+          "d": "08-13",
+          "s": 934
+        },
+        {
+          "d": "08-14",
+          "s": 936
+        },
+        {
+          "d": "08-15",
+          "s": 938
+        },
+        {
+          "d": "08-16",
+          "s": 939
+        },
+        {
+          "d": "08-17",
+          "s": 943
+        },
+        {
+          "d": "08-18",
+          "s": 946
+        },
+        {
+          "d": "08-19",
+          "s": 951
+        },
+        {
+          "d": "08-20",
+          "s": 953
+        },
+        {
+          "d": "08-21",
+          "s": 956
+        },
+        {
+          "d": "08-22",
+          "s": 958
+        },
+        {
+          "d": "08-23",
+          "s": 961
+        },
+        {
+          "d": "08-24",
+          "s": 963
+        },
+        {
+          "d": "08-25",
+          "s": 965
+        },
+        {
+          "d": "08-26",
+          "s": 970
+        },
+        {
+          "d": "08-27",
+          "s": 973
+        },
+        {
+          "d": "08-28",
+          "s": 975
+        },
+        {
+          "d": "08-29",
+          "s": 976
+        },
+        {
+          "d": "08-30",
+          "s": 979
+        },
+        {
+          "d": "08-31",
+          "s": 982
+        },
+        {
+          "d": "09-01",
+          "s": 986
+        },
+        {
+          "d": "09-02",
+          "s": 990
         },
         {
           "d": "09-03",
@@ -824,28 +812,32 @@
         },
         {
           "d": "09-04",
-          "s": 995
+          "s": 994
         },
         {
           "d": "09-05",
-          "s": 996
+          "s": 997
+        },
+        {
+          "d": "09-06",
+          "s": 998
         }
       ]
     },
     "score": {
-      "score": 64.29,
+      "score": 59.04,
       "breakdown": {
-        "vel": 47,
-        "acc": 96,
-        "health": 72,
-        "fresh": 28,
-        "signal": 65
+        "vel": 35,
+        "acc": 46,
+        "health": 59,
+        "fresh": 58,
+        "signal": 85
       },
-      "stage": "mid_early",
-      "stage_multiplier": 1.1,
+      "stage": "early",
+      "stage_multiplier": 1.2,
       "confidence": 1.0,
-      "base_score": 58.45,
-      "explanation": "dynamic-apps 是 TypeScript 开源项目，主打「Deploy an AI-generated backend for every user.」；处于中早期增长，本周涨速 3.4 star/天，涨速在加快；社区健康（fork/star 比 5.0%，19 个 open issue）。"
+      "base_score": 49.2,
+      "explanation": "cotabby 是 Swift 开源项目，主打「Cotabby is local AI autocomplete for your entire Mac. Open source. On device. Everywhere you type.」；处于增长早期；项目元数据完整。"
     }
   }
 ]
