@@ -1,507 +1,348 @@
 [
   {
     "repo": {
-      "owner": "henryqin1997",
-      "name": "statem",
-      "full_name": "henryqin1997/statem",
-      "description": "CLI runbook for agent long run.",
+      "owner": "alexgreensh",
+      "name": "attention-span",
+      "full_name": "alexgreensh/attention-span",
+      "description": "Make your agents talk human. ADHD-friendly output styles for Claude Code, Codex, and others. So you can pay attention, not tokens.",
       "stars": 996,
-      "forks": 74,
-      "open_issues": 3,
-      "created_at": "2026-06-05T21:30:51+00:00",
-      "pushed_at": "2026-09-02T07:09:22+00:00",
-      "updated_at": "2026-09-06T10:13:23+00:00",
-      "topics": [],
-      "language": "Python",
-      "license": "Apache-2.0",
-      "homepage": null,
-      "html_url": "https://github.com/henryqin1997/statem",
-      "default_branch": "main",
-      "archived": false,
-      "search_score": 1.0,
-      "stars_7d_ago": 796,
-      "star_series": [
-        {
-          "d": "08-08",
-          "s": 725
-        },
-        {
-          "d": "08-09",
-          "s": 725
-        },
-        {
-          "d": "08-10",
-          "s": 725
-        },
-        {
-          "d": "08-11",
-          "s": 725
-        },
-        {
-          "d": "08-12",
-          "s": 725
-        },
-        {
-          "d": "08-13",
-          "s": 725
-        },
-        {
-          "d": "08-14",
-          "s": 725
-        },
-        {
-          "d": "08-15",
-          "s": 725
-        },
-        {
-          "d": "08-16",
-          "s": 725
-        },
-        {
-          "d": "08-17",
-          "s": 725
-        },
-        {
-          "d": "08-18",
-          "s": 725
-        },
-        {
-          "d": "08-19",
-          "s": 725
-        },
-        {
-          "d": "08-20",
-          "s": 725
-        },
-        {
-          "d": "08-21",
-          "s": 725
-        },
-        {
-          "d": "08-22",
-          "s": 725
-        },
-        {
-          "d": "08-23",
-          "s": 725
-        },
-        {
-          "d": "08-24",
-          "s": 725
-        },
-        {
-          "d": "08-25",
-          "s": 725
-        },
-        {
-          "d": "08-26",
-          "s": 725
-        },
-        {
-          "d": "08-27",
-          "s": 725
-        },
-        {
-          "d": "08-28",
-          "s": 725
-        },
-        {
-          "d": "08-29",
-          "s": 725
-        },
-        {
-          "d": "08-30",
-          "s": 749
-        },
-        {
-          "d": "08-31",
-          "s": 796
-        },
-        {
-          "d": "09-01",
-          "s": 843
-        },
-        {
-          "d": "09-02",
-          "s": 889
-        },
-        {
-          "d": "09-03",
-          "s": 946
-        },
-        {
-          "d": "09-04",
-          "s": 967
-        },
-        {
-          "d": "09-05",
-          "s": 983
-        },
-        {
-          "d": "09-06",
-          "s": 996
-        }
-      ]
-    },
-    "score": {
-      "score": 100.0,
-      "breakdown": {
-        "vel": 100,
-        "acc": 86,
-        "health": 84,
-        "fresh": 75,
-        "signal": 55
-      },
-      "stage": "early",
-      "stage_multiplier": 1.2,
-      "confidence": 1.0,
-      "base_score": 83.79,
-      "explanation": "statem 是 Python 开源项目，主打「CLI runbook for agent long run.」；处于增长早期，本周涨速 29 star/天，涨速在加快；社区健康（fork/star 比 7.4%，3 个 open issue）、开发活跃。"
-    }
-  },
-  {
-    "repo": {
-      "owner": "Spielewoy",
-      "name": "autoprompt-skill",
-      "full_name": "Spielewoy/autoprompt-skill",
-      "description": "Autoprompt is a coding-agent skill that cuts failures by 45% on agentic coding tasks.",
-      "stars": 998,
-      "forks": 66,
-      "open_issues": 12,
-      "created_at": "2026-08-17T22:40:47+00:00",
-      "pushed_at": "2026-09-05T19:19:01+00:00",
-      "updated_at": "2026-09-06T07:37:22+00:00",
+      "forks": 29,
+      "open_issues": 1,
+      "created_at": "2026-08-04T23:20:01+00:00",
+      "pushed_at": "2026-09-06T19:55:50+00:00",
+      "updated_at": "2026-09-07T10:37:33+00:00",
       "topics": [
-        "agent-orchestration",
-        "agent-skills",
-        "agentic-workflows",
-        "ai-agents",
-        "ai-coding",
-        "automated-testing",
-        "autonomous-agents",
+        "adhd-friendly",
+        "ai-slop-reduction",
+        "anti-slop",
         "claude-code",
-        "cli",
-        "code-review",
-        "codex",
-        "coding-agent",
-        "developer-tools",
-        "github-copilot",
-        "multi-agent-systems",
-        "opencode",
-        "prompt-engineering",
-        "subagents",
-        "test-driven-development",
-        "workflow-automation"
+        "claude-plugin",
+        "claude-skills",
+        "eli5",
+        "explainability",
+        "explainable-ai",
+        "output-style",
+        "skills"
       ],
-      "language": "JavaScript",
-      "license": "MIT",
-      "homepage": "https://www.npmjs.com/package/autoprompt-skill",
-      "html_url": "https://github.com/Spielewoy/autoprompt-skill",
+      "language": "Python",
+      "license": "AGPL-3.0",
+      "homepage": "https://alexgreenshpun.com",
+      "html_url": "https://github.com/alexgreensh/attention-span",
       "default_branch": "main",
       "archived": false,
       "search_score": 1.0,
-      "stars_7d_ago": 936,
+      "stars_7d_ago": 890,
       "star_series": [
         {
-          "d": "08-08",
-          "s": 919
-        },
-        {
           "d": "08-09",
-          "s": 919
+          "s": 724
         },
         {
           "d": "08-10",
-          "s": 919
+          "s": 724
         },
         {
           "d": "08-11",
-          "s": 919
+          "s": 724
         },
         {
           "d": "08-12",
-          "s": 919
+          "s": 724
         },
         {
           "d": "08-13",
-          "s": 919
+          "s": 724
         },
         {
           "d": "08-14",
-          "s": 919
+          "s": 724
         },
         {
           "d": "08-15",
-          "s": 919
+          "s": 724
         },
         {
           "d": "08-16",
-          "s": 919
+          "s": 724
         },
         {
           "d": "08-17",
-          "s": 919
+          "s": 743
         },
         {
           "d": "08-18",
-          "s": 919
+          "s": 774
         },
         {
           "d": "08-19",
-          "s": 919
+          "s": 802
         },
         {
           "d": "08-20",
-          "s": 919
-        },
-        {
-          "d": "08-21",
-          "s": 919
-        },
-        {
-          "d": "08-22",
-          "s": 919
-        },
-        {
-          "d": "08-23",
-          "s": 919
-        },
-        {
-          "d": "08-24",
-          "s": 919
-        },
-        {
-          "d": "08-25",
-          "s": 919
-        },
-        {
-          "d": "08-26",
-          "s": 919
-        },
-        {
-          "d": "08-27",
-          "s": 919
-        },
-        {
-          "d": "08-28",
-          "s": 919
-        },
-        {
-          "d": "08-29",
-          "s": 919
-        },
-        {
-          "d": "08-30",
-          "s": 923
-        },
-        {
-          "d": "08-31",
-          "s": 936
-        },
-        {
-          "d": "09-01",
-          "s": 949
-        },
-        {
-          "d": "09-02",
-          "s": 964
-        },
-        {
-          "d": "09-03",
-          "s": 974
-        },
-        {
-          "d": "09-04",
-          "s": 983
-        },
-        {
-          "d": "09-05",
-          "s": 996
-        },
-        {
-          "d": "09-06",
-          "s": 998
-        }
-      ]
-    },
-    "score": {
-      "score": 97.62,
-      "breakdown": {
-        "vel": 68,
-        "acc": 93,
-        "health": 79,
-        "fresh": 95,
-        "signal": 85
-      },
-      "stage": "early",
-      "stage_multiplier": 1.2,
-      "confidence": 1.0,
-      "base_score": 81.35,
-      "explanation": "autoprompt-skill 是 JavaScript 开源项目，主打「Autoprompt is a coding-agent skill that cuts failures by 45% on agentic coding tasks.」；处于增长早期，本周涨速 8.9 star/天，涨速在加快；社区健康（fork/star 比 6.6%，12 个 open issue）、项目元数据完整、开发活跃。"
-    }
-  },
-  {
-    "repo": {
-      "owner": "xyTom",
-      "name": "coding-tools-mcp",
-      "full_name": "xyTom/coding-tools-mcp",
-      "description": "Give any AI agent the ability to code",
-      "stars": 994,
-      "forks": 166,
-      "open_issues": 17,
-      "created_at": "2026-05-21T05:59:42+00:00",
-      "pushed_at": "2026-09-03T18:18:00+00:00",
-      "updated_at": "2026-09-06T08:05:37+00:00",
-      "topics": [
-        "dsh-plugin",
-        "mcp",
-        "mcp-server"
-      ],
-      "language": "Python",
-      "license": "Apache-2.0",
-      "homepage": "https://coding-1afcb9be.mintlify.app",
-      "html_url": "https://github.com/xyTom/coding-tools-mcp",
-      "default_branch": "main",
-      "archived": false,
-      "search_score": 1.0,
-      "stars_7d_ago": 945,
-      "star_series": [
-        {
-          "d": "08-08",
-          "s": 775
-        },
-        {
-          "d": "08-09",
-          "s": 775
-        },
-        {
-          "d": "08-10",
-          "s": 775
-        },
-        {
-          "d": "08-11",
-          "s": 775
-        },
-        {
-          "d": "08-12",
-          "s": 775
-        },
-        {
-          "d": "08-13",
-          "s": 775
-        },
-        {
-          "d": "08-14",
-          "s": 775
-        },
-        {
-          "d": "08-15",
-          "s": 775
-        },
-        {
-          "d": "08-16",
-          "s": 789
-        },
-        {
-          "d": "08-17",
-          "s": 798
-        },
-        {
-          "d": "08-18",
-          "s": 810
-        },
-        {
-          "d": "08-19",
           "s": 818
         },
         {
-          "d": "08-20",
-          "s": 831
-        },
-        {
           "d": "08-21",
-          "s": 837
+          "s": 825
         },
         {
           "d": "08-22",
-          "s": 849
+          "s": 833
         },
         {
           "d": "08-23",
-          "s": 866
+          "s": 840
         },
         {
           "d": "08-24",
-          "s": 876
+          "s": 854
         },
         {
           "d": "08-25",
-          "s": 891
+          "s": 859
         },
         {
           "d": "08-26",
-          "s": 900
+          "s": 862
         },
         {
           "d": "08-27",
-          "s": 914
+          "s": 868
         },
         {
           "d": "08-28",
-          "s": 929
+          "s": 870
         },
         {
           "d": "08-29",
-          "s": 935
+          "s": 873
         },
         {
           "d": "08-30",
-          "s": 940
+          "s": 876
         },
         {
           "d": "08-31",
-          "s": 945
+          "s": 886
         },
         {
           "d": "09-01",
-          "s": 954
+          "s": 890
         },
         {
           "d": "09-02",
-          "s": 961
+          "s": 901
         },
         {
           "d": "09-03",
-          "s": 969
+          "s": 906
         },
         {
           "d": "09-04",
-          "s": 985
+          "s": 911
         },
         {
           "d": "09-05",
-          "s": 990
+          "s": 918
         },
         {
           "d": "09-06",
-          "s": 994
+          "s": 977
+        },
+        {
+          "d": "09-07",
+          "s": 996
         }
       ]
     },
     "score": {
-      "score": 77.81,
+      "score": 91.18,
       "breakdown": {
-        "vel": 61,
-        "acc": 43,
-        "health": 97,
-        "fresh": 70,
+        "vel": 82,
+        "acc": 92,
+        "health": 68,
+        "fresh": 91,
         "signal": 85
+      },
+      "stage": "mid_early",
+      "stage_multiplier": 1.1,
+      "confidence": 1.0,
+      "base_score": 82.89,
+      "explanation": "attention-span 是 Python 开源项目，主打「Make your agents talk human. ADHD-friendly output styles for Claude Code, Codex, and others. So you can pay attention, not tokens.」；处于中早期增长，本周涨速 15 star/天，涨速在加快；项目元数据完整、开发活跃。"
+    }
+  },
+  {
+    "repo": {
+      "owner": "MuwMx",
+      "name": "YumaPlayer",
+      "full_name": "MuwMx/YumaPlayer",
+      "description": "🎵 Hybrid music client for Android: Spotify discovery & UI + YouTube Music library + Hi-Res Lossless (FLAC) streaming with fluid Glassmorphism💫",
+      "stars": 200,
+      "forks": 6,
+      "open_issues": 3,
+      "created_at": "2026-07-24T15:53:08+00:00",
+      "pushed_at": "2026-09-07T11:04:38+00:00",
+      "updated_at": "2026-09-07T11:05:00+00:00",
+      "topics": [
+        "android",
+        "android-ui",
+        "audiophile",
+        "flac",
+        "glassmorphism",
+        "jetpack-compose",
+        "kotlin",
+        "lossless-audio",
+        "lyrics",
+        "material3",
+        "music-player",
+        "spotify",
+        "youtube-music"
+      ],
+      "language": "Kotlin",
+      "license": "GPL-3.0",
+      "homepage": null,
+      "html_url": "https://github.com/MuwMx/YumaPlayer",
+      "default_branch": "main",
+      "archived": false,
+      "search_score": 1.0,
+      "stars_7d_ago": 146,
+      "star_series": [
+        {
+          "d": "08-09",
+          "s": 146
+        },
+        {
+          "d": "08-10",
+          "s": 146
+        },
+        {
+          "d": "08-11",
+          "s": 146
+        },
+        {
+          "d": "08-12",
+          "s": 146
+        },
+        {
+          "d": "08-13",
+          "s": 146
+        },
+        {
+          "d": "08-14",
+          "s": 146
+        },
+        {
+          "d": "08-15",
+          "s": 146
+        },
+        {
+          "d": "08-16",
+          "s": 146
+        },
+        {
+          "d": "08-17",
+          "s": 146
+        },
+        {
+          "d": "08-18",
+          "s": 146
+        },
+        {
+          "d": "08-19",
+          "s": 146
+        },
+        {
+          "d": "08-20",
+          "s": 146
+        },
+        {
+          "d": "08-21",
+          "s": 146
+        },
+        {
+          "d": "08-22",
+          "s": 146
+        },
+        {
+          "d": "08-23",
+          "s": 146
+        },
+        {
+          "d": "08-24",
+          "s": 146
+        },
+        {
+          "d": "08-25",
+          "s": 146
+        },
+        {
+          "d": "08-26",
+          "s": 146
+        },
+        {
+          "d": "08-27",
+          "s": 146
+        },
+        {
+          "d": "08-28",
+          "s": 146
+        },
+        {
+          "d": "08-29",
+          "s": 146
+        },
+        {
+          "d": "08-30",
+          "s": 146
+        },
+        {
+          "d": "08-31",
+          "s": 146
+        },
+        {
+          "d": "09-01",
+          "s": 146
+        },
+        {
+          "d": "09-02",
+          "s": 146
+        },
+        {
+          "d": "09-03",
+          "s": 149
+        },
+        {
+          "d": "09-04",
+          "s": 161
+        },
+        {
+          "d": "09-05",
+          "s": 174
+        },
+        {
+          "d": "09-06",
+          "s": 194
+        },
+        {
+          "d": "09-07",
+          "s": 200
+        }
+      ]
+    },
+    "score": {
+      "score": 90.7,
+      "breakdown": {
+        "vel": 64,
+        "acc": 99,
+        "health": 64,
+        "fresh": 88,
+        "signal": 70
       },
       "stage": "early",
       "stage_multiplier": 1.2,
       "confidence": 1.0,
-      "base_score": 64.84,
-      "explanation": "coding-tools-mcp 是 Python 开源项目，主打「Give any AI agent the ability to code」；处于增长早期，本周涨速 7.0 star/天；社区健康（fork/star 比 16.7%，17 个 open issue）、项目元数据完整、开发活跃。"
+      "base_score": 75.59,
+      "explanation": "YumaPlayer 是 Kotlin 开源项目，主打「🎵 Hybrid music client for Android: Spotify discovery & UI + YouTube Music library + Hi-Res Lossless (FLAC) streaming with fluid Glassmorphism💫」；处于增长早期，本周涨速 7.7 star/天，涨速在加快；开发活跃。"
     }
   },
   {
@@ -510,12 +351,12 @@
       "name": "numbat",
       "full_name": "perplexityai/numbat",
       "description": "Visibility into AI agent activity on endpoints, with on-device detection, optional pre-action blocking, and forensic reconstruction.",
-      "stars": 994,
+      "stars": 999,
       "forks": 103,
       "open_issues": 10,
       "created_at": "2026-07-24T06:07:59+00:00",
       "pushed_at": "2026-09-02T19:42:13+00:00",
-      "updated_at": "2026-09-06T07:03:24+00:00",
+      "updated_at": "2026-09-07T09:53:30+00:00",
       "topics": [
         "agent-security",
         "ai-agent-security",
@@ -528,47 +369,43 @@
       "default_branch": "main",
       "archived": false,
       "search_score": 1.0,
-      "stars_7d_ago": 979,
+      "stars_7d_ago": 980,
       "star_series": [
         {
-          "d": "08-08",
-          "s": 927
-        },
-        {
           "d": "08-09",
-          "s": 927
+          "s": 928
         },
         {
           "d": "08-10",
-          "s": 927
+          "s": 928
         },
         {
           "d": "08-11",
-          "s": 927
+          "s": 928
         },
         {
           "d": "08-12",
-          "s": 927
+          "s": 928
         },
         {
           "d": "08-13",
-          "s": 927
+          "s": 928
         },
         {
           "d": "08-14",
-          "s": 927
+          "s": 928
         },
         {
           "d": "08-15",
-          "s": 927
+          "s": 928
         },
         {
           "d": "08-16",
-          "s": 927
+          "s": 928
         },
         {
           "d": "08-17",
-          "s": 927
+          "s": 928
         },
         {
           "d": "08-18",
@@ -648,15 +485,19 @@
         },
         {
           "d": "09-06",
-          "s": 994
+          "s": 996
+        },
+        {
+          "d": "09-07",
+          "s": 999
         }
       ]
     },
     "score": {
-      "score": 65.53,
+      "score": 72.42,
       "breakdown": {
-        "vel": 34,
-        "acc": 43,
+        "vel": 39,
+        "acc": 55,
         "health": 93,
         "fresh": 88,
         "signal": 70
@@ -664,180 +505,346 @@
       "stage": "early",
       "stage_multiplier": 1.2,
       "confidence": 1.0,
-      "base_score": 54.6,
-      "explanation": "numbat 是 Go 开源项目，主打「Visibility into AI agent activity on endpoints, with on-device detection, optional pre-action blocking, and forensic reconstruction.」；处于增长早期；社区健康（fork/star 比 10.4%，10 个 open issue）、开发活跃。"
+      "base_score": 60.35,
+      "explanation": "numbat 是 Go 开源项目，主打「Visibility into AI agent activity on endpoints, with on-device detection, optional pre-action blocking, and forensic reconstruction.」；处于增长早期；社区健康（fork/star 比 10.3%，10 个 open issue）、开发活跃。"
     }
   },
   {
     "repo": {
-      "owner": "FuJacob",
-      "name": "cotabby",
-      "full_name": "FuJacob/cotabby",
-      "description": "Cotabby is local AI autocomplete for your entire Mac. Open source. On device. Everywhere you type.",
-      "stars": 998,
-      "forks": 62,
-      "open_issues": 82,
-      "created_at": "2026-04-04T20:11:50+00:00",
-      "pushed_at": "2026-09-05T02:58:53+00:00",
-      "updated_at": "2026-09-06T05:38:06+00:00",
+      "owner": "christo-auer",
+      "name": "eilmeldung",
+      "full_name": "christo-auer/eilmeldung",
+      "description": "eilmeldung is a TUI RSS reader based on the awesome news-flash library.",
+      "stars": 993,
+      "forks": 35,
+      "open_issues": 1,
+      "created_at": "2025-12-14T09:44:39+00:00",
+      "pushed_at": "2026-09-04T17:04:49+00:00",
+      "updated_at": "2026-09-07T06:09:21+00:00",
       "topics": [
-        "ai",
-        "autocomplete",
-        "cotabby",
-        "cotypist",
-        "llama",
-        "llama-cpp",
-        "local-ai",
-        "macos",
-        "menu-bar",
-        "productivity",
-        "writing-assistant"
+        "command-line",
+        "commandline",
+        "news",
+        "newsflash",
+        "ratatui",
+        "rss",
+        "rust",
+        "terminal",
+        "tui"
       ],
-      "language": "Swift",
-      "license": "AGPL-3.0",
-      "homepage": "https://cotabby.app",
-      "html_url": "https://github.com/FuJacob/cotabby",
+      "language": "Rust",
+      "license": "GPL-3.0",
+      "homepage": null,
+      "html_url": "https://github.com/christo-auer/eilmeldung",
       "default_branch": "main",
       "archived": false,
       "search_score": 1.0,
-      "stars_7d_ago": 982,
+      "stars_7d_ago": 961,
       "star_series": [
         {
-          "d": "08-08",
-          "s": 930
-        },
-        {
           "d": "08-09",
-          "s": 932
+          "s": 929
         },
         {
           "d": "08-10",
-          "s": 933
+          "s": 929
         },
         {
           "d": "08-11",
-          "s": 933
+          "s": 929
         },
         {
           "d": "08-12",
-          "s": 933
+          "s": 929
         },
         {
           "d": "08-13",
-          "s": 934
+          "s": 931
         },
         {
           "d": "08-14",
-          "s": 936
+          "s": 932
         },
         {
           "d": "08-15",
-          "s": 938
+          "s": 932
         },
         {
           "d": "08-16",
-          "s": 939
+          "s": 932
         },
         {
           "d": "08-17",
-          "s": 943
+          "s": 933
         },
         {
           "d": "08-18",
-          "s": 946
+          "s": 934
         },
         {
           "d": "08-19",
-          "s": 951
+          "s": 934
         },
         {
           "d": "08-20",
-          "s": 953
+          "s": 935
         },
         {
           "d": "08-21",
-          "s": 956
+          "s": 937
         },
         {
           "d": "08-22",
-          "s": 958
+          "s": 938
         },
         {
           "d": "08-23",
-          "s": 961
+          "s": 938
         },
         {
           "d": "08-24",
-          "s": 963
+          "s": 938
         },
         {
           "d": "08-25",
-          "s": 965
+          "s": 941
         },
         {
           "d": "08-26",
-          "s": 970
+          "s": 942
         },
         {
           "d": "08-27",
-          "s": 973
+          "s": 948
         },
         {
           "d": "08-28",
-          "s": 975
+          "s": 949
         },
         {
           "d": "08-29",
-          "s": 976
+          "s": 951
         },
         {
           "d": "08-30",
-          "s": 979
+          "s": 952
         },
         {
           "d": "08-31",
-          "s": 982
+          "s": 954
         },
         {
           "d": "09-01",
-          "s": 986
+          "s": 961
         },
         {
           "d": "09-02",
-          "s": 990
+          "s": 977
         },
         {
           "d": "09-03",
-          "s": 993
+          "s": 981
         },
         {
           "d": "09-04",
-          "s": 994
+          "s": 983
         },
         {
           "d": "09-05",
-          "s": 997
+          "s": 988
         },
         {
           "d": "09-06",
-          "s": 998
+          "s": 991
+        },
+        {
+          "d": "09-07",
+          "s": 993
         }
       ]
     },
     "score": {
-      "score": 59.04,
+      "score": 64.82,
       "breakdown": {
-        "vel": 35,
-        "acc": 46,
-        "health": 59,
-        "fresh": 58,
-        "signal": 85
+        "vel": 51,
+        "acc": 65,
+        "health": 70,
+        "fresh": 27,
+        "signal": 70
       },
       "stage": "early",
       "stage_multiplier": 1.2,
       "confidence": 1.0,
-      "base_score": 49.2,
-      "explanation": "cotabby 是 Swift 开源项目，主打「Cotabby is local AI autocomplete for your entire Mac. Open source. On device. Everywhere you type.」；处于增长早期；项目元数据完整。"
+      "base_score": 54.02,
+      "explanation": "eilmeldung 是 Rust 开源项目，主打「eilmeldung is a TUI RSS reader based on the awesome news-flash library.」；处于增长早期，本周涨速 4.6 star/天；社区健康（fork/star 比 3.5%，1 个 open issue）。"
+    }
+  },
+  {
+    "repo": {
+      "owner": "ChrisDKN",
+      "name": "Amethyst-Mod-Manager",
+      "full_name": "ChrisDKN/Amethyst-Mod-Manager",
+      "description": "A Linux native mod manager for a variety of games",
+      "stars": 990,
+      "forks": 43,
+      "open_issues": 15,
+      "created_at": "2026-02-21T16:46:39+00:00",
+      "pushed_at": "2026-09-07T11:01:29+00:00",
+      "updated_at": "2026-09-07T10:42:14+00:00",
+      "topics": [
+        "linux",
+        "linuxgaming",
+        "modding",
+        "modding-games",
+        "modmanager",
+        "steam-os",
+        "steamdeck"
+      ],
+      "language": "Python",
+      "license": "GPL-3.0",
+      "homepage": null,
+      "html_url": "https://github.com/ChrisDKN/Amethyst-Mod-Manager",
+      "default_branch": "main",
+      "archived": false,
+      "search_score": 1.0,
+      "stars_7d_ago": 974,
+      "star_series": [
+        {
+          "d": "08-09",
+          "s": 974
+        },
+        {
+          "d": "08-10",
+          "s": 974
+        },
+        {
+          "d": "08-11",
+          "s": 974
+        },
+        {
+          "d": "08-12",
+          "s": 974
+        },
+        {
+          "d": "08-13",
+          "s": 974
+        },
+        {
+          "d": "08-14",
+          "s": 974
+        },
+        {
+          "d": "08-15",
+          "s": 974
+        },
+        {
+          "d": "08-16",
+          "s": 974
+        },
+        {
+          "d": "08-17",
+          "s": 974
+        },
+        {
+          "d": "08-18",
+          "s": 974
+        },
+        {
+          "d": "08-19",
+          "s": 974
+        },
+        {
+          "d": "08-20",
+          "s": 974
+        },
+        {
+          "d": "08-21",
+          "s": 974
+        },
+        {
+          "d": "08-22",
+          "s": 974
+        },
+        {
+          "d": "08-23",
+          "s": 974
+        },
+        {
+          "d": "08-24",
+          "s": 974
+        },
+        {
+          "d": "08-25",
+          "s": 974
+        },
+        {
+          "d": "08-26",
+          "s": 974
+        },
+        {
+          "d": "08-27",
+          "s": 974
+        },
+        {
+          "d": "08-28",
+          "s": 974
+        },
+        {
+          "d": "08-29",
+          "s": 974
+        },
+        {
+          "d": "08-30",
+          "s": 974
+        },
+        {
+          "d": "08-31",
+          "s": 974
+        },
+        {
+          "d": "09-01",
+          "s": 974
+        },
+        {
+          "d": "09-02",
+          "s": 974
+        },
+        {
+          "d": "09-03",
+          "s": 974
+        },
+        {
+          "d": "09-04",
+          "s": 974
+        },
+        {
+          "d": "09-05",
+          "s": 980
+        },
+        {
+          "d": "09-06",
+          "s": 985
+        },
+        {
+          "d": "09-07",
+          "s": 990
+        }
+      ]
+    },
+    "score": {
+      "score": 62.86,
+      "breakdown": {
+        "vel": 35,
+        "acc": 91,
+        "health": 70,
+        "fresh": 46,
+        "signal": 70
+      },
+      "stage": "mid_early",
+      "stage_multiplier": 1.1,
+      "confidence": 1.0,
+      "base_score": 57.14,
+      "explanation": "Amethyst-Mod-Manager 是 Python 开源项目，主打「A Linux native mod manager for a variety of games」；处于中早期增长，涨速在加快；社区健康（fork/star 比 4.3%，15 个 open issue）。"
     }
   }
 ]
