@@ -1,682 +1,500 @@
 [
   {
     "repo": {
-      "owner": "alexgreensh",
-      "name": "attention-span",
-      "full_name": "alexgreensh/attention-span",
-      "description": "Make your agents talk human. ADHD-friendly output styles for Claude Code, Codex, and others. So you can pay attention, not tokens.",
-      "stars": 996,
-      "forks": 29,
+      "owner": "coji",
+      "name": "natural-japanese",
+      "full_name": "coji/natural-japanese",
+      "description": "仕事の日本語を、読みやすくわかりやすく書く・直すための Agent Skill です。",
+      "stars": 993,
+      "forks": 22,
       "open_issues": 1,
-      "created_at": "2026-08-04T23:20:01+00:00",
-      "pushed_at": "2026-09-06T19:55:50+00:00",
-      "updated_at": "2026-09-07T10:37:33+00:00",
+      "created_at": "2026-07-12T05:54:55+00:00",
+      "pushed_at": "2026-09-04T11:45:45+00:00",
+      "updated_at": "2026-09-08T08:50:52+00:00",
       "topics": [
-        "adhd-friendly",
-        "ai-slop-reduction",
-        "anti-slop",
+        "agent-skills",
+        "claude",
         "claude-code",
-        "claude-plugin",
-        "claude-skills",
-        "eli5",
-        "explainability",
-        "explainable-ai",
-        "output-style",
-        "skills"
+        "japanese",
+        "lint",
+        "nlp",
+        "sudachipy",
+        "writing"
       ],
       "language": "Python",
-      "license": "AGPL-3.0",
-      "homepage": "https://alexgreenshpun.com",
-      "html_url": "https://github.com/alexgreensh/attention-span",
+      "license": "MIT",
+      "homepage": null,
+      "html_url": "https://github.com/coji/natural-japanese",
       "default_branch": "main",
       "archived": false,
       "search_score": 1.0,
-      "stars_7d_ago": 890,
+      "stars_7d_ago": 907,
       "star_series": [
         {
-          "d": "08-09",
-          "s": 724
-        },
-        {
           "d": "08-10",
-          "s": 724
+          "s": 907
         },
         {
           "d": "08-11",
-          "s": 724
+          "s": 907
         },
         {
           "d": "08-12",
-          "s": 724
+          "s": 907
         },
         {
           "d": "08-13",
-          "s": 724
+          "s": 907
         },
         {
           "d": "08-14",
-          "s": 724
+          "s": 907
         },
         {
           "d": "08-15",
-          "s": 724
+          "s": 907
         },
         {
           "d": "08-16",
-          "s": 724
+          "s": 907
         },
         {
           "d": "08-17",
-          "s": 743
+          "s": 907
         },
         {
           "d": "08-18",
-          "s": 774
+          "s": 907
         },
         {
           "d": "08-19",
-          "s": 802
+          "s": 907
         },
         {
           "d": "08-20",
-          "s": 818
+          "s": 907
         },
         {
           "d": "08-21",
-          "s": 825
+          "s": 907
         },
         {
           "d": "08-22",
-          "s": 833
+          "s": 907
         },
         {
           "d": "08-23",
-          "s": 840
+          "s": 907
         },
         {
           "d": "08-24",
-          "s": 854
+          "s": 907
         },
         {
           "d": "08-25",
-          "s": 859
+          "s": 907
         },
         {
           "d": "08-26",
-          "s": 862
+          "s": 907
         },
         {
           "d": "08-27",
-          "s": 868
+          "s": 907
         },
         {
           "d": "08-28",
-          "s": 870
+          "s": 907
         },
         {
           "d": "08-29",
-          "s": 873
+          "s": 907
         },
         {
           "d": "08-30",
-          "s": 876
+          "s": 907
         },
         {
           "d": "08-31",
-          "s": 886
+          "s": 907
         },
         {
           "d": "09-01",
-          "s": 890
+          "s": 907
         },
         {
           "d": "09-02",
-          "s": 901
+          "s": 907
         },
         {
           "d": "09-03",
-          "s": 906
+          "s": 907
         },
         {
           "d": "09-04",
-          "s": 911
+          "s": 955
         },
         {
           "d": "09-05",
-          "s": 918
-        },
-        {
-          "d": "09-06",
-          "s": 977
-        },
-        {
-          "d": "09-07",
-          "s": 996
-        }
-      ]
-    },
-    "score": {
-      "score": 91.18,
-      "breakdown": {
-        "vel": 82,
-        "acc": 92,
-        "health": 68,
-        "fresh": 91,
-        "signal": 85
-      },
-      "stage": "mid_early",
-      "stage_multiplier": 1.1,
-      "confidence": 1.0,
-      "base_score": 82.89,
-      "explanation": "attention-span 是 Python 开源项目，主打「Make your agents talk human. ADHD-friendly output styles for Claude Code, Codex, and others. So you can pay attention, not tokens.」；处于中早期增长，本周涨速 15 star/天，涨速在加快；项目元数据完整、开发活跃。"
-    }
-  },
-  {
-    "repo": {
-      "owner": "MuwMx",
-      "name": "YumaPlayer",
-      "full_name": "MuwMx/YumaPlayer",
-      "description": "🎵 Hybrid music client for Android: Spotify discovery & UI + YouTube Music library + Hi-Res Lossless (FLAC) streaming with fluid Glassmorphism💫",
-      "stars": 200,
-      "forks": 6,
-      "open_issues": 3,
-      "created_at": "2026-07-24T15:53:08+00:00",
-      "pushed_at": "2026-09-07T11:04:38+00:00",
-      "updated_at": "2026-09-07T11:05:00+00:00",
-      "topics": [
-        "android",
-        "android-ui",
-        "audiophile",
-        "flac",
-        "glassmorphism",
-        "jetpack-compose",
-        "kotlin",
-        "lossless-audio",
-        "lyrics",
-        "material3",
-        "music-player",
-        "spotify",
-        "youtube-music"
-      ],
-      "language": "Kotlin",
-      "license": "GPL-3.0",
-      "homepage": null,
-      "html_url": "https://github.com/MuwMx/YumaPlayer",
-      "default_branch": "main",
-      "archived": false,
-      "search_score": 1.0,
-      "stars_7d_ago": 146,
-      "star_series": [
-        {
-          "d": "08-09",
-          "s": 146
-        },
-        {
-          "d": "08-10",
-          "s": 146
-        },
-        {
-          "d": "08-11",
-          "s": 146
-        },
-        {
-          "d": "08-12",
-          "s": 146
-        },
-        {
-          "d": "08-13",
-          "s": 146
-        },
-        {
-          "d": "08-14",
-          "s": 146
-        },
-        {
-          "d": "08-15",
-          "s": 146
-        },
-        {
-          "d": "08-16",
-          "s": 146
-        },
-        {
-          "d": "08-17",
-          "s": 146
-        },
-        {
-          "d": "08-18",
-          "s": 146
-        },
-        {
-          "d": "08-19",
-          "s": 146
-        },
-        {
-          "d": "08-20",
-          "s": 146
-        },
-        {
-          "d": "08-21",
-          "s": 146
-        },
-        {
-          "d": "08-22",
-          "s": 146
-        },
-        {
-          "d": "08-23",
-          "s": 146
-        },
-        {
-          "d": "08-24",
-          "s": 146
-        },
-        {
-          "d": "08-25",
-          "s": 146
-        },
-        {
-          "d": "08-26",
-          "s": 146
-        },
-        {
-          "d": "08-27",
-          "s": 146
-        },
-        {
-          "d": "08-28",
-          "s": 146
-        },
-        {
-          "d": "08-29",
-          "s": 146
-        },
-        {
-          "d": "08-30",
-          "s": 146
-        },
-        {
-          "d": "08-31",
-          "s": 146
-        },
-        {
-          "d": "09-01",
-          "s": 146
-        },
-        {
-          "d": "09-02",
-          "s": 146
-        },
-        {
-          "d": "09-03",
-          "s": 149
-        },
-        {
-          "d": "09-04",
-          "s": 161
-        },
-        {
-          "d": "09-05",
-          "s": 174
-        },
-        {
-          "d": "09-06",
-          "s": 194
-        },
-        {
-          "d": "09-07",
-          "s": 200
-        }
-      ]
-    },
-    "score": {
-      "score": 90.7,
-      "breakdown": {
-        "vel": 64,
-        "acc": 99,
-        "health": 64,
-        "fresh": 88,
-        "signal": 70
-      },
-      "stage": "early",
-      "stage_multiplier": 1.2,
-      "confidence": 1.0,
-      "base_score": 75.59,
-      "explanation": "YumaPlayer 是 Kotlin 开源项目，主打「🎵 Hybrid music client for Android: Spotify discovery & UI + YouTube Music library + Hi-Res Lossless (FLAC) streaming with fluid Glassmorphism💫」；处于增长早期，本周涨速 7.7 star/天，涨速在加快；开发活跃。"
-    }
-  },
-  {
-    "repo": {
-      "owner": "perplexityai",
-      "name": "numbat",
-      "full_name": "perplexityai/numbat",
-      "description": "Visibility into AI agent activity on endpoints, with on-device detection, optional pre-action blocking, and forensic reconstruction.",
-      "stars": 999,
-      "forks": 103,
-      "open_issues": 10,
-      "created_at": "2026-07-24T06:07:59+00:00",
-      "pushed_at": "2026-09-02T19:42:13+00:00",
-      "updated_at": "2026-09-07T09:53:30+00:00",
-      "topics": [
-        "agent-security",
-        "ai-agent-security",
-        "ai-agents"
-      ],
-      "language": "Go",
-      "license": "Apache-2.0",
-      "homepage": null,
-      "html_url": "https://github.com/perplexityai/numbat",
-      "default_branch": "main",
-      "archived": false,
-      "search_score": 1.0,
-      "stars_7d_ago": 980,
-      "star_series": [
-        {
-          "d": "08-09",
-          "s": 928
-        },
-        {
-          "d": "08-10",
-          "s": 928
-        },
-        {
-          "d": "08-11",
-          "s": 928
-        },
-        {
-          "d": "08-12",
-          "s": 928
-        },
-        {
-          "d": "08-13",
-          "s": 928
-        },
-        {
-          "d": "08-14",
-          "s": 928
-        },
-        {
-          "d": "08-15",
-          "s": 928
-        },
-        {
-          "d": "08-16",
-          "s": 928
-        },
-        {
-          "d": "08-17",
-          "s": 928
-        },
-        {
-          "d": "08-18",
-          "s": 929
-        },
-        {
-          "d": "08-19",
-          "s": 933
-        },
-        {
-          "d": "08-20",
-          "s": 942
-        },
-        {
-          "d": "08-21",
-          "s": 944
-        },
-        {
-          "d": "08-22",
-          "s": 948
-        },
-        {
-          "d": "08-23",
-          "s": 954
-        },
-        {
-          "d": "08-24",
-          "s": 958
-        },
-        {
-          "d": "08-25",
-          "s": 964
-        },
-        {
-          "d": "08-26",
           "s": 968
         },
         {
-          "d": "08-27",
-          "s": 972
-        },
-        {
-          "d": "08-28",
-          "s": 975
-        },
-        {
-          "d": "08-29",
-          "s": 975
-        },
-        {
-          "d": "08-30",
-          "s": 976
-        },
-        {
-          "d": "08-31",
-          "s": 979
-        },
-        {
-          "d": "09-01",
-          "s": 980
-        },
-        {
-          "d": "09-02",
-          "s": 983
-        },
-        {
-          "d": "09-03",
-          "s": 984
-        },
-        {
-          "d": "09-04",
-          "s": 986
-        },
-        {
-          "d": "09-05",
-          "s": 992
-        },
-        {
           "d": "09-06",
-          "s": 996
-        },
-        {
-          "d": "09-07",
-          "s": 999
-        }
-      ]
-    },
-    "score": {
-      "score": 72.42,
-      "breakdown": {
-        "vel": 39,
-        "acc": 55,
-        "health": 93,
-        "fresh": 88,
-        "signal": 70
-      },
-      "stage": "early",
-      "stage_multiplier": 1.2,
-      "confidence": 1.0,
-      "base_score": 60.35,
-      "explanation": "numbat 是 Go 开源项目，主打「Visibility into AI agent activity on endpoints, with on-device detection, optional pre-action blocking, and forensic reconstruction.」；处于增长早期；社区健康（fork/star 比 10.3%，10 个 open issue）、开发活跃。"
-    }
-  },
-  {
-    "repo": {
-      "owner": "christo-auer",
-      "name": "eilmeldung",
-      "full_name": "christo-auer/eilmeldung",
-      "description": "eilmeldung is a TUI RSS reader based on the awesome news-flash library.",
-      "stars": 993,
-      "forks": 35,
-      "open_issues": 1,
-      "created_at": "2025-12-14T09:44:39+00:00",
-      "pushed_at": "2026-09-04T17:04:49+00:00",
-      "updated_at": "2026-09-07T06:09:21+00:00",
-      "topics": [
-        "command-line",
-        "commandline",
-        "news",
-        "newsflash",
-        "ratatui",
-        "rss",
-        "rust",
-        "terminal",
-        "tui"
-      ],
-      "language": "Rust",
-      "license": "GPL-3.0",
-      "homepage": null,
-      "html_url": "https://github.com/christo-auer/eilmeldung",
-      "default_branch": "main",
-      "archived": false,
-      "search_score": 1.0,
-      "stars_7d_ago": 961,
-      "star_series": [
-        {
-          "d": "08-09",
-          "s": 929
-        },
-        {
-          "d": "08-10",
-          "s": 929
-        },
-        {
-          "d": "08-11",
-          "s": 929
-        },
-        {
-          "d": "08-12",
-          "s": 929
-        },
-        {
-          "d": "08-13",
-          "s": 931
-        },
-        {
-          "d": "08-14",
-          "s": 932
-        },
-        {
-          "d": "08-15",
-          "s": 932
-        },
-        {
-          "d": "08-16",
-          "s": 932
-        },
-        {
-          "d": "08-17",
-          "s": 933
-        },
-        {
-          "d": "08-18",
-          "s": 934
-        },
-        {
-          "d": "08-19",
-          "s": 934
-        },
-        {
-          "d": "08-20",
-          "s": 935
-        },
-        {
-          "d": "08-21",
-          "s": 937
-        },
-        {
-          "d": "08-22",
-          "s": 938
-        },
-        {
-          "d": "08-23",
-          "s": 938
-        },
-        {
-          "d": "08-24",
-          "s": 938
-        },
-        {
-          "d": "08-25",
-          "s": 941
-        },
-        {
-          "d": "08-26",
-          "s": 942
-        },
-        {
-          "d": "08-27",
-          "s": 948
-        },
-        {
-          "d": "08-28",
-          "s": 949
-        },
-        {
-          "d": "08-29",
-          "s": 951
-        },
-        {
-          "d": "08-30",
-          "s": 952
-        },
-        {
-          "d": "08-31",
-          "s": 954
-        },
-        {
-          "d": "09-01",
-          "s": 961
-        },
-        {
-          "d": "09-02",
-          "s": 977
-        },
-        {
-          "d": "09-03",
           "s": 981
         },
         {
-          "d": "09-04",
-          "s": 983
-        },
-        {
-          "d": "09-05",
-          "s": 988
-        },
-        {
-          "d": "09-06",
-          "s": 991
-        },
-        {
           "d": "09-07",
+          "s": 986
+        },
+        {
+          "d": "09-08",
           "s": 993
         }
       ]
     },
     "score": {
-      "score": 64.82,
+      "score": 95.57,
       "breakdown": {
-        "vel": 51,
-        "acc": 65,
-        "health": 70,
-        "fresh": 27,
+        "vel": 76,
+        "acc": 99,
+        "health": 66,
+        "fresh": 84,
         "signal": 70
       },
       "stage": "early",
       "stage_multiplier": 1.2,
       "confidence": 1.0,
-      "base_score": 54.02,
-      "explanation": "eilmeldung 是 Rust 开源项目，主打「eilmeldung is a TUI RSS reader based on the awesome news-flash library.」；处于增长早期，本周涨速 4.6 star/天；社区健康（fork/star 比 3.5%，1 个 open issue）。"
+      "base_score": 79.64,
+      "explanation": "natural-japanese 是 Python 开源项目，主打「仕事の日本語を、読みやすくわかりやすく書く・直すための Agent Skill です。」；处于增长早期，本周涨速 12 star/天，涨速在加快；开发活跃。"
+    }
+  },
+  {
+    "repo": {
+      "owner": "EchoMusicApp",
+      "name": "Echo-Music",
+      "full_name": "EchoMusicApp/Echo-Music",
+      "description": "An YouTube Music Client",
+      "stars": 992,
+      "forks": 108,
+      "open_issues": 45,
+      "created_at": "2026-08-15T08:00:26+00:00",
+      "pushed_at": "2026-09-07T08:28:26+00:00",
+      "updated_at": "2026-09-08T09:12:27+00:00",
+      "topics": [
+        "youtube-music",
+        "youtubemusic",
+        "youtubemusicalternative",
+        "ytmusic"
+      ],
+      "language": "Kotlin",
+      "license": "GPL-3.0",
+      "homepage": "https://echomusic.fun",
+      "html_url": "https://github.com/EchoMusicApp/Echo-Music",
+      "default_branch": "main",
+      "archived": false,
+      "search_score": 1.0,
+      "stars_7d_ago": 922,
+      "star_series": [
+        {
+          "d": "08-10",
+          "s": 922
+        },
+        {
+          "d": "08-11",
+          "s": 922
+        },
+        {
+          "d": "08-12",
+          "s": 922
+        },
+        {
+          "d": "08-13",
+          "s": 922
+        },
+        {
+          "d": "08-14",
+          "s": 922
+        },
+        {
+          "d": "08-15",
+          "s": 922
+        },
+        {
+          "d": "08-16",
+          "s": 922
+        },
+        {
+          "d": "08-17",
+          "s": 922
+        },
+        {
+          "d": "08-18",
+          "s": 922
+        },
+        {
+          "d": "08-19",
+          "s": 922
+        },
+        {
+          "d": "08-20",
+          "s": 922
+        },
+        {
+          "d": "08-21",
+          "s": 922
+        },
+        {
+          "d": "08-22",
+          "s": 922
+        },
+        {
+          "d": "08-23",
+          "s": 922
+        },
+        {
+          "d": "08-24",
+          "s": 922
+        },
+        {
+          "d": "08-25",
+          "s": 922
+        },
+        {
+          "d": "08-26",
+          "s": 922
+        },
+        {
+          "d": "08-27",
+          "s": 922
+        },
+        {
+          "d": "08-28",
+          "s": 922
+        },
+        {
+          "d": "08-29",
+          "s": 922
+        },
+        {
+          "d": "08-30",
+          "s": 922
+        },
+        {
+          "d": "08-31",
+          "s": 922
+        },
+        {
+          "d": "09-01",
+          "s": 922
+        },
+        {
+          "d": "09-02",
+          "s": 922
+        },
+        {
+          "d": "09-03",
+          "s": 922
+        },
+        {
+          "d": "09-04",
+          "s": 922
+        },
+        {
+          "d": "09-05",
+          "s": 925
+        },
+        {
+          "d": "09-06",
+          "s": 950
+        },
+        {
+          "d": "09-07",
+          "s": 977
+        },
+        {
+          "d": "09-08",
+          "s": 992
+        }
+      ]
+    },
+    "score": {
+      "score": 93.61,
+      "breakdown": {
+        "vel": 71,
+        "acc": 99,
+        "health": 86,
+        "fresh": 93,
+        "signal": 85
+      },
+      "stage": "mid_early",
+      "stage_multiplier": 1.1,
+      "confidence": 1.0,
+      "base_score": 85.1,
+      "explanation": "Echo-Music 是 Kotlin 开源项目，主打「An YouTube Music Client」；处于中早期增长，本周涨速 10 star/天，涨速在加快；社区健康（fork/star 比 10.9%，45 个 open issue）、项目元数据完整、开发活跃。"
+    }
+  },
+  {
+    "repo": {
+      "owner": "clavia-labs",
+      "name": "tardigrade",
+      "full_name": "clavia-labs/tardigrade",
+      "description": "The TypeScript framework for building modular agents around an immutable event log.",
+      "stars": 200,
+      "forks": 16,
+      "open_issues": 15,
+      "created_at": "2026-08-13T16:52:14+00:00",
+      "pushed_at": "2026-09-08T10:27:38+00:00",
+      "updated_at": "2026-09-08T10:28:59+00:00",
+      "topics": [
+        "agent",
+        "harness",
+        "harness-framework"
+      ],
+      "language": "TypeScript",
+      "license": "MIT",
+      "homepage": "https://tardigrade.sh/docs/why",
+      "html_url": "https://github.com/clavia-labs/tardigrade",
+      "default_branch": "main",
+      "archived": false,
+      "search_score": 1.0,
+      "stars_7d_ago": 173,
+      "star_series": [
+        {
+          "d": "08-10",
+          "s": 173
+        },
+        {
+          "d": "08-11",
+          "s": 173
+        },
+        {
+          "d": "08-12",
+          "s": 173
+        },
+        {
+          "d": "08-13",
+          "s": 173
+        },
+        {
+          "d": "08-14",
+          "s": 173
+        },
+        {
+          "d": "08-15",
+          "s": 173
+        },
+        {
+          "d": "08-16",
+          "s": 173
+        },
+        {
+          "d": "08-17",
+          "s": 173
+        },
+        {
+          "d": "08-18",
+          "s": 173
+        },
+        {
+          "d": "08-19",
+          "s": 173
+        },
+        {
+          "d": "08-20",
+          "s": 173
+        },
+        {
+          "d": "08-21",
+          "s": 173
+        },
+        {
+          "d": "08-22",
+          "s": 173
+        },
+        {
+          "d": "08-23",
+          "s": 173
+        },
+        {
+          "d": "08-24",
+          "s": 173
+        },
+        {
+          "d": "08-25",
+          "s": 173
+        },
+        {
+          "d": "08-26",
+          "s": 173
+        },
+        {
+          "d": "08-27",
+          "s": 173
+        },
+        {
+          "d": "08-28",
+          "s": 173
+        },
+        {
+          "d": "08-29",
+          "s": 173
+        },
+        {
+          "d": "08-30",
+          "s": 173
+        },
+        {
+          "d": "08-31",
+          "s": 173
+        },
+        {
+          "d": "09-01",
+          "s": 173
+        },
+        {
+          "d": "09-02",
+          "s": 173
+        },
+        {
+          "d": "09-03",
+          "s": 173
+        },
+        {
+          "d": "09-04",
+          "s": 179
+        },
+        {
+          "d": "09-05",
+          "s": 191
+        },
+        {
+          "d": "09-06",
+          "s": 196
+        },
+        {
+          "d": "09-07",
+          "s": 198
+        },
+        {
+          "d": "09-08",
+          "s": 200
+        }
+      ]
+    },
+    "score": {
+      "score": 86.58,
+      "breakdown": {
+        "vel": 47,
+        "acc": 98,
+        "health": 66,
+        "fresh": 93,
+        "signal": 100
+      },
+      "stage": "early",
+      "stage_multiplier": 1.2,
+      "confidence": 1.0,
+      "base_score": 72.15,
+      "explanation": "tardigrade 是 TypeScript 开源项目，主打「The TypeScript framework for building modular agents around an immutable event log.」；处于增长早期，本周涨速 3.9 star/天，涨速在加快；项目元数据完整、开发活跃。"
     }
   },
   {
@@ -685,12 +503,12 @@
       "name": "Amethyst-Mod-Manager",
       "full_name": "ChrisDKN/Amethyst-Mod-Manager",
       "description": "A Linux native mod manager for a variety of games",
-      "stars": 990,
+      "stars": 997,
       "forks": 43,
-      "open_issues": 15,
+      "open_issues": 16,
       "created_at": "2026-02-21T16:46:39+00:00",
-      "pushed_at": "2026-09-07T11:01:29+00:00",
-      "updated_at": "2026-09-07T10:42:14+00:00",
+      "pushed_at": "2026-09-08T00:43:00+00:00",
+      "updated_at": "2026-09-08T08:51:00+00:00",
       "topics": [
         "linux",
         "linuxgaming",
@@ -707,115 +525,111 @@
       "default_branch": "main",
       "archived": false,
       "search_score": 1.0,
-      "stars_7d_ago": 974,
+      "stars_7d_ago": 977,
       "star_series": [
         {
-          "d": "08-09",
-          "s": 974
-        },
-        {
           "d": "08-10",
-          "s": 974
+          "s": 977
         },
         {
           "d": "08-11",
-          "s": 974
+          "s": 977
         },
         {
           "d": "08-12",
-          "s": 974
+          "s": 977
         },
         {
           "d": "08-13",
-          "s": 974
+          "s": 977
         },
         {
           "d": "08-14",
-          "s": 974
+          "s": 977
         },
         {
           "d": "08-15",
-          "s": 974
+          "s": 977
         },
         {
           "d": "08-16",
-          "s": 974
+          "s": 977
         },
         {
           "d": "08-17",
-          "s": 974
+          "s": 977
         },
         {
           "d": "08-18",
-          "s": 974
+          "s": 977
         },
         {
           "d": "08-19",
-          "s": 974
+          "s": 977
         },
         {
           "d": "08-20",
-          "s": 974
+          "s": 977
         },
         {
           "d": "08-21",
-          "s": 974
+          "s": 977
         },
         {
           "d": "08-22",
-          "s": 974
+          "s": 977
         },
         {
           "d": "08-23",
-          "s": 974
+          "s": 977
         },
         {
           "d": "08-24",
-          "s": 974
+          "s": 977
         },
         {
           "d": "08-25",
-          "s": 974
+          "s": 977
         },
         {
           "d": "08-26",
-          "s": 974
+          "s": 977
         },
         {
           "d": "08-27",
-          "s": 974
+          "s": 977
         },
         {
           "d": "08-28",
-          "s": 974
+          "s": 977
         },
         {
           "d": "08-29",
-          "s": 974
+          "s": 977
         },
         {
           "d": "08-30",
-          "s": 974
+          "s": 977
         },
         {
           "d": "08-31",
-          "s": 974
+          "s": 977
         },
         {
           "d": "09-01",
-          "s": 974
+          "s": 977
         },
         {
           "d": "09-02",
-          "s": 974
+          "s": 977
         },
         {
           "d": "09-03",
-          "s": 974
+          "s": 977
         },
         {
           "d": "09-04",
-          "s": 974
+          "s": 977
         },
         {
           "d": "09-05",
@@ -827,15 +641,19 @@
         },
         {
           "d": "09-07",
-          "s": 990
+          "s": 995
+        },
+        {
+          "d": "09-08",
+          "s": 997
         }
       ]
     },
     "score": {
-      "score": 62.86,
+      "score": 65.82,
       "breakdown": {
-        "vel": 35,
-        "acc": 91,
+        "vel": 40,
+        "acc": 95,
         "health": 70,
         "fresh": 46,
         "signal": 70
@@ -843,8 +661,168 @@
       "stage": "mid_early",
       "stage_multiplier": 1.1,
       "confidence": 1.0,
-      "base_score": 57.14,
-      "explanation": "Amethyst-Mod-Manager 是 Python 开源项目，主打「A Linux native mod manager for a variety of games」；处于中早期增长，涨速在加快；社区健康（fork/star 比 4.3%，15 个 open issue）。"
+      "base_score": 59.84,
+      "explanation": "Amethyst-Mod-Manager 是 Python 开源项目，主打「A Linux native mod manager for a variety of games」；处于中早期增长，涨速在加快。"
+    }
+  },
+  {
+    "repo": {
+      "owner": "zwc456baby",
+      "name": "my-tv-webview",
+      "full_name": "zwc456baby/my-tv-webview",
+      "description": "我的电视 TV直播软件，极简页面支持收看国内电视直播",
+      "stars": 200,
+      "forks": 24,
+      "open_issues": 2,
+      "created_at": "2026-08-26T11:45:34+00:00",
+      "pushed_at": "2026-09-06T12:31:34+00:00",
+      "updated_at": "2026-09-08T09:11:04+00:00",
+      "topics": [],
+      "language": "Kotlin",
+      "license": "MIT",
+      "homepage": null,
+      "html_url": "https://github.com/zwc456baby/my-tv-webview",
+      "default_branch": "master",
+      "archived": false,
+      "search_score": 1.0,
+      "stars_7d_ago": 3,
+      "star_series": [
+        {
+          "d": "08-10",
+          "s": 0
+        },
+        {
+          "d": "08-11",
+          "s": 0
+        },
+        {
+          "d": "08-12",
+          "s": 0
+        },
+        {
+          "d": "08-13",
+          "s": 0
+        },
+        {
+          "d": "08-14",
+          "s": 0
+        },
+        {
+          "d": "08-15",
+          "s": 0
+        },
+        {
+          "d": "08-16",
+          "s": 0
+        },
+        {
+          "d": "08-17",
+          "s": 0
+        },
+        {
+          "d": "08-18",
+          "s": 0
+        },
+        {
+          "d": "08-19",
+          "s": 0
+        },
+        {
+          "d": "08-20",
+          "s": 0
+        },
+        {
+          "d": "08-21",
+          "s": 0
+        },
+        {
+          "d": "08-22",
+          "s": 0
+        },
+        {
+          "d": "08-23",
+          "s": 0
+        },
+        {
+          "d": "08-24",
+          "s": 0
+        },
+        {
+          "d": "08-25",
+          "s": 0
+        },
+        {
+          "d": "08-26",
+          "s": 0
+        },
+        {
+          "d": "08-27",
+          "s": 0
+        },
+        {
+          "d": "08-28",
+          "s": 0
+        },
+        {
+          "d": "08-29",
+          "s": 0
+        },
+        {
+          "d": "08-30",
+          "s": 1
+        },
+        {
+          "d": "08-31",
+          "s": 2
+        },
+        {
+          "d": "09-01",
+          "s": 2
+        },
+        {
+          "d": "09-02",
+          "s": 3
+        },
+        {
+          "d": "09-03",
+          "s": 4
+        },
+        {
+          "d": "09-04",
+          "s": 6
+        },
+        {
+          "d": "09-05",
+          "s": 37
+        },
+        {
+          "d": "09-06",
+          "s": 115
+        },
+        {
+          "d": "09-07",
+          "s": 188
+        },
+        {
+          "d": "09-08",
+          "s": 200
+        }
+      ]
+    },
+    "score": {
+      "score": 64.34,
+      "breakdown": {
+        "vel": 100,
+        "acc": 99,
+        "health": 92,
+        "fresh": 97,
+        "signal": 55
+      },
+      "stage": "saturated",
+      "stage_multiplier": 0.7,
+      "confidence": 1.0,
+      "base_score": 91.91,
+      "explanation": "my-tv-webview 是 Kotlin 开源项目，主打「我的电视 TV直播软件，极简页面支持收看国内电视直播」；增长已饱和，本周涨速 28 star/天，涨速在加快；社区健康（fork/star 比 12.0%，2 个 open issue）、开发活跃。"
     }
   }
 ]
