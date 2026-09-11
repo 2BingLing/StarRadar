@@ -1,178 +1,328 @@
 [
   {
     "repo": {
-      "owner": "nklmilojevic",
-      "name": "sofka",
-      "full_name": "nklmilojevic/sofka",
-      "description": "A Kubernetes TUI, reimagined in Rust - built on kube-rs and ratatui, async-first from the ground up.",
+      "owner": "sonorahq",
+      "name": "sonora",
+      "full_name": "sonorahq/sonora",
+      "description": "A native music streaming client, built with Rust and GPUI",
       "stars": 1000,
-      "forks": 40,
-      "open_issues": 8,
-      "created_at": "2026-07-01T12:31:02+00:00",
-      "pushed_at": "2026-09-10T10:30:42+00:00",
-      "updated_at": "2026-09-10T10:22:38+00:00",
+      "forks": 97,
+      "open_issues": 100,
+      "created_at": "2026-08-03T22:27:37+00:00",
+      "pushed_at": "2026-09-11T10:32:09+00:00",
+      "updated_at": "2026-09-11T07:28:52+00:00",
       "topics": [
-        "argocd",
-        "devops",
-        "eks",
-        "flux",
-        "fluxcd",
-        "gke",
-        "k8s",
-        "k9s",
-        "k9s-alternative",
-        "kube-rs",
-        "kubectl",
-        "kubernetes",
-        "ratatui",
-        "sre",
-        "tui"
+        "gpui",
+        "music-player",
+        "spotify",
+        "streaming",
+        "youtube"
       ],
       "language": "Rust",
-      "license": "Apache-2.0",
-      "homepage": "https://sofka.rs",
-      "html_url": "https://github.com/nklmilojevic/sofka",
+      "license": "GPL-3.0",
+      "homepage": null,
+      "html_url": "https://github.com/sonorahq/sonora",
       "default_branch": "main",
       "archived": false,
       "search_score": 1.0,
-      "stars_7d_ago": 946,
+      "stars_7d_ago": 911,
       "star_series": [
         {
-          "d": "08-12",
-          "s": 946
-        },
-        {
           "d": "08-13",
-          "s": 946
+          "s": 911
         },
         {
           "d": "08-14",
-          "s": 946
+          "s": 911
         },
         {
           "d": "08-15",
-          "s": 946
+          "s": 911
         },
         {
           "d": "08-16",
-          "s": 946
+          "s": 911
         },
         {
           "d": "08-17",
-          "s": 946
+          "s": 911
         },
         {
           "d": "08-18",
-          "s": 946
+          "s": 911
         },
         {
           "d": "08-19",
-          "s": 946
+          "s": 911
         },
         {
           "d": "08-20",
-          "s": 946
+          "s": 911
         },
         {
           "d": "08-21",
-          "s": 946
+          "s": 911
         },
         {
           "d": "08-22",
-          "s": 946
+          "s": 911
         },
         {
           "d": "08-23",
-          "s": 946
+          "s": 911
         },
         {
           "d": "08-24",
-          "s": 946
+          "s": 911
         },
         {
           "d": "08-25",
-          "s": 946
+          "s": 911
         },
         {
           "d": "08-26",
-          "s": 946
+          "s": 911
         },
         {
           "d": "08-27",
-          "s": 946
+          "s": 911
         },
         {
           "d": "08-28",
-          "s": 946
+          "s": 911
         },
         {
           "d": "08-29",
-          "s": 946
+          "s": 911
         },
         {
           "d": "08-30",
-          "s": 946
+          "s": 911
         },
         {
           "d": "08-31",
-          "s": 946
+          "s": 911
         },
         {
           "d": "09-01",
-          "s": 946
+          "s": 911
         },
         {
           "d": "09-02",
-          "s": 946
+          "s": 911
         },
         {
           "d": "09-03",
-          "s": 946
+          "s": 911
         },
         {
           "d": "09-04",
-          "s": 946
+          "s": 911
         },
         {
           "d": "09-05",
-          "s": 946
+          "s": 911
         },
         {
           "d": "09-06",
-          "s": 946
+          "s": 911
         },
         {
           "d": "09-07",
-          "s": 946
+          "s": 911
         },
         {
           "d": "09-08",
-          "s": 946
+          "s": 915
         },
         {
           "d": "09-09",
-          "s": 989
+          "s": 951
         },
         {
           "d": "09-10",
+          "s": 992
+        },
+        {
+          "d": "09-11",
           "s": 1000
         }
       ]
     },
     "score": {
-      "score": 86.17,
+      "score": 98.42,
       "breakdown": {
-        "vel": 66,
+        "vel": 81,
         "acc": 99,
-        "health": 71,
-        "fresh": 81,
-        "signal": 85
+        "health": 67,
+        "fresh": 90,
+        "signal": 70
       },
-      "stage": "mid_early",
-      "stage_multiplier": 1.1,
+      "stage": "early",
+      "stage_multiplier": 1.2,
       "confidence": 1.0,
-      "base_score": 78.33,
-      "explanation": "sofka 是 Rust 开源项目，主打「A Kubernetes TUI, reimagined in Rust - built on kube-rs and ratatui, async-first from the ground up.」；处于中早期增长，本周涨速 7.7 star/天，涨速在加快；社区健康（fork/star 比 4.0%，8 个 open issue）、项目元数据完整、开发活跃。"
+      "base_score": 82.02,
+      "explanation": "sonora 是 Rust 开源项目，主打「A native music streaming client, built with Rust and GPUI」；处于增长早期，本周涨速 13 star/天，涨速在加快；开发活跃。"
+    }
+  },
+  {
+    "repo": {
+      "owner": "jtydhr88",
+      "name": "ComfyTV",
+      "full_name": "jtydhr88/ComfyTV",
+      "description": "ComfyTV — the canvas-based app that truly belongs to ComfyUI.",
+      "stars": 997,
+      "forks": 49,
+      "open_issues": 28,
+      "created_at": "2026-06-04T04:27:30+00:00",
+      "pushed_at": "2026-09-09T02:45:23+00:00",
+      "updated_at": "2026-09-11T07:52:07+00:00",
+      "topics": [],
+      "language": "JavaScript",
+      "license": "MIT",
+      "homepage": "comfytv.org",
+      "html_url": "https://github.com/jtydhr88/ComfyTV",
+      "default_branch": "main",
+      "archived": false,
+      "search_score": 1.0,
+      "stars_7d_ago": 920,
+      "star_series": [
+        {
+          "d": "08-13",
+          "s": 920
+        },
+        {
+          "d": "08-14",
+          "s": 920
+        },
+        {
+          "d": "08-15",
+          "s": 920
+        },
+        {
+          "d": "08-16",
+          "s": 920
+        },
+        {
+          "d": "08-17",
+          "s": 920
+        },
+        {
+          "d": "08-18",
+          "s": 920
+        },
+        {
+          "d": "08-19",
+          "s": 920
+        },
+        {
+          "d": "08-20",
+          "s": 920
+        },
+        {
+          "d": "08-21",
+          "s": 920
+        },
+        {
+          "d": "08-22",
+          "s": 920
+        },
+        {
+          "d": "08-23",
+          "s": 920
+        },
+        {
+          "d": "08-24",
+          "s": 920
+        },
+        {
+          "d": "08-25",
+          "s": 920
+        },
+        {
+          "d": "08-26",
+          "s": 920
+        },
+        {
+          "d": "08-27",
+          "s": 920
+        },
+        {
+          "d": "08-28",
+          "s": 920
+        },
+        {
+          "d": "08-29",
+          "s": 920
+        },
+        {
+          "d": "08-30",
+          "s": 920
+        },
+        {
+          "d": "08-31",
+          "s": 920
+        },
+        {
+          "d": "09-01",
+          "s": 920
+        },
+        {
+          "d": "09-02",
+          "s": 920
+        },
+        {
+          "d": "09-03",
+          "s": 920
+        },
+        {
+          "d": "09-04",
+          "s": 920
+        },
+        {
+          "d": "09-05",
+          "s": 920
+        },
+        {
+          "d": "09-06",
+          "s": 933
+        },
+        {
+          "d": "09-07",
+          "s": 958
+        },
+        {
+          "d": "09-08",
+          "s": 971
+        },
+        {
+          "d": "09-09",
+          "s": 985
+        },
+        {
+          "d": "09-10",
+          "s": 986
+        },
+        {
+          "d": "09-11",
+          "s": 997
+        }
+      ]
+    },
+    "score": {
+      "score": 94.46,
+      "breakdown": {
+        "vel": 76,
+        "acc": 99,
+        "health": 69,
+        "fresh": 73,
+        "signal": 70
+      },
+      "stage": "early",
+      "stage_multiplier": 1.2,
+      "confidence": 1.0,
+      "base_score": 78.72,
+      "explanation": "ComfyTV 是 JavaScript 开源项目，主打「ComfyTV — the canvas-based app that truly belongs to ComfyUI.」；处于增长早期，本周涨速 11 star/天，涨速在加快；开发活跃。"
     }
   },
   {
@@ -185,8 +335,8 @@
       "forks": 6,
       "open_issues": 1,
       "created_at": "2026-07-18T13:42:50+00:00",
-      "pushed_at": "2026-09-05T02:47:42+00:00",
-      "updated_at": "2026-09-10T05:44:55+00:00",
+      "pushed_at": "2026-09-11T05:54:45+00:00",
+      "updated_at": "2026-09-11T05:49:23+00:00",
       "topics": [],
       "language": "TypeScript",
       "license": "MIT",
@@ -197,10 +347,6 @@
       "search_score": 1.0,
       "stars_7d_ago": 90,
       "star_series": [
-        {
-          "d": "08-12",
-          "s": 0
-        },
         {
           "d": "08-13",
           "s": 0
@@ -316,23 +462,191 @@
         {
           "d": "09-10",
           "s": 200
+        },
+        {
+          "d": "09-11",
+          "s": 200
         }
       ]
     },
     "score": {
-      "score": 80.57,
+      "score": 88.83,
       "breakdown": {
-        "vel": 86,
+        "vel": 87,
         "acc": 99,
         "health": 65,
         "fresh": 85,
         "signal": 55
       },
-      "stage": "mid_late",
-      "stage_multiplier": 1.0,
+      "stage": "mid_early",
+      "stage_multiplier": 1.1,
       "confidence": 1.0,
-      "base_score": 80.57,
-      "explanation": "FolioLoom 是 TypeScript 开源项目，主打「Lossless agentic long-form novel translation pipeline with evidence-backed terminology, narrative memory, recovery, and audit」；处于中后期增长，本周涨速 16 star/天，涨速在加快；开发活跃。"
+      "base_score": 80.75,
+      "explanation": "FolioLoom 是 TypeScript 开源项目，主打「Lossless agentic long-form novel translation pipeline with evidence-backed terminology, narrative memory, recovery, and audit」；处于中早期增长，本周涨速 16 star/天，涨速在加快；开发活跃。"
+    }
+  },
+  {
+    "repo": {
+      "owner": "scorbo2",
+      "name": "TalkWithMe",
+      "full_name": "scorbo2/TalkWithMe",
+      "description": "Configurable AI chat with TTS/STT",
+      "stars": 200,
+      "forks": 46,
+      "open_issues": 0,
+      "created_at": "2026-07-24T02:10:06+00:00",
+      "pushed_at": "2026-09-11T05:35:11+00:00",
+      "updated_at": "2026-09-11T09:41:35+00:00",
+      "topics": [
+        "ai",
+        "stt",
+        "tts"
+      ],
+      "language": "Python",
+      "license": "MIT",
+      "homepage": null,
+      "html_url": "https://github.com/scorbo2/TalkWithMe",
+      "default_branch": "master",
+      "archived": false,
+      "search_score": 1.0,
+      "stars_7d_ago": 165,
+      "star_series": [
+        {
+          "d": "08-13",
+          "s": 129
+        },
+        {
+          "d": "08-14",
+          "s": 129
+        },
+        {
+          "d": "08-15",
+          "s": 129
+        },
+        {
+          "d": "08-16",
+          "s": 129
+        },
+        {
+          "d": "08-17",
+          "s": 129
+        },
+        {
+          "d": "08-18",
+          "s": 129
+        },
+        {
+          "d": "08-19",
+          "s": 129
+        },
+        {
+          "d": "08-20",
+          "s": 129
+        },
+        {
+          "d": "08-21",
+          "s": 129
+        },
+        {
+          "d": "08-22",
+          "s": 129
+        },
+        {
+          "d": "08-23",
+          "s": 129
+        },
+        {
+          "d": "08-24",
+          "s": 129
+        },
+        {
+          "d": "08-25",
+          "s": 129
+        },
+        {
+          "d": "08-26",
+          "s": 129
+        },
+        {
+          "d": "08-27",
+          "s": 129
+        },
+        {
+          "d": "08-28",
+          "s": 129
+        },
+        {
+          "d": "08-29",
+          "s": 129
+        },
+        {
+          "d": "08-30",
+          "s": 129
+        },
+        {
+          "d": "08-31",
+          "s": 132
+        },
+        {
+          "d": "09-01",
+          "s": 133
+        },
+        {
+          "d": "09-02",
+          "s": 134
+        },
+        {
+          "d": "09-03",
+          "s": 144
+        },
+        {
+          "d": "09-04",
+          "s": 159
+        },
+        {
+          "d": "09-05",
+          "s": 165
+        },
+        {
+          "d": "09-06",
+          "s": 170
+        },
+        {
+          "d": "09-07",
+          "s": 175
+        },
+        {
+          "d": "09-08",
+          "s": 181
+        },
+        {
+          "d": "09-09",
+          "s": 189
+        },
+        {
+          "d": "09-10",
+          "s": 195
+        },
+        {
+          "d": "09-11",
+          "s": 200
+        }
+      ]
+    },
+    "score": {
+      "score": 79.45,
+      "breakdown": {
+        "vel": 55,
+        "acc": 49,
+        "health": 100,
+        "fresh": 87,
+        "signal": 70
+      },
+      "stage": "early",
+      "stage_multiplier": 1.2,
+      "confidence": 1.0,
+      "base_score": 66.21,
+      "explanation": "TalkWithMe 是 Python 开源项目，主打「Configurable AI chat with TTS/STT」；处于增长早期，本周涨速 5.0 star/天；社区健康（fork/star 比 23.0%，0 个 open issue）、开发活跃。"
     }
   },
   {
@@ -341,12 +655,12 @@
       "name": "loom",
       "full_name": "valkor-ai/loom",
       "description": "Loop engineering for agentic software delivery.",
-      "stars": 993,
-      "forks": 130,
+      "stars": 998,
+      "forks": 131,
       "open_issues": 4,
       "created_at": "2026-06-09T03:46:34+00:00",
       "pushed_at": "2026-09-09T16:05:41+00:00",
-      "updated_at": "2026-09-10T09:28:20+00:00",
+      "updated_at": "2026-09-11T10:25:03+00:00",
       "topics": [],
       "language": "Rust",
       "license": "Apache-2.0",
@@ -355,79 +669,75 @@
       "default_branch": "main",
       "archived": false,
       "search_score": 1.0,
-      "stars_7d_ago": 953,
+      "stars_7d_ago": 959,
       "star_series": [
         {
-          "d": "08-12",
-          "s": 902
-        },
-        {
           "d": "08-13",
-          "s": 902
+          "s": 910
         },
         {
           "d": "08-14",
-          "s": 902
+          "s": 910
         },
         {
           "d": "08-15",
-          "s": 902
+          "s": 910
         },
         {
           "d": "08-16",
-          "s": 902
+          "s": 910
         },
         {
           "d": "08-17",
-          "s": 902
+          "s": 910
         },
         {
           "d": "08-18",
-          "s": 902
+          "s": 910
         },
         {
           "d": "08-19",
-          "s": 902
+          "s": 910
         },
         {
           "d": "08-20",
-          "s": 902
+          "s": 910
         },
         {
           "d": "08-21",
-          "s": 902
+          "s": 910
         },
         {
           "d": "08-22",
-          "s": 902
+          "s": 910
         },
         {
           "d": "08-23",
-          "s": 902
+          "s": 910
         },
         {
           "d": "08-24",
-          "s": 902
+          "s": 910
         },
         {
           "d": "08-25",
-          "s": 902
+          "s": 910
         },
         {
           "d": "08-26",
-          "s": 902
+          "s": 910
         },
         {
           "d": "08-27",
-          "s": 902
+          "s": 910
         },
         {
           "d": "08-28",
-          "s": 902
+          "s": 910
         },
         {
           "d": "08-29",
-          "s": 902
+          "s": 910
         },
         {
           "d": "08-30",
@@ -475,363 +785,28 @@
         },
         {
           "d": "09-10",
-          "s": 993
-        }
-      ]
-    },
-    "score": {
-      "score": 75.06,
-      "breakdown": {
-        "vel": 58,
-        "acc": 45,
-        "health": 100,
-        "fresh": 75,
-        "signal": 55
-      },
-      "stage": "early",
-      "stage_multiplier": 1.2,
-      "confidence": 1.0,
-      "base_score": 62.55,
-      "explanation": "loom 是 Rust 开源项目，主打「Loop engineering for agentic software delivery.」；处于增长早期，本周涨速 5.7 star/天；社区健康（fork/star 比 13.1%，4 个 open issue）、开发活跃。"
-    }
-  },
-  {
-    "repo": {
-      "owner": "kittors",
-      "name": "CliRelay",
-      "full_name": "kittors/CliRelay",
-      "description": "Self-hosted AI gateway for coding CLIs — one OpenAI/Claude/Gemini/Codex-compatible endpoint, with a multi-tenant web console, request logs, and spend quotas.",
-      "stars": 997,
-      "forks": 119,
-      "open_issues": 6,
-      "created_at": "2026-02-27T01:35:42+00:00",
-      "pushed_at": "2026-09-09T16:54:14+00:00",
-      "updated_at": "2026-09-10T10:02:06+00:00",
-      "topics": [
-        "ai-gateway",
-        "anthropic",
-        "api-gateway",
-        "claude-code",
-        "gemini-cli",
-        "go",
-        "llm",
-        "llm-proxy",
-        "multi-tenant",
-        "openai",
-        "openai-codex",
-        "self-hosted"
-      ],
-      "language": "Go",
-      "license": "MIT",
-      "homepage": null,
-      "html_url": "https://github.com/kittors/CliRelay",
-      "default_branch": "main",
-      "archived": false,
-      "search_score": 1.0,
-      "stars_7d_ago": 983,
-      "star_series": [
-        {
-          "d": "08-12",
-          "s": 983
+          "s": 994
         },
         {
-          "d": "08-13",
-          "s": 983
-        },
-        {
-          "d": "08-14",
-          "s": 983
-        },
-        {
-          "d": "08-15",
-          "s": 983
-        },
-        {
-          "d": "08-16",
-          "s": 983
-        },
-        {
-          "d": "08-17",
-          "s": 983
-        },
-        {
-          "d": "08-18",
-          "s": 983
-        },
-        {
-          "d": "08-19",
-          "s": 983
-        },
-        {
-          "d": "08-20",
-          "s": 983
-        },
-        {
-          "d": "08-21",
-          "s": 983
-        },
-        {
-          "d": "08-22",
-          "s": 983
-        },
-        {
-          "d": "08-23",
-          "s": 983
-        },
-        {
-          "d": "08-24",
-          "s": 983
-        },
-        {
-          "d": "08-25",
-          "s": 983
-        },
-        {
-          "d": "08-26",
-          "s": 983
-        },
-        {
-          "d": "08-27",
-          "s": 983
-        },
-        {
-          "d": "08-28",
-          "s": 983
-        },
-        {
-          "d": "08-29",
-          "s": 983
-        },
-        {
-          "d": "08-30",
-          "s": 983
-        },
-        {
-          "d": "08-31",
-          "s": 983
-        },
-        {
-          "d": "09-01",
-          "s": 983
-        },
-        {
-          "d": "09-02",
-          "s": 983
-        },
-        {
-          "d": "09-03",
-          "s": 983
-        },
-        {
-          "d": "09-04",
-          "s": 983
-        },
-        {
-          "d": "09-05",
-          "s": 983
-        },
-        {
-          "d": "09-06",
-          "s": 983
-        },
-        {
-          "d": "09-07",
-          "s": 990
-        },
-        {
-          "d": "09-08",
-          "s": 991
-        },
-        {
-          "d": "09-09",
-          "s": 993
-        },
-        {
-          "d": "09-10",
-          "s": 997
-        }
-      ]
-    },
-    "score": {
-      "score": 66.04,
-      "breakdown": {
-        "vel": 33,
-        "acc": 88,
-        "health": 99,
-        "fresh": 47,
-        "signal": 70
-      },
-      "stage": "mid_early",
-      "stage_multiplier": 1.1,
-      "confidence": 1.0,
-      "base_score": 60.03,
-      "explanation": "CliRelay 是 Go 开源项目，主打「Self-hosted AI gateway for coding CLIs — one OpenAI/Claude/Gemini/Codex-compatible endpoint, with a multi-tenant web console, request logs, and spend quotas.」；处于中早期增长，涨速在加快；社区健康（fork/star 比 11.9%，6 个 open issue）。"
-    }
-  },
-  {
-    "repo": {
-      "owner": "ssalggnikool",
-      "name": "Navic",
-      "full_name": "ssalggnikool/Navic",
-      "description": "A modern Navidrome client for Android and iOS",
-      "stars": 998,
-      "forks": 92,
-      "open_issues": 59,
-      "created_at": "2026-01-01T19:20:40+00:00",
-      "pushed_at": "2026-09-10T09:10:13+00:00",
-      "updated_at": "2026-09-10T09:11:29+00:00",
-      "topics": [
-        "android",
-        "ios",
-        "kotlin",
-        "material3",
-        "navidrome-client"
-      ],
-      "language": "Kotlin",
-      "license": "GPL-3.0",
-      "homepage": "https://navic.app",
-      "html_url": "https://github.com/ssalggnikool/Navic",
-      "default_branch": "master",
-      "archived": false,
-      "search_score": 1.0,
-      "stars_7d_ago": 978,
-      "star_series": [
-        {
-          "d": "08-12",
-          "s": 978
-        },
-        {
-          "d": "08-13",
-          "s": 978
-        },
-        {
-          "d": "08-14",
-          "s": 978
-        },
-        {
-          "d": "08-15",
-          "s": 978
-        },
-        {
-          "d": "08-16",
-          "s": 978
-        },
-        {
-          "d": "08-17",
-          "s": 978
-        },
-        {
-          "d": "08-18",
-          "s": 978
-        },
-        {
-          "d": "08-19",
-          "s": 978
-        },
-        {
-          "d": "08-20",
-          "s": 978
-        },
-        {
-          "d": "08-21",
-          "s": 978
-        },
-        {
-          "d": "08-22",
-          "s": 978
-        },
-        {
-          "d": "08-23",
-          "s": 978
-        },
-        {
-          "d": "08-24",
-          "s": 978
-        },
-        {
-          "d": "08-25",
-          "s": 978
-        },
-        {
-          "d": "08-26",
-          "s": 978
-        },
-        {
-          "d": "08-27",
-          "s": 978
-        },
-        {
-          "d": "08-28",
-          "s": 978
-        },
-        {
-          "d": "08-29",
-          "s": 978
-        },
-        {
-          "d": "08-30",
-          "s": 978
-        },
-        {
-          "d": "08-31",
-          "s": 978
-        },
-        {
-          "d": "09-01",
-          "s": 978
-        },
-        {
-          "d": "09-02",
-          "s": 978
-        },
-        {
-          "d": "09-03",
-          "s": 978
-        },
-        {
-          "d": "09-04",
-          "s": 978
-        },
-        {
-          "d": "09-05",
-          "s": 982
-        },
-        {
-          "d": "09-06",
-          "s": 985
-        },
-        {
-          "d": "09-07",
-          "s": 989
-        },
-        {
-          "d": "09-08",
-          "s": 991
-        },
-        {
-          "d": "09-09",
-          "s": 996
-        },
-        {
-          "d": "09-10",
+          "d": "09-11",
           "s": 998
         }
       ]
     },
     "score": {
-      "score": 65.18,
+      "score": 75.09,
       "breakdown": {
-        "vel": 41,
-        "acc": 95,
-        "health": 76,
-        "fresh": 31,
-        "signal": 85
+        "vel": 58,
+        "acc": 45,
+        "health": 100,
+        "fresh": 74,
+        "signal": 55
       },
-      "stage": "mid_early",
-      "stage_multiplier": 1.1,
+      "stage": "early",
+      "stage_multiplier": 1.2,
       "confidence": 1.0,
-      "base_score": 59.25,
-      "explanation": "Navic 是 Kotlin 开源项目，主打「A modern Navidrome client for Android and iOS」；处于中早期增长，本周涨速 2.9 star/天，涨速在加快；社区健康（fork/star 比 9.2%，59 个 open issue）、项目元数据完整。"
+      "base_score": 62.57,
+      "explanation": "loom 是 Rust 开源项目，主打「Loop engineering for agentic software delivery.」；处于增长早期，本周涨速 5.6 star/天；社区健康（fork/star 比 13.1%，4 个 open issue）、开发活跃。"
     }
   }
 ]
