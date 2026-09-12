@@ -1,328 +1,513 @@
 [
   {
     "repo": {
-      "owner": "sonorahq",
-      "name": "sonora",
-      "full_name": "sonorahq/sonora",
-      "description": "A native music streaming client, built with Rust and GPUI",
+      "owner": "donvito",
+      "name": "codex-astra-luna-orchestrator",
+      "full_name": "donvito/codex-astra-luna-orchestrator",
+      "description": "Use Astra as orchestrator and Luna for subagents in Codex",
       "stars": 1000,
-      "forks": 97,
-      "open_issues": 100,
-      "created_at": "2026-08-03T22:27:37+00:00",
-      "pushed_at": "2026-09-11T10:32:09+00:00",
-      "updated_at": "2026-09-11T07:28:52+00:00",
-      "topics": [
-        "gpui",
-        "music-player",
-        "spotify",
-        "streaming",
-        "youtube"
-      ],
-      "language": "Rust",
-      "license": "GPL-3.0",
+      "forks": 82,
+      "open_issues": 2,
+      "created_at": "2026-09-05T16:03:06+00:00",
+      "pushed_at": "2026-09-11T11:27:26+00:00",
+      "updated_at": "2026-09-12T09:54:39+00:00",
+      "topics": [],
+      "language": "Python",
+      "license": "Apache-2.0",
       "homepage": null,
-      "html_url": "https://github.com/sonorahq/sonora",
+      "html_url": "https://github.com/donvito/codex-astra-luna-orchestrator",
       "default_branch": "main",
       "archived": false,
       "search_score": 1.0,
-      "stars_7d_ago": 911,
+      "stars_7d_ago": 822,
       "star_series": [
         {
-          "d": "08-13",
-          "s": 911
-        },
-        {
           "d": "08-14",
-          "s": 911
+          "s": 822
         },
         {
           "d": "08-15",
-          "s": 911
+          "s": 822
         },
         {
           "d": "08-16",
-          "s": 911
+          "s": 822
         },
         {
           "d": "08-17",
-          "s": 911
+          "s": 822
         },
         {
           "d": "08-18",
-          "s": 911
+          "s": 822
         },
         {
           "d": "08-19",
-          "s": 911
+          "s": 822
         },
         {
           "d": "08-20",
-          "s": 911
+          "s": 822
         },
         {
           "d": "08-21",
-          "s": 911
+          "s": 822
         },
         {
           "d": "08-22",
-          "s": 911
+          "s": 822
         },
         {
           "d": "08-23",
-          "s": 911
+          "s": 822
         },
         {
           "d": "08-24",
-          "s": 911
+          "s": 822
         },
         {
           "d": "08-25",
-          "s": 911
+          "s": 822
         },
         {
           "d": "08-26",
-          "s": 911
+          "s": 822
         },
         {
           "d": "08-27",
-          "s": 911
+          "s": 822
         },
         {
           "d": "08-28",
-          "s": 911
+          "s": 822
         },
         {
           "d": "08-29",
-          "s": 911
+          "s": 822
         },
         {
           "d": "08-30",
-          "s": 911
+          "s": 822
         },
         {
           "d": "08-31",
-          "s": 911
+          "s": 822
         },
         {
           "d": "09-01",
-          "s": 911
+          "s": 822
         },
         {
           "d": "09-02",
-          "s": 911
+          "s": 822
         },
         {
           "d": "09-03",
-          "s": 911
+          "s": 822
         },
         {
           "d": "09-04",
-          "s": 911
+          "s": 822
         },
         {
           "d": "09-05",
-          "s": 911
+          "s": 822
         },
         {
           "d": "09-06",
-          "s": 911
+          "s": 822
         },
         {
           "d": "09-07",
-          "s": 911
+          "s": 822
         },
         {
           "d": "09-08",
-          "s": 915
+          "s": 822
         },
         {
           "d": "09-09",
-          "s": 951
+          "s": 822
         },
         {
           "d": "09-10",
-          "s": 992
+          "s": 921
         },
         {
           "d": "09-11",
+          "s": 980
+        },
+        {
+          "d": "09-12",
           "s": 1000
         }
       ]
     },
     "score": {
-      "score": 98.42,
+      "score": 100.0,
       "breakdown": {
-        "vel": 81,
+        "vel": 91,
         "acc": 99,
-        "health": 67,
-        "fresh": 90,
-        "signal": 70
+        "health": 86,
+        "fresh": 98,
+        "signal": 55
       },
       "stage": "early",
       "stage_multiplier": 1.2,
       "confidence": 1.0,
-      "base_score": 82.02,
-      "explanation": "sonora 是 Rust 开源项目，主打「A native music streaming client, built with Rust and GPUI」；处于增长早期，本周涨速 13 star/天，涨速在加快；开发活跃。"
+      "base_score": 88.67,
+      "explanation": "codex-astra-luna-orchestrator 是 Python 开源项目，主打「Use Astra as orchestrator and Luna for subagents in Codex」；处于增长早期，本周涨速 25 star/天，涨速在加快；社区健康（fork/star 比 8.2%，2 个 open issue）、开发活跃。"
     }
   },
   {
     "repo": {
-      "owner": "jtydhr88",
-      "name": "ComfyTV",
-      "full_name": "jtydhr88/ComfyTV",
-      "description": "ComfyTV — the canvas-based app that truly belongs to ComfyUI.",
-      "stars": 997,
-      "forks": 49,
-      "open_issues": 28,
-      "created_at": "2026-06-04T04:27:30+00:00",
-      "pushed_at": "2026-09-09T02:45:23+00:00",
-      "updated_at": "2026-09-11T07:52:07+00:00",
-      "topics": [],
-      "language": "JavaScript",
-      "license": "MIT",
-      "homepage": "comfytv.org",
-      "html_url": "https://github.com/jtydhr88/ComfyTV",
+      "owner": "Vincentwei1021",
+      "name": "anything2explainer",
+      "full_name": "Vincentwei1021/anything2explainer",
+      "description": "Topic in, narrated explainer video out. A Claude Code / Codex skill that turns any topic into a black-canvas motion-graphics explainer video with TTS voiceover, subtitles and a chapter progress bar. Chinese or English; every frame drawn in code with Remotion.",
+      "stars": 998,
+      "forks": 179,
+      "open_issues": 2,
+      "created_at": "2026-09-08T17:19:54+00:00",
+      "pushed_at": "2026-09-10T19:27:26+00:00",
+      "updated_at": "2026-09-12T09:50:00+00:00",
+      "topics": [
+        "agent-skills",
+        "ai-agents",
+        "ai-video",
+        "claude-code",
+        "claude-code-skill",
+        "codex",
+        "edge-tts",
+        "educational-video",
+        "explainer-video",
+        "kokoro",
+        "motion-graphics",
+        "multi-agent",
+        "react",
+        "remotion",
+        "text-to-video",
+        "tts",
+        "typescript",
+        "video-generation"
+      ],
+      "language": "TypeScript",
+      "license": "NOASSERTION",
+      "homepage": null,
+      "html_url": "https://github.com/Vincentwei1021/anything2explainer",
       "default_branch": "main",
       "archived": false,
       "search_score": 1.0,
-      "stars_7d_ago": 920,
+      "stars_7d_ago": 749,
       "star_series": [
         {
-          "d": "08-13",
-          "s": 920
-        },
-        {
           "d": "08-14",
-          "s": 920
+          "s": 749
         },
         {
           "d": "08-15",
-          "s": 920
+          "s": 749
         },
         {
           "d": "08-16",
-          "s": 920
+          "s": 749
         },
         {
           "d": "08-17",
-          "s": 920
+          "s": 749
         },
         {
           "d": "08-18",
-          "s": 920
+          "s": 749
         },
         {
           "d": "08-19",
-          "s": 920
+          "s": 749
         },
         {
           "d": "08-20",
-          "s": 920
+          "s": 749
         },
         {
           "d": "08-21",
-          "s": 920
+          "s": 749
         },
         {
           "d": "08-22",
-          "s": 920
+          "s": 749
         },
         {
           "d": "08-23",
-          "s": 920
+          "s": 749
         },
         {
           "d": "08-24",
-          "s": 920
+          "s": 749
         },
         {
           "d": "08-25",
-          "s": 920
+          "s": 749
         },
         {
           "d": "08-26",
-          "s": 920
+          "s": 749
         },
         {
           "d": "08-27",
-          "s": 920
+          "s": 749
         },
         {
           "d": "08-28",
-          "s": 920
+          "s": 749
         },
         {
           "d": "08-29",
-          "s": 920
+          "s": 749
         },
         {
           "d": "08-30",
-          "s": 920
+          "s": 749
         },
         {
           "d": "08-31",
-          "s": 920
+          "s": 749
         },
         {
           "d": "09-01",
-          "s": 920
+          "s": 749
         },
         {
           "d": "09-02",
-          "s": 920
+          "s": 749
         },
         {
           "d": "09-03",
-          "s": 920
+          "s": 749
         },
         {
           "d": "09-04",
-          "s": 920
+          "s": 749
         },
         {
           "d": "09-05",
-          "s": 920
+          "s": 749
         },
         {
           "d": "09-06",
-          "s": 933
+          "s": 749
         },
         {
           "d": "09-07",
-          "s": 958
+          "s": 749
         },
         {
           "d": "09-08",
-          "s": 971
+          "s": 749
         },
         {
           "d": "09-09",
-          "s": 985
+          "s": 749
         },
         {
           "d": "09-10",
-          "s": 986
+          "s": 749
         },
         {
           "d": "09-11",
-          "s": 997
+          "s": 929
+        },
+        {
+          "d": "09-12",
+          "s": 998
         }
       ]
     },
     "score": {
-      "score": 94.46,
+      "score": 100.0,
       "breakdown": {
-        "vel": 76,
+        "vel": 100,
         "acc": 99,
-        "health": 69,
-        "fresh": 73,
+        "health": 100,
+        "fresh": 99,
         "signal": 70
       },
       "stage": "early",
       "stage_multiplier": 1.2,
       "confidence": 1.0,
-      "base_score": 78.72,
-      "explanation": "ComfyTV 是 JavaScript 开源项目，主打「ComfyTV — the canvas-based app that truly belongs to ComfyUI.」；处于增长早期，本周涨速 11 star/天，涨速在加快；开发活跃。"
+      "base_score": 96.19,
+      "explanation": "anything2explainer 是 TypeScript 开源项目，主打「Topic in, narrated explainer video out. A Claude Code / Codex skill that turns any topic into a black-canvas motion-graphics explainer video with TTS voiceover, subtitles and a chapter progress bar. Chinese or English; every frame drawn in code with Remotion.」；处于增长早期，本周涨速 36 star/天，涨速在加快；社区健康（fork/star 比 17.9%，2 个 open issue）、开发活跃。"
+    }
+  },
+  {
+    "repo": {
+      "owner": "realchendahuang",
+      "name": "feedsieve",
+      "full_name": "realchendahuang/feedsieve",
+      "description": "X 赛博清洁工：高置信垃圾账号黄框标注，一键原生拉黑，全端同步消失。官网 feedsieve.win · Open-source X (Twitter) spam blocker for Chrome.",
+      "stars": 994,
+      "forks": 31,
+      "open_issues": 0,
+      "created_at": "2026-08-25T12:12:36+00:00",
+      "pushed_at": "2026-09-12T09:47:58+00:00",
+      "updated_at": "2026-09-12T09:58:33+00:00",
+      "topics": [
+        "blocker",
+        "blocklist",
+        "chrome-extension",
+        "cloudflare-workers",
+        "community-blocklist",
+        "react",
+        "spam-filter",
+        "twitter",
+        "typescript",
+        "wxt",
+        "x"
+      ],
+      "language": "TypeScript",
+      "license": "MIT",
+      "homepage": "https://feedsieve.win",
+      "html_url": "https://github.com/realchendahuang/feedsieve",
+      "default_branch": "main",
+      "archived": false,
+      "search_score": 1.0,
+      "stars_7d_ago": 755,
+      "star_series": [
+        {
+          "d": "08-14",
+          "s": 755
+        },
+        {
+          "d": "08-15",
+          "s": 755
+        },
+        {
+          "d": "08-16",
+          "s": 755
+        },
+        {
+          "d": "08-17",
+          "s": 755
+        },
+        {
+          "d": "08-18",
+          "s": 755
+        },
+        {
+          "d": "08-19",
+          "s": 755
+        },
+        {
+          "d": "08-20",
+          "s": 755
+        },
+        {
+          "d": "08-21",
+          "s": 755
+        },
+        {
+          "d": "08-22",
+          "s": 755
+        },
+        {
+          "d": "08-23",
+          "s": 755
+        },
+        {
+          "d": "08-24",
+          "s": 755
+        },
+        {
+          "d": "08-25",
+          "s": 755
+        },
+        {
+          "d": "08-26",
+          "s": 755
+        },
+        {
+          "d": "08-27",
+          "s": 755
+        },
+        {
+          "d": "08-28",
+          "s": 755
+        },
+        {
+          "d": "08-29",
+          "s": 755
+        },
+        {
+          "d": "08-30",
+          "s": 755
+        },
+        {
+          "d": "08-31",
+          "s": 755
+        },
+        {
+          "d": "09-01",
+          "s": 755
+        },
+        {
+          "d": "09-02",
+          "s": 755
+        },
+        {
+          "d": "09-03",
+          "s": 755
+        },
+        {
+          "d": "09-04",
+          "s": 755
+        },
+        {
+          "d": "09-05",
+          "s": 755
+        },
+        {
+          "d": "09-06",
+          "s": 755
+        },
+        {
+          "d": "09-07",
+          "s": 755
+        },
+        {
+          "d": "09-08",
+          "s": 755
+        },
+        {
+          "d": "09-09",
+          "s": 755
+        },
+        {
+          "d": "09-10",
+          "s": 852
+        },
+        {
+          "d": "09-11",
+          "s": 983
+        },
+        {
+          "d": "09-12",
+          "s": 994
+        }
+      ]
+    },
+    "score": {
+      "score": 100.0,
+      "breakdown": {
+        "vel": 99,
+        "acc": 99,
+        "health": 69,
+        "fresh": 95,
+        "signal": 85
+      },
+      "stage": "early",
+      "stage_multiplier": 1.2,
+      "confidence": 1.0,
+      "base_score": 90.3,
+      "explanation": "feedsieve 是 TypeScript 开源项目，主打「X 赛博清洁工：高置信垃圾账号黄框标注，一键原生拉黑，全端同步消失。官网 feedsieve.win · Open-source X (Twitter) spam blocker for Chrome.」；处于增长早期，本周涨速 34 star/天，涨速在加快；项目元数据完整、开发活跃。"
     }
   },
   {
@@ -345,12 +530,8 @@
       "default_branch": "main",
       "archived": false,
       "search_score": 1.0,
-      "stars_7d_ago": 90,
+      "stars_7d_ago": 102,
       "star_series": [
-        {
-          "d": "08-13",
-          "s": 0
-        },
         {
           "d": "08-14",
           "s": 0
@@ -466,13 +647,17 @@
         {
           "d": "09-11",
           "s": 200
+        },
+        {
+          "d": "09-12",
+          "s": 200
         }
       ]
     },
     "score": {
-      "score": 88.83,
+      "score": 85.2,
       "breakdown": {
-        "vel": 87,
+        "vel": 75,
         "acc": 99,
         "health": 65,
         "fresh": 85,
@@ -481,332 +666,168 @@
       "stage": "mid_early",
       "stage_multiplier": 1.1,
       "confidence": 1.0,
-      "base_score": 80.75,
-      "explanation": "FolioLoom 是 TypeScript 开源项目，主打「Lossless agentic long-form novel translation pipeline with evidence-backed terminology, narrative memory, recovery, and audit」；处于中早期增长，本周涨速 16 star/天，涨速在加快；开发活跃。"
+      "base_score": 77.45,
+      "explanation": "FolioLoom 是 TypeScript 开源项目，主打「Lossless agentic long-form novel translation pipeline with evidence-backed terminology, narrative memory, recovery, and audit」；处于中早期增长，本周涨速 14 star/天，涨速在加快；开发活跃。"
     }
   },
   {
     "repo": {
-      "owner": "scorbo2",
-      "name": "TalkWithMe",
-      "full_name": "scorbo2/TalkWithMe",
-      "description": "Configurable AI chat with TTS/STT",
-      "stars": 200,
-      "forks": 46,
-      "open_issues": 0,
-      "created_at": "2026-07-24T02:10:06+00:00",
-      "pushed_at": "2026-09-11T05:35:11+00:00",
-      "updated_at": "2026-09-11T09:41:35+00:00",
-      "topics": [
-        "ai",
-        "stt",
-        "tts"
-      ],
-      "language": "Python",
-      "license": "MIT",
-      "homepage": null,
-      "html_url": "https://github.com/scorbo2/TalkWithMe",
-      "default_branch": "master",
-      "archived": false,
-      "search_score": 1.0,
-      "stars_7d_ago": 165,
-      "star_series": [
-        {
-          "d": "08-13",
-          "s": 129
-        },
-        {
-          "d": "08-14",
-          "s": 129
-        },
-        {
-          "d": "08-15",
-          "s": 129
-        },
-        {
-          "d": "08-16",
-          "s": 129
-        },
-        {
-          "d": "08-17",
-          "s": 129
-        },
-        {
-          "d": "08-18",
-          "s": 129
-        },
-        {
-          "d": "08-19",
-          "s": 129
-        },
-        {
-          "d": "08-20",
-          "s": 129
-        },
-        {
-          "d": "08-21",
-          "s": 129
-        },
-        {
-          "d": "08-22",
-          "s": 129
-        },
-        {
-          "d": "08-23",
-          "s": 129
-        },
-        {
-          "d": "08-24",
-          "s": 129
-        },
-        {
-          "d": "08-25",
-          "s": 129
-        },
-        {
-          "d": "08-26",
-          "s": 129
-        },
-        {
-          "d": "08-27",
-          "s": 129
-        },
-        {
-          "d": "08-28",
-          "s": 129
-        },
-        {
-          "d": "08-29",
-          "s": 129
-        },
-        {
-          "d": "08-30",
-          "s": 129
-        },
-        {
-          "d": "08-31",
-          "s": 132
-        },
-        {
-          "d": "09-01",
-          "s": 133
-        },
-        {
-          "d": "09-02",
-          "s": 134
-        },
-        {
-          "d": "09-03",
-          "s": 144
-        },
-        {
-          "d": "09-04",
-          "s": 159
-        },
-        {
-          "d": "09-05",
-          "s": 165
-        },
-        {
-          "d": "09-06",
-          "s": 170
-        },
-        {
-          "d": "09-07",
-          "s": 175
-        },
-        {
-          "d": "09-08",
-          "s": 181
-        },
-        {
-          "d": "09-09",
-          "s": 189
-        },
-        {
-          "d": "09-10",
-          "s": 195
-        },
-        {
-          "d": "09-11",
-          "s": 200
-        }
-      ]
-    },
-    "score": {
-      "score": 79.45,
-      "breakdown": {
-        "vel": 55,
-        "acc": 49,
-        "health": 100,
-        "fresh": 87,
-        "signal": 70
-      },
-      "stage": "early",
-      "stage_multiplier": 1.2,
-      "confidence": 1.0,
-      "base_score": 66.21,
-      "explanation": "TalkWithMe 是 Python 开源项目，主打「Configurable AI chat with TTS/STT」；处于增长早期，本周涨速 5.0 star/天；社区健康（fork/star 比 23.0%，0 个 open issue）、开发活跃。"
-    }
-  },
-  {
-    "repo": {
-      "owner": "valkor-ai",
-      "name": "loom",
-      "full_name": "valkor-ai/loom",
-      "description": "Loop engineering for agentic software delivery.",
-      "stars": 998,
-      "forks": 131,
-      "open_issues": 4,
-      "created_at": "2026-06-09T03:46:34+00:00",
-      "pushed_at": "2026-09-09T16:05:41+00:00",
-      "updated_at": "2026-09-11T10:25:03+00:00",
+      "owner": "soirihiroka",
+      "name": "shrimply",
+      "full_name": "soirihiroka/shrimply",
+      "description": "you're telling me a shrimp made this video?!",
+      "stars": 996,
+      "forks": 56,
+      "open_issues": 11,
+      "created_at": "2026-08-26T01:55:08+00:00",
+      "pushed_at": "2026-09-12T09:26:14+00:00",
+      "updated_at": "2026-09-12T09:22:10+00:00",
       "topics": [],
       "language": "Rust",
-      "license": "Apache-2.0",
-      "homepage": null,
-      "html_url": "https://github.com/valkor-ai/loom",
+      "license": "GPL-3.0",
+      "homepage": "https://shrimply.pages.dev",
+      "html_url": "https://github.com/soirihiroka/shrimply",
       "default_branch": "main",
       "archived": false,
       "search_score": 1.0,
-      "stars_7d_ago": 959,
+      "stars_7d_ago": 958,
       "star_series": [
         {
-          "d": "08-13",
-          "s": 910
-        },
-        {
           "d": "08-14",
-          "s": 910
+          "s": 958
         },
         {
           "d": "08-15",
-          "s": 910
+          "s": 958
         },
         {
           "d": "08-16",
-          "s": 910
+          "s": 958
         },
         {
           "d": "08-17",
-          "s": 910
+          "s": 958
         },
         {
           "d": "08-18",
-          "s": 910
+          "s": 958
         },
         {
           "d": "08-19",
-          "s": 910
+          "s": 958
         },
         {
           "d": "08-20",
-          "s": 910
+          "s": 958
         },
         {
           "d": "08-21",
-          "s": 910
+          "s": 958
         },
         {
           "d": "08-22",
-          "s": 910
+          "s": 958
         },
         {
           "d": "08-23",
-          "s": 910
+          "s": 958
         },
         {
           "d": "08-24",
-          "s": 910
+          "s": 958
         },
         {
           "d": "08-25",
-          "s": 910
+          "s": 958
         },
         {
           "d": "08-26",
-          "s": 910
+          "s": 958
         },
         {
           "d": "08-27",
-          "s": 910
+          "s": 958
         },
         {
           "d": "08-28",
-          "s": 910
+          "s": 958
         },
         {
           "d": "08-29",
-          "s": 910
+          "s": 958
         },
         {
           "d": "08-30",
-          "s": 911
+          "s": 958
         },
         {
           "d": "08-31",
-          "s": 916
+          "s": 958
         },
         {
           "d": "09-01",
-          "s": 924
+          "s": 958
         },
         {
           "d": "09-02",
-          "s": 935
+          "s": 958
         },
         {
           "d": "09-03",
-          "s": 943
+          "s": 958
         },
         {
           "d": "09-04",
-          "s": 953
+          "s": 958
         },
         {
           "d": "09-05",
-          "s": 959
+          "s": 958
         },
         {
           "d": "09-06",
-          "s": 966
+          "s": 958
         },
         {
           "d": "09-07",
-          "s": 973
+          "s": 958
         },
         {
           "d": "09-08",
-          "s": 981
+          "s": 958
         },
         {
           "d": "09-09",
-          "s": 991
+          "s": 958
         },
         {
           "d": "09-10",
-          "s": 994
+          "s": 958
         },
         {
           "d": "09-11",
-          "s": 998
+          "s": 987
+        },
+        {
+          "d": "09-12",
+          "s": 996
         }
       ]
     },
     "score": {
-      "score": 75.09,
+      "score": 83.34,
       "breakdown": {
-        "vel": 58,
-        "acc": 45,
-        "health": 100,
-        "fresh": 74,
-        "signal": 55
+        "vel": 52,
+        "acc": 99,
+        "health": 76,
+        "fresh": 95,
+        "signal": 85
       },
-      "stage": "early",
-      "stage_multiplier": 1.2,
+      "stage": "mid_early",
+      "stage_multiplier": 1.1,
       "confidence": 1.0,
-      "base_score": 62.57,
-      "explanation": "loom 是 Rust 开源项目，主打「Loop engineering for agentic software delivery.」；处于增长早期，本周涨速 5.6 star/天；社区健康（fork/star 比 13.1%，4 个 open issue）、开发活跃。"
+      "base_score": 75.76,
+      "explanation": "shrimply 是 Rust 开源项目，主打「you're telling me a shrimp made this video?!」；处于中早期增长，本周涨速 5.4 star/天，涨速在加快；社区健康（fork/star 比 5.6%，11 个 open issue）、项目元数据完整、开发活跃。"
     }
   }
 ]
