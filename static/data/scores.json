@@ -1,155 +1,323 @@
 [
   {
     "repo": {
-      "owner": "keeleycenc",
-      "name": "cc-our-story",
-      "full_name": "keeleycenc/cc-our-story",
-      "description": "自托管的情侣空间：记录彼此的点滴与故事，让每一次心动都有迹可循",
+      "owner": "linguo2625469",
+      "name": "workbuddy2api-panel",
+      "full_name": "linguo2625469/workbuddy2api-panel",
+      "description": "把腾讯WorkBuddy账号变成 OpenAI 兼容 API 的多账号网关，同时自动完成任务中心全部任务，附 Web 管理面板（账号池可视化 / 积分任务 / 配置热更新）。基于 Sliverkiss/workbuddy2api 的增强分支",
       "stars": 200,
-      "forks": 52,
-      "open_issues": 2,
-      "created_at": "2026-08-07T08:49:09+00:00",
-      "pushed_at": "2026-09-14T01:09:50+00:00",
-      "updated_at": "2026-09-14T05:25:59+00:00",
+      "forks": 45,
+      "open_issues": 6,
+      "created_at": "2026-09-12T05:13:46+00:00",
+      "pushed_at": "2026-09-15T06:14:03+00:00",
+      "updated_at": "2026-09-15T10:59:39+00:00",
       "topics": [
-        "aspnetcore",
-        "blog",
-        "couples",
-        "csharp",
-        "dotnet",
-        "love",
-        "personal-website",
-        "razor-pages",
-        "self-hosted"
+        "admin-panel",
+        "codebuddy",
+        "gateway",
+        "golang",
+        "openai-api",
+        "reverse-proxy",
+        "workbuddy"
       ],
-      "language": "C#",
+      "language": "Go",
       "license": "MIT",
-      "homepage": "https://keeleycenc.com",
-      "html_url": "https://github.com/keeleycenc/cc-our-story",
+      "homepage": null,
+      "html_url": "https://github.com/linguo2625469/workbuddy2api-panel",
       "default_branch": "main",
       "archived": false,
       "search_score": 1.0,
-      "stars_7d_ago": 156,
+      "stars_7d_ago": 80,
       "star_series": [
         {
-          "d": "08-16",
-          "s": 138
-        },
-        {
           "d": "08-17",
-          "s": 138
+          "s": 80
         },
         {
           "d": "08-18",
-          "s": 138
+          "s": 80
         },
         {
           "d": "08-19",
-          "s": 138
+          "s": 80
         },
         {
           "d": "08-20",
-          "s": 138
+          "s": 80
         },
         {
           "d": "08-21",
-          "s": 138
+          "s": 80
         },
         {
           "d": "08-22",
-          "s": 138
+          "s": 80
         },
         {
           "d": "08-23",
-          "s": 138
+          "s": 80
         },
         {
           "d": "08-24",
-          "s": 138
+          "s": 80
         },
         {
           "d": "08-25",
-          "s": 138
+          "s": 80
         },
         {
           "d": "08-26",
-          "s": 138
+          "s": 80
         },
         {
           "d": "08-27",
-          "s": 138
+          "s": 80
         },
         {
           "d": "08-28",
-          "s": 138
+          "s": 80
         },
         {
           "d": "08-29",
-          "s": 138
+          "s": 80
         },
         {
           "d": "08-30",
-          "s": 138
+          "s": 80
         },
         {
           "d": "08-31",
-          "s": 138
+          "s": 80
         },
         {
           "d": "09-01",
-          "s": 138
+          "s": 80
         },
         {
           "d": "09-02",
-          "s": 138
+          "s": 80
         },
         {
           "d": "09-03",
-          "s": 138
+          "s": 80
         },
         {
           "d": "09-04",
-          "s": 138
+          "s": 80
         },
         {
           "d": "09-05",
-          "s": 138
+          "s": 80
         },
         {
           "d": "09-06",
-          "s": 143
+          "s": 80
         },
         {
           "d": "09-07",
-          "s": 150
+          "s": 80
         },
         {
           "d": "09-08",
-          "s": 156
+          "s": 80
         },
         {
           "d": "09-09",
-          "s": 164
+          "s": 80
         },
         {
           "d": "09-10",
-          "s": 172
+          "s": 80
         },
         {
           "d": "09-11",
-          "s": 180
+          "s": 80
         },
         {
           "d": "09-12",
-          "s": 186
+          "s": 80
         },
         {
           "d": "09-13",
-          "s": 197
+          "s": 80
         },
         {
           "d": "09-14",
+          "s": 152
+        },
+        {
+          "d": "09-15",
           "s": 200
+        }
+      ]
+    },
+    "score": {
+      "score": 100.0,
+      "breakdown": {
+        "vel": 82,
+        "acc": 99,
+        "health": 96,
+        "fresh": 99,
+        "signal": 70
+      },
+      "stage": "early",
+      "stage_multiplier": 1.2,
+      "confidence": 1.0,
+      "base_score": 89.97,
+      "explanation": "workbuddy2api-panel 是 Go 开源项目，主打「把腾讯WorkBuddy账号变成 OpenAI 兼容 API 的多账号网关，同时自动完成任务中心全部任务，附 Web 管理面板（账号池可视化 / 积分任务 / 配置热更新）。基于 Sliverkiss/workbuddy2api 的增强分支」；处于增长早期，本周涨速 17 star/天，涨速在加快；社区健康（fork/star 比 22.5%，6 个 open issue）、开发活跃。"
+    }
+  },
+  {
+    "repo": {
+      "owner": "MG1937",
+      "name": "ASC",
+      "full_name": "MG1937/ASC",
+      "description": "ASC is a super FAST Android decompiler front-end designed for Agents/Mobile Researchers.",
+      "stars": 997,
+      "forks": 181,
+      "open_issues": 6,
+      "created_at": "2026-06-09T17:19:42+00:00",
+      "pushed_at": "2026-09-15T10:06:06+00:00",
+      "updated_at": "2026-09-15T10:44:10+00:00",
+      "topics": [
+        "agent",
+        "agentic-ai",
+        "android",
+        "decompilation",
+        "decompile",
+        "decompiler",
+        "mobile",
+        "reverse",
+        "reverse-engineering"
+      ],
+      "language": "Python",
+      "license": "Apache-2.0",
+      "homepage": null,
+      "html_url": "https://github.com/MG1937/ASC",
+      "default_branch": "main",
+      "archived": false,
+      "search_score": 1.0,
+      "stars_7d_ago": 754,
+      "star_series": [
+        {
+          "d": "08-17",
+          "s": 754
+        },
+        {
+          "d": "08-18",
+          "s": 754
+        },
+        {
+          "d": "08-19",
+          "s": 754
+        },
+        {
+          "d": "08-20",
+          "s": 754
+        },
+        {
+          "d": "08-21",
+          "s": 754
+        },
+        {
+          "d": "08-22",
+          "s": 754
+        },
+        {
+          "d": "08-23",
+          "s": 754
+        },
+        {
+          "d": "08-24",
+          "s": 754
+        },
+        {
+          "d": "08-25",
+          "s": 754
+        },
+        {
+          "d": "08-26",
+          "s": 754
+        },
+        {
+          "d": "08-27",
+          "s": 754
+        },
+        {
+          "d": "08-28",
+          "s": 754
+        },
+        {
+          "d": "08-29",
+          "s": 754
+        },
+        {
+          "d": "08-30",
+          "s": 754
+        },
+        {
+          "d": "08-31",
+          "s": 754
+        },
+        {
+          "d": "09-01",
+          "s": 754
+        },
+        {
+          "d": "09-02",
+          "s": 754
+        },
+        {
+          "d": "09-03",
+          "s": 754
+        },
+        {
+          "d": "09-04",
+          "s": 754
+        },
+        {
+          "d": "09-05",
+          "s": 754
+        },
+        {
+          "d": "09-06",
+          "s": 754
+        },
+        {
+          "d": "09-07",
+          "s": 754
+        },
+        {
+          "d": "09-08",
+          "s": 754
+        },
+        {
+          "d": "09-09",
+          "s": 754
+        },
+        {
+          "d": "09-10",
+          "s": 754
+        },
+        {
+          "d": "09-11",
+          "s": 754
+        },
+        {
+          "d": "09-12",
+          "s": 754
+        },
+        {
+          "d": "09-13",
+          "s": 766
+        },
+        {
+          "d": "09-14",
+          "s": 936
+        },
+        {
+          "d": "09-15",
+          "s": 997
         }
       ]
     },
@@ -157,127 +325,310 @@
       "score": 100.0,
       "breakdown": {
         "vel": 100,
-        "acc": 81,
+        "acc": 99,
         "health": 99,
-        "fresh": 90,
-        "signal": 85
+        "fresh": 73,
+        "signal": 70
       },
       "stage": "early",
       "stage_multiplier": 1.2,
       "confidence": 1.0,
-      "base_score": 91.64,
-      "explanation": "cc-our-story 是 C# 开源项目，主打「自托管的情侣空间：记录彼此的点滴与故事，让每一次心动都有迹可循」；处于增长早期，本周涨速 6.3 star/天，涨速在加快；社区健康（fork/star 比 26.0%，2 个 open issue）、项目元数据完整、开发活跃。"
+      "base_score": 91.83,
+      "explanation": "ASC 是 Python 开源项目，主打「ASC is a super FAST Android decompiler front-end designed for Agents/Mobile Researchers.」；处于增长早期，本周涨速 35 star/天，涨速在加快；社区健康（fork/star 比 18.2%，6 个 open issue）、开发活跃。"
     }
   },
   {
     "repo": {
-      "owner": "buhanzhe",
-      "name": "NativeWasmTv",
-      "full_name": "buhanzhe/NativeWasmTv",
-      "description": "开源网页电视",
-      "stars": 200,
-      "forks": 46,
-      "open_issues": 1,
-      "created_at": "2026-06-12T08:41:47+00:00",
-      "pushed_at": "2026-09-08T08:47:52+00:00",
-      "updated_at": "2026-09-14T11:05:56+00:00",
-      "topics": [],
-      "language": "Java",
-      "license": null,
-      "homepage": "https://www.right.com.cn/forum/thread-8484303-1-1.html",
-      "html_url": "https://github.com/buhanzhe/NativeWasmTv",
+      "owner": "px0-ai",
+      "name": "px0",
+      "full_name": "px0-ai/px0",
+      "description": "px0 is a fast, lightweight, read-only IDE designed for instant code navigation and review in your browser. Booting in under 1 ms and using ~20 MB of RAM, it turns your browser into a zero-latency inspection console with symbol-level navigation, deep search, and syntax highlighting across massive codebases.",
+      "stars": 1000,
+      "forks": 100,
+      "open_issues": 45,
+      "created_at": "2026-06-24T13:03:11+00:00",
+      "pushed_at": "2026-09-15T10:18:10+00:00",
+      "updated_at": "2026-09-15T11:01:26+00:00",
+      "topics": [
+        "code-viewer",
+        "developer-tools",
+        "go",
+        "ide",
+        "lsp"
+      ],
+      "language": "JavaScript",
+      "license": "MIT",
+      "homepage": "https://px0.ai/",
+      "html_url": "https://github.com/px0-ai/px0",
       "default_branch": "master",
       "archived": false,
       "search_score": 1.0,
-      "stars_7d_ago": 170,
+      "stars_7d_ago": 888,
       "star_series": [
         {
-          "d": "08-16",
-          "s": 163
-        },
-        {
           "d": "08-17",
-          "s": 163
+          "s": 888
         },
         {
           "d": "08-18",
-          "s": 163
+          "s": 888
         },
         {
           "d": "08-19",
-          "s": 163
+          "s": 888
         },
         {
           "d": "08-20",
-          "s": 163
+          "s": 888
         },
         {
           "d": "08-21",
-          "s": 163
+          "s": 888
         },
         {
           "d": "08-22",
-          "s": 163
+          "s": 888
         },
         {
           "d": "08-23",
-          "s": 163
+          "s": 888
         },
         {
           "d": "08-24",
-          "s": 163
+          "s": 888
         },
         {
           "d": "08-25",
-          "s": 163
+          "s": 888
         },
         {
           "d": "08-26",
-          "s": 163
+          "s": 888
         },
         {
           "d": "08-27",
-          "s": 163
+          "s": 888
         },
         {
           "d": "08-28",
-          "s": 163
+          "s": 888
         },
         {
           "d": "08-29",
-          "s": 163
+          "s": 888
         },
         {
           "d": "08-30",
-          "s": 163
+          "s": 888
         },
         {
           "d": "08-31",
-          "s": 163
+          "s": 888
         },
         {
           "d": "09-01",
-          "s": 163
+          "s": 888
         },
         {
           "d": "09-02",
-          "s": 163
+          "s": 888
         },
         {
           "d": "09-03",
-          "s": 163
+          "s": 888
         },
         {
           "d": "09-04",
-          "s": 163
+          "s": 888
         },
         {
           "d": "09-05",
-          "s": 163
+          "s": 888
         },
         {
           "d": "09-06",
-          "s": 166
+          "s": 888
+        },
+        {
+          "d": "09-07",
+          "s": 888
+        },
+        {
+          "d": "09-08",
+          "s": 888
+        },
+        {
+          "d": "09-09",
+          "s": 888
+        },
+        {
+          "d": "09-10",
+          "s": 888
+        },
+        {
+          "d": "09-11",
+          "s": 888
+        },
+        {
+          "d": "09-12",
+          "s": 888
+        },
+        {
+          "d": "09-13",
+          "s": 888
+        },
+        {
+          "d": "09-14",
+          "s": 948
+        },
+        {
+          "d": "09-15",
+          "s": 1000
+        }
+      ]
+    },
+    "score": {
+      "score": 93.85,
+      "breakdown": {
+        "vel": 80,
+        "acc": 99,
+        "health": 83,
+        "fresh": 78,
+        "signal": 85
+      },
+      "stage": "mid_early",
+      "stage_multiplier": 1.1,
+      "confidence": 1.0,
+      "base_score": 85.32,
+      "explanation": "px0 是 JavaScript 开源项目，主打「px0 is a fast, lightweight, read-only IDE designed for instant code navigation and review in your browser. Booting in under 1 ms and using ~20 MB of RAM, it turns your browser into a zero-latency inspection console with symbol-level navigation, deep search, and syntax highlighting across massive codebases.」；处于中早期增长，本周涨速 16 star/天，涨速在加快；社区健康（fork/star 比 10.0%，45 个 open issue）、项目元数据完整、开发活跃。"
+    }
+  },
+  {
+    "repo": {
+      "owner": "rokbenko",
+      "name": "quackd",
+      "full_name": "rokbenko/quackd",
+      "description": "One CLI for all your robots. Connect them, command them, and let them work together, each with an LLM for a brain. Microduck, Open Duck Mini, LeRobot arms, XLeRobot carts, AlohaMini, ToddlerBot or any ROS base. Claude, OpenAI, Gemini, Grok, or local via Ollama or vLLM. Simulator, .duck safety contracts, MCP, memory between runs, flocks.",
+      "stars": 200,
+      "forks": 22,
+      "open_issues": 0,
+      "created_at": "2026-08-28T09:09:16+00:00",
+      "pushed_at": "2026-09-15T07:49:46+00:00",
+      "updated_at": "2026-09-15T07:55:05+00:00",
+      "topics": [
+        "ai-agents",
+        "aloha",
+        "claude",
+        "embodied-ai",
+        "gemini",
+        "humanoid-robot",
+        "lerobot",
+        "local-llm",
+        "mcp",
+        "microduck",
+        "mobile-manipulator",
+        "multi-robot",
+        "ollama",
+        "open-duck-mini",
+        "openai",
+        "physical-ai",
+        "robotics",
+        "ros",
+        "ros2",
+        "xlerobot"
+      ],
+      "language": "Python",
+      "license": "Apache-2.0",
+      "homepage": "https://www.quackd.org",
+      "html_url": "https://github.com/rokbenko/quackd",
+      "default_branch": "main",
+      "archived": false,
+      "search_score": 1.0,
+      "stars_7d_ago": 179,
+      "star_series": [
+        {
+          "d": "08-17",
+          "s": 153
+        },
+        {
+          "d": "08-18",
+          "s": 153
+        },
+        {
+          "d": "08-19",
+          "s": 153
+        },
+        {
+          "d": "08-20",
+          "s": 153
+        },
+        {
+          "d": "08-21",
+          "s": 153
+        },
+        {
+          "d": "08-22",
+          "s": 153
+        },
+        {
+          "d": "08-23",
+          "s": 153
+        },
+        {
+          "d": "08-24",
+          "s": 153
+        },
+        {
+          "d": "08-25",
+          "s": 153
+        },
+        {
+          "d": "08-26",
+          "s": 153
+        },
+        {
+          "d": "08-27",
+          "s": 153
+        },
+        {
+          "d": "08-28",
+          "s": 153
+        },
+        {
+          "d": "08-29",
+          "s": 153
+        },
+        {
+          "d": "08-30",
+          "s": 153
+        },
+        {
+          "d": "08-31",
+          "s": 153
+        },
+        {
+          "d": "09-01",
+          "s": 153
+        },
+        {
+          "d": "09-02",
+          "s": 153
+        },
+        {
+          "d": "09-03",
+          "s": 153
+        },
+        {
+          "d": "09-04",
+          "s": 153
+        },
+        {
+          "d": "09-05",
+          "s": 160
+        },
+        {
+          "d": "09-06",
+          "s": 162
         },
         {
           "d": "09-07",
@@ -285,1199 +636,500 @@
         },
         {
           "d": "09-08",
-          "s": 170
+          "s": 176
         },
         {
           "d": "09-09",
-          "s": 171
+          "s": 179
         },
         {
           "d": "09-10",
-          "s": 177
+          "s": 188
         },
         {
           "d": "09-11",
-          "s": 180
+          "s": 189
         },
         {
           "d": "09-12",
-          "s": 183
+          "s": 192
         },
         {
           "d": "09-13",
-          "s": 190
-        },
-        {
-          "d": "09-14",
-          "s": 200
-        }
-      ]
-    },
-    "score": {
-      "score": 100.0,
-      "breakdown": {
-        "vel": 86,
-        "acc": 96,
-        "health": 100,
-        "fresh": 74,
-        "signal": 50
-      },
-      "stage": "early",
-      "stage_multiplier": 1.2,
-      "confidence": 1.0,
-      "base_score": 84.43,
-      "explanation": "NativeWasmTv 是 Java 开源项目，主打「开源网页电视」；处于增长早期，本周涨速 4.3 star/天，涨速在加快；社区健康（fork/star 比 23.0%，1 个 open issue）、开发活跃。"
-    }
-  },
-  {
-    "repo": {
-      "owner": "jtenniswood",
-      "name": "espcontrol",
-      "full_name": "jtenniswood/espcontrol",
-      "description": "Esphome based smart home control panel",
-      "stars": 1000,
-      "forks": 148,
-      "open_issues": 20,
-      "created_at": "2026-03-23T09:27:08+00:00",
-      "pushed_at": "2026-09-14T09:57:07+00:00",
-      "updated_at": "2026-09-14T11:30:40+00:00",
-      "topics": [
-        "esp32",
-        "home-assistant"
-      ],
-      "language": "C++",
-      "license": "NOASSERTION",
-      "homepage": "https://jtenniswood.github.io/espcontrol/",
-      "html_url": "https://github.com/jtenniswood/espcontrol",
-      "default_branch": "main",
-      "archived": false,
-      "search_score": 1.0,
-      "stars_7d_ago": 974,
-      "star_series": [
-        {
-          "d": "08-16",
-          "s": 974
-        },
-        {
-          "d": "08-17",
-          "s": 974
-        },
-        {
-          "d": "08-18",
-          "s": 974
-        },
-        {
-          "d": "08-19",
-          "s": 974
-        },
-        {
-          "d": "08-20",
-          "s": 974
-        },
-        {
-          "d": "08-21",
-          "s": 974
-        },
-        {
-          "d": "08-22",
-          "s": 974
-        },
-        {
-          "d": "08-23",
-          "s": 974
-        },
-        {
-          "d": "08-24",
-          "s": 974
-        },
-        {
-          "d": "08-25",
-          "s": 974
-        },
-        {
-          "d": "08-26",
-          "s": 974
-        },
-        {
-          "d": "08-27",
-          "s": 974
-        },
-        {
-          "d": "08-28",
-          "s": 974
-        },
-        {
-          "d": "08-29",
-          "s": 974
-        },
-        {
-          "d": "08-30",
-          "s": 974
-        },
-        {
-          "d": "08-31",
-          "s": 974
-        },
-        {
-          "d": "09-01",
-          "s": 974
-        },
-        {
-          "d": "09-02",
-          "s": 974
-        },
-        {
-          "d": "09-03",
-          "s": 974
-        },
-        {
-          "d": "09-04",
-          "s": 974
-        },
-        {
-          "d": "09-05",
-          "s": 974
-        },
-        {
-          "d": "09-06",
-          "s": 974
-        },
-        {
-          "d": "09-07",
-          "s": 974
-        },
-        {
-          "d": "09-08",
-          "s": 974
-        },
-        {
-          "d": "09-09",
-          "s": 974
-        },
-        {
-          "d": "09-10",
-          "s": 974
-        },
-        {
-          "d": "09-11",
-          "s": 974
-        },
-        {
-          "d": "09-12",
-          "s": 980
-        },
-        {
-          "d": "09-13",
-          "s": 991
-        },
-        {
-          "d": "09-14",
-          "s": 1000
-        }
-      ]
-    },
-    "score": {
-      "score": 92.0,
-      "breakdown": {
-        "vel": 80,
-        "acc": 98,
-        "health": 96,
-        "fresh": 52,
-        "signal": 100
-      },
-      "stage": "mid_early",
-      "stage_multiplier": 1.1,
-      "confidence": 1.0,
-      "base_score": 83.64,
-      "explanation": "espcontrol 是 C++ 开源项目，主打「Esphome based smart home control panel」；处于中早期增长，本周涨速 3.7 star/天，涨速在加快；社区健康（fork/star 比 14.8%，20 个 open issue）、项目元数据完整。"
-    }
-  },
-  {
-    "repo": {
-      "owner": "us",
-      "name": "crw",
-      "full_name": "us/crw",
-      "description": "Fast, lightweight Firecrawl/Tavily alternative in Rust. Web scraper, crawler & search API with MCP server for AI agents. Drop-in Firecrawl-compatible API (/scrape, /crawl, /search). 2.3x faster than Tavily, 1.5x faster than Firecrawl in 1K-URL benchmarks. 6 MB RAM, single binary. Self-host or use managed cloud.",
-      "stars": 997,
-      "forks": 77,
-      "open_issues": 3,
-      "created_at": "2026-03-02T19:51:43+00:00",
-      "pushed_at": "2026-09-13T17:44:51+00:00",
-      "updated_at": "2026-09-14T10:28:44+00:00",
-      "topics": [
-        "ai",
-        "ai-agents",
-        "crawler",
-        "data-extraction",
-        "docker",
-        "firecrawl-alternative",
-        "html-to-markdown",
-        "llm",
-        "markdown",
-        "mcp",
-        "mcp-server",
-        "rust",
-        "scraping-api",
-        "self-hosted",
-        "tavily-alternative",
-        "web-crawler",
-        "web-scraper",
-        "web-scraping",
-        "web-search-api"
-      ],
-      "language": "Rust",
-      "license": "AGPL-3.0",
-      "homepage": "https://fastcrw.com",
-      "html_url": "https://github.com/us/crw",
-      "default_branch": "main",
-      "archived": false,
-      "search_score": 1.0,
-      "stars_7d_ago": 961,
-      "star_series": [
-        {
-          "d": "08-16",
-          "s": 956
-        },
-        {
-          "d": "08-17",
-          "s": 956
-        },
-        {
-          "d": "08-18",
-          "s": 956
-        },
-        {
-          "d": "08-19",
-          "s": 956
-        },
-        {
-          "d": "08-20",
-          "s": 956
-        },
-        {
-          "d": "08-21",
-          "s": 956
-        },
-        {
-          "d": "08-22",
-          "s": 956
-        },
-        {
-          "d": "08-23",
-          "s": 956
-        },
-        {
-          "d": "08-24",
-          "s": 956
-        },
-        {
-          "d": "08-25",
-          "s": 956
-        },
-        {
-          "d": "08-26",
-          "s": 956
-        },
-        {
-          "d": "08-27",
-          "s": 956
-        },
-        {
-          "d": "08-28",
-          "s": 956
-        },
-        {
-          "d": "08-29",
-          "s": 956
-        },
-        {
-          "d": "08-30",
-          "s": 956
-        },
-        {
-          "d": "08-31",
-          "s": 956
-        },
-        {
-          "d": "09-01",
-          "s": 956
-        },
-        {
-          "d": "09-02",
-          "s": 956
-        },
-        {
-          "d": "09-03",
-          "s": 956
-        },
-        {
-          "d": "09-04",
-          "s": 956
-        },
-        {
-          "d": "09-05",
-          "s": 956
-        },
-        {
-          "d": "09-06",
-          "s": 956
-        },
-        {
-          "d": "09-07",
-          "s": 956
-        },
-        {
-          "d": "09-08",
-          "s": 961
-        },
-        {
-          "d": "09-09",
-          "s": 967
-        },
-        {
-          "d": "09-10",
-          "s": 969
-        },
-        {
-          "d": "09-11",
-          "s": 973
-        },
-        {
-          "d": "09-12",
-          "s": 976
-        },
-        {
-          "d": "09-13",
-          "s": 986
-        },
-        {
-          "d": "09-14",
-          "s": 997
-        }
-      ]
-    },
-    "score": {
-      "score": 91.27,
-      "breakdown": {
-        "vel": 94,
-        "acc": 99,
-        "health": 85,
-        "fresh": 47,
-        "signal": 85
-      },
-      "stage": "mid_early",
-      "stage_multiplier": 1.1,
-      "confidence": 1.0,
-      "base_score": 82.97,
-      "explanation": "crw 是 Rust 开源项目，主打「Fast, lightweight Firecrawl/Tavily alternative in Rust. Web scraper, crawler & search API with MCP server for AI agents. Drop-in Firecrawl-compatible API (/scrape, /crawl, /search). 2.3x faster than Tavily, 1.5x faster than Firecrawl in 1K-URL benchmarks. 6 MB RAM, single binary. Self-host or use managed cloud.」；处于中早期增长，本周涨速 5.1 star/天，涨速在加快；社区健康（fork/star 比 7.7%，3 个 open issue）、项目元数据完整。"
-    }
-  },
-  {
-    "repo": {
-      "owner": "texpile",
-      "name": "texpile",
-      "full_name": "texpile/texpile",
-      "description": "Modern offline LaTeX & Typst editor with visual and source editing.",
-      "stars": 200,
-      "forks": 8,
-      "open_issues": 3,
-      "created_at": "2026-07-01T05:54:14+00:00",
-      "pushed_at": "2026-09-14T03:51:35+00:00",
-      "updated_at": "2026-09-14T06:48:28+00:00",
-      "topics": [
-        "editor",
-        "latex",
-        "latex-editor",
-        "offline",
-        "synctex",
-        "tex",
-        "typst",
-        "typst-editor",
-        "wysiwyg",
-        "wysiwym"
-      ],
-      "language": "TypeScript",
-      "license": "AGPL-3.0",
-      "homepage": "https://texpile.com",
-      "html_url": "https://github.com/texpile/texpile",
-      "default_branch": "master",
-      "archived": false,
-      "search_score": 1.0,
-      "stars_7d_ago": 187,
-      "star_series": [
-        {
-          "d": "08-16",
-          "s": 182
-        },
-        {
-          "d": "08-17",
-          "s": 182
-        },
-        {
-          "d": "08-18",
-          "s": 182
-        },
-        {
-          "d": "08-19",
-          "s": 182
-        },
-        {
-          "d": "08-20",
-          "s": 182
-        },
-        {
-          "d": "08-21",
-          "s": 182
-        },
-        {
-          "d": "08-22",
-          "s": 182
-        },
-        {
-          "d": "08-23",
-          "s": 182
-        },
-        {
-          "d": "08-24",
-          "s": 182
-        },
-        {
-          "d": "08-25",
-          "s": 182
-        },
-        {
-          "d": "08-26",
-          "s": 182
-        },
-        {
-          "d": "08-27",
-          "s": 182
-        },
-        {
-          "d": "08-28",
-          "s": 182
-        },
-        {
-          "d": "08-29",
-          "s": 182
-        },
-        {
-          "d": "08-30",
-          "s": 182
-        },
-        {
-          "d": "08-31",
-          "s": 182
-        },
-        {
-          "d": "09-01",
-          "s": 182
-        },
-        {
-          "d": "09-02",
-          "s": 182
-        },
-        {
-          "d": "09-03",
-          "s": 182
-        },
-        {
-          "d": "09-04",
-          "s": 182
-        },
-        {
-          "d": "09-05",
-          "s": 182
-        },
-        {
-          "d": "09-06",
-          "s": 182
-        },
-        {
-          "d": "09-07",
-          "s": 186
-        },
-        {
-          "d": "09-08",
-          "s": 187
-        },
-        {
-          "d": "09-09",
-          "s": 190
-        },
-        {
-          "d": "09-10",
-          "s": 191
-        },
-        {
-          "d": "09-11",
-          "s": 194
-        },
-        {
-          "d": "09-12",
           "s": 196
         },
         {
-          "d": "09-13",
-          "s": 199
+          "d": "09-14",
+          "s": 198
         },
         {
-          "d": "09-14",
+          "d": "09-15",
           "s": 200
         }
       ]
     },
     "score": {
-      "score": 81.65,
+      "score": 71.12,
       "breakdown": {
-        "vel": 54,
-        "acc": 76,
-        "health": 67,
-        "fresh": 79,
+        "vel": 39,
+        "acc": 45,
+        "health": 90,
+        "fresh": 95,
         "signal": 85
       },
       "stage": "early",
       "stage_multiplier": 1.2,
       "confidence": 1.0,
-      "base_score": 68.04,
-      "explanation": "texpile 是 TypeScript 开源项目，主打「Modern offline LaTeX & Typst editor with visual and source editing.」；处于增长早期，本周涨速 1.9 star/天，涨速在加快；项目元数据完整、开发活跃。"
+      "base_score": 59.26,
+      "explanation": "quackd 是 Python 开源项目，主打「One CLI for all your robots. Connect them, command them, and let them work together, each with an LLM for a brain. Microduck, Open Duck Mini, LeRobot arms, XLeRobot carts, AlohaMini, ToddlerBot or any ROS base. Claude, OpenAI, Gemini, Grok, or local via Ollama or vLLM. Simulator, .duck safety contracts, MCP, memory between runs, flocks.」；处于增长早期；社区健康（fork/star 比 11.0%，0 个 open issue）、项目元数据完整、开发活跃。"
     }
   },
   {
     "repo": {
-      "owner": "hoangsonww",
-      "name": "Claude-Code-Agent-Monitor",
-      "full_name": "hoangsonww/Claude-Code-Agent-Monitor",
-      "description": "🚀 A real-time monitoring dashboard for Claude Code & Codex, built with SQLite3, Node.js, Express, React, Vite, TailwindCSS, & WebSockets. It tracks sessions, agent activity, tool usage, and subagent orchestration, providing live analytics, a Kanban status board, status notifications, a cute buddy, & an interactive web UI/MacOS/Windows native app.",
-      "stars": 996,
-      "forks": 232,
-      "open_issues": 42,
-      "created_at": "2026-03-05T18:52:21+00:00",
-      "pushed_at": "2026-09-13T21:06:30+00:00",
-      "updated_at": "2026-09-14T10:19:08+00:00",
-      "topics": [
-        "ai-agents",
-        "claude-agents",
-        "claude-code",
-        "claude-skills",
-        "express",
-        "expressjs",
-        "macos-app",
-        "node",
-        "nodejs",
-        "python",
-        "react",
-        "rest-api",
-        "rfc-6455",
-        "sqlite",
-        "sqlite3",
-        "tailwind",
-        "tailwindcss",
-        "typescript",
-        "vite",
-        "websocket"
-      ],
-      "language": "TypeScript",
-      "license": "MIT",
-      "homepage": "https://hoangsonww.github.io/Claude-Code-Agent-Monitor/",
-      "html_url": "https://github.com/hoangsonww/Claude-Code-Agent-Monitor",
-      "default_branch": "master",
-      "archived": false,
-      "search_score": 1.0,
-      "stars_7d_ago": 983,
-      "star_series": [
-        {
-          "d": "08-16",
-          "s": 983
-        },
-        {
-          "d": "08-17",
-          "s": 983
-        },
-        {
-          "d": "08-18",
-          "s": 983
-        },
-        {
-          "d": "08-19",
-          "s": 983
-        },
-        {
-          "d": "08-20",
-          "s": 983
-        },
-        {
-          "d": "08-21",
-          "s": 983
-        },
-        {
-          "d": "08-22",
-          "s": 983
-        },
-        {
-          "d": "08-23",
-          "s": 983
-        },
-        {
-          "d": "08-24",
-          "s": 983
-        },
-        {
-          "d": "08-25",
-          "s": 983
-        },
-        {
-          "d": "08-26",
-          "s": 983
-        },
-        {
-          "d": "08-27",
-          "s": 983
-        },
-        {
-          "d": "08-28",
-          "s": 983
-        },
-        {
-          "d": "08-29",
-          "s": 983
-        },
-        {
-          "d": "08-30",
-          "s": 983
-        },
-        {
-          "d": "08-31",
-          "s": 983
-        },
-        {
-          "d": "09-01",
-          "s": 983
-        },
-        {
-          "d": "09-02",
-          "s": 983
-        },
-        {
-          "d": "09-03",
-          "s": 983
-        },
-        {
-          "d": "09-04",
-          "s": 983
-        },
-        {
-          "d": "09-05",
-          "s": 983
-        },
-        {
-          "d": "09-06",
-          "s": 983
-        },
-        {
-          "d": "09-07",
-          "s": 983
-        },
-        {
-          "d": "09-08",
-          "s": 983
-        },
-        {
-          "d": "09-09",
-          "s": 986
-        },
-        {
-          "d": "09-10",
-          "s": 989
-        },
-        {
-          "d": "09-11",
-          "s": 991
-        },
-        {
-          "d": "09-12",
-          "s": 994
-        },
-        {
-          "d": "09-13",
-          "s": 995
-        },
-        {
-          "d": "09-14",
-          "s": 996
-        }
-      ]
-    },
-    "score": {
-      "score": 77.4,
-      "breakdown": {
-        "vel": 54,
-        "acc": 86,
-        "health": 91,
-        "fresh": 47,
-        "signal": 100
-      },
-      "stage": "mid_early",
-      "stage_multiplier": 1.1,
-      "confidence": 1.0,
-      "base_score": 70.36,
-      "explanation": "Claude-Code-Agent-Monitor 是 TypeScript 开源项目，主打「🚀 A real-time monitoring dashboard for Claude Code & Codex, built with SQLite3, Node.js, Express, React, Vite, TailwindCSS, & WebSockets. It tracks sessions, agent activity, tool usage, and subagent orchestration, providing live analytics, a Kanban status board, status notifications, a cute buddy, & an interactive web UI/MacOS/Windows native app.」；处于中早期增长，本周涨速 1.9 star/天，涨速在加快；社区健康（fork/star 比 23.3%，42 个 open issue）、项目元数据完整。"
-    }
-  },
-  {
-    "repo": {
-      "owner": "ihmily",
-      "name": "doubao-nomark",
-      "full_name": "ihmily/doubao-nomark",
-      "description": "一键下载无水印豆包AI图片/视频API | 浏览器扩展| 微软Edge插件 | 谷歌Chrome插件 | 油猴脚本",
-      "stars": 994,
-      "forks": 179,
+      "owner": "xiaomoBoy",
+      "name": "pi-bluebook",
+      "full_name": "xiaomoBoy/pi-bluebook",
+      "description": "Pi Coding Agent 中文学习蓝皮书：从安装与第一个可验收任务开始，逐步掌握 Session、Context、Skill、Extension、Subagent 与长期 Agent 工作流。",
+      "stars": 200,
+      "forks": 15,
       "open_issues": 0,
-      "created_at": "2026-01-07T03:43:25+00:00",
-      "pushed_at": "2026-09-09T13:56:20+00:00",
-      "updated_at": "2026-09-14T10:34:23+00:00",
+      "created_at": "2026-09-08T12:59:19+00:00",
+      "pushed_at": "2026-09-14T09:31:37+00:00",
+      "updated_at": "2026-09-15T09:34:45+00:00",
       "topics": [
-        "dola-ai",
-        "doubao-api",
-        "doubao-extension",
-        "qianwen-extension"
+        "agent-harness",
+        "agent-skills",
+        "ai-agent",
+        "chinese",
+        "coding-agent",
+        "context-engineering",
+        "learning-path",
+        "pi",
+        "pi-agent",
+        "pi-coding-agent",
+        "tutorial",
+        "vitepress"
       ],
-      "language": "JavaScript",
+      "language": "Markdown",
       "license": "MIT",
-      "homepage": "https://microsoftedge.microsoft.com/addons/detail/hjlplfcnpgglfdjafekcgahffdengaij",
-      "html_url": "https://github.com/ihmily/doubao-nomark",
+      "homepage": "https://pi.xiaomovps.com",
+      "html_url": "https://github.com/xiaomoBoy/pi-bluebook",
       "default_branch": "main",
       "archived": false,
       "search_score": 1.0,
-      "stars_7d_ago": 971,
+      "stars_7d_ago": 0,
       "star_series": [
         {
-          "d": "08-16",
-          "s": 937
-        },
-        {
           "d": "08-17",
-          "s": 937
+          "s": 0
         },
         {
           "d": "08-18",
-          "s": 937
+          "s": 0
         },
         {
           "d": "08-19",
-          "s": 937
+          "s": 0
         },
         {
           "d": "08-20",
-          "s": 937
+          "s": 0
         },
         {
           "d": "08-21",
-          "s": 937
+          "s": 0
         },
         {
           "d": "08-22",
-          "s": 937
+          "s": 0
         },
         {
           "d": "08-23",
-          "s": 937
+          "s": 0
         },
         {
           "d": "08-24",
-          "s": 937
+          "s": 0
         },
         {
           "d": "08-25",
-          "s": 937
+          "s": 0
         },
         {
           "d": "08-26",
-          "s": 937
+          "s": 0
         },
         {
           "d": "08-27",
-          "s": 937
+          "s": 0
         },
         {
           "d": "08-28",
-          "s": 937
+          "s": 0
         },
         {
           "d": "08-29",
-          "s": 937
+          "s": 0
         },
         {
           "d": "08-30",
-          "s": 937
+          "s": 0
         },
         {
           "d": "08-31",
-          "s": 937
+          "s": 0
         },
         {
           "d": "09-01",
-          "s": 938
+          "s": 0
         },
         {
           "d": "09-02",
-          "s": 940
+          "s": 0
         },
         {
           "d": "09-03",
-          "s": 949
+          "s": 0
         },
         {
           "d": "09-04",
-          "s": 954
+          "s": 0
         },
         {
           "d": "09-05",
-          "s": 959
+          "s": 0
         },
         {
           "d": "09-06",
-          "s": 960
+          "s": 0
         },
         {
           "d": "09-07",
-          "s": 962
+          "s": 0
         },
         {
           "d": "09-08",
-          "s": 971
+          "s": 0
         },
         {
           "d": "09-09",
-          "s": 975
+          "s": 0
         },
         {
           "d": "09-10",
-          "s": 979
+          "s": 45
         },
         {
           "d": "09-11",
-          "s": 985
+          "s": 107
         },
         {
           "d": "09-12",
-          "s": 987
+          "s": 138
         },
         {
           "d": "09-13",
-          "s": 989
+          "s": 182
         },
         {
           "d": "09-14",
-          "s": 994
+          "s": 195
+        },
+        {
+          "d": "09-15",
+          "s": 200
         }
       ]
     },
     "score": {
-      "score": 73.65,
+      "score": 64.55,
       "breakdown": {
-        "vel": 75,
-        "acc": 42,
-        "health": 100,
-        "fresh": 32,
+        "vel": 96,
+        "acc": 99,
+        "health": 78,
+        "fresh": 98,
         "signal": 85
       },
-      "stage": "early",
-      "stage_multiplier": 1.2,
+      "stage": "saturated",
+      "stage_multiplier": 0.7,
       "confidence": 1.0,
-      "base_score": 61.37,
-      "explanation": "doubao-nomark 是 JavaScript 开源项目，主打「一键下载无水印豆包AI图片/视频API | 浏览器扩展| 微软Edge插件 | 谷歌Chrome插件 | 油猴脚本」；处于增长早期，本周涨速 3.3 star/天；社区健康（fork/star 比 18.0%，0 个 open issue）、项目元数据完整。"
+      "base_score": 92.22,
+      "explanation": "pi-bluebook 是 Markdown 开源项目，主打「Pi Coding Agent 中文学习蓝皮书：从安装与第一个可验收任务开始，逐步掌握 Session、Context、Skill、Extension、Subagent 与长期 Agent 工作流。」；增长已饱和，本周涨速 29 star/天，涨速在加快；社区健康（fork/star 比 7.5%，0 个 open issue）、项目元数据完整、开发活跃。"
     }
   },
   {
     "repo": {
-      "owner": "1CatAI",
-      "name": "1Cat-vLLM",
-      "full_name": "1CatAI/1Cat-vLLM",
-      "description": "V100 / SM70-focused vLLM engineering fork for modern LLM inference.",
-      "stars": 998,
-      "forks": 202,
-      "open_issues": 108,
-      "created_at": "2026-03-10T14:31:44+00:00",
-      "pushed_at": "2026-09-14T11:43:47+00:00",
-      "updated_at": "2026-09-14T10:21:07+00:00",
+      "owner": "mos1128",
+      "name": "ccg-gateway",
+      "full_name": "mos1128/ccg-gateway",
+      "description": "为 Claude Code、Codex、Gemini CLI 打造的效率工具，集智能网关与配置管理于一体",
+      "stars": 200,
+      "forks": 26,
+      "open_issues": 1,
+      "created_at": "2026-01-10T08:12:01+00:00",
+      "pushed_at": "2026-09-15T02:06:12+00:00",
+      "updated_at": "2026-09-15T05:49:38+00:00",
+      "topics": [],
+      "language": "Rust",
+      "license": "MIT",
+      "homepage": null,
+      "html_url": "https://github.com/mos1128/ccg-gateway",
+      "default_branch": "main",
+      "archived": false,
+      "search_score": 1.0,
+      "stars_7d_ago": 191,
+      "star_series": [
+        {
+          "d": "08-17",
+          "s": 177
+        },
+        {
+          "d": "08-18",
+          "s": 177
+        },
+        {
+          "d": "08-19",
+          "s": 177
+        },
+        {
+          "d": "08-20",
+          "s": 177
+        },
+        {
+          "d": "08-21",
+          "s": 181
+        },
+        {
+          "d": "08-22",
+          "s": 183
+        },
+        {
+          "d": "08-23",
+          "s": 183
+        },
+        {
+          "d": "08-24",
+          "s": 183
+        },
+        {
+          "d": "08-25",
+          "s": 183
+        },
+        {
+          "d": "08-26",
+          "s": 183
+        },
+        {
+          "d": "08-27",
+          "s": 186
+        },
+        {
+          "d": "08-28",
+          "s": 186
+        },
+        {
+          "d": "08-29",
+          "s": 187
+        },
+        {
+          "d": "08-30",
+          "s": 187
+        },
+        {
+          "d": "08-31",
+          "s": 187
+        },
+        {
+          "d": "09-01",
+          "s": 187
+        },
+        {
+          "d": "09-02",
+          "s": 187
+        },
+        {
+          "d": "09-03",
+          "s": 187
+        },
+        {
+          "d": "09-04",
+          "s": 187
+        },
+        {
+          "d": "09-05",
+          "s": 187
+        },
+        {
+          "d": "09-06",
+          "s": 187
+        },
+        {
+          "d": "09-07",
+          "s": 187
+        },
+        {
+          "d": "09-08",
+          "s": 190
+        },
+        {
+          "d": "09-09",
+          "s": 191
+        },
+        {
+          "d": "09-10",
+          "s": 192
+        },
+        {
+          "d": "09-11",
+          "s": 193
+        },
+        {
+          "d": "09-12",
+          "s": 193
+        },
+        {
+          "d": "09-13",
+          "s": 196
+        },
+        {
+          "d": "09-14",
+          "s": 198
+        },
+        {
+          "d": "09-15",
+          "s": 200
+        }
+      ]
+    },
+    "score": {
+      "score": 55.55,
+      "breakdown": {
+        "vel": 23,
+        "acc": 67,
+        "health": 96,
+        "fresh": 32,
+        "signal": 55
+      },
+      "stage": "early",
+      "stage_multiplier": 1.2,
+      "confidence": 1.0,
+      "base_score": 46.29,
+      "explanation": "ccg-gateway 是 Rust 开源项目，主打「为 Claude Code、Codex、Gemini CLI 打造的效率工具，集智能网关与配置管理于一体」；处于增长早期；社区健康（fork/star 比 13.0%，1 个 open issue）。"
+    }
+  },
+  {
+    "repo": {
+      "owner": "forcedotcom",
+      "name": "sf-skills",
+      "full_name": "forcedotcom/sf-skills",
+      "description": "Salesforce's curated collection of agent skills for building applications. Optimized for Agentforce Vibes, compatible with all AI tools.",
+      "stars": 994,
+      "forks": 337,
+      "open_issues": 36,
+      "created_at": "2025-11-07T17:10:54+00:00",
+      "pushed_at": "2026-09-15T08:43:31+00:00",
+      "updated_at": "2026-09-15T08:43:35+00:00",
       "topics": [],
       "language": "Python",
       "license": "Apache-2.0",
       "homepage": null,
-      "html_url": "https://github.com/1CatAI/1Cat-vLLM",
-      "default_branch": "main",
-      "archived": false,
-      "search_score": 1.0,
-      "stars_7d_ago": 983,
-      "star_series": [
-        {
-          "d": "08-16",
-          "s": 983
-        },
-        {
-          "d": "08-17",
-          "s": 983
-        },
-        {
-          "d": "08-18",
-          "s": 983
-        },
-        {
-          "d": "08-19",
-          "s": 983
-        },
-        {
-          "d": "08-20",
-          "s": 983
-        },
-        {
-          "d": "08-21",
-          "s": 983
-        },
-        {
-          "d": "08-22",
-          "s": 983
-        },
-        {
-          "d": "08-23",
-          "s": 983
-        },
-        {
-          "d": "08-24",
-          "s": 983
-        },
-        {
-          "d": "08-25",
-          "s": 983
-        },
-        {
-          "d": "08-26",
-          "s": 983
-        },
-        {
-          "d": "08-27",
-          "s": 983
-        },
-        {
-          "d": "08-28",
-          "s": 983
-        },
-        {
-          "d": "08-29",
-          "s": 983
-        },
-        {
-          "d": "08-30",
-          "s": 983
-        },
-        {
-          "d": "08-31",
-          "s": 983
-        },
-        {
-          "d": "09-01",
-          "s": 983
-        },
-        {
-          "d": "09-02",
-          "s": 983
-        },
-        {
-          "d": "09-03",
-          "s": 983
-        },
-        {
-          "d": "09-04",
-          "s": 983
-        },
-        {
-          "d": "09-05",
-          "s": 983
-        },
-        {
-          "d": "09-06",
-          "s": 983
-        },
-        {
-          "d": "09-07",
-          "s": 983
-        },
-        {
-          "d": "09-08",
-          "s": 983
-        },
-        {
-          "d": "09-09",
-          "s": 983
-        },
-        {
-          "d": "09-10",
-          "s": 983
-        },
-        {
-          "d": "09-11",
-          "s": 983
-        },
-        {
-          "d": "09-12",
-          "s": 983
-        },
-        {
-          "d": "09-13",
-          "s": 988
-        },
-        {
-          "d": "09-14",
-          "s": 998
-        }
-      ]
-    },
-    "score": {
-      "score": 72.55,
-      "breakdown": {
-        "vel": 59,
-        "acc": 89,
-        "health": 73,
-        "fresh": 49,
-        "signal": 55
-      },
-      "stage": "mid_early",
-      "stage_multiplier": 1.1,
-      "confidence": 1.0,
-      "base_score": 65.95,
-      "explanation": "1Cat-vLLM 是 Python 开源项目，主打「V100 / SM70-focused vLLM engineering fork for modern LLM inference.」；处于中早期增长，本周涨速 2.1 star/天，涨速在加快；社区健康（fork/star 比 20.2%，108 个 open issue）。"
-    }
-  },
-  {
-    "repo": {
-      "owner": "Monica-Pass",
-      "name": "Monica",
-      "full_name": "Monica-Pass/Monica",
-      "description": " Monica Pass，Password Management, 2FA Generator",
-      "stars": 995,
-      "forks": 62,
-      "open_issues": 8,
-      "created_at": "2025-10-05T16:19:24+00:00",
-      "pushed_at": "2026-09-13T16:29:44+00:00",
-      "updated_at": "2026-09-14T07:53:15+00:00",
-      "topics": [
-        "android",
-        "authenticator",
-        "kotlin",
-        "local-first",
-        "monica",
-        "monicapass",
-        "open-source",
-        "password-manager",
-        "password-manager-app",
-        "privacy",
-        "totp"
-      ],
-      "language": "Kotlin",
-      "license": "GPL-3.0",
-      "homepage": "https://monica-pass.github.io/MonicaDocs/",
-      "html_url": "https://github.com/Monica-Pass/Monica",
+      "html_url": "https://github.com/forcedotcom/sf-skills",
       "default_branch": "main",
       "archived": false,
       "search_score": 1.0,
       "stars_7d_ago": 978,
       "star_series": [
         {
-          "d": "08-16",
-          "s": 978
-        },
-        {
           "d": "08-17",
-          "s": 978
+          "s": 956
         },
         {
           "d": "08-18",
-          "s": 978
+          "s": 956
         },
         {
           "d": "08-19",
-          "s": 978
+          "s": 956
         },
         {
           "d": "08-20",
-          "s": 978
+          "s": 956
         },
         {
           "d": "08-21",
-          "s": 978
+          "s": 956
         },
         {
           "d": "08-22",
-          "s": 978
+          "s": 956
         },
         {
           "d": "08-23",
-          "s": 978
+          "s": 956
         },
         {
           "d": "08-24",
-          "s": 978
+          "s": 956
         },
         {
           "d": "08-25",
-          "s": 978
+          "s": 956
         },
         {
           "d": "08-26",
-          "s": 978
+          "s": 956
         },
         {
           "d": "08-27",
-          "s": 978
+          "s": 956
         },
         {
           "d": "08-28",
-          "s": 978
+          "s": 956
         },
         {
           "d": "08-29",
-          "s": 978
+          "s": 956
         },
         {
           "d": "08-30",
-          "s": 978
+          "s": 956
         },
         {
           "d": "08-31",
-          "s": 978
+          "s": 956
         },
         {
           "d": "09-01",
-          "s": 978
+          "s": 956
         },
         {
           "d": "09-02",
-          "s": 978
+          "s": 956
         },
         {
           "d": "09-03",
-          "s": 978
+          "s": 961
         },
         {
           "d": "09-04",
-          "s": 978
+          "s": 964
         },
         {
           "d": "09-05",
-          "s": 978
+          "s": 966
         },
         {
           "d": "09-06",
-          "s": 978
+          "s": 967
         },
         {
           "d": "09-07",
-          "s": 978
+          "s": 971
         },
         {
           "d": "09-08",
-          "s": 978
+          "s": 976
         },
         {
           "d": "09-09",
@@ -1485,15 +1137,15 @@
         },
         {
           "d": "09-10",
-          "s": 978
-        },
-        {
-          "d": "09-11",
           "s": 981
         },
         {
+          "d": "09-11",
+          "s": 987
+        },
+        {
           "d": "09-12",
-          "s": 985
+          "s": 988
         },
         {
           "d": "09-13",
@@ -1501,205 +1153,28 @@
         },
         {
           "d": "09-14",
-          "s": 995
+          "s": 993
+        },
+        {
+          "d": "09-15",
+          "s": 994
         }
       ]
     },
     "score": {
-      "score": 59.67,
+      "score": 48.84,
       "breakdown": {
-        "vel": 64,
-        "acc": 92,
-        "health": 78,
-        "fresh": 6,
-        "signal": 100
-      },
-      "stage": "mid_early",
-      "stage_multiplier": 1.1,
-      "confidence": 1.0,
-      "base_score": 54.24,
-      "explanation": "Monica 是 Kotlin 开源项目，主打「Monica Pass，Password Management, 2FA Generator」；处于中早期增长，本周涨速 2.4 star/天，涨速在加快；社区健康（fork/star 比 6.2%，8 个 open issue）、项目元数据完整。"
-    }
-  },
-  {
-    "repo": {
-      "owner": "SikamikanikoBG",
-      "name": "homelab-monitor",
-      "full_name": "SikamikanikoBG/homelab-monitor",
-      "description": "Plug-and-play homelab dashboard in one container — GPU, local-AI VRAM, Docker, systemd, host health. Built-in read-only MCP server so AI agents can explore it too.",
-      "stars": 200,
-      "forks": 30,
-      "open_issues": 12,
-      "created_at": "2026-05-25T09:46:28+00:00",
-      "pushed_at": "2026-09-13T11:49:42+00:00",
-      "updated_at": "2026-09-13T11:04:49+00:00",
-      "topics": [
-        "agentic",
-        "ai-agents",
-        "ai-infrastructure",
-        "claude",
-        "dashboard",
-        "docker",
-        "gpu",
-        "gpu-monitoring",
-        "homelab",
-        "llm",
-        "local-ai",
-        "mcp",
-        "mcp-server",
-        "model-context-protocol",
-        "monitoring",
-        "nvidia",
-        "ollama",
-        "self-hosted",
-        "sysadmin",
-        "vram"
-      ],
-      "language": "Python",
-      "license": "MIT",
-      "homepage": "https://sikamikanikobg.github.io/homelab-monitor/",
-      "html_url": "https://github.com/SikamikanikoBG/homelab-monitor",
-      "default_branch": "main",
-      "archived": false,
-      "search_score": 1.0,
-      "stars_7d_ago": 196,
-      "star_series": [
-        {
-          "d": "08-16",
-          "s": 184
-        },
-        {
-          "d": "08-17",
-          "s": 184
-        },
-        {
-          "d": "08-18",
-          "s": 184
-        },
-        {
-          "d": "08-19",
-          "s": 184
-        },
-        {
-          "d": "08-20",
-          "s": 184
-        },
-        {
-          "d": "08-21",
-          "s": 184
-        },
-        {
-          "d": "08-22",
-          "s": 184
-        },
-        {
-          "d": "08-23",
-          "s": 184
-        },
-        {
-          "d": "08-24",
-          "s": 184
-        },
-        {
-          "d": "08-25",
-          "s": 184
-        },
-        {
-          "d": "08-26",
-          "s": 184
-        },
-        {
-          "d": "08-27",
-          "s": 184
-        },
-        {
-          "d": "08-28",
-          "s": 184
-        },
-        {
-          "d": "08-29",
-          "s": 187
-        },
-        {
-          "d": "08-30",
-          "s": 187
-        },
-        {
-          "d": "08-31",
-          "s": 190
-        },
-        {
-          "d": "09-01",
-          "s": 190
-        },
-        {
-          "d": "09-02",
-          "s": 191
-        },
-        {
-          "d": "09-03",
-          "s": 192
-        },
-        {
-          "d": "09-04",
-          "s": 192
-        },
-        {
-          "d": "09-05",
-          "s": 193
-        },
-        {
-          "d": "09-06",
-          "s": 194
-        },
-        {
-          "d": "09-07",
-          "s": 195
-        },
-        {
-          "d": "09-08",
-          "s": 196
-        },
-        {
-          "d": "09-09",
-          "s": 198
-        },
-        {
-          "d": "09-10",
-          "s": 198
-        },
-        {
-          "d": "09-11",
-          "s": 198
-        },
-        {
-          "d": "09-12",
-          "s": 199
-        },
-        {
-          "d": "09-13",
-          "s": 200
-        },
-        {
-          "d": "09-14",
-          "s": 200
-        }
-      ]
-    },
-    "score": {
-      "score": 58.29,
-      "breakdown": {
-        "vel": 23,
+        "vel": 34,
         "acc": 43,
         "health": 90,
-        "fresh": 69,
-        "signal": 100
+        "fresh": 15,
+        "signal": 55
       },
       "stage": "early",
       "stage_multiplier": 1.2,
       "confidence": 1.0,
-      "base_score": 48.57,
-      "explanation": "homelab-monitor 是 Python 开源项目，主打「Plug-and-play homelab dashboard in one container — GPU, local-AI VRAM, Docker, systemd, host health. Built-in read-only MCP server so AI agents can explore it too.」；处于增长早期；社区健康（fork/star 比 15.0%，12 个 open issue）、项目元数据完整。"
+      "base_score": 40.7,
+      "explanation": "sf-skills 是 Python 开源项目，主打「Salesforce's curated collection of agent skills for building applications. Optimized for Agentforce Vibes, compatible with all AI tools.」；处于增长早期；社区健康（fork/star 比 33.9%，36 个 open issue）。"
     }
   },
   {
@@ -1737,10 +1212,6 @@
       "stars_7d_ago": 196,
       "star_series": [
         {
-          "d": "08-16",
-          "s": 181
-        },
-        {
           "d": "08-17",
           "s": 181
         },
@@ -1855,23 +1326,366 @@
         {
           "d": "09-14",
           "s": 200
+        },
+        {
+          "d": "09-15",
+          "s": 200
         }
       ]
     },
     "score": {
-      "score": 52.18,
+      "score": 45.55,
       "breakdown": {
-        "vel": 23,
-        "acc": 43,
+        "vel": 13,
+        "acc": 50,
         "health": 77,
-        "fresh": 46,
+        "fresh": 45,
         "signal": 85
       },
       "stage": "early",
       "stage_multiplier": 1.2,
       "confidence": 1.0,
-      "base_score": 43.49,
+      "base_score": 37.96,
       "explanation": "Diction 是 Go 开源项目，主打「Diction is Open Source self-hosted alternative to WisprFlow - iOS speech-to-text keyboard」；处于增长早期；社区健康（fork/star 比 7.0%，1 个 open issue）、项目元数据完整。"
+    }
+  },
+  {
+    "repo": {
+      "owner": "Sguan-ZhouQing",
+      "name": "SguanFOC_Library",
+      "full_name": "Sguan-ZhouQing/SguanFOC_Library",
+      "description": "SguanFOC为有/无传感器的PMSM电机提供强大的磁场定向控制解决方案。库内集成了基于SVPWM的多种控制模式，支持位置环、速度环、电流环的单环/串级控制...同时针对嵌入式平台优化了数学运算，并提供高度可配置的PID和LADRC等控制器，满足从简单调速到高性能伺服的各类应用需求。",
+      "stars": 996,
+      "forks": 181,
+      "open_issues": 12,
+      "created_at": "2025-10-02T08:31:26+00:00",
+      "pushed_at": "2026-09-09T09:55:37+00:00",
+      "updated_at": "2026-09-15T06:43:04+00:00",
+      "topics": [
+        "adrc",
+        "adrc-controller",
+        "bldc-motor-controller",
+        "bldc-motors",
+        "embedded-systems",
+        "encoder",
+        "foc",
+        "foc-algorithm",
+        "low-cost",
+        "mcu",
+        "motor",
+        "motor-control",
+        "pid-control",
+        "pmsm",
+        "sguanfoc",
+        "smc",
+        "svpwm",
+        "vector-control"
+      ],
+      "language": "C",
+      "license": "MIT",
+      "homepage": null,
+      "html_url": "https://github.com/Sguan-ZhouQing/SguanFOC_Library",
+      "default_branch": "main",
+      "archived": false,
+      "search_score": 1.0,
+      "stars_7d_ago": 973,
+      "star_series": [
+        {
+          "d": "08-17",
+          "s": 909
+        },
+        {
+          "d": "08-18",
+          "s": 909
+        },
+        {
+          "d": "08-19",
+          "s": 909
+        },
+        {
+          "d": "08-20",
+          "s": 909
+        },
+        {
+          "d": "08-21",
+          "s": 909
+        },
+        {
+          "d": "08-22",
+          "s": 909
+        },
+        {
+          "d": "08-23",
+          "s": 909
+        },
+        {
+          "d": "08-24",
+          "s": 909
+        },
+        {
+          "d": "08-25",
+          "s": 909
+        },
+        {
+          "d": "08-26",
+          "s": 909
+        },
+        {
+          "d": "08-27",
+          "s": 909
+        },
+        {
+          "d": "08-28",
+          "s": 909
+        },
+        {
+          "d": "08-29",
+          "s": 913
+        },
+        {
+          "d": "08-30",
+          "s": 918
+        },
+        {
+          "d": "08-31",
+          "s": 920
+        },
+        {
+          "d": "09-01",
+          "s": 925
+        },
+        {
+          "d": "09-02",
+          "s": 933
+        },
+        {
+          "d": "09-03",
+          "s": 945
+        },
+        {
+          "d": "09-04",
+          "s": 952
+        },
+        {
+          "d": "09-05",
+          "s": 954
+        },
+        {
+          "d": "09-06",
+          "s": 958
+        },
+        {
+          "d": "09-07",
+          "s": 959
+        },
+        {
+          "d": "09-08",
+          "s": 964
+        },
+        {
+          "d": "09-09",
+          "s": 973
+        },
+        {
+          "d": "09-10",
+          "s": 979
+        },
+        {
+          "d": "09-11",
+          "s": 982
+        },
+        {
+          "d": "09-12",
+          "s": 984
+        },
+        {
+          "d": "09-13",
+          "s": 986
+        },
+        {
+          "d": "09-14",
+          "s": 993
+        },
+        {
+          "d": "09-15",
+          "s": 996
+        }
+      ]
+    },
+    "score": {
+      "score": 45.15,
+      "breakdown": {
+        "vel": 41,
+        "acc": 40,
+        "health": 98,
+        "fresh": 5,
+        "signal": 70
+      },
+      "stage": "early",
+      "stage_multiplier": 1.2,
+      "confidence": 1.0,
+      "base_score": 37.63,
+      "explanation": "SguanFOC_Library 是 C 开源项目，主打「SguanFOC为有/无传感器的PMSM电机提供强大的磁场定向控制解决方案。库内集成了基于SVPWM的多种控制模式，支持位置环、速度环、电流环的单环/串级控制...同时针对嵌入式平台优化了数学运算，并提供高度可配置的PID和LADRC等控制器，满足从简单调速到高性能伺服的各类应用需求。」；处于增长早期，本周涨速 3.3 star/天；社区健康（fork/star 比 18.2%，12 个 open issue）。"
+    }
+  },
+  {
+    "repo": {
+      "owner": "Stocist",
+      "name": "Tailtab",
+      "full_name": "Stocist/Tailtab",
+      "description": "A Tailscale node for each browser profile.",
+      "stars": 200,
+      "forks": 16,
+      "open_issues": 0,
+      "created_at": "2026-09-03T09:44:17+00:00",
+      "pushed_at": "2026-09-10T03:57:28+00:00",
+      "updated_at": "2026-09-15T10:35:09+00:00",
+      "topics": [],
+      "language": "Go",
+      "license": "NOASSERTION",
+      "homepage": null,
+      "html_url": "https://github.com/Stocist/Tailtab",
+      "default_branch": "main",
+      "archived": false,
+      "search_score": 1.0,
+      "stars_7d_ago": 164,
+      "star_series": [
+        {
+          "d": "08-17",
+          "s": 0
+        },
+        {
+          "d": "08-18",
+          "s": 0
+        },
+        {
+          "d": "08-19",
+          "s": 0
+        },
+        {
+          "d": "08-20",
+          "s": 0
+        },
+        {
+          "d": "08-21",
+          "s": 0
+        },
+        {
+          "d": "08-22",
+          "s": 0
+        },
+        {
+          "d": "08-23",
+          "s": 0
+        },
+        {
+          "d": "08-24",
+          "s": 0
+        },
+        {
+          "d": "08-25",
+          "s": 0
+        },
+        {
+          "d": "08-26",
+          "s": 0
+        },
+        {
+          "d": "08-27",
+          "s": 0
+        },
+        {
+          "d": "08-28",
+          "s": 0
+        },
+        {
+          "d": "08-29",
+          "s": 0
+        },
+        {
+          "d": "08-30",
+          "s": 0
+        },
+        {
+          "d": "08-31",
+          "s": 0
+        },
+        {
+          "d": "09-01",
+          "s": 0
+        },
+        {
+          "d": "09-02",
+          "s": 0
+        },
+        {
+          "d": "09-03",
+          "s": 0
+        },
+        {
+          "d": "09-04",
+          "s": 0
+        },
+        {
+          "d": "09-05",
+          "s": 0
+        },
+        {
+          "d": "09-06",
+          "s": 35
+        },
+        {
+          "d": "09-07",
+          "s": 54
+        },
+        {
+          "d": "09-08",
+          "s": 114
+        },
+        {
+          "d": "09-09",
+          "s": 164
+        },
+        {
+          "d": "09-10",
+          "s": 169
+        },
+        {
+          "d": "09-11",
+          "s": 179
+        },
+        {
+          "d": "09-12",
+          "s": 186
+        },
+        {
+          "d": "09-13",
+          "s": 191
+        },
+        {
+          "d": "09-14",
+          "s": 197
+        },
+        {
+          "d": "09-15",
+          "s": 200
+        }
+      ]
+    },
+    "score": {
+      "score": 38.55,
+      "breakdown": {
+        "vel": 52,
+        "acc": 31,
+        "health": 80,
+        "fresh": 97,
+        "signal": 55
+      },
+      "stage": "saturated",
+      "stage_multiplier": 0.7,
+      "confidence": 1.0,
+      "base_score": 55.07,
+      "explanation": "Tailtab 是 Go 开源项目，主打「A Tailscale node for each browser profile.」；增长已饱和，本周涨速 5.1 star/天；社区健康（fork/star 比 8.0%，0 个 open issue）、开发活跃。"
     }
   },
   {
@@ -1879,13 +1693,13 @@
       "owner": "software-mansion-labs",
       "name": "legion",
       "full_name": "software-mansion-labs/legion",
-      "description": "Elixir-native framework for building runtime AI agents",
+      "description": "Elixir runtime for AI agents that live inside your app and get things done by writing code",
       "stars": 200,
       "forks": 6,
-      "open_issues": 4,
+      "open_issues": 3,
       "created_at": "2025-12-29T21:50:17+00:00",
-      "pushed_at": "2026-09-09T15:20:56+00:00",
-      "updated_at": "2026-09-14T08:07:03+00:00",
+      "pushed_at": "2026-09-15T10:36:03+00:00",
+      "updated_at": "2026-09-15T09:43:11+00:00",
       "topics": [],
       "language": "Elixir",
       "license": "MIT",
@@ -1894,83 +1708,79 @@
       "default_branch": "main",
       "archived": false,
       "search_score": 1.0,
-      "stars_7d_ago": 192,
+      "stars_7d_ago": 195,
       "star_series": [
         {
-          "d": "08-16",
-          "s": 152
-        },
-        {
           "d": "08-17",
-          "s": 152
+          "s": 153
         },
         {
           "d": "08-18",
-          "s": 152
+          "s": 153
         },
         {
           "d": "08-19",
-          "s": 152
+          "s": 153
         },
         {
           "d": "08-20",
-          "s": 152
+          "s": 153
         },
         {
           "d": "08-21",
-          "s": 152
+          "s": 153
         },
         {
           "d": "08-22",
-          "s": 152
+          "s": 153
         },
         {
           "d": "08-23",
-          "s": 152
+          "s": 153
         },
         {
           "d": "08-24",
-          "s": 152
+          "s": 153
         },
         {
           "d": "08-25",
-          "s": 152
+          "s": 153
         },
         {
           "d": "08-26",
-          "s": 152
+          "s": 153
         },
         {
           "d": "08-27",
-          "s": 152
+          "s": 153
         },
         {
           "d": "08-28",
-          "s": 152
+          "s": 153
         },
         {
           "d": "08-29",
-          "s": 152
+          "s": 153
         },
         {
           "d": "08-30",
-          "s": 152
+          "s": 153
         },
         {
           "d": "08-31",
-          "s": 152
+          "s": 153
         },
         {
           "d": "09-01",
-          "s": 152
+          "s": 153
         },
         {
           "d": "09-02",
-          "s": 152
+          "s": 153
         },
         {
           "d": "09-03",
-          "s": 152
+          "s": 153
         },
         {
           "d": "09-04",
@@ -2015,183 +1825,193 @@
         {
           "d": "09-14",
           "s": 200
+        },
+        {
+          "d": "09-15",
+          "s": 200
         }
       ]
     },
     "score": {
-      "score": 50.59,
+      "score": 37.78,
       "breakdown": {
-        "vel": 39,
-        "acc": 31,
-        "health": 63,
+        "vel": 15,
+        "acc": 29,
+        "health": 64,
         "fresh": 29,
         "signal": 85
       },
       "stage": "early",
       "stage_multiplier": 1.2,
       "confidence": 1.0,
-      "base_score": 42.16,
-      "explanation": "legion 是 Elixir 开源项目，主打「Elixir-native framework for building runtime AI agents」；处于增长早期；项目元数据完整。"
+      "base_score": 31.48,
+      "explanation": "legion 是 Elixir 开源项目，主打「Elixir runtime for AI agents that live inside your app and get things done by writing code」；处于增长早期，涨速已放缓；项目元数据完整。"
     }
   },
   {
     "repo": {
-      "owner": "frida",
-      "name": "luma",
-      "full_name": "frida/luma",
-      "description": "The official Frida GUI",
-      "stars": 200,
-      "forks": 12,
-      "open_issues": 9,
-      "created_at": "2025-12-05T22:12:28+00:00",
-      "pushed_at": "2026-09-11T12:53:04+00:00",
-      "updated_at": "2026-09-13T13:25:24+00:00",
-      "topics": [],
-      "language": "C",
-      "license": "MIT",
-      "homepage": "https://luma.frida.re/",
-      "html_url": "https://github.com/frida/luma",
-      "default_branch": "main",
+      "owner": "YumeYucca",
+      "name": "YumeBox",
+      "full_name": "YumeYucca/YumeBox",
+      "description": "これはとあるア-ティフアクトを巡る、ひとつの誓いの物語",
+      "stars": 998,
+      "forks": 45,
+      "open_issues": 2,
+      "created_at": "2025-08-03T02:38:45+00:00",
+      "pushed_at": "2026-09-14T13:50:49+00:00",
+      "updated_at": "2026-09-15T03:43:25+00:00",
+      "topics": [
+        "9-nine-arteisia",
+        "9-nine-project",
+        "galgame",
+        "galgame-tool",
+        "palette"
+      ],
+      "language": "C#",
+      "license": "AGPL-3.0",
+      "homepage": "https://yumebox.gal.tf",
+      "html_url": "https://github.com/YumeYucca/YumeBox",
+      "default_branch": "Moe",
       "archived": false,
       "search_score": 1.0,
-      "stars_7d_ago": 194,
+      "stars_7d_ago": 979,
       "star_series": [
         {
-          "d": "08-16",
-          "s": 169
-        },
-        {
           "d": "08-17",
-          "s": 169
+          "s": 960
         },
         {
           "d": "08-18",
-          "s": 169
+          "s": 960
         },
         {
           "d": "08-19",
-          "s": 169
+          "s": 960
         },
         {
           "d": "08-20",
-          "s": 169
+          "s": 960
         },
         {
           "d": "08-21",
-          "s": 169
+          "s": 960
         },
         {
           "d": "08-22",
-          "s": 169
+          "s": 960
         },
         {
           "d": "08-23",
-          "s": 169
+          "s": 960
         },
         {
           "d": "08-24",
-          "s": 169
+          "s": 960
         },
         {
           "d": "08-25",
-          "s": 169
+          "s": 960
         },
         {
           "d": "08-26",
-          "s": 177
+          "s": 960
         },
         {
           "d": "08-27",
-          "s": 179
+          "s": 960
         },
         {
           "d": "08-28",
-          "s": 181
+          "s": 960
         },
         {
           "d": "08-29",
-          "s": 181
+          "s": 961
         },
         {
           "d": "08-30",
-          "s": 185
+          "s": 962
         },
         {
           "d": "08-31",
-          "s": 187
+          "s": 964
         },
         {
           "d": "09-01",
-          "s": 187
+          "s": 964
         },
         {
           "d": "09-02",
-          "s": 190
+          "s": 966
         },
         {
           "d": "09-03",
-          "s": 191
+          "s": 967
         },
         {
           "d": "09-04",
-          "s": 191
+          "s": 971
         },
         {
           "d": "09-05",
-          "s": 192
+          "s": 974
         },
         {
           "d": "09-06",
-          "s": 192
+          "s": 975
         },
         {
           "d": "09-07",
-          "s": 193
+          "s": 977
         },
         {
           "d": "09-08",
-          "s": 194
+          "s": 979
         },
         {
           "d": "09-09",
-          "s": 196
+          "s": 979
         },
         {
           "d": "09-10",
-          "s": 197
+          "s": 981
         },
         {
           "d": "09-11",
-          "s": 197
+          "s": 984
         },
         {
           "d": "09-12",
-          "s": 199
+          "s": 987
         },
         {
           "d": "09-13",
-          "s": 200
+          "s": 994
         },
         {
           "d": "09-14",
-          "s": 200
+          "s": 997
+        },
+        {
+          "d": "09-15",
+          "s": 998
         }
       ]
     },
     "score": {
-      "score": 41.84,
+      "score": 35.98,
       "breakdown": {
-        "vel": 32,
-        "acc": 46,
-        "health": 67,
-        "fresh": 23,
-        "signal": 70
+        "vel": 37,
+        "acc": 61,
+        "health": 73,
+        "fresh": 0,
+        "signal": 85
       },
-      "stage": "mid_late",
-      "stage_multiplier": 1.0,
+      "stage": "early",
+      "stage_multiplier": 1.2,
       "confidence": 1.0,
-      "base_score": 41.84,
-      "explanation": "luma 是 C 开源项目，主打「The official Frida GUI」；处于中后期增长。"
+      "base_score": 29.99,
+      "explanation": "YumeBox 是 C# 开源项目，主打「これはとあるア-ティフアクトを巡る、ひとつの誓いの物語」；处于增长早期；社区健康（fork/star 比 4.5%，2 个 open issue）、项目元数据完整。"
     }
   },
   {
@@ -2220,12 +2040,8 @@
       "default_branch": "main",
       "archived": false,
       "search_score": 1.0,
-      "stars_7d_ago": 197,
+      "stars_7d_ago": 198,
       "star_series": [
-        {
-          "d": "08-16",
-          "s": 159
-        },
         {
           "d": "08-17",
           "s": 159
@@ -2341,363 +2157,692 @@
         {
           "d": "09-14",
           "s": 200
+        },
+        {
+          "d": "09-15",
+          "s": 200
         }
       ]
     },
     "score": {
-      "score": 41.74,
+      "score": 31.97,
       "breakdown": {
-        "vel": 18,
+        "vel": 7,
         "acc": 29,
         "health": 100,
-        "fresh": 26,
+        "fresh": 25,
         "signal": 70
       },
       "stage": "early",
       "stage_multiplier": 1.2,
       "confidence": 1.0,
-      "base_score": 34.78,
+      "base_score": 26.64,
       "explanation": "coding_agent_account_manager 是 Go 开源项目，主打「Sub-100ms auth switching for AI coding CLIs (Claude Code, Codex, Gemini): swap subscription accounts instantly when you hit usage limits」；处于增长早期，涨速已放缓；社区健康（fork/star 比 15.5%，1 个 open issue）。"
     }
   },
   {
     "repo": {
-      "owner": "YumeYucca",
-      "name": "YumeBox",
-      "full_name": "YumeYucca/YumeBox",
-      "description": "これはとあるア-ティフアクトを巡る、ひとつの誓いの物語",
-      "stars": 998,
-      "forks": 45,
-      "open_issues": 2,
-      "created_at": "2025-08-03T02:38:45+00:00",
-      "pushed_at": "2026-09-08T15:05:33+00:00",
-      "updated_at": "2026-09-14T08:46:44+00:00",
-      "topics": [
-        "9-nine-arteisia",
-        "9-nine-project",
-        "galgame",
-        "galgame-tool",
-        "palette"
-      ],
-      "language": "C#",
-      "license": "AGPL-3.0",
-      "homepage": "https://yumebox.gal.tf",
-      "html_url": "https://github.com/YumeYucca/YumeBox",
-      "default_branch": "Moe",
+      "owner": "frida",
+      "name": "luma",
+      "full_name": "frida/luma",
+      "description": "The official Frida GUI",
+      "stars": 200,
+      "forks": 12,
+      "open_issues": 9,
+      "created_at": "2025-12-05T22:12:28+00:00",
+      "pushed_at": "2026-09-14T18:01:18+00:00",
+      "updated_at": "2026-09-14T18:01:24+00:00",
+      "topics": [],
+      "language": "C",
+      "license": "MIT",
+      "homepage": "https://luma.frida.re/",
+      "html_url": "https://github.com/frida/luma",
+      "default_branch": "main",
       "archived": false,
       "search_score": 1.0,
-      "stars_7d_ago": 980,
+      "stars_7d_ago": 196,
       "star_series": [
         {
-          "d": "08-16",
-          "s": 957
-        },
-        {
           "d": "08-17",
-          "s": 957
+          "s": 170
         },
         {
           "d": "08-18",
-          "s": 957
+          "s": 170
         },
         {
           "d": "08-19",
-          "s": 957
+          "s": 170
         },
         {
           "d": "08-20",
-          "s": 957
+          "s": 170
         },
         {
           "d": "08-21",
-          "s": 957
+          "s": 170
         },
         {
           "d": "08-22",
-          "s": 957
+          "s": 170
         },
         {
           "d": "08-23",
-          "s": 957
+          "s": 170
         },
         {
           "d": "08-24",
-          "s": 957
+          "s": 170
         },
         {
           "d": "08-25",
-          "s": 957
+          "s": 170
         },
         {
           "d": "08-26",
-          "s": 957
+          "s": 177
         },
         {
           "d": "08-27",
-          "s": 957
+          "s": 179
         },
         {
           "d": "08-28",
-          "s": 958
+          "s": 181
         },
         {
           "d": "08-29",
-          "s": 962
+          "s": 181
         },
         {
           "d": "08-30",
-          "s": 963
+          "s": 185
         },
         {
           "d": "08-31",
-          "s": 965
+          "s": 187
         },
         {
           "d": "09-01",
-          "s": 965
+          "s": 187
         },
         {
           "d": "09-02",
-          "s": 967
+          "s": 190
         },
         {
           "d": "09-03",
-          "s": 968
+          "s": 191
         },
         {
           "d": "09-04",
-          "s": 972
+          "s": 191
         },
         {
           "d": "09-05",
-          "s": 975
+          "s": 192
         },
         {
           "d": "09-06",
-          "s": 976
+          "s": 192
         },
         {
           "d": "09-07",
-          "s": 978
+          "s": 193
         },
         {
           "d": "09-08",
-          "s": 980
+          "s": 194
         },
         {
           "d": "09-09",
-          "s": 980
+          "s": 196
         },
         {
           "d": "09-10",
-          "s": 982
+          "s": 197
         },
         {
           "d": "09-11",
-          "s": 985
+          "s": 197
         },
         {
           "d": "09-12",
-          "s": 988
+          "s": 199
         },
         {
           "d": "09-13",
-          "s": 995
+          "s": 200
         },
         {
           "d": "09-14",
-          "s": 998
+          "s": 200
+        },
+        {
+          "d": "09-15",
+          "s": 200
         }
       ]
     },
     "score": {
-      "score": 41.56,
+      "score": 31.33,
       "breakdown": {
-        "vel": 66,
-        "acc": 55,
-        "health": 73,
-        "fresh": 0,
-        "signal": 85
+        "vel": 13,
+        "acc": 43,
+        "health": 67,
+        "fresh": 22,
+        "signal": 70
       },
-      "stage": "early",
-      "stage_multiplier": 1.2,
+      "stage": "mid_late",
+      "stage_multiplier": 1.0,
       "confidence": 1.0,
-      "base_score": 34.63,
-      "explanation": "YumeBox 是 C# 开源项目，主打「これはとあるア-ティフアクトを巡る、ひとつの誓いの物語」；处于增长早期，本周涨速 2.6 star/天；社区健康（fork/star 比 4.5%，2 个 open issue）、项目元数据完整。"
+      "base_score": 31.33,
+      "explanation": "luma 是 C 开源项目，主打「The official Frida GUI」；处于中后期增长。"
     }
   },
   {
     "repo": {
-      "owner": "jiweiyeah",
-      "name": "Skills-Manager",
-      "full_name": "jiweiyeah/Skills-Manager",
-      "description": "Free, open-source desktop manager for AI Agent Skills. Write a skill once, sync it to 32 AI coding tools (Claude Code, Codex, Cursor, Gemini CLI, and more) via symlinks. Local-first, MIT licensed. macOS, Windows, Linux.",
-      "stars": 995,
-      "forks": 63,
-      "open_issues": 35,
-      "created_at": "2026-02-06T05:25:20+00:00",
-      "pushed_at": "2026-09-10T16:28:40+00:00",
-      "updated_at": "2026-09-14T02:33:13+00:00",
+      "owner": "Agent-Field",
+      "name": "SWE-AF",
+      "full_name": "Agent-Field/SWE-AF",
+      "description": "Autonomous software engineering fleet of AI agents for production-grade PRs on AgentField: plan, code, test, and ship.",
+      "stars": 1000,
+      "forks": 173,
+      "open_issues": 9,
+      "created_at": "2026-02-04T16:33:08+00:00",
+      "pushed_at": "2026-09-09T23:33:36+00:00",
+      "updated_at": "2026-09-15T09:45:25+00:00",
       "topics": [
-        "ai-skills-manager",
+        "agent-factory",
+        "agentfield",
+        "agentic-ai",
+        "ai-agents",
+        "ai-factory",
+        "autonomous-agents",
         "claude-code",
-        "claude-code-skills",
+        "code-generation",
         "codex",
-        "codex-skills",
-        "deepseek-harness",
+        "coding-agent",
         "developer-tools",
-        "pi",
-        "react-19",
-        "skills",
-        "skills-management",
-        "skills-manager",
-        "tauri-v2"
+        "gemini-cli",
+        "llm",
+        "multi-agent",
+        "openrouter",
+        "software-engineering",
+        "software-factory"
       ],
-      "language": "TypeScript",
-      "license": "MIT",
-      "homepage": "https://skillsmanager.freeourdays.com/?ref=gh",
-      "html_url": "https://github.com/jiweiyeah/Skills-Manager",
+      "language": "Go",
+      "license": "Apache-2.0",
+      "homepage": "https://agentfield.ai/",
+      "html_url": "https://github.com/Agent-Field/SWE-AF",
       "default_branch": "main",
       "archived": false,
       "search_score": 1.0,
-      "stars_7d_ago": 988,
+      "stars_7d_ago": 994,
       "star_series": [
         {
-          "d": "08-16",
-          "s": 928
-        },
-        {
           "d": "08-17",
-          "s": 931
-        },
-        {
-          "d": "08-18",
-          "s": 934
-        },
-        {
-          "d": "08-19",
-          "s": 937
-        },
-        {
-          "d": "08-20",
-          "s": 940
-        },
-        {
-          "d": "08-21",
-          "s": 940
-        },
-        {
-          "d": "08-22",
-          "s": 941
-        },
-        {
-          "d": "08-23",
-          "s": 943
-        },
-        {
-          "d": "08-24",
-          "s": 946
-        },
-        {
-          "d": "08-25",
-          "s": 949
-        },
-        {
-          "d": "08-26",
-          "s": 953
-        },
-        {
-          "d": "08-27",
-          "s": 960
-        },
-        {
-          "d": "08-28",
-          "s": 965
-        },
-        {
-          "d": "08-29",
-          "s": 965
-        },
-        {
-          "d": "08-30",
-          "s": 966
-        },
-        {
-          "d": "08-31",
-          "s": 967
-        },
-        {
-          "d": "09-01",
-          "s": 968
-        },
-        {
-          "d": "09-02",
-          "s": 969
-        },
-        {
-          "d": "09-03",
-          "s": 972
-        },
-        {
-          "d": "09-04",
           "s": 973
         },
         {
-          "d": "09-05",
-          "s": 974
+          "d": "08-18",
+          "s": 975
         },
         {
-          "d": "09-06",
-          "s": 980
+          "d": "08-19",
+          "s": 977
         },
         {
-          "d": "09-07",
+          "d": "08-20",
+          "s": 981
+        },
+        {
+          "d": "08-21",
+          "s": 981
+        },
+        {
+          "d": "08-22",
+          "s": 981
+        },
+        {
+          "d": "08-23",
+          "s": 981
+        },
+        {
+          "d": "08-24",
+          "s": 981
+        },
+        {
+          "d": "08-25",
+          "s": 982
+        },
+        {
+          "d": "08-26",
+          "s": 984
+        },
+        {
+          "d": "08-27",
+          "s": 985
+        },
+        {
+          "d": "08-28",
           "s": 987
         },
         {
-          "d": "09-08",
+          "d": "08-29",
+          "s": 987
+        },
+        {
+          "d": "08-30",
           "s": 988
         },
         {
-          "d": "09-09",
+          "d": "08-31",
+          "s": 989
+        },
+        {
+          "d": "09-01",
+          "s": 990
+        },
+        {
+          "d": "09-02",
+          "s": 990
+        },
+        {
+          "d": "09-03",
+          "s": 990
+        },
+        {
+          "d": "09-04",
           "s": 991
         },
         {
-          "d": "09-10",
-          "s": 991
-        },
-        {
-          "d": "09-11",
+          "d": "09-05",
           "s": 992
         },
         {
+          "d": "09-06",
+          "s": 992
+        },
+        {
+          "d": "09-07",
+          "s": 992
+        },
+        {
+          "d": "09-08",
+          "s": 994
+        },
+        {
+          "d": "09-09",
+          "s": 994
+        },
+        {
+          "d": "09-10",
+          "s": 994
+        },
+        {
+          "d": "09-11",
+          "s": 995
+        },
+        {
           "d": "09-12",
-          "s": 993
+          "s": 995
         },
         {
           "d": "09-13",
-          "s": 993
+          "s": 995
         },
         {
           "d": "09-14",
-          "s": 995
+          "s": 996
+        },
+        {
+          "d": "09-15",
+          "s": 1000
         }
       ]
     },
     "score": {
-      "score": 38.4,
+      "score": 30.95,
       "breakdown": {
-        "vel": 36,
-        "acc": 34,
-        "health": 72,
-        "fresh": 40,
+        "vel": 18,
+        "acc": 57,
+        "health": 99,
+        "fresh": 39,
         "signal": 85
       },
-      "stage": "late",
-      "stage_multiplier": 0.85,
+      "stage": "saturated",
+      "stage_multiplier": 0.7,
       "confidence": 1.0,
-      "base_score": 45.18,
-      "explanation": "Skills-Manager 是 TypeScript 开源项目，主打「Free, open-source desktop manager for AI Agent Skills. Write a skill once, sync it to 32 AI coding tools (Claude Code, Codex, Cursor, Gemini CLI, and more) via symlinks. Local-first, MIT licensed. macOS, Windows, Linux.」；接近增长天花板；社区健康（fork/star 比 6.3%，35 个 open issue）、项目元数据完整。"
+      "base_score": 44.22,
+      "explanation": "SWE-AF 是 Go 开源项目，主打「Autonomous software engineering fleet of AI agents for production-grade PRs on AgentField: plan, code, test, and ship.」；增长已饱和；社区健康（fork/star 比 17.3%，9 个 open issue）、项目元数据完整。"
+    }
+  },
+  {
+    "repo": {
+      "owner": "HiveGamesOSS",
+      "name": "Chunker",
+      "full_name": "HiveGamesOSS/Chunker",
+      "description": "Convert Minecraft worlds between Java Edition and Bedrock Edition",
+      "stars": 996,
+      "forks": 183,
+      "open_issues": 18,
+      "created_at": "2024-08-12T08:28:37+00:00",
+      "pushed_at": "2026-09-14T13:34:16+00:00",
+      "updated_at": "2026-09-15T01:04:52+00:00",
+      "topics": [
+        "minecraft"
+      ],
+      "language": "Java",
+      "license": "MIT",
+      "homepage": "https://chunker.app/",
+      "html_url": "https://github.com/HiveGamesOSS/Chunker",
+      "default_branch": "main",
+      "archived": false,
+      "search_score": 1.0,
+      "stars_7d_ago": 989,
+      "star_series": [
+        {
+          "d": "08-17",
+          "s": 983
+        },
+        {
+          "d": "08-18",
+          "s": 983
+        },
+        {
+          "d": "08-19",
+          "s": 983
+        },
+        {
+          "d": "08-20",
+          "s": 983
+        },
+        {
+          "d": "08-21",
+          "s": 983
+        },
+        {
+          "d": "08-22",
+          "s": 983
+        },
+        {
+          "d": "08-23",
+          "s": 983
+        },
+        {
+          "d": "08-24",
+          "s": 983
+        },
+        {
+          "d": "08-25",
+          "s": 983
+        },
+        {
+          "d": "08-26",
+          "s": 983
+        },
+        {
+          "d": "08-27",
+          "s": 983
+        },
+        {
+          "d": "08-28",
+          "s": 983
+        },
+        {
+          "d": "08-29",
+          "s": 983
+        },
+        {
+          "d": "08-30",
+          "s": 983
+        },
+        {
+          "d": "08-31",
+          "s": 983
+        },
+        {
+          "d": "09-01",
+          "s": 983
+        },
+        {
+          "d": "09-02",
+          "s": 983
+        },
+        {
+          "d": "09-03",
+          "s": 983
+        },
+        {
+          "d": "09-04",
+          "s": 983
+        },
+        {
+          "d": "09-05",
+          "s": 983
+        },
+        {
+          "d": "09-06",
+          "s": 983
+        },
+        {
+          "d": "09-07",
+          "s": 984
+        },
+        {
+          "d": "09-08",
+          "s": 986
+        },
+        {
+          "d": "09-09",
+          "s": 989
+        },
+        {
+          "d": "09-10",
+          "s": 989
+        },
+        {
+          "d": "09-11",
+          "s": 991
+        },
+        {
+          "d": "09-12",
+          "s": 991
+        },
+        {
+          "d": "09-13",
+          "s": 992
+        },
+        {
+          "d": "09-14",
+          "s": 995
+        },
+        {
+          "d": "09-15",
+          "s": 996
+        }
+      ]
+    },
+    "score": {
+      "score": 27.84,
+      "breakdown": {
+        "vel": 20,
+        "acc": 54,
+        "health": 97,
+        "fresh": 0,
+        "signal": 85
+      },
+      "stage": "mid_early",
+      "stage_multiplier": 1.1,
+      "confidence": 1.0,
+      "base_score": 25.31,
+      "explanation": "Chunker 是 Java 开源项目，主打「Convert Minecraft worlds between Java Edition and Bedrock Edition」；处于中早期增长；社区健康（fork/star 比 18.4%，18 个 open issue）、项目元数据完整。"
+    }
+  },
+  {
+    "repo": {
+      "owner": "koopthekoopa",
+      "name": "wii-ipl",
+      "full_name": "koopthekoopa/wii-ipl",
+      "description": "Wii Menu Decompilation brought to you by fans.",
+      "stars": 200,
+      "forks": 22,
+      "open_issues": 3,
+      "created_at": "2024-04-15T16:06:19+00:00",
+      "pushed_at": "2026-09-14T14:28:18+00:00",
+      "updated_at": "2026-09-14T20:59:18+00:00",
+      "topics": [
+        "cpp",
+        "decompilation",
+        "reverse-engineering",
+        "wii"
+      ],
+      "language": "C",
+      "license": "CC0-1.0",
+      "homepage": null,
+      "html_url": "https://github.com/koopthekoopa/wii-ipl",
+      "default_branch": "main",
+      "archived": false,
+      "search_score": 1.0,
+      "stars_7d_ago": 195,
+      "star_series": [
+        {
+          "d": "08-17",
+          "s": 190
+        },
+        {
+          "d": "08-18",
+          "s": 190
+        },
+        {
+          "d": "08-19",
+          "s": 190
+        },
+        {
+          "d": "08-20",
+          "s": 191
+        },
+        {
+          "d": "08-21",
+          "s": 191
+        },
+        {
+          "d": "08-22",
+          "s": 191
+        },
+        {
+          "d": "08-23",
+          "s": 191
+        },
+        {
+          "d": "08-24",
+          "s": 191
+        },
+        {
+          "d": "08-25",
+          "s": 191
+        },
+        {
+          "d": "08-26",
+          "s": 191
+        },
+        {
+          "d": "08-27",
+          "s": 191
+        },
+        {
+          "d": "08-28",
+          "s": 191
+        },
+        {
+          "d": "08-29",
+          "s": 191
+        },
+        {
+          "d": "08-30",
+          "s": 191
+        },
+        {
+          "d": "08-31",
+          "s": 191
+        },
+        {
+          "d": "09-01",
+          "s": 191
+        },
+        {
+          "d": "09-02",
+          "s": 192
+        },
+        {
+          "d": "09-03",
+          "s": 193
+        },
+        {
+          "d": "09-04",
+          "s": 194
+        },
+        {
+          "d": "09-05",
+          "s": 195
+        },
+        {
+          "d": "09-06",
+          "s": 195
+        },
+        {
+          "d": "09-07",
+          "s": 195
+        },
+        {
+          "d": "09-08",
+          "s": 195
+        },
+        {
+          "d": "09-09",
+          "s": 195
+        },
+        {
+          "d": "09-10",
+          "s": 195
+        },
+        {
+          "d": "09-11",
+          "s": 195
+        },
+        {
+          "d": "09-12",
+          "s": 197
+        },
+        {
+          "d": "09-13",
+          "s": 198
+        },
+        {
+          "d": "09-14",
+          "s": 200
+        },
+        {
+          "d": "09-15",
+          "s": 200
+        }
+      ]
+    },
+    "score": {
+      "score": 27.56,
+      "breakdown": {
+        "vel": 15,
+        "acc": 57,
+        "health": 88,
+        "fresh": 0,
+        "signal": 70
+      },
+      "stage": "early",
+      "stage_multiplier": 1.2,
+      "confidence": 1.0,
+      "base_score": 22.97,
+      "explanation": "wii-ipl 是 C 开源项目，主打「Wii Menu Decompilation brought to you by fans.」；处于增长早期；社区健康（fork/star 比 11.0%，3 个 open issue）。"
     }
   },
   {
@@ -2706,12 +2851,12 @@
       "name": "easy-agent",
       "full_name": "ConardLi/easy-agent",
       "description": "Fully recreating Claude Code from scratch, so anyone can learn how it works.",
-      "stars": 997,
+      "stars": 998,
       "forks": 136,
       "open_issues": 15,
       "created_at": "2026-04-10T14:25:59+00:00",
       "pushed_at": "2026-09-14T03:08:44+00:00",
-      "updated_at": "2026-09-13T13:33:22+00:00",
+      "updated_at": "2026-09-15T07:13:43+00:00",
       "topics": [],
       "language": "TypeScript",
       "license": "MIT",
@@ -2720,12 +2865,8 @@
       "default_branch": "main",
       "archived": false,
       "search_score": 1.0,
-      "stars_7d_ago": 991,
+      "stars_7d_ago": 994,
       "star_series": [
-        {
-          "d": "08-16",
-          "s": 904
-        },
         {
           "d": "08-17",
           "s": 904
@@ -2841,14 +2982,18 @@
         {
           "d": "09-14",
           "s": 997
+        },
+        {
+          "d": "09-15",
+          "s": 998
         }
       ]
     },
     "score": {
-      "score": 37.27,
+      "score": 26.57,
       "breakdown": {
-        "vel": 32,
-        "acc": 57,
+        "vel": 13,
+        "acc": 43,
         "health": 97,
         "fresh": 57,
         "signal": 55
@@ -2856,179 +3001,8 @@
       "stage": "saturated",
       "stage_multiplier": 0.7,
       "confidence": 1.0,
-      "base_score": 53.25,
+      "base_score": 37.96,
       "explanation": "easy-agent 是 TypeScript 开源项目，主打「Fully recreating Claude Code from scratch, so anyone can learn how it works.」；增长已饱和；社区健康（fork/star 比 13.6%，15 个 open issue）。"
-    }
-  },
-  {
-    "repo": {
-      "owner": "congminh1254",
-      "name": "shopee-sdk",
-      "full_name": "congminh1254/shopee-sdk",
-      "description": "A lightweight, fully-featured TypeScript SDK for the Shopee Open API v2. Features automatic request signing, pluggable token storage, robust error handling, and 100% endpoint coverage.",
-      "stars": 200,
-      "forks": 70,
-      "open_issues": 5,
-      "created_at": "2025-04-14T16:43:37+00:00",
-      "pushed_at": "2026-09-12T17:03:13+00:00",
-      "updated_at": "2026-09-12T17:03:18+00:00",
-      "topics": [
-        "api-client",
-        "e-commerce",
-        "nodejs",
-        "open-api",
-        "sdk",
-        "shopee",
-        "shopee-api",
-        "shopee-sdk",
-        "shopee-seller-api",
-        "typescript"
-      ],
-      "language": "TypeScript",
-      "license": "MIT",
-      "homepage": "http://congminh1254.github.io/shopee-sdk/",
-      "html_url": "https://github.com/congminh1254/shopee-sdk",
-      "default_branch": "main",
-      "archived": false,
-      "search_score": 1.0,
-      "stars_7d_ago": 195,
-      "star_series": [
-        {
-          "d": "08-16",
-          "s": 180
-        },
-        {
-          "d": "08-17",
-          "s": 180
-        },
-        {
-          "d": "08-18",
-          "s": 180
-        },
-        {
-          "d": "08-19",
-          "s": 180
-        },
-        {
-          "d": "08-20",
-          "s": 180
-        },
-        {
-          "d": "08-21",
-          "s": 183
-        },
-        {
-          "d": "08-22",
-          "s": 183
-        },
-        {
-          "d": "08-23",
-          "s": 183
-        },
-        {
-          "d": "08-24",
-          "s": 183
-        },
-        {
-          "d": "08-25",
-          "s": 184
-        },
-        {
-          "d": "08-26",
-          "s": 186
-        },
-        {
-          "d": "08-27",
-          "s": 186
-        },
-        {
-          "d": "08-28",
-          "s": 188
-        },
-        {
-          "d": "08-29",
-          "s": 188
-        },
-        {
-          "d": "08-30",
-          "s": 189
-        },
-        {
-          "d": "08-31",
-          "s": 189
-        },
-        {
-          "d": "09-01",
-          "s": 191
-        },
-        {
-          "d": "09-02",
-          "s": 191
-        },
-        {
-          "d": "09-03",
-          "s": 193
-        },
-        {
-          "d": "09-04",
-          "s": 193
-        },
-        {
-          "d": "09-05",
-          "s": 193
-        },
-        {
-          "d": "09-06",
-          "s": 193
-        },
-        {
-          "d": "09-07",
-          "s": 194
-        },
-        {
-          "d": "09-08",
-          "s": 195
-        },
-        {
-          "d": "09-09",
-          "s": 197
-        },
-        {
-          "d": "09-10",
-          "s": 198
-        },
-        {
-          "d": "09-11",
-          "s": 199
-        },
-        {
-          "d": "09-12",
-          "s": 200
-        },
-        {
-          "d": "09-13",
-          "s": 200
-        },
-        {
-          "d": "09-14",
-          "s": 200
-        }
-      ]
-    },
-    "score": {
-      "score": 34.26,
-      "breakdown": {
-        "vel": 28,
-        "acc": 54,
-        "health": 97,
-        "fresh": 0,
-        "signal": 100
-      },
-      "stage": "early",
-      "stage_multiplier": 1.2,
-      "confidence": 1.0,
-      "base_score": 28.55,
-      "explanation": "shopee-sdk 是 TypeScript 开源项目，主打「A lightweight, fully-featured TypeScript SDK for the Shopee Open API v2. Features automatic request signing, pluggable token storage, robust error handling, and 100% endpoint coverage.」；处于增长早期；社区健康（fork/star 比 35.0%，5 个 open issue）、项目元数据完整。"
     }
   },
   {
@@ -3037,12 +3011,12 @@
       "name": "GraphRAG-SDK",
       "full_name": "FalkorDB/GraphRAG-SDK",
       "description": "Build fast and accurate GenAI apps with GraphRAG SDK at scale  🌟 ",
-      "stars": 999,
+      "stars": 1000,
       "forks": 140,
       "open_issues": 41,
       "created_at": "2024-01-25T05:54:20+00:00",
-      "pushed_at": "2026-09-14T09:13:01+00:00",
-      "updated_at": "2026-09-14T09:13:04+00:00",
+      "pushed_at": "2026-09-15T10:29:54+00:00",
+      "updated_at": "2026-09-15T05:25:00+00:00",
       "topics": [
         "falkordb",
         "genai",
@@ -3063,10 +3037,6 @@
       "search_score": 1.0,
       "stars_7d_ago": 995,
       "star_series": [
-        {
-          "d": "08-16",
-          "s": 995
-        },
         {
           "d": "08-17",
           "s": 995
@@ -3181,15 +3151,19 @@
         },
         {
           "d": "09-14",
-          "s": 999
+          "s": 1000
+        },
+        {
+          "d": "09-15",
+          "s": 1000
         }
       ]
     },
     "score": {
-      "score": 27.5,
+      "score": 24.59,
       "breakdown": {
-        "vel": 23,
-        "acc": 64,
+        "vel": 15,
+        "acc": 67,
         "health": 91,
         "fresh": 0,
         "signal": 85
@@ -3197,8 +3171,168 @@
       "stage": "mid_late",
       "stage_multiplier": 1.0,
       "confidence": 1.0,
-      "base_score": 27.5,
+      "base_score": 24.59,
       "explanation": "GraphRAG-SDK 是 Python 开源项目，主打「Build fast and accurate GenAI apps with GraphRAG SDK at scale  🌟」；处于中后期增长；社区健康（fork/star 比 14.0%，41 个 open issue）、项目元数据完整。"
+    }
+  },
+  {
+    "repo": {
+      "owner": "gnmyt",
+      "name": "Nexterm",
+      "full_name": "gnmyt/Nexterm",
+      "description": "The open source server management software for SSH, VNC & RDP",
+      "stars": 5000,
+      "forks": 268,
+      "open_issues": 187,
+      "created_at": "2024-08-13T17:14:38+00:00",
+      "pushed_at": "2026-09-15T07:20:44+00:00",
+      "updated_at": "2026-09-15T07:20:41+00:00",
+      "topics": [],
+      "language": "JavaScript",
+      "license": "MIT",
+      "homepage": "https://nexterm.dev",
+      "html_url": "https://github.com/gnmyt/Nexterm",
+      "default_branch": "main",
+      "archived": false,
+      "search_score": 1.0,
+      "stars_7d_ago": 4997,
+      "star_series": [
+        {
+          "d": "08-17",
+          "s": 4997
+        },
+        {
+          "d": "08-18",
+          "s": 4997
+        },
+        {
+          "d": "08-19",
+          "s": 4997
+        },
+        {
+          "d": "08-20",
+          "s": 4997
+        },
+        {
+          "d": "08-21",
+          "s": 4997
+        },
+        {
+          "d": "08-22",
+          "s": 4997
+        },
+        {
+          "d": "08-23",
+          "s": 4997
+        },
+        {
+          "d": "08-24",
+          "s": 4997
+        },
+        {
+          "d": "08-25",
+          "s": 4997
+        },
+        {
+          "d": "08-26",
+          "s": 4997
+        },
+        {
+          "d": "08-27",
+          "s": 4997
+        },
+        {
+          "d": "08-28",
+          "s": 4997
+        },
+        {
+          "d": "08-29",
+          "s": 4997
+        },
+        {
+          "d": "08-30",
+          "s": 4997
+        },
+        {
+          "d": "08-31",
+          "s": 4997
+        },
+        {
+          "d": "09-01",
+          "s": 4997
+        },
+        {
+          "d": "09-02",
+          "s": 4997
+        },
+        {
+          "d": "09-03",
+          "s": 4997
+        },
+        {
+          "d": "09-04",
+          "s": 4997
+        },
+        {
+          "d": "09-05",
+          "s": 4997
+        },
+        {
+          "d": "09-06",
+          "s": 4997
+        },
+        {
+          "d": "09-07",
+          "s": 4997
+        },
+        {
+          "d": "09-08",
+          "s": 4997
+        },
+        {
+          "d": "09-09",
+          "s": 4997
+        },
+        {
+          "d": "09-10",
+          "s": 4997
+        },
+        {
+          "d": "09-11",
+          "s": 4997
+        },
+        {
+          "d": "09-12",
+          "s": 4997
+        },
+        {
+          "d": "09-13",
+          "s": 4997
+        },
+        {
+          "d": "09-14",
+          "s": 5000
+        },
+        {
+          "d": "09-15",
+          "s": 5000
+        }
+      ]
+    },
+    "score": {
+      "score": 20.09,
+      "breakdown": {
+        "vel": 10,
+        "acc": 61,
+        "health": 69,
+        "fresh": 0,
+        "signal": 85
+      },
+      "stage": "mid_late",
+      "stage_multiplier": 1.0,
+      "confidence": 1.0,
+      "base_score": 20.09,
+      "explanation": "Nexterm 是 JavaScript 开源项目，主打「The open source server management software for SSH, VNC & RDP」；处于中后期增长；项目元数据完整。"
     }
   },
   {
@@ -3221,12 +3355,8 @@
       "default_branch": "main",
       "archived": false,
       "search_score": 1.0,
-      "stars_7d_ago": 994,
+      "stars_7d_ago": 995,
       "star_series": [
-        {
-          "d": "08-16",
-          "s": 982
-        },
         {
           "d": "08-17",
           "s": 982
@@ -3342,14 +3472,18 @@
         {
           "d": "09-14",
           "s": 996
+        },
+        {
+          "d": "09-15",
+          "s": 996
         }
       ]
     },
     "score": {
-      "score": 25.35,
+      "score": 17.47,
       "breakdown": {
-        "vel": 13,
-        "acc": 43,
+        "vel": 4,
+        "acc": 39,
         "health": 83,
         "fresh": 2,
         "signal": 40
@@ -3357,338 +3491,8 @@
       "stage": "mid_early",
       "stage_multiplier": 1.1,
       "confidence": 1.0,
-      "base_score": 23.04,
+      "base_score": 15.88,
       "explanation": "ml-simplefold 是 Python 方向的开源项目；处于中早期增长；社区健康（fork/star 比 9.5%，39 个 open issue）。"
-    }
-  },
-  {
-    "repo": {
-      "owner": "MoeShinX",
-      "name": "relay-panel",
-      "full_name": "MoeShinX/relay-panel",
-      "description": "Self-hosted TCP/UDP forwarding management panel with relay-node, WebSocket control, quotas, and traffic stats.",
-      "stars": 200,
-      "forks": 28,
-      "open_issues": 1,
-      "created_at": "2026-06-25T10:45:42+00:00",
-      "pushed_at": "2026-09-08T03:24:27+00:00",
-      "updated_at": "2026-09-10T00:31:28+00:00",
-      "topics": [
-        "panel",
-        "relay",
-        "rust",
-        "self-hosted",
-        "tcp-forwarding",
-        "udp-forwarding",
-        "webui"
-      ],
-      "language": "Rust",
-      "license": "AGPL-3.0",
-      "homepage": "https://relaypanel.dev",
-      "html_url": "https://github.com/MoeShinX/relay-panel",
-      "default_branch": "main",
-      "archived": false,
-      "search_score": 1.0,
-      "stars_7d_ago": 199,
-      "star_series": [
-        {
-          "d": "08-16",
-          "s": 185
-        },
-        {
-          "d": "08-17",
-          "s": 185
-        },
-        {
-          "d": "08-18",
-          "s": 187
-        },
-        {
-          "d": "08-19",
-          "s": 187
-        },
-        {
-          "d": "08-20",
-          "s": 187
-        },
-        {
-          "d": "08-21",
-          "s": 188
-        },
-        {
-          "d": "08-22",
-          "s": 188
-        },
-        {
-          "d": "08-23",
-          "s": 189
-        },
-        {
-          "d": "08-24",
-          "s": 189
-        },
-        {
-          "d": "08-25",
-          "s": 190
-        },
-        {
-          "d": "08-26",
-          "s": 190
-        },
-        {
-          "d": "08-27",
-          "s": 190
-        },
-        {
-          "d": "08-28",
-          "s": 193
-        },
-        {
-          "d": "08-29",
-          "s": 194
-        },
-        {
-          "d": "08-30",
-          "s": 194
-        },
-        {
-          "d": "08-31",
-          "s": 195
-        },
-        {
-          "d": "09-01",
-          "s": 196
-        },
-        {
-          "d": "09-02",
-          "s": 196
-        },
-        {
-          "d": "09-03",
-          "s": 196
-        },
-        {
-          "d": "09-04",
-          "s": 198
-        },
-        {
-          "d": "09-05",
-          "s": 198
-        },
-        {
-          "d": "09-06",
-          "s": 198
-        },
-        {
-          "d": "09-07",
-          "s": 199
-        },
-        {
-          "d": "09-08",
-          "s": 199
-        },
-        {
-          "d": "09-09",
-          "s": 199
-        },
-        {
-          "d": "09-10",
-          "s": 200
-        },
-        {
-          "d": "09-11",
-          "s": 200
-        },
-        {
-          "d": "09-12",
-          "s": 200
-        },
-        {
-          "d": "09-13",
-          "s": 200
-        },
-        {
-          "d": "09-14",
-          "s": 200
-        }
-      ]
-    },
-    "score": {
-      "score": 25.0,
-      "breakdown": {
-        "vel": 7,
-        "acc": 43,
-        "health": 99,
-        "fresh": 78,
-        "signal": 100
-      },
-      "stage": "saturated",
-      "stage_multiplier": 0.7,
-      "confidence": 1.0,
-      "base_score": 35.71,
-      "explanation": "relay-panel 是 Rust 开源项目，主打「Self-hosted TCP/UDP forwarding management panel with relay-node, WebSocket control, quotas, and traffic stats.」；增长已饱和；社区健康（fork/star 比 14.0%，1 个 open issue）、项目元数据完整、开发活跃。"
-    }
-  },
-  {
-    "repo": {
-      "owner": "ViggoZ",
-      "name": "producthunt-daily-hot",
-      "full_name": "ViggoZ/producthunt-daily-hot",
-      "description": "自动生成每日Product Hunt热门产品中文榜单，基于GitHub Actions自动提交Markdown文件",
-      "stars": 999,
-      "forks": 137,
-      "open_issues": 2,
-      "created_at": "2024-08-08T15:12:26+00:00",
-      "pushed_at": "2026-09-13T12:32:50+00:00",
-      "updated_at": "2026-09-13T12:32:54+00:00",
-      "topics": [
-        "producthunt"
-      ],
-      "language": "Python",
-      "license": "MIT",
-      "homepage": "https://decohack.com/category/producthunt/",
-      "html_url": "https://github.com/ViggoZ/producthunt-daily-hot",
-      "default_branch": "main",
-      "archived": false,
-      "search_score": 1.0,
-      "stars_7d_ago": 997,
-      "star_series": [
-        {
-          "d": "08-16",
-          "s": 992
-        },
-        {
-          "d": "08-17",
-          "s": 992
-        },
-        {
-          "d": "08-18",
-          "s": 992
-        },
-        {
-          "d": "08-19",
-          "s": 992
-        },
-        {
-          "d": "08-20",
-          "s": 992
-        },
-        {
-          "d": "08-21",
-          "s": 992
-        },
-        {
-          "d": "08-22",
-          "s": 992
-        },
-        {
-          "d": "08-23",
-          "s": 992
-        },
-        {
-          "d": "08-24",
-          "s": 993
-        },
-        {
-          "d": "08-25",
-          "s": 993
-        },
-        {
-          "d": "08-26",
-          "s": 993
-        },
-        {
-          "d": "08-27",
-          "s": 993
-        },
-        {
-          "d": "08-28",
-          "s": 993
-        },
-        {
-          "d": "08-29",
-          "s": 993
-        },
-        {
-          "d": "08-30",
-          "s": 993
-        },
-        {
-          "d": "08-31",
-          "s": 994
-        },
-        {
-          "d": "09-01",
-          "s": 996
-        },
-        {
-          "d": "09-02",
-          "s": 996
-        },
-        {
-          "d": "09-03",
-          "s": 997
-        },
-        {
-          "d": "09-04",
-          "s": 997
-        },
-        {
-          "d": "09-05",
-          "s": 997
-        },
-        {
-          "d": "09-06",
-          "s": 997
-        },
-        {
-          "d": "09-07",
-          "s": 997
-        },
-        {
-          "d": "09-08",
-          "s": 997
-        },
-        {
-          "d": "09-09",
-          "s": 999
-        },
-        {
-          "d": "09-10",
-          "s": 999
-        },
-        {
-          "d": "09-11",
-          "s": 999
-        },
-        {
-          "d": "09-12",
-          "s": 999
-        },
-        {
-          "d": "09-13",
-          "s": 999
-        },
-        {
-          "d": "09-14",
-          "s": 999
-        }
-      ]
-    },
-    "score": {
-      "score": 24.8,
-      "breakdown": {
-        "vel": 13,
-        "acc": 54,
-        "health": 100,
-        "fresh": 0,
-        "signal": 85
-      },
-      "stage": "mid_early",
-      "stage_multiplier": 1.1,
-      "confidence": 1.0,
-      "base_score": 22.54,
-      "explanation": "producthunt-daily-hot 是 Python 开源项目，主打「自动生成每日Product Hunt热门产品中文榜单，基于GitHub Actions自动提交Markdown文件」；处于中早期增长；社区健康（fork/star 比 13.7%，2 个 open issue）、项目元数据完整。"
     }
   },
   {
@@ -3699,7 +3503,7 @@
       "description": "Tensorlake is a serverless runtime for sandboxes and deploying background agentic applications",
       "stars": 997,
       "forks": 142,
-      "open_issues": 60,
+      "open_issues": 61,
       "created_at": "2024-11-15T08:45:14+00:00",
       "pushed_at": "2026-09-13T04:11:16+00:00",
       "updated_at": "2026-09-11T15:54:14+00:00",
@@ -3722,12 +3526,8 @@
       "default_branch": "main",
       "archived": false,
       "search_score": 1.0,
-      "stars_7d_ago": 995,
+      "stars_7d_ago": 996,
       "star_series": [
-        {
-          "d": "08-16",
-          "s": 990
-        },
         {
           "d": "08-17",
           "s": 990
@@ -3843,14 +3643,18 @@
         {
           "d": "09-14",
           "s": 997
+        },
+        {
+          "d": "09-15",
+          "s": 997
         }
       ]
     },
     "score": {
-      "score": 24.04,
+      "score": 16.82,
       "breakdown": {
-        "vel": 13,
-        "acc": 54,
+        "vel": 4,
+        "acc": 50,
         "health": 86,
         "fresh": 0,
         "signal": 85
@@ -3858,168 +3662,170 @@
       "stage": "mid_early",
       "stage_multiplier": 1.1,
       "confidence": 1.0,
-      "base_score": 21.85,
-      "explanation": "tensorlake 是 Python 开源项目，主打「Tensorlake is a serverless runtime for sandboxes and deploying background agentic applications」；处于中早期增长；社区健康（fork/star 比 14.2%，60 个 open issue）、项目元数据完整。"
+      "base_score": 15.29,
+      "explanation": "tensorlake 是 Python 开源项目，主打「Tensorlake is a serverless runtime for sandboxes and deploying background agentic applications」；处于中早期增长；社区健康（fork/star 比 14.2%，61 个 open issue）、项目元数据完整。"
     }
   },
   {
     "repo": {
-      "owner": "HyperNavBar",
-      "name": "HyperNavBarRules",
-      "full_name": "HyperNavBar/HyperNavBarRules",
-      "description": "HyperNavBar Rules 是 HyperNavBar的维护规则列表，用于管理第三方应用的导航栏沉浸优化规则。",
-      "stars": 200,
-      "forks": 16,
-      "open_issues": 0,
-      "created_at": "2025-08-21T07:09:23+00:00",
-      "pushed_at": "2026-09-08T22:24:00+00:00",
-      "updated_at": "2026-09-13T07:36:05+00:00",
-      "topics": [],
+      "owner": "ViggoZ",
+      "name": "producthunt-daily-hot",
+      "full_name": "ViggoZ/producthunt-daily-hot",
+      "description": "自动生成每日Product Hunt热门产品中文榜单，基于GitHub Actions自动提交Markdown文件",
+      "stars": 1000,
+      "forks": 137,
+      "open_issues": 2,
+      "created_at": "2024-08-08T15:12:26+00:00",
+      "pushed_at": "2026-09-14T13:38:19+00:00",
+      "updated_at": "2026-09-14T15:12:31+00:00",
+      "topics": [
+        "producthunt"
+      ],
       "language": "Python",
       "license": "MIT",
-      "homepage": null,
-      "html_url": "https://github.com/HyperNavBar/HyperNavBarRules",
+      "homepage": "https://decohack.com/category/producthunt/",
+      "html_url": "https://github.com/ViggoZ/producthunt-daily-hot",
       "default_branch": "main",
       "archived": false,
       "search_score": 1.0,
-      "stars_7d_ago": 197,
+      "stars_7d_ago": 999,
       "star_series": [
         {
-          "d": "08-16",
-          "s": 194
-        },
-        {
           "d": "08-17",
-          "s": 194
+          "s": 992
         },
         {
           "d": "08-18",
-          "s": 195
+          "s": 992
         },
         {
           "d": "08-19",
-          "s": 195
+          "s": 992
         },
         {
           "d": "08-20",
-          "s": 195
+          "s": 992
         },
         {
           "d": "08-21",
-          "s": 195
+          "s": 992
         },
         {
           "d": "08-22",
-          "s": 195
+          "s": 992
         },
         {
           "d": "08-23",
-          "s": 195
+          "s": 992
         },
         {
           "d": "08-24",
-          "s": 196
+          "s": 993
         },
         {
           "d": "08-25",
-          "s": 197
+          "s": 993
         },
         {
           "d": "08-26",
-          "s": 197
+          "s": 993
         },
         {
           "d": "08-27",
-          "s": 197
+          "s": 993
         },
         {
           "d": "08-28",
-          "s": 197
+          "s": 993
         },
         {
           "d": "08-29",
-          "s": 197
+          "s": 993
         },
         {
           "d": "08-30",
-          "s": 197
+          "s": 993
         },
         {
           "d": "08-31",
-          "s": 197
+          "s": 994
         },
         {
           "d": "09-01",
-          "s": 197
+          "s": 996
         },
         {
           "d": "09-02",
-          "s": 197
+          "s": 996
         },
         {
           "d": "09-03",
-          "s": 197
+          "s": 997
         },
         {
           "d": "09-04",
-          "s": 197
+          "s": 997
         },
         {
           "d": "09-05",
-          "s": 197
+          "s": 997
         },
         {
           "d": "09-06",
-          "s": 197
+          "s": 997
         },
         {
           "d": "09-07",
-          "s": 197
+          "s": 997
         },
         {
           "d": "09-08",
-          "s": 197
+          "s": 997
         },
         {
           "d": "09-09",
-          "s": 197
+          "s": 999
         },
         {
           "d": "09-10",
-          "s": 197
+          "s": 999
         },
         {
           "d": "09-11",
-          "s": 199
+          "s": 999
         },
         {
           "d": "09-12",
-          "s": 199
+          "s": 999
         },
         {
           "d": "09-13",
-          "s": 200
+          "s": 999
         },
         {
           "d": "09-14",
-          "s": 200
+          "s": 1000
+        },
+        {
+          "d": "09-15",
+          "s": 1000
         }
       ]
     },
     "score": {
-      "score": 20.02,
+      "score": 16.69,
       "breakdown": {
-        "vel": 18,
-        "acc": 61,
-        "health": 80,
+        "vel": 4,
+        "acc": 43,
+        "health": 100,
         "fresh": 0,
-        "signal": 55
+        "signal": 85
       },
-      "stage": "late",
-      "stage_multiplier": 0.85,
+      "stage": "mid_early",
+      "stage_multiplier": 1.1,
       "confidence": 1.0,
-      "base_score": 23.55,
-      "explanation": "HyperNavBarRules 是 Python 开源项目，主打「HyperNavBar Rules 是 HyperNavBar的维护规则列表，用于管理第三方应用的导航栏沉浸优化规则。」；接近增长天花板；社区健康（fork/star 比 8.0%，0 个 open issue）。"
+      "base_score": 15.18,
+      "explanation": "producthunt-daily-hot 是 Python 开源项目，主打「自动生成每日Product Hunt热门产品中文榜单，基于GitHub Actions自动提交Markdown文件」；处于中早期增长；社区健康（fork/star 比 13.7%，2 个 open issue）、项目元数据完整。"
     }
   },
   {
@@ -4028,12 +3834,12 @@
       "name": "react-native-nitro-fetch",
       "full_name": "margelo/react-native-nitro-fetch",
       "description": "A super-fast network fetching library for React Native with prefetching support",
-      "stars": 995,
-      "forks": 50,
-      "open_issues": 14,
+      "stars": 996,
+      "forks": 51,
+      "open_issues": 15,
       "created_at": "2025-09-03T13:37:12+00:00",
       "pushed_at": "2026-09-12T21:32:20+00:00",
-      "updated_at": "2026-09-14T03:56:56+00:00",
+      "updated_at": "2026-09-14T12:18:54+00:00",
       "topics": [
         "cronet",
         "fast",
@@ -4053,12 +3859,8 @@
       "default_branch": "main",
       "archived": false,
       "search_score": 1.0,
-      "stars_7d_ago": 989,
+      "stars_7d_ago": 991,
       "star_series": [
-        {
-          "d": "08-16",
-          "s": 933
-        },
         {
           "d": "08-17",
           "s": 933
@@ -4173,14 +3975,18 @@
         },
         {
           "d": "09-14",
-          "s": 995
+          "s": 996
+        },
+        {
+          "d": "09-15",
+          "s": 996
         }
       ]
     },
     "score": {
-      "score": 19.64,
+      "score": 15.78,
       "breakdown": {
-        "vel": 32,
+        "vel": 15,
         "acc": 57,
         "health": 73,
         "fresh": 0,
@@ -4189,8 +3995,8 @@
       "stage": "saturated",
       "stage_multiplier": 0.7,
       "confidence": 1.0,
-      "base_score": 28.06,
-      "explanation": "react-native-nitro-fetch 是 C++ 开源项目，主打「A super-fast network fetching library for React Native with prefetching support」；增长已饱和；社区健康（fork/star 比 5.0%，14 个 open issue）、项目元数据完整。"
+      "base_score": 22.54,
+      "explanation": "react-native-nitro-fetch 是 C++ 开源项目，主打「A super-fast network fetching library for React Native with prefetching support」；增长已饱和；社区健康（fork/star 比 5.1%，15 个 open issue）、项目元数据完整。"
     }
   },
   {
@@ -4201,10 +4007,10 @@
       "description": "A luxurious package manager for Lua",
       "stars": 995,
       "forks": 29,
-      "open_issues": 100,
+      "open_issues": 99,
       "created_at": "2024-01-11T08:11:52+00:00",
-      "pushed_at": "2026-09-14T10:45:17+00:00",
-      "updated_at": "2026-09-13T22:32:22+00:00",
+      "pushed_at": "2026-09-14T21:23:52+00:00",
+      "updated_at": "2026-09-14T21:20:56+00:00",
       "topics": [
         "lua",
         "luarocks",
@@ -4220,88 +4026,84 @@
       "stars_7d_ago": 994,
       "star_series": [
         {
-          "d": "08-16",
-          "s": 993
-        },
-        {
           "d": "08-17",
-          "s": 993
+          "s": 992
         },
         {
           "d": "08-18",
-          "s": 993
+          "s": 992
         },
         {
           "d": "08-19",
-          "s": 993
+          "s": 992
         },
         {
           "d": "08-20",
-          "s": 993
+          "s": 992
         },
         {
           "d": "08-21",
-          "s": 993
+          "s": 992
         },
         {
           "d": "08-22",
-          "s": 993
+          "s": 992
         },
         {
           "d": "08-23",
-          "s": 993
+          "s": 992
         },
         {
           "d": "08-24",
-          "s": 993
+          "s": 992
         },
         {
           "d": "08-25",
-          "s": 993
+          "s": 992
         },
         {
           "d": "08-26",
-          "s": 993
+          "s": 992
         },
         {
           "d": "08-27",
-          "s": 993
+          "s": 992
         },
         {
           "d": "08-28",
-          "s": 993
+          "s": 992
         },
         {
           "d": "08-29",
-          "s": 993
+          "s": 992
         },
         {
           "d": "08-30",
-          "s": 993
+          "s": 992
         },
         {
           "d": "08-31",
-          "s": 993
+          "s": 992
         },
         {
           "d": "09-01",
-          "s": 993
+          "s": 992
         },
         {
           "d": "09-02",
-          "s": 993
+          "s": 992
         },
         {
           "d": "09-03",
-          "s": 993
+          "s": 992
         },
         {
           "d": "09-04",
-          "s": 993
+          "s": 992
         },
         {
           "d": "09-05",
-          "s": 993
+          "s": 992
         },
         {
           "d": "09-06",
@@ -4338,23 +4140,27 @@
         {
           "d": "09-14",
           "s": 995
+        },
+        {
+          "d": "09-15",
+          "s": 995
         }
       ]
     },
     "score": {
-      "score": 15.53,
+      "score": 14.3,
       "breakdown": {
-        "vel": 7,
-        "acc": 50,
+        "vel": 4,
+        "acc": 46,
         "health": 43,
         "fresh": 0,
         "signal": 85
       },
-      "stage": "mid_late",
-      "stage_multiplier": 1.0,
+      "stage": "mid_early",
+      "stage_multiplier": 1.1,
       "confidence": 1.0,
-      "base_score": 15.53,
-      "explanation": "lux 是 Rust 开源项目，主打「A luxurious package manager for Lua」；处于中后期增长；项目元数据完整。"
+      "base_score": 13.0,
+      "explanation": "lux 是 Rust 开源项目，主打「A luxurious package manager for Lua」；处于中早期增长；项目元数据完整。"
     }
   },
   {
@@ -4379,10 +4185,6 @@
       "search_score": 1.0,
       "stars_7d_ago": 200,
       "star_series": [
-        {
-          "d": "08-16",
-          "s": 149
-        },
         {
           "d": "08-17",
           "s": 149
@@ -4498,6 +4300,10 @@
         {
           "d": "09-14",
           "s": 200
+        },
+        {
+          "d": "09-15",
+          "s": 200
         }
       ]
     },
@@ -4527,8 +4333,8 @@
       "forks": 13,
       "open_issues": 2,
       "created_at": "2024-06-29T21:10:23+00:00",
-      "pushed_at": "2026-09-14T05:27:24+00:00",
-      "updated_at": "2026-09-14T05:27:28+00:00",
+      "pushed_at": "2026-09-14T23:39:02+00:00",
+      "updated_at": "2026-09-14T23:39:06+00:00",
       "topics": [
         "fzf-lua",
         "lualine",
@@ -4560,10 +4366,6 @@
       "search_score": 1.0,
       "stars_7d_ago": 199,
       "star_series": [
-        {
-          "d": "08-16",
-          "s": 196
-        },
         {
           "d": "08-17",
           "s": 196
@@ -4679,13 +4481,17 @@
         {
           "d": "09-14",
           "s": 200
+        },
+        {
+          "d": "09-15",
+          "s": 200
         }
       ]
     },
     "score": {
-      "score": 12.19,
+      "score": 10.4,
       "breakdown": {
-        "vel": 7,
+        "vel": 4,
         "acc": 50,
         "health": 75,
         "fresh": 0,
@@ -4694,7 +4500,7 @@
       "stage": "saturated",
       "stage_multiplier": 0.7,
       "confidence": 1.0,
-      "base_score": 17.41,
+      "base_score": 14.85,
       "explanation": "project.nvim 是 Lua 开源项目，主打「Actively maintained fork of ahmedkhalf/project.nvim. Detects and chdirs to the project root, with its own UI, provides lualine component, supports oil.nvim, includes pickers for telescope, snacks, fzf-lua, and picker.nvim.」；增长已饱和；社区健康（fork/star 比 6.5%，2 个 open issue）、项目元数据完整。"
     }
   },
@@ -4721,17 +4527,17 @@
       "stars_7d_ago": 200,
       "star_series": [
         {
-          "d": "09-07",
+          "d": "09-08",
           "s": 200
         },
         {
-          "d": "09-14",
+          "d": "09-15",
           "s": 200
         }
       ]
     },
     "score": {
-      "score": 9.14,
+      "score": 9.13,
       "breakdown": {
         "vel": 0,
         "acc": 50,
@@ -4742,7 +4548,7 @@
       "stage": "mid_early",
       "stage_multiplier": 1.1,
       "confidence": 0.5,
-      "base_score": 16.61,
+      "base_score": 16.6,
       "explanation": "memkraft 是 Python 开源项目，主打「Ultimate zero-dependency compound knowledge system for AI agents. Auto-extract, classify, search, and maintain memory in plain Markdown.」；处于中早期增长；社区健康（fork/star 比 12.0%，16 个 open issue）。"
     }
   },
@@ -4769,11 +4575,11 @@
       "stars_7d_ago": 200,
       "star_series": [
         {
-          "d": "09-07",
+          "d": "09-08",
           "s": 200
         },
         {
-          "d": "09-14",
+          "d": "09-15",
           "s": 200
         }
       ]
@@ -4790,8 +4596,168 @@
       "stage": "mid_late",
       "stage_multiplier": 1.0,
       "confidence": 0.5,
-      "base_score": 14.79,
+      "base_score": 14.77,
       "explanation": "delivery-intel 是 TypeScript 开源项目，主打「Point it at any GitHub repo, get DORA metrics, vulnerability scan, and a health score. CLI + dashboard.」；处于中后期增长。"
+    }
+  },
+  {
+    "repo": {
+      "owner": "Zproger",
+      "name": "GenesisNvim",
+      "full_name": "Zproger/GenesisNvim",
+      "description": "A minimalistic nvim config aimed at Python developers. It is a lightweight replacement for PyCharm and VsCode, eliminating all unnecessary featuresd to be easily portable for running on servers and for deployment on Linux systems.",
+      "stars": 200,
+      "forks": 19,
+      "open_issues": 0,
+      "created_at": "2024-05-13T15:55:09+00:00",
+      "pushed_at": "2026-09-09T04:03:41+00:00",
+      "updated_at": "2026-09-09T04:03:59+00:00",
+      "topics": [],
+      "language": "Lua",
+      "license": "MIT",
+      "homepage": null,
+      "html_url": "https://github.com/Zproger/GenesisNvim",
+      "default_branch": "main",
+      "archived": false,
+      "search_score": 1.0,
+      "stars_7d_ago": 200,
+      "star_series": [
+        {
+          "d": "08-17",
+          "s": 196
+        },
+        {
+          "d": "08-18",
+          "s": 196
+        },
+        {
+          "d": "08-19",
+          "s": 196
+        },
+        {
+          "d": "08-20",
+          "s": 196
+        },
+        {
+          "d": "08-21",
+          "s": 196
+        },
+        {
+          "d": "08-22",
+          "s": 197
+        },
+        {
+          "d": "08-23",
+          "s": 197
+        },
+        {
+          "d": "08-24",
+          "s": 197
+        },
+        {
+          "d": "08-25",
+          "s": 197
+        },
+        {
+          "d": "08-26",
+          "s": 197
+        },
+        {
+          "d": "08-27",
+          "s": 197
+        },
+        {
+          "d": "08-28",
+          "s": 197
+        },
+        {
+          "d": "08-29",
+          "s": 199
+        },
+        {
+          "d": "08-30",
+          "s": 199
+        },
+        {
+          "d": "08-31",
+          "s": 199
+        },
+        {
+          "d": "09-01",
+          "s": 199
+        },
+        {
+          "d": "09-02",
+          "s": 199
+        },
+        {
+          "d": "09-03",
+          "s": 200
+        },
+        {
+          "d": "09-04",
+          "s": 200
+        },
+        {
+          "d": "09-05",
+          "s": 200
+        },
+        {
+          "d": "09-06",
+          "s": 200
+        },
+        {
+          "d": "09-07",
+          "s": 200
+        },
+        {
+          "d": "09-08",
+          "s": 200
+        },
+        {
+          "d": "09-09",
+          "s": 200
+        },
+        {
+          "d": "09-10",
+          "s": 200
+        },
+        {
+          "d": "09-11",
+          "s": 200
+        },
+        {
+          "d": "09-12",
+          "s": 200
+        },
+        {
+          "d": "09-13",
+          "s": 200
+        },
+        {
+          "d": "09-14",
+          "s": 200
+        },
+        {
+          "d": "09-15",
+          "s": 200
+        }
+      ]
+    },
+    "score": {
+      "score": 5.99,
+      "breakdown": {
+        "vel": 0,
+        "acc": 46,
+        "health": 85,
+        "fresh": 0,
+        "signal": 55
+      },
+      "stage": "saturated",
+      "stage_multiplier": 0.7,
+      "confidence": 1.0,
+      "base_score": 8.56,
+      "explanation": "GenesisNvim 是 Lua 开源项目，主打「A minimalistic nvim config aimed at Python developers. It is a lightweight replacement for PyCharm and VsCode, eliminating all unnecessary featuresd to be easily portable for running on servers and for deployment on Linux systems.」；增长已饱和；社区健康（fork/star 比 9.5%，0 个 open issue）。"
     }
   }
 ]
