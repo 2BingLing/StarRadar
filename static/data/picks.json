@@ -1,523 +1,337 @@
 [
   {
     "repo": {
-      "owner": "powerfooI",
-      "name": "roamgate",
-      "full_name": "powerfooI/roamgate",
-      "description": "A Herdr client for any screen. Control terminals, monitor coding agents, and review files and diffs from desktop or mobile.",
-      "stars": 200,
-      "forks": 25,
-      "open_issues": 2,
-      "created_at": "2026-08-07T10:04:29+00:00",
-      "pushed_at": "2026-09-18T10:03:48+00:00",
-      "updated_at": "2026-09-18T10:03:31+00:00",
+      "owner": "anywhere-labs",
+      "name": "Agents-Anywhere",
+      "full_name": "anywhere-labs/Agents-Anywhere",
+      "description": "跨设备的开源Agent工作台",
+      "stars": 1000,
+      "forks": 110,
+      "open_issues": 56,
+      "created_at": "2026-05-22T01:33:33+00:00",
+      "pushed_at": "2026-09-18T12:27:24+00:00",
+      "updated_at": "2026-09-19T10:12:52+00:00",
       "topics": [
-        "ai-agents",
-        "bun",
-        "code-review",
-        "developer-tools",
-        "git-worktree",
-        "herdr",
-        "herdr-client",
-        "herdr-plugin",
-        "mobile-friendly",
-        "pwa",
-        "remote-access",
-        "self-hosted",
-        "typescript",
-        "web-terminal"
+        "acp",
+        "agentclientprotocol",
+        "agents",
+        "claudecode",
+        "codex",
+        "codex-app",
+        "llm",
+        "opencode",
+        "remote",
+        "remote-control"
       ],
       "language": "TypeScript",
+      "license": null,
+      "homepage": "agents-anywhere.com",
+      "html_url": "https://github.com/anywhere-labs/Agents-Anywhere",
+      "default_branch": "main",
+      "archived": false,
+      "search_score": 1.0,
+      "stars_7d_ago": 934,
+      "star_series": [
+        {
+          "d": "08-21",
+          "s": 934
+        },
+        {
+          "d": "08-22",
+          "s": 934
+        },
+        {
+          "d": "08-23",
+          "s": 934
+        },
+        {
+          "d": "08-24",
+          "s": 934
+        },
+        {
+          "d": "08-25",
+          "s": 934
+        },
+        {
+          "d": "08-26",
+          "s": 934
+        },
+        {
+          "d": "08-27",
+          "s": 934
+        },
+        {
+          "d": "08-28",
+          "s": 934
+        },
+        {
+          "d": "08-29",
+          "s": 934
+        },
+        {
+          "d": "08-30",
+          "s": 934
+        },
+        {
+          "d": "08-31",
+          "s": 934
+        },
+        {
+          "d": "09-01",
+          "s": 934
+        },
+        {
+          "d": "09-02",
+          "s": 934
+        },
+        {
+          "d": "09-03",
+          "s": 934
+        },
+        {
+          "d": "09-04",
+          "s": 934
+        },
+        {
+          "d": "09-05",
+          "s": 934
+        },
+        {
+          "d": "09-06",
+          "s": 934
+        },
+        {
+          "d": "09-07",
+          "s": 934
+        },
+        {
+          "d": "09-08",
+          "s": 934
+        },
+        {
+          "d": "09-09",
+          "s": 934
+        },
+        {
+          "d": "09-10",
+          "s": 934
+        },
+        {
+          "d": "09-11",
+          "s": 934
+        },
+        {
+          "d": "09-12",
+          "s": 934
+        },
+        {
+          "d": "09-13",
+          "s": 934
+        },
+        {
+          "d": "09-14",
+          "s": 934
+        },
+        {
+          "d": "09-15",
+          "s": 934
+        },
+        {
+          "d": "09-16",
+          "s": 934
+        },
+        {
+          "d": "09-17",
+          "s": 939
+        },
+        {
+          "d": "09-18",
+          "s": 975
+        },
+        {
+          "d": "09-19",
+          "s": 1000
+        }
+      ]
+    },
+    "score": {
+      "score": 95.66,
+      "breakdown": {
+        "vel": 100,
+        "acc": 99,
+        "health": 84,
+        "fresh": 67,
+        "signal": 65
+      },
+      "stage": "mid_early",
+      "stage_multiplier": 1.1,
+      "confidence": 1.0,
+      "base_score": 86.96,
+      "explanation": "Agents-Anywhere 是 TypeScript 开源项目，主打「跨设备的开源Agent工作台」；处于中早期增长，本周涨速 9.4 star/天，涨速在加快；社区健康（fork/star 比 11.0%，56 个 open issue）。"
+    }
+  },
+  {
+    "repo": {
+      "owner": "nostacks",
+      "name": "ekphos",
+      "full_name": "nostacks/ekphos",
+      "description": "A lightweight, fast, terminal-based markdown research tool inspired by Obsidian",
+      "stars": 999,
+      "forks": 43,
+      "open_issues": 4,
+      "created_at": "2025-12-15T11:06:31+00:00",
+      "pushed_at": "2026-09-15T03:15:22+00:00",
+      "updated_at": "2026-09-19T10:03:19+00:00",
+      "topics": [
+        "cli",
+        "productivity",
+        "tui"
+      ],
+      "language": "Rust",
       "license": "MIT",
-      "homepage": "https://roamgate.dev/",
-      "html_url": "https://github.com/powerfooI/roamgate",
+      "homepage": "https://ekphos.nostacks.xyz",
+      "html_url": "https://github.com/nostacks/ekphos",
       "default_branch": "main",
       "archived": false,
       "search_score": 1.0,
-      "stars_7d_ago": 151,
+      "stars_7d_ago": 975,
       "star_series": [
         {
-          "d": "08-20",
-          "s": 151
-        },
-        {
           "d": "08-21",
-          "s": 151
+          "s": 968
         },
         {
           "d": "08-22",
-          "s": 151
+          "s": 968
         },
         {
           "d": "08-23",
-          "s": 151
+          "s": 968
         },
         {
           "d": "08-24",
-          "s": 151
+          "s": 968
         },
         {
           "d": "08-25",
-          "s": 151
+          "s": 968
         },
         {
           "d": "08-26",
-          "s": 151
+          "s": 968
         },
         {
           "d": "08-27",
-          "s": 151
+          "s": 969
         },
         {
           "d": "08-28",
-          "s": 151
+          "s": 970
         },
         {
           "d": "08-29",
-          "s": 151
+          "s": 971
         },
         {
           "d": "08-30",
-          "s": 151
+          "s": 971
         },
         {
           "d": "08-31",
-          "s": 151
+          "s": 971
         },
         {
           "d": "09-01",
-          "s": 151
+          "s": 971
         },
         {
           "d": "09-02",
-          "s": 151
+          "s": 972
         },
         {
           "d": "09-03",
-          "s": 151
+          "s": 973
         },
         {
           "d": "09-04",
-          "s": 151
+          "s": 973
         },
         {
           "d": "09-05",
-          "s": 151
+          "s": 973
         },
         {
           "d": "09-06",
-          "s": 151
+          "s": 973
         },
         {
           "d": "09-07",
-          "s": 151
+          "s": 973
         },
         {
           "d": "09-08",
-          "s": 151
+          "s": 974
         },
         {
           "d": "09-09",
-          "s": 151
+          "s": 974
         },
         {
           "d": "09-10",
-          "s": 151
+          "s": 974
         },
         {
           "d": "09-11",
-          "s": 151
+          "s": 975
         },
         {
           "d": "09-12",
-          "s": 151
+          "s": 975
         },
         {
           "d": "09-13",
-          "s": 151
+          "s": 975
         },
         {
           "d": "09-14",
-          "s": 162
+          "s": 975
         },
         {
           "d": "09-15",
-          "s": 177
+          "s": 976
         },
         {
           "d": "09-16",
-          "s": 189
+          "s": 977
         },
         {
           "d": "09-17",
-          "s": 198
+          "s": 984
         },
         {
           "d": "09-18",
-          "s": 200
+          "s": 996
+        },
+        {
+          "d": "09-19",
+          "s": 999
         }
       ]
     },
     "score": {
-      "score": 100.0,
+      "score": 71.58,
       "breakdown": {
-        "vel": 87,
-        "acc": 99,
-        "health": 94,
-        "fresh": 88,
-        "signal": 100
+        "vel": 66,
+        "acc": 96,
+        "health": 72,
+        "fresh": 24,
+        "signal": 85
       },
-      "stage": "early",
-      "stage_multiplier": 1.2,
+      "stage": "mid_early",
+      "stage_multiplier": 1.1,
       "confidence": 1.0,
-      "base_score": 92.81,
-      "explanation": "roamgate 是 TypeScript 开源项目，主打「A Herdr client for any screen. Control terminals, monitor coding agents, and review files and diffs from desktop or mobile.」；处于增长早期，本周涨速 7.0 star/天，涨速在加快；社区健康（fork/star 比 12.5%，2 个 open issue）、项目元数据完整、开发活跃。"
-    }
-  },
-  {
-    "repo": {
-      "owner": "TabularisDB",
-      "name": "tabularis",
-      "full_name": "TabularisDB/tabularis",
-      "description": "Open-source desktop SQL workspace with 3 built-in database drivers and 16 shipped plugins, including SQL Server, DuckDB, ClickHouse and Redis. Built-in MCP server for Claude, Cursor and Devin, SQL notebooks and visual EXPLAIN.",
-      "stars": 4983,
-      "forks": 325,
-      "open_issues": 96,
-      "created_at": "2026-01-26T21:48:07+00:00",
-      "pushed_at": "2026-09-18T08:01:23+00:00",
-      "updated_at": "2026-09-18T09:45:05+00:00",
-      "topics": [
-        "ai-agent",
-        "ai-assistant",
-        "cross-platform",
-        "database-client",
-        "database-gui",
-        "database-tool",
-        "er-diagram",
-        "mariadb",
-        "mcp",
-        "mcp-server",
-        "mysql",
-        "postgresql",
-        "rust",
-        "sql",
-        "sql-editor",
-        "sql-notebook",
-        "sqlite",
-        "tauri",
-        "typescript",
-        "visual-query-builder"
-      ],
-      "language": "TypeScript",
-      "license": "Apache-2.0",
-      "homepage": "https://tabularis.dev",
-      "html_url": "https://github.com/TabularisDB/tabularis",
-      "default_branch": "main",
-      "archived": false,
-      "search_score": 1.0,
-      "stars_7d_ago": 4953,
-      "star_series": [
-        {
-          "d": "08-20",
-          "s": 4953
-        },
-        {
-          "d": "08-21",
-          "s": 4953
-        },
-        {
-          "d": "08-22",
-          "s": 4953
-        },
-        {
-          "d": "08-23",
-          "s": 4953
-        },
-        {
-          "d": "08-24",
-          "s": 4953
-        },
-        {
-          "d": "08-25",
-          "s": 4953
-        },
-        {
-          "d": "08-26",
-          "s": 4953
-        },
-        {
-          "d": "08-27",
-          "s": 4953
-        },
-        {
-          "d": "08-28",
-          "s": 4953
-        },
-        {
-          "d": "08-29",
-          "s": 4953
-        },
-        {
-          "d": "08-30",
-          "s": 4953
-        },
-        {
-          "d": "08-31",
-          "s": 4953
-        },
-        {
-          "d": "09-01",
-          "s": 4953
-        },
-        {
-          "d": "09-02",
-          "s": 4953
-        },
-        {
-          "d": "09-03",
-          "s": 4953
-        },
-        {
-          "d": "09-04",
-          "s": 4953
-        },
-        {
-          "d": "09-05",
-          "s": 4953
-        },
-        {
-          "d": "09-06",
-          "s": 4953
-        },
-        {
-          "d": "09-07",
-          "s": 4953
-        },
-        {
-          "d": "09-08",
-          "s": 4953
-        },
-        {
-          "d": "09-09",
-          "s": 4953
-        },
-        {
-          "d": "09-10",
-          "s": 4953
-        },
-        {
-          "d": "09-11",
-          "s": 4953
-        },
-        {
-          "d": "09-12",
-          "s": 4953
-        },
-        {
-          "d": "09-13",
-          "s": 4953
-        },
-        {
-          "d": "09-14",
-          "s": 4953
-        },
-        {
-          "d": "09-15",
-          "s": 4953
-        },
-        {
-          "d": "09-16",
-          "s": 4960
-        },
-        {
-          "d": "09-17",
-          "s": 4979
-        },
-        {
-          "d": "09-18",
-          "s": 4983
-        }
-      ]
-    },
-    "score": {
-      "score": 73.18,
-      "breakdown": {
-        "vel": 70,
-        "acc": 99,
-        "health": 79,
-        "fresh": 36,
-        "signal": 100
-      },
-      "stage": "mid_late",
-      "stage_multiplier": 1.0,
-      "confidence": 1.0,
-      "base_score": 73.18,
-      "explanation": "tabularis 是 TypeScript 开源项目，主打「Open-source desktop SQL workspace with 3 built-in database drivers and 16 shipped plugins, including SQL Server, DuckDB, ClickHouse and Redis. Built-in MCP server for Claude, Cursor and Devin, SQL notebooks and visual EXPLAIN.」；处于中后期增长，本周涨速 4.3 star/天，涨速在加快；社区健康（fork/star 比 6.5%，96 个 open issue）、项目元数据完整。"
-    }
-  },
-  {
-    "repo": {
-      "owner": "VizzleTF",
-      "name": "luci-theme-footstrap",
-      "full_name": "VizzleTF/luci-theme-footstrap",
-      "description": "A faster, better-looking LuCI. Theme for OpenWrt 24.10+ with SPA navigation and real mobile layout",
-      "stars": 200,
-      "forks": 11,
-      "open_issues": 3,
-      "created_at": "2026-07-08T07:20:08+00:00",
-      "pushed_at": "2026-09-16T06:40:38+00:00",
-      "updated_at": "2026-09-18T04:29:42+00:00",
-      "topics": [
-        "luci",
-        "luci-theme",
-        "openwrt",
-        "openwrt-theme"
-      ],
-      "language": "JavaScript",
-      "license": "Apache-2.0",
-      "homepage": "https://vizzletf.github.io/luci-theme-footstrap/playground.html",
-      "html_url": "https://github.com/VizzleTF/luci-theme-footstrap",
-      "default_branch": "main",
-      "archived": false,
-      "search_score": 1.0,
-      "stars_7d_ago": 187,
-      "star_series": [
-        {
-          "d": "08-20",
-          "s": 167
-        },
-        {
-          "d": "08-21",
-          "s": 167
-        },
-        {
-          "d": "08-22",
-          "s": 167
-        },
-        {
-          "d": "08-23",
-          "s": 167
-        },
-        {
-          "d": "08-24",
-          "s": 167
-        },
-        {
-          "d": "08-25",
-          "s": 167
-        },
-        {
-          "d": "08-26",
-          "s": 167
-        },
-        {
-          "d": "08-27",
-          "s": 167
-        },
-        {
-          "d": "08-28",
-          "s": 167
-        },
-        {
-          "d": "08-29",
-          "s": 167
-        },
-        {
-          "d": "08-30",
-          "s": 167
-        },
-        {
-          "d": "08-31",
-          "s": 167
-        },
-        {
-          "d": "09-01",
-          "s": 167
-        },
-        {
-          "d": "09-02",
-          "s": 167
-        },
-        {
-          "d": "09-03",
-          "s": 168
-        },
-        {
-          "d": "09-04",
-          "s": 170
-        },
-        {
-          "d": "09-05",
-          "s": 171
-        },
-        {
-          "d": "09-06",
-          "s": 176
-        },
-        {
-          "d": "09-07",
-          "s": 177
-        },
-        {
-          "d": "09-08",
-          "s": 179
-        },
-        {
-          "d": "09-09",
-          "s": 180
-        },
-        {
-          "d": "09-10",
-          "s": 182
-        },
-        {
-          "d": "09-11",
-          "s": 185
-        },
-        {
-          "d": "09-12",
-          "s": 187
-        },
-        {
-          "d": "09-13",
-          "s": 189
-        },
-        {
-          "d": "09-14",
-          "s": 192
-        },
-        {
-          "d": "09-15",
-          "s": 197
-        },
-        {
-          "d": "09-16",
-          "s": 198
-        },
-        {
-          "d": "09-17",
-          "s": 199
-        },
-        {
-          "d": "09-18",
-          "s": 200
-        }
-      ]
-    },
-    "score": {
-      "score": 69.55,
-      "breakdown": {
-        "vel": 44,
-        "acc": 45,
-        "health": 71,
-        "fresh": 80,
-        "signal": 100
-      },
-      "stage": "early",
-      "stage_multiplier": 1.2,
-      "confidence": 1.0,
-      "base_score": 57.96,
-      "explanation": "luci-theme-footstrap 是 JavaScript 开源项目，主打「A faster, better-looking LuCI. Theme for OpenWrt 24.10+ with SPA navigation and real mobile layout」；处于增长早期，本周涨速 1.9 star/天；社区健康（fork/star 比 5.5%，3 个 open issue）、项目元数据完整、开发活跃。"
+      "base_score": 65.07,
+      "explanation": "ekphos 是 Rust 开源项目，主打「A lightweight, fast, terminal-based markdown research tool inspired by Obsidian」；处于中早期增长，本周涨速 3.4 star/天，涨速在加快；社区健康（fork/star 比 4.3%，4 个 open issue）、项目元数据完整。"
     }
   },
   {
@@ -553,10 +367,6 @@
       "search_score": 1.0,
       "stars_7d_ago": 184,
       "star_series": [
-        {
-          "d": "08-20",
-          "s": 147
-        },
         {
           "d": "08-21",
           "s": 148
@@ -672,13 +482,17 @@
         {
           "d": "09-18",
           "s": 200
+        },
+        {
+          "d": "09-19",
+          "s": 200
         }
       ]
     },
     "score": {
-      "score": 68.13,
+      "score": 69.11,
       "breakdown": {
-        "vel": 50,
+        "vel": 52,
         "acc": 46,
         "health": 77,
         "fresh": 53,
@@ -687,176 +501,340 @@
       "stage": "early",
       "stage_multiplier": 1.2,
       "confidence": 1.0,
-      "base_score": 56.78,
+      "base_score": 57.59,
       "explanation": "flowpick 是 TypeScript 开源项目，主打「A powerful, all-in-one media resource sniffer and downloader extension. Automatically detect and bulk download videos (M3U8/HLS to MP4), audio, and images from any webpage. Privacy-focused with local conversion.」；处于增长早期，本周涨速 2.3 star/天；社区健康（fork/star 比 7.0%，0 个 open issue）、项目元数据完整。"
     }
   },
   {
     "repo": {
-      "owner": "TaylliSun",
-      "name": "Ars-note",
-      "full_name": "TaylliSun/Ars-note",
-      "description": "Local-first Markdown workspace and AI game design assistant for game development teams",
+      "owner": "niclasvestlund-YT",
+      "name": "vibepulse",
+      "full_name": "niclasvestlund-YT/vibepulse",
+      "description": "ESP32-S3 AMOLED for Claude Code & Codex usage, live agent activity, and answerable NEEDS YOU alerts. Local-first macOS/Windows host; optional encrypted relays.",
       "stars": 200,
-      "forks": 0,
-      "open_issues": 0,
-      "created_at": "2026-07-12T08:40:42+00:00",
-      "pushed_at": "2026-09-12T12:34:18+00:00",
-      "updated_at": "2026-09-18T06:38:22+00:00",
+      "forks": 33,
+      "open_issues": 5,
+      "created_at": "2026-08-12T10:30:31+00:00",
+      "pushed_at": "2026-09-17T23:06:16+00:00",
+      "updated_at": "2026-09-18T12:00:57+00:00",
       "topics": [
-        "electron",
-        "game-development",
-        "knowledge-base",
-        "local-first",
-        "markdown",
-        "self-hosted",
-        "typescript"
+        "amoled",
+        "claude",
+        "claude-code",
+        "codex",
+        "esp32-s3",
+        "lvgl",
+        "quota-tracker"
       ],
-      "language": "TypeScript",
-      "license": "GPL-3.0",
-      "homepage": null,
-      "html_url": "https://github.com/TaylliSun/Ars-note",
+      "language": "C",
+      "license": "MIT",
+      "homepage": "https://vibeonchip.com",
+      "html_url": "https://github.com/niclasvestlund-YT/vibepulse",
       "default_branch": "main",
       "archived": false,
       "search_score": 1.0,
-      "stars_7d_ago": 145,
+      "stars_7d_ago": 194,
       "star_series": [
         {
-          "d": "08-20",
-          "s": 0
-        },
-        {
           "d": "08-21",
-          "s": 0
+          "s": 193
         },
         {
           "d": "08-22",
-          "s": 0
+          "s": 193
         },
         {
           "d": "08-23",
-          "s": 0
+          "s": 193
         },
         {
           "d": "08-24",
-          "s": 0
+          "s": 193
         },
         {
           "d": "08-25",
-          "s": 0
+          "s": 193
         },
         {
           "d": "08-26",
-          "s": 0
+          "s": 193
         },
         {
           "d": "08-27",
-          "s": 0
+          "s": 193
         },
         {
           "d": "08-28",
-          "s": 4
+          "s": 193
         },
         {
           "d": "08-29",
-          "s": 14
+          "s": 193
         },
         {
           "d": "08-30",
-          "s": 17
+          "s": 193
         },
         {
           "d": "08-31",
-          "s": 27
+          "s": 193
         },
         {
           "d": "09-01",
-          "s": 31
+          "s": 193
         },
         {
           "d": "09-02",
-          "s": 44
+          "s": 193
         },
         {
           "d": "09-03",
-          "s": 56
+          "s": 193
         },
         {
           "d": "09-04",
-          "s": 66
+          "s": 193
         },
         {
           "d": "09-05",
-          "s": 78
+          "s": 193
         },
         {
           "d": "09-06",
-          "s": 86
+          "s": 193
         },
         {
           "d": "09-07",
-          "s": 96
+          "s": 193
         },
         {
           "d": "09-08",
-          "s": 104
+          "s": 193
         },
         {
           "d": "09-09",
-          "s": 113
+          "s": 193
         },
         {
           "d": "09-10",
-          "s": 127
+          "s": 193
         },
         {
           "d": "09-11",
-          "s": 134
+          "s": 193
         },
         {
           "d": "09-12",
-          "s": 145
+          "s": 193
         },
         {
           "d": "09-13",
-          "s": 153
+          "s": 194
         },
         {
           "d": "09-14",
-          "s": 165
-        },
-        {
-          "d": "09-15",
-          "s": 175
-        },
-        {
-          "d": "09-16",
-          "s": 183
-        },
-        {
-          "d": "09-17",
           "s": 195
         },
         {
+          "d": "09-15",
+          "s": 196
+        },
+        {
+          "d": "09-16",
+          "s": 196
+        },
+        {
+          "d": "09-17",
+          "s": 197
+        },
+        {
           "d": "09-18",
+          "s": 200
+        },
+        {
+          "d": "09-19",
           "s": 200
         }
       ]
     },
     "score": {
-      "score": 57.44,
+      "score": 65.03,
       "breakdown": {
-        "vel": 91,
-        "acc": 46,
-        "health": 60,
-        "fresh": 81,
-        "signal": 70
+        "vel": 27,
+        "acc": 67,
+        "health": 97,
+        "fresh": 90,
+        "signal": 85
       },
-      "stage": "late",
-      "stage_multiplier": 0.85,
+      "stage": "mid_early",
+      "stage_multiplier": 1.1,
       "confidence": 1.0,
-      "base_score": 67.57,
-      "explanation": "Ars-note 是 TypeScript 开源项目，主打「Local-first Markdown workspace and AI game design assistant for game development teams」；接近增长天花板，本周涨速 7.9 star/天；开发活跃。"
+      "base_score": 59.11,
+      "explanation": "vibepulse 是 C 开源项目，主打「ESP32-S3 AMOLED for Claude Code & Codex usage, live agent activity, and answerable NEEDS YOU alerts. Local-first macOS/Windows host; optional encrypted relays.」；处于中早期增长；社区健康（fork/star 比 16.5%，5 个 open issue）、项目元数据完整、开发活跃。"
+    }
+  },
+  {
+    "repo": {
+      "owner": "paxx12-snapmaker-u1",
+      "name": "SnapmakerU1-Extended-Firmware",
+      "full_name": "paxx12-snapmaker-u1/SnapmakerU1-Extended-Firmware",
+      "description": "Custom and repackaged Snapmaker U1 firmware",
+      "stars": 994,
+      "forks": 130,
+      "open_issues": 91,
+      "created_at": "2025-11-20T17:03:24+00:00",
+      "pushed_at": "2026-09-16T17:55:06+00:00",
+      "updated_at": "2026-09-19T00:09:00+00:00",
+      "topics": [
+        "firmware",
+        "snapmaker",
+        "ssh"
+      ],
+      "language": "Python",
+      "license": "GPL-3.0",
+      "homepage": "https://snapmakeru1-extended-firmware.pages.dev",
+      "html_url": "https://github.com/paxx12-snapmaker-u1/SnapmakerU1-Extended-Firmware",
+      "default_branch": "develop",
+      "archived": false,
+      "search_score": 1.0,
+      "stars_7d_ago": 987,
+      "star_series": [
+        {
+          "d": "08-21",
+          "s": 987
+        },
+        {
+          "d": "08-22",
+          "s": 987
+        },
+        {
+          "d": "08-23",
+          "s": 987
+        },
+        {
+          "d": "08-24",
+          "s": 987
+        },
+        {
+          "d": "08-25",
+          "s": 987
+        },
+        {
+          "d": "08-26",
+          "s": 987
+        },
+        {
+          "d": "08-27",
+          "s": 987
+        },
+        {
+          "d": "08-28",
+          "s": 987
+        },
+        {
+          "d": "08-29",
+          "s": 987
+        },
+        {
+          "d": "08-30",
+          "s": 987
+        },
+        {
+          "d": "08-31",
+          "s": 987
+        },
+        {
+          "d": "09-01",
+          "s": 987
+        },
+        {
+          "d": "09-02",
+          "s": 987
+        },
+        {
+          "d": "09-03",
+          "s": 987
+        },
+        {
+          "d": "09-04",
+          "s": 987
+        },
+        {
+          "d": "09-05",
+          "s": 987
+        },
+        {
+          "d": "09-06",
+          "s": 987
+        },
+        {
+          "d": "09-07",
+          "s": 987
+        },
+        {
+          "d": "09-08",
+          "s": 987
+        },
+        {
+          "d": "09-09",
+          "s": 987
+        },
+        {
+          "d": "09-10",
+          "s": 987
+        },
+        {
+          "d": "09-11",
+          "s": 987
+        },
+        {
+          "d": "09-12",
+          "s": 987
+        },
+        {
+          "d": "09-13",
+          "s": 987
+        },
+        {
+          "d": "09-14",
+          "s": 988
+        },
+        {
+          "d": "09-15",
+          "s": 989
+        },
+        {
+          "d": "09-16",
+          "s": 990
+        },
+        {
+          "d": "09-17",
+          "s": 992
+        },
+        {
+          "d": "09-18",
+          "s": 993
+        },
+        {
+          "d": "09-19",
+          "s": 994
+        }
+      ]
+    },
+    "score": {
+      "score": 52.24,
+      "breakdown": {
+        "vel": 31,
+        "acc": 73,
+        "health": 77,
+        "fresh": 17,
+        "signal": 100
+      },
+      "stage": "mid_early",
+      "stage_multiplier": 1.1,
+      "confidence": 1.0,
+      "base_score": 47.49,
+      "explanation": "SnapmakerU1-Extended-Firmware 是 Python 开源项目，主打「Custom and repackaged Snapmaker U1 firmware」；处于中早期增长，涨速在加快；社区健康（fork/star 比 13.1%，91 个 open issue）、项目元数据完整。"
     }
   }
 ]
