@@ -1,840 +1,857 @@
 [
   {
     "repo": {
-      "owner": "anywhere-labs",
-      "name": "Agents-Anywhere",
-      "full_name": "anywhere-labs/Agents-Anywhere",
-      "description": "跨设备的开源Agent工作台",
-      "stars": 1000,
-      "forks": 110,
-      "open_issues": 56,
-      "created_at": "2026-05-22T01:33:33+00:00",
-      "pushed_at": "2026-09-18T12:27:24+00:00",
-      "updated_at": "2026-09-19T10:12:52+00:00",
+      "owner": "LynnReal-AI",
+      "name": "LynnReal-Omni",
+      "full_name": "LynnReal-AI/LynnReal-Omni",
+      "description": "LynnReal-Omni brings text-to-video, image-to-video, human- and hand-pose guided generation, structural control, omni-reference generation, style transfer, video editing, degraded-video restoration and streaming long-video generation into a single framework, all at four-step fast generation. ",
+      "stars": 200,
+      "forks": 8,
+      "open_issues": 2,
+      "created_at": "2026-09-13T11:11:45+00:00",
+      "pushed_at": "2026-09-19T09:21:29+00:00",
+      "updated_at": "2026-09-20T09:43:02+00:00",
       "topics": [
-        "acp",
-        "agentclientprotocol",
-        "agents",
-        "claudecode",
-        "codex",
-        "codex-app",
-        "llm",
-        "opencode",
-        "remote",
-        "remote-control"
+        "benchmark",
+        "long-video-generation",
+        "multimodal",
+        "vae",
+        "video-dataset",
+        "video-generation",
+        "world-model"
       ],
-      "language": "TypeScript",
-      "license": null,
-      "homepage": "agents-anywhere.com",
-      "html_url": "https://github.com/anywhere-labs/Agents-Anywhere",
+      "language": "Python",
+      "license": "NOASSERTION",
+      "homepage": null,
+      "html_url": "https://github.com/LynnReal-AI/LynnReal-Omni",
       "default_branch": "main",
       "archived": false,
       "search_score": 1.0,
-      "stars_7d_ago": 934,
+      "stars_7d_ago": 60,
       "star_series": [
         {
-          "d": "08-21",
-          "s": 934
-        },
-        {
           "d": "08-22",
-          "s": 934
+          "s": 60
         },
         {
           "d": "08-23",
-          "s": 934
+          "s": 60
         },
         {
           "d": "08-24",
-          "s": 934
+          "s": 60
         },
         {
           "d": "08-25",
-          "s": 934
+          "s": 60
         },
         {
           "d": "08-26",
-          "s": 934
+          "s": 60
         },
         {
           "d": "08-27",
-          "s": 934
+          "s": 60
         },
         {
           "d": "08-28",
-          "s": 934
+          "s": 60
         },
         {
           "d": "08-29",
-          "s": 934
+          "s": 60
         },
         {
           "d": "08-30",
-          "s": 934
+          "s": 60
         },
         {
           "d": "08-31",
-          "s": 934
+          "s": 60
         },
         {
           "d": "09-01",
-          "s": 934
+          "s": 60
         },
         {
           "d": "09-02",
-          "s": 934
+          "s": 60
         },
         {
           "d": "09-03",
-          "s": 934
+          "s": 60
         },
         {
           "d": "09-04",
-          "s": 934
+          "s": 60
         },
         {
           "d": "09-05",
-          "s": 934
+          "s": 60
         },
         {
           "d": "09-06",
-          "s": 934
+          "s": 60
         },
         {
           "d": "09-07",
-          "s": 934
+          "s": 60
         },
         {
           "d": "09-08",
-          "s": 934
+          "s": 60
         },
         {
           "d": "09-09",
-          "s": 934
+          "s": 60
         },
         {
           "d": "09-10",
-          "s": 934
+          "s": 60
         },
         {
           "d": "09-11",
-          "s": 934
+          "s": 60
         },
         {
           "d": "09-12",
-          "s": 934
+          "s": 60
         },
         {
           "d": "09-13",
-          "s": 934
+          "s": 60
         },
         {
           "d": "09-14",
-          "s": 934
+          "s": 60
         },
         {
           "d": "09-15",
-          "s": 934
+          "s": 97
         },
         {
           "d": "09-16",
-          "s": 934
+          "s": 145
         },
         {
           "d": "09-17",
-          "s": 939
+          "s": 176
         },
         {
           "d": "09-18",
-          "s": 975
+          "s": 191
         },
         {
           "d": "09-19",
-          "s": 1000
+          "s": 196
+        },
+        {
+          "d": "09-20",
+          "s": 200
         }
       ]
     },
     "score": {
-      "score": 95.66,
+      "score": 100.0,
       "breakdown": {
         "vel": 100,
         "acc": 99,
-        "health": 84,
-        "fresh": 67,
-        "signal": 65
-      },
-      "stage": "mid_early",
-      "stage_multiplier": 1.1,
-      "confidence": 1.0,
-      "base_score": 86.96,
-      "explanation": "Agents-Anywhere 是 TypeScript 开源项目，主打「跨设备的开源Agent工作台」；处于中早期增长，本周涨速 9.4 star/天，涨速在加快；社区健康（fork/star 比 11.0%，56 个 open issue）。"
-    }
-  },
-  {
-    "repo": {
-      "owner": "nostacks",
-      "name": "ekphos",
-      "full_name": "nostacks/ekphos",
-      "description": "A lightweight, fast, terminal-based markdown research tool inspired by Obsidian",
-      "stars": 999,
-      "forks": 43,
-      "open_issues": 4,
-      "created_at": "2025-12-15T11:06:31+00:00",
-      "pushed_at": "2026-09-15T03:15:22+00:00",
-      "updated_at": "2026-09-19T10:03:19+00:00",
-      "topics": [
-        "cli",
-        "productivity",
-        "tui"
-      ],
-      "language": "Rust",
-      "license": "MIT",
-      "homepage": "https://ekphos.nostacks.xyz",
-      "html_url": "https://github.com/nostacks/ekphos",
-      "default_branch": "main",
-      "archived": false,
-      "search_score": 1.0,
-      "stars_7d_ago": 975,
-      "star_series": [
-        {
-          "d": "08-21",
-          "s": 968
-        },
-        {
-          "d": "08-22",
-          "s": 968
-        },
-        {
-          "d": "08-23",
-          "s": 968
-        },
-        {
-          "d": "08-24",
-          "s": 968
-        },
-        {
-          "d": "08-25",
-          "s": 968
-        },
-        {
-          "d": "08-26",
-          "s": 968
-        },
-        {
-          "d": "08-27",
-          "s": 969
-        },
-        {
-          "d": "08-28",
-          "s": 970
-        },
-        {
-          "d": "08-29",
-          "s": 971
-        },
-        {
-          "d": "08-30",
-          "s": 971
-        },
-        {
-          "d": "08-31",
-          "s": 971
-        },
-        {
-          "d": "09-01",
-          "s": 971
-        },
-        {
-          "d": "09-02",
-          "s": 972
-        },
-        {
-          "d": "09-03",
-          "s": 973
-        },
-        {
-          "d": "09-04",
-          "s": 973
-        },
-        {
-          "d": "09-05",
-          "s": 973
-        },
-        {
-          "d": "09-06",
-          "s": 973
-        },
-        {
-          "d": "09-07",
-          "s": 973
-        },
-        {
-          "d": "09-08",
-          "s": 974
-        },
-        {
-          "d": "09-09",
-          "s": 974
-        },
-        {
-          "d": "09-10",
-          "s": 974
-        },
-        {
-          "d": "09-11",
-          "s": 975
-        },
-        {
-          "d": "09-12",
-          "s": 975
-        },
-        {
-          "d": "09-13",
-          "s": 975
-        },
-        {
-          "d": "09-14",
-          "s": 975
-        },
-        {
-          "d": "09-15",
-          "s": 976
-        },
-        {
-          "d": "09-16",
-          "s": 977
-        },
-        {
-          "d": "09-17",
-          "s": 984
-        },
-        {
-          "d": "09-18",
-          "s": 996
-        },
-        {
-          "d": "09-19",
-          "s": 999
-        }
-      ]
-    },
-    "score": {
-      "score": 71.58,
-      "breakdown": {
-        "vel": 66,
-        "acc": 96,
-        "health": 72,
-        "fresh": 24,
-        "signal": 85
-      },
-      "stage": "mid_early",
-      "stage_multiplier": 1.1,
-      "confidence": 1.0,
-      "base_score": 65.07,
-      "explanation": "ekphos 是 Rust 开源项目，主打「A lightweight, fast, terminal-based markdown research tool inspired by Obsidian」；处于中早期增长，本周涨速 3.4 star/天，涨速在加快；社区健康（fork/star 比 4.3%，4 个 open issue）、项目元数据完整。"
-    }
-  },
-  {
-    "repo": {
-      "owner": "ezwebtools",
-      "name": "flowpick",
-      "full_name": "ezwebtools/flowpick",
-      "description": "A powerful, all-in-one media resource sniffer and downloader extension. Automatically detect and bulk download videos (M3U8/HLS to MP4), audio, and images from any webpage. Privacy-focused with local conversion.",
-      "stars": 200,
-      "forks": 14,
-      "open_issues": 0,
-      "created_at": "2026-03-30T12:41:57+00:00",
-      "pushed_at": "2026-09-16T17:08:35+00:00",
-      "updated_at": "2026-09-18T07:34:39+00:00",
-      "topics": [
-        "bilibili-downloader",
-        "browser-extension",
-        "hls-downloader",
-        "image-downloader",
-        "m3u8-downloader",
-        "m3u8-to-mp4",
-        "media-capture",
-        "mpd-downloader",
-        "twitter-downloader",
-        "video-sniffer"
-      ],
-      "language": "TypeScript",
-      "license": "MIT",
-      "homepage": "https://flowpick.net",
-      "html_url": "https://github.com/ezwebtools/flowpick",
-      "default_branch": "main",
-      "archived": false,
-      "search_score": 1.0,
-      "stars_7d_ago": 184,
-      "star_series": [
-        {
-          "d": "08-21",
-          "s": 148
-        },
-        {
-          "d": "08-22",
-          "s": 149
-        },
-        {
-          "d": "08-23",
-          "s": 149
-        },
-        {
-          "d": "08-24",
-          "s": 151
-        },
-        {
-          "d": "08-25",
-          "s": 154
-        },
-        {
-          "d": "08-26",
-          "s": 158
-        },
-        {
-          "d": "08-27",
-          "s": 160
-        },
-        {
-          "d": "08-28",
-          "s": 160
-        },
-        {
-          "d": "08-29",
-          "s": 161
-        },
-        {
-          "d": "08-30",
-          "s": 161
-        },
-        {
-          "d": "08-31",
-          "s": 161
-        },
-        {
-          "d": "09-01",
-          "s": 163
-        },
-        {
-          "d": "09-02",
-          "s": 164
-        },
-        {
-          "d": "09-03",
-          "s": 165
-        },
-        {
-          "d": "09-04",
-          "s": 165
-        },
-        {
-          "d": "09-05",
-          "s": 165
-        },
-        {
-          "d": "09-06",
-          "s": 165
-        },
-        {
-          "d": "09-07",
-          "s": 165
-        },
-        {
-          "d": "09-08",
-          "s": 165
-        },
-        {
-          "d": "09-09",
-          "s": 180
-        },
-        {
-          "d": "09-10",
-          "s": 184
-        },
-        {
-          "d": "09-11",
-          "s": 184
-        },
-        {
-          "d": "09-12",
-          "s": 184
-        },
-        {
-          "d": "09-13",
-          "s": 184
-        },
-        {
-          "d": "09-14",
-          "s": 189
-        },
-        {
-          "d": "09-15",
-          "s": 199
-        },
-        {
-          "d": "09-16",
-          "s": 199
-        },
-        {
-          "d": "09-17",
-          "s": 199
-        },
-        {
-          "d": "09-18",
-          "s": 200
-        },
-        {
-          "d": "09-19",
-          "s": 200
-        }
-      ]
-    },
-    "score": {
-      "score": 69.11,
-      "breakdown": {
-        "vel": 52,
-        "acc": 46,
-        "health": 77,
-        "fresh": 53,
-        "signal": 85
+        "health": 67,
+        "fresh": 98,
+        "signal": 70
       },
       "stage": "early",
       "stage_multiplier": 1.2,
       "confidence": 1.0,
-      "base_score": 57.59,
-      "explanation": "flowpick 是 TypeScript 开源项目，主打「A powerful, all-in-one media resource sniffer and downloader extension. Automatically detect and bulk download videos (M3U8/HLS to MP4), audio, and images from any webpage. Privacy-focused with local conversion.」；处于增长早期，本周涨速 2.3 star/天；社区健康（fork/star 比 7.0%，0 个 open issue）、项目元数据完整。"
+      "base_score": 88.8,
+      "explanation": "LynnReal-Omni 是 Python 开源项目，主打「LynnReal-Omni brings text-to-video, image-to-video, human- and hand-pose guided generation, structural control, omni-reference generation, style transfer, video editing, degraded-video restoration and streaming long-video generation into a single framework, all at four-step fast generation.」；处于增长早期，本周涨速 20 star/天，涨速在加快；开发活跃。"
     }
   },
   {
     "repo": {
-      "owner": "niclasvestlund-YT",
-      "name": "vibepulse",
-      "full_name": "niclasvestlund-YT/vibepulse",
-      "description": "ESP32-S3 AMOLED for Claude Code & Codex usage, live agent activity, and answerable NEEDS YOU alerts. Local-first macOS/Windows host; optional encrypted relays.",
-      "stars": 200,
-      "forks": 33,
-      "open_issues": 5,
-      "created_at": "2026-08-12T10:30:31+00:00",
-      "pushed_at": "2026-09-17T23:06:16+00:00",
-      "updated_at": "2026-09-18T12:00:57+00:00",
+      "owner": "Pan-Chera",
+      "name": "Multi-Agent-CAD",
+      "full_name": "Pan-Chera/Multi-Agent-CAD",
+      "description": "MAC (Multi-Agent CAD): A decoupled multi-agent framework for text-to-CAD generation via constrained test-time compute",
+      "stars": 995,
+      "forks": 92,
+      "open_issues": 1,
+      "created_at": "2026-07-30T17:19:26+00:00",
+      "pushed_at": "2026-09-16T16:43:40+00:00",
+      "updated_at": "2026-09-20T05:51:51+00:00",
       "topics": [
-        "amoled",
-        "claude",
-        "claude-code",
-        "codex",
-        "esp32-s3",
-        "lvgl",
-        "quota-tracker"
+        "3d-modeling",
+        "3d-printing",
+        "agent-pipeline",
+        "aider",
+        "assembly",
+        "build123d",
+        "cad",
+        "generative-design",
+        "langgraph",
+        "llm",
+        "llm-agent",
+        "mechanical-engineering",
+        "multi-agent",
+        "opencascade",
+        "qwen",
+        "step",
+        "step-file",
+        "text-to-3d",
+        "text-to-cad",
+        "urdf"
       ],
-      "language": "C",
+      "language": "Python",
       "license": "MIT",
-      "homepage": "https://vibeonchip.com",
-      "html_url": "https://github.com/niclasvestlund-YT/vibepulse",
+      "homepage": null,
+      "html_url": "https://github.com/Pan-Chera/Multi-Agent-CAD",
       "default_branch": "main",
       "archived": false,
       "search_score": 1.0,
-      "stars_7d_ago": 194,
+      "stars_7d_ago": 941,
       "star_series": [
         {
-          "d": "08-21",
-          "s": 193
-        },
-        {
           "d": "08-22",
-          "s": 193
+          "s": 866
         },
         {
           "d": "08-23",
-          "s": 193
+          "s": 877
         },
         {
           "d": "08-24",
-          "s": 193
+          "s": 886
         },
         {
           "d": "08-25",
-          "s": 193
+          "s": 894
         },
         {
           "d": "08-26",
-          "s": 193
+          "s": 901
         },
         {
           "d": "08-27",
-          "s": 193
+          "s": 905
         },
         {
           "d": "08-28",
-          "s": 193
+          "s": 908
         },
         {
           "d": "08-29",
-          "s": 193
+          "s": 910
         },
         {
           "d": "08-30",
-          "s": 193
+          "s": 912
         },
         {
           "d": "08-31",
-          "s": 193
+          "s": 914
         },
         {
           "d": "09-01",
-          "s": 193
+          "s": 916
         },
         {
           "d": "09-02",
-          "s": 193
+          "s": 922
         },
         {
           "d": "09-03",
-          "s": 193
+          "s": 926
         },
         {
           "d": "09-04",
-          "s": 193
+          "s": 928
         },
         {
           "d": "09-05",
-          "s": 193
+          "s": 929
         },
         {
           "d": "09-06",
-          "s": 193
+          "s": 930
         },
         {
           "d": "09-07",
-          "s": 193
+          "s": 932
         },
         {
           "d": "09-08",
-          "s": 193
+          "s": 934
         },
         {
           "d": "09-09",
-          "s": 193
+          "s": 937
         },
         {
           "d": "09-10",
-          "s": 193
+          "s": 939
         },
         {
           "d": "09-11",
-          "s": 193
+          "s": 939
         },
         {
           "d": "09-12",
-          "s": 193
+          "s": 939
         },
         {
           "d": "09-13",
-          "s": 194
+          "s": 940
         },
         {
           "d": "09-14",
-          "s": 195
+          "s": 941
         },
         {
           "d": "09-15",
-          "s": 196
+          "s": 947
         },
         {
           "d": "09-16",
-          "s": 196
+          "s": 956
         },
         {
           "d": "09-17",
-          "s": 197
+          "s": 985
         },
         {
           "d": "09-18",
-          "s": 200
+          "s": 992
         },
         {
           "d": "09-19",
-          "s": 200
+          "s": 994
+        },
+        {
+          "d": "09-20",
+          "s": 995
         }
       ]
     },
     "score": {
-      "score": 65.03,
+      "score": 100.0,
       "breakdown": {
-        "vel": 27,
-        "acc": 67,
-        "health": 97,
-        "fresh": 90,
-        "signal": 85
+        "vel": 73,
+        "acc": 99,
+        "health": 90,
+        "fresh": 86,
+        "signal": 70
       },
-      "stage": "mid_early",
-      "stage_multiplier": 1.1,
+      "stage": "early",
+      "stage_multiplier": 1.2,
       "confidence": 1.0,
-      "base_score": 59.11,
-      "explanation": "vibepulse 是 C 开源项目，主打「ESP32-S3 AMOLED for Claude Code & Codex usage, live agent activity, and answerable NEEDS YOU alerts. Local-first macOS/Windows host; optional encrypted relays.」；处于中早期增长；社区健康（fork/star 比 16.5%，5 个 open issue）、项目元数据完整、开发活跃。"
+      "base_score": 84.03,
+      "explanation": "Multi-Agent-CAD 是 Python 开源项目，主打「MAC (Multi-Agent CAD): A decoupled multi-agent framework for text-to-CAD generation via constrained test-time compute」；处于增长早期，本周涨速 7.7 star/天，涨速在加快；社区健康（fork/star 比 9.2%，1 个 open issue）、开发活跃。"
     }
   },
   {
     "repo": {
-      "owner": "paxx12-snapmaker-u1",
-      "name": "SnapmakerU1-Extended-Firmware",
-      "full_name": "paxx12-snapmaker-u1/SnapmakerU1-Extended-Firmware",
-      "description": "Custom and repackaged Snapmaker U1 firmware",
+      "owner": "alibaba",
+      "name": "skill-up",
+      "full_name": "alibaba/skill-up",
+      "description": "An evaluation and evolution tool for Agent Skills.",
       "stars": 994,
-      "forks": 130,
-      "open_issues": 91,
-      "created_at": "2025-11-20T17:03:24+00:00",
-      "pushed_at": "2026-09-16T17:55:06+00:00",
-      "updated_at": "2026-09-19T00:09:00+00:00",
+      "forks": 77,
+      "open_issues": 27,
+      "created_at": "2026-05-09T10:09:28+00:00",
+      "pushed_at": "2026-09-20T10:06:41+00:00",
+      "updated_at": "2026-09-20T10:16:13+00:00",
       "topics": [
-        "firmware",
-        "snapmaker",
-        "ssh"
+        "agent-skills",
+        "ai",
+        "ai-agents",
+        "alibaba",
+        "skills"
       ],
-      "language": "Python",
-      "license": "GPL-3.0",
-      "homepage": "https://snapmakeru1-extended-firmware.pages.dev",
-      "html_url": "https://github.com/paxx12-snapmaker-u1/SnapmakerU1-Extended-Firmware",
-      "default_branch": "develop",
+      "language": "Go",
+      "license": "Apache-2.0",
+      "homepage": "https://alibaba.github.io/skill-up/",
+      "html_url": "https://github.com/alibaba/skill-up",
+      "default_branch": "main",
       "archived": false,
       "search_score": 1.0,
-      "stars_7d_ago": 987,
+      "stars_7d_ago": 895,
       "star_series": [
         {
-          "d": "08-21",
-          "s": 987
-        },
-        {
           "d": "08-22",
-          "s": 987
+          "s": 883
         },
         {
           "d": "08-23",
-          "s": 987
+          "s": 883
         },
         {
           "d": "08-24",
-          "s": 987
+          "s": 883
         },
         {
           "d": "08-25",
-          "s": 987
+          "s": 883
         },
         {
           "d": "08-26",
-          "s": 987
+          "s": 883
         },
         {
           "d": "08-27",
-          "s": 987
+          "s": 883
         },
         {
           "d": "08-28",
-          "s": 987
+          "s": 883
         },
         {
           "d": "08-29",
-          "s": 987
+          "s": 883
         },
         {
           "d": "08-30",
-          "s": 987
+          "s": 883
         },
         {
           "d": "08-31",
-          "s": 987
+          "s": 883
         },
         {
           "d": "09-01",
-          "s": 987
+          "s": 883
         },
         {
           "d": "09-02",
-          "s": 987
+          "s": 883
         },
         {
           "d": "09-03",
-          "s": 987
+          "s": 883
         },
         {
           "d": "09-04",
-          "s": 987
+          "s": 883
         },
         {
           "d": "09-05",
-          "s": 987
+          "s": 883
         },
         {
           "d": "09-06",
-          "s": 987
+          "s": 883
         },
         {
           "d": "09-07",
-          "s": 987
+          "s": 883
         },
         {
           "d": "09-08",
-          "s": 987
+          "s": 883
         },
         {
           "d": "09-09",
-          "s": 987
+          "s": 883
         },
         {
           "d": "09-10",
-          "s": 987
+          "s": 883
         },
         {
           "d": "09-11",
-          "s": 987
+          "s": 885
         },
         {
           "d": "09-12",
-          "s": 987
+          "s": 888
         },
         {
           "d": "09-13",
-          "s": 987
+          "s": 889
         },
         {
           "d": "09-14",
-          "s": 988
+          "s": 895
         },
         {
           "d": "09-15",
-          "s": 989
+          "s": 905
         },
         {
           "d": "09-16",
-          "s": 990
+          "s": 935
         },
         {
           "d": "09-17",
-          "s": 992
+          "s": 957
         },
         {
           "d": "09-18",
-          "s": 993
+          "s": 968
         },
         {
           "d": "09-19",
+          "s": 973
+        },
+        {
+          "d": "09-20",
           "s": 994
         }
       ]
     },
     "score": {
-      "score": 52.24,
+      "score": 100.0,
       "breakdown": {
-        "vel": 31,
-        "acc": 73,
-        "health": 77,
-        "fresh": 17,
+        "vel": 92,
+        "acc": 99,
+        "health": 79,
+        "fresh": 63,
         "signal": 100
       },
-      "stage": "mid_early",
-      "stage_multiplier": 1.1,
+      "stage": "early",
+      "stage_multiplier": 1.2,
       "confidence": 1.0,
-      "base_score": 47.49,
-      "explanation": "SnapmakerU1-Extended-Firmware 是 Python 开源项目，主打「Custom and repackaged Snapmaker U1 firmware」；处于中早期增长，涨速在加快；社区健康（fork/star 比 13.1%，91 个 open issue）、项目元数据完整。"
+      "base_score": 86.76,
+      "explanation": "skill-up 是 Go 开源项目，主打「An evaluation and evolution tool for Agent Skills.」；处于增长早期，本周涨速 14 star/天，涨速在加快；社区健康（fork/star 比 7.7%，27 个 open issue）、项目元数据完整。"
+    }
+  },
+  {
+    "repo": {
+      "owner": "unlayer",
+      "name": "react-image-editor",
+      "full_name": "unlayer/react-image-editor",
+      "description": "Image Editor Component for React — crop, resize, filters, draw, text, shapes, stickers, frames, and an AI Assistant",
+      "stars": 200,
+      "forks": 20,
+      "open_issues": 38,
+      "created_at": "2026-07-07T02:50:04+00:00",
+      "pushed_at": "2026-09-15T13:55:27+00:00",
+      "updated_at": "2026-09-19T13:50:34+00:00",
+      "topics": [
+        "image-editing",
+        "image-editor",
+        "photo-editor",
+        "react",
+        "react-component",
+        "unlayer"
+      ],
+      "language": "TypeScript",
+      "license": "MIT",
+      "homepage": "https://react-image-editor-example.vercel.app/",
+      "html_url": "https://github.com/unlayer/react-image-editor",
+      "default_branch": "main",
+      "archived": false,
+      "search_score": 1.0,
+      "stars_7d_ago": 172,
+      "star_series": [
+        {
+          "d": "08-22",
+          "s": 137
+        },
+        {
+          "d": "08-23",
+          "s": 137
+        },
+        {
+          "d": "08-24",
+          "s": 137
+        },
+        {
+          "d": "08-25",
+          "s": 137
+        },
+        {
+          "d": "08-26",
+          "s": 137
+        },
+        {
+          "d": "08-27",
+          "s": 137
+        },
+        {
+          "d": "08-28",
+          "s": 137
+        },
+        {
+          "d": "08-29",
+          "s": 137
+        },
+        {
+          "d": "08-30",
+          "s": 137
+        },
+        {
+          "d": "08-31",
+          "s": 137
+        },
+        {
+          "d": "09-01",
+          "s": 138
+        },
+        {
+          "d": "09-02",
+          "s": 140
+        },
+        {
+          "d": "09-03",
+          "s": 140
+        },
+        {
+          "d": "09-04",
+          "s": 143
+        },
+        {
+          "d": "09-05",
+          "s": 146
+        },
+        {
+          "d": "09-06",
+          "s": 147
+        },
+        {
+          "d": "09-07",
+          "s": 152
+        },
+        {
+          "d": "09-08",
+          "s": 157
+        },
+        {
+          "d": "09-09",
+          "s": 160
+        },
+        {
+          "d": "09-10",
+          "s": 162
+        },
+        {
+          "d": "09-11",
+          "s": 165
+        },
+        {
+          "d": "09-12",
+          "s": 166
+        },
+        {
+          "d": "09-13",
+          "s": 166
+        },
+        {
+          "d": "09-14",
+          "s": 172
+        },
+        {
+          "d": "09-15",
+          "s": 172
+        },
+        {
+          "d": "09-16",
+          "s": 191
+        },
+        {
+          "d": "09-17",
+          "s": 195
+        },
+        {
+          "d": "09-18",
+          "s": 197
+        },
+        {
+          "d": "09-19",
+          "s": 200
+        },
+        {
+          "d": "09-20",
+          "s": 200
+        }
+      ]
+    },
+    "score": {
+      "score": 74.5,
+      "breakdown": {
+        "vel": 54,
+        "acc": 60,
+        "health": 56,
+        "fresh": 79,
+        "signal": 85
+      },
+      "stage": "early",
+      "stage_multiplier": 1.2,
+      "confidence": 1.0,
+      "base_score": 62.09,
+      "explanation": "react-image-editor 是 TypeScript 开源项目，主打「Image Editor Component for React — crop, resize, filters, draw, text, shapes, stickers, frames, and an AI Assistant」；处于增长早期，本周涨速 4.0 star/天；项目元数据完整、开发活跃。"
+    }
+  },
+  {
+    "repo": {
+      "owner": "pmh1314520",
+      "name": "MCTier",
+      "full_name": "pmh1314520/MCTier",
+      "description": "A virtual LAN gaming tool built for gamers, compatible with all LAN games. Easily bypass network restrictions to play with friends online. | 一款专为玩家打造的虚拟局域网联机工具，支持所有局域网游戏联机使用，让您可以轻松与好友跨越网络限制，享受联机游戏的乐趣。【QQ交流群：1075096452】",
+      "stars": 998,
+      "forks": 46,
+      "open_issues": 4,
+      "created_at": "2026-02-14T19:46:49+00:00",
+      "pushed_at": "2026-09-19T04:26:16+00:00",
+      "updated_at": "2026-09-20T09:43:10+00:00",
+      "topics": [
+        "android",
+        "css",
+        "easytier",
+        "game",
+        "minecraft",
+        "react",
+        "rust",
+        "tauri2",
+        "typescript",
+        "vlan",
+        "webrtc",
+        "windows"
+      ],
+      "language": "TypeScript",
+      "license": "NOASSERTION",
+      "homepage": "https://mctier.pmhs.top",
+      "html_url": "https://github.com/pmh1314520/MCTier",
+      "default_branch": "master",
+      "archived": false,
+      "search_score": 1.0,
+      "stars_7d_ago": 957,
+      "star_series": [
+        {
+          "d": "08-22",
+          "s": 784
+        },
+        {
+          "d": "08-23",
+          "s": 784
+        },
+        {
+          "d": "08-24",
+          "s": 784
+        },
+        {
+          "d": "08-25",
+          "s": 784
+        },
+        {
+          "d": "08-26",
+          "s": 784
+        },
+        {
+          "d": "08-27",
+          "s": 784
+        },
+        {
+          "d": "08-28",
+          "s": 784
+        },
+        {
+          "d": "08-29",
+          "s": 784
+        },
+        {
+          "d": "08-30",
+          "s": 784
+        },
+        {
+          "d": "08-31",
+          "s": 784
+        },
+        {
+          "d": "09-01",
+          "s": 814
+        },
+        {
+          "d": "09-02",
+          "s": 835
+        },
+        {
+          "d": "09-03",
+          "s": 852
+        },
+        {
+          "d": "09-04",
+          "s": 871
+        },
+        {
+          "d": "09-05",
+          "s": 886
+        },
+        {
+          "d": "09-06",
+          "s": 901
+        },
+        {
+          "d": "09-07",
+          "s": 911
+        },
+        {
+          "d": "09-08",
+          "s": 921
+        },
+        {
+          "d": "09-09",
+          "s": 925
+        },
+        {
+          "d": "09-10",
+          "s": 927
+        },
+        {
+          "d": "09-11",
+          "s": 932
+        },
+        {
+          "d": "09-12",
+          "s": 942
+        },
+        {
+          "d": "09-13",
+          "s": 946
+        },
+        {
+          "d": "09-14",
+          "s": 957
+        },
+        {
+          "d": "09-15",
+          "s": 967
+        },
+        {
+          "d": "09-16",
+          "s": 972
+        },
+        {
+          "d": "09-17",
+          "s": 975
+        },
+        {
+          "d": "09-18",
+          "s": 985
+        },
+        {
+          "d": "09-19",
+          "s": 995
+        },
+        {
+          "d": "09-20",
+          "s": 998
+        }
+      ]
+    },
+    "score": {
+      "score": 70.69,
+      "breakdown": {
+        "vel": 65,
+        "acc": 47,
+        "health": 73,
+        "fresh": 41,
+        "signal": 85
+      },
+      "stage": "early",
+      "stage_multiplier": 1.2,
+      "confidence": 1.0,
+      "base_score": 58.91,
+      "explanation": "MCTier 是 TypeScript 开源项目，主打「A virtual LAN gaming tool built for gamers, compatible with all LAN games. Easily bypass network restrictions to play with friends online. | 一款专为玩家打造的虚拟局域网联机工具，支持所有局域网游戏联机使用，让您可以轻松与好友跨越网络限制，享受联机游戏的乐趣。【QQ交流群：1075096452】」；处于增长早期，本周涨速 5.9 star/天；社区健康（fork/star 比 4.6%，4 个 open issue）、项目元数据完整。"
     }
   }
 ]
