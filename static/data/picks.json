@@ -1,145 +1,154 @@
 [
   {
     "repo": {
-      "owner": "om-ai-lab",
-      "name": "VLX-Seek",
-      "full_name": "om-ai-lab/VLX-Seek",
-      "description": "VLX-Seek is a device-native vision-language model that enables machines to see, understand, and reason about the visual world with high precision. ",
-      "stars": 996,
-      "forks": 139,
-      "open_issues": 2,
-      "created_at": "2026-06-26T01:34:07+00:00",
-      "pushed_at": "2026-09-22T09:00:51+00:00",
-      "updated_at": "2026-09-22T09:35:37+00:00",
-      "topics": [],
-      "language": "Python",
-      "license": "Apache-2.0",
-      "homepage": "https://om-agent.com",
-      "html_url": "https://github.com/om-ai-lab/VLX-Seek",
-      "default_branch": "main",
+      "owner": "dckxx",
+      "name": "x-hub",
+      "full_name": "dckxx/x-hub",
+      "description": "本地优先的个人桌面效率工作台：时钟 / 倒计时 / 便签 / 待办 / 速记 / 速达 / AI 对话 / 剪贴板历史，所有数据本地存储、不上云端。基于 Tauri 2 + Vue 3 + TypeScript + Rust。",
+      "stars": 200,
+      "forks": 32,
+      "open_issues": 4,
+      "created_at": "2026-08-01T08:14:00+00:00",
+      "pushed_at": "2026-09-23T10:16:34+00:00",
+      "updated_at": "2026-09-23T10:31:48+00:00",
+      "topics": [
+        "dashboard",
+        "desktop-app",
+        "productivity",
+        "rust",
+        "sqlite",
+        "tauri2",
+        "typescript",
+        "vue3"
+      ],
+      "language": "Rust",
+      "license": "MIT",
+      "homepage": null,
+      "html_url": "https://github.com/dckxx/x-hub",
+      "default_branch": "master",
       "archived": false,
       "search_score": 1.0,
-      "stars_7d_ago": 736,
+      "stars_7d_ago": 67,
       "star_series": [
         {
-          "d": "08-24",
-          "s": 736
-        },
-        {
           "d": "08-25",
-          "s": 736
+          "s": 24
         },
         {
           "d": "08-26",
-          "s": 736
+          "s": 30
         },
         {
           "d": "08-27",
-          "s": 736
+          "s": 31
         },
         {
           "d": "08-28",
-          "s": 736
+          "s": 31
         },
         {
           "d": "08-29",
-          "s": 736
+          "s": 32
         },
         {
           "d": "08-30",
-          "s": 736
+          "s": 32
         },
         {
           "d": "08-31",
-          "s": 736
+          "s": 33
         },
         {
           "d": "09-01",
-          "s": 736
+          "s": 38
         },
         {
           "d": "09-02",
-          "s": 736
+          "s": 44
         },
         {
           "d": "09-03",
-          "s": 736
+          "s": 48
         },
         {
           "d": "09-04",
-          "s": 736
+          "s": 51
         },
         {
           "d": "09-05",
-          "s": 736
+          "s": 54
         },
         {
           "d": "09-06",
-          "s": 736
+          "s": 56
         },
         {
           "d": "09-07",
-          "s": 736
+          "s": 58
         },
         {
           "d": "09-08",
-          "s": 736
+          "s": 61
         },
         {
           "d": "09-09",
-          "s": 736
+          "s": 61
         },
         {
           "d": "09-10",
-          "s": 736
+          "s": 63
         },
         {
           "d": "09-11",
-          "s": 736
+          "s": 64
         },
         {
           "d": "09-12",
-          "s": 736
+          "s": 65
         },
         {
           "d": "09-13",
-          "s": 736
+          "s": 66
         },
         {
           "d": "09-14",
-          "s": 736
+          "s": 66
         },
         {
           "d": "09-15",
-          "s": 736
+          "s": 66
         },
         {
           "d": "09-16",
-          "s": 736
+          "s": 67
         },
         {
           "d": "09-17",
-          "s": 770
+          "s": 67
         },
         {
           "d": "09-18",
-          "s": 847
+          "s": 67
         },
         {
           "d": "09-19",
-          "s": 880
+          "s": 67
         },
         {
           "d": "09-20",
-          "s": 936
+          "s": 68
         },
         {
           "d": "09-21",
-          "s": 979
+          "s": 73
         },
         {
           "d": "09-22",
-          "s": 996
+          "s": 153
+        },
+        {
+          "d": "09-23",
+          "s": 200
         }
       ]
     },
@@ -148,713 +157,694 @@
       "breakdown": {
         "vel": 100,
         "acc": 99,
-        "health": 100,
-        "fresh": 76,
-        "signal": 70
-      },
-      "stage": "early",
-      "stage_multiplier": 1.2,
-      "confidence": 1.0,
-      "base_score": 92.41,
-      "explanation": "VLX-Seek 是 Python 开源项目，主打「VLX-Seek is a device-native vision-language model that enables machines to see, understand, and reason about the visual world with high precision.」；处于增长早期，本周涨速 37 star/天，涨速在加快；社区健康（fork/star 比 14.0%，2 个 open issue）、开发活跃。"
-    }
-  },
-  {
-    "repo": {
-      "owner": "Merserk",
-      "name": "dlss5-visual-enhancer",
-      "full_name": "Merserk/dlss5-visual-enhancer",
-      "description": "DLSS 5 Neural Rendering for Images & Video with Frame Generation, RTX Video Super Resolution, HDR, and Live Playback",
-      "stars": 995,
-      "forks": 80,
-      "open_issues": 21,
-      "created_at": "2026-08-30T19:45:52+00:00",
-      "pushed_at": "2026-09-21T16:21:08+00:00",
-      "updated_at": "2026-09-22T10:46:27+00:00",
-      "topics": [
-        "ai-upscaling",
-        "dlss",
-        "dlss-5",
-        "dlss5",
-        "dlssg",
-        "frame-generation",
-        "frame-interpolation",
-        "image-enhancement",
-        "image-upscaling",
-        "neural-rendering",
-        "nvidia",
-        "nvidia-dlss-5",
-        "nvidia-rtx",
-        "rtx-video",
-        "rtx-video-super-resolution",
-        "video-enhancement",
-        "video-upscaling"
-      ],
-      "language": "Python",
-      "license": "NOASSERTION",
-      "homepage": null,
-      "html_url": "https://github.com/Merserk/dlss5-visual-enhancer",
-      "default_branch": "main",
-      "archived": false,
-      "search_score": 1.0,
-      "stars_7d_ago": 879,
-      "star_series": [
-        {
-          "d": "08-24",
-          "s": 875
-        },
-        {
-          "d": "08-25",
-          "s": 875
-        },
-        {
-          "d": "08-26",
-          "s": 875
-        },
-        {
-          "d": "08-27",
-          "s": 875
-        },
-        {
-          "d": "08-28",
-          "s": 875
-        },
-        {
-          "d": "08-29",
-          "s": 875
-        },
-        {
-          "d": "08-30",
-          "s": 875
-        },
-        {
-          "d": "08-31",
-          "s": 875
-        },
-        {
-          "d": "09-01",
-          "s": 875
-        },
-        {
-          "d": "09-02",
-          "s": 875
-        },
-        {
-          "d": "09-03",
-          "s": 875
-        },
-        {
-          "d": "09-04",
-          "s": 875
-        },
-        {
-          "d": "09-05",
-          "s": 875
-        },
-        {
-          "d": "09-06",
-          "s": 875
-        },
-        {
-          "d": "09-07",
-          "s": 875
-        },
-        {
-          "d": "09-08",
-          "s": 875
-        },
-        {
-          "d": "09-09",
-          "s": 875
-        },
-        {
-          "d": "09-10",
-          "s": 875
-        },
-        {
-          "d": "09-11",
-          "s": 875
-        },
-        {
-          "d": "09-12",
-          "s": 875
-        },
-        {
-          "d": "09-13",
-          "s": 875
-        },
-        {
-          "d": "09-14",
-          "s": 875
-        },
-        {
-          "d": "09-15",
-          "s": 875
-        },
-        {
-          "d": "09-16",
-          "s": 879
-        },
-        {
-          "d": "09-17",
-          "s": 901
-        },
-        {
-          "d": "09-18",
-          "s": 924
-        },
-        {
-          "d": "09-19",
-          "s": 943
-        },
-        {
-          "d": "09-20",
-          "s": 965
-        },
-        {
-          "d": "09-21",
-          "s": 984
-        },
-        {
-          "d": "09-22",
-          "s": 995
-        }
-      ]
-    },
-    "score": {
-      "score": 100.0,
-      "breakdown": {
-        "vel": 83,
-        "acc": 99,
-        "health": 82,
-        "fresh": 94,
-        "signal": 70
-      },
-      "stage": "early",
-      "stage_multiplier": 1.2,
-      "confidence": 1.0,
-      "base_score": 86.58,
-      "explanation": "dlss5-visual-enhancer 是 Python 开源项目，主打「DLSS 5 Neural Rendering for Images & Video with Frame Generation, RTX Video Super Resolution, HDR, and Live Playback」；处于增长早期，本周涨速 17 star/天，涨速在加快；社区健康（fork/star 比 8.0%，21 个 open issue）、开发活跃。"
-    }
-  },
-  {
-    "repo": {
-      "owner": "Pan-Chera",
-      "name": "Multi-Agent-CAD",
-      "full_name": "Pan-Chera/Multi-Agent-CAD",
-      "description": "MAC (Multi-Agent CAD): A decoupled multi-agent framework for text-to-CAD generation via constrained test-time compute",
-      "stars": 997,
-      "forks": 93,
-      "open_issues": 1,
-      "created_at": "2026-07-30T17:19:26+00:00",
-      "pushed_at": "2026-09-16T16:43:40+00:00",
-      "updated_at": "2026-09-22T02:06:44+00:00",
-      "topics": [
-        "3d-modeling",
-        "3d-printing",
-        "agent-pipeline",
-        "aider",
-        "assembly",
-        "build123d",
-        "cad",
-        "generative-design",
-        "langgraph",
-        "llm",
-        "llm-agent",
-        "mechanical-engineering",
-        "multi-agent",
-        "opencascade",
-        "qwen",
-        "step",
-        "step-file",
-        "text-to-3d",
-        "text-to-cad",
-        "urdf"
-      ],
-      "language": "Python",
-      "license": "MIT",
-      "homepage": null,
-      "html_url": "https://github.com/Pan-Chera/Multi-Agent-CAD",
-      "default_branch": "main",
-      "archived": false,
-      "search_score": 1.0,
-      "stars_7d_ago": 956,
-      "star_series": [
-        {
-          "d": "08-24",
-          "s": 886
-        },
-        {
-          "d": "08-25",
-          "s": 894
-        },
-        {
-          "d": "08-26",
-          "s": 901
-        },
-        {
-          "d": "08-27",
-          "s": 905
-        },
-        {
-          "d": "08-28",
-          "s": 908
-        },
-        {
-          "d": "08-29",
-          "s": 910
-        },
-        {
-          "d": "08-30",
-          "s": 912
-        },
-        {
-          "d": "08-31",
-          "s": 914
-        },
-        {
-          "d": "09-01",
-          "s": 916
-        },
-        {
-          "d": "09-02",
-          "s": 922
-        },
-        {
-          "d": "09-03",
-          "s": 926
-        },
-        {
-          "d": "09-04",
-          "s": 928
-        },
-        {
-          "d": "09-05",
-          "s": 929
-        },
-        {
-          "d": "09-06",
-          "s": 930
-        },
-        {
-          "d": "09-07",
-          "s": 932
-        },
-        {
-          "d": "09-08",
-          "s": 934
-        },
-        {
-          "d": "09-09",
-          "s": 937
-        },
-        {
-          "d": "09-10",
-          "s": 939
-        },
-        {
-          "d": "09-11",
-          "s": 939
-        },
-        {
-          "d": "09-12",
-          "s": 939
-        },
-        {
-          "d": "09-13",
-          "s": 940
-        },
-        {
-          "d": "09-14",
-          "s": 941
-        },
-        {
-          "d": "09-15",
-          "s": 947
-        },
-        {
-          "d": "09-16",
-          "s": 956
-        },
-        {
-          "d": "09-17",
-          "s": 985
-        },
-        {
-          "d": "09-18",
-          "s": 992
-        },
-        {
-          "d": "09-19",
-          "s": 994
-        },
-        {
-          "d": "09-20",
-          "s": 995
-        },
-        {
-          "d": "09-21",
-          "s": 996
-        },
-        {
-          "d": "09-22",
-          "s": 997
-        }
-      ]
-    },
-    "score": {
-      "score": 86.82,
-      "breakdown": {
-        "vel": 55,
-        "acc": 76,
-        "health": 91,
+        "health": 98,
         "fresh": 85,
         "signal": 70
       },
       "stage": "early",
       "stage_multiplier": 1.2,
       "confidence": 1.0,
-      "base_score": 72.35,
-      "explanation": "Multi-Agent-CAD 是 Python 开源项目，主打「MAC (Multi-Agent CAD): A decoupled multi-agent framework for text-to-CAD generation via constrained test-time compute」；处于增长早期，本周涨速 5.9 star/天，涨速在加快；社区健康（fork/star 比 9.3%，1 个 open issue）、开发活跃。"
+      "base_score": 93.66,
+      "explanation": "x-hub 是 Rust 开源项目，主打「本地优先的个人桌面效率工作台：时钟 / 倒计时 / 便签 / 待办 / 速记 / 速达 / AI 对话 / 剪贴板历史，所有数据本地存储、不上云端。基于 Tauri 2 + Vue 3 + TypeScript + Rust。」；处于增长早期，本周涨速 19 star/天，涨速在加快；社区健康（fork/star 比 16.0%，4 个 open issue）、开发活跃。"
     }
   },
   {
     "repo": {
-      "owner": "kunkka19xx",
-      "name": "look",
-      "full_name": "kunkka19xx/look",
-      "description": "An open-source, cross OS, community-driven launcher. A lightweight alternative to Spotlight and Raycast. Made with ❤️ from Viet Nam 🇻🇳",
-      "stars": 995,
-      "forks": 62,
-      "open_issues": 29,
-      "created_at": "2026-04-04T07:54:34+00:00",
-      "pushed_at": "2026-09-22T09:06:25+00:00",
-      "updated_at": "2026-09-22T09:54:00+00:00",
-      "topics": [
-        "cross-platform",
-        "launcher",
-        "linux",
-        "macos",
-        "made-in-vietnam",
-        "opensource",
-        "productivity",
-        "rofi-macos",
-        "rust",
-        "spotlight",
-        "swift",
-        "tauri",
-        "windows"
-      ],
-      "language": "Rust",
-      "license": "GPL-3.0",
-      "homepage": "https://noah-code.com/docs/look",
-      "html_url": "https://github.com/kunkka19xx/look",
+      "owner": "voxivoid",
+      "name": "recipe-lab-sony-pmca",
+      "full_name": "voxivoid/recipe-lab-sony-pmca",
+      "description": null,
+      "stars": 200,
+      "forks": 12,
+      "open_issues": 8,
+      "created_at": "2026-09-08T18:15:46+00:00",
+      "pushed_at": "2026-09-22T10:29:24+00:00",
+      "updated_at": "2026-09-23T08:53:45+00:00",
+      "topics": [],
+      "language": "Java",
+      "license": "MIT",
+      "homepage": null,
+      "html_url": "https://github.com/voxivoid/recipe-lab-sony-pmca",
       "default_branch": "main",
       "archived": false,
       "search_score": 1.0,
-      "stars_7d_ago": 974,
+      "stars_7d_ago": 141,
       "star_series": [
         {
-          "d": "08-24",
-          "s": 958
-        },
-        {
           "d": "08-25",
-          "s": 958
+          "s": 141
         },
         {
           "d": "08-26",
-          "s": 958
+          "s": 141
         },
         {
           "d": "08-27",
-          "s": 958
+          "s": 141
         },
         {
           "d": "08-28",
-          "s": 958
+          "s": 141
         },
         {
           "d": "08-29",
-          "s": 958
+          "s": 141
         },
         {
           "d": "08-30",
-          "s": 958
+          "s": 141
         },
         {
           "d": "08-31",
-          "s": 958
+          "s": 141
         },
         {
           "d": "09-01",
-          "s": 958
+          "s": 141
         },
         {
           "d": "09-02",
-          "s": 958
+          "s": 141
         },
         {
           "d": "09-03",
-          "s": 958
+          "s": 141
         },
         {
           "d": "09-04",
-          "s": 958
+          "s": 141
         },
         {
           "d": "09-05",
-          "s": 958
+          "s": 141
         },
         {
           "d": "09-06",
-          "s": 958
+          "s": 141
         },
         {
           "d": "09-07",
-          "s": 958
+          "s": 141
         },
         {
           "d": "09-08",
-          "s": 958
+          "s": 141
         },
         {
           "d": "09-09",
-          "s": 958
+          "s": 141
         },
         {
           "d": "09-10",
-          "s": 958
+          "s": 141
         },
         {
           "d": "09-11",
-          "s": 958
+          "s": 141
         },
         {
           "d": "09-12",
-          "s": 958
+          "s": 141
         },
         {
           "d": "09-13",
-          "s": 961
+          "s": 141
         },
         {
           "d": "09-14",
-          "s": 964
+          "s": 141
         },
         {
           "d": "09-15",
-          "s": 968
+          "s": 141
         },
         {
           "d": "09-16",
-          "s": 974
+          "s": 141
         },
         {
           "d": "09-17",
-          "s": 981
+          "s": 141
         },
         {
           "d": "09-18",
-          "s": 984
+          "s": 141
         },
         {
           "d": "09-19",
-          "s": 990
+          "s": 141
         },
         {
           "d": "09-20",
-          "s": 991
+          "s": 141
         },
         {
           "d": "09-21",
-          "s": 993
+          "s": 159
         },
         {
           "d": "09-22",
-          "s": 995
+          "s": 188
+        },
+        {
+          "d": "09-23",
+          "s": 200
         }
       ]
     },
     "score": {
-      "score": 62.31,
+      "score": 92.46,
       "breakdown": {
-        "vel": 40,
-        "acc": 58,
-        "health": 73,
-        "fresh": 53,
-        "signal": 100
+        "vel": 76,
+        "acc": 99,
+        "health": 68,
+        "fresh": 96,
+        "signal": 40
       },
-      "stage": "mid_early",
-      "stage_multiplier": 1.1,
+      "stage": "early",
+      "stage_multiplier": 1.2,
       "confidence": 1.0,
-      "base_score": 56.64,
-      "explanation": "look 是 Rust 开源项目，主打「An open-source, cross OS, community-driven launcher. A lightweight alternative to Spotlight and Raycast. Made with ❤️ from Viet Nam 🇻🇳」；处于中早期增长；社区健康（fork/star 比 6.2%，29 个 open issue）、项目元数据完整。"
+      "base_score": 77.05,
+      "explanation": "recipe-lab-sony-pmca 是 Java 方向的开源项目；处于增长早期，本周涨速 8.4 star/天，涨速在加快；开发活跃。"
     }
   },
   {
     "repo": {
-      "owner": "LeagueToolkit",
-      "name": "ltk-manager",
-      "full_name": "LeagueToolkit/ltk-manager",
-      "description": "Mod manager and Modding IDE for League of Legends.",
-      "stars": 200,
-      "forks": 40,
-      "open_issues": 127,
-      "created_at": "2026-02-17T21:25:00+00:00",
-      "pushed_at": "2026-09-22T10:48:17+00:00",
-      "updated_at": "2026-09-21T21:06:03+00:00",
+      "owner": "Sec-Link",
+      "name": "Argus-Agentic-SOC-Platform",
+      "full_name": "Sec-Link/Argus-Agentic-SOC-Platform",
+      "description": "An open source AI-native agentic SOC platform",
+      "stars": 999,
+      "forks": 84,
+      "open_issues": 3,
+      "created_at": "2026-02-27T09:34:50+00:00",
+      "pushed_at": "2026-09-23T06:05:41+00:00",
+      "updated_at": "2026-09-23T08:26:59+00:00",
       "topics": [
-        "league-of-legends",
-        "league-toolkit",
-        "ltk",
-        "modding"
+        "agent",
+        "agentic-soc",
+        "ai",
+        "ai-soc",
+        "security",
+        "soc"
       ],
-      "language": "TypeScript",
-      "license": "GPL-3.0",
-      "homepage": "https://wiki.leaguetoolkit.dev/",
-      "html_url": "https://github.com/LeagueToolkit/ltk-manager",
+      "language": "Python",
+      "license": "Apache-2.0",
+      "homepage": "https://siem.seclink.info",
+      "html_url": "https://github.com/Sec-Link/Argus-Agentic-SOC-Platform",
       "default_branch": "main",
       "archived": false,
       "search_score": 1.0,
-      "stars_7d_ago": 194,
+      "stars_7d_ago": 878,
       "star_series": [
         {
-          "d": "08-24",
-          "s": 194
-        },
-        {
           "d": "08-25",
-          "s": 194
+          "s": 751
         },
         {
           "d": "08-26",
-          "s": 194
+          "s": 751
         },
         {
           "d": "08-27",
-          "s": 194
+          "s": 751
         },
         {
           "d": "08-28",
-          "s": 194
+          "s": 751
         },
         {
           "d": "08-29",
-          "s": 194
+          "s": 751
         },
         {
           "d": "08-30",
-          "s": 194
+          "s": 751
         },
         {
           "d": "08-31",
-          "s": 194
+          "s": 751
         },
         {
           "d": "09-01",
-          "s": 194
+          "s": 751
         },
         {
           "d": "09-02",
-          "s": 194
+          "s": 751
         },
         {
           "d": "09-03",
-          "s": 194
+          "s": 751
         },
         {
           "d": "09-04",
-          "s": 194
+          "s": 751
         },
         {
           "d": "09-05",
-          "s": 194
+          "s": 751
         },
         {
           "d": "09-06",
-          "s": 194
+          "s": 751
         },
         {
           "d": "09-07",
-          "s": 194
+          "s": 751
         },
         {
           "d": "09-08",
-          "s": 194
+          "s": 751
         },
         {
           "d": "09-09",
-          "s": 194
+          "s": 751
         },
         {
           "d": "09-10",
-          "s": 194
+          "s": 751
         },
         {
           "d": "09-11",
-          "s": 194
+          "s": 751
         },
         {
           "d": "09-12",
-          "s": 194
+          "s": 757
         },
         {
           "d": "09-13",
-          "s": 194
+          "s": 772
         },
         {
           "d": "09-14",
-          "s": 194
+          "s": 800
         },
         {
           "d": "09-15",
-          "s": 194
+          "s": 827
         },
         {
           "d": "09-16",
-          "s": 194
+          "s": 851
         },
         {
           "d": "09-17",
-          "s": 194
+          "s": 878
         },
         {
           "d": "09-18",
-          "s": 194
+          "s": 894
         },
         {
           "d": "09-19",
-          "s": 195
+          "s": 915
         },
         {
           "d": "09-20",
+          "s": 938
+        },
+        {
+          "d": "09-21",
+          "s": 965
+        },
+        {
+          "d": "09-22",
+          "s": 989
+        },
+        {
+          "d": "09-23",
+          "s": 999
+        }
+      ]
+    },
+    "score": {
+      "score": 84.1,
+      "breakdown": {
+        "vel": 98,
+        "acc": 49,
+        "health": 87,
+        "fresh": 43,
+        "signal": 85
+      },
+      "stage": "early",
+      "stage_multiplier": 1.2,
+      "confidence": 1.0,
+      "base_score": 70.08,
+      "explanation": "Argus-Agentic-SOC-Platform 是 Python 开源项目，主打「An open source AI-native agentic SOC platform」；处于增长早期，本周涨速 17 star/天；社区健康（fork/star 比 8.4%，3 个 open issue）、项目元数据完整。"
+    }
+  },
+  {
+    "repo": {
+      "owner": "agupta07505",
+      "name": "SmartIsland",
+      "full_name": "agupta07505/SmartIsland",
+      "description": "Smart Island is a modern, open-source implementation of Android's Dynamic Island experience. It transforms notifications, media playback, incoming calls, timers, charging status, and other live activities into a beautiful floating island with smooth animations and a premium user experience.",
+      "stars": 200,
+      "forks": 22,
+      "open_issues": 8,
+      "created_at": "2026-07-02T06:46:25+00:00",
+      "pushed_at": "2026-09-20T09:46:35+00:00",
+      "updated_at": "2026-09-23T07:49:14+00:00",
+      "topics": [
+        "android",
+        "app-development",
+        "dynamic-island",
+        "dynamicisland",
+        "hyper-island",
+        "kotlin",
+        "notification-history",
+        "notifications",
+        "open-source",
+        "smartisland"
+      ],
+      "language": "Kotlin",
+      "license": "GPL-3.0",
+      "homepage": "https://smartisland.vercel.app/",
+      "html_url": "https://github.com/agupta07505/SmartIsland",
+      "default_branch": "main",
+      "archived": false,
+      "search_score": 1.0,
+      "stars_7d_ago": 178,
+      "star_series": [
+        {
+          "d": "08-25",
+          "s": 140
+        },
+        {
+          "d": "08-26",
+          "s": 140
+        },
+        {
+          "d": "08-27",
+          "s": 140
+        },
+        {
+          "d": "08-28",
+          "s": 140
+        },
+        {
+          "d": "08-29",
+          "s": 140
+        },
+        {
+          "d": "08-30",
+          "s": 140
+        },
+        {
+          "d": "08-31",
+          "s": 140
+        },
+        {
+          "d": "09-01",
+          "s": 140
+        },
+        {
+          "d": "09-02",
+          "s": 140
+        },
+        {
+          "d": "09-03",
+          "s": 140
+        },
+        {
+          "d": "09-04",
+          "s": 140
+        },
+        {
+          "d": "09-05",
+          "s": 140
+        },
+        {
+          "d": "09-06",
+          "s": 143
+        },
+        {
+          "d": "09-07",
+          "s": 149
+        },
+        {
+          "d": "09-08",
+          "s": 153
+        },
+        {
+          "d": "09-09",
+          "s": 156
+        },
+        {
+          "d": "09-10",
+          "s": 159
+        },
+        {
+          "d": "09-11",
+          "s": 161
+        },
+        {
+          "d": "09-12",
+          "s": 165
+        },
+        {
+          "d": "09-13",
+          "s": 168
+        },
+        {
+          "d": "09-14",
+          "s": 170
+        },
+        {
+          "d": "09-15",
+          "s": 171
+        },
+        {
+          "d": "09-16",
+          "s": 177
+        },
+        {
+          "d": "09-17",
+          "s": 178
+        },
+        {
+          "d": "09-18",
+          "s": 181
+        },
+        {
+          "d": "09-19",
+          "s": 183
+        },
+        {
+          "d": "09-20",
+          "s": 189
+        },
+        {
+          "d": "09-21",
+          "s": 190
+        },
+        {
+          "d": "09-22",
           "s": 198
         },
         {
-          "d": "09-21",
-          "s": 200
-        },
-        {
-          "d": "09-22",
+          "d": "09-23",
           "s": 200
         }
       ]
     },
     "score": {
-      "score": 49.12,
+      "score": 75.28,
       "breakdown": {
-        "vel": 18,
-        "acc": 70,
-        "health": 70,
-        "fresh": 41,
-        "signal": 100
+        "vel": 48,
+        "acc": 54,
+        "health": 83,
+        "fresh": 77,
+        "signal": 85
       },
-      "stage": "mid_early",
-      "stage_multiplier": 1.1,
+      "stage": "early",
+      "stage_multiplier": 1.2,
       "confidence": 1.0,
-      "base_score": 44.66,
-      "explanation": "ltk-manager 是 TypeScript 开源项目，主打「Mod manager and Modding IDE for League of Legends.」；处于中早期增长，涨速在加快；项目元数据完整。"
+      "base_score": 62.73,
+      "explanation": "SmartIsland 是 Kotlin 开源项目，主打「Smart Island is a modern, open-source implementation of Android's Dynamic Island experience. It transforms notifications, media playback, incoming calls, timers, charging status, and other live activities into a beautiful floating island with smooth animations and a premium user experience.」；处于增长早期，本周涨速 3.1 star/天；社区健康（fork/star 比 11.0%，8 个 open issue）、项目元数据完整、开发活跃。"
+    }
+  },
+  {
+    "repo": {
+      "owner": "LunarWerxs",
+      "name": "SageThumbs-2k",
+      "full_name": "LunarWerxs/SageThumbs-2k",
+      "description": "Windows 11 shell extension (Rust): Explorer thumbnails for 331 file types Windows can't show, including camera RAW, PSD, HEIC/AVIF, video, ebooks, comics and CAD. Crash-isolated, source-available rebuild of SageThumbs.",
+      "stars": 200,
+      "forks": 8,
+      "open_issues": 1,
+      "created_at": "2026-06-11T20:18:37+00:00",
+      "pushed_at": "2026-09-23T03:17:34+00:00",
+      "updated_at": "2026-09-23T04:53:58+00:00",
+      "topics": [
+        "avif",
+        "camera-raw",
+        "codec",
+        "comics",
+        "ebook",
+        "explorer",
+        "file-explorer",
+        "heic",
+        "image-viewer",
+        "mcp",
+        "mcp-server",
+        "psd",
+        "raw",
+        "rust",
+        "sagethumbs",
+        "shell-extension",
+        "thumbnail-provider",
+        "thumbnails",
+        "windows",
+        "windows-11"
+      ],
+      "language": "Rust",
+      "license": "NOASSERTION",
+      "homepage": "https://sagethumbs.lunarwerx.com/",
+      "html_url": "https://github.com/LunarWerxs/SageThumbs-2k",
+      "default_branch": "main",
+      "archived": false,
+      "search_score": 1.0,
+      "stars_7d_ago": 189,
+      "star_series": [
+        {
+          "d": "08-25",
+          "s": 172
+        },
+        {
+          "d": "08-26",
+          "s": 172
+        },
+        {
+          "d": "08-27",
+          "s": 172
+        },
+        {
+          "d": "08-28",
+          "s": 172
+        },
+        {
+          "d": "08-29",
+          "s": 172
+        },
+        {
+          "d": "08-30",
+          "s": 172
+        },
+        {
+          "d": "08-31",
+          "s": 172
+        },
+        {
+          "d": "09-01",
+          "s": 172
+        },
+        {
+          "d": "09-02",
+          "s": 172
+        },
+        {
+          "d": "09-03",
+          "s": 172
+        },
+        {
+          "d": "09-04",
+          "s": 172
+        },
+        {
+          "d": "09-05",
+          "s": 172
+        },
+        {
+          "d": "09-06",
+          "s": 172
+        },
+        {
+          "d": "09-07",
+          "s": 172
+        },
+        {
+          "d": "09-08",
+          "s": 172
+        },
+        {
+          "d": "09-09",
+          "s": 173
+        },
+        {
+          "d": "09-10",
+          "s": 174
+        },
+        {
+          "d": "09-11",
+          "s": 176
+        },
+        {
+          "d": "09-12",
+          "s": 176
+        },
+        {
+          "d": "09-13",
+          "s": 178
+        },
+        {
+          "d": "09-14",
+          "s": 181
+        },
+        {
+          "d": "09-15",
+          "s": 185
+        },
+        {
+          "d": "09-16",
+          "s": 188
+        },
+        {
+          "d": "09-17",
+          "s": 189
+        },
+        {
+          "d": "09-18",
+          "s": 191
+        },
+        {
+          "d": "09-19",
+          "s": 192
+        },
+        {
+          "d": "09-20",
+          "s": 193
+        },
+        {
+          "d": "09-21",
+          "s": 195
+        },
+        {
+          "d": "09-22",
+          "s": 198
+        },
+        {
+          "d": "09-23",
+          "s": 200
+        }
+      ]
+    },
+    "score": {
+      "score": 59.91,
+      "breakdown": {
+        "vel": 32,
+        "acc": 43,
+        "health": 68,
+        "fresh": 72,
+        "signal": 85
+      },
+      "stage": "early",
+      "stage_multiplier": 1.2,
+      "confidence": 1.0,
+      "base_score": 49.92,
+      "explanation": "SageThumbs-2k 是 Rust 开源项目，主打「Windows 11 shell extension (Rust): Explorer thumbnails for 331 file types Windows can't show, including camera RAW, PSD, HEIC/AVIF, video, ebooks, comics and CAD. Crash-isolated, source-available rebuild of SageThumbs.」；处于增长早期；项目元数据完整、开发活跃。"
     }
   }
 ]
