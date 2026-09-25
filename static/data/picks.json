@@ -1,814 +1,298 @@
 [
   {
     "repo": {
-      "owner": "shy3130",
-      "name": "tick-stock-panel",
-      "full_name": "shy3130/tick-stock-panel",
-      "description": "TSP自托管、零运维的 A 股「选股 + 监控 + 回测」量化工作台  | LLM能力驱使策略定制+个股分析+复盘 | 自由接入第三方数据源与个性化扩展数据 | 个人开源",
-      "stars": 4994,
-      "forks": 1234,
-      "open_issues": 14,
-      "created_at": "2026-06-18T06:18:29+00:00",
-      "pushed_at": "2026-09-24T10:57:57+00:00",
-      "updated_at": "2026-09-24T11:05:19+00:00",
-      "topics": [
-        "a-stock",
-        "ai-agent",
-        "aigc",
-        "backtesting",
-        "daily",
-        "duckdb",
-        "fastapi",
-        "llm",
-        "polars",
-        "quant",
-        "quantitative-finance",
-        "quantitative-trading",
-        "react",
-        "screener",
-        "self-hosted",
-        "stock",
-        "stock-analysis",
-        "tdx",
-        "tickflow",
-        "tsp"
-      ],
-      "language": "Python",
-      "license": "MIT",
-      "homepage": null,
-      "html_url": "https://github.com/shy3130/tick-stock-panel",
-      "default_branch": "main",
-      "archived": false,
-      "search_score": 1.0,
-      "stars_7d_ago": 4855,
-      "star_series": [
-        {
-          "d": "08-26",
-          "s": 4855
-        },
-        {
-          "d": "08-27",
-          "s": 4855
-        },
-        {
-          "d": "08-28",
-          "s": 4855
-        },
-        {
-          "d": "08-29",
-          "s": 4855
-        },
-        {
-          "d": "08-30",
-          "s": 4855
-        },
-        {
-          "d": "08-31",
-          "s": 4855
-        },
-        {
-          "d": "09-01",
-          "s": 4855
-        },
-        {
-          "d": "09-02",
-          "s": 4855
-        },
-        {
-          "d": "09-03",
-          "s": 4855
-        },
-        {
-          "d": "09-04",
-          "s": 4855
-        },
-        {
-          "d": "09-05",
-          "s": 4855
-        },
-        {
-          "d": "09-06",
-          "s": 4855
-        },
-        {
-          "d": "09-07",
-          "s": 4855
-        },
-        {
-          "d": "09-08",
-          "s": 4855
-        },
-        {
-          "d": "09-09",
-          "s": 4855
-        },
-        {
-          "d": "09-10",
-          "s": 4855
-        },
-        {
-          "d": "09-11",
-          "s": 4855
-        },
-        {
-          "d": "09-12",
-          "s": 4855
-        },
-        {
-          "d": "09-13",
-          "s": 4855
-        },
-        {
-          "d": "09-14",
-          "s": 4855
-        },
-        {
-          "d": "09-15",
-          "s": 4855
-        },
-        {
-          "d": "09-16",
-          "s": 4855
-        },
-        {
-          "d": "09-17",
-          "s": 4855
-        },
-        {
-          "d": "09-18",
-          "s": 4855
-        },
-        {
-          "d": "09-19",
-          "s": 4855
-        },
-        {
-          "d": "09-20",
-          "s": 4855
-        },
-        {
-          "d": "09-21",
-          "s": 4860
-        },
-        {
-          "d": "09-22",
-          "s": 4880
-        },
-        {
-          "d": "09-23",
-          "s": 4909
-        },
-        {
-          "d": "09-24",
-          "s": 4994
-        }
-      ]
-    },
-    "score": {
-      "score": 98.56,
-      "breakdown": {
-        "vel": 92,
-        "acc": 99,
-        "health": 99,
-        "fresh": 73,
-        "signal": 70
-      },
-      "stage": "mid_early",
-      "stage_multiplier": 1.1,
-      "confidence": 1.0,
-      "base_score": 89.6,
-      "explanation": "tick-stock-panel 是 Python 开源项目，主打「TSP自托管、零运维的 A 股「选股 + 监控 + 回测」量化工作台  | LLM能力驱使策略定制+个股分析+复盘 | 自由接入第三方数据源与个性化扩展数据 | 个人开源」；处于中早期增长，本周涨速 20 star/天，涨速在加快；社区健康（fork/star 比 24.7%，14 个 open issue）、开发活跃。"
-    }
-  },
-  {
-    "repo": {
-      "owner": "RLinf",
-      "name": "RPent",
-      "full_name": "RLinf/RPent",
-      "description": "RPent: Agentic Infrastructure for the Physical World",
-      "stars": 997,
-      "forks": 100,
-      "open_issues": 29,
-      "created_at": "2026-07-07T08:14:20+00:00",
-      "pushed_at": "2026-09-24T02:44:59+00:00",
-      "updated_at": "2026-09-24T11:00:48+00:00",
-      "topics": [
-        "agentic-ai",
-        "embodied"
-      ],
-      "language": "Python",
-      "license": "Apache-2.0",
-      "homepage": "https://rpent.readthedocs.io/en/latest/",
-      "html_url": "https://github.com/RLinf/RPent",
-      "default_branch": "main",
-      "archived": false,
-      "search_score": 1.0,
-      "stars_7d_ago": 948,
-      "star_series": [
-        {
-          "d": "08-26",
-          "s": 948
-        },
-        {
-          "d": "08-27",
-          "s": 948
-        },
-        {
-          "d": "08-28",
-          "s": 948
-        },
-        {
-          "d": "08-29",
-          "s": 948
-        },
-        {
-          "d": "08-30",
-          "s": 948
-        },
-        {
-          "d": "08-31",
-          "s": 948
-        },
-        {
-          "d": "09-01",
-          "s": 948
-        },
-        {
-          "d": "09-02",
-          "s": 948
-        },
-        {
-          "d": "09-03",
-          "s": 948
-        },
-        {
-          "d": "09-04",
-          "s": 948
-        },
-        {
-          "d": "09-05",
-          "s": 948
-        },
-        {
-          "d": "09-06",
-          "s": 948
-        },
-        {
-          "d": "09-07",
-          "s": 948
-        },
-        {
-          "d": "09-08",
-          "s": 948
-        },
-        {
-          "d": "09-09",
-          "s": 948
-        },
-        {
-          "d": "09-10",
-          "s": 948
-        },
-        {
-          "d": "09-11",
-          "s": 948
-        },
-        {
-          "d": "09-12",
-          "s": 948
-        },
-        {
-          "d": "09-13",
-          "s": 948
-        },
-        {
-          "d": "09-14",
-          "s": 948
-        },
-        {
-          "d": "09-15",
-          "s": 948
-        },
-        {
-          "d": "09-16",
-          "s": 948
-        },
-        {
-          "d": "09-17",
-          "s": 948
-        },
-        {
-          "d": "09-18",
-          "s": 948
-        },
-        {
-          "d": "09-19",
-          "s": 948
-        },
-        {
-          "d": "09-20",
-          "s": 948
-        },
-        {
-          "d": "09-21",
-          "s": 948
-        },
-        {
-          "d": "09-22",
-          "s": 948
-        },
-        {
-          "d": "09-23",
-          "s": 972
-        },
-        {
-          "d": "09-24",
-          "s": 997
-        }
-      ]
-    },
-    "score": {
-      "score": 89.72,
-      "breakdown": {
-        "vel": 63,
-        "acc": 99,
-        "health": 87,
-        "fresh": 78,
-        "signal": 100
-      },
-      "stage": "mid_early",
-      "stage_multiplier": 1.1,
-      "confidence": 1.0,
-      "base_score": 81.56,
-      "explanation": "RPent 是 Python 开源项目，主打「RPent: Agentic Infrastructure for the Physical World」；处于中早期增长，本周涨速 7.0 star/天，涨速在加快；社区健康（fork/star 比 10.0%，29 个 open issue）、项目元数据完整、开发活跃。"
-    }
-  },
-  {
-    "repo": {
-      "owner": "DAT4RIAN",
-      "name": "OpenVigil",
-      "full_name": "DAT4RIAN/OpenVigil",
-      "description": "Autonomous Intelligence for Wind Turbine Operations.",
-      "stars": 200,
-      "forks": 32,
-      "open_issues": 0,
-      "created_at": "2026-09-04T08:10:37+00:00",
-      "pushed_at": "2026-09-22T13:29:45+00:00",
-      "updated_at": "2026-09-24T03:27:59+00:00",
+      "owner": "tigerowo",
+      "name": "infinite-canvas",
+      "full_name": "tigerowo/infinite-canvas",
+      "description": "开源 AI 创作工作台，集成无限画布、Agent、导演台、全景图、AI 生图、图片编辑、视频生成、画布编排等，兼容 OpenAI 接口及多种 API 服务",
+      "stars": 1000,
+      "forks": 233,
+      "open_issues": 3,
+      "created_at": "2026-06-30T08:36:43+00:00",
+      "pushed_at": "2026-09-24T16:40:57+00:00",
+      "updated_at": "2026-09-25T11:00:05+00:00",
       "topics": [],
-      "language": "Python",
-      "license": "Apache-2.0",
-      "homepage": null,
-      "html_url": "https://github.com/DAT4RIAN/OpenVigil",
+      "language": "TypeScript",
+      "license": "AGPL-3.0",
+      "homepage": "https://p01--infinite-canvas--vv2f2lsn9vkn.code.run/",
+      "html_url": "https://github.com/tigerowo/infinite-canvas",
       "default_branch": "main",
       "archived": false,
       "search_score": 1.0,
-      "stars_7d_ago": 143,
+      "stars_7d_ago": 905,
       "star_series": [
         {
-          "d": "08-26",
-          "s": 55
-        },
-        {
           "d": "08-27",
-          "s": 55
+          "s": 842
         },
         {
           "d": "08-28",
-          "s": 55
+          "s": 842
         },
         {
           "d": "08-29",
-          "s": 55
+          "s": 842
         },
         {
           "d": "08-30",
-          "s": 55
+          "s": 842
         },
         {
           "d": "08-31",
-          "s": 55
+          "s": 842
         },
         {
           "d": "09-01",
-          "s": 55
+          "s": 842
         },
         {
           "d": "09-02",
-          "s": 55
+          "s": 842
         },
         {
           "d": "09-03",
-          "s": 55
+          "s": 842
         },
         {
           "d": "09-04",
-          "s": 55
+          "s": 842
         },
         {
           "d": "09-05",
-          "s": 55
+          "s": 842
         },
         {
           "d": "09-06",
-          "s": 55
+          "s": 842
         },
         {
           "d": "09-07",
-          "s": 55
+          "s": 842
         },
         {
           "d": "09-08",
-          "s": 55
+          "s": 842
         },
         {
           "d": "09-09",
-          "s": 55
+          "s": 842
         },
         {
           "d": "09-10",
-          "s": 58
+          "s": 842
         },
         {
           "d": "09-11",
-          "s": 70
+          "s": 842
         },
         {
           "d": "09-12",
-          "s": 84
+          "s": 842
         },
         {
           "d": "09-13",
-          "s": 93
+          "s": 842
         },
         {
           "d": "09-14",
-          "s": 102
+          "s": 842
         },
         {
           "d": "09-15",
-          "s": 114
+          "s": 848
         },
         {
           "d": "09-16",
-          "s": 124
+          "s": 868
         },
         {
           "d": "09-17",
-          "s": 134
+          "s": 881
         },
         {
           "d": "09-18",
-          "s": 143
+          "s": 893
         },
         {
           "d": "09-19",
-          "s": 148
+          "s": 905
         },
         {
           "d": "09-20",
-          "s": 166
+          "s": 925
         },
         {
           "d": "09-21",
-          "s": 174
+          "s": 942
         },
         {
           "d": "09-22",
-          "s": 187
+          "s": 957
         },
         {
           "d": "09-23",
-          "s": 195
+          "s": 969
         },
         {
           "d": "09-24",
-          "s": 200
+          "s": 989
+        },
+        {
+          "d": "09-25",
+          "s": 1000
         }
       ]
     },
     "score": {
-      "score": 81.3,
+      "score": 98.78,
       "breakdown": {
-        "vel": 67,
-        "acc": 45,
+        "vel": 100,
+        "acc": 62,
         "health": 100,
-        "fresh": 95,
-        "signal": 55
+        "fresh": 76,
+        "signal": 70
       },
       "stage": "early",
       "stage_multiplier": 1.2,
       "confidence": 1.0,
-      "base_score": 67.75,
-      "explanation": "OpenVigil 是 Python 开源项目，主打「Autonomous Intelligence for Wind Turbine Operations.」；处于增长早期，本周涨速 8.1 star/天；社区健康（fork/star 比 16.0%，0 个 open issue）、开发活跃。"
+      "base_score": 82.31,
+      "explanation": "infinite-canvas 是 TypeScript 开源项目，主打「开源 AI 创作工作台，集成无限画布、Agent、导演台、全景图、AI 生图、图片编辑、视频生成、画布编排等，兼容 OpenAI 接口及多种 API 服务」；处于增长早期，本周涨速 14 star/天；社区健康（fork/star 比 23.3%，3 个 open issue）、开发活跃。"
     }
   },
   {
     "repo": {
-      "owner": "Tencent",
-      "name": "teamai-cli",
-      "full_name": "Tencent/teamai-cli",
-      "description": "Make Every Team AI Native",
-      "stars": 4988,
-      "forks": 372,
-      "open_issues": 36,
-      "created_at": "2026-04-27T09:42:49+00:00",
-      "pushed_at": "2026-09-24T11:04:58+00:00",
-      "updated_at": "2026-09-24T11:05:03+00:00",
-      "topics": [],
-      "language": "TypeScript",
-      "license": "NOASSERTION",
-      "homepage": null,
-      "html_url": "https://github.com/Tencent/teamai-cli",
-      "default_branch": "main",
-      "archived": false,
-      "search_score": 1.0,
-      "stars_7d_ago": 4943,
-      "star_series": [
-        {
-          "d": "08-26",
-          "s": 4943
-        },
-        {
-          "d": "08-27",
-          "s": 4943
-        },
-        {
-          "d": "08-28",
-          "s": 4943
-        },
-        {
-          "d": "08-29",
-          "s": 4943
-        },
-        {
-          "d": "08-30",
-          "s": 4943
-        },
-        {
-          "d": "08-31",
-          "s": 4943
-        },
-        {
-          "d": "09-01",
-          "s": 4943
-        },
-        {
-          "d": "09-02",
-          "s": 4943
-        },
-        {
-          "d": "09-03",
-          "s": 4943
-        },
-        {
-          "d": "09-04",
-          "s": 4943
-        },
-        {
-          "d": "09-05",
-          "s": 4943
-        },
-        {
-          "d": "09-06",
-          "s": 4943
-        },
-        {
-          "d": "09-07",
-          "s": 4943
-        },
-        {
-          "d": "09-08",
-          "s": 4943
-        },
-        {
-          "d": "09-09",
-          "s": 4943
-        },
-        {
-          "d": "09-10",
-          "s": 4943
-        },
-        {
-          "d": "09-11",
-          "s": 4943
-        },
-        {
-          "d": "09-12",
-          "s": 4943
-        },
-        {
-          "d": "09-13",
-          "s": 4943
-        },
-        {
-          "d": "09-14",
-          "s": 4943
-        },
-        {
-          "d": "09-15",
-          "s": 4943
-        },
-        {
-          "d": "09-16",
-          "s": 4943
-        },
-        {
-          "d": "09-17",
-          "s": 4943
-        },
-        {
-          "d": "09-18",
-          "s": 4943
-        },
-        {
-          "d": "09-19",
-          "s": 4943
-        },
-        {
-          "d": "09-20",
-          "s": 4943
-        },
-        {
-          "d": "09-21",
-          "s": 4943
-        },
-        {
-          "d": "09-22",
-          "s": 4943
-        },
-        {
-          "d": "09-23",
-          "s": 4962
-        },
-        {
-          "d": "09-24",
-          "s": 4988
-        }
-      ]
-    },
-    "score": {
-      "score": 72.54,
-      "breakdown": {
-        "vel": 61,
-        "acc": 99,
-        "health": 85,
-        "fresh": 59,
-        "signal": 55
-      },
-      "stage": "mid_late",
-      "stage_multiplier": 1.0,
-      "confidence": 1.0,
-      "base_score": 72.54,
-      "explanation": "teamai-cli 是 TypeScript 开源项目，主打「Make Every Team AI Native」；处于中后期增长，本周涨速 6.4 star/天，涨速在加快；社区健康（fork/star 比 7.5%，36 个 open issue）。"
-    }
-  },
-  {
-    "repo": {
-      "owner": "shoyrulove-dev",
-      "name": "PureHub",
-      "full_name": "shoyrulove-dev/PureHub",
-      "description": "26 free, ad-free, privacy-first utility mini apps for Android and the web.",
+      "owner": "k0valik",
+      "name": "pi-blackhole",
+      "full_name": "k0valik/pi-blackhole",
+      "description": "Unified algorithmic compaction + observational memory for Pi. Merges pi-vcc and pi-observational-memory with fallback chains, cooldowns, and per-worker model config.",
       "stars": 200,
-      "forks": 7,
-      "open_issues": 1,
-      "created_at": "2026-07-12T16:10:31+00:00",
-      "pushed_at": "2026-09-23T15:46:33+00:00",
-      "updated_at": "2026-09-24T10:25:08+00:00",
+      "forks": 40,
+      "open_issues": 7,
+      "created_at": "2026-05-24T01:14:59+00:00",
+      "pushed_at": "2026-09-25T06:55:07+00:00",
+      "updated_at": "2026-09-24T23:06:54+00:00",
       "topics": [
-        "android",
-        "community",
-        "jetpack-compose",
-        "kotlin",
-        "no-ads",
-        "offline-first",
-        "open-source",
-        "privacy-first",
-        "pwa",
-        "react",
-        "typescript",
-        "utility-apps"
+        "pi-agent",
+        "pi-coding-agent",
+        "pi-extension",
+        "pi-package"
       ],
-      "language": "Kotlin",
+      "language": "TypeScript",
       "license": "MIT",
-      "homepage": "https://hub.blissbiovn.com/en",
-      "html_url": "https://github.com/shoyrulove-dev/PureHub",
+      "homepage": "www.npmjs.com/package/pi-blackhole",
+      "html_url": "https://github.com/k0valik/pi-blackhole",
       "default_branch": "main",
       "archived": false,
       "search_score": 1.0,
-      "stars_7d_ago": 173,
+      "stars_7d_ago": 175,
       "star_series": [
         {
-          "d": "08-26",
-          "s": 32
-        },
-        {
           "d": "08-27",
-          "s": 32
+          "s": 175
         },
         {
           "d": "08-28",
-          "s": 34
+          "s": 175
         },
         {
           "d": "08-29",
-          "s": 35
+          "s": 175
         },
         {
           "d": "08-30",
-          "s": 35
+          "s": 175
         },
         {
           "d": "08-31",
-          "s": 35
+          "s": 175
         },
         {
           "d": "09-01",
-          "s": 35
+          "s": 175
         },
         {
           "d": "09-02",
-          "s": 35
+          "s": 175
         },
         {
           "d": "09-03",
-          "s": 35
+          "s": 175
         },
         {
           "d": "09-04",
-          "s": 35
+          "s": 175
         },
         {
           "d": "09-05",
-          "s": 35
+          "s": 175
         },
         {
           "d": "09-06",
-          "s": 35
+          "s": 175
         },
         {
           "d": "09-07",
-          "s": 35
+          "s": 175
         },
         {
           "d": "09-08",
-          "s": 35
+          "s": 175
         },
         {
           "d": "09-09",
-          "s": 35
+          "s": 175
         },
         {
           "d": "09-10",
-          "s": 35
+          "s": 175
         },
         {
           "d": "09-11",
-          "s": 35
+          "s": 175
         },
         {
           "d": "09-12",
-          "s": 35
+          "s": 175
         },
         {
           "d": "09-13",
-          "s": 35
+          "s": 175
         },
         {
           "d": "09-14",
-          "s": 83
+          "s": 175
         },
         {
           "d": "09-15",
-          "s": 119
+          "s": 175
         },
         {
           "d": "09-16",
-          "s": 142
+          "s": 175
         },
         {
           "d": "09-17",
-          "s": 168
+          "s": 175
         },
         {
           "d": "09-18",
-          "s": 173
+          "s": 175
         },
         {
           "d": "09-19",
-          "s": 182
+          "s": 175
         },
         {
           "d": "09-20",
-          "s": 186
+          "s": 179
         },
         {
           "d": "09-21",
-          "s": 191
+          "s": 188
         },
         {
           "d": "09-22",
-          "s": 194
+          "s": 195
         },
         {
           "d": "09-23",
@@ -817,23 +301,562 @@
         {
           "d": "09-24",
           "s": 200
+        },
+        {
+          "d": "09-25",
+          "s": 200
         }
       ]
     },
     "score": {
-      "score": 63.02,
+      "score": 92.12,
       "breakdown": {
-        "vel": 48,
-        "acc": 31,
-        "health": 67,
-        "fresh": 80,
+        "vel": 57,
+        "acc": 97,
+        "health": 95,
+        "fresh": 66,
         "signal": 85
       },
       "stage": "early",
       "stage_multiplier": 1.2,
       "confidence": 1.0,
-      "base_score": 52.52,
-      "explanation": "PureHub 是 Kotlin 开源项目，主打「26 free, ad-free, privacy-first utility mini apps for Android and the web.」；处于增长早期，本周涨速 3.9 star/天；项目元数据完整、开发活跃。"
+      "base_score": 76.77,
+      "explanation": "pi-blackhole 是 TypeScript 开源项目，主打「Unified algorithmic compaction + observational memory for Pi. Merges pi-vcc and pi-observational-memory with fallback chains, cooldowns, and per-worker model config.」；处于增长早期，本周涨速 3.6 star/天，涨速在加快；社区健康（fork/star 比 20.0%，7 个 open issue）、项目元数据完整。"
+    }
+  },
+  {
+    "repo": {
+      "owner": "bifrost0x",
+      "name": "webssh",
+      "full_name": "bifrost0x/webssh",
+      "description": "Security-focused, self-hosted SSH and SFTP workspace for homelabs and teams - multi-user, passkeys, OIDC, encrypted keys, backups, and offline-ready.",
+      "stars": 200,
+      "forks": 35,
+      "open_issues": 1,
+      "created_at": "2026-01-24T10:38:45+00:00",
+      "pushed_at": "2026-09-23T15:49:28+00:00",
+      "updated_at": "2026-09-25T07:48:55+00:00",
+      "topics": [
+        "docker",
+        "homelab",
+        "offline-first",
+        "openid-connect",
+        "passkeys",
+        "remote-access",
+        "remote-administrative-tool",
+        "remote-execution",
+        "remote-work",
+        "security",
+        "self-hosted",
+        "sftp",
+        "ssh",
+        "tailscale",
+        "terminal",
+        "web-terminal",
+        "webssh"
+      ],
+      "language": "Python",
+      "license": "MIT",
+      "homepage": "https://bifrost0x.github.io/webssh/",
+      "html_url": "https://github.com/bifrost0x/webssh",
+      "default_branch": "main",
+      "archived": false,
+      "search_score": 1.0,
+      "stars_7d_ago": 159,
+      "star_series": [
+        {
+          "d": "08-27",
+          "s": 149
+        },
+        {
+          "d": "08-28",
+          "s": 149
+        },
+        {
+          "d": "08-29",
+          "s": 149
+        },
+        {
+          "d": "08-30",
+          "s": 149
+        },
+        {
+          "d": "08-31",
+          "s": 149
+        },
+        {
+          "d": "09-01",
+          "s": 149
+        },
+        {
+          "d": "09-02",
+          "s": 149
+        },
+        {
+          "d": "09-03",
+          "s": 149
+        },
+        {
+          "d": "09-04",
+          "s": 149
+        },
+        {
+          "d": "09-05",
+          "s": 149
+        },
+        {
+          "d": "09-06",
+          "s": 149
+        },
+        {
+          "d": "09-07",
+          "s": 149
+        },
+        {
+          "d": "09-08",
+          "s": 149
+        },
+        {
+          "d": "09-09",
+          "s": 149
+        },
+        {
+          "d": "09-10",
+          "s": 149
+        },
+        {
+          "d": "09-11",
+          "s": 150
+        },
+        {
+          "d": "09-12",
+          "s": 151
+        },
+        {
+          "d": "09-13",
+          "s": 151
+        },
+        {
+          "d": "09-14",
+          "s": 153
+        },
+        {
+          "d": "09-15",
+          "s": 153
+        },
+        {
+          "d": "09-16",
+          "s": 155
+        },
+        {
+          "d": "09-17",
+          "s": 155
+        },
+        {
+          "d": "09-18",
+          "s": 155
+        },
+        {
+          "d": "09-19",
+          "s": 159
+        },
+        {
+          "d": "09-20",
+          "s": 160
+        },
+        {
+          "d": "09-21",
+          "s": 169
+        },
+        {
+          "d": "09-22",
+          "s": 188
+        },
+        {
+          "d": "09-23",
+          "s": 193
+        },
+        {
+          "d": "09-24",
+          "s": 199
+        },
+        {
+          "d": "09-25",
+          "s": 200
+        }
+      ]
+    },
+    "score": {
+      "score": 91.89,
+      "breakdown": {
+        "vel": 72,
+        "acc": 98,
+        "health": 100,
+        "fresh": 33,
+        "signal": 100
+      },
+      "stage": "early",
+      "stage_multiplier": 1.2,
+      "confidence": 1.0,
+      "base_score": 76.58,
+      "explanation": "webssh 是 Python 开源项目，主打「Security-focused, self-hosted SSH and SFTP workspace for homelabs and teams - multi-user, passkeys, OIDC, encrypted keys, backups, and offline-ready.」；处于增长早期，本周涨速 5.9 star/天，涨速在加快；社区健康（fork/star 比 17.5%，1 个 open issue）、项目元数据完整。"
+    }
+  },
+  {
+    "repo": {
+      "owner": "Yzw202011",
+      "name": "OmniSpace",
+      "full_name": "Yzw202011/OmniSpace",
+      "description": "本地优先的全栈 AI 创作工作站：AI对话 · AI漫画 · 漫剧创作 · 写作台 · 知识学习五大模块；vLLM / llama.cpp / Transformers 多引擎本地推理，显存智能调度、舱壁隔离自愈、仅供学习使用，欢迎交流指正。",
+      "stars": 200,
+      "forks": 5,
+      "open_issues": 1,
+      "created_at": "2026-08-23T14:36:51+00:00",
+      "pushed_at": "2026-09-20T07:09:12+00:00",
+      "updated_at": "2026-09-25T04:21:45+00:00",
+      "topics": [
+        "ai-comic",
+        "ai-manga",
+        "fastapi",
+        "knowledge-graph",
+        "llama-cpp",
+        "local-first",
+        "local-llm",
+        "novel-writing",
+        "pytorch",
+        "rag",
+        "react",
+        "stable-diffusion",
+        "text-to-video",
+        "typescript",
+        "vllm"
+      ],
+      "language": "Python",
+      "license": null,
+      "homepage": null,
+      "html_url": "https://github.com/Yzw202011/OmniSpace",
+      "default_branch": "main",
+      "archived": false,
+      "search_score": 1.0,
+      "stars_7d_ago": 109,
+      "star_series": [
+        {
+          "d": "08-27",
+          "s": 40
+        },
+        {
+          "d": "08-28",
+          "s": 40
+        },
+        {
+          "d": "08-29",
+          "s": 40
+        },
+        {
+          "d": "08-30",
+          "s": 40
+        },
+        {
+          "d": "08-31",
+          "s": 40
+        },
+        {
+          "d": "09-01",
+          "s": 40
+        },
+        {
+          "d": "09-02",
+          "s": 40
+        },
+        {
+          "d": "09-03",
+          "s": 40
+        },
+        {
+          "d": "09-04",
+          "s": 40
+        },
+        {
+          "d": "09-05",
+          "s": 40
+        },
+        {
+          "d": "09-06",
+          "s": 40
+        },
+        {
+          "d": "09-07",
+          "s": 40
+        },
+        {
+          "d": "09-08",
+          "s": 40
+        },
+        {
+          "d": "09-09",
+          "s": 40
+        },
+        {
+          "d": "09-10",
+          "s": 40
+        },
+        {
+          "d": "09-11",
+          "s": 40
+        },
+        {
+          "d": "09-12",
+          "s": 40
+        },
+        {
+          "d": "09-13",
+          "s": 40
+        },
+        {
+          "d": "09-14",
+          "s": 40
+        },
+        {
+          "d": "09-15",
+          "s": 50
+        },
+        {
+          "d": "09-16",
+          "s": 67
+        },
+        {
+          "d": "09-17",
+          "s": 86
+        },
+        {
+          "d": "09-18",
+          "s": 100
+        },
+        {
+          "d": "09-19",
+          "s": 109
+        },
+        {
+          "d": "09-20",
+          "s": 131
+        },
+        {
+          "d": "09-21",
+          "s": 150
+        },
+        {
+          "d": "09-22",
+          "s": 158
+        },
+        {
+          "d": "09-23",
+          "s": 181
+        },
+        {
+          "d": "09-24",
+          "s": 195
+        },
+        {
+          "d": "09-25",
+          "s": 200
+        }
+      ]
+    },
+    "score": {
+      "score": 87.87,
+      "breakdown": {
+        "vel": 99,
+        "acc": 58,
+        "health": 64,
+        "fresh": 91,
+        "signal": 50
+      },
+      "stage": "early",
+      "stage_multiplier": 1.2,
+      "confidence": 1.0,
+      "base_score": 73.22,
+      "explanation": "OmniSpace 是 Python 开源项目，主打「本地优先的全栈 AI 创作工作站：AI对话 · AI漫画 · 漫剧创作 · 写作台 · 知识学习五大模块；vLLM / llama.cpp / Transformers 多引擎本地推理，显存智能调度、舱壁隔离自愈、仅供学习使用，欢迎交流指正。」；处于增长早期，本周涨速 13 star/天；开发活跃。"
+    }
+  },
+  {
+    "repo": {
+      "owner": "vshulcz",
+      "name": "deja-vu",
+      "full_name": "vshulcz/deja-vu",
+      "description": "One memory shared by Claude Code, Codex, Cursor, Copilot CLI, OpenClaw and 29 more coding agents, built from the session history already on disk. A fix found in one agent comes back in any of them, including months of sessions from before you installed it. No LLM, no embeddings, one local Go binary.",
+      "stars": 997,
+      "forks": 100,
+      "open_issues": 14,
+      "created_at": "2026-07-14T07:45:44+00:00",
+      "pushed_at": "2026-09-25T10:50:04+00:00",
+      "updated_at": "2026-09-25T10:51:45+00:00",
+      "topics": [
+        "agent-memory",
+        "agents",
+        "ai",
+        "claude-code",
+        "claude-code-hooks",
+        "claude-code-plugins",
+        "codex",
+        "coding-agents",
+        "deepseek-harness",
+        "dsh-plugin",
+        "gemini-cli-extension",
+        "genai",
+        "kimi-code",
+        "mcp",
+        "mcp-server",
+        "memory",
+        "opencode",
+        "qwen-code",
+        "session-history",
+        "zed-extension"
+      ],
+      "language": "Go",
+      "license": "MIT",
+      "homepage": "https://vshulcz.github.io/deja-vu/",
+      "html_url": "https://github.com/vshulcz/deja-vu",
+      "default_branch": "main",
+      "archived": false,
+      "search_score": 1.0,
+      "stars_7d_ago": 973,
+      "star_series": [
+        {
+          "d": "08-27",
+          "s": 973
+        },
+        {
+          "d": "08-28",
+          "s": 973
+        },
+        {
+          "d": "08-29",
+          "s": 973
+        },
+        {
+          "d": "08-30",
+          "s": 973
+        },
+        {
+          "d": "08-31",
+          "s": 973
+        },
+        {
+          "d": "09-01",
+          "s": 973
+        },
+        {
+          "d": "09-02",
+          "s": 973
+        },
+        {
+          "d": "09-03",
+          "s": 973
+        },
+        {
+          "d": "09-04",
+          "s": 973
+        },
+        {
+          "d": "09-05",
+          "s": 973
+        },
+        {
+          "d": "09-06",
+          "s": 973
+        },
+        {
+          "d": "09-07",
+          "s": 973
+        },
+        {
+          "d": "09-08",
+          "s": 973
+        },
+        {
+          "d": "09-09",
+          "s": 973
+        },
+        {
+          "d": "09-10",
+          "s": 973
+        },
+        {
+          "d": "09-11",
+          "s": 973
+        },
+        {
+          "d": "09-12",
+          "s": 973
+        },
+        {
+          "d": "09-13",
+          "s": 973
+        },
+        {
+          "d": "09-14",
+          "s": 973
+        },
+        {
+          "d": "09-15",
+          "s": 973
+        },
+        {
+          "d": "09-16",
+          "s": 973
+        },
+        {
+          "d": "09-17",
+          "s": 973
+        },
+        {
+          "d": "09-18",
+          "s": 973
+        },
+        {
+          "d": "09-19",
+          "s": 973
+        },
+        {
+          "d": "09-20",
+          "s": 973
+        },
+        {
+          "d": "09-21",
+          "s": 973
+        },
+        {
+          "d": "09-22",
+          "s": 973
+        },
+        {
+          "d": "09-23",
+          "s": 973
+        },
+        {
+          "d": "09-24",
+          "s": 980
+        },
+        {
+          "d": "09-25",
+          "s": 997
+        }
+      ]
+    },
+    "score": {
+      "score": 86.91,
+      "breakdown": {
+        "vel": 56,
+        "acc": 97,
+        "health": 91,
+        "fresh": 80,
+        "signal": 100
+      },
+      "stage": "mid_early",
+      "stage_multiplier": 1.1,
+      "confidence": 1.0,
+      "base_score": 79.01,
+      "explanation": "deja-vu 是 Go 开源项目，主打「One memory shared by Claude Code, Codex, Cursor, Copilot CLI, OpenClaw and 29 more coding agents, built from the session history already on disk. A fix found in one agent comes back in any of them, including months of sessions from before you installed it. No LLM, no embeddings, one local Go binary.」；处于中早期增长，本周涨速 3.4 star/天，涨速在加快；社区健康（fork/star 比 10.0%，14 个 open issue）、项目元数据完整、开发活跃。"
     }
   }
 ]
