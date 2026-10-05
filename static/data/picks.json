@@ -1,162 +1,150 @@
 [
   {
     "repo": {
-      "owner": "oomol-lab",
-      "name": "open-flow",
-      "full_name": "oomol-lab/open-flow",
-      "description": "Build workflows you can see, code, run, and own. Open-source visual workflow automation with real TypeScript, isolated execution, and a self-hosted Control API.",
+      "owner": "ahang008",
+      "name": "ah-douyin-clean-downloader",
+      "full_name": "ahang008/ah-douyin-clean-downloader",
+      "description": "把抖音链接或口令直接交给 Codex，下载无平台角标原视频并按博主自动归档",
       "stars": 200,
-      "forks": 23,
-      "open_issues": 4,
-      "created_at": "2026-08-24T03:06:20+00:00",
-      "pushed_at": "2026-10-04T04:03:47+00:00",
-      "updated_at": "2026-10-04T07:41:13+00:00",
+      "forks": 33,
+      "open_issues": 0,
+      "created_at": "2026-09-21T03:16:09+00:00",
+      "pushed_at": "2026-10-03T12:23:56+00:00",
+      "updated_at": "2026-10-04T17:55:44+00:00",
       "topics": [
-        "automation",
-        "cron",
-        "docker",
-        "integrations",
-        "javascript",
-        "nodejs",
-        "oomol",
-        "orchestration",
-        "react",
-        "self-hosted",
-        "typescript",
-        "visual-programming",
-        "webhook",
-        "workflow",
-        "workflow-automation",
-        "workflow-engine",
-        "workflows"
+        "ai-agent",
+        "chinese",
+        "codex-skill",
+        "douyin",
+        "video-downloader"
       ],
-      "language": "TypeScript",
-      "license": "Apache-2.0",
-      "homepage": "https://oomol.com/flow",
-      "html_url": "https://github.com/oomol-lab/open-flow",
+      "language": "Python",
+      "license": "NOASSERTION",
+      "homepage": null,
+      "html_url": "https://github.com/ahang008/ah-douyin-clean-downloader",
       "default_branch": "main",
       "archived": false,
       "search_score": 1.0,
-      "stars_7d_ago": 131,
+      "stars_7d_ago": 35,
       "star_series": [
         {
-          "d": "09-05",
-          "s": 129
-        },
-        {
           "d": "09-06",
-          "s": 129
+          "s": 0
         },
         {
           "d": "09-07",
-          "s": 129
+          "s": 0
         },
         {
           "d": "09-08",
-          "s": 129
+          "s": 0
         },
         {
           "d": "09-09",
-          "s": 129
+          "s": 0
         },
         {
           "d": "09-10",
-          "s": 129
+          "s": 0
         },
         {
           "d": "09-11",
-          "s": 129
+          "s": 0
         },
         {
           "d": "09-12",
-          "s": 129
+          "s": 0
         },
         {
           "d": "09-13",
-          "s": 129
+          "s": 0
         },
         {
           "d": "09-14",
-          "s": 129
+          "s": 0
         },
         {
           "d": "09-15",
-          "s": 129
+          "s": 0
         },
         {
           "d": "09-16",
-          "s": 129
+          "s": 0
         },
         {
           "d": "09-17",
-          "s": 129
+          "s": 0
         },
         {
           "d": "09-18",
-          "s": 129
+          "s": 0
         },
         {
           "d": "09-19",
-          "s": 129
+          "s": 0
         },
         {
           "d": "09-20",
-          "s": 129
+          "s": 0
         },
         {
           "d": "09-21",
-          "s": 130
+          "s": 26
         },
         {
           "d": "09-22",
-          "s": 130
+          "s": 33
         },
         {
           "d": "09-23",
-          "s": 131
+          "s": 33
         },
         {
           "d": "09-24",
-          "s": 131
+          "s": 34
         },
         {
           "d": "09-25",
-          "s": 131
+          "s": 35
         },
         {
           "d": "09-26",
-          "s": 131
+          "s": 35
         },
         {
           "d": "09-27",
-          "s": 131
+          "s": 35
         },
         {
           "d": "09-28",
-          "s": 131
+          "s": 35
         },
         {
           "d": "09-29",
-          "s": 131
+          "s": 35
         },
         {
           "d": "09-30",
-          "s": 133
+          "s": 98
         },
         {
           "d": "10-01",
-          "s": 150
+          "s": 158
         },
         {
           "d": "10-02",
-          "s": 186
+          "s": 187
         },
         {
           "d": "10-03",
-          "s": 198
+          "s": 197
         },
         {
           "d": "10-04",
+          "s": 200
+        },
+        {
+          "d": "10-05",
           "s": 200
         }
       ]
@@ -164,158 +152,497 @@
     "score": {
       "score": 100.0,
       "breakdown": {
-        "vel": 77,
+        "vel": 100,
         "acc": 99,
-        "health": 89,
-        "fresh": 89,
+        "health": 100,
+        "fresh": 96,
+        "signal": 70
+      },
+      "stage": "mid_early",
+      "stage_multiplier": 1.1,
+      "confidence": 1.0,
+      "base_score": 95.78,
+      "explanation": "ah-douyin-clean-downloader 是 Python 开源项目，主打「把抖音链接或口令直接交给 Codex，下载无平台角标原视频并按博主自动归档」；处于中早期增长，本周涨速 24 star/天，涨速在加快；社区健康（fork/star 比 16.5%，0 个 open issue）、开发活跃。"
+    }
+  },
+  {
+    "repo": {
+      "owner": "data-goblin",
+      "name": "power-bi-agentic-development",
+      "full_name": "data-goblin/power-bi-agentic-development",
+      "description": "Power BI AI skills and Power BI agents for Claude Code and GitHub Copilot: a plugin marketplace of Power BI skills, subagents, and hooks for semantic models, DAX, TMDL, reports, and AI dashboards. Includes Microsoft Fabric skills and Fabric agents. Weekly updates.",
+      "stars": 996,
+      "forks": 142,
+      "open_issues": 0,
+      "created_at": "2026-01-15T09:26:29+00:00",
+      "pushed_at": "2026-10-05T08:02:52+00:00",
+      "updated_at": "2026-10-05T13:12:29+00:00",
+      "topics": [
+        "agentic-development",
+        "agents",
+        "ai",
+        "ai-agents",
+        "business-intelligence",
+        "claude",
+        "claude-code",
+        "copilot",
+        "dax",
+        "fabric",
+        "github-copilot",
+        "microsoft-fabric",
+        "pbip",
+        "plugin",
+        "power-bi",
+        "reporting",
+        "semantic-model",
+        "skills",
+        "tmdl"
+      ],
+      "language": "C#",
+      "license": "GPL-3.0",
+      "homepage": "https://data-goblins.com",
+      "html_url": "https://github.com/data-goblin/power-bi-agentic-development",
+      "default_branch": "main",
+      "archived": false,
+      "search_score": 1.0,
+      "stars_7d_ago": 946,
+      "star_series": [
+        {
+          "d": "09-06",
+          "s": 894
+        },
+        {
+          "d": "09-07",
+          "s": 899
+        },
+        {
+          "d": "09-08",
+          "s": 900
+        },
+        {
+          "d": "09-09",
+          "s": 902
+        },
+        {
+          "d": "09-10",
+          "s": 904
+        },
+        {
+          "d": "09-11",
+          "s": 905
+        },
+        {
+          "d": "09-12",
+          "s": 905
+        },
+        {
+          "d": "09-13",
+          "s": 906
+        },
+        {
+          "d": "09-14",
+          "s": 907
+        },
+        {
+          "d": "09-15",
+          "s": 909
+        },
+        {
+          "d": "09-16",
+          "s": 912
+        },
+        {
+          "d": "09-17",
+          "s": 913
+        },
+        {
+          "d": "09-18",
+          "s": 913
+        },
+        {
+          "d": "09-19",
+          "s": 913
+        },
+        {
+          "d": "09-20",
+          "s": 913
+        },
+        {
+          "d": "09-21",
+          "s": 917
+        },
+        {
+          "d": "09-22",
+          "s": 918
+        },
+        {
+          "d": "09-23",
+          "s": 924
+        },
+        {
+          "d": "09-24",
+          "s": 933
+        },
+        {
+          "d": "09-25",
+          "s": 936
+        },
+        {
+          "d": "09-26",
+          "s": 940
+        },
+        {
+          "d": "09-27",
+          "s": 941
+        },
+        {
+          "d": "09-28",
+          "s": 943
+        },
+        {
+          "d": "09-29",
+          "s": 946
+        },
+        {
+          "d": "09-30",
+          "s": 948
+        },
+        {
+          "d": "10-01",
+          "s": 953
+        },
+        {
+          "d": "10-02",
+          "s": 955
+        },
+        {
+          "d": "10-03",
+          "s": 961
+        },
+        {
+          "d": "10-04",
+          "s": 980
+        },
+        {
+          "d": "10-05",
+          "s": 996
+        }
+      ]
+    },
+    "score": {
+      "score": 78.48,
+      "breakdown": {
+        "vel": 66,
+        "acc": 69,
+        "health": 100,
+        "fresh": 28,
         "signal": 85
       },
       "stage": "early",
       "stage_multiplier": 1.2,
       "confidence": 1.0,
-      "base_score": 87.19,
-      "explanation": "open-flow 是 TypeScript 开源项目，主打「Build workflows you can see, code, run, and own. Open-source visual workflow automation with real TypeScript, isolated execution, and a self-hosted Control API.」；处于增长早期，本周涨速 9.9 star/天，涨速在加快；社区健康（fork/star 比 11.5%，4 个 open issue）、项目元数据完整、开发活跃。"
+      "base_score": 65.4,
+      "explanation": "power-bi-agentic-development 是 C# 开源项目，主打「Power BI AI skills and Power BI agents for Claude Code and GitHub Copilot: a plugin marketplace of Power BI skills, subagents, and hooks for semantic models, DAX, TMDL, reports, and AI dashboards. Includes Microsoft Fabric skills and Fabric agents. Weekly updates.」；处于增长早期，本周涨速 7.1 star/天；社区健康（fork/star 比 14.3%，0 个 open issue）、项目元数据完整。"
     }
   },
   {
     "repo": {
-      "owner": "changexbc",
-      "name": "workbuddy-switch",
-      "full_name": "changexbc/workbuddy-switch",
-      "description": "WorkBuddy、CodeBuddy  账号切换，支持积分到期监控、积分统计与 Token 统计，agent 状态悬浮窗。",
+      "owner": "faisalkindi",
+      "name": "DLSS5oneclick",
+      "full_name": "faisalkindi/DLSS5oneclick",
+      "description": "One-click setup of the leaked DLSS 5 neural-rendering build for any DX11/DX12 game on RTX 20–50, with or without DLSS. ReShade + RenoDX add-on (or OptiScaler engine); DLSS5-Feeder + LumeniteFX for games without DLSS; dlss5-bridge for DX11. Rust, single exe.",
       "stars": 998,
-      "forks": 121,
-      "open_issues": 20,
-      "created_at": "2026-08-16T06:24:29+00:00",
-      "pushed_at": "2026-10-04T05:32:16+00:00",
-      "updated_at": "2026-10-04T10:16:07+00:00",
-      "topics": [
-        "account-switcher",
-        "codebuddy",
-        "rust",
-        "tauri",
-        "workbuddy"
-      ],
+      "forks": 69,
+      "open_issues": 43,
+      "created_at": "2026-08-31T02:12:29+00:00",
+      "pushed_at": "2026-10-03T17:49:09+00:00",
+      "updated_at": "2026-10-05T13:17:37+00:00",
+      "topics": [],
       "language": "Rust",
       "license": "MIT",
       "homepage": null,
-      "html_url": "https://github.com/changexbc/workbuddy-switch",
+      "html_url": "https://github.com/faisalkindi/DLSS5oneclick",
       "default_branch": "main",
       "archived": false,
       "search_score": 1.0,
-      "stars_7d_ago": 894,
+      "stars_7d_ago": 975,
       "star_series": [
         {
-          "d": "09-05",
-          "s": 852
-        },
-        {
           "d": "09-06",
-          "s": 852
+          "s": 975
         },
         {
           "d": "09-07",
-          "s": 852
+          "s": 975
         },
         {
           "d": "09-08",
-          "s": 852
+          "s": 975
         },
         {
           "d": "09-09",
-          "s": 852
+          "s": 975
         },
         {
           "d": "09-10",
-          "s": 852
+          "s": 975
         },
         {
           "d": "09-11",
-          "s": 852
+          "s": 975
         },
         {
           "d": "09-12",
-          "s": 852
+          "s": 975
         },
         {
           "d": "09-13",
-          "s": 852
+          "s": 975
         },
         {
           "d": "09-14",
-          "s": 852
+          "s": 975
         },
         {
           "d": "09-15",
-          "s": 852
+          "s": 975
         },
         {
           "d": "09-16",
-          "s": 852
+          "s": 975
         },
         {
           "d": "09-17",
-          "s": 852
+          "s": 975
         },
         {
           "d": "09-18",
-          "s": 852
+          "s": 975
         },
         {
           "d": "09-19",
-          "s": 852
+          "s": 975
         },
         {
           "d": "09-20",
-          "s": 852
+          "s": 975
         },
         {
           "d": "09-21",
-          "s": 852
+          "s": 975
         },
         {
           "d": "09-22",
-          "s": 852
+          "s": 975
         },
         {
           "d": "09-23",
-          "s": 852
+          "s": 975
         },
         {
           "d": "09-24",
-          "s": 852
+          "s": 975
         },
         {
           "d": "09-25",
-          "s": 852
+          "s": 975
         },
         {
           "d": "09-26",
-          "s": 852
+          "s": 975
         },
         {
           "d": "09-27",
-          "s": 868
+          "s": 975
         },
         {
           "d": "09-28",
-          "s": 894
+          "s": 975
         },
         {
           "d": "09-29",
-          "s": 924
+          "s": 975
         },
         {
           "d": "09-30",
-          "s": 944
+          "s": 975
         },
         {
           "d": "10-01",
-          "s": 957
+          "s": 975
         },
         {
           "d": "10-02",
-          "s": 974
+          "s": 978
+        },
+        {
+          "d": "10-03",
+          "s": 986
+        },
+        {
+          "d": "10-04",
+          "s": 993
+        },
+        {
+          "d": "10-05",
+          "s": 998
+        }
+      ]
+    },
+    "score": {
+      "score": 75.05,
+      "breakdown": {
+        "vel": 46,
+        "acc": 96,
+        "health": 72,
+        "fresh": 90,
+        "signal": 55
+      },
+      "stage": "mid_early",
+      "stage_multiplier": 1.1,
+      "confidence": 1.0,
+      "base_score": 68.22,
+      "explanation": "DLSS5oneclick 是 Rust 开源项目，主打「One-click setup of the leaked DLSS 5 neural-rendering build for any DX11/DX12 game on RTX 20–50, with or without DLSS. ReShade + RenoDX add-on (or OptiScaler engine); DLSS5-Feeder + LumeniteFX for games without DLSS; dlss5-bridge for DX11. Rust, single exe.」；处于中早期增长，本周涨速 3.3 star/天，涨速在加快；社区健康（fork/star 比 6.9%，43 个 open issue）、开发活跃。"
+    }
+  },
+  {
+    "repo": {
+      "owner": "slkiser",
+      "name": "opencode-quota",
+      "full_name": "slkiser/opencode-quota",
+      "description": "OpenCode quota & tokens usage with zero context window pollution. Supports OpenCode Go, Cursor, GitHub Copilot, OpenAl, Kimi Code, Alibaba Coding Plan, Chutes Al, Google Antigravity, Z.ai Coding Plan and more.",
+      "stars": 993,
+      "forks": 112,
+      "open_issues": 10,
+      "created_at": "2026-01-22T22:45:14+00:00",
+      "pushed_at": "2026-10-03T14:31:11+00:00",
+      "updated_at": "2026-10-05T05:27:56+00:00",
+      "topics": [
+        "opencode",
+        "opencode-plugin",
+        "opencode-plugins",
+        "quota",
+        "quota-monitor",
+        "token-usage",
+        "tokens",
+        "usage"
+      ],
+      "language": "TypeScript",
+      "license": "MIT",
+      "homepage": null,
+      "html_url": "https://github.com/slkiser/opencode-quota",
+      "default_branch": "main",
+      "archived": false,
+      "search_score": 1.0,
+      "stars_7d_ago": 979,
+      "star_series": [
+        {
+          "d": "09-06",
+          "s": 975
+        },
+        {
+          "d": "09-07",
+          "s": 975
+        },
+        {
+          "d": "09-08",
+          "s": 975
+        },
+        {
+          "d": "09-09",
+          "s": 975
+        },
+        {
+          "d": "09-10",
+          "s": 975
+        },
+        {
+          "d": "09-11",
+          "s": 975
+        },
+        {
+          "d": "09-12",
+          "s": 975
+        },
+        {
+          "d": "09-13",
+          "s": 975
+        },
+        {
+          "d": "09-14",
+          "s": 975
+        },
+        {
+          "d": "09-15",
+          "s": 975
+        },
+        {
+          "d": "09-16",
+          "s": 975
+        },
+        {
+          "d": "09-17",
+          "s": 975
+        },
+        {
+          "d": "09-18",
+          "s": 975
+        },
+        {
+          "d": "09-19",
+          "s": 975
+        },
+        {
+          "d": "09-20",
+          "s": 975
+        },
+        {
+          "d": "09-21",
+          "s": 975
+        },
+        {
+          "d": "09-22",
+          "s": 975
+        },
+        {
+          "d": "09-23",
+          "s": 975
+        },
+        {
+          "d": "09-24",
+          "s": 975
+        },
+        {
+          "d": "09-25",
+          "s": 975
+        },
+        {
+          "d": "09-26",
+          "s": 977
+        },
+        {
+          "d": "09-27",
+          "s": 979
+        },
+        {
+          "d": "09-28",
+          "s": 979
+        },
+        {
+          "d": "09-29",
+          "s": 979
+        },
+        {
+          "d": "09-30",
+          "s": 982
+        },
+        {
+          "d": "10-01",
+          "s": 983
+        },
+        {
+          "d": "10-02",
+          "s": 985
         },
         {
           "d": "10-03",
@@ -323,468 +650,143 @@
         },
         {
           "d": "10-04",
-          "s": 998
-        }
-      ]
-    },
-    "score": {
-      "score": 100.0,
-      "breakdown": {
-        "vel": 89,
-        "acc": 81,
-        "health": 96,
-        "fresh": 87,
-        "signal": 70
-      },
-      "stage": "early",
-      "stage_multiplier": 1.2,
-      "confidence": 1.0,
-      "base_score": 86.07,
-      "explanation": "workbuddy-switch 是 Rust 开源项目，主打「WorkBuddy、CodeBuddy  账号切换，支持积分到期监控、积分统计与 Token 统计，agent 状态悬浮窗。」；处于增长早期，本周涨速 15 star/天，涨速在加快；社区健康（fork/star 比 12.1%，20 个 open issue）、开发活跃。"
-    }
-  },
-  {
-    "repo": {
-      "owner": "kuuky29",
-      "name": "UniRoot",
-      "full_name": "kuuky29/UniRoot",
-      "description": null,
-      "stars": 200,
-      "forks": 15,
-      "open_issues": 8,
-      "created_at": "2026-09-09T22:27:33+00:00",
-      "pushed_at": "2026-09-30T17:23:33+00:00",
-      "updated_at": "2026-10-04T09:24:46+00:00",
-      "topics": [],
-      "language": "Kotlin",
-      "license": null,
-      "homepage": null,
-      "html_url": "https://github.com/kuuky29/UniRoot",
-      "default_branch": "main",
-      "archived": false,
-      "search_score": 1.0,
-      "stars_7d_ago": 124,
-      "star_series": [
-        {
-          "d": "09-05",
-          "s": 124
-        },
-        {
-          "d": "09-06",
-          "s": 124
-        },
-        {
-          "d": "09-07",
-          "s": 124
-        },
-        {
-          "d": "09-08",
-          "s": 124
-        },
-        {
-          "d": "09-09",
-          "s": 124
-        },
-        {
-          "d": "09-10",
-          "s": 124
-        },
-        {
-          "d": "09-11",
-          "s": 124
-        },
-        {
-          "d": "09-12",
-          "s": 124
-        },
-        {
-          "d": "09-13",
-          "s": 124
-        },
-        {
-          "d": "09-14",
-          "s": 124
-        },
-        {
-          "d": "09-15",
-          "s": 124
-        },
-        {
-          "d": "09-16",
-          "s": 124
-        },
-        {
-          "d": "09-17",
-          "s": 124
-        },
-        {
-          "d": "09-18",
-          "s": 124
-        },
-        {
-          "d": "09-19",
-          "s": 124
-        },
-        {
-          "d": "09-20",
-          "s": 124
-        },
-        {
-          "d": "09-21",
-          "s": 124
-        },
-        {
-          "d": "09-22",
-          "s": 124
-        },
-        {
-          "d": "09-23",
-          "s": 124
-        },
-        {
-          "d": "09-24",
-          "s": 124
-        },
-        {
-          "d": "09-25",
-          "s": 124
-        },
-        {
-          "d": "09-26",
-          "s": 124
-        },
-        {
-          "d": "09-27",
-          "s": 124
-        },
-        {
-          "d": "09-28",
-          "s": 124
-        },
-        {
-          "d": "09-29",
-          "s": 124
-        },
-        {
-          "d": "09-30",
-          "s": 124
-        },
-        {
-          "d": "10-01",
-          "s": 174
-        },
-        {
-          "d": "10-02",
-          "s": 192
-        },
-        {
-          "d": "10-03",
-          "s": 196
-        },
-        {
-          "d": "10-04",
-          "s": 200
-        }
-      ]
-    },
-    "score": {
-      "score": 88.68,
-      "breakdown": {
-        "vel": 80,
-        "acc": 99,
-        "health": 72,
-        "fresh": 93,
-        "signal": 20
-      },
-      "stage": "early",
-      "stage_multiplier": 1.2,
-      "confidence": 1.0,
-      "base_score": 73.9,
-      "explanation": "UniRoot 是 Kotlin 方向的开源项目；处于增长早期，本周涨速 11 star/天，涨速在加快；社区健康（fork/star 比 7.5%，8 个 open issue）、开发活跃。"
-    }
-  },
-  {
-    "repo": {
-      "owner": "NeuroAIHub",
-      "name": "BrainPilot",
-      "full_name": "NeuroAIHub/BrainPilot",
-      "description": "BrainPilot: Automating Brain Discovery with Agentic Research",
-      "stars": 999,
-      "forks": 70,
-      "open_issues": 20,
-      "created_at": "2026-06-13T09:16:16+00:00",
-      "pushed_at": "2026-10-02T14:10:39+00:00",
-      "updated_at": "2026-10-04T10:43:53+00:00",
-      "topics": [],
-      "language": "TypeScript",
-      "license": "AGPL-3.0",
-      "homepage": "https://brainpilot.chat",
-      "html_url": "https://github.com/NeuroAIHub/BrainPilot",
-      "default_branch": "main",
-      "archived": false,
-      "search_score": 1.0,
-      "stars_7d_ago": 929,
-      "star_series": [
-        {
-          "d": "09-05",
-          "s": 765
-        },
-        {
-          "d": "09-06",
-          "s": 765
-        },
-        {
-          "d": "09-07",
-          "s": 765
-        },
-        {
-          "d": "09-08",
-          "s": 765
-        },
-        {
-          "d": "09-09",
-          "s": 765
-        },
-        {
-          "d": "09-10",
-          "s": 765
-        },
-        {
-          "d": "09-11",
-          "s": 765
-        },
-        {
-          "d": "09-12",
-          "s": 765
-        },
-        {
-          "d": "09-13",
-          "s": 765
-        },
-        {
-          "d": "09-14",
-          "s": 765
-        },
-        {
-          "d": "09-15",
-          "s": 765
-        },
-        {
-          "d": "09-16",
-          "s": 765
-        },
-        {
-          "d": "09-17",
-          "s": 765
-        },
-        {
-          "d": "09-18",
-          "s": 765
-        },
-        {
-          "d": "09-19",
-          "s": 765
-        },
-        {
-          "d": "09-20",
-          "s": 765
-        },
-        {
-          "d": "09-21",
-          "s": 784
-        },
-        {
-          "d": "09-22",
-          "s": 819
-        },
-        {
-          "d": "09-23",
-          "s": 854
-        },
-        {
-          "d": "09-24",
-          "s": 866
-        },
-        {
-          "d": "09-25",
-          "s": 887
-        },
-        {
-          "d": "09-26",
-          "s": 898
-        },
-        {
-          "d": "09-27",
-          "s": 912
-        },
-        {
-          "d": "09-28",
-          "s": 929
-        },
-        {
-          "d": "09-29",
-          "s": 941
-        },
-        {
-          "d": "09-30",
-          "s": 955
-        },
-        {
-          "d": "10-01",
-          "s": 968
-        },
-        {
-          "d": "10-02",
-          "s": 976
-        },
-        {
-          "d": "10-03",
           "s": 991
         },
         {
-          "d": "10-04",
-          "s": 999
+          "d": "10-05",
+          "s": 993
         }
       ]
     },
     "score": {
-      "score": 75.67,
+      "score": 60.76,
       "breakdown": {
-        "vel": 78,
-        "acc": 37,
-        "health": 78,
-        "fresh": 69,
+        "vel": 35,
+        "acc": 81,
+        "health": 96,
+        "fresh": 30,
         "signal": 70
       },
-      "stage": "early",
-      "stage_multiplier": 1.2,
+      "stage": "mid_early",
+      "stage_multiplier": 1.1,
       "confidence": 1.0,
-      "base_score": 63.06,
-      "explanation": "BrainPilot 是 TypeScript 开源项目，主打「BrainPilot: Automating Brain Discovery with Agentic Research」；处于增长早期，本周涨速 10 star/天；社区健康（fork/star 比 7.0%，20 个 open issue）。"
+      "base_score": 55.23,
+      "explanation": "opencode-quota 是 TypeScript 开源项目，主打「OpenCode quota & tokens usage with zero context window pollution. Supports OpenCode Go, Cursor, GitHub Copilot, OpenAl, Kimi Code, Alibaba Coding Plan, Chutes Al, Google Antigravity, Z.ai Coding Plan and more.」；处于中早期增长，涨速在加快；社区健康（fork/star 比 11.3%，10 个 open issue）。"
     }
   },
   {
     "repo": {
-      "owner": "antiburn",
-      "name": "antiburn",
-      "full_name": "antiburn/antiburn",
-      "description": "Fast, free local checks to reduce your token burn. Helps you avoid limits by checking for: sessions too deep, models too powerful, caching broken, unused tools/MCPs/skills, and many more.",
+      "owner": "Kaggle",
+      "name": "kaggle-benchmarks",
+      "full_name": "Kaggle/kaggle-benchmarks",
+      "description": "Kaggle Benchmarks Python library",
       "stars": 200,
-      "forks": 12,
-      "open_issues": 47,
-      "created_at": "2026-08-12T06:11:00+00:00",
-      "pushed_at": "2026-10-02T12:07:53+00:00",
-      "updated_at": "2026-10-03T08:43:08+00:00",
-      "topics": [
-        "ai-coding",
-        "desktop-app",
-        "developer-tools",
-        "local-first"
-      ],
-      "language": "Rust",
-      "license": "MIT",
-      "homepage": "https://antiburn.com",
-      "html_url": "https://github.com/antiburn/antiburn",
-      "default_branch": "main",
+      "forks": 55,
+      "open_issues": 18,
+      "created_at": "2025-12-01T21:07:06+00:00",
+      "pushed_at": "2026-10-03T22:47:46+00:00",
+      "updated_at": "2026-10-04T17:47:07+00:00",
+      "topics": [],
+      "language": "Python",
+      "license": "Apache-2.0",
+      "homepage": "https://www.kaggle.com/benchmarks",
+      "html_url": "https://github.com/Kaggle/kaggle-benchmarks",
+      "default_branch": "ci",
       "archived": false,
       "search_score": 1.0,
-      "stars_7d_ago": 178,
+      "stars_7d_ago": 192,
       "star_series": [
         {
-          "d": "09-05",
-          "s": 170
-        },
-        {
           "d": "09-06",
-          "s": 170
+          "s": 189
         },
         {
           "d": "09-07",
-          "s": 170
+          "s": 189
         },
         {
           "d": "09-08",
-          "s": 170
+          "s": 189
         },
         {
           "d": "09-09",
-          "s": 170
+          "s": 189
         },
         {
           "d": "09-10",
-          "s": 170
+          "s": 189
         },
         {
           "d": "09-11",
-          "s": 170
+          "s": 189
         },
         {
           "d": "09-12",
-          "s": 170
+          "s": 189
         },
         {
           "d": "09-13",
-          "s": 170
+          "s": 189
         },
         {
           "d": "09-14",
-          "s": 170
+          "s": 189
         },
         {
           "d": "09-15",
-          "s": 170
+          "s": 189
         },
         {
           "d": "09-16",
-          "s": 170
+          "s": 189
         },
         {
           "d": "09-17",
-          "s": 170
+          "s": 189
         },
         {
           "d": "09-18",
-          "s": 170
+          "s": 189
         },
         {
           "d": "09-19",
-          "s": 170
+          "s": 189
         },
         {
           "d": "09-20",
-          "s": 170
+          "s": 189
         },
         {
           "d": "09-21",
-          "s": 170
+          "s": 189
         },
         {
           "d": "09-22",
-          "s": 170
+          "s": 189
         },
         {
           "d": "09-23",
-          "s": 170
+          "s": 189
         },
         {
           "d": "09-24",
-          "s": 170
+          "s": 190
         },
         {
           "d": "09-25",
-          "s": 170
+          "s": 190
         },
         {
           "d": "09-26",
-          "s": 170
+          "s": 190
         },
         {
           "d": "09-27",
-          "s": 170
+          "s": 190
         },
         {
           "d": "09-28",
-          "s": 178
+          "s": 191
         },
         {
           "d": "09-29",
@@ -792,40 +794,44 @@
         },
         {
           "d": "09-30",
-          "s": 192
+          "s": 193
         },
         {
           "d": "10-01",
-          "s": 195
+          "s": 194
         },
         {
           "d": "10-02",
-          "s": 199
+          "s": 195
         },
         {
           "d": "10-03",
-          "s": 200
+          "s": 197
         },
         {
           "d": "10-04",
+          "s": 200
+        },
+        {
+          "d": "10-05",
           "s": 200
         }
       ]
     },
     "score": {
-      "score": 74.5,
+      "score": 50.16,
       "breakdown": {
-        "vel": 46,
-        "acc": 85,
-        "health": 44,
-        "fresh": 85,
-        "signal": 85
+        "vel": 24,
+        "acc": 67,
+        "health": 83,
+        "fresh": 16,
+        "signal": 70
       },
       "stage": "early",
       "stage_multiplier": 1.2,
       "confidence": 1.0,
-      "base_score": 62.08,
-      "explanation": "antiburn 是 Rust 开源项目，主打「Fast, free local checks to reduce your token burn. Helps you avoid limits by checking for: sessions too deep, models too powerful, caching broken, unused tools/MCPs/skills, and many more.」；处于增长早期，本周涨速 3.1 star/天，涨速在加快；项目元数据完整、开发活跃。"
+      "base_score": 41.8,
+      "explanation": "kaggle-benchmarks 是 Python 开源项目，主打「Kaggle Benchmarks Python library」；处于增长早期；社区健康（fork/star 比 27.5%，18 个 open issue）。"
     }
   }
 ]
