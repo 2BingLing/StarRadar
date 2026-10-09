@@ -1,837 +1,827 @@
 [
   {
     "repo": {
-      "owner": "PSRben",
-      "name": "VisionHOPE",
-      "full_name": "PSRben/VisionHOPE",
-      "description": "Official PyTorch implementation of VisionHOPE: Visual Backbones as Self-Modifying Learning Systems.",
-      "stars": 997,
-      "forks": 15,
-      "open_issues": 6,
-      "created_at": "2026-09-27T06:56:59+00:00",
-      "pushed_at": "2026-10-03T18:35:57+00:00",
-      "updated_at": "2026-10-08T12:47:05+00:00",
+      "owner": "PhreshOS",
+      "name": "system",
+      "full_name": "PhreshOS/system",
+      "description": "An open-source, self-hosted system for apps built with web technologies.",
+      "stars": 200,
+      "forks": 25,
+      "open_issues": 0,
+      "created_at": "2026-08-18T15:16:06+00:00",
+      "pushed_at": "2026-10-08T15:46:35+00:00",
+      "updated_at": "2026-10-09T11:38:37+00:00",
       "topics": [
-        "backbone",
-        "backbone-networks",
-        "computer-vision",
-        "image-classification",
-        "vision-framework"
+        "desktop-environment",
+        "phreshos",
+        "self-hosted",
+        "web-desktop",
+        "web-os"
       ],
-      "language": "Python",
+      "language": "TypeScript",
       "license": "MIT",
-      "homepage": null,
-      "html_url": "https://github.com/PSRben/VisionHOPE",
+      "homepage": "https://phreshos.com/",
+      "html_url": "https://github.com/PhreshOS/system",
       "default_branch": "main",
       "archived": false,
       "search_score": 1.0,
-      "stars_7d_ago": 702,
+      "stars_7d_ago": 66,
       "star_series": [
         {
-          "d": "09-09",
-          "s": 702
-        },
-        {
           "d": "09-10",
-          "s": 702
+          "s": 37
         },
         {
           "d": "09-11",
-          "s": 702
+          "s": 37
         },
         {
           "d": "09-12",
-          "s": 702
+          "s": 37
         },
         {
           "d": "09-13",
-          "s": 702
+          "s": 37
         },
         {
           "d": "09-14",
-          "s": 702
+          "s": 37
         },
         {
           "d": "09-15",
-          "s": 702
+          "s": 37
         },
         {
           "d": "09-16",
-          "s": 702
+          "s": 37
         },
         {
           "d": "09-17",
-          "s": 702
+          "s": 37
         },
         {
           "d": "09-18",
-          "s": 702
+          "s": 37
         },
         {
           "d": "09-19",
-          "s": 702
+          "s": 37
         },
         {
           "d": "09-20",
-          "s": 702
+          "s": 37
         },
         {
           "d": "09-21",
-          "s": 702
+          "s": 37
         },
         {
           "d": "09-22",
-          "s": 702
+          "s": 37
         },
         {
           "d": "09-23",
-          "s": 702
+          "s": 37
         },
         {
           "d": "09-24",
-          "s": 702
+          "s": 37
         },
         {
           "d": "09-25",
-          "s": 702
+          "s": 37
         },
         {
           "d": "09-26",
-          "s": 702
+          "s": 37
         },
         {
           "d": "09-27",
-          "s": 702
+          "s": 37
         },
         {
           "d": "09-28",
-          "s": 702
+          "s": 37
         },
         {
           "d": "09-29",
-          "s": 702
+          "s": 37
         },
         {
           "d": "09-30",
-          "s": 702
+          "s": 37
         },
         {
           "d": "10-01",
-          "s": 702
+          "s": 37
         },
         {
           "d": "10-02",
-          "s": 702
+          "s": 47
         },
         {
           "d": "10-03",
-          "s": 702
+          "s": 66
         },
         {
           "d": "10-04",
-          "s": 702
+          "s": 131
         },
         {
           "d": "10-05",
-          "s": 739
+          "s": 153
         },
         {
           "d": "10-06",
-          "s": 839
+          "s": 164
         },
         {
           "d": "10-07",
-          "s": 943
+          "s": 172
         },
         {
           "d": "10-08",
-          "s": 997
+          "s": 189
+        },
+        {
+          "d": "10-09",
+          "s": 200
         }
       ]
     },
     "score": {
       "score": 100.0,
       "breakdown": {
-        "vel": 100,
-        "acc": 99,
-        "health": 63,
-        "fresh": 97,
-        "signal": 70
-      },
-      "stage": "early",
-      "stage_multiplier": 1.2,
-      "confidence": 1.0,
-      "base_score": 87.4,
-      "explanation": "VisionHOPE 是 Python 开源项目，主打「Official PyTorch implementation of VisionHOPE: Visual Backbones as Self-Modifying Learning Systems.」；处于增长早期，本周涨速 42 star/天，涨速在加快；开发活跃。"
-    }
-  },
-  {
-    "repo": {
-      "owner": "aakarim",
-      "name": "OpenLore",
-      "full_name": "aakarim/OpenLore",
-      "description": "A minimal, extensible, agent-native knowledge repository that keeps shared context current and inspectable",
-      "stars": 998,
-      "forks": 9,
-      "open_issues": 6,
-      "created_at": "2026-06-25T12:57:08+00:00",
-      "pushed_at": "2026-10-08T12:24:00+00:00",
-      "updated_at": "2026-10-08T10:14:57+00:00",
-      "topics": [
-        "agent",
-        "agent-memory",
-        "agents",
-        "knowledge",
-        "knowledge-base",
-        "knowledge-management",
-        "knowledgebase",
-        "memory"
-      ],
-      "language": "Go",
-      "license": "Apache-2.0",
-      "homepage": "https://openlore.sh",
-      "html_url": "https://github.com/aakarim/OpenLore",
-      "default_branch": "main",
-      "archived": false,
-      "search_score": 1.0,
-      "stars_7d_ago": 881,
-      "star_series": [
-        {
-          "d": "09-09",
-          "s": 881
-        },
-        {
-          "d": "09-10",
-          "s": 881
-        },
-        {
-          "d": "09-11",
-          "s": 881
-        },
-        {
-          "d": "09-12",
-          "s": 881
-        },
-        {
-          "d": "09-13",
-          "s": 881
-        },
-        {
-          "d": "09-14",
-          "s": 881
-        },
-        {
-          "d": "09-15",
-          "s": 881
-        },
-        {
-          "d": "09-16",
-          "s": 881
-        },
-        {
-          "d": "09-17",
-          "s": 881
-        },
-        {
-          "d": "09-18",
-          "s": 881
-        },
-        {
-          "d": "09-19",
-          "s": 881
-        },
-        {
-          "d": "09-20",
-          "s": 881
-        },
-        {
-          "d": "09-21",
-          "s": 881
-        },
-        {
-          "d": "09-22",
-          "s": 881
-        },
-        {
-          "d": "09-23",
-          "s": 881
-        },
-        {
-          "d": "09-24",
-          "s": 881
-        },
-        {
-          "d": "09-25",
-          "s": 881
-        },
-        {
-          "d": "09-26",
-          "s": 881
-        },
-        {
-          "d": "09-27",
-          "s": 881
-        },
-        {
-          "d": "09-28",
-          "s": 881
-        },
-        {
-          "d": "09-29",
-          "s": 881
-        },
-        {
-          "d": "09-30",
-          "s": 881
-        },
-        {
-          "d": "10-01",
-          "s": 881
-        },
-        {
-          "d": "10-02",
-          "s": 881
-        },
-        {
-          "d": "10-03",
-          "s": 881
-        },
-        {
-          "d": "10-04",
-          "s": 882
-        },
-        {
-          "d": "10-05",
-          "s": 907
-        },
-        {
-          "d": "10-06",
-          "s": 963
-        },
-        {
-          "d": "10-07",
-          "s": 991
-        },
-        {
-          "d": "10-08",
-          "s": 998
-        }
-      ]
-    },
-    "score": {
-      "score": 94.41,
-      "breakdown": {
-        "vel": 78,
-        "acc": 99,
-        "health": 61,
-        "fresh": 72,
+        "vel": 95,
+        "acc": 97,
+        "health": 94,
+        "fresh": 86,
         "signal": 85
       },
       "stage": "early",
       "stage_multiplier": 1.2,
       "confidence": 1.0,
-      "base_score": 78.67,
-      "explanation": "OpenLore 是 Go 开源项目，主打「A minimal, extensible, agent-native knowledge repository that keeps shared context current and inspectable」；处于增长早期，本周涨速 17 star/天，涨速在加快；项目元数据完整、开发活跃。"
+      "base_score": 92.92,
+      "explanation": "system 是 TypeScript 开源项目，主打「An open-source, self-hosted system for apps built with web technologies.」；处于增长早期，本周涨速 19 star/天，涨速在加快；社区健康（fork/star 比 12.5%，0 个 open issue）、项目元数据完整、开发活跃。"
     }
   },
   {
     "repo": {
-      "owner": "Wyze3306",
-      "name": "BedrockOnLinux",
-      "full_name": "Wyze3306/BedrockOnLinux",
-      "description": "Run Minecraft Bedrock for Windows seamlessly on Linux.",
-      "stars": 996,
-      "forks": 52,
-      "open_issues": 21,
-      "created_at": "2026-05-16T11:54:43+00:00",
-      "pushed_at": "2026-10-08T11:58:05+00:00",
-      "updated_at": "2026-10-08T10:54:03+00:00",
-      "topics": [
-        "appimage",
-        "archlinux",
-        "debian",
-        "fedora",
-        "flatpak",
-        "games",
-        "launcher",
-        "linux",
-        "mc",
-        "minecraft",
-        "minecraft-linux",
-        "minecraft-server",
-        "ubuntu",
-        "ui"
-      ],
-      "language": "Python",
-      "license": "NOASSERTION",
-      "homepage": "https://wyze3306.github.io/BedrockOnLinux/",
-      "html_url": "https://github.com/Wyze3306/BedrockOnLinux",
-      "default_branch": "main",
-      "archived": false,
-      "search_score": 1.0,
-      "stars_7d_ago": 951,
-      "star_series": [
-        {
-          "d": "09-09",
-          "s": 935
-        },
-        {
-          "d": "09-10",
-          "s": 935
-        },
-        {
-          "d": "09-11",
-          "s": 935
-        },
-        {
-          "d": "09-12",
-          "s": 935
-        },
-        {
-          "d": "09-13",
-          "s": 935
-        },
-        {
-          "d": "09-14",
-          "s": 935
-        },
-        {
-          "d": "09-15",
-          "s": 935
-        },
-        {
-          "d": "09-16",
-          "s": 935
-        },
-        {
-          "d": "09-17",
-          "s": 935
-        },
-        {
-          "d": "09-18",
-          "s": 935
-        },
-        {
-          "d": "09-19",
-          "s": 935
-        },
-        {
-          "d": "09-20",
-          "s": 935
-        },
-        {
-          "d": "09-21",
-          "s": 935
-        },
-        {
-          "d": "09-22",
-          "s": 935
-        },
-        {
-          "d": "09-23",
-          "s": 935
-        },
-        {
-          "d": "09-24",
-          "s": 935
-        },
-        {
-          "d": "09-25",
-          "s": 935
-        },
-        {
-          "d": "09-26",
-          "s": 935
-        },
-        {
-          "d": "09-27",
-          "s": 935
-        },
-        {
-          "d": "09-28",
-          "s": 935
-        },
-        {
-          "d": "09-29",
-          "s": 935
-        },
-        {
-          "d": "09-30",
-          "s": 935
-        },
-        {
-          "d": "10-01",
-          "s": 941
-        },
-        {
-          "d": "10-02",
-          "s": 951
-        },
-        {
-          "d": "10-03",
-          "s": 960
-        },
-        {
-          "d": "10-04",
-          "s": 968
-        },
-        {
-          "d": "10-05",
-          "s": 978
-        },
-        {
-          "d": "10-06",
-          "s": 985
-        },
-        {
-          "d": "10-07",
-          "s": 991
-        },
-        {
-          "d": "10-08",
-          "s": 996
-        }
-      ]
-    },
-    "score": {
-      "score": 83.66,
-      "breakdown": {
-        "vel": 55,
-        "acc": 86,
-        "health": 72,
-        "fresh": 60,
-        "signal": 100
-      },
-      "stage": "early",
-      "stage_multiplier": 1.2,
-      "confidence": 1.0,
-      "base_score": 69.72,
-      "explanation": "BedrockOnLinux 是 Python 开源项目，主打「Run Minecraft Bedrock for Windows seamlessly on Linux.」；处于增长早期，本周涨速 6.4 star/天，涨速在加快；社区健康（fork/star 比 5.2%，21 个 open issue）、项目元数据完整。"
-    }
-  },
-  {
-    "repo": {
-      "owner": "OpenRSI-Foundation",
-      "name": "OpenRSI-Index",
-      "full_name": "OpenRSI-Foundation/OpenRSI-Index",
-      "description": null,
+      "owner": "SamsungLabs",
+      "name": "LittleBit",
+      "full_name": "SamsungLabs/LittleBit",
+      "description": "Official implementation of LittleBit (NeurIPS 2025) and its follow-up LittleBit-2 (ICML 2026)",
       "stars": 200,
-      "forks": 15,
+      "forks": 26,
       "open_issues": 1,
-      "created_at": "2026-08-14T22:48:00+00:00",
-      "pushed_at": "2026-10-08T00:07:03+00:00",
-      "updated_at": "2026-10-08T11:42:45+00:00",
+      "created_at": "2025-11-18T01:16:03+00:00",
+      "pushed_at": "2026-10-09T03:03:34+00:00",
+      "updated_at": "2026-10-09T12:13:43+00:00",
       "topics": [],
       "language": "Python",
-      "license": "Apache-2.0",
-      "homepage": "https://index.openrsi.foundation/index.html",
-      "html_url": "https://github.com/OpenRSI-Foundation/OpenRSI-Index",
+      "license": "NOASSERTION",
+      "homepage": null,
+      "html_url": "https://github.com/SamsungLabs/LittleBit",
       "default_branch": "main",
       "archived": false,
       "search_score": 1.0,
-      "stars_7d_ago": 152,
+      "stars_7d_ago": 29,
       "star_series": [
         {
-          "d": "09-09",
-          "s": 41
-        },
-        {
           "d": "09-10",
-          "s": 41
+          "s": 28
         },
         {
           "d": "09-11",
-          "s": 41
+          "s": 28
         },
         {
           "d": "09-12",
-          "s": 41
+          "s": 28
         },
         {
           "d": "09-13",
-          "s": 41
+          "s": 28
         },
         {
           "d": "09-14",
-          "s": 41
+          "s": 28
         },
         {
           "d": "09-15",
-          "s": 41
+          "s": 28
         },
         {
           "d": "09-16",
-          "s": 41
+          "s": 28
         },
         {
           "d": "09-17",
-          "s": 41
+          "s": 28
         },
         {
           "d": "09-18",
-          "s": 41
+          "s": 28
         },
         {
           "d": "09-19",
-          "s": 41
+          "s": 28
         },
         {
           "d": "09-20",
-          "s": 41
+          "s": 28
         },
         {
           "d": "09-21",
-          "s": 41
+          "s": 28
         },
         {
           "d": "09-22",
-          "s": 41
+          "s": 28
         },
         {
           "d": "09-23",
-          "s": 41
+          "s": 28
         },
         {
           "d": "09-24",
-          "s": 100
+          "s": 28
         },
         {
           "d": "09-25",
-          "s": 115
+          "s": 28
         },
         {
           "d": "09-26",
-          "s": 123
+          "s": 29
         },
         {
           "d": "09-27",
-          "s": 128
+          "s": 29
         },
         {
           "d": "09-28",
-          "s": 136
+          "s": 29
         },
         {
           "d": "09-29",
-          "s": 143
+          "s": 29
         },
         {
           "d": "09-30",
-          "s": 147
+          "s": 29
         },
         {
           "d": "10-01",
-          "s": 150
+          "s": 29
         },
         {
           "d": "10-02",
-          "s": 152
+          "s": 29
         },
         {
           "d": "10-03",
-          "s": 157
+          "s": 29
         },
         {
           "d": "10-04",
-          "s": 161
+          "s": 29
         },
         {
           "d": "10-05",
-          "s": 174
+          "s": 29
         },
         {
           "d": "10-06",
-          "s": 186
+          "s": 30
         },
         {
           "d": "10-07",
-          "s": 191
+          "s": 30
         },
         {
           "d": "10-08",
+          "s": 131
+        },
+        {
+          "d": "10-09",
           "s": 200
         }
       ]
     },
     "score": {
-      "score": 70.51,
+      "score": 80.93,
       "breakdown": {
-        "vel": 56,
-        "acc": 57,
-        "health": 78,
-        "fresh": 85,
+        "vel": 100,
+        "acc": 99,
+        "health": 96,
+        "fresh": 11,
         "signal": 55
+      },
+      "stage": "early",
+      "stage_multiplier": 1.2,
+      "confidence": 1.0,
+      "base_score": 67.45,
+      "explanation": "LittleBit 是 Python 开源项目，主打「Official implementation of LittleBit (NeurIPS 2025) and its follow-up LittleBit-2 (ICML 2026)」；处于增长早期，本周涨速 24 star/天，涨速在加快；社区健康（fork/star 比 13.0%，1 个 open issue）。"
+    }
+  },
+  {
+    "repo": {
+      "owner": "danielravina",
+      "name": "stemkit",
+      "full_name": "danielravina/stemkit",
+      "description": "Split any YouTube song into stems",
+      "stars": 995,
+      "forks": 120,
+      "open_issues": 18,
+      "created_at": "2026-08-24T06:34:25+00:00",
+      "pushed_at": "2026-10-06T21:44:55+00:00",
+      "updated_at": "2026-10-09T11:53:56+00:00",
+      "topics": [],
+      "language": "TypeScript",
+      "license": "MIT",
+      "homepage": null,
+      "html_url": "https://github.com/danielravina/stemkit",
+      "default_branch": "main",
+      "archived": false,
+      "search_score": 1.0,
+      "stars_7d_ago": 945,
+      "star_series": [
+        {
+          "d": "09-10",
+          "s": 788
+        },
+        {
+          "d": "09-11",
+          "s": 788
+        },
+        {
+          "d": "09-12",
+          "s": 788
+        },
+        {
+          "d": "09-13",
+          "s": 788
+        },
+        {
+          "d": "09-14",
+          "s": 788
+        },
+        {
+          "d": "09-15",
+          "s": 788
+        },
+        {
+          "d": "09-16",
+          "s": 788
+        },
+        {
+          "d": "09-17",
+          "s": 788
+        },
+        {
+          "d": "09-18",
+          "s": 788
+        },
+        {
+          "d": "09-19",
+          "s": 788
+        },
+        {
+          "d": "09-20",
+          "s": 788
+        },
+        {
+          "d": "09-21",
+          "s": 788
+        },
+        {
+          "d": "09-22",
+          "s": 788
+        },
+        {
+          "d": "09-23",
+          "s": 788
+        },
+        {
+          "d": "09-24",
+          "s": 788
+        },
+        {
+          "d": "09-25",
+          "s": 788
+        },
+        {
+          "d": "09-26",
+          "s": 790
+        },
+        {
+          "d": "09-27",
+          "s": 807
+        },
+        {
+          "d": "09-28",
+          "s": 838
+        },
+        {
+          "d": "09-29",
+          "s": 849
+        },
+        {
+          "d": "09-30",
+          "s": 879
+        },
+        {
+          "d": "10-01",
+          "s": 923
+        },
+        {
+          "d": "10-02",
+          "s": 939
+        },
+        {
+          "d": "10-03",
+          "s": 945
+        },
+        {
+          "d": "10-04",
+          "s": 953
+        },
+        {
+          "d": "10-05",
+          "s": 963
+        },
+        {
+          "d": "10-06",
+          "s": 977
+        },
+        {
+          "d": "10-07",
+          "s": 987
+        },
+        {
+          "d": "10-08",
+          "s": 991
+        },
+        {
+          "d": "10-09",
+          "s": 995
+        }
+      ]
+    },
+    "score": {
+      "score": 74.11,
+      "breakdown": {
+        "vel": 66,
+        "acc": 34,
+        "health": 97,
+        "fresh": 87,
+        "signal": 55
+      },
+      "stage": "early",
+      "stage_multiplier": 1.2,
+      "confidence": 1.0,
+      "base_score": 61.75,
+      "explanation": "stemkit 是 TypeScript 开源项目，主打「Split any YouTube song into stems」；处于增长早期，本周涨速 7.1 star/天；社区健康（fork/star 比 12.1%，18 个 open issue）、开发活跃。"
+    }
+  },
+  {
+    "repo": {
+      "owner": "huanfeng",
+      "name": "WindInput",
+      "full_name": "huanfeng/WindInput",
+      "description": "清风输入法 | 轻量、快速、可定制的开源中文输入法，专为五笔和码表输入方案设计（Windows / macOS）",
+      "stars": 992,
+      "forks": 56,
+      "open_issues": 29,
+      "created_at": "2026-01-21T08:51:49+00:00",
+      "pushed_at": "2026-10-09T03:58:55+00:00",
+      "updated_at": "2026-10-09T12:05:46+00:00",
+      "topics": [
+        "ime",
+        "input-method",
+        "macos",
+        "rust",
+        "tsf",
+        "windinput",
+        "wubi"
+      ],
+      "language": "Rust",
+      "license": "MIT",
+      "homepage": "https://windinput.com",
+      "html_url": "https://github.com/huanfeng/WindInput",
+      "default_branch": "main",
+      "archived": false,
+      "search_score": 1.0,
+      "stars_7d_ago": 939,
+      "star_series": [
+        {
+          "d": "09-10",
+          "s": 902
+        },
+        {
+          "d": "09-11",
+          "s": 902
+        },
+        {
+          "d": "09-12",
+          "s": 902
+        },
+        {
+          "d": "09-13",
+          "s": 902
+        },
+        {
+          "d": "09-14",
+          "s": 902
+        },
+        {
+          "d": "09-15",
+          "s": 902
+        },
+        {
+          "d": "09-16",
+          "s": 902
+        },
+        {
+          "d": "09-17",
+          "s": 902
+        },
+        {
+          "d": "09-18",
+          "s": 902
+        },
+        {
+          "d": "09-19",
+          "s": 902
+        },
+        {
+          "d": "09-20",
+          "s": 902
+        },
+        {
+          "d": "09-21",
+          "s": 902
+        },
+        {
+          "d": "09-22",
+          "s": 902
+        },
+        {
+          "d": "09-23",
+          "s": 902
+        },
+        {
+          "d": "09-24",
+          "s": 902
+        },
+        {
+          "d": "09-25",
+          "s": 902
+        },
+        {
+          "d": "09-26",
+          "s": 902
+        },
+        {
+          "d": "09-27",
+          "s": 902
+        },
+        {
+          "d": "09-28",
+          "s": 902
+        },
+        {
+          "d": "09-29",
+          "s": 910
+        },
+        {
+          "d": "09-30",
+          "s": 912
+        },
+        {
+          "d": "10-01",
+          "s": 924
+        },
+        {
+          "d": "10-02",
+          "s": 931
+        },
+        {
+          "d": "10-03",
+          "s": 939
+        },
+        {
+          "d": "10-04",
+          "s": 948
+        },
+        {
+          "d": "10-05",
+          "s": 954
+        },
+        {
+          "d": "10-06",
+          "s": 960
+        },
+        {
+          "d": "10-07",
+          "s": 966
+        },
+        {
+          "d": "10-08",
+          "s": 984
+        },
+        {
+          "d": "10-09",
+          "s": 992
+        }
+      ]
+    },
+    "score": {
+      "score": 71.84,
+      "breakdown": {
+        "vel": 68,
+        "acc": 61,
+        "health": 71,
+        "fresh": 28,
+        "signal": 85
+      },
+      "stage": "early",
+      "stage_multiplier": 1.2,
+      "confidence": 1.0,
+      "base_score": 59.86,
+      "explanation": "WindInput 是 Rust 开源项目，主打「清风输入法 | 轻量、快速、可定制的开源中文输入法，专为五笔和码表输入方案设计（Windows / macOS）」；处于增长早期，本周涨速 7.6 star/天；社区健康（fork/star 比 5.6%，29 个 open issue）、项目元数据完整。"
+    }
+  },
+  {
+    "repo": {
+      "owner": "apify",
+      "name": "mcpc",
+      "full_name": "apify/mcpc",
+      "description": "The most compatible MCP CLI client. Supports: tools, resources, prompts, completions, async tasks, skills, stdio and Streamable HTTP (MCP 2026-07-28 and 2025-11-25). Persistent sessions, OAuth 2.1 with DCR, CIMD, client credentials, and ID-JAG, OS keychain, --json for code mode, grep across servers, proxy for AI sandboxes, x402 & more.",
+      "stars": 993,
+      "forks": 96,
+      "open_issues": 21,
+      "created_at": "2025-12-09T03:00:11+00:00",
+      "pushed_at": "2026-10-09T10:52:40+00:00",
+      "updated_at": "2026-10-09T10:52:41+00:00",
+      "topics": [
+        "ai-agents",
+        "bash",
+        "claude",
+        "cli",
+        "code-mode",
+        "command-line",
+        "mcp",
+        "mcp-client",
+        "model-context-protocol",
+        "shell"
+      ],
+      "language": "TypeScript",
+      "license": "Apache-2.0",
+      "homepage": "https://npmjs.com/package/@apify/mcpc",
+      "html_url": "https://github.com/apify/mcpc",
+      "default_branch": "main",
+      "archived": false,
+      "search_score": 1.0,
+      "stars_7d_ago": 952,
+      "star_series": [
+        {
+          "d": "09-10",
+          "s": 945
+        },
+        {
+          "d": "09-11",
+          "s": 945
+        },
+        {
+          "d": "09-12",
+          "s": 945
+        },
+        {
+          "d": "09-13",
+          "s": 945
+        },
+        {
+          "d": "09-14",
+          "s": 945
+        },
+        {
+          "d": "09-15",
+          "s": 945
+        },
+        {
+          "d": "09-16",
+          "s": 945
+        },
+        {
+          "d": "09-17",
+          "s": 945
+        },
+        {
+          "d": "09-18",
+          "s": 945
+        },
+        {
+          "d": "09-19",
+          "s": 945
+        },
+        {
+          "d": "09-20",
+          "s": 945
+        },
+        {
+          "d": "09-21",
+          "s": 945
+        },
+        {
+          "d": "09-22",
+          "s": 945
+        },
+        {
+          "d": "09-23",
+          "s": 945
+        },
+        {
+          "d": "09-24",
+          "s": 945
+        },
+        {
+          "d": "09-25",
+          "s": 945
+        },
+        {
+          "d": "09-26",
+          "s": 945
+        },
+        {
+          "d": "09-27",
+          "s": 945
+        },
+        {
+          "d": "09-28",
+          "s": 945
+        },
+        {
+          "d": "09-29",
+          "s": 945
+        },
+        {
+          "d": "09-30",
+          "s": 945
+        },
+        {
+          "d": "10-01",
+          "s": 945
+        },
+        {
+          "d": "10-02",
+          "s": 945
+        },
+        {
+          "d": "10-03",
+          "s": 952
+        },
+        {
+          "d": "10-04",
+          "s": 962
+        },
+        {
+          "d": "10-05",
+          "s": 973
+        },
+        {
+          "d": "10-06",
+          "s": 979
+        },
+        {
+          "d": "10-07",
+          "s": 982
+        },
+        {
+          "d": "10-08",
+          "s": 985
+        },
+        {
+          "d": "10-09",
+          "s": 993
+        }
+      ]
+    },
+    "score": {
+      "score": 69.53,
+      "breakdown": {
+        "vel": 61,
+        "acc": 99,
+        "health": 88,
+        "fresh": 17,
+        "signal": 85
       },
       "stage": "mid_early",
       "stage_multiplier": 1.1,
       "confidence": 1.0,
-      "base_score": 64.1,
-      "explanation": "OpenRSI-Index 是 Python 方向的开源项目；处于中早期增长，本周涨速 6.9 star/天；社区健康（fork/star 比 7.5%，1 个 open issue）、开发活跃。"
-    }
-  },
-  {
-    "repo": {
-      "owner": "HanaAyane",
-      "name": "dsh-reasoning-effort",
-      "full_name": "HanaAyane/dsh-reasoning-effort",
-      "description": "DSH适用的Codex风格的思考强度滑块，以及大肥鱼跑步滑块。Codex-style model and reasoning-effort slider for DeepSeek Harness",
-      "stars": 200,
-      "forks": 12,
-      "open_issues": 7,
-      "created_at": "2026-08-14T17:52:18+00:00",
-      "pushed_at": "2026-10-02T08:23:53+00:00",
-      "updated_at": "2026-10-08T12:33:16+00:00",
-      "topics": [
-        "deepseek",
-        "deepseek-harness",
-        "dsh-plugin",
-        "reasoning-effort"
-      ],
-      "language": "TypeScript",
-      "license": "MIT",
-      "homepage": null,
-      "html_url": "https://github.com/HanaAyane/dsh-reasoning-effort",
-      "default_branch": "main",
-      "archived": false,
-      "search_score": 1.0,
-      "stars_7d_ago": 176,
-      "star_series": [
-        {
-          "d": "09-09",
-          "s": 127
-        },
-        {
-          "d": "09-10",
-          "s": 127
-        },
-        {
-          "d": "09-11",
-          "s": 129
-        },
-        {
-          "d": "09-12",
-          "s": 132
-        },
-        {
-          "d": "09-13",
-          "s": 132
-        },
-        {
-          "d": "09-14",
-          "s": 135
-        },
-        {
-          "d": "09-15",
-          "s": 139
-        },
-        {
-          "d": "09-16",
-          "s": 141
-        },
-        {
-          "d": "09-17",
-          "s": 141
-        },
-        {
-          "d": "09-18",
-          "s": 143
-        },
-        {
-          "d": "09-19",
-          "s": 144
-        },
-        {
-          "d": "09-20",
-          "s": 145
-        },
-        {
-          "d": "09-21",
-          "s": 148
-        },
-        {
-          "d": "09-22",
-          "s": 151
-        },
-        {
-          "d": "09-23",
-          "s": 151
-        },
-        {
-          "d": "09-24",
-          "s": 152
-        },
-        {
-          "d": "09-25",
-          "s": 153
-        },
-        {
-          "d": "09-26",
-          "s": 157
-        },
-        {
-          "d": "09-27",
-          "s": 158
-        },
-        {
-          "d": "09-28",
-          "s": 161
-        },
-        {
-          "d": "09-29",
-          "s": 165
-        },
-        {
-          "d": "09-30",
-          "s": 168
-        },
-        {
-          "d": "10-01",
-          "s": 172
-        },
-        {
-          "d": "10-02",
-          "s": 176
-        },
-        {
-          "d": "10-03",
-          "s": 177
-        },
-        {
-          "d": "10-04",
-          "s": 185
-        },
-        {
-          "d": "10-05",
-          "s": 189
-        },
-        {
-          "d": "10-06",
-          "s": 191
-        },
-        {
-          "d": "10-07",
-          "s": 192
-        },
-        {
-          "d": "10-08",
-          "s": 200
-        }
-      ]
-    },
-    "score": {
-      "score": 67.68,
-      "breakdown": {
-        "vel": 41,
-        "acc": 51,
-        "health": 69,
-        "fresh": 85,
-        "signal": 70
-      },
-      "stage": "early",
-      "stage_multiplier": 1.2,
-      "confidence": 1.0,
-      "base_score": 56.4,
-      "explanation": "dsh-reasoning-effort 是 TypeScript 开源项目，主打「DSH适用的Codex风格的思考强度滑块，以及大肥鱼跑步滑块。Codex-style model and reasoning-effort slider for DeepSeek Harness」；处于增长早期，本周涨速 3.4 star/天；开发活跃。"
+      "base_score": 63.21,
+      "explanation": "mcpc 是 TypeScript 开源项目，主打「The most compatible MCP CLI client. Supports: tools, resources, prompts, completions, async tasks, skills, stdio and Streamable HTTP (MCP 2026-07-28 and 2025-11-25). Persistent sessions, OAuth 2.1 with DCR, CIMD, client credentials, and ID-JAG, OS keychain, --json for code mode, grep across servers, proxy for AI sandboxes, x402 & more.」；处于中早期增长，本周涨速 5.9 star/天，涨速在加快；社区健康（fork/star 比 9.7%，21 个 open issue）、项目元数据完整。"
     }
   }
 ]
