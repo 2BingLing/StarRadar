@@ -1,439 +1,274 @@
 [
   {
     "repo": {
-      "owner": "PhreshOS",
-      "name": "system",
-      "full_name": "PhreshOS/system",
-      "description": "An open-source, self-hosted system for apps built with web technologies.",
-      "stars": 200,
-      "forks": 25,
-      "open_issues": 0,
-      "created_at": "2026-08-18T15:16:06+00:00",
-      "pushed_at": "2026-10-08T15:46:35+00:00",
-      "updated_at": "2026-10-09T11:38:37+00:00",
+      "owner": "remotion-dev",
+      "name": "skills",
+      "full_name": "remotion-dev/skills",
+      "description": "Agent Skills",
+      "stars": 4993,
+      "forks": 554,
+      "open_issues": 22,
+      "created_at": "2026-01-19T09:58:43+00:00",
+      "pushed_at": "2026-10-07T09:40:10+00:00",
+      "updated_at": "2026-10-10T11:49:40+00:00",
+      "topics": [],
+      "language": "TypeScript",
+      "license": null,
+      "homepage": null,
+      "html_url": "https://github.com/remotion-dev/skills",
+      "default_branch": "main",
+      "archived": false,
+      "search_score": 1.0,
+      "stars_7d_ago": 4839,
+      "star_series": [
+        {
+          "d": "09-11",
+          "s": 4723
+        },
+        {
+          "d": "09-12",
+          "s": 4723
+        },
+        {
+          "d": "09-13",
+          "s": 4723
+        },
+        {
+          "d": "09-14",
+          "s": 4723
+        },
+        {
+          "d": "09-15",
+          "s": 4723
+        },
+        {
+          "d": "09-16",
+          "s": 4723
+        },
+        {
+          "d": "09-17",
+          "s": 4723
+        },
+        {
+          "d": "09-18",
+          "s": 4723
+        },
+        {
+          "d": "09-19",
+          "s": 4723
+        },
+        {
+          "d": "09-20",
+          "s": 4723
+        },
+        {
+          "d": "09-21",
+          "s": 4723
+        },
+        {
+          "d": "09-22",
+          "s": 4723
+        },
+        {
+          "d": "09-23",
+          "s": 4723
+        },
+        {
+          "d": "09-24",
+          "s": 4723
+        },
+        {
+          "d": "09-25",
+          "s": 4723
+        },
+        {
+          "d": "09-26",
+          "s": 4723
+        },
+        {
+          "d": "09-27",
+          "s": 4734
+        },
+        {
+          "d": "09-28",
+          "s": 4748
+        },
+        {
+          "d": "09-29",
+          "s": 4765
+        },
+        {
+          "d": "09-30",
+          "s": 4778
+        },
+        {
+          "d": "10-01",
+          "s": 4796
+        },
+        {
+          "d": "10-02",
+          "s": 4813
+        },
+        {
+          "d": "10-03",
+          "s": 4825
+        },
+        {
+          "d": "10-04",
+          "s": 4839
+        },
+        {
+          "d": "10-05",
+          "s": 4850
+        },
+        {
+          "d": "10-06",
+          "s": 4866
+        },
+        {
+          "d": "10-07",
+          "s": 4880
+        },
+        {
+          "d": "10-08",
+          "s": 4913
+        },
+        {
+          "d": "10-09",
+          "s": 4963
+        },
+        {
+          "d": "10-10",
+          "s": 4993
+        }
+      ]
+    },
+    "score": {
+      "score": 77.11,
+      "breakdown": {
+        "vel": 93,
+        "acc": 61,
+        "health": 99,
+        "fresh": 28,
+        "signal": 35
+      },
+      "stage": "early",
+      "stage_multiplier": 1.2,
+      "confidence": 1.0,
+      "base_score": 64.25,
+      "explanation": "skills 是 TypeScript 开源项目，主打「Agent Skills」；处于增长早期，本周涨速 22 star/天；社区健康（fork/star 比 11.1%，22 个 open issue）。"
+    }
+  },
+  {
+    "repo": {
+      "owner": "OpenWAM-Official",
+      "name": "OpenWAM",
+      "full_name": "OpenWAM-Official/OpenWAM",
+      "description": "Official repository for \"OpenWAM: An Open, Modular Exploration Towards Systematic World–Action Model Pretraining\".",
+      "stars": 1000,
+      "forks": 58,
+      "open_issues": 3,
+      "created_at": "2026-09-06T06:21:09+00:00",
+      "pushed_at": "2026-10-09T07:19:47+00:00",
+      "updated_at": "2026-10-10T10:05:03+00:00",
       "topics": [
-        "desktop-environment",
-        "phreshos",
-        "self-hosted",
-        "web-desktop",
-        "web-os"
+        "generalist-robot-policies",
+        "pretraining",
+        "robotics",
+        "world-action-model"
       ],
-      "language": "TypeScript",
-      "license": "MIT",
-      "homepage": "https://phreshos.com/",
-      "html_url": "https://github.com/PhreshOS/system",
-      "default_branch": "main",
-      "archived": false,
-      "search_score": 1.0,
-      "stars_7d_ago": 66,
-      "star_series": [
-        {
-          "d": "09-10",
-          "s": 37
-        },
-        {
-          "d": "09-11",
-          "s": 37
-        },
-        {
-          "d": "09-12",
-          "s": 37
-        },
-        {
-          "d": "09-13",
-          "s": 37
-        },
-        {
-          "d": "09-14",
-          "s": 37
-        },
-        {
-          "d": "09-15",
-          "s": 37
-        },
-        {
-          "d": "09-16",
-          "s": 37
-        },
-        {
-          "d": "09-17",
-          "s": 37
-        },
-        {
-          "d": "09-18",
-          "s": 37
-        },
-        {
-          "d": "09-19",
-          "s": 37
-        },
-        {
-          "d": "09-20",
-          "s": 37
-        },
-        {
-          "d": "09-21",
-          "s": 37
-        },
-        {
-          "d": "09-22",
-          "s": 37
-        },
-        {
-          "d": "09-23",
-          "s": 37
-        },
-        {
-          "d": "09-24",
-          "s": 37
-        },
-        {
-          "d": "09-25",
-          "s": 37
-        },
-        {
-          "d": "09-26",
-          "s": 37
-        },
-        {
-          "d": "09-27",
-          "s": 37
-        },
-        {
-          "d": "09-28",
-          "s": 37
-        },
-        {
-          "d": "09-29",
-          "s": 37
-        },
-        {
-          "d": "09-30",
-          "s": 37
-        },
-        {
-          "d": "10-01",
-          "s": 37
-        },
-        {
-          "d": "10-02",
-          "s": 47
-        },
-        {
-          "d": "10-03",
-          "s": 66
-        },
-        {
-          "d": "10-04",
-          "s": 131
-        },
-        {
-          "d": "10-05",
-          "s": 153
-        },
-        {
-          "d": "10-06",
-          "s": 164
-        },
-        {
-          "d": "10-07",
-          "s": 172
-        },
-        {
-          "d": "10-08",
-          "s": 189
-        },
-        {
-          "d": "10-09",
-          "s": 200
-        }
-      ]
-    },
-    "score": {
-      "score": 100.0,
-      "breakdown": {
-        "vel": 95,
-        "acc": 97,
-        "health": 94,
-        "fresh": 86,
-        "signal": 85
-      },
-      "stage": "early",
-      "stage_multiplier": 1.2,
-      "confidence": 1.0,
-      "base_score": 92.92,
-      "explanation": "system 是 TypeScript 开源项目，主打「An open-source, self-hosted system for apps built with web technologies.」；处于增长早期，本周涨速 19 star/天，涨速在加快；社区健康（fork/star 比 12.5%，0 个 open issue）、项目元数据完整、开发活跃。"
-    }
-  },
-  {
-    "repo": {
-      "owner": "SamsungLabs",
-      "name": "LittleBit",
-      "full_name": "SamsungLabs/LittleBit",
-      "description": "Official implementation of LittleBit (NeurIPS 2025) and its follow-up LittleBit-2 (ICML 2026)",
-      "stars": 200,
-      "forks": 26,
-      "open_issues": 1,
-      "created_at": "2025-11-18T01:16:03+00:00",
-      "pushed_at": "2026-10-09T03:03:34+00:00",
-      "updated_at": "2026-10-09T12:13:43+00:00",
-      "topics": [],
       "language": "Python",
-      "license": "NOASSERTION",
-      "homepage": null,
-      "html_url": "https://github.com/SamsungLabs/LittleBit",
+      "license": "Apache-2.0",
+      "homepage": "https://openwam-official.github.io/",
+      "html_url": "https://github.com/OpenWAM-Official/OpenWAM",
       "default_branch": "main",
       "archived": false,
       "search_score": 1.0,
-      "stars_7d_ago": 29,
+      "stars_7d_ago": 944,
       "star_series": [
         {
-          "d": "09-10",
-          "s": 28
-        },
-        {
           "d": "09-11",
-          "s": 28
+          "s": 783
         },
         {
           "d": "09-12",
-          "s": 28
+          "s": 783
         },
         {
           "d": "09-13",
-          "s": 28
+          "s": 783
         },
         {
           "d": "09-14",
-          "s": 28
+          "s": 783
         },
         {
           "d": "09-15",
-          "s": 28
+          "s": 783
         },
         {
           "d": "09-16",
-          "s": 28
+          "s": 783
         },
         {
           "d": "09-17",
-          "s": 28
+          "s": 783
         },
         {
           "d": "09-18",
-          "s": 28
-        },
-        {
-          "d": "09-19",
-          "s": 28
-        },
-        {
-          "d": "09-20",
-          "s": 28
-        },
-        {
-          "d": "09-21",
-          "s": 28
-        },
-        {
-          "d": "09-22",
-          "s": 28
-        },
-        {
-          "d": "09-23",
-          "s": 28
-        },
-        {
-          "d": "09-24",
-          "s": 28
-        },
-        {
-          "d": "09-25",
-          "s": 28
-        },
-        {
-          "d": "09-26",
-          "s": 29
-        },
-        {
-          "d": "09-27",
-          "s": 29
-        },
-        {
-          "d": "09-28",
-          "s": 29
-        },
-        {
-          "d": "09-29",
-          "s": 29
-        },
-        {
-          "d": "09-30",
-          "s": 29
-        },
-        {
-          "d": "10-01",
-          "s": 29
-        },
-        {
-          "d": "10-02",
-          "s": 29
-        },
-        {
-          "d": "10-03",
-          "s": 29
-        },
-        {
-          "d": "10-04",
-          "s": 29
-        },
-        {
-          "d": "10-05",
-          "s": 29
-        },
-        {
-          "d": "10-06",
-          "s": 30
-        },
-        {
-          "d": "10-07",
-          "s": 30
-        },
-        {
-          "d": "10-08",
-          "s": 131
-        },
-        {
-          "d": "10-09",
-          "s": 200
-        }
-      ]
-    },
-    "score": {
-      "score": 80.93,
-      "breakdown": {
-        "vel": 100,
-        "acc": 99,
-        "health": 96,
-        "fresh": 11,
-        "signal": 55
-      },
-      "stage": "early",
-      "stage_multiplier": 1.2,
-      "confidence": 1.0,
-      "base_score": 67.45,
-      "explanation": "LittleBit 是 Python 开源项目，主打「Official implementation of LittleBit (NeurIPS 2025) and its follow-up LittleBit-2 (ICML 2026)」；处于增长早期，本周涨速 24 star/天，涨速在加快；社区健康（fork/star 比 13.0%，1 个 open issue）。"
-    }
-  },
-  {
-    "repo": {
-      "owner": "danielravina",
-      "name": "stemkit",
-      "full_name": "danielravina/stemkit",
-      "description": "Split any YouTube song into stems",
-      "stars": 995,
-      "forks": 120,
-      "open_issues": 18,
-      "created_at": "2026-08-24T06:34:25+00:00",
-      "pushed_at": "2026-10-06T21:44:55+00:00",
-      "updated_at": "2026-10-09T11:53:56+00:00",
-      "topics": [],
-      "language": "TypeScript",
-      "license": "MIT",
-      "homepage": null,
-      "html_url": "https://github.com/danielravina/stemkit",
-      "default_branch": "main",
-      "archived": false,
-      "search_score": 1.0,
-      "stars_7d_ago": 945,
-      "star_series": [
-        {
-          "d": "09-10",
-          "s": 788
-        },
-        {
-          "d": "09-11",
-          "s": 788
-        },
-        {
-          "d": "09-12",
-          "s": 788
-        },
-        {
-          "d": "09-13",
-          "s": 788
-        },
-        {
-          "d": "09-14",
-          "s": 788
-        },
-        {
-          "d": "09-15",
-          "s": 788
-        },
-        {
-          "d": "09-16",
-          "s": 788
-        },
-        {
-          "d": "09-17",
-          "s": 788
-        },
-        {
-          "d": "09-18",
-          "s": 788
-        },
-        {
-          "d": "09-19",
-          "s": 788
-        },
-        {
-          "d": "09-20",
-          "s": 788
-        },
-        {
-          "d": "09-21",
-          "s": 788
-        },
-        {
-          "d": "09-22",
-          "s": 788
-        },
-        {
-          "d": "09-23",
-          "s": 788
-        },
-        {
-          "d": "09-24",
-          "s": 788
-        },
-        {
-          "d": "09-25",
-          "s": 788
-        },
-        {
-          "d": "09-26",
           "s": 790
         },
         {
+          "d": "09-19",
+          "s": 799
+        },
+        {
+          "d": "09-20",
+          "s": 815
+        },
+        {
+          "d": "09-21",
+          "s": 833
+        },
+        {
+          "d": "09-22",
+          "s": 847
+        },
+        {
+          "d": "09-23",
+          "s": 860
+        },
+        {
+          "d": "09-24",
+          "s": 875
+        },
+        {
+          "d": "09-25",
+          "s": 887
+        },
+        {
+          "d": "09-26",
+          "s": 889
+        },
+        {
           "d": "09-27",
-          "s": 807
+          "s": 892
         },
         {
           "d": "09-28",
-          "s": 838
+          "s": 910
         },
         {
           "d": "09-29",
-          "s": 849
+          "s": 925
         },
         {
           "d": "09-30",
-          "s": 879
+          "s": 934
         },
         {
           "d": "10-01",
-          "s": 923
+          "s": 937
         },
         {
           "d": "10-02",
@@ -441,387 +276,588 @@
         },
         {
           "d": "10-03",
-          "s": 945
+          "s": 941
         },
         {
           "d": "10-04",
-          "s": 953
+          "s": 944
         },
         {
           "d": "10-05",
-          "s": 963
+          "s": 950
         },
         {
           "d": "10-06",
-          "s": 977
+          "s": 957
         },
         {
           "d": "10-07",
-          "s": 987
+          "s": 962
         },
         {
           "d": "10-08",
-          "s": 991
+          "s": 978
         },
         {
           "d": "10-09",
-          "s": 995
+          "s": 991
+        },
+        {
+          "d": "10-10",
+          "s": 1000
         }
       ]
     },
     "score": {
-      "score": 74.11,
+      "score": 76.87,
       "breakdown": {
-        "vel": 66,
-        "acc": 34,
-        "health": 97,
-        "fresh": 87,
-        "signal": 55
+        "vel": 65,
+        "acc": 52,
+        "health": 78,
+        "fresh": 91,
+        "signal": 100
       },
-      "stage": "early",
-      "stage_multiplier": 1.2,
+      "stage": "mid_early",
+      "stage_multiplier": 1.1,
       "confidence": 1.0,
-      "base_score": 61.75,
-      "explanation": "stemkit 是 TypeScript 开源项目，主打「Split any YouTube song into stems」；处于增长早期，本周涨速 7.1 star/天；社区健康（fork/star 比 12.1%，18 个 open issue）、开发活跃。"
+      "base_score": 69.88,
+      "explanation": "OpenWAM 是 Python 开源项目，主打「Official repository for \"OpenWAM: An Open, Modular Exploration Towards Systematic World–Action Model Pretraining\".」；处于中早期增长，本周涨速 8.0 star/天；社区健康（fork/star 比 5.8%，3 个 open issue）、项目元数据完整、开发活跃。"
     }
   },
   {
     "repo": {
-      "owner": "huanfeng",
-      "name": "WindInput",
-      "full_name": "huanfeng/WindInput",
-      "description": "清风输入法 | 轻量、快速、可定制的开源中文输入法，专为五笔和码表输入方案设计（Windows / macOS）",
-      "stars": 992,
-      "forks": 56,
-      "open_issues": 29,
-      "created_at": "2026-01-21T08:51:49+00:00",
-      "pushed_at": "2026-10-09T03:58:55+00:00",
-      "updated_at": "2026-10-09T12:05:46+00:00",
+      "owner": "TIGER-AI-Lab",
+      "name": "ClawBench",
+      "full_name": "TIGER-AI-Lab/ClawBench",
+      "description": "Open-source benchmark for browser AI agents on daily tasks.",
+      "stars": 998,
+      "forks": 62,
+      "open_issues": 52,
+      "created_at": "2026-04-10T01:59:17+00:00",
+      "pushed_at": "2026-10-05T22:14:26+00:00",
+      "updated_at": "2026-10-10T09:05:46+00:00",
       "topics": [
-        "ime",
-        "input-method",
-        "macos",
-        "rust",
-        "tsf",
-        "windinput",
-        "wubi"
+        "agent-evaluation",
+        "agentic-ai",
+        "ai-agent-benchmark",
+        "ai-agents",
+        "benchmark",
+        "browser-agent",
+        "browser-automation",
+        "browser-use",
+        "chrome-agent",
+        "chrome-extension",
+        "computer-use",
+        "dataset",
+        "evaluation",
+        "everyday-tasks",
+        "llm",
+        "llm-evaluation",
+        "online-tasks",
+        "real-world-benchmark",
+        "web-agent",
+        "web-agents"
       ],
-      "language": "Rust",
-      "license": "MIT",
-      "homepage": "https://windinput.com",
-      "html_url": "https://github.com/huanfeng/WindInput",
+      "language": "Python",
+      "license": "Apache-2.0",
+      "homepage": "https://claw-bench.com",
+      "html_url": "https://github.com/TIGER-AI-Lab/ClawBench",
       "default_branch": "main",
       "archived": false,
       "search_score": 1.0,
       "stars_7d_ago": 939,
       "star_series": [
         {
-          "d": "09-10",
-          "s": 902
-        },
-        {
           "d": "09-11",
-          "s": 902
+          "s": 745
         },
         {
           "d": "09-12",
-          "s": 902
+          "s": 745
         },
         {
           "d": "09-13",
-          "s": 902
+          "s": 745
         },
         {
           "d": "09-14",
-          "s": 902
+          "s": 745
         },
         {
           "d": "09-15",
-          "s": 902
+          "s": 747
         },
         {
           "d": "09-16",
-          "s": 902
+          "s": 758
         },
         {
           "d": "09-17",
-          "s": 902
+          "s": 767
         },
         {
           "d": "09-18",
-          "s": 902
+          "s": 771
         },
         {
           "d": "09-19",
-          "s": 902
+          "s": 784
         },
         {
           "d": "09-20",
-          "s": 902
+          "s": 794
         },
         {
           "d": "09-21",
-          "s": 902
+          "s": 807
         },
         {
           "d": "09-22",
-          "s": 902
+          "s": 816
         },
         {
           "d": "09-23",
-          "s": 902
+          "s": 828
         },
         {
           "d": "09-24",
-          "s": 902
+          "s": 838
         },
         {
           "d": "09-25",
-          "s": 902
+          "s": 845
         },
         {
           "d": "09-26",
-          "s": 902
+          "s": 856
         },
         {
           "d": "09-27",
-          "s": 902
+          "s": 867
         },
         {
           "d": "09-28",
-          "s": 902
+          "s": 876
         },
         {
           "d": "09-29",
-          "s": 910
+          "s": 888
         },
         {
           "d": "09-30",
-          "s": 912
+          "s": 902
         },
         {
           "d": "10-01",
-          "s": 924
+          "s": 908
         },
         {
           "d": "10-02",
-          "s": 931
+          "s": 917
         },
         {
           "d": "10-03",
-          "s": 939
+          "s": 930
         },
         {
           "d": "10-04",
-          "s": 948
+          "s": 939
         },
         {
           "d": "10-05",
-          "s": 954
+          "s": 951
         },
         {
           "d": "10-06",
-          "s": 960
+          "s": 958
         },
         {
           "d": "10-07",
-          "s": 966
+          "s": 967
         },
         {
           "d": "10-08",
-          "s": 984
+          "s": 981
         },
         {
           "d": "10-09",
-          "s": 992
+          "s": 990
+        },
+        {
+          "d": "10-10",
+          "s": 998
         }
       ]
     },
     "score": {
-      "score": 71.84,
+      "score": 71.4,
       "breakdown": {
-        "vel": 68,
-        "acc": 61,
-        "health": 71,
-        "fresh": 28,
+        "vel": 66,
+        "acc": 45,
+        "health": 68,
+        "fresh": 50,
         "signal": 85
       },
       "stage": "early",
       "stage_multiplier": 1.2,
       "confidence": 1.0,
-      "base_score": 59.86,
-      "explanation": "WindInput 是 Rust 开源项目，主打「清风输入法 | 轻量、快速、可定制的开源中文输入法，专为五笔和码表输入方案设计（Windows / macOS）」；处于增长早期，本周涨速 7.6 star/天；社区健康（fork/star 比 5.6%，29 个 open issue）、项目元数据完整。"
+      "base_score": 59.5,
+      "explanation": "ClawBench 是 Python 开源项目，主打「Open-source benchmark for browser AI agents on daily tasks.」；处于增长早期，本周涨速 8.4 star/天；项目元数据完整。"
     }
   },
   {
     "repo": {
-      "owner": "apify",
-      "name": "mcpc",
-      "full_name": "apify/mcpc",
-      "description": "The most compatible MCP CLI client. Supports: tools, resources, prompts, completions, async tasks, skills, stdio and Streamable HTTP (MCP 2026-07-28 and 2025-11-25). Persistent sessions, OAuth 2.1 with DCR, CIMD, client credentials, and ID-JAG, OS keychain, --json for code mode, grep across servers, proxy for AI sandboxes, x402 & more.",
-      "stars": 993,
-      "forks": 96,
-      "open_issues": 21,
-      "created_at": "2025-12-09T03:00:11+00:00",
-      "pushed_at": "2026-10-09T10:52:40+00:00",
-      "updated_at": "2026-10-09T10:52:41+00:00",
+      "owner": "atilaahmettaner",
+      "name": "tradingview-mcp",
+      "full_name": "atilaahmettaner/tradingview-mcp",
+      "description": "TradingView MCP server — real-time market data, technical analysis, screeners & backtesting for Claude, ChatGPT, Cursor & any MCP client. Stocks, crypto, forex & futures across global exchanges. Hosted or self-host.",
+      "stars": 4996,
+      "forks": 993,
+      "open_issues": 9,
+      "created_at": "2025-08-08T22:34:03+00:00",
+      "pushed_at": "2026-10-09T21:54:40+00:00",
+      "updated_at": "2026-10-10T10:14:35+00:00",
       "topics": [
-        "ai-agents",
-        "bash",
-        "claude",
-        "cli",
-        "code-mode",
-        "command-line",
-        "mcp",
-        "mcp-client",
+        "claude-desktop",
+        "cryptocurrency",
+        "futures",
+        "market-data",
+        "mcp-server",
+        "mcp-tools",
         "model-context-protocol",
-        "shell"
+        "openclaw",
+        "stock-market",
+        "technical-analysis",
+        "trading-mcp",
+        "trading-strategies",
+        "tradingview"
       ],
-      "language": "TypeScript",
-      "license": "Apache-2.0",
-      "homepage": "https://npmjs.com/package/@apify/mcpc",
-      "html_url": "https://github.com/apify/mcpc",
+      "language": "Python",
+      "license": "MIT",
+      "homepage": "https://pro.cryptosieve.com",
+      "html_url": "https://github.com/atilaahmettaner/tradingview-mcp",
       "default_branch": "main",
       "archived": false,
       "search_score": 1.0,
-      "stars_7d_ago": 952,
+      "stars_7d_ago": 4901,
       "star_series": [
         {
-          "d": "09-10",
-          "s": 945
-        },
-        {
           "d": "09-11",
-          "s": 945
+          "s": 4870
         },
         {
           "d": "09-12",
-          "s": 945
+          "s": 4870
         },
         {
           "d": "09-13",
-          "s": 945
+          "s": 4870
         },
         {
           "d": "09-14",
-          "s": 945
+          "s": 4870
         },
         {
           "d": "09-15",
-          "s": 945
+          "s": 4870
         },
         {
           "d": "09-16",
-          "s": 945
+          "s": 4870
         },
         {
           "d": "09-17",
-          "s": 945
+          "s": 4870
         },
         {
           "d": "09-18",
-          "s": 945
+          "s": 4870
         },
         {
           "d": "09-19",
-          "s": 945
+          "s": 4870
         },
         {
           "d": "09-20",
-          "s": 945
+          "s": 4870
         },
         {
           "d": "09-21",
-          "s": 945
+          "s": 4870
         },
         {
           "d": "09-22",
-          "s": 945
+          "s": 4870
         },
         {
           "d": "09-23",
-          "s": 945
+          "s": 4870
         },
         {
           "d": "09-24",
-          "s": 945
+          "s": 4870
         },
         {
           "d": "09-25",
-          "s": 945
+          "s": 4870
         },
         {
           "d": "09-26",
-          "s": 945
+          "s": 4870
         },
         {
           "d": "09-27",
-          "s": 945
+          "s": 4870
         },
         {
           "d": "09-28",
-          "s": 945
+          "s": 4870
         },
         {
           "d": "09-29",
-          "s": 945
+          "s": 4870
         },
         {
           "d": "09-30",
-          "s": 945
+          "s": 4870
         },
         {
           "d": "10-01",
-          "s": 945
+          "s": 4872
         },
         {
           "d": "10-02",
-          "s": 945
+          "s": 4885
         },
         {
           "d": "10-03",
-          "s": 952
+          "s": 4893
         },
         {
           "d": "10-04",
-          "s": 962
+          "s": 4901
         },
         {
           "d": "10-05",
-          "s": 973
+          "s": 4910
         },
         {
           "d": "10-06",
-          "s": 979
+          "s": 4937
         },
         {
           "d": "10-07",
-          "s": 982
+          "s": 4952
         },
         {
           "d": "10-08",
-          "s": 985
+          "s": 4970
         },
         {
           "d": "10-09",
-          "s": 993
+          "s": 4990
+        },
+        {
+          "d": "10-10",
+          "s": 4996
         }
       ]
     },
     "score": {
-      "score": 69.53,
+      "score": 48.42,
       "breakdown": {
-        "vel": 61,
-        "acc": 99,
-        "health": 88,
-        "fresh": 17,
+        "vel": 79,
+        "acc": 89,
+        "health": 100,
+        "fresh": 0,
         "signal": 85
       },
       "stage": "mid_early",
       "stage_multiplier": 1.1,
       "confidence": 1.0,
-      "base_score": 63.21,
-      "explanation": "mcpc 是 TypeScript 开源项目，主打「The most compatible MCP CLI client. Supports: tools, resources, prompts, completions, async tasks, skills, stdio and Streamable HTTP (MCP 2026-07-28 and 2025-11-25). Persistent sessions, OAuth 2.1 with DCR, CIMD, client credentials, and ID-JAG, OS keychain, --json for code mode, grep across servers, proxy for AI sandboxes, x402 & more.」；处于中早期增长，本周涨速 5.9 star/天，涨速在加快；社区健康（fork/star 比 9.7%，21 个 open issue）、项目元数据完整。"
+      "base_score": 44.02,
+      "explanation": "tradingview-mcp 是 Python 开源项目，主打「TradingView MCP server — real-time market data, technical analysis, screeners & backtesting for Claude, ChatGPT, Cursor & any MCP client. Stocks, crypto, forex & futures across global exchanges. Hosted or self-host.」；处于中早期增长，本周涨速 14 star/天，涨速在加快；社区健康（fork/star 比 19.9%，9 个 open issue）、项目元数据完整。"
+    }
+  },
+  {
+    "repo": {
+      "owner": "gustavosett",
+      "name": "Windows-11-Clipboard-History-For-Linux",
+      "full_name": "gustavosett/Windows-11-Clipboard-History-For-Linux",
+      "description": "A beautiful, Windows 11-style Clipboard History Manager for Linux 💅",
+      "stars": 995,
+      "forks": 39,
+      "open_issues": 34,
+      "created_at": "2025-12-11T04:53:17+00:00",
+      "pushed_at": "2026-10-05T09:44:54+00:00",
+      "updated_at": "2026-10-10T02:16:56+00:00",
+      "topics": [
+        "arch",
+        "clipboard",
+        "clipboard-history",
+        "debian",
+        "endeavouros",
+        "fedora",
+        "linux",
+        "manjaro",
+        "mint",
+        "popos",
+        "rust",
+        "ubuntu",
+        "wayland",
+        "windows-11-clipboard",
+        "windows-clipboard",
+        "windows11-clipboard",
+        "x11",
+        "zorin",
+        "zorin-os",
+        "zorinos"
+      ],
+      "language": "Rust",
+      "license": "MIT",
+      "homepage": "https://clipboard.gustavosett.dev/",
+      "html_url": "https://github.com/gustavosett/Windows-11-Clipboard-History-For-Linux",
+      "default_branch": "master",
+      "archived": false,
+      "search_score": 1.0,
+      "stars_7d_ago": 987,
+      "star_series": [
+        {
+          "d": "09-11",
+          "s": 967
+        },
+        {
+          "d": "09-12",
+          "s": 968
+        },
+        {
+          "d": "09-13",
+          "s": 969
+        },
+        {
+          "d": "09-14",
+          "s": 969
+        },
+        {
+          "d": "09-15",
+          "s": 973
+        },
+        {
+          "d": "09-16",
+          "s": 975
+        },
+        {
+          "d": "09-17",
+          "s": 975
+        },
+        {
+          "d": "09-18",
+          "s": 977
+        },
+        {
+          "d": "09-19",
+          "s": 977
+        },
+        {
+          "d": "09-20",
+          "s": 977
+        },
+        {
+          "d": "09-21",
+          "s": 977
+        },
+        {
+          "d": "09-22",
+          "s": 977
+        },
+        {
+          "d": "09-23",
+          "s": 978
+        },
+        {
+          "d": "09-24",
+          "s": 978
+        },
+        {
+          "d": "09-25",
+          "s": 979
+        },
+        {
+          "d": "09-26",
+          "s": 981
+        },
+        {
+          "d": "09-27",
+          "s": 982
+        },
+        {
+          "d": "09-28",
+          "s": 983
+        },
+        {
+          "d": "09-29",
+          "s": 984
+        },
+        {
+          "d": "09-30",
+          "s": 984
+        },
+        {
+          "d": "10-01",
+          "s": 985
+        },
+        {
+          "d": "10-02",
+          "s": 985
+        },
+        {
+          "d": "10-03",
+          "s": 985
+        },
+        {
+          "d": "10-04",
+          "s": 987
+        },
+        {
+          "d": "10-05",
+          "s": 988
+        },
+        {
+          "d": "10-06",
+          "s": 988
+        },
+        {
+          "d": "10-07",
+          "s": 993
+        },
+        {
+          "d": "10-08",
+          "s": 993
+        },
+        {
+          "d": "10-09",
+          "s": 994
+        },
+        {
+          "d": "10-10",
+          "s": 995
+        }
+      ]
+    },
+    "score": {
+      "score": 43.72,
+      "breakdown": {
+        "vel": 23,
+        "acc": 61,
+        "health": 64,
+        "fresh": 17,
+        "signal": 100
+      },
+      "stage": "mid_early",
+      "stage_multiplier": 1.1,
+      "confidence": 1.0,
+      "base_score": 39.75,
+      "explanation": "Windows-11-Clipboard-History-For-Linux 是 Rust 开源项目，主打「A beautiful, Windows 11-style Clipboard History Manager for Linux 💅」；处于中早期增长；项目元数据完整。"
     }
   }
 ]
