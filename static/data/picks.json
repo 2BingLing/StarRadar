@@ -1,884 +1,845 @@
 [
   {
     "repo": {
-      "owner": "ja7ad",
-      "name": "hydra",
-      "full_name": "ja7ad/hydra",
-      "description": "A fast, resilient, multi-source file retriever and download engine",
-      "stars": 996,
-      "forks": 63,
-      "open_issues": 19,
-      "created_at": "2026-08-15T14:20:36+00:00",
-      "pushed_at": "2026-10-11T11:58:36+00:00",
-      "updated_at": "2026-10-11T11:58:40+00:00",
+      "owner": "amontlabs",
+      "name": "lcu",
+      "full_name": "amontlabs/lcu",
+      "description": "Codex computer use, decoupled from the app, for usage inside any harness.",
+      "stars": 1000,
+      "forks": 52,
+      "open_issues": 0,
+      "created_at": "2026-09-22T15:08:18+00:00",
+      "pushed_at": "2026-10-12T10:54:04+00:00",
+      "updated_at": "2026-10-12T14:18:04+00:00",
       "topics": [
-        "downloadmanager",
-        "iced",
-        "rust",
-        "rust-cli",
-        "rust-community",
-        "rust-crate",
-        "rust-lang",
-        "rustlang"
-      ],
-      "language": "Rust",
-      "license": "GPL-3.0",
-      "homepage": "https://hydra.javad.dev",
-      "html_url": "https://github.com/ja7ad/hydra",
-      "default_branch": "main",
-      "archived": false,
-      "search_score": 1.0,
-      "stars_7d_ago": 897,
-      "star_series": [
-        {
-          "d": "09-12",
-          "s": 897
-        },
-        {
-          "d": "09-13",
-          "s": 897
-        },
-        {
-          "d": "09-14",
-          "s": 897
-        },
-        {
-          "d": "09-15",
-          "s": 897
-        },
-        {
-          "d": "09-16",
-          "s": 897
-        },
-        {
-          "d": "09-17",
-          "s": 897
-        },
-        {
-          "d": "09-18",
-          "s": 897
-        },
-        {
-          "d": "09-19",
-          "s": 897
-        },
-        {
-          "d": "09-20",
-          "s": 897
-        },
-        {
-          "d": "09-21",
-          "s": 897
-        },
-        {
-          "d": "09-22",
-          "s": 897
-        },
-        {
-          "d": "09-23",
-          "s": 897
-        },
-        {
-          "d": "09-24",
-          "s": 897
-        },
-        {
-          "d": "09-25",
-          "s": 897
-        },
-        {
-          "d": "09-26",
-          "s": 897
-        },
-        {
-          "d": "09-27",
-          "s": 897
-        },
-        {
-          "d": "09-28",
-          "s": 897
-        },
-        {
-          "d": "09-29",
-          "s": 897
-        },
-        {
-          "d": "09-30",
-          "s": 897
-        },
-        {
-          "d": "10-01",
-          "s": 897
-        },
-        {
-          "d": "10-02",
-          "s": 897
-        },
-        {
-          "d": "10-03",
-          "s": 897
-        },
-        {
-          "d": "10-04",
-          "s": 897
-        },
-        {
-          "d": "10-05",
-          "s": 897
-        },
-        {
-          "d": "10-06",
-          "s": 897
-        },
-        {
-          "d": "10-07",
-          "s": 897
-        },
-        {
-          "d": "10-08",
-          "s": 919
-        },
-        {
-          "d": "10-09",
-          "s": 952
-        },
-        {
-          "d": "10-10",
-          "s": 985
-        },
-        {
-          "d": "10-11",
-          "s": 996
-        }
-      ]
-    },
-    "score": {
-      "score": 100.0,
-      "breakdown": {
-        "vel": 75,
-        "acc": 99,
-        "health": 76,
-        "fresh": 85,
-        "signal": 100
-      },
-      "stage": "early",
-      "stage_multiplier": 1.2,
-      "confidence": 1.0,
-      "base_score": 84.63,
-      "explanation": "hydra 是 Rust 开源项目，主打「A fast, resilient, multi-source file retriever and download engine」；处于增长早期，本周涨速 14 star/天，涨速在加快；社区健康（fork/star 比 6.3%，19 个 open issue）、项目元数据完整、开发活跃。"
-    }
-  },
-  {
-    "repo": {
-      "owner": "elysia395",
-      "name": "dsh-wallpaper-engine",
-      "full_name": "elysia395/dsh-wallpaper-engine",
-      "description": "把本机 Wallpaper Engine 的壁纸搬进 DSH 网页界面：场景壁纸由内置 MIT 开源引擎 WebWallGL 实时 WebGL 渲染（粒子 / puppet 骨骼 / SceneScript / 音频反应 / 鼠标交互），失败自动降级内嵌 MP4 与场景静态帧；Web 壁纸严格沙箱 + WE API；iOS 风格液态玻璃 UI 高度自定义，遮挡暂停省电、ffmpeg 帧率上限转码、系统音频频谱与 Now Playing、自定义上传与自动轮播；设置存宿主端，对 agent 零 token 开销。Windows / macOS / Linux 三平台原生（同一个包、同一条命令）。",
-      "stars": 990,
-      "forks": 48,
-      "open_issues": 13,
-      "created_at": "2026-08-16T16:04:08+00:00",
-      "pushed_at": "2026-10-11T09:27:22+00:00",
-      "updated_at": "2026-10-11T12:04:32+00:00",
-      "topics": [
-        "deepseek-harness",
-        "dsh-plugin",
-        "dsh-plugin-market",
-        "dsh-plugins",
-        "liquid-glass",
-        "theme",
-        "wallpaper",
-        "wallpaper-engine",
-        "webgl"
+        "accessibility",
+        "agent-skills",
+        "browser-automation",
+        "claude-code",
+        "codex-cli",
+        "computer-use",
+        "desktop-automation",
+        "linux",
+        "macos",
+        "mcp",
+        "pi-agent",
+        "x11"
       ],
       "language": "JavaScript",
       "license": "MIT",
-      "homepage": null,
-      "html_url": "https://github.com/elysia395/dsh-wallpaper-engine",
+      "homepage": "https://lcu.amontlabs.com",
+      "html_url": "https://github.com/amontlabs/lcu",
       "default_branch": "main",
       "archived": false,
       "search_score": 1.0,
-      "stars_7d_ago": 779,
+      "stars_7d_ago": 828,
       "star_series": [
         {
-          "d": "09-12",
-          "s": 779
-        },
-        {
           "d": "09-13",
-          "s": 779
+          "s": 828
         },
         {
           "d": "09-14",
-          "s": 779
+          "s": 828
         },
         {
           "d": "09-15",
-          "s": 779
+          "s": 828
         },
         {
           "d": "09-16",
-          "s": 779
+          "s": 828
         },
         {
           "d": "09-17",
-          "s": 779
+          "s": 828
         },
         {
           "d": "09-18",
-          "s": 779
+          "s": 828
         },
         {
           "d": "09-19",
-          "s": 779
+          "s": 828
         },
         {
           "d": "09-20",
-          "s": 779
+          "s": 828
         },
         {
           "d": "09-21",
-          "s": 779
+          "s": 828
         },
         {
           "d": "09-22",
-          "s": 779
+          "s": 828
         },
         {
           "d": "09-23",
-          "s": 779
+          "s": 828
         },
         {
           "d": "09-24",
-          "s": 779
+          "s": 828
         },
         {
           "d": "09-25",
-          "s": 779
+          "s": 828
         },
         {
           "d": "09-26",
-          "s": 779
+          "s": 828
         },
         {
           "d": "09-27",
-          "s": 779
+          "s": 828
         },
         {
           "d": "09-28",
-          "s": 779
+          "s": 828
         },
         {
           "d": "09-29",
-          "s": 779
+          "s": 828
         },
         {
           "d": "09-30",
-          "s": 779
+          "s": 828
         },
         {
           "d": "10-01",
-          "s": 779
+          "s": 828
         },
         {
           "d": "10-02",
-          "s": 779
+          "s": 828
         },
         {
           "d": "10-03",
-          "s": 779
+          "s": 828
         },
         {
           "d": "10-04",
-          "s": 779
+          "s": 828
         },
         {
           "d": "10-05",
-          "s": 779
+          "s": 828
         },
         {
           "d": "10-06",
-          "s": 779
+          "s": 828
         },
         {
           "d": "10-07",
-          "s": 779
+          "s": 828
         },
         {
           "d": "10-08",
-          "s": 815
+          "s": 828
         },
         {
           "d": "10-09",
-          "s": 879
+          "s": 862
         },
         {
           "d": "10-10",
-          "s": 953
+          "s": 886
         },
         {
           "d": "10-11",
-          "s": 990
-        }
-      ]
-    },
-    "score": {
-      "score": 100.0,
-      "breakdown": {
-        "vel": 95,
-        "acc": 99,
-        "health": 72,
-        "fresh": 85,
-        "signal": 70
-      },
-      "stage": "early",
-      "stage_multiplier": 1.2,
-      "confidence": 1.0,
-      "base_score": 86.78,
-      "explanation": "dsh-wallpaper-engine 是 JavaScript 开源项目，主打「把本机 Wallpaper Engine 的壁纸搬进 DSH 网页界面：场景壁纸由内置 MIT 开源引擎 WebWallGL 实时 WebGL 渲染（粒子 / puppet 骨骼 / SceneScript / 音频反应 / 鼠标交互），失败自动降级内嵌 MP4 与场景静态帧；Web 壁纸严格沙箱 + WE API；iOS 风格液态玻璃 UI 高度自定义，遮挡暂停省电、ffmpeg 帧率上限转码、系统音频频谱与 Now Playing、自定义上传与自动轮播；设置存宿主端，对 agent 零 token 开销。Windows / macOS / Linux 三平台原生（同一个包、同一条命令）。」；处于增长早期，本周涨速 30 star/天，涨速在加快；社区健康（fork/star 比 4.8%，13 个 open issue）、开发活跃。"
-    }
-  },
-  {
-    "repo": {
-      "owner": "ThinkWatchProject",
-      "name": "ThinkWatch-Lite",
-      "full_name": "ThinkWatchProject/ThinkWatch-Lite",
-      "description": "Local gateway for Claude Code, Codex and other AI clients on macOS, Windows and Linux: switch upstreams without touching clients, keep API keys from relays, cut off malicious tool calls, trace every request.",
-      "stars": 1000,
-      "forks": 15,
-      "open_issues": 0,
-      "created_at": "2026-09-12T13:48:15+00:00",
-      "pushed_at": "2026-10-10T18:59:28+00:00",
-      "updated_at": "2026-10-11T11:59:29+00:00",
-      "topics": [
-        "ai-gateway",
-        "anthropic",
-        "claude-code",
-        "codex",
-        "cost-monitoring",
-        "cost-tracking",
-        "cross-platform",
-        "linux",
-        "llm-cost",
-        "llm-gateway",
-        "llm-observability",
-        "llm-proxy",
-        "llm-usage",
-        "macos",
-        "openai",
-        "secret-redaction",
-        "system-tray",
-        "token-usage",
-        "usage-tracking",
-        "windows"
-      ],
-      "language": "TypeScript",
-      "license": "MIT",
-      "homepage": "https://thinkwat.ch/lite/",
-      "html_url": "https://github.com/ThinkWatchProject/ThinkWatch-Lite",
-      "default_branch": "main",
-      "archived": false,
-      "search_score": 1.0,
-      "stars_7d_ago": 977,
-      "star_series": [
-        {
-          "d": "09-12",
-          "s": 971
+          "s": 894
         },
         {
-          "d": "09-13",
-          "s": 971
-        },
-        {
-          "d": "09-14",
-          "s": 971
-        },
-        {
-          "d": "09-15",
-          "s": 971
-        },
-        {
-          "d": "09-16",
-          "s": 971
-        },
-        {
-          "d": "09-17",
-          "s": 971
-        },
-        {
-          "d": "09-18",
-          "s": 971
-        },
-        {
-          "d": "09-19",
-          "s": 971
-        },
-        {
-          "d": "09-20",
-          "s": 971
-        },
-        {
-          "d": "09-21",
-          "s": 971
-        },
-        {
-          "d": "09-22",
-          "s": 971
-        },
-        {
-          "d": "09-23",
-          "s": 971
-        },
-        {
-          "d": "09-24",
-          "s": 971
-        },
-        {
-          "d": "09-25",
-          "s": 971
-        },
-        {
-          "d": "09-26",
-          "s": 971
-        },
-        {
-          "d": "09-27",
-          "s": 971
-        },
-        {
-          "d": "09-28",
-          "s": 971
-        },
-        {
-          "d": "09-29",
-          "s": 971
-        },
-        {
-          "d": "09-30",
-          "s": 971
-        },
-        {
-          "d": "10-01",
-          "s": 971
-        },
-        {
-          "d": "10-02",
-          "s": 971
-        },
-        {
-          "d": "10-03",
-          "s": 971
-        },
-        {
-          "d": "10-04",
-          "s": 971
-        },
-        {
-          "d": "10-05",
-          "s": 977
-        },
-        {
-          "d": "10-06",
-          "s": 980
-        },
-        {
-          "d": "10-07",
-          "s": 983
-        },
-        {
-          "d": "10-08",
-          "s": 992
-        },
-        {
-          "d": "10-09",
-          "s": 993
-        },
-        {
-          "d": "10-10",
-          "s": 998
-        },
-        {
-          "d": "10-11",
+          "d": "10-12",
           "s": 1000
         }
       ]
     },
     "score": {
-      "score": 72.85,
+      "score": 100.0,
       "breakdown": {
-        "vel": 40,
-        "acc": 92,
-        "health": 64,
-        "fresh": 92,
+        "vel": 93,
+        "acc": 99,
+        "health": 76,
+        "fresh": 95,
         "signal": 85
-      },
-      "stage": "mid_early",
-      "stage_multiplier": 1.1,
-      "confidence": 1.0,
-      "base_score": 66.23,
-      "explanation": "ThinkWatch-Lite 是 TypeScript 开源项目，主打「Local gateway for Claude Code, Codex and other AI clients on macOS, Windows and Linux: switch upstreams without touching clients, keep API keys from relays, cut off malicious tool calls, trace every request.」；处于中早期增长，本周涨速 3.3 star/天，涨速在加快；项目元数据完整、开发活跃。"
-    }
-  },
-  {
-    "repo": {
-      "owner": "ciddwd",
-      "name": "overlay-translator",
-      "full_name": "ciddwd/overlay-translator",
-      "description": "无需 ROOT 的开源 Android 屏幕实时翻译工具，适合游戏、视觉小说和漫画。支持端侧与云端 OCR、离线 LLM、多种翻译服务和文字朗读（TTS），译文可直接显示在画面上。Open-source no-root Android real-time screen translator for games, visual novels, and manga. Supports on-device and cloud OCR, offline LLMs, multiple translation services, on-screen translations, and text-to-speech (TTS).",
-      "stars": 994,
-      "forks": 39,
-      "open_issues": 4,
-      "created_at": "2026-06-22T10:58:05+00:00",
-      "pushed_at": "2026-10-07T07:18:32+00:00",
-      "updated_at": "2026-10-11T10:43:44+00:00",
-      "topics": [
-        "android",
-        "android-app",
-        "game-translation",
-        "gguf",
-        "kotlin",
-        "llama-cpp",
-        "llm",
-        "manga",
-        "manga-ocr",
-        "mlkit",
-        "no-root",
-        "ocr",
-        "offline-translation",
-        "paddleocr",
-        "screen-translation",
-        "shizuku",
-        "text-to-speech",
-        "translation",
-        "tts",
-        "visual-novel"
-      ],
-      "language": "Kotlin",
-      "license": "Apache-2.0",
-      "homepage": null,
-      "html_url": "https://github.com/ciddwd/overlay-translator",
-      "default_branch": "main",
-      "archived": false,
-      "search_score": 1.0,
-      "stars_7d_ago": 952,
-      "star_series": [
-        {
-          "d": "09-12",
-          "s": 830
-        },
-        {
-          "d": "09-13",
-          "s": 830
-        },
-        {
-          "d": "09-14",
-          "s": 830
-        },
-        {
-          "d": "09-15",
-          "s": 830
-        },
-        {
-          "d": "09-16",
-          "s": 832
-        },
-        {
-          "d": "09-17",
-          "s": 840
-        },
-        {
-          "d": "09-18",
-          "s": 846
-        },
-        {
-          "d": "09-19",
-          "s": 853
-        },
-        {
-          "d": "09-20",
-          "s": 859
-        },
-        {
-          "d": "09-21",
-          "s": 865
-        },
-        {
-          "d": "09-22",
-          "s": 868
-        },
-        {
-          "d": "09-23",
-          "s": 872
-        },
-        {
-          "d": "09-24",
-          "s": 883
-        },
-        {
-          "d": "09-25",
-          "s": 887
-        },
-        {
-          "d": "09-26",
-          "s": 896
-        },
-        {
-          "d": "09-27",
-          "s": 902
-        },
-        {
-          "d": "09-28",
-          "s": 905
-        },
-        {
-          "d": "09-29",
-          "s": 906
-        },
-        {
-          "d": "09-30",
-          "s": 911
-        },
-        {
-          "d": "10-01",
-          "s": 918
-        },
-        {
-          "d": "10-02",
-          "s": 925
-        },
-        {
-          "d": "10-03",
-          "s": 936
-        },
-        {
-          "d": "10-04",
-          "s": 947
-        },
-        {
-          "d": "10-05",
-          "s": 952
-        },
-        {
-          "d": "10-06",
-          "s": 955
-        },
-        {
-          "d": "10-07",
-          "s": 961
-        },
-        {
-          "d": "10-08",
-          "s": 971
-        },
-        {
-          "d": "10-09",
-          "s": 978
-        },
-        {
-          "d": "10-10",
-          "s": 987
-        },
-        {
-          "d": "10-11",
-          "s": 994
-        }
-      ]
-    },
-    "score": {
-      "score": 70.54,
-      "breakdown": {
-        "vel": 54,
-        "acc": 47,
-        "health": 71,
-        "fresh": 70,
-        "signal": 70
       },
       "stage": "early",
       "stage_multiplier": 1.2,
       "confidence": 1.0,
-      "base_score": 58.79,
-      "explanation": "overlay-translator 是 Kotlin 开源项目，主打「无需 ROOT 的开源 Android 屏幕实时翻译工具，适合游戏、视觉小说和漫画。支持端侧与云端 OCR、离线 LLM、多种翻译服务和文字朗读（TTS），译文可直接显示在画面上。Open-source no-root Android real-time screen translator for games, visual novels, and manga. Supports on-device and cloud OCR, offline LLMs, multiple translation services, on-screen translations, and text-to-speech (TTS).」；处于增长早期，本周涨速 6.0 star/天；社区健康（fork/star 比 3.9%，4 个 open issue）。"
+      "base_score": 90.14,
+      "explanation": "lcu 是 JavaScript 开源项目，主打「Codex computer use, decoupled from the app, for usage inside any harness.」；处于增长早期，本周涨速 25 star/天，涨速在加快；社区健康（fork/star 比 5.2%，0 个 open issue）、项目元数据完整、开发活跃。"
     }
   },
   {
     "repo": {
-      "owner": "agent-sh",
-      "name": "agentsys",
-      "full_name": "agent-sh/agentsys",
-      "description": "AI writes code. This automates everything else · 24 plugins · 49 agents · 44 skills · for Claude Code, OpenCode, Codex, Cursor, Kiro.",
-      "stars": 996,
-      "forks": 117,
-      "open_issues": 0,
-      "created_at": "2026-01-15T09:33:05+00:00",
-      "pushed_at": "2026-10-08T18:45:30+00:00",
-      "updated_at": "2026-10-10T22:22:29+00:00",
-      "topics": [
-        "agent",
-        "ai",
-        "anthropic",
-        "automation",
-        "autonomous-agents",
-        "claude",
-        "claude-code",
-        "cli",
-        "code-review",
-        "codex",
-        "cursor",
-        "devtools",
-        "openai",
-        "opencode",
-        "plugins",
-        "productivity",
-        "skills",
-        "slash-commands",
-        "vibe-coding",
-        "workflow"
-      ],
-      "language": "JavaScript",
-      "license": "MIT",
-      "homepage": "https://agent-sh.github.io/agentsys/",
-      "html_url": "https://github.com/agent-sh/agentsys",
+      "owner": "yuzhenmao",
+      "name": "DeLM",
+      "full_name": "yuzhenmao/DeLM",
+      "description": "Implementation for Decentralized Multi-Agent Systems with Shared Context",
+      "stars": 200,
+      "forks": 27,
+      "open_issues": 2,
+      "created_at": "2026-06-07T07:23:11+00:00",
+      "pushed_at": "2026-10-09T01:05:13+00:00",
+      "updated_at": "2026-10-12T10:35:18+00:00",
+      "topics": [],
+      "language": "Python",
+      "license": "NOASSERTION",
+      "homepage": null,
+      "html_url": "https://github.com/yuzhenmao/DeLM",
       "default_branch": "main",
       "archived": false,
       "search_score": 1.0,
-      "stars_7d_ago": 991,
+      "stars_7d_ago": 124,
       "star_series": [
         {
-          "d": "09-12",
-          "s": 991
-        },
-        {
           "d": "09-13",
-          "s": 991
+          "s": 120
         },
         {
           "d": "09-14",
-          "s": 991
+          "s": 120
         },
         {
           "d": "09-15",
-          "s": 991
+          "s": 120
         },
         {
           "d": "09-16",
-          "s": 991
+          "s": 120
         },
         {
           "d": "09-17",
-          "s": 991
+          "s": 120
         },
         {
           "d": "09-18",
-          "s": 991
+          "s": 120
         },
         {
           "d": "09-19",
-          "s": 991
+          "s": 120
         },
         {
           "d": "09-20",
-          "s": 991
+          "s": 120
         },
         {
           "d": "09-21",
-          "s": 991
+          "s": 120
         },
         {
           "d": "09-22",
-          "s": 991
+          "s": 121
         },
         {
           "d": "09-23",
-          "s": 991
+          "s": 121
         },
         {
           "d": "09-24",
-          "s": 991
+          "s": 121
         },
         {
           "d": "09-25",
-          "s": 991
+          "s": 121
         },
         {
           "d": "09-26",
-          "s": 991
+          "s": 121
         },
         {
           "d": "09-27",
-          "s": 991
+          "s": 121
         },
         {
           "d": "09-28",
-          "s": 991
+          "s": 121
         },
         {
           "d": "09-29",
-          "s": 991
+          "s": 121
         },
         {
           "d": "09-30",
-          "s": 991
+          "s": 121
         },
         {
           "d": "10-01",
-          "s": 991
+          "s": 121
         },
         {
           "d": "10-02",
-          "s": 991
+          "s": 122
         },
         {
           "d": "10-03",
-          "s": 991
+          "s": 124
         },
         {
           "d": "10-04",
-          "s": 991
+          "s": 124
         },
         {
           "d": "10-05",
-          "s": 991
+          "s": 124
         },
         {
           "d": "10-06",
-          "s": 992
+          "s": 124
         },
         {
           "d": "10-07",
-          "s": 992
+          "s": 125
         },
         {
           "d": "10-08",
-          "s": 994
+          "s": 150
         },
         {
           "d": "10-09",
-          "s": 994
+          "s": 186
         },
         {
           "d": "10-10",
-          "s": 996
+          "s": 191
         },
         {
           "d": "10-11",
-          "s": 996
+          "s": 193
+        },
+        {
+          "d": "10-12",
+          "s": 200
         }
       ]
     },
     "score": {
-      "score": 46.37,
+      "score": 94.81,
       "breakdown": {
-        "vel": 15,
-        "acc": 67,
-        "health": 100,
-        "fresh": 26,
+        "vel": 71,
+        "acc": 99,
+        "health": 97,
+        "fresh": 65,
+        "signal": 55
+      },
+      "stage": "early",
+      "stage_multiplier": 1.2,
+      "confidence": 1.0,
+      "base_score": 79.01,
+      "explanation": "DeLM 是 Python 开源项目，主打「Implementation for Decentralized Multi-Agent Systems with Shared Context」；处于增长早期，本周涨速 11 star/天，涨速在加快；社区健康（fork/star 比 13.5%，2 个 open issue）。"
+    }
+  },
+  {
+    "repo": {
+      "owner": "guokaigdg",
+      "name": "animal-island-ui",
+      "full_name": "guokaigdg/animal-island-ui",
+      "description": "A Kawaii React UI component library  一个可爱的 React UI  组件库",
+      "stars": 4990,
+      "forks": 29,
+      "open_issues": 5,
+      "created_at": "2026-04-12T16:53:42+00:00",
+      "pushed_at": "2026-10-11T16:45:32+00:00",
+      "updated_at": "2026-10-12T12:56:47+00:00",
+      "topics": [
+        "component-library",
+        "react",
+        "typescript",
+        "ui-components",
+        "ui-design"
+      ],
+      "language": "TypeScript",
+      "license": "MIT",
+      "homepage": "https://guokaigdg.github.io/animal-island-ui/",
+      "html_url": "https://github.com/guokaigdg/animal-island-ui",
+      "default_branch": "main",
+      "archived": false,
+      "search_score": 1.0,
+      "stars_7d_ago": 4744,
+      "star_series": [
+        {
+          "d": "09-13",
+          "s": 4744
+        },
+        {
+          "d": "09-14",
+          "s": 4744
+        },
+        {
+          "d": "09-15",
+          "s": 4744
+        },
+        {
+          "d": "09-16",
+          "s": 4744
+        },
+        {
+          "d": "09-17",
+          "s": 4744
+        },
+        {
+          "d": "09-18",
+          "s": 4744
+        },
+        {
+          "d": "09-19",
+          "s": 4744
+        },
+        {
+          "d": "09-20",
+          "s": 4744
+        },
+        {
+          "d": "09-21",
+          "s": 4744
+        },
+        {
+          "d": "09-22",
+          "s": 4744
+        },
+        {
+          "d": "09-23",
+          "s": 4744
+        },
+        {
+          "d": "09-24",
+          "s": 4744
+        },
+        {
+          "d": "09-25",
+          "s": 4744
+        },
+        {
+          "d": "09-26",
+          "s": 4744
+        },
+        {
+          "d": "09-27",
+          "s": 4744
+        },
+        {
+          "d": "09-28",
+          "s": 4744
+        },
+        {
+          "d": "09-29",
+          "s": 4744
+        },
+        {
+          "d": "09-30",
+          "s": 4744
+        },
+        {
+          "d": "10-01",
+          "s": 4744
+        },
+        {
+          "d": "10-02",
+          "s": 4744
+        },
+        {
+          "d": "10-03",
+          "s": 4744
+        },
+        {
+          "d": "10-04",
+          "s": 4744
+        },
+        {
+          "d": "10-05",
+          "s": 4744
+        },
+        {
+          "d": "10-06",
+          "s": 4744
+        },
+        {
+          "d": "10-07",
+          "s": 4744
+        },
+        {
+          "d": "10-08",
+          "s": 4748
+        },
+        {
+          "d": "10-09",
+          "s": 4953
+        },
+        {
+          "d": "10-10",
+          "s": 4974
+        },
+        {
+          "d": "10-11",
+          "s": 4982
+        },
+        {
+          "d": "10-12",
+          "s": 4990
+        }
+      ]
+    },
+    "score": {
+      "score": 89.88,
+      "breakdown": {
+        "vel": 100,
+        "acc": 99,
+        "health": 61,
+        "fresh": 50,
         "signal": 100
       },
       "stage": "mid_early",
       "stage_multiplier": 1.1,
       "confidence": 1.0,
-      "base_score": 42.16,
-      "explanation": "agentsys 是 JavaScript 开源项目，主打「AI writes code. This automates everything else · 24 plugins · 49 agents · 44 skills · for Claude Code, OpenCode, Codex, Cursor, Kiro.」；处于中早期增长；社区健康（fork/star 比 11.7%，0 个 open issue）、项目元数据完整。"
+      "base_score": 81.71,
+      "explanation": "animal-island-ui 是 TypeScript 开源项目，主打「A Kawaii React UI component library  一个可爱的 React UI  组件库」；处于中早期增长，本周涨速 35 star/天，涨速在加快；项目元数据完整。"
+    }
+  },
+  {
+    "repo": {
+      "owner": "google",
+      "name": "agentmesh",
+      "full_name": "google/agentmesh",
+      "description": "Agent Mesh",
+      "stars": 997,
+      "forks": 158,
+      "open_issues": 20,
+      "created_at": "2026-04-21T15:15:58+00:00",
+      "pushed_at": "2026-10-12T10:47:39+00:00",
+      "updated_at": "2026-10-12T13:51:30+00:00",
+      "topics": [
+        "a2a",
+        "a2a-protocol",
+        "agent-mesh",
+        "agentic-ai",
+        "inference",
+        "mcp",
+        "mesh",
+        "mesh-network",
+        "network-security",
+        "networking-ai",
+        "p2p-network"
+      ],
+      "language": "Go",
+      "license": "Apache-2.0",
+      "homepage": "https://google.github.io/agentmesh/",
+      "html_url": "https://github.com/google/agentmesh",
+      "default_branch": "main",
+      "archived": false,
+      "search_score": 1.0,
+      "stars_7d_ago": 959,
+      "star_series": [
+        {
+          "d": "09-13",
+          "s": 959
+        },
+        {
+          "d": "09-14",
+          "s": 959
+        },
+        {
+          "d": "09-15",
+          "s": 959
+        },
+        {
+          "d": "09-16",
+          "s": 959
+        },
+        {
+          "d": "09-17",
+          "s": 959
+        },
+        {
+          "d": "09-18",
+          "s": 959
+        },
+        {
+          "d": "09-19",
+          "s": 959
+        },
+        {
+          "d": "09-20",
+          "s": 959
+        },
+        {
+          "d": "09-21",
+          "s": 959
+        },
+        {
+          "d": "09-22",
+          "s": 959
+        },
+        {
+          "d": "09-23",
+          "s": 959
+        },
+        {
+          "d": "09-24",
+          "s": 959
+        },
+        {
+          "d": "09-25",
+          "s": 959
+        },
+        {
+          "d": "09-26",
+          "s": 959
+        },
+        {
+          "d": "09-27",
+          "s": 959
+        },
+        {
+          "d": "09-28",
+          "s": 959
+        },
+        {
+          "d": "09-29",
+          "s": 959
+        },
+        {
+          "d": "09-30",
+          "s": 959
+        },
+        {
+          "d": "10-01",
+          "s": 959
+        },
+        {
+          "d": "10-02",
+          "s": 959
+        },
+        {
+          "d": "10-03",
+          "s": 959
+        },
+        {
+          "d": "10-04",
+          "s": 959
+        },
+        {
+          "d": "10-05",
+          "s": 959
+        },
+        {
+          "d": "10-06",
+          "s": 959
+        },
+        {
+          "d": "10-07",
+          "s": 959
+        },
+        {
+          "d": "10-08",
+          "s": 959
+        },
+        {
+          "d": "10-09",
+          "s": 959
+        },
+        {
+          "d": "10-10",
+          "s": 959
+        },
+        {
+          "d": "10-11",
+          "s": 962
+        },
+        {
+          "d": "10-12",
+          "s": 997
+        }
+      ]
+    },
+    "score": {
+      "score": 81.91,
+      "breakdown": {
+        "vel": 53,
+        "acc": 99,
+        "health": 96,
+        "fresh": 53,
+        "signal": 100
+      },
+      "stage": "mid_early",
+      "stage_multiplier": 1.1,
+      "confidence": 1.0,
+      "base_score": 74.47,
+      "explanation": "agentmesh 是 Go 开源项目，主打「Agent Mesh」；处于中早期增长，本周涨速 5.4 star/天，涨速在加快；社区健康（fork/star 比 15.8%，20 个 open issue）、项目元数据完整。"
+    }
+  },
+  {
+    "repo": {
+      "owner": "screentinker",
+      "name": "screentinker",
+      "full_name": "screentinker/screentinker",
+      "description": "Open-source digital signage management software. Control content on TVs, displays, and kiosks from anywhere.",
+      "stars": 200,
+      "forks": 55,
+      "open_issues": 1,
+      "created_at": "2026-04-08T17:16:53+00:00",
+      "pushed_at": "2026-10-12T14:18:18+00:00",
+      "updated_at": "2026-10-12T13:12:44+00:00",
+      "topics": [
+        "android-tv",
+        "cms",
+        "digital-signage",
+        "fire-tv",
+        "kiosk",
+        "nodejs",
+        "open-source",
+        "raspberry-pi",
+        "self-hosted",
+        "signage",
+        "sqlite"
+      ],
+      "language": "JavaScript",
+      "license": "MIT",
+      "homepage": "https://screentinker.com",
+      "html_url": "https://github.com/screentinker/screentinker",
+      "default_branch": "main",
+      "archived": false,
+      "search_score": 1.0,
+      "stars_7d_ago": 176,
+      "star_series": [
+        {
+          "d": "09-13",
+          "s": 176
+        },
+        {
+          "d": "09-14",
+          "s": 176
+        },
+        {
+          "d": "09-15",
+          "s": 176
+        },
+        {
+          "d": "09-16",
+          "s": 176
+        },
+        {
+          "d": "09-17",
+          "s": 176
+        },
+        {
+          "d": "09-18",
+          "s": 176
+        },
+        {
+          "d": "09-19",
+          "s": 176
+        },
+        {
+          "d": "09-20",
+          "s": 176
+        },
+        {
+          "d": "09-21",
+          "s": 176
+        },
+        {
+          "d": "09-22",
+          "s": 176
+        },
+        {
+          "d": "09-23",
+          "s": 176
+        },
+        {
+          "d": "09-24",
+          "s": 176
+        },
+        {
+          "d": "09-25",
+          "s": 176
+        },
+        {
+          "d": "09-26",
+          "s": 176
+        },
+        {
+          "d": "09-27",
+          "s": 176
+        },
+        {
+          "d": "09-28",
+          "s": 176
+        },
+        {
+          "d": "09-29",
+          "s": 176
+        },
+        {
+          "d": "09-30",
+          "s": 176
+        },
+        {
+          "d": "10-01",
+          "s": 176
+        },
+        {
+          "d": "10-02",
+          "s": 176
+        },
+        {
+          "d": "10-03",
+          "s": 176
+        },
+        {
+          "d": "10-04",
+          "s": 176
+        },
+        {
+          "d": "10-05",
+          "s": 176
+        },
+        {
+          "d": "10-06",
+          "s": 176
+        },
+        {
+          "d": "10-07",
+          "s": 176
+        },
+        {
+          "d": "10-08",
+          "s": 176
+        },
+        {
+          "d": "10-09",
+          "s": 177
+        },
+        {
+          "d": "10-10",
+          "s": 177
+        },
+        {
+          "d": "10-11",
+          "s": 191
+        },
+        {
+          "d": "10-12",
+          "s": 200
+        }
+      ]
+    },
+    "score": {
+      "score": 81.49,
+      "breakdown": {
+        "vel": 43,
+        "acc": 97,
+        "health": 100,
+        "fresh": 49,
+        "signal": 85
+      },
+      "stage": "early",
+      "stage_multiplier": 1.2,
+      "confidence": 1.0,
+      "base_score": 67.91,
+      "explanation": "screentinker 是 JavaScript 开源项目，主打「Open-source digital signage management software. Control content on TVs, displays, and kiosks from anywhere.」；处于增长早期，本周涨速 3.4 star/天，涨速在加快；社区健康（fork/star 比 27.5%，1 个 open issue）、项目元数据完整。"
     }
   }
 ]
