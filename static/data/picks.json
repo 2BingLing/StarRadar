@@ -1,820 +1,624 @@
 [
   {
     "repo": {
-      "owner": "amontlabs",
-      "name": "lcu",
-      "full_name": "amontlabs/lcu",
-      "description": "Codex computer use, decoupled from the app, for usage inside any harness.",
+      "owner": "wesbos",
+      "name": "photo-frame-dashboard",
+      "full_name": "wesbos/photo-frame-dashboard",
+      "description": "Getting ADB, root, backups and custom apps onto locked-down Android photo frames (Skylight Calendar, BIUFRAME)",
       "stars": 1000,
-      "forks": 52,
-      "open_issues": 0,
-      "created_at": "2026-09-22T15:08:18+00:00",
-      "pushed_at": "2026-10-12T10:54:04+00:00",
-      "updated_at": "2026-10-12T14:18:04+00:00",
-      "topics": [
-        "accessibility",
-        "agent-skills",
-        "browser-automation",
-        "claude-code",
-        "codex-cli",
-        "computer-use",
-        "desktop-automation",
-        "linux",
-        "macos",
-        "mcp",
-        "pi-agent",
-        "x11"
-      ],
-      "language": "JavaScript",
-      "license": "MIT",
-      "homepage": "https://lcu.amontlabs.com",
-      "html_url": "https://github.com/amontlabs/lcu",
+      "forks": 128,
+      "open_issues": 42,
+      "created_at": "2026-10-08T18:22:19+00:00",
+      "pushed_at": "2026-10-12T18:49:08+00:00",
+      "updated_at": "2026-10-13T13:17:39+00:00",
+      "topics": [],
+      "language": "Python",
+      "license": null,
+      "homepage": null,
+      "html_url": "https://github.com/wesbos/photo-frame-dashboard",
       "default_branch": "main",
       "archived": false,
       "search_score": 1.0,
-      "stars_7d_ago": 828,
+      "stars_7d_ago": 908,
       "star_series": [
         {
-          "d": "09-13",
-          "s": 828
-        },
-        {
           "d": "09-14",
-          "s": 828
+          "s": 908
         },
         {
           "d": "09-15",
-          "s": 828
+          "s": 908
         },
         {
           "d": "09-16",
-          "s": 828
+          "s": 908
         },
         {
           "d": "09-17",
-          "s": 828
+          "s": 908
         },
         {
           "d": "09-18",
-          "s": 828
+          "s": 908
         },
         {
           "d": "09-19",
-          "s": 828
+          "s": 908
         },
         {
           "d": "09-20",
-          "s": 828
+          "s": 908
         },
         {
           "d": "09-21",
-          "s": 828
+          "s": 908
         },
         {
           "d": "09-22",
-          "s": 828
+          "s": 908
         },
         {
           "d": "09-23",
-          "s": 828
+          "s": 908
         },
         {
           "d": "09-24",
-          "s": 828
+          "s": 908
         },
         {
           "d": "09-25",
-          "s": 828
+          "s": 908
         },
         {
           "d": "09-26",
-          "s": 828
+          "s": 908
         },
         {
           "d": "09-27",
-          "s": 828
+          "s": 908
         },
         {
           "d": "09-28",
-          "s": 828
+          "s": 908
         },
         {
           "d": "09-29",
-          "s": 828
+          "s": 908
         },
         {
           "d": "09-30",
-          "s": 828
+          "s": 908
         },
         {
           "d": "10-01",
-          "s": 828
+          "s": 908
         },
         {
           "d": "10-02",
-          "s": 828
+          "s": 908
         },
         {
           "d": "10-03",
-          "s": 828
+          "s": 908
         },
         {
           "d": "10-04",
-          "s": 828
+          "s": 908
         },
         {
           "d": "10-05",
-          "s": 828
+          "s": 908
         },
         {
           "d": "10-06",
-          "s": 828
+          "s": 908
         },
         {
           "d": "10-07",
-          "s": 828
+          "s": 908
         },
         {
           "d": "10-08",
-          "s": 828
+          "s": 908
         },
         {
           "d": "10-09",
-          "s": 862
+          "s": 908
         },
         {
           "d": "10-10",
-          "s": 886
+          "s": 908
         },
         {
           "d": "10-11",
-          "s": 894
+          "s": 908
         },
         {
           "d": "10-12",
+          "s": 940
+        },
+        {
+          "d": "10-13",
           "s": 1000
         }
       ]
     },
     "score": {
-      "score": 100.0,
+      "score": 89.5,
       "breakdown": {
-        "vel": 93,
+        "vel": 77,
         "acc": 99,
-        "health": 76,
-        "fresh": 95,
-        "signal": 85
-      },
-      "stage": "early",
-      "stage_multiplier": 1.2,
-      "confidence": 1.0,
-      "base_score": 90.14,
-      "explanation": "lcu 是 JavaScript 开源项目，主打「Codex computer use, decoupled from the app, for usage inside any harness.」；处于增长早期，本周涨速 25 star/天，涨速在加快；社区健康（fork/star 比 5.2%，0 个 open issue）、项目元数据完整、开发活跃。"
-    }
-  },
-  {
-    "repo": {
-      "owner": "yuzhenmao",
-      "name": "DeLM",
-      "full_name": "yuzhenmao/DeLM",
-      "description": "Implementation for Decentralized Multi-Agent Systems with Shared Context",
-      "stars": 200,
-      "forks": 27,
-      "open_issues": 2,
-      "created_at": "2026-06-07T07:23:11+00:00",
-      "pushed_at": "2026-10-09T01:05:13+00:00",
-      "updated_at": "2026-10-12T10:35:18+00:00",
-      "topics": [],
-      "language": "Python",
-      "license": "NOASSERTION",
-      "homepage": null,
-      "html_url": "https://github.com/yuzhenmao/DeLM",
-      "default_branch": "main",
-      "archived": false,
-      "search_score": 1.0,
-      "stars_7d_ago": 124,
-      "star_series": [
-        {
-          "d": "09-13",
-          "s": 120
-        },
-        {
-          "d": "09-14",
-          "s": 120
-        },
-        {
-          "d": "09-15",
-          "s": 120
-        },
-        {
-          "d": "09-16",
-          "s": 120
-        },
-        {
-          "d": "09-17",
-          "s": 120
-        },
-        {
-          "d": "09-18",
-          "s": 120
-        },
-        {
-          "d": "09-19",
-          "s": 120
-        },
-        {
-          "d": "09-20",
-          "s": 120
-        },
-        {
-          "d": "09-21",
-          "s": 120
-        },
-        {
-          "d": "09-22",
-          "s": 121
-        },
-        {
-          "d": "09-23",
-          "s": 121
-        },
-        {
-          "d": "09-24",
-          "s": 121
-        },
-        {
-          "d": "09-25",
-          "s": 121
-        },
-        {
-          "d": "09-26",
-          "s": 121
-        },
-        {
-          "d": "09-27",
-          "s": 121
-        },
-        {
-          "d": "09-28",
-          "s": 121
-        },
-        {
-          "d": "09-29",
-          "s": 121
-        },
-        {
-          "d": "09-30",
-          "s": 121
-        },
-        {
-          "d": "10-01",
-          "s": 121
-        },
-        {
-          "d": "10-02",
-          "s": 122
-        },
-        {
-          "d": "10-03",
-          "s": 124
-        },
-        {
-          "d": "10-04",
-          "s": 124
-        },
-        {
-          "d": "10-05",
-          "s": 124
-        },
-        {
-          "d": "10-06",
-          "s": 124
-        },
-        {
-          "d": "10-07",
-          "s": 125
-        },
-        {
-          "d": "10-08",
-          "s": 150
-        },
-        {
-          "d": "10-09",
-          "s": 186
-        },
-        {
-          "d": "10-10",
-          "s": 191
-        },
-        {
-          "d": "10-11",
-          "s": 193
-        },
-        {
-          "d": "10-12",
-          "s": 200
-        }
-      ]
-    },
-    "score": {
-      "score": 94.81,
-      "breakdown": {
-        "vel": 71,
-        "acc": 99,
-        "health": 97,
-        "fresh": 65,
-        "signal": 55
-      },
-      "stage": "early",
-      "stage_multiplier": 1.2,
-      "confidence": 1.0,
-      "base_score": 79.01,
-      "explanation": "DeLM 是 Python 开源项目，主打「Implementation for Decentralized Multi-Agent Systems with Shared Context」；处于增长早期，本周涨速 11 star/天，涨速在加快；社区健康（fork/star 比 13.5%，2 个 open issue）。"
-    }
-  },
-  {
-    "repo": {
-      "owner": "guokaigdg",
-      "name": "animal-island-ui",
-      "full_name": "guokaigdg/animal-island-ui",
-      "description": "A Kawaii React UI component library  一个可爱的 React UI  组件库",
-      "stars": 4990,
-      "forks": 29,
-      "open_issues": 5,
-      "created_at": "2026-04-12T16:53:42+00:00",
-      "pushed_at": "2026-10-11T16:45:32+00:00",
-      "updated_at": "2026-10-12T12:56:47+00:00",
-      "topics": [
-        "component-library",
-        "react",
-        "typescript",
-        "ui-components",
-        "ui-design"
-      ],
-      "language": "TypeScript",
-      "license": "MIT",
-      "homepage": "https://guokaigdg.github.io/animal-island-ui/",
-      "html_url": "https://github.com/guokaigdg/animal-island-ui",
-      "default_branch": "main",
-      "archived": false,
-      "search_score": 1.0,
-      "stars_7d_ago": 4744,
-      "star_series": [
-        {
-          "d": "09-13",
-          "s": 4744
-        },
-        {
-          "d": "09-14",
-          "s": 4744
-        },
-        {
-          "d": "09-15",
-          "s": 4744
-        },
-        {
-          "d": "09-16",
-          "s": 4744
-        },
-        {
-          "d": "09-17",
-          "s": 4744
-        },
-        {
-          "d": "09-18",
-          "s": 4744
-        },
-        {
-          "d": "09-19",
-          "s": 4744
-        },
-        {
-          "d": "09-20",
-          "s": 4744
-        },
-        {
-          "d": "09-21",
-          "s": 4744
-        },
-        {
-          "d": "09-22",
-          "s": 4744
-        },
-        {
-          "d": "09-23",
-          "s": 4744
-        },
-        {
-          "d": "09-24",
-          "s": 4744
-        },
-        {
-          "d": "09-25",
-          "s": 4744
-        },
-        {
-          "d": "09-26",
-          "s": 4744
-        },
-        {
-          "d": "09-27",
-          "s": 4744
-        },
-        {
-          "d": "09-28",
-          "s": 4744
-        },
-        {
-          "d": "09-29",
-          "s": 4744
-        },
-        {
-          "d": "09-30",
-          "s": 4744
-        },
-        {
-          "d": "10-01",
-          "s": 4744
-        },
-        {
-          "d": "10-02",
-          "s": 4744
-        },
-        {
-          "d": "10-03",
-          "s": 4744
-        },
-        {
-          "d": "10-04",
-          "s": 4744
-        },
-        {
-          "d": "10-05",
-          "s": 4744
-        },
-        {
-          "d": "10-06",
-          "s": 4744
-        },
-        {
-          "d": "10-07",
-          "s": 4744
-        },
-        {
-          "d": "10-08",
-          "s": 4748
-        },
-        {
-          "d": "10-09",
-          "s": 4953
-        },
-        {
-          "d": "10-10",
-          "s": 4974
-        },
-        {
-          "d": "10-11",
-          "s": 4982
-        },
-        {
-          "d": "10-12",
-          "s": 4990
-        }
-      ]
-    },
-    "score": {
-      "score": 89.88,
-      "breakdown": {
-        "vel": 100,
-        "acc": 99,
-        "health": 61,
-        "fresh": 50,
-        "signal": 100
+        "health": 91,
+        "fresh": 99,
+        "signal": 35
       },
       "stage": "mid_early",
       "stage_multiplier": 1.1,
       "confidence": 1.0,
-      "base_score": 81.71,
-      "explanation": "animal-island-ui 是 TypeScript 开源项目，主打「A Kawaii React UI component library  一个可爱的 React UI  组件库」；处于中早期增长，本周涨速 35 star/天，涨速在加快；项目元数据完整。"
+      "base_score": 81.37,
+      "explanation": "photo-frame-dashboard 是 Python 开源项目，主打「Getting ADB, root, backups and custom apps onto locked-down Android photo frames (Skylight Calendar, BIUFRAME)」；处于中早期增长，本周涨速 13 star/天，涨速在加快；社区健康（fork/star 比 12.8%，42 个 open issue）、开发活跃。"
     }
   },
   {
     "repo": {
-      "owner": "google",
-      "name": "agentmesh",
-      "full_name": "google/agentmesh",
-      "description": "Agent Mesh",
+      "owner": "vladtrc",
+      "name": "iw4L",
+      "full_name": "vladtrc/iw4L",
+      "description": "Standalone experimental Call of Duty runtime in Rust, built on bevy and wgpu",
       "stars": 997,
-      "forks": 158,
-      "open_issues": 20,
-      "created_at": "2026-04-21T15:15:58+00:00",
-      "pushed_at": "2026-10-12T10:47:39+00:00",
-      "updated_at": "2026-10-12T13:51:30+00:00",
-      "topics": [
-        "a2a",
-        "a2a-protocol",
-        "agent-mesh",
-        "agentic-ai",
-        "inference",
-        "mcp",
-        "mesh",
-        "mesh-network",
-        "network-security",
-        "networking-ai",
-        "p2p-network"
-      ],
-      "language": "Go",
+      "forks": 118,
+      "open_issues": 14,
+      "created_at": "2026-09-13T11:54:59+00:00",
+      "pushed_at": "2026-10-13T10:58:53+00:00",
+      "updated_at": "2026-10-13T11:30:22+00:00",
+      "topics": [],
+      "language": "Rust",
       "license": "Apache-2.0",
-      "homepage": "https://google.github.io/agentmesh/",
-      "html_url": "https://github.com/google/agentmesh",
-      "default_branch": "main",
+      "homepage": null,
+      "html_url": "https://github.com/vladtrc/iw4L",
+      "default_branch": "master",
       "archived": false,
       "search_score": 1.0,
-      "stars_7d_ago": 959,
+      "stars_7d_ago": 944,
       "star_series": [
         {
-          "d": "09-13",
-          "s": 959
-        },
-        {
           "d": "09-14",
-          "s": 959
+          "s": 944
         },
         {
           "d": "09-15",
-          "s": 959
+          "s": 944
         },
         {
           "d": "09-16",
-          "s": 959
+          "s": 944
         },
         {
           "d": "09-17",
-          "s": 959
+          "s": 944
         },
         {
           "d": "09-18",
-          "s": 959
+          "s": 944
         },
         {
           "d": "09-19",
-          "s": 959
+          "s": 944
         },
         {
           "d": "09-20",
-          "s": 959
+          "s": 944
         },
         {
           "d": "09-21",
-          "s": 959
+          "s": 944
         },
         {
           "d": "09-22",
-          "s": 959
+          "s": 944
         },
         {
           "d": "09-23",
-          "s": 959
+          "s": 944
         },
         {
           "d": "09-24",
-          "s": 959
+          "s": 944
         },
         {
           "d": "09-25",
-          "s": 959
+          "s": 944
         },
         {
           "d": "09-26",
-          "s": 959
+          "s": 944
         },
         {
           "d": "09-27",
-          "s": 959
+          "s": 944
         },
         {
           "d": "09-28",
-          "s": 959
+          "s": 944
         },
         {
           "d": "09-29",
-          "s": 959
+          "s": 944
         },
         {
           "d": "09-30",
-          "s": 959
+          "s": 944
         },
         {
           "d": "10-01",
-          "s": 959
+          "s": 944
         },
         {
           "d": "10-02",
-          "s": 959
+          "s": 944
         },
         {
           "d": "10-03",
-          "s": 959
+          "s": 944
         },
         {
           "d": "10-04",
-          "s": 959
+          "s": 944
         },
         {
           "d": "10-05",
-          "s": 959
+          "s": 944
         },
         {
           "d": "10-06",
-          "s": 959
+          "s": 944
         },
         {
           "d": "10-07",
-          "s": 959
+          "s": 944
         },
         {
           "d": "10-08",
-          "s": 959
+          "s": 944
         },
         {
           "d": "10-09",
-          "s": 959
+          "s": 944
         },
         {
           "d": "10-10",
-          "s": 959
+          "s": 944
         },
         {
           "d": "10-11",
-          "s": 962
+          "s": 954
         },
         {
           "d": "10-12",
+          "s": 989
+        },
+        {
+          "d": "10-13",
           "s": 997
         }
       ]
     },
     "score": {
-      "score": 81.91,
+      "score": 88.18,
       "breakdown": {
-        "vel": 53,
+        "vel": 62,
         "acc": 99,
-        "health": 96,
-        "fresh": 53,
-        "signal": 100
+        "health": 97,
+        "fresh": 92,
+        "signal": 55
       },
       "stage": "mid_early",
       "stage_multiplier": 1.1,
       "confidence": 1.0,
-      "base_score": 74.47,
-      "explanation": "agentmesh 是 Go 开源项目，主打「Agent Mesh」；处于中早期增长，本周涨速 5.4 star/天，涨速在加快；社区健康（fork/star 比 15.8%，20 个 open issue）、项目元数据完整。"
+      "base_score": 80.17,
+      "explanation": "iw4L 是 Rust 开源项目，主打「Standalone experimental Call of Duty runtime in Rust, built on bevy and wgpu」；处于中早期增长，本周涨速 7.6 star/天，涨速在加快；社区健康（fork/star 比 11.8%，14 个 open issue）、开发活跃。"
     }
   },
   {
     "repo": {
-      "owner": "screentinker",
-      "name": "screentinker",
-      "full_name": "screentinker/screentinker",
-      "description": "Open-source digital signage management software. Control content on TVs, displays, and kiosks from anywhere.",
-      "stars": 200,
-      "forks": 55,
-      "open_issues": 1,
-      "created_at": "2026-04-08T17:16:53+00:00",
-      "pushed_at": "2026-10-12T14:18:18+00:00",
-      "updated_at": "2026-10-12T13:12:44+00:00",
-      "topics": [
-        "android-tv",
-        "cms",
-        "digital-signage",
-        "fire-tv",
-        "kiosk",
-        "nodejs",
-        "open-source",
-        "raspberry-pi",
-        "self-hosted",
-        "signage",
-        "sqlite"
-      ],
-      "language": "JavaScript",
+      "owner": "maddada",
+      "name": "Ghostex",
+      "full_name": "maddada/Ghostex",
+      "description": "The Best & Most Powerful Native Agents Workspace. Fully Rust & GPUI based. Mobile apps. 20+ agents. Ghostty. ",
+      "stars": 995,
+      "forks": 57,
+      "open_issues": 9,
+      "created_at": "2026-04-27T01:44:16+00:00",
+      "pushed_at": "2026-10-13T08:07:06+00:00",
+      "updated_at": "2026-10-13T13:31:45+00:00",
+      "topics": [],
+      "language": "Rust",
       "license": "MIT",
-      "homepage": "https://screentinker.com",
-      "html_url": "https://github.com/screentinker/screentinker",
+      "homepage": "https://ghostex.dev",
+      "html_url": "https://github.com/maddada/Ghostex",
       "default_branch": "main",
       "archived": false,
       "search_score": 1.0,
-      "stars_7d_ago": 176,
+      "stars_7d_ago": 904,
       "star_series": [
         {
-          "d": "09-13",
-          "s": 176
-        },
-        {
           "d": "09-14",
-          "s": 176
+          "s": 904
         },
         {
           "d": "09-15",
-          "s": 176
+          "s": 904
         },
         {
           "d": "09-16",
-          "s": 176
+          "s": 904
         },
         {
           "d": "09-17",
-          "s": 176
+          "s": 904
         },
         {
           "d": "09-18",
-          "s": 176
+          "s": 904
         },
         {
           "d": "09-19",
-          "s": 176
+          "s": 904
         },
         {
           "d": "09-20",
-          "s": 176
+          "s": 904
         },
         {
           "d": "09-21",
-          "s": 176
+          "s": 904
         },
         {
           "d": "09-22",
-          "s": 176
+          "s": 904
         },
         {
           "d": "09-23",
-          "s": 176
+          "s": 904
         },
         {
           "d": "09-24",
-          "s": 176
+          "s": 904
         },
         {
           "d": "09-25",
-          "s": 176
+          "s": 904
         },
         {
           "d": "09-26",
-          "s": 176
+          "s": 904
         },
         {
           "d": "09-27",
-          "s": 176
+          "s": 904
         },
         {
           "d": "09-28",
-          "s": 176
+          "s": 904
         },
         {
           "d": "09-29",
-          "s": 176
+          "s": 904
         },
         {
           "d": "09-30",
-          "s": 176
+          "s": 904
         },
         {
           "d": "10-01",
-          "s": 176
+          "s": 904
         },
         {
           "d": "10-02",
-          "s": 176
+          "s": 904
         },
         {
           "d": "10-03",
-          "s": 176
+          "s": 904
         },
         {
           "d": "10-04",
-          "s": 176
+          "s": 904
         },
         {
           "d": "10-05",
-          "s": 176
+          "s": 904
         },
         {
           "d": "10-06",
-          "s": 176
+          "s": 904
         },
         {
           "d": "10-07",
-          "s": 176
+          "s": 904
         },
         {
           "d": "10-08",
-          "s": 176
+          "s": 904
         },
         {
           "d": "10-09",
-          "s": 177
+          "s": 909
         },
         {
           "d": "10-10",
-          "s": 177
+          "s": 911
+        },
+        {
+          "d": "10-11",
+          "s": 911
+        },
+        {
+          "d": "10-12",
+          "s": 946
+        },
+        {
+          "d": "10-13",
+          "s": 995
+        }
+      ]
+    },
+    "score": {
+      "score": 86.1,
+      "breakdown": {
+        "vel": 77,
+        "acc": 99,
+        "health": 76,
+        "fresh": 54,
+        "signal": 85
+      },
+      "stage": "mid_early",
+      "stage_multiplier": 1.1,
+      "confidence": 1.0,
+      "base_score": 78.27,
+      "explanation": "Ghostex 是 Rust 开源项目，主打「The Best & Most Powerful Native Agents Workspace. Fully Rust & GPUI based. Mobile apps. 20+ agents. Ghostty.」；处于中早期增长，本周涨速 13 star/天，涨速在加快；社区健康（fork/star 比 5.7%，9 个 open issue）、项目元数据完整。"
+    }
+  },
+  {
+    "repo": {
+      "owner": "AgentsLoop",
+      "name": "awesome-opus-5.5-games",
+      "full_name": "AgentsLoop/awesome-opus-5.5-games",
+      "description": "🎮 300 source-verified AI-built games — rated, categorized, and linked to real GitHub code.",
+      "stars": 200,
+      "forks": 24,
+      "open_issues": 2,
+      "created_at": "2026-09-09T11:56:03+00:00",
+      "pushed_at": "2026-10-07T09:06:17+00:00",
+      "updated_at": "2026-10-13T02:21:02+00:00",
+      "topics": [
+        "ai-games",
+        "awesome-list",
+        "browser-games",
+        "claude",
+        "game-development",
+        "gpt-6",
+        "open-source-games",
+        "threejs",
+        "vibe-coding",
+        "webgl"
+      ],
+      "language": "JavaScript",
+      "license": null,
+      "homepage": "https://lolgames.net/",
+      "html_url": "https://github.com/AgentsLoop/awesome-opus-5.5-games",
+      "default_branch": "main",
+      "archived": false,
+      "search_score": 1.0,
+      "stars_7d_ago": 171,
+      "star_series": [
+        {
+          "d": "09-14",
+          "s": 125
+        },
+        {
+          "d": "09-15",
+          "s": 125
+        },
+        {
+          "d": "09-16",
+          "s": 125
+        },
+        {
+          "d": "09-17",
+          "s": 125
+        },
+        {
+          "d": "09-18",
+          "s": 125
+        },
+        {
+          "d": "09-19",
+          "s": 125
+        },
+        {
+          "d": "09-20",
+          "s": 125
+        },
+        {
+          "d": "09-21",
+          "s": 125
+        },
+        {
+          "d": "09-22",
+          "s": 125
+        },
+        {
+          "d": "09-23",
+          "s": 125
+        },
+        {
+          "d": "09-24",
+          "s": 125
+        },
+        {
+          "d": "09-25",
+          "s": 125
+        },
+        {
+          "d": "09-26",
+          "s": 125
+        },
+        {
+          "d": "09-27",
+          "s": 125
+        },
+        {
+          "d": "09-28",
+          "s": 125
+        },
+        {
+          "d": "09-29",
+          "s": 125
+        },
+        {
+          "d": "09-30",
+          "s": 125
+        },
+        {
+          "d": "10-01",
+          "s": 125
+        },
+        {
+          "d": "10-02",
+          "s": 125
+        },
+        {
+          "d": "10-03",
+          "s": 134
+        },
+        {
+          "d": "10-04",
+          "s": 144
+        },
+        {
+          "d": "10-05",
+          "s": 150
+        },
+        {
+          "d": "10-06",
+          "s": 165
+        },
+        {
+          "d": "10-07",
+          "s": 171
+        },
+        {
+          "d": "10-08",
+          "s": 179
+        },
+        {
+          "d": "10-09",
+          "s": 185
+        },
+        {
+          "d": "10-10",
+          "s": 187
         },
         {
           "d": "10-11",
@@ -822,24 +626,199 @@
         },
         {
           "d": "10-12",
+          "s": 198
+        },
+        {
+          "d": "10-13",
           "s": 200
         }
       ]
     },
     "score": {
-      "score": 81.49,
+      "score": 71.31,
       "breakdown": {
-        "vel": 43,
-        "acc": 97,
-        "health": 100,
-        "fresh": 49,
-        "signal": 85
+        "vel": 48,
+        "acc": 41,
+        "health": 92,
+        "fresh": 91,
+        "signal": 65
       },
       "stage": "early",
       "stage_multiplier": 1.2,
       "confidence": 1.0,
-      "base_score": 67.91,
-      "explanation": "screentinker 是 JavaScript 开源项目，主打「Open-source digital signage management software. Control content on TVs, displays, and kiosks from anywhere.」；处于增长早期，本周涨速 3.4 star/天，涨速在加快；社区健康（fork/star 比 27.5%，1 个 open issue）、项目元数据完整。"
+      "base_score": 59.42,
+      "explanation": "awesome-opus-5.5-games 是 JavaScript 开源项目，主打「🎮 300 source-verified AI-built games — rated, categorized, and linked to real GitHub code.」；处于增长早期，本周涨速 4.1 star/天；社区健康（fork/star 比 12.0%，2 个 open issue）、开发活跃。"
+    }
+  },
+  {
+    "repo": {
+      "owner": "ob-labs",
+      "name": "agentseek",
+      "full_name": "ob-labs/agentseek",
+      "description": "AgentSeek is an application development lifecycle toolkit for AI ecosystem apps, built by OceanBase OSS Team.",
+      "stars": 200,
+      "forks": 30,
+      "open_issues": 5,
+      "created_at": "2026-03-05T03:07:29+00:00",
+      "pushed_at": "2026-10-08T12:53:53+00:00",
+      "updated_at": "2026-10-13T02:27:02+00:00",
+      "topics": [
+        "agentic-ai",
+        "agents",
+        "ai",
+        "ai-agents",
+        "bub",
+        "database",
+        "harness-engineering",
+        "llms",
+        "python",
+        "skills"
+      ],
+      "language": "Python",
+      "license": "Apache-2.0",
+      "homepage": "https://ob-labs.github.io/agentseek/",
+      "html_url": "https://github.com/ob-labs/agentseek",
+      "default_branch": "main",
+      "archived": false,
+      "search_score": 1.0,
+      "stars_7d_ago": 191,
+      "star_series": [
+        {
+          "d": "09-14",
+          "s": 178
+        },
+        {
+          "d": "09-15",
+          "s": 180
+        },
+        {
+          "d": "09-16",
+          "s": 181
+        },
+        {
+          "d": "09-17",
+          "s": 182
+        },
+        {
+          "d": "09-18",
+          "s": 182
+        },
+        {
+          "d": "09-19",
+          "s": 183
+        },
+        {
+          "d": "09-20",
+          "s": 183
+        },
+        {
+          "d": "09-21",
+          "s": 183
+        },
+        {
+          "d": "09-22",
+          "s": 183
+        },
+        {
+          "d": "09-23",
+          "s": 186
+        },
+        {
+          "d": "09-24",
+          "s": 186
+        },
+        {
+          "d": "09-25",
+          "s": 186
+        },
+        {
+          "d": "09-26",
+          "s": 186
+        },
+        {
+          "d": "09-27",
+          "s": 187
+        },
+        {
+          "d": "09-28",
+          "s": 187
+        },
+        {
+          "d": "09-29",
+          "s": 187
+        },
+        {
+          "d": "09-30",
+          "s": 188
+        },
+        {
+          "d": "10-01",
+          "s": 188
+        },
+        {
+          "d": "10-02",
+          "s": 188
+        },
+        {
+          "d": "10-03",
+          "s": 188
+        },
+        {
+          "d": "10-04",
+          "s": 188
+        },
+        {
+          "d": "10-05",
+          "s": 189
+        },
+        {
+          "d": "10-06",
+          "s": 190
+        },
+        {
+          "d": "10-07",
+          "s": 191
+        },
+        {
+          "d": "10-08",
+          "s": 191
+        },
+        {
+          "d": "10-09",
+          "s": 194
+        },
+        {
+          "d": "10-10",
+          "s": 195
+        },
+        {
+          "d": "10-11",
+          "s": 198
+        },
+        {
+          "d": "10-12",
+          "s": 199
+        },
+        {
+          "d": "10-13",
+          "s": 200
+        }
+      ]
+    },
+    "score": {
+      "score": 62.0,
+      "breakdown": {
+        "vel": 24,
+        "acc": 70,
+        "health": 97,
+        "fresh": 39,
+        "signal": 100
+      },
+      "stage": "early",
+      "stage_multiplier": 1.2,
+      "confidence": 1.0,
+      "base_score": 51.67,
+      "explanation": "agentseek 是 Python 开源项目，主打「AgentSeek is an application development lifecycle toolkit for AI ecosystem apps, built by OceanBase OSS Team.」；处于增长早期，涨速在加快；社区健康（fork/star 比 15.0%，5 个 open issue）、项目元数据完整。"
     }
   }
 ]
