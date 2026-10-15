@@ -1,434 +1,73 @@
 [
   {
     "repo": {
-      "owner": "nanolathe-gg",
-      "name": "nanolathe",
-      "full_name": "nanolathe-gg/nanolathe",
-      "description": "Total Annihilation engine reimplementation in Go.",
-      "stars": 200,
-      "forks": 13,
-      "open_issues": 4,
-      "created_at": "2026-09-09T07:09:27+00:00",
-      "pushed_at": "2026-10-14T05:38:44+00:00",
-      "updated_at": "2026-10-14T10:49:10+00:00",
+      "owner": "JimLiu",
+      "name": "baocut",
+      "full_name": "JimLiu/baocut",
+      "description": "BaoCut: an AI video agent with an editable timeline. Transcribe, subtitle, translate, dub, cut and animate.",
+      "stars": 998,
+      "forks": 90,
+      "open_issues": 3,
+      "created_at": "2026-07-13T07:06:42+00:00",
+      "pushed_at": "2026-10-15T09:02:25+00:00",
+      "updated_at": "2026-10-15T10:49:09+00:00",
       "topics": [
-        "cavedog",
-        "ebitengine",
-        "game-engine",
-        "real-time-strategy",
-        "rts-game",
-        "total-annihilation"
-      ],
-      "language": "Go",
-      "license": "MIT",
-      "homepage": "https://nanolathe.gg/",
-      "html_url": "https://github.com/nanolathe-gg/nanolathe",
-      "default_branch": "main",
-      "archived": false,
-      "search_score": 1.0,
-      "stars_7d_ago": 151,
-      "star_series": [
-        {
-          "d": "09-15",
-          "s": 151
-        },
-        {
-          "d": "09-16",
-          "s": 151
-        },
-        {
-          "d": "09-17",
-          "s": 151
-        },
-        {
-          "d": "09-18",
-          "s": 151
-        },
-        {
-          "d": "09-19",
-          "s": 151
-        },
-        {
-          "d": "09-20",
-          "s": 151
-        },
-        {
-          "d": "09-21",
-          "s": 151
-        },
-        {
-          "d": "09-22",
-          "s": 151
-        },
-        {
-          "d": "09-23",
-          "s": 151
-        },
-        {
-          "d": "09-24",
-          "s": 151
-        },
-        {
-          "d": "09-25",
-          "s": 151
-        },
-        {
-          "d": "09-26",
-          "s": 151
-        },
-        {
-          "d": "09-27",
-          "s": 151
-        },
-        {
-          "d": "09-28",
-          "s": 151
-        },
-        {
-          "d": "09-29",
-          "s": 151
-        },
-        {
-          "d": "09-30",
-          "s": 151
-        },
-        {
-          "d": "10-01",
-          "s": 151
-        },
-        {
-          "d": "10-02",
-          "s": 151
-        },
-        {
-          "d": "10-03",
-          "s": 151
-        },
-        {
-          "d": "10-04",
-          "s": 151
-        },
-        {
-          "d": "10-05",
-          "s": 151
-        },
-        {
-          "d": "10-06",
-          "s": 151
-        },
-        {
-          "d": "10-07",
-          "s": 151
-        },
-        {
-          "d": "10-08",
-          "s": 151
-        },
-        {
-          "d": "10-09",
-          "s": 151
-        },
-        {
-          "d": "10-10",
-          "s": 151
-        },
-        {
-          "d": "10-11",
-          "s": 151
-        },
-        {
-          "d": "10-12",
-          "s": 179
-        },
-        {
-          "d": "10-13",
-          "s": 194
-        },
-        {
-          "d": "10-14",
-          "s": 200
-        }
-      ]
-    },
-    "score": {
-      "score": 97.64,
-      "breakdown": {
-        "vel": 69,
-        "acc": 99,
-        "health": 73,
-        "fresh": 90,
-        "signal": 85
-      },
-      "stage": "early",
-      "stage_multiplier": 1.2,
-      "confidence": 1.0,
-      "base_score": 81.37,
-      "explanation": "nanolathe 是 Go 开源项目，主打「Total Annihilation engine reimplementation in Go.」；处于增长早期，本周涨速 7.0 star/天，涨速在加快；社区健康（fork/star 比 6.5%，4 个 open issue）、项目元数据完整、开发活跃。"
-    }
-  },
-  {
-    "repo": {
-      "owner": "mars-tw",
-      "name": "anti-gambling-trader-tw",
-      "full_name": "mars-tw/anti-gambling-trader-tw",
-      "description": "免費開源的投資反詐、交易統計與自動化交易程式工具：預設 PaperBroker，提供 14 種券商／交易所選項；交易紀錄分析在本機執行。",
-      "stars": 992,
-      "forks": 76,
-      "open_issues": 1,
-      "created_at": "2026-06-26T02:38:24+00:00",
-      "pushed_at": "2026-10-09T04:37:17+00:00",
-      "updated_at": "2026-10-14T09:49:10+00:00",
-      "topics": [
-        "algorithmic-trading",
-        "anti-fraud",
-        "anti-gambling",
-        "backtest",
-        "broker-api",
+        "agent-skill",
         "claude-code",
-        "crypto",
-        "paper-trading",
-        "python",
-        "scam-detection",
-        "statistics",
-        "survivorship-bias",
-        "taiwan-stock",
-        "trading",
-        "trading-bot",
-        "us-stock"
-      ],
-      "language": "Python",
-      "license": "MIT",
-      "homepage": "https://mars-tw.github.io/anti-gambling-trader-tw/",
-      "html_url": "https://github.com/mars-tw/anti-gambling-trader-tw",
-      "default_branch": "main",
-      "archived": false,
-      "search_score": 1.0,
-      "stars_7d_ago": 894,
-      "star_series": [
-        {
-          "d": "09-15",
-          "s": 756
-        },
-        {
-          "d": "09-16",
-          "s": 756
-        },
-        {
-          "d": "09-17",
-          "s": 756
-        },
-        {
-          "d": "09-18",
-          "s": 756
-        },
-        {
-          "d": "09-19",
-          "s": 756
-        },
-        {
-          "d": "09-20",
-          "s": 756
-        },
-        {
-          "d": "09-21",
-          "s": 756
-        },
-        {
-          "d": "09-22",
-          "s": 756
-        },
-        {
-          "d": "09-23",
-          "s": 756
-        },
-        {
-          "d": "09-24",
-          "s": 756
-        },
-        {
-          "d": "09-25",
-          "s": 756
-        },
-        {
-          "d": "09-26",
-          "s": 756
-        },
-        {
-          "d": "09-27",
-          "s": 756
-        },
-        {
-          "d": "09-28",
-          "s": 756
-        },
-        {
-          "d": "09-29",
-          "s": 756
-        },
-        {
-          "d": "09-30",
-          "s": 756
-        },
-        {
-          "d": "10-01",
-          "s": 756
-        },
-        {
-          "d": "10-02",
-          "s": 756
-        },
-        {
-          "d": "10-03",
-          "s": 756
-        },
-        {
-          "d": "10-04",
-          "s": 756
-        },
-        {
-          "d": "10-05",
-          "s": 756
-        },
-        {
-          "d": "10-06",
-          "s": 756
-        },
-        {
-          "d": "10-07",
-          "s": 884
-        },
-        {
-          "d": "10-08",
-          "s": 894
-        },
-        {
-          "d": "10-09",
-          "s": 898
-        },
-        {
-          "d": "10-10",
-          "s": 902
-        },
-        {
-          "d": "10-11",
-          "s": 902
-        },
-        {
-          "d": "10-12",
-          "s": 902
-        },
-        {
-          "d": "10-13",
-          "s": 978
-        },
-        {
-          "d": "10-14",
-          "s": 992
-        }
-      ]
-    },
-    "score": {
-      "score": 86.29,
-      "breakdown": {
-        "vel": 90,
-        "acc": 43,
-        "health": 85,
-        "fresh": 70,
-        "signal": 100
-      },
-      "stage": "early",
-      "stage_multiplier": 1.2,
-      "confidence": 1.0,
-      "base_score": 71.91,
-      "explanation": "anti-gambling-trader-tw 是 Python 开源项目，主打「免費開源的投資反詐、交易統計與自動化交易程式工具：預設 PaperBroker，提供 14 種券商／交易所選項；交易紀錄分析在本機執行。」；处于增长早期，本周涨速 14 star/天；社区健康（fork/star 比 7.7%，1 个 open issue）、项目元数据完整。"
-    }
-  },
-  {
-    "repo": {
-      "owner": "xixihhhh",
-      "name": "clipforge",
-      "full_name": "xixihhhh/clipforge",
-      "description": "ClipForge（原『带货剪手』/ daihuo-jianshou）：开源 AI 带货短视频神器——上传一张商品图，AI 自动提炼卖点 + 写种草脚本 + 锁定商品原图不变形 + 配画面/配音/字幕，一键产出抖音小店 / 快手 / 小红书 / TikTok Shop 卖货短视频。0 成本批量出片、开源无水印、本地自部署。也支持一句话主题成片。Open-source AI e-commerce/UGC short-video generator.",
-      "stars": 996,
-      "forks": 221,
-      "open_issues": 5,
-      "created_at": "2026-03-23T09:55:39+00:00",
-      "pushed_at": "2026-10-08T03:34:21+00:00",
-      "updated_at": "2026-10-14T10:03:47+00:00",
-      "topics": [
-        "ai-ugc",
-        "ai-video-creator",
-        "ai-video-generator",
-        "ai-voiceover",
-        "aigc",
-        "douyin",
-        "ecommerce",
-        "faceless-video",
-        "ffmpeg",
-        "kuaishou",
-        "mcp",
-        "mcp-server",
-        "nextjs",
-        "reels",
-        "self-hosted",
-        "short-video",
-        "text-to-video",
-        "tiktok",
-        "xiaohongshu",
-        "youtube-shorts"
+        "codex",
+        "macos",
+        "skills",
+        "subtitles",
+        "transcription"
       ],
       "language": "TypeScript",
-      "license": "AGPL-3.0",
-      "homepage": "https://xixihhhh.github.io/clipforge/",
-      "html_url": "https://github.com/xixihhhh/clipforge",
+      "license": "NOASSERTION",
+      "homepage": "https://baocut.com/",
+      "html_url": "https://github.com/JimLiu/baocut",
       "default_branch": "main",
       "archived": false,
       "search_score": 1.0,
-      "stars_7d_ago": 945,
+      "stars_7d_ago": 885,
       "star_series": [
         {
-          "d": "09-15",
-          "s": 850
-        },
-        {
           "d": "09-16",
-          "s": 850
+          "s": 885
         },
         {
           "d": "09-17",
-          "s": 850
+          "s": 885
         },
         {
           "d": "09-18",
-          "s": 850
+          "s": 885
         },
         {
           "d": "09-19",
-          "s": 850
+          "s": 885
         },
         {
           "d": "09-20",
-          "s": 850
+          "s": 885
         },
         {
           "d": "09-21",
-          "s": 853
+          "s": 885
         },
         {
           "d": "09-22",
-          "s": 860
+          "s": 885
         },
         {
           "d": "09-23",
-          "s": 866
+          "s": 885
         },
         {
           "d": "09-24",
-          "s": 873
+          "s": 885
         },
         {
           "d": "09-25",
-          "s": 879
+          "s": 885
         },
         {
           "d": "09-26",
@@ -436,59 +75,231 @@
         },
         {
           "d": "09-27",
-          "s": 889
+          "s": 885
         },
         {
           "d": "09-28",
-          "s": 893
+          "s": 885
         },
         {
           "d": "09-29",
-          "s": 895
+          "s": 885
         },
         {
           "d": "09-30",
-          "s": 902
+          "s": 885
         },
         {
           "d": "10-01",
-          "s": 904
+          "s": 885
         },
         {
           "d": "10-02",
-          "s": 904
+          "s": 885
         },
         {
           "d": "10-03",
-          "s": 912
+          "s": 885
         },
         {
           "d": "10-04",
-          "s": 920
+          "s": 885
         },
         {
           "d": "10-05",
-          "s": 924
+          "s": 885
         },
         {
           "d": "10-06",
-          "s": 929
+          "s": 885
         },
         {
           "d": "10-07",
-          "s": 936
+          "s": 885
         },
         {
           "d": "10-08",
-          "s": 945
+          "s": 885
         },
         {
           "d": "10-09",
-          "s": 956
+          "s": 885
         },
         {
           "d": "10-10",
+          "s": 885
+        },
+        {
+          "d": "10-11",
+          "s": 885
+        },
+        {
+          "d": "10-12",
+          "s": 885
+        },
+        {
+          "d": "10-13",
+          "s": 902
+        },
+        {
+          "d": "10-14",
           "s": 963
+        },
+        {
+          "d": "10-15",
+          "s": 998
+        }
+      ]
+    },
+    "score": {
+      "score": 100.0,
+      "breakdown": {
+        "vel": 100,
+        "acc": 99,
+        "health": 89,
+        "fresh": 74,
+        "signal": 85
+      },
+      "stage": "early",
+      "stage_multiplier": 1.2,
+      "confidence": 1.0,
+      "base_score": 91.83,
+      "explanation": "baocut 是 TypeScript 开源项目，主打「BaoCut: an AI video agent with an editable timeline. Transcribe, subtitle, translate, dub, cut and animate.」；处于增长早期，本周涨速 16 star/天，涨速在加快；社区健康（fork/star 比 9.0%，3 个 open issue）、项目元数据完整、开发活跃。"
+    }
+  },
+  {
+    "repo": {
+      "owner": "devswha",
+      "name": "herdr-web-ui",
+      "full_name": "devswha/herdr-web-ui",
+      "description": "Browser and phone client for herdr: chat and live terminal for every agent pane, remote PCs over SSH, web push alerts",
+      "stars": 998,
+      "forks": 135,
+      "open_issues": 97,
+      "created_at": "2026-09-17T18:52:07+00:00",
+      "pushed_at": "2026-10-15T10:49:58+00:00",
+      "updated_at": "2026-10-15T10:45:21+00:00",
+      "topics": [
+        "bun",
+        "claude-code",
+        "codex",
+        "coding-agents",
+        "herdr",
+        "herdr-plugin",
+        "mobile",
+        "pwa",
+        "react",
+        "terminal",
+        "xterm"
+      ],
+      "language": "TypeScript",
+      "license": "MIT",
+      "homepage": "https://herdrweb.dev/",
+      "html_url": "https://github.com/devswha/herdr-web-ui",
+      "default_branch": "main",
+      "archived": false,
+      "search_score": 1.0,
+      "stars_7d_ago": 969,
+      "star_series": [
+        {
+          "d": "09-16",
+          "s": 969
+        },
+        {
+          "d": "09-17",
+          "s": 969
+        },
+        {
+          "d": "09-18",
+          "s": 969
+        },
+        {
+          "d": "09-19",
+          "s": 969
+        },
+        {
+          "d": "09-20",
+          "s": 969
+        },
+        {
+          "d": "09-21",
+          "s": 969
+        },
+        {
+          "d": "09-22",
+          "s": 969
+        },
+        {
+          "d": "09-23",
+          "s": 969
+        },
+        {
+          "d": "09-24",
+          "s": 969
+        },
+        {
+          "d": "09-25",
+          "s": 969
+        },
+        {
+          "d": "09-26",
+          "s": 969
+        },
+        {
+          "d": "09-27",
+          "s": 969
+        },
+        {
+          "d": "09-28",
+          "s": 969
+        },
+        {
+          "d": "09-29",
+          "s": 969
+        },
+        {
+          "d": "09-30",
+          "s": 969
+        },
+        {
+          "d": "10-01",
+          "s": 969
+        },
+        {
+          "d": "10-02",
+          "s": 969
+        },
+        {
+          "d": "10-03",
+          "s": 969
+        },
+        {
+          "d": "10-04",
+          "s": 969
+        },
+        {
+          "d": "10-05",
+          "s": 969
+        },
+        {
+          "d": "10-06",
+          "s": 969
+        },
+        {
+          "d": "10-07",
+          "s": 969
+        },
+        {
+          "d": "10-08",
+          "s": 969
+        },
+        {
+          "d": "10-09",
+          "s": 969
+        },
+        {
+          "d": "10-10",
+          "s": 969
         },
         {
           "d": "10-11",
@@ -496,213 +307,36 @@
         },
         {
           "d": "10-12",
-          "s": 978
+          "s": 969
         },
         {
           "d": "10-13",
-          "s": 992
+          "s": 969
         },
         {
           "d": "10-14",
-          "s": 996
-        }
-      ]
-    },
-    "score": {
-      "score": 82.52,
-      "breakdown": {
-        "vel": 70,
-        "acc": 56,
-        "health": 99,
-        "fresh": 44,
-        "signal": 100
-      },
-      "stage": "early",
-      "stage_multiplier": 1.2,
-      "confidence": 1.0,
-      "base_score": 68.77,
-      "explanation": "clipforge 是 TypeScript 开源项目，主打「ClipForge（原『带货剪手』/ daihuo-jianshou）：开源 AI 带货短视频神器——上传一张商品图，AI 自动提炼卖点 + 写种草脚本 + 锁定商品原图不变形 + 配画面/配音/字幕，一键产出抖音小店 / 快手 / 小红书 / TikTok Shop 卖货短视频。0 成本批量出片、开源无水印、本地自部署。也支持一句话主题成片。Open-source AI e-commerce/UGC short-video generator.」；处于增长早期，本周涨速 7.3 star/天；社区健康（fork/star 比 22.2%，5 个 open issue）、项目元数据完整。"
-    }
-  },
-  {
-    "repo": {
-      "owner": "scenario-labs",
-      "name": "skills",
-      "full_name": "scenario-labs/skills",
-      "description": "Get production-ready images, video, audio, and 3D from any AI agent: skills that pick the right model, price before spending, and keep characters and brands consistent through the Scenario MCP, plus expert teams that drive Blender, Maya, ZBrush, Unreal, and Unity.",
-      "stars": 998,
-      "forks": 122,
-      "open_issues": 13,
-      "created_at": "2026-08-12T10:08:49+00:00",
-      "pushed_at": "2026-10-14T10:09:29+00:00",
-      "updated_at": "2026-10-14T10:01:43+00:00",
-      "topics": [
-        "3d-generation",
-        "agent-skills",
-        "blender",
-        "claude-code",
-        "claude-skills",
-        "codex",
-        "game-assets",
-        "game-development",
-        "gamedev",
-        "generative-ai",
-        "image-generation",
-        "maya",
-        "mcp",
-        "model-context-protocol",
-        "scenario",
-        "skills-sh",
-        "unity",
-        "unreal-engine",
-        "video-generation",
-        "zbrush"
-      ],
-      "language": "Python",
-      "license": "MIT",
-      "homepage": "https://www.skills.sh/scenario-labs/skills",
-      "html_url": "https://github.com/scenario-labs/skills",
-      "default_branch": "main",
-      "archived": false,
-      "search_score": 1.0,
-      "stars_7d_ago": 986,
-      "star_series": [
-        {
-          "d": "09-15",
-          "s": 986
+          "s": 969
         },
         {
-          "d": "09-16",
-          "s": 986
-        },
-        {
-          "d": "09-17",
-          "s": 986
-        },
-        {
-          "d": "09-18",
-          "s": 986
-        },
-        {
-          "d": "09-19",
-          "s": 986
-        },
-        {
-          "d": "09-20",
-          "s": 986
-        },
-        {
-          "d": "09-21",
-          "s": 986
-        },
-        {
-          "d": "09-22",
-          "s": 986
-        },
-        {
-          "d": "09-23",
-          "s": 986
-        },
-        {
-          "d": "09-24",
-          "s": 986
-        },
-        {
-          "d": "09-25",
-          "s": 986
-        },
-        {
-          "d": "09-26",
-          "s": 986
-        },
-        {
-          "d": "09-27",
-          "s": 986
-        },
-        {
-          "d": "09-28",
-          "s": 986
-        },
-        {
-          "d": "09-29",
-          "s": 986
-        },
-        {
-          "d": "09-30",
-          "s": 986
-        },
-        {
-          "d": "10-01",
-          "s": 986
-        },
-        {
-          "d": "10-02",
-          "s": 986
-        },
-        {
-          "d": "10-03",
-          "s": 986
-        },
-        {
-          "d": "10-04",
-          "s": 986
-        },
-        {
-          "d": "10-05",
-          "s": 986
-        },
-        {
-          "d": "10-06",
-          "s": 986
-        },
-        {
-          "d": "10-07",
-          "s": 986
-        },
-        {
-          "d": "10-08",
-          "s": 986
-        },
-        {
-          "d": "10-09",
-          "s": 986
-        },
-        {
-          "d": "10-10",
-          "s": 986
-        },
-        {
-          "d": "10-11",
-          "s": 986
-        },
-        {
-          "d": "10-12",
-          "s": 987
-        },
-        {
-          "d": "10-13",
-          "s": 996
-        },
-        {
-          "d": "10-14",
+          "d": "10-15",
           "s": 998
         }
       ]
     },
     "score": {
-      "score": 72.32,
+      "score": 89.1,
       "breakdown": {
-        "vel": 33,
-        "acc": 85,
-        "health": 98,
-        "fresh": 83,
-        "signal": 85
+        "vel": 63,
+        "acc": 98,
+        "health": 76,
+        "fresh": 93,
+        "signal": 100
       },
       "stage": "mid_early",
       "stage_multiplier": 1.1,
       "confidence": 1.0,
-      "base_score": 65.74,
-      "explanation": "skills 是 Python 开源项目，主打「Get production-ready images, video, audio, and 3D from any AI agent: skills that pick the right model, price before spending, and keep characters and brands consistent through the Scenario MCP, plus expert teams that drive Blender, Maya, ZBrush, Unreal, and Unity.」；处于中早期增长，涨速在加快；社区健康（fork/star 比 12.2%，13 个 open issue）、项目元数据完整、开发活跃。"
+      "base_score": 81.0,
+      "explanation": "herdr-web-ui 是 TypeScript 开源项目，主打「Browser and phone client for herdr: chat and live terminal for every agent pane, remote PCs over SSH, web push alerts」；处于中早期增长，本周涨速 4.1 star/天，涨速在加快；社区健康（fork/star 比 13.5%，97 个 open issue）、项目元数据完整、开发活跃。"
     }
   },
   {
@@ -711,12 +345,12 @@
       "name": "SiliconScope",
       "full_name": "kennss/SiliconScope",
       "description": "Sudoless Apple Silicon system monitor (native SwiftUI GUI) with ANE / Media Engine / memory-bandwidth tracking",
-      "stars": 993,
-      "forks": 66,
-      "open_issues": 2,
+      "stars": 996,
+      "forks": 67,
+      "open_issues": 6,
       "created_at": "2026-06-08T17:19:50+00:00",
       "pushed_at": "2026-10-09T19:58:10+00:00",
-      "updated_at": "2026-10-14T08:00:58+00:00",
+      "updated_at": "2026-10-15T02:09:16+00:00",
       "topics": [
         "apple-silicon",
         "gpu",
@@ -741,12 +375,8 @@
       "default_branch": "main",
       "archived": false,
       "search_score": 1.0,
-      "stars_7d_ago": 979,
+      "stars_7d_ago": 980,
       "star_series": [
-        {
-          "d": "09-15",
-          "s": 945
-        },
         {
           "d": "09-16",
           "s": 947
@@ -861,24 +491,357 @@
         },
         {
           "d": "10-14",
-          "s": 993
+          "s": 995
+        },
+        {
+          "d": "10-15",
+          "s": 996
         }
       ]
     },
     "score": {
-      "score": 69.1,
+      "score": 77.4,
       "breakdown": {
-        "vel": 37,
-        "acc": 60,
-        "health": 81,
+        "vel": 45,
+        "acc": 73,
+        "health": 80,
         "fresh": 65,
         "signal": 85
       },
       "stage": "early",
       "stage_multiplier": 1.2,
       "confidence": 1.0,
-      "base_score": 57.58,
-      "explanation": "SiliconScope 是 Swift 开源项目，主打「Sudoless Apple Silicon system monitor (native SwiftUI GUI) with ANE / Media Engine / memory-bandwidth tracking」；处于增长早期；社区健康（fork/star 比 6.6%，2 个 open issue）、项目元数据完整。"
+      "base_score": 64.5,
+      "explanation": "SiliconScope 是 Swift 开源项目，主打「Sudoless Apple Silicon system monitor (native SwiftUI GUI) with ANE / Media Engine / memory-bandwidth tracking」；处于增长早期，本周涨速 2.3 star/天，涨速在加快；社区健康（fork/star 比 6.7%，6 个 open issue）、项目元数据完整。"
+    }
+  },
+  {
+    "repo": {
+      "owner": "WJZ-P",
+      "name": "sona",
+      "full_name": "WJZ-P/sona",
+      "description": "基于Pengu loader的英雄联盟客户端增强插件；LOL助手；sona助手；LOL插件；A LOL plugin base on Pengu loader; sona plugin; ",
+      "stars": 1000,
+      "forks": 70,
+      "open_issues": 37,
+      "created_at": "2026-03-26T06:44:05+00:00",
+      "pushed_at": "2026-10-11T03:42:56+00:00",
+      "updated_at": "2026-10-15T08:39:27+00:00",
+      "topics": [
+        "client",
+        "clientside",
+        "league-of-legends",
+        "leagueoflegends",
+        "lol",
+        "pengu-loader",
+        "plugin",
+        "plugins"
+      ],
+      "language": "JavaScript",
+      "license": "AGPL-3.0",
+      "homepage": null,
+      "html_url": "https://github.com/WJZ-P/sona",
+      "default_branch": "main",
+      "archived": false,
+      "search_score": 1.0,
+      "stars_7d_ago": 982,
+      "star_series": [
+        {
+          "d": "09-16",
+          "s": 917
+        },
+        {
+          "d": "09-17",
+          "s": 917
+        },
+        {
+          "d": "09-18",
+          "s": 917
+        },
+        {
+          "d": "09-19",
+          "s": 919
+        },
+        {
+          "d": "09-20",
+          "s": 924
+        },
+        {
+          "d": "09-21",
+          "s": 930
+        },
+        {
+          "d": "09-22",
+          "s": 930
+        },
+        {
+          "d": "09-23",
+          "s": 932
+        },
+        {
+          "d": "09-24",
+          "s": 935
+        },
+        {
+          "d": "09-25",
+          "s": 938
+        },
+        {
+          "d": "09-26",
+          "s": 941
+        },
+        {
+          "d": "09-27",
+          "s": 946
+        },
+        {
+          "d": "09-28",
+          "s": 949
+        },
+        {
+          "d": "09-29",
+          "s": 953
+        },
+        {
+          "d": "09-30",
+          "s": 954
+        },
+        {
+          "d": "10-01",
+          "s": 956
+        },
+        {
+          "d": "10-02",
+          "s": 961
+        },
+        {
+          "d": "10-03",
+          "s": 966
+        },
+        {
+          "d": "10-04",
+          "s": 969
+        },
+        {
+          "d": "10-05",
+          "s": 971
+        },
+        {
+          "d": "10-06",
+          "s": 973
+        },
+        {
+          "d": "10-07",
+          "s": 976
+        },
+        {
+          "d": "10-08",
+          "s": 978
+        },
+        {
+          "d": "10-09",
+          "s": 982
+        },
+        {
+          "d": "10-10",
+          "s": 984
+        },
+        {
+          "d": "10-11",
+          "s": 986
+        },
+        {
+          "d": "10-12",
+          "s": 993
+        },
+        {
+          "d": "10-13",
+          "s": 994
+        },
+        {
+          "d": "10-14",
+          "s": 998
+        },
+        {
+          "d": "10-15",
+          "s": 1000
+        }
+      ]
+    },
+    "score": {
+      "score": 64.26,
+      "breakdown": {
+        "vel": 49,
+        "acc": 46,
+        "health": 74,
+        "fresh": 44,
+        "signal": 70
+      },
+      "stage": "early",
+      "stage_multiplier": 1.2,
+      "confidence": 1.0,
+      "base_score": 53.55,
+      "explanation": "sona 是 JavaScript 开源项目，主打「基于Pengu loader的英雄联盟客户端增强插件；LOL助手；sona助手；LOL插件；A LOL plugin base on Pengu loader; sona plugin;」；处于增长早期，本周涨速 2.6 star/天；社区健康（fork/star 比 7.0%，37 个 open issue）。"
+    }
+  },
+  {
+    "repo": {
+      "owner": "Crystaelix",
+      "name": "Create-Simurail",
+      "full_name": "Crystaelix/Create-Simurail",
+      "description": "A train mod using Create and Sable.",
+      "stars": 200,
+      "forks": 53,
+      "open_issues": 9,
+      "created_at": "2026-06-02T10:09:01+00:00",
+      "pushed_at": "2026-10-14T16:45:02+00:00",
+      "updated_at": "2026-10-15T05:06:33+00:00",
+      "topics": [],
+      "language": "Java",
+      "license": "MIT",
+      "homepage": null,
+      "html_url": "https://github.com/Crystaelix/Create-Simurail",
+      "default_branch": "main",
+      "archived": false,
+      "search_score": 1.0,
+      "stars_7d_ago": 190,
+      "star_series": [
+        {
+          "d": "09-16",
+          "s": 174
+        },
+        {
+          "d": "09-17",
+          "s": 174
+        },
+        {
+          "d": "09-18",
+          "s": 174
+        },
+        {
+          "d": "09-19",
+          "s": 174
+        },
+        {
+          "d": "09-20",
+          "s": 174
+        },
+        {
+          "d": "09-21",
+          "s": 174
+        },
+        {
+          "d": "09-22",
+          "s": 174
+        },
+        {
+          "d": "09-23",
+          "s": 174
+        },
+        {
+          "d": "09-24",
+          "s": 174
+        },
+        {
+          "d": "09-25",
+          "s": 176
+        },
+        {
+          "d": "09-26",
+          "s": 177
+        },
+        {
+          "d": "09-27",
+          "s": 179
+        },
+        {
+          "d": "09-28",
+          "s": 179
+        },
+        {
+          "d": "09-29",
+          "s": 179
+        },
+        {
+          "d": "09-30",
+          "s": 180
+        },
+        {
+          "d": "10-01",
+          "s": 180
+        },
+        {
+          "d": "10-02",
+          "s": 180
+        },
+        {
+          "d": "10-03",
+          "s": 184
+        },
+        {
+          "d": "10-04",
+          "s": 184
+        },
+        {
+          "d": "10-05",
+          "s": 186
+        },
+        {
+          "d": "10-06",
+          "s": 187
+        },
+        {
+          "d": "10-07",
+          "s": 187
+        },
+        {
+          "d": "10-08",
+          "s": 187
+        },
+        {
+          "d": "10-09",
+          "s": 190
+        },
+        {
+          "d": "10-10",
+          "s": 192
+        },
+        {
+          "d": "10-11",
+          "s": 194
+        },
+        {
+          "d": "10-12",
+          "s": 197
+        },
+        {
+          "d": "10-13",
+          "s": 197
+        },
+        {
+          "d": "10-14",
+          "s": 198
+        },
+        {
+          "d": "10-15",
+          "s": 200
+        }
+      ]
+    },
+    "score": {
+      "score": 63.26,
+      "breakdown": {
+        "vel": 34,
+        "acc": 50,
+        "health": 93,
+        "fresh": 63,
+        "signal": 55
+      },
+      "stage": "early",
+      "stage_multiplier": 1.2,
+      "confidence": 1.0,
+      "base_score": 52.72,
+      "explanation": "Create-Simurail 是 Java 开源项目，主打「A train mod using Create and Sable.」；处于增长早期；社区健康（fork/star 比 26.5%，9 个 open issue）。"
     }
   }
 ]
