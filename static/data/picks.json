@@ -1,156 +1,333 @@
 [
   {
     "repo": {
-      "owner": "GanyuanRan",
-      "name": "Autoloom",
-      "full_name": "GanyuanRan/Autoloom",
-      "description": "AI coding with Aegis governance built into execution: baseline-aware changes, evidence-backed delivery. Free desktop client, your choice of model. 将哲科思维融入 AI 开发执行，让变更有依据、交付有证据。用创意编织现实。",
-      "stars": 1000,
-      "forks": 18,
-      "open_issues": 0,
-      "created_at": "2026-09-30T12:40:15+00:00",
-      "pushed_at": "2026-10-11T17:43:55+00:00",
-      "updated_at": "2026-10-16T08:44:48+00:00",
+      "owner": "lingcang728",
+      "name": "ZeppBridge",
+      "full_name": "lingcang728/ZeppBridge",
+      "description": "Keep your Zepp / Amazfit health records on your own computer. Explore every trend, hand them to the AI you already use, and send training plans back to your watch. Local-first, free and open source, for Windows, macOS and Linux.",
+      "stars": 200,
+      "forks": 32,
+      "open_issues": 4,
+      "created_at": "2026-08-13T03:00:45+00:00",
+      "pushed_at": "2026-10-15T10:15:28+00:00",
+      "updated_at": "2026-10-17T07:42:51+00:00",
       "topics": [
-        "aegis",
-        "agentic-coding",
-        "ai-agent",
-        "ai-coding",
-        "coding-agent",
-        "deepseek-harness",
+        "amazfit",
         "desktop-app",
-        "developer-tools",
-        "engineering-governance",
-        "software-development"
+        "health-data",
+        "linux",
+        "local-first",
+        "macos",
+        "mcp",
+        "rust",
+        "tauri",
+        "training-plan",
+        "vue",
+        "windows",
+        "zepp"
       ],
-      "language": "JavaScript",
-      "license": "NOASSERTION",
-      "homepage": "autoloom.codes/",
-      "html_url": "https://github.com/GanyuanRan/Autoloom",
+      "language": "TypeScript",
+      "license": "MIT",
+      "homepage": "https://zeppbridge.com",
+      "html_url": "https://github.com/lingcang728/ZeppBridge",
       "default_branch": "main",
       "archived": false,
       "search_score": 1.0,
-      "stars_7d_ago": 707,
+      "stars_7d_ago": 159,
       "star_series": [
         {
-          "d": "09-17",
-          "s": 707
-        },
-        {
           "d": "09-18",
-          "s": 707
+          "s": 138
         },
         {
           "d": "09-19",
-          "s": 707
+          "s": 138
         },
         {
           "d": "09-20",
-          "s": 707
+          "s": 138
         },
         {
           "d": "09-21",
-          "s": 707
+          "s": 138
         },
         {
           "d": "09-22",
-          "s": 707
+          "s": 138
         },
         {
           "d": "09-23",
-          "s": 707
+          "s": 138
         },
         {
           "d": "09-24",
-          "s": 707
+          "s": 138
         },
         {
           "d": "09-25",
-          "s": 707
+          "s": 138
         },
         {
           "d": "09-26",
-          "s": 707
+          "s": 138
         },
         {
           "d": "09-27",
-          "s": 707
+          "s": 138
         },
         {
           "d": "09-28",
-          "s": 707
+          "s": 140
         },
         {
           "d": "09-29",
-          "s": 707
+          "s": 143
         },
         {
           "d": "09-30",
-          "s": 707
+          "s": 144
         },
         {
           "d": "10-01",
-          "s": 707
+          "s": 145
         },
         {
           "d": "10-02",
-          "s": 707
+          "s": 147
         },
         {
           "d": "10-03",
-          "s": 707
+          "s": 147
         },
         {
           "d": "10-04",
-          "s": 707
+          "s": 150
         },
         {
           "d": "10-05",
-          "s": 707
+          "s": 150
         },
         {
           "d": "10-06",
-          "s": 707
+          "s": 151
         },
         {
           "d": "10-07",
-          "s": 707
+          "s": 152
         },
         {
           "d": "10-08",
-          "s": 707
+          "s": 154
         },
         {
           "d": "10-09",
-          "s": 707
+          "s": 154
         },
         {
           "d": "10-10",
-          "s": 707
+          "s": 156
         },
         {
           "d": "10-11",
-          "s": 707
+          "s": 159
         },
         {
           "d": "10-12",
-          "s": 707
+          "s": 162
         },
         {
           "d": "10-13",
-          "s": 707
+          "s": 163
         },
         {
           "d": "10-14",
-          "s": 707
+          "s": 182
         },
         {
           "d": "10-15",
-          "s": 847
+          "s": 189
         },
         {
           "d": "10-16",
-          "s": 1000
+          "s": 196
+        },
+        {
+          "d": "10-17",
+          "s": 200
+        }
+      ]
+    },
+    "score": {
+      "score": 100.0,
+      "breakdown": {
+        "vel": 66,
+        "acc": 97,
+        "health": 98,
+        "fresh": 82,
+        "signal": 85
+      },
+      "stage": "early",
+      "stage_multiplier": 1.2,
+      "confidence": 1.0,
+      "base_score": 83.38,
+      "explanation": "ZeppBridge 是 TypeScript 开源项目，主打「Keep your Zepp / Amazfit health records on your own computer. Explore every trend, hand them to the AI you already use, and send training plans back to your watch. Local-first, free and open source, for Windows, macOS and Linux.」；处于增长早期，本周涨速 5.9 star/天，涨速在加快；社区健康（fork/star 比 16.0%，4 个 open issue）、项目元数据完整、开发活跃。"
+    }
+  },
+  {
+    "repo": {
+      "owner": "gzxx-2025",
+      "name": "aid-studio",
+      "full_name": "gzxx-2025/aid-studio",
+      "description": " 开源AI漫剧、AI短剧、AI电影与AI漫画创作平台，支持剧本、角色场景、智能分镜、图片与视频生成、配音及成片预览，多模型接入，可自行部署。预：无限画布、导演台。",
+      "stars": 997,
+      "forks": 217,
+      "open_issues": 11,
+      "created_at": "2026-07-19T15:30:04+00:00",
+      "pushed_at": "2026-10-15T03:55:02+00:00",
+      "updated_at": "2026-10-17T08:53:43+00:00",
+      "topics": [
+        "ai",
+        "ai-anime-art",
+        "ai-comic-creator",
+        "ai-comic-drama",
+        "ai-comics",
+        "ai-drama",
+        "ai-drama-generator",
+        "ai-short-drama",
+        "ai-short-drama-agent",
+        "ai-storyboard",
+        "ai-video",
+        "ai-video-editor",
+        "comic-video"
+      ],
+      "language": "Java",
+      "license": "MIT",
+      "homepage": "https://www.aidstudio.com.cn/",
+      "html_url": "https://github.com/gzxx-2025/aid-studio",
+      "default_branch": "main",
+      "archived": false,
+      "search_score": 1.0,
+      "stars_7d_ago": 865,
+      "star_series": [
+        {
+          "d": "09-18",
+          "s": 835
+        },
+        {
+          "d": "09-19",
+          "s": 835
+        },
+        {
+          "d": "09-20",
+          "s": 835
+        },
+        {
+          "d": "09-21",
+          "s": 835
+        },
+        {
+          "d": "09-22",
+          "s": 835
+        },
+        {
+          "d": "09-23",
+          "s": 835
+        },
+        {
+          "d": "09-24",
+          "s": 835
+        },
+        {
+          "d": "09-25",
+          "s": 835
+        },
+        {
+          "d": "09-26",
+          "s": 835
+        },
+        {
+          "d": "09-27",
+          "s": 835
+        },
+        {
+          "d": "09-28",
+          "s": 835
+        },
+        {
+          "d": "09-29",
+          "s": 835
+        },
+        {
+          "d": "09-30",
+          "s": 835
+        },
+        {
+          "d": "10-01",
+          "s": 835
+        },
+        {
+          "d": "10-02",
+          "s": 835
+        },
+        {
+          "d": "10-03",
+          "s": 835
+        },
+        {
+          "d": "10-04",
+          "s": 835
+        },
+        {
+          "d": "10-05",
+          "s": 835
+        },
+        {
+          "d": "10-06",
+          "s": 835
+        },
+        {
+          "d": "10-07",
+          "s": 835
+        },
+        {
+          "d": "10-08",
+          "s": 835
+        },
+        {
+          "d": "10-09",
+          "s": 835
+        },
+        {
+          "d": "10-10",
+          "s": 850
+        },
+        {
+          "d": "10-11",
+          "s": 865
+        },
+        {
+          "d": "10-12",
+          "s": 875
+        },
+        {
+          "d": "10-13",
+          "s": 887
+        },
+        {
+          "d": "10-14",
+          "s": 906
+        },
+        {
+          "d": "10-15",
+          "s": 921
+        },
+        {
+          "d": "10-16",
+          "s": 983
+        },
+        {
+          "d": "10-17",
+          "s": 997
         }
       ]
     },
@@ -158,186 +335,197 @@
       "score": 100.0,
       "breakdown": {
         "vel": 100,
-        "acc": 99,
-        "health": 65,
-        "fresh": 96,
+        "acc": 97,
+        "health": 98,
+        "fresh": 76,
         "signal": 85
       },
       "stage": "early",
       "stage_multiplier": 1.2,
       "confidence": 1.0,
-      "base_score": 89.44,
-      "explanation": "Autoloom 是 JavaScript 开源项目，主打「AI coding with Aegis governance built into execution: baseline-aware changes, evidence-backed delivery. Free desktop client, your choice of model. 将哲科思维融入 AI 开发执行，让变更有依据、交付有证据。用创意编织现实。」；处于增长早期，本周涨速 42 star/天，涨速在加快；项目元数据完整、开发活跃。"
+      "base_score": 93.23,
+      "explanation": "aid-studio 是 Java 开源项目，主打「开源AI漫剧、AI短剧、AI电影与AI漫画创作平台，支持剧本、角色场景、智能分镜、图片与视频生成、配音及成片预览，多模型接入，可自行部署。预：无限画布、导演台。」；处于增长早期，本周涨速 19 star/天，涨速在加快；社区健康（fork/star 比 21.8%，11 个 open issue）、项目元数据完整、开发活跃。"
     }
   },
   {
     "repo": {
-      "owner": "Miaotofu01",
-      "name": "Study-Mate",
-      "full_name": "Miaotofu01/Study-Mate",
-      "description": "你的AI学习搭档：定路线、讲知识、做项目，边学边做，学透一门科目",
-      "stars": 996,
-      "forks": 47,
-      "open_issues": 27,
-      "created_at": "2026-09-17T19:36:05+00:00",
-      "pushed_at": "2026-10-15T21:07:18+00:00",
-      "updated_at": "2026-10-16T09:25:59+00:00",
+      "owner": "DasterProkio",
+      "name": "awesome-ai-companion",
+      "full_name": "DasterProkio/awesome-ai-companion",
+      "description": "Open-source AI companions, desktop pets, long-term memory & proactive chat. 人机恋开源项目大全。让你的家机能够脱离官端自主存在，拥有记忆和主动性。",
+      "stars": 993,
+      "forks": 111,
+      "open_issues": 0,
+      "created_at": "2026-07-03T04:24:24+00:00",
+      "pushed_at": "2026-10-17T06:58:56+00:00",
+      "updated_at": "2026-10-17T09:06:27+00:00",
       "topics": [
-        "ai-tutor",
-        "dsh-plugin",
-        "education",
-        "learning-agents",
-        "self-directed-learning",
-        "self-study",
-        "self-study-learning",
-        "self-study-tools",
-        "spaced-repetition"
+        "ai-agents",
+        "ai-companion",
+        "ai-girlfriend",
+        "awesome",
+        "awesome-list",
+        "character-ai",
+        "chatbot",
+        "companion-ai",
+        "conversational-ai",
+        "desktop-pet",
+        "live2d",
+        "llm",
+        "local-llm",
+        "long-term-memory",
+        "memory",
+        "open-source",
+        "personal-assistant",
+        "self-hosted",
+        "sillytavern",
+        "virtual-companion"
       ],
-      "language": "JavaScript",
-      "license": "MIT",
-      "homepage": null,
-      "html_url": "https://github.com/Miaotofu01/Study-Mate",
+      "language": "HTML",
+      "license": "CC-BY-4.0",
+      "homepage": "https://lutopia.app/companion/",
+      "html_url": "https://github.com/DasterProkio/awesome-ai-companion",
       "default_branch": "main",
       "archived": false,
       "search_score": 1.0,
-      "stars_7d_ago": 847,
+      "stars_7d_ago": 923,
       "star_series": [
         {
-          "d": "09-17",
-          "s": 847
-        },
-        {
           "d": "09-18",
-          "s": 847
+          "s": 917
         },
         {
           "d": "09-19",
-          "s": 847
+          "s": 917
         },
         {
           "d": "09-20",
-          "s": 847
+          "s": 917
         },
         {
           "d": "09-21",
-          "s": 847
+          "s": 917
         },
         {
           "d": "09-22",
-          "s": 847
+          "s": 917
         },
         {
           "d": "09-23",
-          "s": 847
+          "s": 917
         },
         {
           "d": "09-24",
-          "s": 847
+          "s": 917
         },
         {
           "d": "09-25",
-          "s": 847
+          "s": 917
         },
         {
           "d": "09-26",
-          "s": 847
+          "s": 917
         },
         {
           "d": "09-27",
-          "s": 847
+          "s": 917
         },
         {
           "d": "09-28",
-          "s": 847
+          "s": 917
         },
         {
           "d": "09-29",
-          "s": 847
+          "s": 917
         },
         {
           "d": "09-30",
-          "s": 847
+          "s": 917
         },
         {
           "d": "10-01",
-          "s": 847
+          "s": 917
         },
         {
           "d": "10-02",
-          "s": 847
+          "s": 917
         },
         {
           "d": "10-03",
-          "s": 847
+          "s": 917
         },
         {
           "d": "10-04",
-          "s": 847
+          "s": 917
         },
         {
           "d": "10-05",
-          "s": 847
+          "s": 917
         },
         {
           "d": "10-06",
-          "s": 847
+          "s": 917
         },
         {
           "d": "10-07",
-          "s": 847
+          "s": 917
         },
         {
           "d": "10-08",
-          "s": 847
+          "s": 917
         },
         {
           "d": "10-09",
-          "s": 847
+          "s": 917
         },
         {
           "d": "10-10",
-          "s": 847
+          "s": 917
         },
         {
           "d": "10-11",
-          "s": 853
+          "s": 923
         },
         {
           "d": "10-12",
-          "s": 893
+          "s": 952
         },
         {
           "d": "10-13",
-          "s": 926
+          "s": 970
         },
         {
           "d": "10-14",
-          "s": 953
+          "s": 973
         },
         {
           "d": "10-15",
-          "s": 979
+          "s": 981
         },
         {
           "d": "10-16",
-          "s": 996
+          "s": 989
+        },
+        {
+          "d": "10-17",
+          "s": 993
         }
       ]
     },
     "score": {
       "score": 100.0,
       "breakdown": {
-        "vel": 85,
+        "vel": 82,
         "acc": 99,
-        "health": 69,
-        "fresh": 92,
-        "signal": 70
+        "health": 97,
+        "fresh": 71,
+        "signal": 85
       },
       "stage": "early",
       "stage_multiplier": 1.2,
       "confidence": 1.0,
-      "base_score": 84.02,
-      "explanation": "Study-Mate 是 JavaScript 开源项目，主打「你的AI学习搭档：定路线、讲知识、做项目，边学边做，学透一门科目」；处于增长早期，本周涨速 21 star/天，涨速在加快；开发活跃。"
+      "base_score": 87.54,
+      "explanation": "awesome-ai-companion 是 HTML 开源项目，主打「Open-source AI companions, desktop pets, long-term memory & proactive chat. 人机恋开源项目大全。让你的家机能够脱离官端自主存在，拥有记忆和主动性。」；处于增长早期，本周涨速 10 star/天，涨速在加快；社区健康（fork/star 比 11.2%，0 个 open issue）、项目元数据完整、开发活跃。"
     }
   },
   {
@@ -347,7 +535,7 @@
       "full_name": "20000419/fauxnix",
       "description": "Run Linux-style commands on Windows via deterministic bash→PowerShell translation. No VM, no WSL. MCP server + CLI built for AI agents (Claude Code, Codex, OpenCode...). GNU-style output, bash-style errors, UTF-8/GBK handled.",
       "stars": 994,
-      "forks": 4,
+      "forks": 3,
       "open_issues": 15,
       "created_at": "2026-08-16T02:03:17+00:00",
       "pushed_at": "2026-10-15T07:53:02+00:00",
@@ -374,87 +562,83 @@
       "default_branch": "main",
       "archived": false,
       "search_score": 1.0,
-      "stars_7d_ago": 867,
+      "stars_7d_ago": 896,
       "star_series": [
         {
-          "d": "09-17",
-          "s": 769
-        },
-        {
           "d": "09-18",
-          "s": 769
+          "s": 771
         },
         {
           "d": "09-19",
-          "s": 769
+          "s": 771
         },
         {
           "d": "09-20",
-          "s": 769
+          "s": 771
         },
         {
           "d": "09-21",
-          "s": 769
+          "s": 771
         },
         {
           "d": "09-22",
-          "s": 769
+          "s": 771
         },
         {
           "d": "09-23",
-          "s": 769
+          "s": 771
         },
         {
           "d": "09-24",
-          "s": 769
+          "s": 771
         },
         {
           "d": "09-25",
-          "s": 769
+          "s": 771
         },
         {
           "d": "09-26",
-          "s": 769
+          "s": 771
         },
         {
           "d": "09-27",
-          "s": 769
+          "s": 771
         },
         {
           "d": "09-28",
-          "s": 769
+          "s": 771
         },
         {
           "d": "09-29",
-          "s": 769
+          "s": 771
         },
         {
           "d": "09-30",
-          "s": 769
+          "s": 771
         },
         {
           "d": "10-01",
-          "s": 769
+          "s": 771
         },
         {
           "d": "10-02",
-          "s": 769
+          "s": 771
         },
         {
           "d": "10-03",
-          "s": 769
+          "s": 771
         },
         {
           "d": "10-04",
-          "s": 769
+          "s": 771
         },
         {
           "d": "10-05",
-          "s": 769
+          "s": 771
         },
         {
           "d": "10-06",
-          "s": 769
+          "s": 771
         },
         {
           "d": "10-07",
@@ -495,14 +679,18 @@
         {
           "d": "10-16",
           "s": 994
+        },
+        {
+          "d": "10-17",
+          "s": 994
         }
       ]
     },
     "score": {
-      "score": 82.38,
+      "score": 80.69,
       "breakdown": {
-        "vel": 81,
-        "acc": 57,
+        "vel": 93,
+        "acc": 45,
         "health": 58,
         "fresh": 83,
         "signal": 70
@@ -510,168 +698,8 @@
       "stage": "early",
       "stage_multiplier": 1.2,
       "confidence": 1.0,
-      "base_score": 68.65,
-      "explanation": "fauxnix 是 TypeScript 开源项目，主打「Run Linux-style commands on Windows via deterministic bash→PowerShell translation. No VM, no WSL. MCP server + CLI built for AI agents (Claude Code, Codex, OpenCode...). GNU-style output, bash-style errors, UTF-8/GBK handled.」；处于增长早期，本周涨速 18 star/天；开发活跃。"
-    }
-  },
-  {
-    "repo": {
-      "owner": "MerZlin",
-      "name": "dsh-pet-indesktop",
-      "full_name": "MerZlin/dsh-pet-indesktop",
-      "description": "基于项目PC2005-cloud/dsh-pet.git，将桌宠移植到Windows、Linux和MacOS上，现在可以随时看到蓝色大肥鱼了：），本项目还额外实现了其他交互功能，欢迎体验",
-      "stars": 1000,
-      "forks": 75,
-      "open_issues": 22,
-      "created_at": "2026-08-17T14:37:23+00:00",
-      "pushed_at": "2026-10-16T08:53:16+00:00",
-      "updated_at": "2026-10-16T10:35:13+00:00",
-      "topics": [],
-      "language": "Python",
-      "license": "MIT",
-      "homepage": null,
-      "html_url": "https://github.com/MerZlin/dsh-pet-indesktop",
-      "default_branch": "main",
-      "archived": false,
-      "search_score": 1.0,
-      "stars_7d_ago": 958,
-      "star_series": [
-        {
-          "d": "09-17",
-          "s": 958
-        },
-        {
-          "d": "09-18",
-          "s": 958
-        },
-        {
-          "d": "09-19",
-          "s": 958
-        },
-        {
-          "d": "09-20",
-          "s": 958
-        },
-        {
-          "d": "09-21",
-          "s": 958
-        },
-        {
-          "d": "09-22",
-          "s": 958
-        },
-        {
-          "d": "09-23",
-          "s": 958
-        },
-        {
-          "d": "09-24",
-          "s": 958
-        },
-        {
-          "d": "09-25",
-          "s": 958
-        },
-        {
-          "d": "09-26",
-          "s": 958
-        },
-        {
-          "d": "09-27",
-          "s": 958
-        },
-        {
-          "d": "09-28",
-          "s": 958
-        },
-        {
-          "d": "09-29",
-          "s": 958
-        },
-        {
-          "d": "09-30",
-          "s": 958
-        },
-        {
-          "d": "10-01",
-          "s": 958
-        },
-        {
-          "d": "10-02",
-          "s": 958
-        },
-        {
-          "d": "10-03",
-          "s": 958
-        },
-        {
-          "d": "10-04",
-          "s": 958
-        },
-        {
-          "d": "10-05",
-          "s": 958
-        },
-        {
-          "d": "10-06",
-          "s": 958
-        },
-        {
-          "d": "10-07",
-          "s": 958
-        },
-        {
-          "d": "10-08",
-          "s": 958
-        },
-        {
-          "d": "10-09",
-          "s": 958
-        },
-        {
-          "d": "10-10",
-          "s": 958
-        },
-        {
-          "d": "10-11",
-          "s": 958
-        },
-        {
-          "d": "10-12",
-          "s": 958
-        },
-        {
-          "d": "10-13",
-          "s": 958
-        },
-        {
-          "d": "10-14",
-          "s": 958
-        },
-        {
-          "d": "10-15",
-          "s": 964
-        },
-        {
-          "d": "10-16",
-          "s": 1000
-        }
-      ]
-    },
-    "score": {
-      "score": 79.67,
-      "breakdown": {
-        "vel": 53,
-        "acc": 99,
-        "health": 80,
-        "fresh": 84,
-        "signal": 55
-      },
-      "stage": "mid_early",
-      "stage_multiplier": 1.1,
-      "confidence": 1.0,
-      "base_score": 72.43,
-      "explanation": "dsh-pet-indesktop 是 Python 开源项目，主打「基于项目PC2005-cloud/dsh-pet.git，将桌宠移植到Windows、Linux和MacOS上，现在可以随时看到蓝色大肥鱼了：），本项目还额外实现了其他交互功能，欢迎体验」；处于中早期增长，本周涨速 6.0 star/天，涨速在加快；社区健康（fork/star 比 7.5%，22 个 open issue）、开发活跃。"
+      "base_score": 67.24,
+      "explanation": "fauxnix 是 TypeScript 开源项目，主打「Run Linux-style commands on Windows via deterministic bash→PowerShell translation. No VM, no WSL. MCP server + CLI built for AI agents (Claude Code, Codex, OpenCode...). GNU-style output, bash-style errors, UTF-8/GBK handled.」；处于增长早期，本周涨速 14 star/天；开发活跃。"
     }
   },
   {
@@ -680,12 +708,12 @@
       "name": "ardy",
       "full_name": "nv-tlabs/ardy",
       "description": "Official implementation of ARDY: Autoregressive Diffusion with Hybrid Representation for Interactive Human Motion Generation (SIGGRAPH 2026).",
-      "stars": 993,
-      "forks": 118,
+      "stars": 995,
+      "forks": 121,
       "open_issues": 14,
       "created_at": "2026-07-08T15:40:28+00:00",
       "pushed_at": "2026-10-15T20:13:09+00:00",
-      "updated_at": "2026-10-16T10:19:53+00:00",
+      "updated_at": "2026-10-17T08:36:18+00:00",
       "topics": [],
       "language": "Python",
       "license": "Apache-2.0",
@@ -694,12 +722,8 @@
       "default_branch": "main",
       "archived": false,
       "search_score": 1.0,
-      "stars_7d_ago": 971,
+      "stars_7d_ago": 972,
       "star_series": [
-        {
-          "d": "09-17",
-          "s": 917
-        },
         {
           "d": "09-18",
           "s": 920
@@ -815,14 +839,18 @@
         {
           "d": "10-16",
           "s": 993
+        },
+        {
+          "d": "10-17",
+          "s": 995
         }
       ]
     },
     "score": {
-      "score": 70.3,
+      "score": 76.87,
       "breakdown": {
-        "vel": 39,
-        "acc": 57,
+        "vel": 50,
+        "acc": 61,
         "health": 97,
         "fresh": 73,
         "signal": 55
@@ -830,8 +858,8 @@
       "stage": "early",
       "stage_multiplier": 1.2,
       "confidence": 1.0,
-      "base_score": 58.58,
-      "explanation": "ardy 是 Python 开源项目，主打「Official implementation of ARDY: Autoregressive Diffusion with Hybrid Representation for Interactive Human Motion Generation (SIGGRAPH 2026).」；处于增长早期；社区健康（fork/star 比 11.9%，14 个 open issue）、开发活跃。"
+      "base_score": 64.06,
+      "explanation": "ardy 是 Python 开源项目，主打「Official implementation of ARDY: Autoregressive Diffusion with Hybrid Representation for Interactive Human Motion Generation (SIGGRAPH 2026).」；处于增长早期，本周涨速 3.3 star/天；社区健康（fork/star 比 12.2%，14 个 open issue）、开发活跃。"
     }
   }
 ]
