@@ -1,531 +1,177 @@
 [
   {
     "repo": {
-      "owner": "lingcang728",
-      "name": "ZeppBridge",
-      "full_name": "lingcang728/ZeppBridge",
-      "description": "Keep your Zepp / Amazfit health records on your own computer. Explore every trend, hand them to the AI you already use, and send training plans back to your watch. Local-first, free and open source, for Windows, macOS and Linux.",
+      "owner": "Lelonio",
+      "name": "Square",
+      "full_name": "Lelonio/Square",
+      "description": "Unofficial YouTube Music / Spotify Premium client for Android, built in Liquid Glass. Audio effects, Spotify Connect, listening history, 8 languages. Rust core on librespot.",
       "stars": 200,
-      "forks": 32,
+      "forks": 19,
       "open_issues": 4,
-      "created_at": "2026-08-13T03:00:45+00:00",
-      "pushed_at": "2026-10-15T10:15:28+00:00",
-      "updated_at": "2026-10-17T07:42:51+00:00",
+      "created_at": "2026-08-06T12:14:33+00:00",
+      "pushed_at": "2026-10-16T09:24:09+00:00",
+      "updated_at": "2026-10-18T10:02:24+00:00",
       "topics": [
-        "amazfit",
-        "desktop-app",
-        "health-data",
-        "linux",
-        "local-first",
-        "macos",
-        "mcp",
-        "rust",
-        "tauri",
-        "training-plan",
-        "vue",
-        "windows",
-        "zepp"
+        "alternative",
+        "android",
+        "android-application",
+        "client",
+        "glassmorphism",
+        "innertube",
+        "librespot",
+        "liquid-glass",
+        "spotify",
+        "spotify-connect",
+        "spotifyapi",
+        "youtube-music",
+        "youtube-player",
+        "ytdlnis"
       ],
-      "language": "TypeScript",
-      "license": "MIT",
-      "homepage": "https://zeppbridge.com",
-      "html_url": "https://github.com/lingcang728/ZeppBridge",
-      "default_branch": "main",
+      "language": "Kotlin",
+      "license": "GPL-3.0",
+      "homepage": "https://github.com/Lelonio/Square/releases/latest",
+      "html_url": "https://github.com/Lelonio/Square",
+      "default_branch": "master",
       "archived": false,
       "search_score": 1.0,
-      "stars_7d_ago": 159,
+      "stars_7d_ago": 144,
       "star_series": [
         {
-          "d": "09-18",
-          "s": 138
-        },
-        {
           "d": "09-19",
-          "s": 138
+          "s": 75
         },
         {
           "d": "09-20",
-          "s": 138
+          "s": 75
         },
         {
           "d": "09-21",
-          "s": 138
+          "s": 75
         },
         {
           "d": "09-22",
-          "s": 138
+          "s": 75
         },
         {
           "d": "09-23",
-          "s": 138
+          "s": 75
         },
         {
           "d": "09-24",
-          "s": 138
+          "s": 75
         },
         {
           "d": "09-25",
-          "s": 138
+          "s": 75
         },
         {
           "d": "09-26",
-          "s": 138
+          "s": 75
         },
         {
           "d": "09-27",
-          "s": 138
+          "s": 75
         },
         {
           "d": "09-28",
-          "s": 140
+          "s": 75
         },
         {
           "d": "09-29",
-          "s": 143
+          "s": 75
         },
         {
           "d": "09-30",
-          "s": 144
+          "s": 75
         },
         {
           "d": "10-01",
-          "s": 145
+          "s": 75
         },
         {
           "d": "10-02",
-          "s": 147
+          "s": 75
         },
         {
           "d": "10-03",
-          "s": 147
+          "s": 75
         },
         {
           "d": "10-04",
-          "s": 150
+          "s": 75
         },
         {
           "d": "10-05",
-          "s": 150
+          "s": 75
         },
         {
           "d": "10-06",
-          "s": 151
+          "s": 77
         },
         {
           "d": "10-07",
-          "s": 152
+          "s": 86
         },
         {
           "d": "10-08",
-          "s": 154
+          "s": 100
         },
         {
           "d": "10-09",
-          "s": 154
+          "s": 111
         },
         {
           "d": "10-10",
-          "s": 156
+          "s": 116
         },
         {
           "d": "10-11",
-          "s": 159
+          "s": 123
         },
         {
           "d": "10-12",
-          "s": 162
+          "s": 144
         },
         {
           "d": "10-13",
-          "s": 163
+          "s": 165
         },
         {
           "d": "10-14",
-          "s": 182
+          "s": 179
         },
         {
           "d": "10-15",
-          "s": 189
+          "s": 187
         },
         {
           "d": "10-16",
-          "s": 196
+          "s": 191
         },
         {
           "d": "10-17",
+          "s": 197
+        },
+        {
+          "d": "10-18",
           "s": 200
         }
       ]
     },
     "score": {
-      "score": 100.0,
+      "score": 80.6,
       "breakdown": {
-        "vel": 66,
-        "acc": 97,
-        "health": 98,
-        "fresh": 82,
+        "vel": 69,
+        "acc": 45,
+        "health": 82,
+        "fresh": 80,
         "signal": 85
       },
       "stage": "early",
       "stage_multiplier": 1.2,
       "confidence": 1.0,
-      "base_score": 83.38,
-      "explanation": "ZeppBridge 是 TypeScript 开源项目，主打「Keep your Zepp / Amazfit health records on your own computer. Explore every trend, hand them to the AI you already use, and send training plans back to your watch. Local-first, free and open source, for Windows, macOS and Linux.」；处于增长早期，本周涨速 5.9 star/天，涨速在加快；社区健康（fork/star 比 16.0%，4 个 open issue）、项目元数据完整、开发活跃。"
-    }
-  },
-  {
-    "repo": {
-      "owner": "gzxx-2025",
-      "name": "aid-studio",
-      "full_name": "gzxx-2025/aid-studio",
-      "description": " 开源AI漫剧、AI短剧、AI电影与AI漫画创作平台，支持剧本、角色场景、智能分镜、图片与视频生成、配音及成片预览，多模型接入，可自行部署。预：无限画布、导演台。",
-      "stars": 997,
-      "forks": 217,
-      "open_issues": 11,
-      "created_at": "2026-07-19T15:30:04+00:00",
-      "pushed_at": "2026-10-15T03:55:02+00:00",
-      "updated_at": "2026-10-17T08:53:43+00:00",
-      "topics": [
-        "ai",
-        "ai-anime-art",
-        "ai-comic-creator",
-        "ai-comic-drama",
-        "ai-comics",
-        "ai-drama",
-        "ai-drama-generator",
-        "ai-short-drama",
-        "ai-short-drama-agent",
-        "ai-storyboard",
-        "ai-video",
-        "ai-video-editor",
-        "comic-video"
-      ],
-      "language": "Java",
-      "license": "MIT",
-      "homepage": "https://www.aidstudio.com.cn/",
-      "html_url": "https://github.com/gzxx-2025/aid-studio",
-      "default_branch": "main",
-      "archived": false,
-      "search_score": 1.0,
-      "stars_7d_ago": 865,
-      "star_series": [
-        {
-          "d": "09-18",
-          "s": 835
-        },
-        {
-          "d": "09-19",
-          "s": 835
-        },
-        {
-          "d": "09-20",
-          "s": 835
-        },
-        {
-          "d": "09-21",
-          "s": 835
-        },
-        {
-          "d": "09-22",
-          "s": 835
-        },
-        {
-          "d": "09-23",
-          "s": 835
-        },
-        {
-          "d": "09-24",
-          "s": 835
-        },
-        {
-          "d": "09-25",
-          "s": 835
-        },
-        {
-          "d": "09-26",
-          "s": 835
-        },
-        {
-          "d": "09-27",
-          "s": 835
-        },
-        {
-          "d": "09-28",
-          "s": 835
-        },
-        {
-          "d": "09-29",
-          "s": 835
-        },
-        {
-          "d": "09-30",
-          "s": 835
-        },
-        {
-          "d": "10-01",
-          "s": 835
-        },
-        {
-          "d": "10-02",
-          "s": 835
-        },
-        {
-          "d": "10-03",
-          "s": 835
-        },
-        {
-          "d": "10-04",
-          "s": 835
-        },
-        {
-          "d": "10-05",
-          "s": 835
-        },
-        {
-          "d": "10-06",
-          "s": 835
-        },
-        {
-          "d": "10-07",
-          "s": 835
-        },
-        {
-          "d": "10-08",
-          "s": 835
-        },
-        {
-          "d": "10-09",
-          "s": 835
-        },
-        {
-          "d": "10-10",
-          "s": 850
-        },
-        {
-          "d": "10-11",
-          "s": 865
-        },
-        {
-          "d": "10-12",
-          "s": 875
-        },
-        {
-          "d": "10-13",
-          "s": 887
-        },
-        {
-          "d": "10-14",
-          "s": 906
-        },
-        {
-          "d": "10-15",
-          "s": 921
-        },
-        {
-          "d": "10-16",
-          "s": 983
-        },
-        {
-          "d": "10-17",
-          "s": 997
-        }
-      ]
-    },
-    "score": {
-      "score": 100.0,
-      "breakdown": {
-        "vel": 100,
-        "acc": 97,
-        "health": 98,
-        "fresh": 76,
-        "signal": 85
-      },
-      "stage": "early",
-      "stage_multiplier": 1.2,
-      "confidence": 1.0,
-      "base_score": 93.23,
-      "explanation": "aid-studio 是 Java 开源项目，主打「开源AI漫剧、AI短剧、AI电影与AI漫画创作平台，支持剧本、角色场景、智能分镜、图片与视频生成、配音及成片预览，多模型接入，可自行部署。预：无限画布、导演台。」；处于增长早期，本周涨速 19 star/天，涨速在加快；社区健康（fork/star 比 21.8%，11 个 open issue）、项目元数据完整、开发活跃。"
-    }
-  },
-  {
-    "repo": {
-      "owner": "DasterProkio",
-      "name": "awesome-ai-companion",
-      "full_name": "DasterProkio/awesome-ai-companion",
-      "description": "Open-source AI companions, desktop pets, long-term memory & proactive chat. 人机恋开源项目大全。让你的家机能够脱离官端自主存在，拥有记忆和主动性。",
-      "stars": 993,
-      "forks": 111,
-      "open_issues": 0,
-      "created_at": "2026-07-03T04:24:24+00:00",
-      "pushed_at": "2026-10-17T06:58:56+00:00",
-      "updated_at": "2026-10-17T09:06:27+00:00",
-      "topics": [
-        "ai-agents",
-        "ai-companion",
-        "ai-girlfriend",
-        "awesome",
-        "awesome-list",
-        "character-ai",
-        "chatbot",
-        "companion-ai",
-        "conversational-ai",
-        "desktop-pet",
-        "live2d",
-        "llm",
-        "local-llm",
-        "long-term-memory",
-        "memory",
-        "open-source",
-        "personal-assistant",
-        "self-hosted",
-        "sillytavern",
-        "virtual-companion"
-      ],
-      "language": "HTML",
-      "license": "CC-BY-4.0",
-      "homepage": "https://lutopia.app/companion/",
-      "html_url": "https://github.com/DasterProkio/awesome-ai-companion",
-      "default_branch": "main",
-      "archived": false,
-      "search_score": 1.0,
-      "stars_7d_ago": 923,
-      "star_series": [
-        {
-          "d": "09-18",
-          "s": 917
-        },
-        {
-          "d": "09-19",
-          "s": 917
-        },
-        {
-          "d": "09-20",
-          "s": 917
-        },
-        {
-          "d": "09-21",
-          "s": 917
-        },
-        {
-          "d": "09-22",
-          "s": 917
-        },
-        {
-          "d": "09-23",
-          "s": 917
-        },
-        {
-          "d": "09-24",
-          "s": 917
-        },
-        {
-          "d": "09-25",
-          "s": 917
-        },
-        {
-          "d": "09-26",
-          "s": 917
-        },
-        {
-          "d": "09-27",
-          "s": 917
-        },
-        {
-          "d": "09-28",
-          "s": 917
-        },
-        {
-          "d": "09-29",
-          "s": 917
-        },
-        {
-          "d": "09-30",
-          "s": 917
-        },
-        {
-          "d": "10-01",
-          "s": 917
-        },
-        {
-          "d": "10-02",
-          "s": 917
-        },
-        {
-          "d": "10-03",
-          "s": 917
-        },
-        {
-          "d": "10-04",
-          "s": 917
-        },
-        {
-          "d": "10-05",
-          "s": 917
-        },
-        {
-          "d": "10-06",
-          "s": 917
-        },
-        {
-          "d": "10-07",
-          "s": 917
-        },
-        {
-          "d": "10-08",
-          "s": 917
-        },
-        {
-          "d": "10-09",
-          "s": 917
-        },
-        {
-          "d": "10-10",
-          "s": 917
-        },
-        {
-          "d": "10-11",
-          "s": 923
-        },
-        {
-          "d": "10-12",
-          "s": 952
-        },
-        {
-          "d": "10-13",
-          "s": 970
-        },
-        {
-          "d": "10-14",
-          "s": 973
-        },
-        {
-          "d": "10-15",
-          "s": 981
-        },
-        {
-          "d": "10-16",
-          "s": 989
-        },
-        {
-          "d": "10-17",
-          "s": 993
-        }
-      ]
-    },
-    "score": {
-      "score": 100.0,
-      "breakdown": {
-        "vel": 82,
-        "acc": 99,
-        "health": 97,
-        "fresh": 71,
-        "signal": 85
-      },
-      "stage": "early",
-      "stage_multiplier": 1.2,
-      "confidence": 1.0,
-      "base_score": 87.54,
-      "explanation": "awesome-ai-companion 是 HTML 开源项目，主打「Open-source AI companions, desktop pets, long-term memory & proactive chat. 人机恋开源项目大全。让你的家机能够脱离官端自主存在，拥有记忆和主动性。」；处于增长早期，本周涨速 10 star/天，涨速在加快；社区健康（fork/star 比 11.2%，0 个 open issue）、项目元数据完整、开发活跃。"
+      "base_score": 67.17,
+      "explanation": "Square 是 Kotlin 开源项目，主打「Unofficial YouTube Music / Spotify Premium client for Android, built in Liquid Glass. Audio effects, Spotify Connect, listening history, 8 languages. Rust core on librespot.」；处于增长早期，本周涨速 8.0 star/天；社区健康（fork/star 比 9.5%，4 个 open issue）、项目元数据完整、开发活跃。"
     }
   },
   {
@@ -562,12 +208,8 @@
       "default_branch": "main",
       "archived": false,
       "search_score": 1.0,
-      "stars_7d_ago": 896,
+      "stars_7d_ago": 923,
       "star_series": [
-        {
-          "d": "09-18",
-          "s": 771
-        },
         {
           "d": "09-19",
           "s": 771
@@ -683,14 +325,18 @@
         {
           "d": "10-17",
           "s": 994
+        },
+        {
+          "d": "10-18",
+          "s": 994
         }
       ]
     },
     "score": {
-      "score": 80.69,
+      "score": 72.31,
       "breakdown": {
-        "vel": 93,
-        "acc": 45,
+        "vel": 75,
+        "acc": 37,
         "health": 58,
         "fresh": 83,
         "signal": 70
@@ -698,8 +344,8 @@
       "stage": "early",
       "stage_multiplier": 1.2,
       "confidence": 1.0,
-      "base_score": 67.24,
-      "explanation": "fauxnix 是 TypeScript 开源项目，主打「Run Linux-style commands on Windows via deterministic bash→PowerShell translation. No VM, no WSL. MCP server + CLI built for AI agents (Claude Code, Codex, OpenCode...). GNU-style output, bash-style errors, UTF-8/GBK handled.」；处于增长早期，本周涨速 14 star/天；开发活跃。"
+      "base_score": 60.26,
+      "explanation": "fauxnix 是 TypeScript 开源项目，主打「Run Linux-style commands on Windows via deterministic bash→PowerShell translation. No VM, no WSL. MCP server + CLI built for AI agents (Claude Code, Codex, OpenCode...). GNU-style output, bash-style errors, UTF-8/GBK handled.」；处于增长早期，本周涨速 10 star/天；开发活跃。"
     }
   },
   {
@@ -708,12 +354,12 @@
       "name": "ardy",
       "full_name": "nv-tlabs/ardy",
       "description": "Official implementation of ARDY: Autoregressive Diffusion with Hybrid Representation for Interactive Human Motion Generation (SIGGRAPH 2026).",
-      "stars": 995,
+      "stars": 997,
       "forks": 121,
       "open_issues": 14,
       "created_at": "2026-07-08T15:40:28+00:00",
       "pushed_at": "2026-10-15T20:13:09+00:00",
-      "updated_at": "2026-10-17T08:36:18+00:00",
+      "updated_at": "2026-10-18T02:19:59+00:00",
       "topics": [],
       "language": "Python",
       "license": "Apache-2.0",
@@ -722,12 +368,8 @@
       "default_branch": "main",
       "archived": false,
       "search_score": 1.0,
-      "stars_7d_ago": 972,
+      "stars_7d_ago": 978,
       "star_series": [
-        {
-          "d": "09-18",
-          "s": 920
-        },
         {
           "d": "09-19",
           "s": 921
@@ -842,24 +484,368 @@
         },
         {
           "d": "10-17",
-          "s": 995
+          "s": 996
+        },
+        {
+          "d": "10-18",
+          "s": 997
         }
       ]
     },
     "score": {
-      "score": 76.87,
+      "score": 68.6,
       "breakdown": {
-        "vel": 50,
-        "acc": 61,
+        "vel": 41,
+        "acc": 49,
         "health": 97,
-        "fresh": 73,
+        "fresh": 72,
         "signal": 55
       },
       "stage": "early",
       "stage_multiplier": 1.2,
       "confidence": 1.0,
-      "base_score": 64.06,
-      "explanation": "ardy 是 Python 开源项目，主打「Official implementation of ARDY: Autoregressive Diffusion with Hybrid Representation for Interactive Human Motion Generation (SIGGRAPH 2026).」；处于增长早期，本周涨速 3.3 star/天；社区健康（fork/star 比 12.2%，14 个 open issue）、开发活跃。"
+      "base_score": 57.17,
+      "explanation": "ardy 是 Python 开源项目，主打「Official implementation of ARDY: Autoregressive Diffusion with Hybrid Representation for Interactive Human Motion Generation (SIGGRAPH 2026).」；处于增长早期，本周涨速 2.7 star/天；社区健康（fork/star 比 12.1%，14 个 open issue）、开发活跃。"
+    }
+  },
+  {
+    "repo": {
+      "owner": "maiphucgiang",
+      "name": "codebuddy2api",
+      "full_name": "maiphucgiang/codebuddy2api",
+      "description": "Use your CodeBuddy subscription as local OpenAI APIs.",
+      "stars": 200,
+      "forks": 46,
+      "open_issues": 1,
+      "created_at": "2026-09-10T18:42:19+00:00",
+      "pushed_at": "2026-10-18T09:53:23+00:00",
+      "updated_at": "2026-10-18T09:53:24+00:00",
+      "topics": [
+        "2api",
+        "codebuddy",
+        "workbuddy"
+      ],
+      "language": "Python",
+      "license": "MIT",
+      "homepage": null,
+      "html_url": "https://github.com/maiphucgiang/codebuddy2api",
+      "default_branch": "main",
+      "archived": false,
+      "search_score": 1.0,
+      "stars_7d_ago": 189,
+      "star_series": [
+        {
+          "d": "09-19",
+          "s": 171
+        },
+        {
+          "d": "09-20",
+          "s": 171
+        },
+        {
+          "d": "09-21",
+          "s": 171
+        },
+        {
+          "d": "09-22",
+          "s": 171
+        },
+        {
+          "d": "09-23",
+          "s": 171
+        },
+        {
+          "d": "09-24",
+          "s": 171
+        },
+        {
+          "d": "09-25",
+          "s": 171
+        },
+        {
+          "d": "09-26",
+          "s": 171
+        },
+        {
+          "d": "09-27",
+          "s": 171
+        },
+        {
+          "d": "09-28",
+          "s": 171
+        },
+        {
+          "d": "09-29",
+          "s": 171
+        },
+        {
+          "d": "09-30",
+          "s": 171
+        },
+        {
+          "d": "10-01",
+          "s": 171
+        },
+        {
+          "d": "10-02",
+          "s": 171
+        },
+        {
+          "d": "10-03",
+          "s": 171
+        },
+        {
+          "d": "10-04",
+          "s": 171
+        },
+        {
+          "d": "10-05",
+          "s": 175
+        },
+        {
+          "d": "10-06",
+          "s": 175
+        },
+        {
+          "d": "10-07",
+          "s": 176
+        },
+        {
+          "d": "10-08",
+          "s": 177
+        },
+        {
+          "d": "10-09",
+          "s": 181
+        },
+        {
+          "d": "10-10",
+          "s": 183
+        },
+        {
+          "d": "10-11",
+          "s": 186
+        },
+        {
+          "d": "10-12",
+          "s": 189
+        },
+        {
+          "d": "10-13",
+          "s": 190
+        },
+        {
+          "d": "10-14",
+          "s": 191
+        },
+        {
+          "d": "10-15",
+          "s": 195
+        },
+        {
+          "d": "10-16",
+          "s": 197
+        },
+        {
+          "d": "10-17",
+          "s": 199
+        },
+        {
+          "d": "10-18",
+          "s": 200
+        }
+      ]
+    },
+    "score": {
+      "score": 64.74,
+      "breakdown": {
+        "vel": 30,
+        "acc": 45,
+        "health": 100,
+        "fresh": 90,
+        "signal": 70
+      },
+      "stage": "early",
+      "stage_multiplier": 1.2,
+      "confidence": 1.0,
+      "base_score": 53.95,
+      "explanation": "codebuddy2api 是 Python 开源项目，主打「Use your CodeBuddy subscription as local OpenAI APIs.」；处于增长早期；社区健康（fork/star 比 23.0%，1 个 open issue）、开发活跃。"
+    }
+  },
+  {
+    "repo": {
+      "owner": "kennss",
+      "name": "SiliconScope",
+      "full_name": "kennss/SiliconScope",
+      "description": "Sudoless Apple Silicon system monitor (native SwiftUI GUI) with ANE / Media Engine / memory-bandwidth tracking",
+      "stars": 998,
+      "forks": 67,
+      "open_issues": 2,
+      "created_at": "2026-06-08T17:19:50+00:00",
+      "pushed_at": "2026-10-16T09:08:07+00:00",
+      "updated_at": "2026-10-18T01:55:19+00:00",
+      "topics": [
+        "apple-silicon",
+        "gpu",
+        "llama-cpp",
+        "llm",
+        "lm-studio",
+        "local-llm",
+        "macos",
+        "menubar",
+        "mlx",
+        "neural-engine",
+        "ollama",
+        "on-device-ai",
+        "performance-monitoring",
+        "swiftui",
+        "system-monitor"
+      ],
+      "language": "Swift",
+      "license": "MIT",
+      "homepage": "https://siliconscope.calidalab.ai/",
+      "html_url": "https://github.com/kennss/SiliconScope",
+      "default_branch": "main",
+      "archived": false,
+      "search_score": 1.0,
+      "stars_7d_ago": 986,
+      "star_series": [
+        {
+          "d": "09-19",
+          "s": 951
+        },
+        {
+          "d": "09-20",
+          "s": 952
+        },
+        {
+          "d": "09-21",
+          "s": 952
+        },
+        {
+          "d": "09-22",
+          "s": 954
+        },
+        {
+          "d": "09-23",
+          "s": 957
+        },
+        {
+          "d": "09-24",
+          "s": 958
+        },
+        {
+          "d": "09-25",
+          "s": 963
+        },
+        {
+          "d": "09-26",
+          "s": 963
+        },
+        {
+          "d": "09-27",
+          "s": 963
+        },
+        {
+          "d": "09-28",
+          "s": 963
+        },
+        {
+          "d": "09-29",
+          "s": 964
+        },
+        {
+          "d": "09-30",
+          "s": 966
+        },
+        {
+          "d": "10-01",
+          "s": 968
+        },
+        {
+          "d": "10-02",
+          "s": 971
+        },
+        {
+          "d": "10-03",
+          "s": 972
+        },
+        {
+          "d": "10-04",
+          "s": 973
+        },
+        {
+          "d": "10-05",
+          "s": 975
+        },
+        {
+          "d": "10-06",
+          "s": 977
+        },
+        {
+          "d": "10-07",
+          "s": 978
+        },
+        {
+          "d": "10-08",
+          "s": 978
+        },
+        {
+          "d": "10-09",
+          "s": 979
+        },
+        {
+          "d": "10-10",
+          "s": 980
+        },
+        {
+          "d": "10-11",
+          "s": 982
+        },
+        {
+          "d": "10-12",
+          "s": 986
+        },
+        {
+          "d": "10-13",
+          "s": 987
+        },
+        {
+          "d": "10-14",
+          "s": 994
+        },
+        {
+          "d": "10-15",
+          "s": 996
+        },
+        {
+          "d": "10-16",
+          "s": 996
+        },
+        {
+          "d": "10-17",
+          "s": 998
+        },
+        {
+          "d": "10-18",
+          "s": 998
+        }
+      ]
+    },
+    "score": {
+      "score": 63.63,
+      "breakdown": {
+        "vel": 31,
+        "acc": 52,
+        "health": 81,
+        "fresh": 64,
+        "signal": 85
+      },
+      "stage": "early",
+      "stage_multiplier": 1.2,
+      "confidence": 1.0,
+      "base_score": 53.02,
+      "explanation": "SiliconScope 是 Swift 开源项目，主打「Sudoless Apple Silicon system monitor (native SwiftUI GUI) with ANE / Media Engine / memory-bandwidth tracking」；处于增长早期；社区健康（fork/star 比 6.7%，2 个 open issue）、项目元数据完整。"
     }
   }
 ]
