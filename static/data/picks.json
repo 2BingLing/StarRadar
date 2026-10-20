@@ -1,337 +1,164 @@
 [
   {
     "repo": {
-      "owner": "alexgreensh",
-      "name": "anidoodle",
-      "full_name": "alexgreensh/anidoodle",
-      "description": "Art and animation, written as code. Illustrations, loops, interactive web art, launch-videos and scored films in dozens of styles, identical on every render.",
+      "owner": "wangmiaozero",
+      "name": "pi-harness",
+      "full_name": "wangmiaozero/pi-harness",
+      "description": "The operational superset of Pi Coding Agent — everything Pi, plus observability, governance, recovery, evaluation and multi-agent orchestration. Pi Coding Agent 的运维超集——完整继承 Pi 的核心能力，并进一步扩展可观测性、治理、故障恢复、评估和多 Agent 编排。",
       "stars": 998,
-      "forks": 81,
-      "open_issues": 1,
-      "created_at": "2026-09-22T11:20:47+00:00",
-      "pushed_at": "2026-10-17T19:36:11+00:00",
-      "updated_at": "2026-10-19T11:47:07+00:00",
+      "forks": 24,
+      "open_issues": 0,
+      "created_at": "2026-08-20T12:29:47+00:00",
+      "pushed_at": "2026-10-20T03:22:50+00:00",
+      "updated_at": "2026-10-20T07:01:55+00:00",
       "topics": [
-        "agent-skills",
-        "animation",
-        "canvas",
-        "claude-code",
-        "claude-plugin",
-        "claude-skills",
-        "codex-plugin",
-        "creative-code",
-        "creative-coding",
-        "creative-tools",
-        "deterministic",
-        "generative-art",
-        "hand-drawn",
-        "illustration",
-        "launch-video",
-        "motion-design",
-        "motion-graphics",
-        "plugin",
-        "procedural-generation",
-        "skill"
+        "agent-harness",
+        "agent-observability",
+        "agent-orchestration",
+        "ai-agent",
+        "coding-agent",
+        "desktop-app",
+        "developer-tools",
+        "electron",
+        "llm",
+        "mcp",
+        "multi-agent",
+        "pi",
+        "pi-agent",
+        "pi-coding-agent",
+        "pi-harness",
+        "skills",
+        "typescript",
+        "vue3"
       ],
       "language": "TypeScript",
-      "license": "Apache-2.0",
-      "homepage": "https://alexgreenshpun.com",
-      "html_url": "https://github.com/alexgreensh/anidoodle",
+      "license": "AGPL-3.0",
+      "homepage": null,
+      "html_url": "https://github.com/wangmiaozero/pi-harness",
       "default_branch": "main",
       "archived": false,
       "search_score": 1.0,
-      "stars_7d_ago": 918,
+      "stars_7d_ago": 753,
       "star_series": [
         {
-          "d": "09-20",
-          "s": 918
-        },
-        {
           "d": "09-21",
-          "s": 918
+          "s": 753
         },
         {
           "d": "09-22",
-          "s": 918
+          "s": 753
         },
         {
           "d": "09-23",
-          "s": 918
+          "s": 753
         },
         {
           "d": "09-24",
-          "s": 918
+          "s": 753
         },
         {
           "d": "09-25",
-          "s": 918
+          "s": 753
         },
         {
           "d": "09-26",
-          "s": 918
+          "s": 753
         },
         {
           "d": "09-27",
-          "s": 918
+          "s": 753
         },
         {
           "d": "09-28",
-          "s": 918
+          "s": 753
         },
         {
           "d": "09-29",
-          "s": 918
+          "s": 753
         },
         {
           "d": "09-30",
-          "s": 918
+          "s": 753
         },
         {
           "d": "10-01",
-          "s": 918
+          "s": 753
         },
         {
           "d": "10-02",
-          "s": 918
+          "s": 753
         },
         {
           "d": "10-03",
-          "s": 918
+          "s": 753
         },
         {
           "d": "10-04",
-          "s": 918
+          "s": 753
         },
         {
           "d": "10-05",
-          "s": 918
+          "s": 753
         },
         {
           "d": "10-06",
-          "s": 918
+          "s": 753
         },
         {
           "d": "10-07",
-          "s": 918
+          "s": 753
         },
         {
           "d": "10-08",
-          "s": 918
+          "s": 753
         },
         {
           "d": "10-09",
-          "s": 918
+          "s": 753
         },
         {
           "d": "10-10",
-          "s": 918
+          "s": 753
         },
         {
           "d": "10-11",
-          "s": 918
+          "s": 753
         },
         {
           "d": "10-12",
-          "s": 918
+          "s": 753
         },
         {
           "d": "10-13",
-          "s": 918
+          "s": 753
         },
         {
           "d": "10-14",
-          "s": 918
+          "s": 753
         },
         {
           "d": "10-15",
-          "s": 943
+          "s": 753
         },
         {
           "d": "10-16",
-          "s": 967
+          "s": 981
         },
         {
           "d": "10-17",
-          "s": 978
+          "s": 992
         },
         {
           "d": "10-18",
-          "s": 991
+          "s": 993
         },
         {
           "d": "10-19",
+          "s": 997
+        },
+        {
+          "d": "10-20",
           "s": 998
-        }
-      ]
-    },
-    "score": {
-      "score": 100.0,
-      "breakdown": {
-        "vel": 69,
-        "acc": 99,
-        "health": 86,
-        "fresh": 93,
-        "signal": 85
-      },
-      "stage": "early",
-      "stage_multiplier": 1.2,
-      "confidence": 1.0,
-      "base_score": 84.29,
-      "explanation": "anidoodle 是 TypeScript 开源项目，主打「Art and animation, written as code. Illustrations, loops, interactive web art, launch-videos and scored films in dozens of styles, identical on every render.」；处于增长早期，本周涨速 11 star/天，涨速在加快；社区健康（fork/star 比 8.1%，1 个 open issue）、项目元数据完整、开发活跃。"
-    }
-  },
-  {
-    "repo": {
-      "owner": "Harvil1",
-      "name": "codeAgent",
-      "full_name": "Harvil1/codeAgent",
-      "description": "CodeAgent is an open-source coding agent that lives in your terminal. It understands your repository, plans multi-step changes, writes and edits files, runs commands and tests, and iterates until the task is done — all with a transparent, extensible tool loop.",
-      "stars": 995,
-      "forks": 68,
-      "open_issues": 0,
-      "created_at": "2026-10-02T05:15:41+00:00",
-      "pushed_at": "2026-10-14T00:33:50+00:00",
-      "updated_at": "2026-10-19T08:36:13+00:00",
-      "topics": [
-        "agent",
-        "ai-agent",
-        "cli",
-        "coding-agent",
-        "context-engineering",
-        "deepseek",
-        "llm",
-        "mcp",
-        "python",
-        "terminal"
-      ],
-      "language": "Python",
-      "license": "MIT",
-      "homepage": null,
-      "html_url": "https://github.com/Harvil1/codeAgent",
-      "default_branch": "master",
-      "archived": false,
-      "search_score": 1.0,
-      "stars_7d_ago": 703,
-      "star_series": [
-        {
-          "d": "09-20",
-          "s": 703
-        },
-        {
-          "d": "09-21",
-          "s": 703
-        },
-        {
-          "d": "09-22",
-          "s": 703
-        },
-        {
-          "d": "09-23",
-          "s": 703
-        },
-        {
-          "d": "09-24",
-          "s": 703
-        },
-        {
-          "d": "09-25",
-          "s": 703
-        },
-        {
-          "d": "09-26",
-          "s": 703
-        },
-        {
-          "d": "09-27",
-          "s": 703
-        },
-        {
-          "d": "09-28",
-          "s": 703
-        },
-        {
-          "d": "09-29",
-          "s": 703
-        },
-        {
-          "d": "09-30",
-          "s": 703
-        },
-        {
-          "d": "10-01",
-          "s": 703
-        },
-        {
-          "d": "10-02",
-          "s": 703
-        },
-        {
-          "d": "10-03",
-          "s": 703
-        },
-        {
-          "d": "10-04",
-          "s": 703
-        },
-        {
-          "d": "10-05",
-          "s": 703
-        },
-        {
-          "d": "10-06",
-          "s": 703
-        },
-        {
-          "d": "10-07",
-          "s": 703
-        },
-        {
-          "d": "10-08",
-          "s": 703
-        },
-        {
-          "d": "10-09",
-          "s": 703
-        },
-        {
-          "d": "10-10",
-          "s": 703
-        },
-        {
-          "d": "10-11",
-          "s": 703
-        },
-        {
-          "d": "10-12",
-          "s": 703
-        },
-        {
-          "d": "10-13",
-          "s": 703
-        },
-        {
-          "d": "10-14",
-          "s": 703
-        },
-        {
-          "d": "10-15",
-          "s": 740
-        },
-        {
-          "d": "10-16",
-          "s": 812
-        },
-        {
-          "d": "10-17",
-          "s": 884
-        },
-        {
-          "d": "10-18",
-          "s": 984
-        },
-        {
-          "d": "10-19",
-          "s": 995
         }
       ]
     },
@@ -340,15 +167,15 @@
       "breakdown": {
         "vel": 100,
         "acc": 99,
-        "health": 82,
-        "fresh": 95,
+        "health": 66,
+        "fresh": 84,
         "signal": 70
       },
       "stage": "early",
       "stage_multiplier": 1.2,
       "confidence": 1.0,
-      "base_score": 91.87,
-      "explanation": "codeAgent 是 Python 开源项目，主打「CodeAgent is an open-source coding agent that lives in your terminal. It understands your repository, plans multi-step changes, writes and edits files, runs commands and tests, and iterates until the task is done — all with a transparent, extensible tool loop.」；处于增长早期，本周涨速 42 star/天，涨速在加快；社区健康（fork/star 比 6.8%，0 个 open issue）、开发活跃。"
+      "base_score": 86.44,
+      "explanation": "pi-harness 是 TypeScript 开源项目，主打「The operational superset of Pi Coding Agent — everything Pi, plus observability, governance, recovery, evaluation and multi-agent orchestration. Pi Coding Agent 的运维超集——完整继承 Pi 的核心能力，并进一步扩展可观测性、治理、故障恢复、评估和多 Agent 编排。」；处于增长早期，本周涨速 35 star/天，涨速在加快；开发活跃。"
     }
   },
   {
@@ -357,12 +184,12 @@
       "name": "OpenConstructionERP",
       "full_name": "datadrivenconstruction/OpenConstructionERP",
       "description": "Open-source construction ERP - BOQ, PDF/CAD/BIM takeoff, AI cost matching, 293 guided cases. 120,000+ priced positions, 44 languages, 190+ modules, cost data for 40+ markets. AGPL-3.0. pip install openconstructionerp",
-      "stars": 993,
-      "forks": 316,
+      "stars": 998,
+      "forks": 317,
       "open_issues": 2,
       "created_at": "2026-04-02T14:59:02+00:00",
-      "pushed_at": "2026-10-19T11:57:36+00:00",
-      "updated_at": "2026-10-19T11:50:36+00:00",
+      "pushed_at": "2026-10-20T09:27:03+00:00",
+      "updated_at": "2026-10-20T09:27:09+00:00",
       "topics": [
         "ai",
         "bim",
@@ -392,134 +219,134 @@
       "default_branch": "main",
       "archived": false,
       "search_score": 1.0,
-      "stars_7d_ago": 955,
+      "stars_7d_ago": 964,
       "star_series": [
         {
-          "d": "09-20",
-          "s": 955
-        },
-        {
           "d": "09-21",
-          "s": 955
+          "s": 964
         },
         {
           "d": "09-22",
-          "s": 955
+          "s": 964
         },
         {
           "d": "09-23",
-          "s": 955
+          "s": 964
         },
         {
           "d": "09-24",
-          "s": 955
+          "s": 964
         },
         {
           "d": "09-25",
-          "s": 955
+          "s": 964
         },
         {
           "d": "09-26",
-          "s": 955
+          "s": 964
         },
         {
           "d": "09-27",
-          "s": 955
+          "s": 964
         },
         {
           "d": "09-28",
-          "s": 955
+          "s": 964
         },
         {
           "d": "09-29",
-          "s": 955
+          "s": 964
         },
         {
           "d": "09-30",
-          "s": 955
+          "s": 964
         },
         {
           "d": "10-01",
-          "s": 955
+          "s": 964
         },
         {
           "d": "10-02",
-          "s": 955
+          "s": 964
         },
         {
           "d": "10-03",
-          "s": 955
+          "s": 964
         },
         {
           "d": "10-04",
-          "s": 955
+          "s": 964
         },
         {
           "d": "10-05",
-          "s": 955
+          "s": 964
         },
         {
           "d": "10-06",
-          "s": 955
+          "s": 964
         },
         {
           "d": "10-07",
-          "s": 955
+          "s": 964
         },
         {
           "d": "10-08",
-          "s": 955
+          "s": 964
         },
         {
           "d": "10-09",
-          "s": 955
+          "s": 964
         },
         {
           "d": "10-10",
-          "s": 955
+          "s": 964
         },
         {
           "d": "10-11",
-          "s": 955
+          "s": 964
         },
         {
           "d": "10-12",
-          "s": 955
+          "s": 964
         },
         {
           "d": "10-13",
-          "s": 955
+          "s": 964
         },
         {
           "d": "10-14",
-          "s": 961
+          "s": 964
         },
         {
           "d": "10-15",
-          "s": 969
+          "s": 968
         },
         {
           "d": "10-16",
-          "s": 975
+          "s": 974
         },
         {
           "d": "10-17",
-          "s": 983
+          "s": 982
         },
         {
           "d": "10-18",
-          "s": 988
+          "s": 987
         },
         {
           "d": "10-19",
           "s": 993
+        },
+        {
+          "d": "10-20",
+          "s": 998
         }
       ]
     },
     "score": {
-      "score": 78.4,
+      "score": 79.47,
       "breakdown": {
-        "vel": 51,
+        "vel": 53,
         "acc": 99,
         "health": 100,
         "fresh": 45,
@@ -528,144 +355,296 @@
       "stage": "mid_early",
       "stage_multiplier": 1.1,
       "confidence": 1.0,
-      "base_score": 71.27,
-      "explanation": "OpenConstructionERP 是 TypeScript 开源项目，主打「Open-source construction ERP - BOQ, PDF/CAD/BIM takeoff, AI cost matching, 293 guided cases. 120,000+ priced positions, 44 languages, 190+ modules, cost data for 40+ markets. AGPL-3.0. pip install openconstructionerp」；处于中早期增长，本周涨速 5.4 star/天，涨速在加快；社区健康（fork/star 比 31.8%，2 个 open issue）、项目元数据完整。"
+      "base_score": 72.24,
+      "explanation": "OpenConstructionERP 是 TypeScript 开源项目，主打「Open-source construction ERP - BOQ, PDF/CAD/BIM takeoff, AI cost matching, 293 guided cases. 120,000+ priced positions, 44 languages, 190+ modules, cost data for 40+ markets. AGPL-3.0. pip install openconstructionerp」；处于中早期增长，本周涨速 4.9 star/天，涨速在加快；社区健康（fork/star 比 31.8%，2 个 open issue）、项目元数据完整。"
     }
   },
   {
     "repo": {
-      "owner": "api7",
-      "name": "aisix",
-      "full_name": "api7/aisix",
-      "description": "Open-source AI gateway for LLMs & AI agents, built in Rust. One OpenAI-compatible API for OpenAI, Anthropic, Gemini, Bedrock & more — routing, guardrails, caching, rate limits, observability.",
-      "stars": 200,
-      "forks": 42,
-      "open_issues": 61,
-      "created_at": "2026-04-17T03:44:47+00:00",
-      "pushed_at": "2026-10-19T11:02:14+00:00",
-      "updated_at": "2026-10-19T11:02:17+00:00",
+      "owner": "hanliang97",
+      "name": "MatrixMedia",
+      "full_name": "hanliang97/MatrixMedia",
+      "description": "视频矩阵工具 vue electorn puppeteer 批量发布 视频到各个视频平台 自媒体 矩阵 抖音 小红书 头条 视频号 快手等 ai 自动化 cli",
+      "stars": 998,
+      "forks": 134,
+      "open_issues": 8,
+      "created_at": "2026-03-21T02:53:24+00:00",
+      "pushed_at": "2026-10-17T04:31:48+00:00",
+      "updated_at": "2026-10-20T03:49:11+00:00",
       "topics": [
-        "ai-agents",
-        "ai-gateway",
-        "ai-gateway-rust",
-        "aisix",
-        "anthropic",
-        "bedrock",
-        "gateway",
-        "gemini",
-        "guardrails",
-        "inference-gateway",
-        "llm",
-        "llm-gateway",
-        "llm-proxy",
-        "llm-router",
-        "llmops",
-        "observability",
-        "openai",
-        "openai-compatible",
-        "rust",
-        "self-hosted"
+        "autovideo",
+        "dsh-plugin",
+        "hermes-skill",
+        "video",
+        "workbuddy-skill"
+      ],
+      "language": "JavaScript",
+      "license": "GPL-2.0",
+      "homepage": "https://hanliang97.github.io/MatrixMedia/",
+      "html_url": "https://github.com/hanliang97/MatrixMedia",
+      "default_branch": "main",
+      "archived": false,
+      "search_score": 1.0,
+      "stars_7d_ago": 961,
+      "star_series": [
+        {
+          "d": "09-21",
+          "s": 898
+        },
+        {
+          "d": "09-22",
+          "s": 898
+        },
+        {
+          "d": "09-23",
+          "s": 898
+        },
+        {
+          "d": "09-24",
+          "s": 898
+        },
+        {
+          "d": "09-25",
+          "s": 898
+        },
+        {
+          "d": "09-26",
+          "s": 898
+        },
+        {
+          "d": "09-27",
+          "s": 898
+        },
+        {
+          "d": "09-28",
+          "s": 898
+        },
+        {
+          "d": "09-29",
+          "s": 898
+        },
+        {
+          "d": "09-30",
+          "s": 898
+        },
+        {
+          "d": "10-01",
+          "s": 898
+        },
+        {
+          "d": "10-02",
+          "s": 898
+        },
+        {
+          "d": "10-03",
+          "s": 900
+        },
+        {
+          "d": "10-04",
+          "s": 903
+        },
+        {
+          "d": "10-05",
+          "s": 905
+        },
+        {
+          "d": "10-06",
+          "s": 917
+        },
+        {
+          "d": "10-07",
+          "s": 928
+        },
+        {
+          "d": "10-08",
+          "s": 934
+        },
+        {
+          "d": "10-09",
+          "s": 942
+        },
+        {
+          "d": "10-10",
+          "s": 947
+        },
+        {
+          "d": "10-11",
+          "s": 947
+        },
+        {
+          "d": "10-12",
+          "s": 953
+        },
+        {
+          "d": "10-13",
+          "s": 960
+        },
+        {
+          "d": "10-14",
+          "s": 961
+        },
+        {
+          "d": "10-15",
+          "s": 971
+        },
+        {
+          "d": "10-16",
+          "s": 977
+        },
+        {
+          "d": "10-17",
+          "s": 983
+        },
+        {
+          "d": "10-18",
+          "s": 984
+        },
+        {
+          "d": "10-19",
+          "s": 995
+        },
+        {
+          "d": "10-20",
+          "s": 998
+        }
+      ]
+    },
+    "score": {
+      "score": 75.13,
+      "breakdown": {
+        "vel": 56,
+        "acc": 53,
+        "health": 99,
+        "fresh": 42,
+        "signal": 100
+      },
+      "stage": "early",
+      "stage_multiplier": 1.2,
+      "confidence": 1.0,
+      "base_score": 62.61,
+      "explanation": "MatrixMedia 是 JavaScript 开源项目，主打「视频矩阵工具 vue electorn puppeteer 批量发布 视频到各个视频平台 自媒体 矩阵 抖音 小红书 头条 视频号 快手等 ai 自动化 cli」；处于增长早期，本周涨速 5.3 star/天；社区健康（fork/star 比 13.4%，8 个 open issue）、项目元数据完整。"
+    }
+  },
+  {
+    "repo": {
+      "owner": "murray17",
+      "name": "rovai-ai",
+      "full_name": "murray17/rovai-ai",
+      "description": "Desktop and web workspace for lasting teams of coding agents, with shared conversations, task delegation, and collaborative memory.",
+      "stars": 200,
+      "forks": 40,
+      "open_issues": 12,
+      "created_at": "2026-07-17T05:39:30+00:00",
+      "pushed_at": "2026-10-20T10:26:30+00:00",
+      "updated_at": "2026-10-20T10:26:36+00:00",
+      "topics": [
+        "acp",
+        "agent-orchestration",
+        "ai-team",
+        "claude-code",
+        "codex",
+        "coding-agents",
+        "collaborative-ai",
+        "developer-tools",
+        "multi-agent",
+        "rpg"
       ],
       "language": "Rust",
-      "license": "Apache-2.0",
-      "homepage": "https://api7.ai/ai-gateway",
-      "html_url": "https://github.com/api7/aisix",
+      "license": "MIT",
+      "homepage": "https://rovai.dev/",
+      "html_url": "https://github.com/murray17/rovai-ai",
       "default_branch": "main",
       "archived": false,
       "search_score": 1.0,
       "stars_7d_ago": 186,
       "star_series": [
         {
-          "d": "09-20",
-          "s": 185
-        },
-        {
           "d": "09-21",
-          "s": 185
+          "s": 186
         },
         {
           "d": "09-22",
-          "s": 185
+          "s": 186
         },
         {
           "d": "09-23",
-          "s": 185
+          "s": 186
         },
         {
           "d": "09-24",
-          "s": 185
+          "s": 186
         },
         {
           "d": "09-25",
-          "s": 185
+          "s": 186
         },
         {
           "d": "09-26",
-          "s": 185
+          "s": 186
         },
         {
           "d": "09-27",
-          "s": 185
+          "s": 186
         },
         {
           "d": "09-28",
-          "s": 185
+          "s": 186
         },
         {
           "d": "09-29",
-          "s": 185
+          "s": 186
         },
         {
           "d": "09-30",
-          "s": 185
+          "s": 186
         },
         {
           "d": "10-01",
-          "s": 185
+          "s": 186
         },
         {
           "d": "10-02",
-          "s": 185
+          "s": 186
         },
         {
           "d": "10-03",
-          "s": 185
+          "s": 186
         },
         {
           "d": "10-04",
-          "s": 185
+          "s": 186
         },
         {
           "d": "10-05",
-          "s": 185
+          "s": 186
         },
         {
           "d": "10-06",
-          "s": 185
+          "s": 186
         },
         {
           "d": "10-07",
-          "s": 185
+          "s": 186
         },
         {
           "d": "10-08",
-          "s": 185
+          "s": 186
         },
         {
           "d": "10-09",
-          "s": 185
+          "s": 186
         },
         {
           "d": "10-10",
-          "s": 185
+          "s": 186
         },
         {
           "d": "10-11",
-          "s": 185
+          "s": 186
         },
         {
           "d": "10-12",
-          "s": 185
+          "s": 186
         },
         {
           "d": "10-13",
@@ -673,218 +652,220 @@
         },
         {
           "d": "10-14",
-          "s": 191
+          "s": 186
         },
         {
           "d": "10-15",
-          "s": 192
+          "s": 186
         },
         {
           "d": "10-16",
-          "s": 196
+          "s": 187
         },
         {
           "d": "10-17",
-          "s": 199
+          "s": 191
         },
         {
           "d": "10-18",
-          "s": 199
+          "s": 192
         },
         {
           "d": "10-19",
+          "s": 199
+        },
+        {
+          "d": "10-20",
           "s": 200
         }
       ]
     },
     "score": {
-      "score": 66.58,
+      "score": 71.69,
       "breakdown": {
-        "vel": 30,
-        "acc": 86,
-        "health": 70,
-        "fresh": 49,
-        "signal": 85
+        "vel": 33,
+        "acc": 88,
+        "health": 90,
+        "fresh": 74,
+        "signal": 100
       },
-      "stage": "early",
-      "stage_multiplier": 1.2,
+      "stage": "mid_early",
+      "stage_multiplier": 1.1,
       "confidence": 1.0,
-      "base_score": 55.48,
-      "explanation": "aisix 是 Rust 开源项目，主打「Open-source AI gateway for LLMs & AI agents, built in Rust. One OpenAI-compatible API for OpenAI, Anthropic, Gemini, Bedrock & more — routing, guardrails, caching, rate limits, observability.」；处于增长早期，涨速在加快；项目元数据完整。"
+      "base_score": 65.17,
+      "explanation": "rovai-ai 是 Rust 开源项目，主打「Desktop and web workspace for lasting teams of coding agents, with shared conversations, task delegation, and collaborative memory.」；处于中早期增长，涨速在加快；社区健康（fork/star 比 20.0%，12 个 open issue）、项目元数据完整、开发活跃。"
     }
   },
   {
     "repo": {
-      "owner": "20000419",
-      "name": "fauxnix",
-      "full_name": "20000419/fauxnix",
-      "description": "Run Linux-style commands on Windows via deterministic bash→PowerShell translation. No VM, no WSL. MCP server + CLI built for AI agents (Claude Code, Codex, OpenCode...). GNU-style output, bash-style errors, UTF-8/GBK handled.",
-      "stars": 994,
-      "forks": 3,
-      "open_issues": 16,
-      "created_at": "2026-08-16T02:03:17+00:00",
-      "pushed_at": "2026-10-15T07:53:02+00:00",
-      "updated_at": "2026-10-15T14:30:58+00:00",
+      "owner": "ludovic111",
+      "name": "horizon",
+      "full_name": "ludovic111/horizon",
+      "description": "Minecraft: Java Edition 26.3 rewritten from scratch in Rust, checked against vanilla with 281 differential harnesses. Get it with the Horizon launcher.",
+      "stars": 200,
+      "forks": 18,
+      "open_issues": 123,
+      "created_at": "2026-10-03T17:08:48+00:00",
+      "pushed_at": "2026-10-19T16:21:40+00:00",
+      "updated_at": "2026-10-20T09:08:27+00:00",
       "topics": [
-        "ai-agents",
-        "bash",
-        "claude-code",
-        "cli",
-        "codex",
-        "coreutils",
-        "mcp",
-        "mcp-server",
-        "opencode",
-        "powershell",
-        "shell",
-        "translator",
-        "windows"
+        "differential-testing",
+        "game-engine",
+        "gamedev",
+        "linux",
+        "minecraft",
+        "minecraft-java",
+        "reimplementation",
+        "rust",
+        "voxel",
+        "vulkan",
+        "wgpu"
       ],
-      "language": "TypeScript",
+      "language": "Rust",
       "license": "MIT",
-      "homepage": null,
-      "html_url": "https://github.com/20000419/fauxnix",
+      "homepage": "https://playhorizon.dev",
+      "html_url": "https://github.com/ludovic111/horizon",
       "default_branch": "main",
       "archived": false,
       "search_score": 1.0,
-      "stars_7d_ago": 940,
+      "stars_7d_ago": 184,
       "star_series": [
         {
-          "d": "09-20",
-          "s": 773
-        },
-        {
           "d": "09-21",
-          "s": 773
+          "s": 184
         },
         {
           "d": "09-22",
-          "s": 773
+          "s": 184
         },
         {
           "d": "09-23",
-          "s": 773
+          "s": 184
         },
         {
           "d": "09-24",
-          "s": 773
+          "s": 184
         },
         {
           "d": "09-25",
-          "s": 773
+          "s": 184
         },
         {
           "d": "09-26",
-          "s": 773
+          "s": 184
         },
         {
           "d": "09-27",
-          "s": 773
+          "s": 184
         },
         {
           "d": "09-28",
-          "s": 773
+          "s": 184
         },
         {
           "d": "09-29",
-          "s": 773
+          "s": 184
         },
         {
           "d": "09-30",
-          "s": 773
+          "s": 184
         },
         {
           "d": "10-01",
-          "s": 773
+          "s": 184
         },
         {
           "d": "10-02",
-          "s": 773
+          "s": 184
         },
         {
           "d": "10-03",
-          "s": 773
+          "s": 184
         },
         {
           "d": "10-04",
-          "s": 773
+          "s": 184
         },
         {
           "d": "10-05",
-          "s": 773
+          "s": 184
         },
         {
           "d": "10-06",
-          "s": 773
+          "s": 184
         },
         {
           "d": "10-07",
-          "s": 793
+          "s": 184
         },
         {
           "d": "10-08",
-          "s": 820
+          "s": 184
         },
         {
           "d": "10-09",
-          "s": 841
+          "s": 184
         },
         {
           "d": "10-10",
-          "s": 867
+          "s": 184
         },
         {
           "d": "10-11",
-          "s": 896
+          "s": 184
         },
         {
           "d": "10-12",
-          "s": 923
+          "s": 184
         },
         {
           "d": "10-13",
-          "s": 940
+          "s": 184
         },
         {
           "d": "10-14",
-          "s": 970
+          "s": 184
         },
         {
           "d": "10-15",
-          "s": 994
+          "s": 184
         },
         {
           "d": "10-16",
-          "s": 994
+          "s": 184
         },
         {
           "d": "10-17",
-          "s": 994
+          "s": 184
         },
         {
           "d": "10-18",
-          "s": 994
+          "s": 184
         },
         {
           "d": "10-19",
-          "s": 994
+          "s": 193
+        },
+        {
+          "d": "10-20",
+          "s": 200
         }
       ]
     },
     "score": {
-      "score": 65.59,
+      "score": 69.21,
       "breakdown": {
-        "vel": 59,
-        "acc": 34,
-        "health": 57,
-        "fresh": 82,
-        "signal": 70
+        "vel": 36,
+        "acc": 91,
+        "health": 53,
+        "fresh": 96,
+        "signal": 100
       },
-      "stage": "early",
-      "stage_multiplier": 1.2,
+      "stage": "mid_early",
+      "stage_multiplier": 1.1,
       "confidence": 1.0,
-      "base_score": 54.66,
-      "explanation": "fauxnix 是 TypeScript 开源项目，主打「Run Linux-style commands on Windows via deterministic bash→PowerShell translation. No VM, no WSL. MCP server + CLI built for AI agents (Claude Code, Codex, OpenCode...). GNU-style output, bash-style errors, UTF-8/GBK handled.」；处于增长早期，本周涨速 7.7 star/天；开发活跃。"
+      "base_score": 62.92,
+      "explanation": "horizon 是 Rust 开源项目，主打「Minecraft: Java Edition 26.3 rewritten from scratch in Rust, checked against vanilla with 281 differential harnesses. Get it with the Horizon launcher.」；处于中早期增长，涨速在加快；项目元数据完整、开发活跃。"
     }
   }
 ]
