@@ -1,163 +1,164 @@
 [
   {
     "repo": {
-      "owner": "wangmiaozero",
-      "name": "pi-harness",
-      "full_name": "wangmiaozero/pi-harness",
-      "description": "The operational superset of Pi Coding Agent — everything Pi, plus observability, governance, recovery, evaluation and multi-agent orchestration. Pi Coding Agent 的运维超集——完整继承 Pi 的核心能力，并进一步扩展可观测性、治理、故障恢复、评估和多 Agent 编排。",
+      "owner": "ling-stack-org",
+      "name": "ling-stack",
+      "full_name": "ling-stack-org/ling-stack",
+      "description": "Local-first AI teammate workspace. Bring your own models and keep project conversations, tool approvals, and results together.",
       "stars": 998,
-      "forks": 24,
-      "open_issues": 0,
-      "created_at": "2026-08-20T12:29:47+00:00",
-      "pushed_at": "2026-10-20T03:22:50+00:00",
-      "updated_at": "2026-10-20T07:01:55+00:00",
+      "forks": 100,
+      "open_issues": 1,
+      "created_at": "2026-05-20T04:49:54+00:00",
+      "pushed_at": "2026-10-21T08:17:59+00:00",
+      "updated_at": "2026-10-21T10:16:02+00:00",
       "topics": [
-        "agent-harness",
-        "agent-observability",
+        "agent",
         "agent-orchestration",
-        "ai-agent",
-        "coding-agent",
-        "desktop-app",
+        "agent-skills",
+        "agentic-ai",
+        "ai",
+        "ai-agents",
+        "ai-teammates",
+        "ai-workspace",
+        "anthropic",
         "developer-tools",
         "electron",
         "llm",
+        "local-first",
         "mcp",
         "multi-agent",
-        "pi",
-        "pi-agent",
-        "pi-coding-agent",
-        "pi-harness",
-        "skills",
-        "typescript",
-        "vue3"
+        "multi-model",
+        "openai",
+        "self-hosted",
+        "typescript"
       ],
       "language": "TypeScript",
-      "license": "AGPL-3.0",
+      "license": "MIT",
       "homepage": null,
-      "html_url": "https://github.com/wangmiaozero/pi-harness",
+      "html_url": "https://github.com/ling-stack-org/ling-stack",
       "default_branch": "main",
       "archived": false,
       "search_score": 1.0,
-      "stars_7d_ago": 753,
+      "stars_7d_ago": 855,
       "star_series": [
         {
-          "d": "09-21",
-          "s": 753
-        },
-        {
           "d": "09-22",
-          "s": 753
+          "s": 855
         },
         {
           "d": "09-23",
-          "s": 753
+          "s": 855
         },
         {
           "d": "09-24",
-          "s": 753
+          "s": 855
         },
         {
           "d": "09-25",
-          "s": 753
+          "s": 855
         },
         {
           "d": "09-26",
-          "s": 753
+          "s": 855
         },
         {
           "d": "09-27",
-          "s": 753
+          "s": 855
         },
         {
           "d": "09-28",
-          "s": 753
+          "s": 855
         },
         {
           "d": "09-29",
-          "s": 753
+          "s": 855
         },
         {
           "d": "09-30",
-          "s": 753
+          "s": 855
         },
         {
           "d": "10-01",
-          "s": 753
+          "s": 855
         },
         {
           "d": "10-02",
-          "s": 753
+          "s": 855
         },
         {
           "d": "10-03",
-          "s": 753
+          "s": 855
         },
         {
           "d": "10-04",
-          "s": 753
+          "s": 855
         },
         {
           "d": "10-05",
-          "s": 753
+          "s": 855
         },
         {
           "d": "10-06",
-          "s": 753
+          "s": 855
         },
         {
           "d": "10-07",
-          "s": 753
+          "s": 855
         },
         {
           "d": "10-08",
-          "s": 753
+          "s": 855
         },
         {
           "d": "10-09",
-          "s": 753
+          "s": 855
         },
         {
           "d": "10-10",
-          "s": 753
+          "s": 855
         },
         {
           "d": "10-11",
-          "s": 753
+          "s": 855
         },
         {
           "d": "10-12",
-          "s": 753
+          "s": 855
         },
         {
           "d": "10-13",
-          "s": 753
+          "s": 855
         },
         {
           "d": "10-14",
-          "s": 753
+          "s": 855
         },
         {
           "d": "10-15",
-          "s": 753
+          "s": 855
         },
         {
           "d": "10-16",
-          "s": 981
+          "s": 855
         },
         {
           "d": "10-17",
-          "s": 992
+          "s": 855
         },
         {
           "d": "10-18",
-          "s": 993
+          "s": 855
         },
         {
           "d": "10-19",
-          "s": 997
+          "s": 871
         },
         {
           "d": "10-20",
+          "s": 951
+        },
+        {
+          "d": "10-21",
           "s": 998
         }
       ]
@@ -165,323 +166,657 @@
     "score": {
       "score": 100.0,
       "breakdown": {
-        "vel": 100,
+        "vel": 87,
         "acc": 99,
-        "health": 66,
-        "fresh": 84,
+        "health": 93,
+        "fresh": 58,
         "signal": 70
       },
       "stage": "early",
       "stage_multiplier": 1.2,
       "confidence": 1.0,
-      "base_score": 86.44,
-      "explanation": "pi-harness 是 TypeScript 开源项目，主打「The operational superset of Pi Coding Agent — everything Pi, plus observability, governance, recovery, evaluation and multi-agent orchestration. Pi Coding Agent 的运维超集——完整继承 Pi 的核心能力，并进一步扩展可观测性、治理、故障恢复、评估和多 Agent 编排。」；处于增长早期，本周涨速 35 star/天，涨速在加快；开发活跃。"
+      "base_score": 83.98,
+      "explanation": "ling-stack 是 TypeScript 开源项目，主打「Local-first AI teammate workspace. Bring your own models and keep project conversations, tool approvals, and results together.」；处于增长早期，本周涨速 20 star/天，涨速在加快；社区健康（fork/star 比 10.0%，1 个 open issue）。"
     }
   },
   {
     "repo": {
-      "owner": "datadrivenconstruction",
-      "name": "OpenConstructionERP",
-      "full_name": "datadrivenconstruction/OpenConstructionERP",
-      "description": "Open-source construction ERP - BOQ, PDF/CAD/BIM takeoff, AI cost matching, 293 guided cases. 120,000+ priced positions, 44 languages, 190+ modules, cost data for 40+ markets. AGPL-3.0. pip install openconstructionerp",
-      "stars": 998,
-      "forks": 317,
-      "open_issues": 2,
-      "created_at": "2026-04-02T14:59:02+00:00",
-      "pushed_at": "2026-10-20T09:27:03+00:00",
-      "updated_at": "2026-10-20T09:27:09+00:00",
+      "owner": "ayaka-notes",
+      "name": "ayakaleaf-pro",
+      "full_name": "ayaka-notes/ayakaleaf-pro",
+      "description": "The ultimate open-source Overleaf extension and alternative: a free, self-hosted, drop-in replacement for Overleaf Community Edition with nearly all Pro feature—SSO, AI Assistant, Git(Hub/Lab）/ Dropbox sync, track changes, sandboxed compilation, Zotero, Mendeley and more. Formerly @Ayaka-notes Overleaf Pro. Docs: https://ayakaleaf-pro.ayaka.space",
+      "stars": 997,
+      "forks": 71,
+      "open_issues": 11,
+      "created_at": "2026-01-22T06:41:44+00:00",
+      "pushed_at": "2026-10-20T16:45:46+00:00",
+      "updated_at": "2026-10-21T10:11:49+00:00",
       "topics": [
         "ai",
-        "bim",
-        "boq",
-        "cad",
-        "construction",
-        "construction-estimating",
-        "construction-management",
-        "cost-estimation",
-        "cost-management",
-        "din276",
-        "erp",
-        "fastapi",
-        "gaeb",
-        "ifc",
-        "open-source",
-        "postgresql",
-        "python",
-        "quantity-surveying",
-        "self-hosted",
-        "takeoff"
+        "ai-latex",
+        "ayakaleaf",
+        "ayakaleaf-pro",
+        "docker",
+        "editor",
+        "git-bridge",
+        "latex",
+        "latex-editor",
+        "overleaf",
+        "overleaf-alternative",
+        "overleaf-pro",
+        "server-pro",
+        "sharelatex"
       ],
-      "language": "TypeScript",
+      "language": "JavaScript",
       "license": "AGPL-3.0",
-      "homepage": "https://openconstructionerp.com",
-      "html_url": "https://github.com/datadrivenconstruction/OpenConstructionERP",
-      "default_branch": "main",
+      "homepage": "https://ayakaleaf-home.ayaka.space/",
+      "html_url": "https://github.com/ayaka-notes/ayakaleaf-pro",
+      "default_branch": "server-pro",
       "archived": false,
       "search_score": 1.0,
-      "stars_7d_ago": 964,
+      "stars_7d_ago": 757,
       "star_series": [
         {
-          "d": "09-21",
-          "s": 964
-        },
-        {
           "d": "09-22",
-          "s": 964
+          "s": 757
         },
         {
           "d": "09-23",
-          "s": 964
+          "s": 757
         },
         {
           "d": "09-24",
-          "s": 964
+          "s": 757
         },
         {
           "d": "09-25",
-          "s": 964
+          "s": 757
         },
         {
           "d": "09-26",
-          "s": 964
+          "s": 757
         },
         {
           "d": "09-27",
-          "s": 964
+          "s": 757
         },
         {
           "d": "09-28",
-          "s": 964
+          "s": 757
         },
         {
           "d": "09-29",
-          "s": 964
+          "s": 757
         },
         {
           "d": "09-30",
-          "s": 964
+          "s": 757
         },
         {
           "d": "10-01",
-          "s": 964
+          "s": 757
         },
         {
           "d": "10-02",
-          "s": 964
+          "s": 757
         },
         {
           "d": "10-03",
-          "s": 964
+          "s": 757
         },
         {
           "d": "10-04",
-          "s": 964
+          "s": 757
         },
         {
           "d": "10-05",
-          "s": 964
+          "s": 757
         },
         {
           "d": "10-06",
-          "s": 964
+          "s": 757
         },
         {
           "d": "10-07",
-          "s": 964
+          "s": 757
         },
         {
           "d": "10-08",
-          "s": 964
+          "s": 757
         },
         {
           "d": "10-09",
-          "s": 964
+          "s": 757
         },
         {
           "d": "10-10",
-          "s": 964
+          "s": 757
         },
         {
           "d": "10-11",
-          "s": 964
+          "s": 757
         },
         {
           "d": "10-12",
-          "s": 964
+          "s": 757
         },
         {
           "d": "10-13",
-          "s": 964
+          "s": 757
         },
         {
           "d": "10-14",
-          "s": 964
+          "s": 757
         },
         {
           "d": "10-15",
-          "s": 968
+          "s": 757
         },
         {
           "d": "10-16",
-          "s": 974
+          "s": 757
         },
         {
           "d": "10-17",
-          "s": 982
+          "s": 757
         },
         {
           "d": "10-18",
-          "s": 987
+          "s": 870
         },
         {
           "d": "10-19",
-          "s": 993
+          "s": 881
         },
         {
           "d": "10-20",
-          "s": 998
+          "s": 943
+        },
+        {
+          "d": "10-21",
+          "s": 997
         }
       ]
     },
     "score": {
-      "score": 79.47,
+      "score": 92.2,
       "breakdown": {
-        "vel": 53,
+        "vel": 100,
         "acc": 99,
-        "health": 100,
-        "fresh": 45,
+        "health": 81,
+        "fresh": 25,
+        "signal": 85
+      },
+      "stage": "early",
+      "stage_multiplier": 1.2,
+      "confidence": 1.0,
+      "base_score": 76.84,
+      "explanation": "ayakaleaf-pro 是 JavaScript 开源项目，主打「The ultimate open-source Overleaf extension and alternative: a free, self-hosted, drop-in replacement for Overleaf Community Edition with nearly all Pro feature—SSO, AI Assistant, Git(Hub/Lab）/ Dropbox sync, track changes, sandboxed compilation, Zotero, Mendeley and more. Formerly @Ayaka-notes Overleaf Pro. Docs: https://ayakaleaf-pro.ayaka.space」；处于增长早期，本周涨速 34 star/天，涨速在加快；社区健康（fork/star 比 7.1%，11 个 open issue）、项目元数据完整。"
+    }
+  },
+  {
+    "repo": {
+      "owner": "WhiteTowerAI",
+      "name": "ohmygame",
+      "full_name": "WhiteTowerAI/ohmygame",
+      "description": "The open-source studio for making games with AI. Your own one-person game studio. Everything you need to make games with AI, in one app. Game canvas.  Bring your own key.",
+      "stars": 993,
+      "forks": 117,
+      "open_issues": 25,
+      "created_at": "2026-08-11T02:24:24+00:00",
+      "pushed_at": "2026-10-21T10:47:25+00:00",
+      "updated_at": "2026-10-21T10:22:00+00:00",
+      "topics": [
+        "ai-coding",
+        "ai-coding-agent",
+        "ai-game-design",
+        "ai-game-dev",
+        "ai-game-development",
+        "ai-image",
+        "ai-video",
+        "canvas",
+        "game-ai",
+        "game-assets",
+        "game-development",
+        "gamedev",
+        "open-game",
+        "open-google-playground",
+        "pi-agent",
+        "pi-coding-agent-theme"
+      ],
+      "language": "TypeScript",
+      "license": "Apache-2.0",
+      "homepage": "https://ohmygame.ai/",
+      "html_url": "https://github.com/WhiteTowerAI/ohmygame",
+      "default_branch": "main",
+      "archived": false,
+      "search_score": 1.0,
+      "stars_7d_ago": 954,
+      "star_series": [
+        {
+          "d": "09-22",
+          "s": 954
+        },
+        {
+          "d": "09-23",
+          "s": 954
+        },
+        {
+          "d": "09-24",
+          "s": 954
+        },
+        {
+          "d": "09-25",
+          "s": 954
+        },
+        {
+          "d": "09-26",
+          "s": 954
+        },
+        {
+          "d": "09-27",
+          "s": 954
+        },
+        {
+          "d": "09-28",
+          "s": 954
+        },
+        {
+          "d": "09-29",
+          "s": 954
+        },
+        {
+          "d": "09-30",
+          "s": 954
+        },
+        {
+          "d": "10-01",
+          "s": 954
+        },
+        {
+          "d": "10-02",
+          "s": 954
+        },
+        {
+          "d": "10-03",
+          "s": 954
+        },
+        {
+          "d": "10-04",
+          "s": 954
+        },
+        {
+          "d": "10-05",
+          "s": 954
+        },
+        {
+          "d": "10-06",
+          "s": 954
+        },
+        {
+          "d": "10-07",
+          "s": 954
+        },
+        {
+          "d": "10-08",
+          "s": 954
+        },
+        {
+          "d": "10-09",
+          "s": 954
+        },
+        {
+          "d": "10-10",
+          "s": 954
+        },
+        {
+          "d": "10-11",
+          "s": 954
+        },
+        {
+          "d": "10-12",
+          "s": 954
+        },
+        {
+          "d": "10-13",
+          "s": 954
+        },
+        {
+          "d": "10-14",
+          "s": 954
+        },
+        {
+          "d": "10-15",
+          "s": 954
+        },
+        {
+          "d": "10-16",
+          "s": 954
+        },
+        {
+          "d": "10-17",
+          "s": 954
+        },
+        {
+          "d": "10-18",
+          "s": 954
+        },
+        {
+          "d": "10-19",
+          "s": 956
+        },
+        {
+          "d": "10-20",
+          "s": 980
+        },
+        {
+          "d": "10-21",
+          "s": 993
+        }
+      ]
+    },
+    "score": {
+      "score": 85.8,
+      "breakdown": {
+        "vel": 54,
+        "acc": 99,
+        "health": 95,
+        "fresh": 81,
         "signal": 85
       },
       "stage": "mid_early",
       "stage_multiplier": 1.1,
       "confidence": 1.0,
-      "base_score": 72.24,
-      "explanation": "OpenConstructionERP 是 TypeScript 开源项目，主打「Open-source construction ERP - BOQ, PDF/CAD/BIM takeoff, AI cost matching, 293 guided cases. 120,000+ priced positions, 44 languages, 190+ modules, cost data for 40+ markets. AGPL-3.0. pip install openconstructionerp」；处于中早期增长，本周涨速 4.9 star/天，涨速在加快；社区健康（fork/star 比 31.8%，2 个 open issue）、项目元数据完整。"
+      "base_score": 78.0,
+      "explanation": "ohmygame 是 TypeScript 开源项目，主打「The open-source studio for making games with AI. Your own one-person game studio. Everything you need to make games with AI, in one app. Game canvas.  Bring your own key.」；处于中早期增长，本周涨速 5.6 star/天，涨速在加快；社区健康（fork/star 比 11.8%，25 个 open issue）、项目元数据完整、开发活跃。"
     }
   },
   {
     "repo": {
-      "owner": "hanliang97",
-      "name": "MatrixMedia",
-      "full_name": "hanliang97/MatrixMedia",
-      "description": "视频矩阵工具 vue electorn puppeteer 批量发布 视频到各个视频平台 自媒体 矩阵 抖音 小红书 头条 视频号 快手等 ai 自动化 cli",
-      "stars": 998,
-      "forks": 134,
-      "open_issues": 8,
-      "created_at": "2026-03-21T02:53:24+00:00",
-      "pushed_at": "2026-10-17T04:31:48+00:00",
-      "updated_at": "2026-10-20T03:49:11+00:00",
+      "owner": "Edwardxlai",
+      "name": "easyread",
+      "full_name": "Edwardxlai/easyread",
+      "description": "把英文论文读成舒服的中文：本地 PDF 论文翻译、原文对照、边读边问 AI、文献管理。Read English papers in comfortable Chinese.",
+      "stars": 996,
+      "forks": 80,
+      "open_issues": 6,
+      "created_at": "2026-09-30T12:52:24+00:00",
+      "pushed_at": "2026-10-20T15:22:33+00:00",
+      "updated_at": "2026-10-21T10:14:12+00:00",
       "topics": [
-        "autovideo",
-        "dsh-plugin",
-        "hermes-skill",
-        "video",
-        "workbuddy-skill"
+        "academic",
+        "arxiv",
+        "chinese",
+        "claude-code",
+        "codex",
+        "electron",
+        "llm",
+        "paper-reading",
+        "pdf-translator",
+        "reference-manager",
+        "research-tool",
+        "translation"
       ],
-      "language": "JavaScript",
-      "license": "GPL-2.0",
-      "homepage": "https://hanliang97.github.io/MatrixMedia/",
-      "html_url": "https://github.com/hanliang97/MatrixMedia",
+      "language": "Python",
+      "license": "MIT",
+      "homepage": "https://edwardxlai.github.io/easyread/",
+      "html_url": "https://github.com/Edwardxlai/easyread",
       "default_branch": "main",
       "archived": false,
       "search_score": 1.0,
-      "stars_7d_ago": 961,
+      "stars_7d_ago": 952,
       "star_series": [
         {
-          "d": "09-21",
-          "s": 898
-        },
-        {
           "d": "09-22",
-          "s": 898
+          "s": 893
         },
         {
           "d": "09-23",
-          "s": 898
+          "s": 893
         },
         {
           "d": "09-24",
-          "s": 898
+          "s": 893
         },
         {
           "d": "09-25",
-          "s": 898
+          "s": 893
         },
         {
           "d": "09-26",
-          "s": 898
+          "s": 893
         },
         {
           "d": "09-27",
-          "s": 898
+          "s": 893
         },
         {
           "d": "09-28",
-          "s": 898
+          "s": 893
         },
         {
           "d": "09-29",
-          "s": 898
+          "s": 893
         },
         {
           "d": "09-30",
-          "s": 898
+          "s": 893
         },
         {
           "d": "10-01",
-          "s": 898
+          "s": 893
         },
         {
           "d": "10-02",
-          "s": 898
+          "s": 893
         },
         {
           "d": "10-03",
-          "s": 900
+          "s": 893
         },
         {
           "d": "10-04",
-          "s": 903
+          "s": 893
         },
         {
           "d": "10-05",
-          "s": 905
+          "s": 893
         },
         {
           "d": "10-06",
-          "s": 917
+          "s": 893
         },
         {
           "d": "10-07",
-          "s": 928
+          "s": 893
         },
         {
           "d": "10-08",
-          "s": 934
+          "s": 893
         },
         {
           "d": "10-09",
-          "s": 942
+          "s": 893
         },
         {
           "d": "10-10",
-          "s": 947
+          "s": 893
         },
         {
           "d": "10-11",
-          "s": 947
+          "s": 893
         },
         {
           "d": "10-12",
-          "s": 953
+          "s": 905
         },
         {
           "d": "10-13",
-          "s": 960
+          "s": 925
         },
         {
           "d": "10-14",
+          "s": 938
+        },
+        {
+          "d": "10-15",
+          "s": 952
+        },
+        {
+          "d": "10-16",
           "s": 961
+        },
+        {
+          "d": "10-17",
+          "s": 970
+        },
+        {
+          "d": "10-18",
+          "s": 977
+        },
+        {
+          "d": "10-19",
+          "s": 981
+        },
+        {
+          "d": "10-20",
+          "s": 990
+        },
+        {
+          "d": "10-21",
+          "s": 996
+        }
+      ]
+    },
+    "score": {
+      "score": 78.99,
+      "breakdown": {
+        "vel": 56,
+        "acc": 44,
+        "health": 85,
+        "fresh": 95,
+        "signal": 100
+      },
+      "stage": "early",
+      "stage_multiplier": 1.2,
+      "confidence": 1.0,
+      "base_score": 65.82,
+      "explanation": "easyread 是 Python 开源项目，主打「把英文论文读成舒服的中文：本地 PDF 论文翻译、原文对照、边读边问 AI、文献管理。Read English papers in comfortable Chinese.」；处于增长早期，本周涨速 6.3 star/天；社区健康（fork/star 比 8.0%，6 个 open issue）、项目元数据完整、开发活跃。"
+    }
+  },
+  {
+    "repo": {
+      "owner": "worm128",
+      "name": "AI-YinMei",
+      "full_name": "worm128/AI-YinMei",
+      "description": "AI吟美-人工智能主播-Vtuber-桌宠-智能体",
+      "stars": 998,
+      "forks": 139,
+      "open_issues": 2,
+      "created_at": "2024-02-18T06:54:18+00:00",
+      "pushed_at": "2026-10-21T07:48:29+00:00",
+      "updated_at": "2026-10-21T07:48:33+00:00",
+      "topics": [],
+      "language": "Python",
+      "license": "BSD-2-Clause",
+      "homepage": "https://www.yinmei.vip",
+      "html_url": "https://github.com/worm128/AI-YinMei",
+      "default_branch": "master",
+      "archived": false,
+      "search_score": 1.0,
+      "stars_7d_ago": 971,
+      "star_series": [
+        {
+          "d": "09-22",
+          "s": 961
+        },
+        {
+          "d": "09-23",
+          "s": 962
+        },
+        {
+          "d": "09-24",
+          "s": 962
+        },
+        {
+          "d": "09-25",
+          "s": 962
+        },
+        {
+          "d": "09-26",
+          "s": 962
+        },
+        {
+          "d": "09-27",
+          "s": 963
+        },
+        {
+          "d": "09-28",
+          "s": 964
+        },
+        {
+          "d": "09-29",
+          "s": 965
+        },
+        {
+          "d": "09-30",
+          "s": 965
+        },
+        {
+          "d": "10-01",
+          "s": 966
+        },
+        {
+          "d": "10-02",
+          "s": 966
+        },
+        {
+          "d": "10-03",
+          "s": 966
+        },
+        {
+          "d": "10-04",
+          "s": 966
+        },
+        {
+          "d": "10-05",
+          "s": 966
+        },
+        {
+          "d": "10-06",
+          "s": 967
+        },
+        {
+          "d": "10-07",
+          "s": 967
+        },
+        {
+          "d": "10-08",
+          "s": 967
+        },
+        {
+          "d": "10-09",
+          "s": 968
+        },
+        {
+          "d": "10-10",
+          "s": 968
+        },
+        {
+          "d": "10-11",
+          "s": 968
+        },
+        {
+          "d": "10-12",
+          "s": 969
+        },
+        {
+          "d": "10-13",
+          "s": 969
+        },
+        {
+          "d": "10-14",
+          "s": 969
         },
         {
           "d": "10-15",
@@ -489,383 +824,44 @@
         },
         {
           "d": "10-16",
-          "s": 977
+          "s": 972
         },
         {
           "d": "10-17",
-          "s": 983
+          "s": 972
         },
         {
           "d": "10-18",
-          "s": 984
+          "s": 972
         },
         {
           "d": "10-19",
-          "s": 995
+          "s": 973
         },
         {
           "d": "10-20",
+          "s": 995
+        },
+        {
+          "d": "10-21",
           "s": 998
         }
       ]
     },
     "score": {
-      "score": 75.13,
+      "score": 40.88,
       "breakdown": {
-        "vel": 56,
-        "acc": 53,
-        "health": 99,
-        "fresh": 42,
-        "signal": 100
-      },
-      "stage": "early",
-      "stage_multiplier": 1.2,
-      "confidence": 1.0,
-      "base_score": 62.61,
-      "explanation": "MatrixMedia 是 JavaScript 开源项目，主打「视频矩阵工具 vue electorn puppeteer 批量发布 视频到各个视频平台 自媒体 矩阵 抖音 小红书 头条 视频号 快手等 ai 自动化 cli」；处于增长早期，本周涨速 5.3 star/天；社区健康（fork/star 比 13.4%，8 个 open issue）、项目元数据完整。"
-    }
-  },
-  {
-    "repo": {
-      "owner": "murray17",
-      "name": "rovai-ai",
-      "full_name": "murray17/rovai-ai",
-      "description": "Desktop and web workspace for lasting teams of coding agents, with shared conversations, task delegation, and collaborative memory.",
-      "stars": 200,
-      "forks": 40,
-      "open_issues": 12,
-      "created_at": "2026-07-17T05:39:30+00:00",
-      "pushed_at": "2026-10-20T10:26:30+00:00",
-      "updated_at": "2026-10-20T10:26:36+00:00",
-      "topics": [
-        "acp",
-        "agent-orchestration",
-        "ai-team",
-        "claude-code",
-        "codex",
-        "coding-agents",
-        "collaborative-ai",
-        "developer-tools",
-        "multi-agent",
-        "rpg"
-      ],
-      "language": "Rust",
-      "license": "MIT",
-      "homepage": "https://rovai.dev/",
-      "html_url": "https://github.com/murray17/rovai-ai",
-      "default_branch": "main",
-      "archived": false,
-      "search_score": 1.0,
-      "stars_7d_ago": 186,
-      "star_series": [
-        {
-          "d": "09-21",
-          "s": 186
-        },
-        {
-          "d": "09-22",
-          "s": 186
-        },
-        {
-          "d": "09-23",
-          "s": 186
-        },
-        {
-          "d": "09-24",
-          "s": 186
-        },
-        {
-          "d": "09-25",
-          "s": 186
-        },
-        {
-          "d": "09-26",
-          "s": 186
-        },
-        {
-          "d": "09-27",
-          "s": 186
-        },
-        {
-          "d": "09-28",
-          "s": 186
-        },
-        {
-          "d": "09-29",
-          "s": 186
-        },
-        {
-          "d": "09-30",
-          "s": 186
-        },
-        {
-          "d": "10-01",
-          "s": 186
-        },
-        {
-          "d": "10-02",
-          "s": 186
-        },
-        {
-          "d": "10-03",
-          "s": 186
-        },
-        {
-          "d": "10-04",
-          "s": 186
-        },
-        {
-          "d": "10-05",
-          "s": 186
-        },
-        {
-          "d": "10-06",
-          "s": 186
-        },
-        {
-          "d": "10-07",
-          "s": 186
-        },
-        {
-          "d": "10-08",
-          "s": 186
-        },
-        {
-          "d": "10-09",
-          "s": 186
-        },
-        {
-          "d": "10-10",
-          "s": 186
-        },
-        {
-          "d": "10-11",
-          "s": 186
-        },
-        {
-          "d": "10-12",
-          "s": 186
-        },
-        {
-          "d": "10-13",
-          "s": 186
-        },
-        {
-          "d": "10-14",
-          "s": 186
-        },
-        {
-          "d": "10-15",
-          "s": 186
-        },
-        {
-          "d": "10-16",
-          "s": 187
-        },
-        {
-          "d": "10-17",
-          "s": 191
-        },
-        {
-          "d": "10-18",
-          "s": 192
-        },
-        {
-          "d": "10-19",
-          "s": 199
-        },
-        {
-          "d": "10-20",
-          "s": 200
-        }
-      ]
-    },
-    "score": {
-      "score": 71.69,
-      "breakdown": {
-        "vel": 33,
-        "acc": 88,
-        "health": 90,
-        "fresh": 74,
-        "signal": 100
+        "vel": 45,
+        "acc": 96,
+        "health": 100,
+        "fresh": 0,
+        "signal": 70
       },
       "stage": "mid_early",
       "stage_multiplier": 1.1,
       "confidence": 1.0,
-      "base_score": 65.17,
-      "explanation": "rovai-ai 是 Rust 开源项目，主打「Desktop and web workspace for lasting teams of coding agents, with shared conversations, task delegation, and collaborative memory.」；处于中早期增长，涨速在加快；社区健康（fork/star 比 20.0%，12 个 open issue）、项目元数据完整、开发活跃。"
-    }
-  },
-  {
-    "repo": {
-      "owner": "ludovic111",
-      "name": "horizon",
-      "full_name": "ludovic111/horizon",
-      "description": "Minecraft: Java Edition 26.3 rewritten from scratch in Rust, checked against vanilla with 281 differential harnesses. Get it with the Horizon launcher.",
-      "stars": 200,
-      "forks": 18,
-      "open_issues": 123,
-      "created_at": "2026-10-03T17:08:48+00:00",
-      "pushed_at": "2026-10-19T16:21:40+00:00",
-      "updated_at": "2026-10-20T09:08:27+00:00",
-      "topics": [
-        "differential-testing",
-        "game-engine",
-        "gamedev",
-        "linux",
-        "minecraft",
-        "minecraft-java",
-        "reimplementation",
-        "rust",
-        "voxel",
-        "vulkan",
-        "wgpu"
-      ],
-      "language": "Rust",
-      "license": "MIT",
-      "homepage": "https://playhorizon.dev",
-      "html_url": "https://github.com/ludovic111/horizon",
-      "default_branch": "main",
-      "archived": false,
-      "search_score": 1.0,
-      "stars_7d_ago": 184,
-      "star_series": [
-        {
-          "d": "09-21",
-          "s": 184
-        },
-        {
-          "d": "09-22",
-          "s": 184
-        },
-        {
-          "d": "09-23",
-          "s": 184
-        },
-        {
-          "d": "09-24",
-          "s": 184
-        },
-        {
-          "d": "09-25",
-          "s": 184
-        },
-        {
-          "d": "09-26",
-          "s": 184
-        },
-        {
-          "d": "09-27",
-          "s": 184
-        },
-        {
-          "d": "09-28",
-          "s": 184
-        },
-        {
-          "d": "09-29",
-          "s": 184
-        },
-        {
-          "d": "09-30",
-          "s": 184
-        },
-        {
-          "d": "10-01",
-          "s": 184
-        },
-        {
-          "d": "10-02",
-          "s": 184
-        },
-        {
-          "d": "10-03",
-          "s": 184
-        },
-        {
-          "d": "10-04",
-          "s": 184
-        },
-        {
-          "d": "10-05",
-          "s": 184
-        },
-        {
-          "d": "10-06",
-          "s": 184
-        },
-        {
-          "d": "10-07",
-          "s": 184
-        },
-        {
-          "d": "10-08",
-          "s": 184
-        },
-        {
-          "d": "10-09",
-          "s": 184
-        },
-        {
-          "d": "10-10",
-          "s": 184
-        },
-        {
-          "d": "10-11",
-          "s": 184
-        },
-        {
-          "d": "10-12",
-          "s": 184
-        },
-        {
-          "d": "10-13",
-          "s": 184
-        },
-        {
-          "d": "10-14",
-          "s": 184
-        },
-        {
-          "d": "10-15",
-          "s": 184
-        },
-        {
-          "d": "10-16",
-          "s": 184
-        },
-        {
-          "d": "10-17",
-          "s": 184
-        },
-        {
-          "d": "10-18",
-          "s": 184
-        },
-        {
-          "d": "10-19",
-          "s": 193
-        },
-        {
-          "d": "10-20",
-          "s": 200
-        }
-      ]
-    },
-    "score": {
-      "score": 69.21,
-      "breakdown": {
-        "vel": 36,
-        "acc": 91,
-        "health": 53,
-        "fresh": 96,
-        "signal": 100
-      },
-      "stage": "mid_early",
-      "stage_multiplier": 1.1,
-      "confidence": 1.0,
-      "base_score": 62.92,
-      "explanation": "horizon 是 Rust 开源项目，主打「Minecraft: Java Edition 26.3 rewritten from scratch in Rust, checked against vanilla with 281 differential harnesses. Get it with the Horizon launcher.」；处于中早期增长，涨速在加快；项目元数据完整、开发活跃。"
+      "base_score": 37.17,
+      "explanation": "AI-YinMei 是 Python 开源项目，主打「AI吟美-人工智能主播-Vtuber-桌宠-智能体」；处于中早期增长，本周涨速 3.9 star/天，涨速在加快；社区健康（fork/star 比 13.9%，2 个 open issue）。"
     }
   }
 ]
