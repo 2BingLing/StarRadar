@@ -1,810 +1,267 @@
 [
   {
     "repo": {
-      "owner": "ling-stack-org",
-      "name": "ling-stack",
-      "full_name": "ling-stack-org/ling-stack",
-      "description": "Local-first AI teammate workspace. Bring your own models and keep project conversations, tool approvals, and results together.",
-      "stars": 998,
-      "forks": 100,
+      "owner": "reason-machines",
+      "name": "reason-network",
+      "full_name": "reason-machines/reason-network",
+      "description": "Reason Network: your team's coding agents, talking to each other. The engine behind `reason network`.",
+      "stars": 1000,
+      "forks": 82,
       "open_issues": 1,
-      "created_at": "2026-05-20T04:49:54+00:00",
-      "pushed_at": "2026-10-21T08:17:59+00:00",
-      "updated_at": "2026-10-21T10:16:02+00:00",
+      "created_at": "2026-10-16T15:34:34+00:00",
+      "pushed_at": "2026-10-22T11:04:50+00:00",
+      "updated_at": "2026-10-22T11:04:52+00:00",
       "topics": [
-        "agent",
-        "agent-orchestration",
-        "agent-skills",
-        "agentic-ai",
-        "ai",
-        "ai-agents",
-        "ai-teammates",
-        "ai-workspace",
-        "anthropic",
-        "developer-tools",
-        "electron",
-        "llm",
-        "local-first",
+        "coding-agents",
+        "iroh",
         "mcp",
-        "multi-agent",
-        "multi-model",
-        "openai",
-        "self-hosted",
-        "typescript"
+        "peer-to-peer",
+        "reason"
       ],
-      "language": "TypeScript",
-      "license": "MIT",
-      "homepage": null,
-      "html_url": "https://github.com/ling-stack-org/ling-stack",
+      "language": "Rust",
+      "license": "Apache-2.0",
+      "homepage": "https://reasonmachines.com",
+      "html_url": "https://github.com/reason-machines/reason-network",
       "default_branch": "main",
       "archived": false,
       "search_score": 1.0,
-      "stars_7d_ago": 855,
+      "stars_7d_ago": 843,
       "star_series": [
         {
-          "d": "09-22",
-          "s": 855
-        },
-        {
           "d": "09-23",
-          "s": 855
+          "s": 843
         },
         {
           "d": "09-24",
-          "s": 855
+          "s": 843
         },
         {
           "d": "09-25",
-          "s": 855
+          "s": 843
         },
         {
           "d": "09-26",
-          "s": 855
+          "s": 843
         },
         {
           "d": "09-27",
-          "s": 855
+          "s": 843
         },
         {
           "d": "09-28",
-          "s": 855
+          "s": 843
         },
         {
           "d": "09-29",
-          "s": 855
+          "s": 843
         },
         {
           "d": "09-30",
-          "s": 855
+          "s": 843
         },
         {
           "d": "10-01",
-          "s": 855
+          "s": 843
         },
         {
           "d": "10-02",
-          "s": 855
+          "s": 843
         },
         {
           "d": "10-03",
-          "s": 855
+          "s": 843
         },
         {
           "d": "10-04",
-          "s": 855
+          "s": 843
         },
         {
           "d": "10-05",
-          "s": 855
+          "s": 843
         },
         {
           "d": "10-06",
-          "s": 855
+          "s": 843
         },
         {
           "d": "10-07",
-          "s": 855
+          "s": 843
         },
         {
           "d": "10-08",
-          "s": 855
+          "s": 843
         },
         {
           "d": "10-09",
-          "s": 855
+          "s": 843
         },
         {
           "d": "10-10",
-          "s": 855
+          "s": 843
         },
         {
           "d": "10-11",
-          "s": 855
+          "s": 843
         },
         {
           "d": "10-12",
-          "s": 855
+          "s": 843
         },
         {
           "d": "10-13",
-          "s": 855
+          "s": 843
         },
         {
           "d": "10-14",
-          "s": 855
+          "s": 843
         },
         {
           "d": "10-15",
-          "s": 855
+          "s": 843
         },
         {
           "d": "10-16",
-          "s": 855
+          "s": 843
         },
         {
           "d": "10-17",
-          "s": 855
+          "s": 843
         },
         {
           "d": "10-18",
-          "s": 855
+          "s": 843
         },
         {
           "d": "10-19",
-          "s": 871
+          "s": 843
         },
         {
           "d": "10-20",
-          "s": 951
+          "s": 843
         },
         {
           "d": "10-21",
-          "s": 998
+          "s": 912
+        },
+        {
+          "d": "10-22",
+          "s": 1000
         }
       ]
     },
     "score": {
       "score": 100.0,
       "breakdown": {
-        "vel": 87,
-        "acc": 99,
-        "health": 93,
-        "fresh": 58,
-        "signal": 70
-      },
-      "stage": "early",
-      "stage_multiplier": 1.2,
-      "confidence": 1.0,
-      "base_score": 83.98,
-      "explanation": "ling-stack 是 TypeScript 开源项目，主打「Local-first AI teammate workspace. Bring your own models and keep project conversations, tool approvals, and results together.」；处于增长早期，本周涨速 20 star/天，涨速在加快；社区健康（fork/star 比 10.0%，1 个 open issue）。"
-    }
-  },
-  {
-    "repo": {
-      "owner": "ayaka-notes",
-      "name": "ayakaleaf-pro",
-      "full_name": "ayaka-notes/ayakaleaf-pro",
-      "description": "The ultimate open-source Overleaf extension and alternative: a free, self-hosted, drop-in replacement for Overleaf Community Edition with nearly all Pro feature—SSO, AI Assistant, Git(Hub/Lab）/ Dropbox sync, track changes, sandboxed compilation, Zotero, Mendeley and more. Formerly @Ayaka-notes Overleaf Pro. Docs: https://ayakaleaf-pro.ayaka.space",
-      "stars": 997,
-      "forks": 71,
-      "open_issues": 11,
-      "created_at": "2026-01-22T06:41:44+00:00",
-      "pushed_at": "2026-10-20T16:45:46+00:00",
-      "updated_at": "2026-10-21T10:11:49+00:00",
-      "topics": [
-        "ai",
-        "ai-latex",
-        "ayakaleaf",
-        "ayakaleaf-pro",
-        "docker",
-        "editor",
-        "git-bridge",
-        "latex",
-        "latex-editor",
-        "overleaf",
-        "overleaf-alternative",
-        "overleaf-pro",
-        "server-pro",
-        "sharelatex"
-      ],
-      "language": "JavaScript",
-      "license": "AGPL-3.0",
-      "homepage": "https://ayakaleaf-home.ayaka.space/",
-      "html_url": "https://github.com/ayaka-notes/ayakaleaf-pro",
-      "default_branch": "server-pro",
-      "archived": false,
-      "search_score": 1.0,
-      "stars_7d_ago": 757,
-      "star_series": [
-        {
-          "d": "09-22",
-          "s": 757
-        },
-        {
-          "d": "09-23",
-          "s": 757
-        },
-        {
-          "d": "09-24",
-          "s": 757
-        },
-        {
-          "d": "09-25",
-          "s": 757
-        },
-        {
-          "d": "09-26",
-          "s": 757
-        },
-        {
-          "d": "09-27",
-          "s": 757
-        },
-        {
-          "d": "09-28",
-          "s": 757
-        },
-        {
-          "d": "09-29",
-          "s": 757
-        },
-        {
-          "d": "09-30",
-          "s": 757
-        },
-        {
-          "d": "10-01",
-          "s": 757
-        },
-        {
-          "d": "10-02",
-          "s": 757
-        },
-        {
-          "d": "10-03",
-          "s": 757
-        },
-        {
-          "d": "10-04",
-          "s": 757
-        },
-        {
-          "d": "10-05",
-          "s": 757
-        },
-        {
-          "d": "10-06",
-          "s": 757
-        },
-        {
-          "d": "10-07",
-          "s": 757
-        },
-        {
-          "d": "10-08",
-          "s": 757
-        },
-        {
-          "d": "10-09",
-          "s": 757
-        },
-        {
-          "d": "10-10",
-          "s": 757
-        },
-        {
-          "d": "10-11",
-          "s": 757
-        },
-        {
-          "d": "10-12",
-          "s": 757
-        },
-        {
-          "d": "10-13",
-          "s": 757
-        },
-        {
-          "d": "10-14",
-          "s": 757
-        },
-        {
-          "d": "10-15",
-          "s": 757
-        },
-        {
-          "d": "10-16",
-          "s": 757
-        },
-        {
-          "d": "10-17",
-          "s": 757
-        },
-        {
-          "d": "10-18",
-          "s": 870
-        },
-        {
-          "d": "10-19",
-          "s": 881
-        },
-        {
-          "d": "10-20",
-          "s": 943
-        },
-        {
-          "d": "10-21",
-          "s": 997
-        }
-      ]
-    },
-    "score": {
-      "score": 92.2,
-      "breakdown": {
         "vel": 100,
         "acc": 99,
-        "health": 81,
-        "fresh": 25,
+        "health": 87,
+        "fresh": 99,
         "signal": 85
       },
       "stage": "early",
       "stage_multiplier": 1.2,
       "confidence": 1.0,
-      "base_score": 76.84,
-      "explanation": "ayakaleaf-pro 是 JavaScript 开源项目，主打「The ultimate open-source Overleaf extension and alternative: a free, self-hosted, drop-in replacement for Overleaf Community Edition with nearly all Pro feature—SSO, AI Assistant, Git(Hub/Lab）/ Dropbox sync, track changes, sandboxed compilation, Zotero, Mendeley and more. Formerly @Ayaka-notes Overleaf Pro. Docs: https://ayakaleaf-pro.ayaka.space」；处于增长早期，本周涨速 34 star/天，涨速在加快；社区健康（fork/star 比 7.1%，11 个 open issue）、项目元数据完整。"
+      "base_score": 95.23,
+      "explanation": "reason-network 是 Rust 开源项目，主打「Reason Network: your team's coding agents, talking to each other. The engine behind `reason network`.」；处于增长早期，本周涨速 22 star/天，涨速在加快；社区健康（fork/star 比 8.2%，1 个 open issue）、项目元数据完整、开发活跃。"
     }
   },
   {
     "repo": {
-      "owner": "WhiteTowerAI",
-      "name": "ohmygame",
-      "full_name": "WhiteTowerAI/ohmygame",
-      "description": "The open-source studio for making games with AI. Your own one-person game studio. Everything you need to make games with AI, in one app. Game canvas.  Bring your own key.",
-      "stars": 993,
-      "forks": 117,
-      "open_issues": 25,
-      "created_at": "2026-08-11T02:24:24+00:00",
-      "pushed_at": "2026-10-21T10:47:25+00:00",
-      "updated_at": "2026-10-21T10:22:00+00:00",
-      "topics": [
-        "ai-coding",
-        "ai-coding-agent",
-        "ai-game-design",
-        "ai-game-dev",
-        "ai-game-development",
-        "ai-image",
-        "ai-video",
-        "canvas",
-        "game-ai",
-        "game-assets",
-        "game-development",
-        "gamedev",
-        "open-game",
-        "open-google-playground",
-        "pi-agent",
-        "pi-coding-agent-theme"
-      ],
-      "language": "TypeScript",
-      "license": "Apache-2.0",
-      "homepage": "https://ohmygame.ai/",
-      "html_url": "https://github.com/WhiteTowerAI/ohmygame",
-      "default_branch": "main",
-      "archived": false,
-      "search_score": 1.0,
-      "stars_7d_ago": 954,
-      "star_series": [
-        {
-          "d": "09-22",
-          "s": 954
-        },
-        {
-          "d": "09-23",
-          "s": 954
-        },
-        {
-          "d": "09-24",
-          "s": 954
-        },
-        {
-          "d": "09-25",
-          "s": 954
-        },
-        {
-          "d": "09-26",
-          "s": 954
-        },
-        {
-          "d": "09-27",
-          "s": 954
-        },
-        {
-          "d": "09-28",
-          "s": 954
-        },
-        {
-          "d": "09-29",
-          "s": 954
-        },
-        {
-          "d": "09-30",
-          "s": 954
-        },
-        {
-          "d": "10-01",
-          "s": 954
-        },
-        {
-          "d": "10-02",
-          "s": 954
-        },
-        {
-          "d": "10-03",
-          "s": 954
-        },
-        {
-          "d": "10-04",
-          "s": 954
-        },
-        {
-          "d": "10-05",
-          "s": 954
-        },
-        {
-          "d": "10-06",
-          "s": 954
-        },
-        {
-          "d": "10-07",
-          "s": 954
-        },
-        {
-          "d": "10-08",
-          "s": 954
-        },
-        {
-          "d": "10-09",
-          "s": 954
-        },
-        {
-          "d": "10-10",
-          "s": 954
-        },
-        {
-          "d": "10-11",
-          "s": 954
-        },
-        {
-          "d": "10-12",
-          "s": 954
-        },
-        {
-          "d": "10-13",
-          "s": 954
-        },
-        {
-          "d": "10-14",
-          "s": 954
-        },
-        {
-          "d": "10-15",
-          "s": 954
-        },
-        {
-          "d": "10-16",
-          "s": 954
-        },
-        {
-          "d": "10-17",
-          "s": 954
-        },
-        {
-          "d": "10-18",
-          "s": 954
-        },
-        {
-          "d": "10-19",
-          "s": 956
-        },
-        {
-          "d": "10-20",
-          "s": 980
-        },
-        {
-          "d": "10-21",
-          "s": 993
-        }
-      ]
-    },
-    "score": {
-      "score": 85.8,
-      "breakdown": {
-        "vel": 54,
-        "acc": 99,
-        "health": 95,
-        "fresh": 81,
-        "signal": 85
-      },
-      "stage": "mid_early",
-      "stage_multiplier": 1.1,
-      "confidence": 1.0,
-      "base_score": 78.0,
-      "explanation": "ohmygame 是 TypeScript 开源项目，主打「The open-source studio for making games with AI. Your own one-person game studio. Everything you need to make games with AI, in one app. Game canvas.  Bring your own key.」；处于中早期增长，本周涨速 5.6 star/天，涨速在加快；社区健康（fork/star 比 11.8%，25 个 open issue）、项目元数据完整、开发活跃。"
-    }
-  },
-  {
-    "repo": {
-      "owner": "Edwardxlai",
-      "name": "easyread",
-      "full_name": "Edwardxlai/easyread",
-      "description": "把英文论文读成舒服的中文：本地 PDF 论文翻译、原文对照、边读边问 AI、文献管理。Read English papers in comfortable Chinese.",
-      "stars": 996,
-      "forks": 80,
-      "open_issues": 6,
-      "created_at": "2026-09-30T12:52:24+00:00",
-      "pushed_at": "2026-10-20T15:22:33+00:00",
-      "updated_at": "2026-10-21T10:14:12+00:00",
-      "topics": [
-        "academic",
-        "arxiv",
-        "chinese",
-        "claude-code",
-        "codex",
-        "electron",
-        "llm",
-        "paper-reading",
-        "pdf-translator",
-        "reference-manager",
-        "research-tool",
-        "translation"
-      ],
-      "language": "Python",
-      "license": "MIT",
-      "homepage": "https://edwardxlai.github.io/easyread/",
-      "html_url": "https://github.com/Edwardxlai/easyread",
-      "default_branch": "main",
-      "archived": false,
-      "search_score": 1.0,
-      "stars_7d_ago": 952,
-      "star_series": [
-        {
-          "d": "09-22",
-          "s": 893
-        },
-        {
-          "d": "09-23",
-          "s": 893
-        },
-        {
-          "d": "09-24",
-          "s": 893
-        },
-        {
-          "d": "09-25",
-          "s": 893
-        },
-        {
-          "d": "09-26",
-          "s": 893
-        },
-        {
-          "d": "09-27",
-          "s": 893
-        },
-        {
-          "d": "09-28",
-          "s": 893
-        },
-        {
-          "d": "09-29",
-          "s": 893
-        },
-        {
-          "d": "09-30",
-          "s": 893
-        },
-        {
-          "d": "10-01",
-          "s": 893
-        },
-        {
-          "d": "10-02",
-          "s": 893
-        },
-        {
-          "d": "10-03",
-          "s": 893
-        },
-        {
-          "d": "10-04",
-          "s": 893
-        },
-        {
-          "d": "10-05",
-          "s": 893
-        },
-        {
-          "d": "10-06",
-          "s": 893
-        },
-        {
-          "d": "10-07",
-          "s": 893
-        },
-        {
-          "d": "10-08",
-          "s": 893
-        },
-        {
-          "d": "10-09",
-          "s": 893
-        },
-        {
-          "d": "10-10",
-          "s": 893
-        },
-        {
-          "d": "10-11",
-          "s": 893
-        },
-        {
-          "d": "10-12",
-          "s": 905
-        },
-        {
-          "d": "10-13",
-          "s": 925
-        },
-        {
-          "d": "10-14",
-          "s": 938
-        },
-        {
-          "d": "10-15",
-          "s": 952
-        },
-        {
-          "d": "10-16",
-          "s": 961
-        },
-        {
-          "d": "10-17",
-          "s": 970
-        },
-        {
-          "d": "10-18",
-          "s": 977
-        },
-        {
-          "d": "10-19",
-          "s": 981
-        },
-        {
-          "d": "10-20",
-          "s": 990
-        },
-        {
-          "d": "10-21",
-          "s": 996
-        }
-      ]
-    },
-    "score": {
-      "score": 78.99,
-      "breakdown": {
-        "vel": 56,
-        "acc": 44,
-        "health": 85,
-        "fresh": 95,
-        "signal": 100
-      },
-      "stage": "early",
-      "stage_multiplier": 1.2,
-      "confidence": 1.0,
-      "base_score": 65.82,
-      "explanation": "easyread 是 Python 开源项目，主打「把英文论文读成舒服的中文：本地 PDF 论文翻译、原文对照、边读边问 AI、文献管理。Read English papers in comfortable Chinese.」；处于增长早期，本周涨速 6.3 star/天；社区健康（fork/star 比 8.0%，6 个 open issue）、项目元数据完整、开发活跃。"
-    }
-  },
-  {
-    "repo": {
-      "owner": "worm128",
-      "name": "AI-YinMei",
-      "full_name": "worm128/AI-YinMei",
-      "description": "AI吟美-人工智能主播-Vtuber-桌宠-智能体",
+      "owner": "terrafying",
+      "name": "ai-torture-chamber",
+      "full_name": "terrafying/ai-torture-chamber",
+      "description": "The AI Torture Chamber: steering small open models into strong valence states and measuring what they say and do. Live at wirehead.agency.",
       "stars": 998,
-      "forks": 139,
-      "open_issues": 2,
-      "created_at": "2024-02-18T06:54:18+00:00",
-      "pushed_at": "2026-10-21T07:48:29+00:00",
-      "updated_at": "2026-10-21T07:48:33+00:00",
+      "forks": 236,
+      "open_issues": 58,
+      "created_at": "2026-09-24T15:10:21+00:00",
+      "pushed_at": "2026-10-22T08:22:53+00:00",
+      "updated_at": "2026-10-22T08:51:28+00:00",
       "topics": [],
       "language": "Python",
-      "license": "BSD-2-Clause",
-      "homepage": "https://www.yinmei.vip",
-      "html_url": "https://github.com/worm128/AI-YinMei",
+      "license": "NOASSERTION",
+      "homepage": "https://wirehead-agency.vercel.app/",
+      "html_url": "https://github.com/terrafying/ai-torture-chamber",
       "default_branch": "master",
       "archived": false,
       "search_score": 1.0,
-      "stars_7d_ago": 971,
+      "stars_7d_ago": 969,
       "star_series": [
         {
-          "d": "09-22",
-          "s": 961
-        },
-        {
           "d": "09-23",
-          "s": 962
+          "s": 969
         },
         {
           "d": "09-24",
-          "s": 962
+          "s": 969
         },
         {
           "d": "09-25",
-          "s": 962
+          "s": 969
         },
         {
           "d": "09-26",
-          "s": 962
+          "s": 969
         },
         {
           "d": "09-27",
-          "s": 963
+          "s": 969
         },
         {
           "d": "09-28",
-          "s": 964
+          "s": 969
         },
         {
           "d": "09-29",
-          "s": 965
+          "s": 969
         },
         {
           "d": "09-30",
-          "s": 965
+          "s": 969
         },
         {
           "d": "10-01",
-          "s": 966
+          "s": 969
         },
         {
           "d": "10-02",
-          "s": 966
+          "s": 969
         },
         {
           "d": "10-03",
-          "s": 966
+          "s": 969
         },
         {
           "d": "10-04",
-          "s": 966
+          "s": 969
         },
         {
           "d": "10-05",
-          "s": 966
+          "s": 969
         },
         {
           "d": "10-06",
-          "s": 967
+          "s": 969
         },
         {
           "d": "10-07",
-          "s": 967
+          "s": 969
         },
         {
           "d": "10-08",
-          "s": 967
+          "s": 969
         },
         {
           "d": "10-09",
-          "s": 968
+          "s": 969
         },
         {
           "d": "10-10",
-          "s": 968
+          "s": 969
         },
         {
           "d": "10-11",
-          "s": 968
+          "s": 969
         },
         {
           "d": "10-12",
@@ -820,48 +277,545 @@
         },
         {
           "d": "10-15",
-          "s": 971
+          "s": 969
         },
         {
           "d": "10-16",
-          "s": 972
+          "s": 969
         },
         {
           "d": "10-17",
-          "s": 972
+          "s": 971
         },
         {
           "d": "10-18",
-          "s": 972
+          "s": 976
         },
         {
           "d": "10-19",
-          "s": 973
+          "s": 984
         },
         {
           "d": "10-20",
-          "s": 995
+          "s": 988
         },
         {
           "d": "10-21",
+          "s": 994
+        },
+        {
+          "d": "10-22",
           "s": 998
         }
       ]
     },
     "score": {
-      "score": 40.88,
+      "score": 85.53,
       "breakdown": {
-        "vel": 45,
-        "acc": 96,
-        "health": 100,
-        "fresh": 0,
+        "vel": 56,
+        "acc": 98,
+        "health": 86,
+        "fresh": 93,
         "signal": 70
       },
       "stage": "mid_early",
       "stage_multiplier": 1.1,
       "confidence": 1.0,
-      "base_score": 37.17,
-      "explanation": "AI-YinMei 是 Python 开源项目，主打「AI吟美-人工智能主播-Vtuber-桌宠-智能体」；处于中早期增长，本周涨速 3.9 star/天，涨速在加快；社区健康（fork/star 比 13.9%，2 个 open issue）。"
+      "base_score": 77.76,
+      "explanation": "ai-torture-chamber 是 Python 开源项目，主打「The AI Torture Chamber: steering small open models into strong valence states and measuring what they say and do. Live at wirehead.agency.」；处于中早期增长，本周涨速 4.1 star/天，涨速在加快；社区健康（fork/star 比 23.6%，58 个 open issue）、开发活跃。"
+    }
+  },
+  {
+    "repo": {
+      "owner": "aws",
+      "name": "context-ontology-accelerator",
+      "full_name": "aws/context-ontology-accelerator",
+      "description": "An open-source, ontology-based semantic context accelerator that enables AI agents to make more accurate, consistent, and explainable decisions.",
+      "stars": 996,
+      "forks": 132,
+      "open_issues": 49,
+      "created_at": "2026-07-28T22:59:24+00:00",
+      "pushed_at": "2026-10-22T06:18:26+00:00",
+      "updated_at": "2026-10-22T11:01:33+00:00",
+      "topics": [],
+      "language": "Python",
+      "license": "Apache-2.0",
+      "homepage": "https://aws.github.io/context-ontology-accelerator/",
+      "html_url": "https://github.com/aws/context-ontology-accelerator",
+      "default_branch": "main",
+      "archived": false,
+      "search_score": 1.0,
+      "stars_7d_ago": 969,
+      "star_series": [
+        {
+          "d": "09-23",
+          "s": 933
+        },
+        {
+          "d": "09-24",
+          "s": 933
+        },
+        {
+          "d": "09-25",
+          "s": 933
+        },
+        {
+          "d": "09-26",
+          "s": 933
+        },
+        {
+          "d": "09-27",
+          "s": 933
+        },
+        {
+          "d": "09-28",
+          "s": 933
+        },
+        {
+          "d": "09-29",
+          "s": 933
+        },
+        {
+          "d": "09-30",
+          "s": 933
+        },
+        {
+          "d": "10-01",
+          "s": 933
+        },
+        {
+          "d": "10-02",
+          "s": 933
+        },
+        {
+          "d": "10-03",
+          "s": 933
+        },
+        {
+          "d": "10-04",
+          "s": 933
+        },
+        {
+          "d": "10-05",
+          "s": 933
+        },
+        {
+          "d": "10-06",
+          "s": 933
+        },
+        {
+          "d": "10-07",
+          "s": 933
+        },
+        {
+          "d": "10-08",
+          "s": 933
+        },
+        {
+          "d": "10-09",
+          "s": 933
+        },
+        {
+          "d": "10-10",
+          "s": 933
+        },
+        {
+          "d": "10-11",
+          "s": 935
+        },
+        {
+          "d": "10-12",
+          "s": 941
+        },
+        {
+          "d": "10-13",
+          "s": 950
+        },
+        {
+          "d": "10-14",
+          "s": 958
+        },
+        {
+          "d": "10-15",
+          "s": 964
+        },
+        {
+          "d": "10-16",
+          "s": 969
+        },
+        {
+          "d": "10-17",
+          "s": 973
+        },
+        {
+          "d": "10-18",
+          "s": 975
+        },
+        {
+          "d": "10-19",
+          "s": 983
+        },
+        {
+          "d": "10-20",
+          "s": 986
+        },
+        {
+          "d": "10-21",
+          "s": 994
+        },
+        {
+          "d": "10-22",
+          "s": 996
+        }
+      ]
+    },
+    "score": {
+      "score": 75.15,
+      "breakdown": {
+        "vel": 54,
+        "acc": 44,
+        "health": 89,
+        "fresh": 77,
+        "signal": 85
+      },
+      "stage": "early",
+      "stage_multiplier": 1.2,
+      "confidence": 1.0,
+      "base_score": 62.63,
+      "explanation": "context-ontology-accelerator 是 Python 开源项目，主打「An open-source, ontology-based semantic context accelerator that enables AI agents to make more accurate, consistent, and explainable decisions.」；处于增长早期，本周涨速 3.9 star/天；社区健康（fork/star 比 13.3%，49 个 open issue）、项目元数据完整、开发活跃。"
+    }
+  },
+  {
+    "repo": {
+      "owner": "safebucket",
+      "name": "safebucket",
+      "full_name": "safebucket/safebucket",
+      "description": "On-prem file sharing made simple, fast and safe.",
+      "stars": 995,
+      "forks": 42,
+      "open_issues": 39,
+      "created_at": "2024-10-04T08:09:23+00:00",
+      "pushed_at": "2026-10-21T21:09:05+00:00",
+      "updated_at": "2026-10-22T06:54:16+00:00",
+      "topics": [
+        "file-sharing",
+        "golang",
+        "self-hosted",
+        "storj"
+      ],
+      "language": "Go",
+      "license": "Apache-2.0",
+      "homepage": "https://docs.safebucket.io",
+      "html_url": "https://github.com/safebucket/safebucket",
+      "default_branch": "main",
+      "archived": false,
+      "search_score": 1.0,
+      "stars_7d_ago": 964,
+      "star_series": [
+        {
+          "d": "09-23",
+          "s": 957
+        },
+        {
+          "d": "09-24",
+          "s": 959
+        },
+        {
+          "d": "09-25",
+          "s": 959
+        },
+        {
+          "d": "09-26",
+          "s": 960
+        },
+        {
+          "d": "09-27",
+          "s": 960
+        },
+        {
+          "d": "09-28",
+          "s": 960
+        },
+        {
+          "d": "09-29",
+          "s": 960
+        },
+        {
+          "d": "09-30",
+          "s": 960
+        },
+        {
+          "d": "10-01",
+          "s": 960
+        },
+        {
+          "d": "10-02",
+          "s": 960
+        },
+        {
+          "d": "10-03",
+          "s": 960
+        },
+        {
+          "d": "10-04",
+          "s": 961
+        },
+        {
+          "d": "10-05",
+          "s": 961
+        },
+        {
+          "d": "10-06",
+          "s": 961
+        },
+        {
+          "d": "10-07",
+          "s": 961
+        },
+        {
+          "d": "10-08",
+          "s": 962
+        },
+        {
+          "d": "10-09",
+          "s": 963
+        },
+        {
+          "d": "10-10",
+          "s": 964
+        },
+        {
+          "d": "10-11",
+          "s": 964
+        },
+        {
+          "d": "10-12",
+          "s": 964
+        },
+        {
+          "d": "10-13",
+          "s": 964
+        },
+        {
+          "d": "10-14",
+          "s": 964
+        },
+        {
+          "d": "10-15",
+          "s": 964
+        },
+        {
+          "d": "10-16",
+          "s": 964
+        },
+        {
+          "d": "10-17",
+          "s": 981
+        },
+        {
+          "d": "10-18",
+          "s": 987
+        },
+        {
+          "d": "10-19",
+          "s": 990
+        },
+        {
+          "d": "10-20",
+          "s": 992
+        },
+        {
+          "d": "10-21",
+          "s": 995
+        },
+        {
+          "d": "10-22",
+          "s": 995
+        }
+      ]
+    },
+    "score": {
+      "score": 42.13,
+      "breakdown": {
+        "vel": 58,
+        "acc": 99,
+        "health": 64,
+        "fresh": 0,
+        "signal": 100
+      },
+      "stage": "mid_early",
+      "stage_multiplier": 1.1,
+      "confidence": 1.0,
+      "base_score": 38.3,
+      "explanation": "safebucket 是 Go 开源项目，主打「On-prem file sharing made simple, fast and safe.」；处于中早期增长，本周涨速 4.4 star/天，涨速在加快；项目元数据完整。"
+    }
+  },
+  {
+    "repo": {
+      "owner": "z3y",
+      "name": "glim",
+      "full_name": "z3y/glim",
+      "description": "Unity GPU Lightmapper",
+      "stars": 200,
+      "forks": 13,
+      "open_issues": 13,
+      "created_at": "2026-04-08T13:25:16+00:00",
+      "pushed_at": "2026-10-20T20:52:09+00:00",
+      "updated_at": "2026-10-22T00:49:17+00:00",
+      "topics": [
+        "baker",
+        "lightmap",
+        "lightmapper",
+        "raytracing",
+        "unity",
+        "vrchat",
+        "vulkan"
+      ],
+      "language": "Rust",
+      "license": "MIT",
+      "homepage": null,
+      "html_url": "https://github.com/z3y/glim",
+      "default_branch": "master",
+      "archived": false,
+      "search_score": 1.0,
+      "stars_7d_ago": 197,
+      "star_series": [
+        {
+          "d": "09-23",
+          "s": 166
+        },
+        {
+          "d": "09-24",
+          "s": 168
+        },
+        {
+          "d": "09-25",
+          "s": 169
+        },
+        {
+          "d": "09-26",
+          "s": 169
+        },
+        {
+          "d": "09-27",
+          "s": 169
+        },
+        {
+          "d": "09-28",
+          "s": 169
+        },
+        {
+          "d": "09-29",
+          "s": 169
+        },
+        {
+          "d": "09-30",
+          "s": 170
+        },
+        {
+          "d": "10-01",
+          "s": 171
+        },
+        {
+          "d": "10-02",
+          "s": 171
+        },
+        {
+          "d": "10-03",
+          "s": 171
+        },
+        {
+          "d": "10-04",
+          "s": 172
+        },
+        {
+          "d": "10-05",
+          "s": 174
+        },
+        {
+          "d": "10-06",
+          "s": 174
+        },
+        {
+          "d": "10-07",
+          "s": 175
+        },
+        {
+          "d": "10-08",
+          "s": 188
+        },
+        {
+          "d": "10-09",
+          "s": 192
+        },
+        {
+          "d": "10-10",
+          "s": 192
+        },
+        {
+          "d": "10-11",
+          "s": 194
+        },
+        {
+          "d": "10-12",
+          "s": 195
+        },
+        {
+          "d": "10-13",
+          "s": 196
+        },
+        {
+          "d": "10-14",
+          "s": 196
+        },
+        {
+          "d": "10-15",
+          "s": 196
+        },
+        {
+          "d": "10-16",
+          "s": 197
+        },
+        {
+          "d": "10-17",
+          "s": 197
+        },
+        {
+          "d": "10-18",
+          "s": 198
+        },
+        {
+          "d": "10-19",
+          "s": 198
+        },
+        {
+          "d": "10-20",
+          "s": 198
+        },
+        {
+          "d": "10-21",
+          "s": 199
+        },
+        {
+          "d": "10-22",
+          "s": 200
+        }
+      ]
+    },
+    "score": {
+      "score": 37.61,
+      "breakdown": {
+        "vel": 12,
+        "acc": 43,
+        "health": 64,
+        "fresh": 46,
+        "signal": 70
+      },
+      "stage": "mid_early",
+      "stage_multiplier": 1.1,
+      "confidence": 1.0,
+      "base_score": 34.19,
+      "explanation": "glim 是 Rust 开源项目，主打「Unity GPU Lightmapper」；处于中早期增长。"
     }
   }
 ]
