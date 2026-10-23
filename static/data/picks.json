@@ -1,612 +1,819 @@
 [
   {
     "repo": {
-      "owner": "reason-machines",
-      "name": "reason-network",
-      "full_name": "reason-machines/reason-network",
-      "description": "Reason Network: your team's coding agents, talking to each other. The engine behind `reason network`.",
-      "stars": 1000,
-      "forks": 82,
-      "open_issues": 1,
-      "created_at": "2026-10-16T15:34:34+00:00",
-      "pushed_at": "2026-10-22T11:04:50+00:00",
-      "updated_at": "2026-10-22T11:04:52+00:00",
+      "owner": "egmtm",
+      "name": "EGM-Downloader",
+      "full_name": "egmtm/EGM-Downloader",
+      "description": "Free, open source video and audio downloader for 1000+ sites. Native desktop apps for Windows, macOS and Linux, built on yt-dlp. No terminal, no account, zero telemetry.",
+      "stars": 200,
+      "forks": 16,
+      "open_issues": 0,
+      "created_at": "2026-04-24T07:58:33+00:00",
+      "pushed_at": "2026-10-23T10:47:31+00:00",
+      "updated_at": "2026-10-23T00:10:52+00:00",
       "topics": [
-        "coding-agents",
-        "iroh",
-        "mcp",
-        "peer-to-peer",
-        "reason"
+        "audio-downloader",
+        "cross-platform",
+        "desktop-app",
+        "downloader",
+        "electron",
+        "flask",
+        "javascript",
+        "livestream",
+        "media-downloader",
+        "media-downloader-gui",
+        "mp3-downloader",
+        "privacy-first",
+        "python",
+        "sponsorblock",
+        "subtitles",
+        "video-downloader",
+        "youtube-downloader",
+        "youtube-playlist-downloader",
+        "yt-dlp",
+        "yt-dlp-gui"
       ],
-      "language": "Rust",
-      "license": "Apache-2.0",
-      "homepage": "https://reasonmachines.com",
-      "html_url": "https://github.com/reason-machines/reason-network",
+      "language": "HTML",
+      "license": "AGPL-3.0",
+      "homepage": "https://egm.egerena.com",
+      "html_url": "https://github.com/egmtm/EGM-Downloader",
       "default_branch": "main",
       "archived": false,
       "search_score": 1.0,
-      "stars_7d_ago": 843,
+      "stars_7d_ago": 165,
       "star_series": [
         {
-          "d": "09-23",
-          "s": 843
-        },
-        {
           "d": "09-24",
-          "s": 843
+          "s": 165
         },
         {
           "d": "09-25",
-          "s": 843
+          "s": 165
         },
         {
           "d": "09-26",
-          "s": 843
+          "s": 165
         },
         {
           "d": "09-27",
-          "s": 843
+          "s": 165
         },
         {
           "d": "09-28",
-          "s": 843
+          "s": 165
         },
         {
           "d": "09-29",
-          "s": 843
+          "s": 165
         },
         {
           "d": "09-30",
-          "s": 843
+          "s": 165
         },
         {
           "d": "10-01",
-          "s": 843
+          "s": 165
         },
         {
           "d": "10-02",
-          "s": 843
+          "s": 165
         },
         {
           "d": "10-03",
-          "s": 843
+          "s": 165
         },
         {
           "d": "10-04",
-          "s": 843
+          "s": 165
         },
         {
           "d": "10-05",
-          "s": 843
+          "s": 165
         },
         {
           "d": "10-06",
-          "s": 843
+          "s": 165
         },
         {
           "d": "10-07",
-          "s": 843
+          "s": 165
         },
         {
           "d": "10-08",
-          "s": 843
+          "s": 165
         },
         {
           "d": "10-09",
-          "s": 843
+          "s": 165
         },
         {
           "d": "10-10",
-          "s": 843
+          "s": 165
         },
         {
           "d": "10-11",
-          "s": 843
+          "s": 165
         },
         {
           "d": "10-12",
-          "s": 843
+          "s": 165
         },
         {
           "d": "10-13",
-          "s": 843
+          "s": 165
         },
         {
           "d": "10-14",
-          "s": 843
+          "s": 165
         },
         {
           "d": "10-15",
-          "s": 843
+          "s": 165
         },
         {
           "d": "10-16",
-          "s": 843
+          "s": 165
         },
         {
           "d": "10-17",
-          "s": 843
+          "s": 165
         },
         {
           "d": "10-18",
-          "s": 843
+          "s": 165
         },
         {
           "d": "10-19",
-          "s": 843
+          "s": 165
         },
         {
           "d": "10-20",
-          "s": 843
+          "s": 190
         },
         {
           "d": "10-21",
-          "s": 912
+          "s": 197
         },
         {
           "d": "10-22",
-          "s": 1000
+          "s": 200
+        },
+        {
+          "d": "10-23",
+          "s": 200
         }
       ]
     },
     "score": {
-      "score": 100.0,
+      "score": 89.16,
       "breakdown": {
-        "vel": 100,
+        "vel": 65,
         "acc": 99,
-        "health": 87,
-        "fresh": 99,
+        "health": 80,
+        "fresh": 50,
         "signal": 85
       },
       "stage": "early",
       "stage_multiplier": 1.2,
       "confidence": 1.0,
-      "base_score": 95.23,
-      "explanation": "reason-network 是 Rust 开源项目，主打「Reason Network: your team's coding agents, talking to each other. The engine behind `reason network`.」；处于增长早期，本周涨速 22 star/天，涨速在加快；社区健康（fork/star 比 8.2%，1 个 open issue）、项目元数据完整、开发活跃。"
+      "base_score": 74.3,
+      "explanation": "EGM-Downloader 是 HTML 开源项目，主打「Free, open source video and audio downloader for 1000+ sites. Native desktop apps for Windows, macOS and Linux, built on yt-dlp. No terminal, no account, zero telemetry.」；处于增长早期，本周涨速 5.0 star/天，涨速在加快；社区健康（fork/star 比 8.0%，0 个 open issue）、项目元数据完整。"
     }
   },
   {
     "repo": {
-      "owner": "terrafying",
-      "name": "ai-torture-chamber",
-      "full_name": "terrafying/ai-torture-chamber",
-      "description": "The AI Torture Chamber: steering small open models into strong valence states and measuring what they say and do. Live at wirehead.agency.",
+      "owner": "NarYuki",
+      "name": "Dextop",
+      "full_name": "NarYuki/Dextop",
+      "description": "Unlock the hidden Samsung DeX and desktop capabilities of Android, and run a desktop environment directly on your device.",
       "stars": 998,
-      "forks": 236,
-      "open_issues": 58,
-      "created_at": "2026-09-24T15:10:21+00:00",
-      "pushed_at": "2026-10-22T08:22:53+00:00",
-      "updated_at": "2026-10-22T08:51:28+00:00",
+      "forks": 59,
+      "open_issues": 11,
+      "created_at": "2026-08-12T08:56:31+00:00",
+      "pushed_at": "2026-10-20T07:19:46+00:00",
+      "updated_at": "2026-10-23T10:49:17+00:00",
       "topics": [],
-      "language": "Python",
-      "license": "NOASSERTION",
-      "homepage": "https://wirehead-agency.vercel.app/",
-      "html_url": "https://github.com/terrafying/ai-torture-chamber",
-      "default_branch": "master",
+      "language": "Kotlin",
+      "license": "GPL-3.0",
+      "homepage": "dextop.n4tsu.net",
+      "html_url": "https://github.com/NarYuki/Dextop",
+      "default_branch": "main",
       "archived": false,
       "search_score": 1.0,
-      "stars_7d_ago": 969,
+      "stars_7d_ago": 943,
       "star_series": [
         {
-          "d": "09-23",
-          "s": 969
-        },
-        {
           "d": "09-24",
-          "s": 969
+          "s": 847
         },
         {
           "d": "09-25",
-          "s": 969
+          "s": 847
         },
         {
           "d": "09-26",
-          "s": 969
+          "s": 847
         },
         {
           "d": "09-27",
-          "s": 969
+          "s": 847
         },
         {
           "d": "09-28",
-          "s": 969
+          "s": 847
         },
         {
           "d": "09-29",
-          "s": 969
+          "s": 847
         },
         {
           "d": "09-30",
-          "s": 969
+          "s": 847
         },
         {
           "d": "10-01",
-          "s": 969
+          "s": 847
         },
         {
           "d": "10-02",
-          "s": 969
+          "s": 847
         },
         {
           "d": "10-03",
-          "s": 969
+          "s": 847
         },
         {
           "d": "10-04",
-          "s": 969
+          "s": 847
         },
         {
           "d": "10-05",
-          "s": 969
+          "s": 847
         },
         {
           "d": "10-06",
-          "s": 969
+          "s": 847
         },
         {
           "d": "10-07",
-          "s": 969
+          "s": 847
         },
         {
           "d": "10-08",
-          "s": 969
+          "s": 847
         },
         {
           "d": "10-09",
-          "s": 969
+          "s": 847
         },
         {
           "d": "10-10",
-          "s": 969
+          "s": 861
         },
         {
           "d": "10-11",
-          "s": 969
+          "s": 881
         },
         {
           "d": "10-12",
-          "s": 969
+          "s": 893
         },
         {
           "d": "10-13",
-          "s": 969
+          "s": 902
         },
         {
           "d": "10-14",
-          "s": 969
+          "s": 912
         },
         {
           "d": "10-15",
-          "s": 969
+          "s": 923
         },
         {
           "d": "10-16",
-          "s": 969
+          "s": 932
         },
         {
           "d": "10-17",
-          "s": 971
+          "s": 943
         },
         {
           "d": "10-18",
-          "s": 976
+          "s": 955
         },
         {
           "d": "10-19",
-          "s": 984
+          "s": 970
         },
         {
           "d": "10-20",
-          "s": 988
+          "s": 977
         },
         {
           "d": "10-21",
-          "s": 994
+          "s": 986
         },
         {
           "d": "10-22",
+          "s": 995
+        },
+        {
+          "d": "10-23",
           "s": 998
         }
       ]
     },
     "score": {
-      "score": 85.53,
+      "score": 79.54,
       "breakdown": {
-        "vel": 56,
-        "acc": 98,
-        "health": 86,
-        "fresh": 93,
+        "vel": 79,
+        "acc": 42,
+        "health": 77,
+        "fresh": 80,
         "signal": 70
-      },
-      "stage": "mid_early",
-      "stage_multiplier": 1.1,
-      "confidence": 1.0,
-      "base_score": 77.76,
-      "explanation": "ai-torture-chamber 是 Python 开源项目，主打「The AI Torture Chamber: steering small open models into strong valence states and measuring what they say and do. Live at wirehead.agency.」；处于中早期增长，本周涨速 4.1 star/天，涨速在加快；社区健康（fork/star 比 23.6%，58 个 open issue）、开发活跃。"
-    }
-  },
-  {
-    "repo": {
-      "owner": "aws",
-      "name": "context-ontology-accelerator",
-      "full_name": "aws/context-ontology-accelerator",
-      "description": "An open-source, ontology-based semantic context accelerator that enables AI agents to make more accurate, consistent, and explainable decisions.",
-      "stars": 996,
-      "forks": 132,
-      "open_issues": 49,
-      "created_at": "2026-07-28T22:59:24+00:00",
-      "pushed_at": "2026-10-22T06:18:26+00:00",
-      "updated_at": "2026-10-22T11:01:33+00:00",
-      "topics": [],
-      "language": "Python",
-      "license": "Apache-2.0",
-      "homepage": "https://aws.github.io/context-ontology-accelerator/",
-      "html_url": "https://github.com/aws/context-ontology-accelerator",
-      "default_branch": "main",
-      "archived": false,
-      "search_score": 1.0,
-      "stars_7d_ago": 969,
-      "star_series": [
-        {
-          "d": "09-23",
-          "s": 933
-        },
-        {
-          "d": "09-24",
-          "s": 933
-        },
-        {
-          "d": "09-25",
-          "s": 933
-        },
-        {
-          "d": "09-26",
-          "s": 933
-        },
-        {
-          "d": "09-27",
-          "s": 933
-        },
-        {
-          "d": "09-28",
-          "s": 933
-        },
-        {
-          "d": "09-29",
-          "s": 933
-        },
-        {
-          "d": "09-30",
-          "s": 933
-        },
-        {
-          "d": "10-01",
-          "s": 933
-        },
-        {
-          "d": "10-02",
-          "s": 933
-        },
-        {
-          "d": "10-03",
-          "s": 933
-        },
-        {
-          "d": "10-04",
-          "s": 933
-        },
-        {
-          "d": "10-05",
-          "s": 933
-        },
-        {
-          "d": "10-06",
-          "s": 933
-        },
-        {
-          "d": "10-07",
-          "s": 933
-        },
-        {
-          "d": "10-08",
-          "s": 933
-        },
-        {
-          "d": "10-09",
-          "s": 933
-        },
-        {
-          "d": "10-10",
-          "s": 933
-        },
-        {
-          "d": "10-11",
-          "s": 935
-        },
-        {
-          "d": "10-12",
-          "s": 941
-        },
-        {
-          "d": "10-13",
-          "s": 950
-        },
-        {
-          "d": "10-14",
-          "s": 958
-        },
-        {
-          "d": "10-15",
-          "s": 964
-        },
-        {
-          "d": "10-16",
-          "s": 969
-        },
-        {
-          "d": "10-17",
-          "s": 973
-        },
-        {
-          "d": "10-18",
-          "s": 975
-        },
-        {
-          "d": "10-19",
-          "s": 983
-        },
-        {
-          "d": "10-20",
-          "s": 986
-        },
-        {
-          "d": "10-21",
-          "s": 994
-        },
-        {
-          "d": "10-22",
-          "s": 996
-        }
-      ]
-    },
-    "score": {
-      "score": 75.15,
-      "breakdown": {
-        "vel": 54,
-        "acc": 44,
-        "health": 89,
-        "fresh": 77,
-        "signal": 85
       },
       "stage": "early",
       "stage_multiplier": 1.2,
       "confidence": 1.0,
-      "base_score": 62.63,
-      "explanation": "context-ontology-accelerator 是 Python 开源项目，主打「An open-source, ontology-based semantic context accelerator that enables AI agents to make more accurate, consistent, and explainable decisions.」；处于增长早期，本周涨速 3.9 star/天；社区健康（fork/star 比 13.3%，49 个 open issue）、项目元数据完整、开发活跃。"
+      "base_score": 66.28,
+      "explanation": "Dextop 是 Kotlin 开源项目，主打「Unlock the hidden Samsung DeX and desktop capabilities of Android, and run a desktop environment directly on your device.」；处于增长早期，本周涨速 7.9 star/天；社区健康（fork/star 比 5.9%，11 个 open issue）、开发活跃。"
     }
   },
   {
     "repo": {
-      "owner": "safebucket",
-      "name": "safebucket",
-      "full_name": "safebucket/safebucket",
-      "description": "On-prem file sharing made simple, fast and safe.",
-      "stars": 995,
-      "forks": 42,
-      "open_issues": 39,
-      "created_at": "2024-10-04T08:09:23+00:00",
-      "pushed_at": "2026-10-21T21:09:05+00:00",
-      "updated_at": "2026-10-22T06:54:16+00:00",
+      "owner": "zhuxian518",
+      "name": "mcd-1024-skill",
+      "full_name": "zhuxian518/mcd-1024-skill",
+      "description": "McDonald's China MCP innovation skill - entry for MCD Developer Innovation Challenge 2026 (1024 Programmers' Day)",
+      "stars": 200,
+      "forks": 0,
+      "open_issues": 0,
+      "created_at": "2026-10-09T14:25:37+00:00",
+      "pushed_at": "2026-10-20T03:38:13+00:00",
+      "updated_at": "2026-10-23T10:03:47+00:00",
       "topics": [
-        "file-sharing",
-        "golang",
-        "self-hosted",
-        "storj"
+        "ai-agent",
+        "mcdonalds",
+        "mcp",
+        "skill",
+        "workbuddy"
       ],
-      "language": "Go",
-      "license": "Apache-2.0",
-      "homepage": "https://docs.safebucket.io",
-      "html_url": "https://github.com/safebucket/safebucket",
+      "language": null,
+      "license": "MIT",
+      "homepage": null,
+      "html_url": "https://github.com/zhuxian518/mcd-1024-skill",
       "default_branch": "main",
       "archived": false,
       "search_score": 1.0,
-      "stars_7d_ago": 964,
+      "stars_7d_ago": 94,
       "star_series": [
         {
-          "d": "09-23",
-          "s": 957
-        },
-        {
           "d": "09-24",
-          "s": 959
+          "s": 0
         },
         {
           "d": "09-25",
-          "s": 959
+          "s": 0
         },
         {
           "d": "09-26",
-          "s": 960
+          "s": 0
         },
         {
           "d": "09-27",
-          "s": 960
+          "s": 0
         },
         {
           "d": "09-28",
-          "s": 960
+          "s": 0
         },
         {
           "d": "09-29",
-          "s": 960
+          "s": 0
         },
         {
           "d": "09-30",
-          "s": 960
+          "s": 0
         },
         {
           "d": "10-01",
-          "s": 960
+          "s": 0
         },
         {
           "d": "10-02",
-          "s": 960
+          "s": 0
         },
         {
           "d": "10-03",
-          "s": 960
+          "s": 0
         },
         {
           "d": "10-04",
-          "s": 961
+          "s": 0
         },
         {
           "d": "10-05",
-          "s": 961
+          "s": 0
         },
         {
           "d": "10-06",
-          "s": 961
+          "s": 0
         },
         {
           "d": "10-07",
-          "s": 961
+          "s": 0
         },
         {
           "d": "10-08",
-          "s": 962
+          "s": 0
         },
         {
           "d": "10-09",
-          "s": 963
+          "s": 0
         },
         {
           "d": "10-10",
-          "s": 964
+          "s": 4
         },
         {
           "d": "10-11",
-          "s": 964
+          "s": 6
         },
         {
           "d": "10-12",
-          "s": 964
+          "s": 13
         },
         {
           "d": "10-13",
-          "s": 964
+          "s": 31
         },
         {
           "d": "10-14",
-          "s": 964
+          "s": 53
         },
         {
           "d": "10-15",
-          "s": 964
+          "s": 68
         },
         {
           "d": "10-16",
-          "s": 964
+          "s": 76
+        },
+        {
+          "d": "10-17",
+          "s": 94
+        },
+        {
+          "d": "10-18",
+          "s": 112
+        },
+        {
+          "d": "10-19",
+          "s": 137
+        },
+        {
+          "d": "10-20",
+          "s": 158
+        },
+        {
+          "d": "10-21",
+          "s": 175
+        },
+        {
+          "d": "10-22",
+          "s": 196
+        },
+        {
+          "d": "10-23",
+          "s": 200
+        }
+      ]
+    },
+    "score": {
+      "score": 74.46,
+      "breakdown": {
+        "vel": 100,
+        "acc": 54,
+        "health": 60,
+        "fresh": 96,
+        "signal": 70
+      },
+      "stage": "mid_late",
+      "stage_multiplier": 1.0,
+      "confidence": 1.0,
+      "base_score": 74.46,
+      "explanation": "mcd-1024-skill 是 未知语言 开源项目，主打「McDonald's China MCP innovation skill - entry for MCD Developer Innovation Challenge 2026 (1024 Programmers' Day)」；处于中后期增长，本周涨速 15 star/天；开发活跃。"
+    }
+  },
+  {
+    "repo": {
+      "owner": "ENCHIGO",
+      "name": "apple-pickup-watcher",
+      "full_name": "ENCHIGO/apple-pickup-watcher",
+      "description": "免费开源的苹果直营店到店取货库存监控与到货提醒。Apple Store pickup stock monitor for iPhone, iPad, Mac & Apple Watch in 7 regions. macOS / Windows / Linux · Desktop & Bark alerts · Rust + Tauri.",
+      "stars": 200,
+      "forks": 43,
+      "open_issues": 3,
+      "created_at": "2026-08-06T14:56:46+00:00",
+      "pushed_at": "2026-10-21T20:29:51+00:00",
+      "updated_at": "2026-10-23T08:49:14+00:00",
+      "topics": [
+        "apple",
+        "apple-store",
+        "apple-watch",
+        "availability-checker",
+        "bark",
+        "cross-platform",
+        "desktop-app",
+        "in-stock-alert",
+        "inventory-tracker",
+        "ipad",
+        "iphone",
+        "linux",
+        "macos",
+        "notifications",
+        "restock-alert",
+        "rust",
+        "stock-monitor",
+        "stock-notifier",
+        "tauri",
+        "windows"
+      ],
+      "language": "Rust",
+      "license": "GPL-3.0",
+      "homepage": "https://enchigo.github.io/apple-pickup-watcher/",
+      "html_url": "https://github.com/ENCHIGO/apple-pickup-watcher",
+      "default_branch": "main",
+      "archived": false,
+      "search_score": 1.0,
+      "stars_7d_ago": 183,
+      "star_series": [
+        {
+          "d": "09-24",
+          "s": 126
+        },
+        {
+          "d": "09-25",
+          "s": 126
+        },
+        {
+          "d": "09-26",
+          "s": 127
+        },
+        {
+          "d": "09-27",
+          "s": 130
+        },
+        {
+          "d": "09-28",
+          "s": 133
+        },
+        {
+          "d": "09-29",
+          "s": 135
+        },
+        {
+          "d": "09-30",
+          "s": 140
+        },
+        {
+          "d": "10-01",
+          "s": 141
+        },
+        {
+          "d": "10-02",
+          "s": 141
+        },
+        {
+          "d": "10-03",
+          "s": 141
+        },
+        {
+          "d": "10-04",
+          "s": 142
+        },
+        {
+          "d": "10-05",
+          "s": 145
+        },
+        {
+          "d": "10-06",
+          "s": 145
+        },
+        {
+          "d": "10-07",
+          "s": 147
+        },
+        {
+          "d": "10-08",
+          "s": 148
+        },
+        {
+          "d": "10-09",
+          "s": 150
+        },
+        {
+          "d": "10-10",
+          "s": 152
+        },
+        {
+          "d": "10-11",
+          "s": 155
+        },
+        {
+          "d": "10-12",
+          "s": 157
+        },
+        {
+          "d": "10-13",
+          "s": 159
+        },
+        {
+          "d": "10-14",
+          "s": 160
+        },
+        {
+          "d": "10-15",
+          "s": 164
+        },
+        {
+          "d": "10-16",
+          "s": 174
+        },
+        {
+          "d": "10-17",
+          "s": 183
+        },
+        {
+          "d": "10-18",
+          "s": 184
+        },
+        {
+          "d": "10-19",
+          "s": 187
+        },
+        {
+          "d": "10-20",
+          "s": 188
+        },
+        {
+          "d": "10-21",
+          "s": 192
+        },
+        {
+          "d": "10-22",
+          "s": 195
+        },
+        {
+          "d": "10-23",
+          "s": 200
+        }
+      ]
+    },
+    "score": {
+      "score": 71.57,
+      "breakdown": {
+        "vel": 44,
+        "acc": 39,
+        "health": 98,
+        "fresh": 79,
+        "signal": 100
+      },
+      "stage": "early",
+      "stage_multiplier": 1.2,
+      "confidence": 1.0,
+      "base_score": 59.64,
+      "explanation": "apple-pickup-watcher 是 Rust 开源项目，主打「免费开源的苹果直营店到店取货库存监控与到货提醒。Apple Store pickup stock monitor for iPhone, iPad, Mac & Apple Watch in 7 regions. macOS / Windows / Linux · Desktop & Bark alerts · Rust + Tauri.」；处于增长早期，本周涨速 2.4 star/天；社区健康（fork/star 比 21.5%，3 个 open issue）、项目元数据完整、开发活跃。"
+    }
+  },
+  {
+    "repo": {
+      "owner": "JetBrains",
+      "name": "thinkrail",
+      "full_name": "JetBrains/thinkrail",
+      "description": "Vibe code with pi in a lightweight, real IDE that customises itself around the way you work — The Vibe You Need",
+      "stars": 994,
+      "forks": 71,
+      "open_issues": 199,
+      "created_at": "2026-07-08T07:40:43+00:00",
+      "pushed_at": "2026-10-23T07:51:43+00:00",
+      "updated_at": "2026-10-23T08:05:48+00:00",
+      "topics": [
+        "agent",
+        "agent-skills",
+        "agentic-ai",
+        "agentic-workflow",
+        "ai-coding",
+        "ai-tools",
+        "pi-agent",
+        "pi-agent-extension",
+        "spec-driven",
+        "spec-driven-coding",
+        "spec-driven-development",
+        "vibe-coding",
+        "vibecoding"
+      ],
+      "language": "TypeScript",
+      "license": "Apache-2.0",
+      "homepage": "https://thinkrail.ai/",
+      "html_url": "https://github.com/JetBrains/thinkrail",
+      "default_branch": "main",
+      "archived": false,
+      "search_score": 1.0,
+      "stars_7d_ago": 981,
+      "star_series": [
+        {
+          "d": "09-24",
+          "s": 981
+        },
+        {
+          "d": "09-25",
+          "s": 981
+        },
+        {
+          "d": "09-26",
+          "s": 981
+        },
+        {
+          "d": "09-27",
+          "s": 981
+        },
+        {
+          "d": "09-28",
+          "s": 981
+        },
+        {
+          "d": "09-29",
+          "s": 981
+        },
+        {
+          "d": "09-30",
+          "s": 981
+        },
+        {
+          "d": "10-01",
+          "s": 981
+        },
+        {
+          "d": "10-02",
+          "s": 981
+        },
+        {
+          "d": "10-03",
+          "s": 981
+        },
+        {
+          "d": "10-04",
+          "s": 981
+        },
+        {
+          "d": "10-05",
+          "s": 981
+        },
+        {
+          "d": "10-06",
+          "s": 981
+        },
+        {
+          "d": "10-07",
+          "s": 981
+        },
+        {
+          "d": "10-08",
+          "s": 981
+        },
+        {
+          "d": "10-09",
+          "s": 981
+        },
+        {
+          "d": "10-10",
+          "s": 981
+        },
+        {
+          "d": "10-11",
+          "s": 981
+        },
+        {
+          "d": "10-12",
+          "s": 981
+        },
+        {
+          "d": "10-13",
+          "s": 981
+        },
+        {
+          "d": "10-14",
+          "s": 981
+        },
+        {
+          "d": "10-15",
+          "s": 981
+        },
+        {
+          "d": "10-16",
+          "s": 981
         },
         {
           "d": "10-17",
@@ -614,208 +821,44 @@
         },
         {
           "d": "10-18",
-          "s": 987
+          "s": 981
         },
         {
           "d": "10-19",
-          "s": 990
+          "s": 981
         },
         {
           "d": "10-20",
-          "s": 992
+          "s": 981
         },
         {
           "d": "10-21",
-          "s": 995
+          "s": 981
         },
         {
           "d": "10-22",
-          "s": 995
+          "s": 986
+        },
+        {
+          "d": "10-23",
+          "s": 994
         }
       ]
     },
     "score": {
-      "score": 42.13,
+      "score": 65.22,
       "breakdown": {
-        "vel": 58,
-        "acc": 99,
-        "health": 64,
-        "fresh": 0,
-        "signal": 100
+        "vel": 38,
+        "acc": 86,
+        "health": 53,
+        "fresh": 71,
+        "signal": 85
       },
       "stage": "mid_early",
       "stage_multiplier": 1.1,
       "confidence": 1.0,
-      "base_score": 38.3,
-      "explanation": "safebucket 是 Go 开源项目，主打「On-prem file sharing made simple, fast and safe.」；处于中早期增长，本周涨速 4.4 star/天，涨速在加快；项目元数据完整。"
-    }
-  },
-  {
-    "repo": {
-      "owner": "z3y",
-      "name": "glim",
-      "full_name": "z3y/glim",
-      "description": "Unity GPU Lightmapper",
-      "stars": 200,
-      "forks": 13,
-      "open_issues": 13,
-      "created_at": "2026-04-08T13:25:16+00:00",
-      "pushed_at": "2026-10-20T20:52:09+00:00",
-      "updated_at": "2026-10-22T00:49:17+00:00",
-      "topics": [
-        "baker",
-        "lightmap",
-        "lightmapper",
-        "raytracing",
-        "unity",
-        "vrchat",
-        "vulkan"
-      ],
-      "language": "Rust",
-      "license": "MIT",
-      "homepage": null,
-      "html_url": "https://github.com/z3y/glim",
-      "default_branch": "master",
-      "archived": false,
-      "search_score": 1.0,
-      "stars_7d_ago": 197,
-      "star_series": [
-        {
-          "d": "09-23",
-          "s": 166
-        },
-        {
-          "d": "09-24",
-          "s": 168
-        },
-        {
-          "d": "09-25",
-          "s": 169
-        },
-        {
-          "d": "09-26",
-          "s": 169
-        },
-        {
-          "d": "09-27",
-          "s": 169
-        },
-        {
-          "d": "09-28",
-          "s": 169
-        },
-        {
-          "d": "09-29",
-          "s": 169
-        },
-        {
-          "d": "09-30",
-          "s": 170
-        },
-        {
-          "d": "10-01",
-          "s": 171
-        },
-        {
-          "d": "10-02",
-          "s": 171
-        },
-        {
-          "d": "10-03",
-          "s": 171
-        },
-        {
-          "d": "10-04",
-          "s": 172
-        },
-        {
-          "d": "10-05",
-          "s": 174
-        },
-        {
-          "d": "10-06",
-          "s": 174
-        },
-        {
-          "d": "10-07",
-          "s": 175
-        },
-        {
-          "d": "10-08",
-          "s": 188
-        },
-        {
-          "d": "10-09",
-          "s": 192
-        },
-        {
-          "d": "10-10",
-          "s": 192
-        },
-        {
-          "d": "10-11",
-          "s": 194
-        },
-        {
-          "d": "10-12",
-          "s": 195
-        },
-        {
-          "d": "10-13",
-          "s": 196
-        },
-        {
-          "d": "10-14",
-          "s": 196
-        },
-        {
-          "d": "10-15",
-          "s": 196
-        },
-        {
-          "d": "10-16",
-          "s": 197
-        },
-        {
-          "d": "10-17",
-          "s": 197
-        },
-        {
-          "d": "10-18",
-          "s": 198
-        },
-        {
-          "d": "10-19",
-          "s": 198
-        },
-        {
-          "d": "10-20",
-          "s": 198
-        },
-        {
-          "d": "10-21",
-          "s": 199
-        },
-        {
-          "d": "10-22",
-          "s": 200
-        }
-      ]
-    },
-    "score": {
-      "score": 37.61,
-      "breakdown": {
-        "vel": 12,
-        "acc": 43,
-        "health": 64,
-        "fresh": 46,
-        "signal": 70
-      },
-      "stage": "mid_early",
-      "stage_multiplier": 1.1,
-      "confidence": 1.0,
-      "base_score": 34.19,
-      "explanation": "glim 是 Rust 开源项目，主打「Unity GPU Lightmapper」；处于中早期增长。"
+      "base_score": 59.29,
+      "explanation": "thinkrail 是 TypeScript 开源项目，主打「Vibe code with pi in a lightweight, real IDE that customises itself around the way you work — The Vibe You Need」；处于中早期增长，涨速在加快；项目元数据完整、开发活跃。"
     }
   }
 ]
