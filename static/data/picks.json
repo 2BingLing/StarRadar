@@ -1,156 +1,333 @@
 [
   {
     "repo": {
-      "owner": "Ayzzz123",
-      "name": "mcd-coupon-strategist",
-      "full_name": "Ayzzz123/mcd-coupon-strategist",
-      "description": "麦麦省钱助手 —— 基于麦当劳 MCP 的点餐成本优化 Skill。算出当前门店最省钱的点餐方案，并主动提示凑单陷阱。",
-      "stars": 998,
-      "forks": 21,
+      "owner": "TuguiDragos",
+      "name": "Peel",
+      "full_name": "TuguiDragos/Peel",
+      "description": "Uninstall Mac apps with every file they leave behind, and see why each belongs. Free up space, fine-tune macOS, and set up Terminal.",
+      "stars": 200,
+      "forks": 8,
       "open_issues": 0,
-      "created_at": "2026-10-10T12:59:19+00:00",
-      "pushed_at": "2026-10-21T14:03:59+00:00",
-      "updated_at": "2026-10-24T02:51:49+00:00",
+      "created_at": "2026-09-24T13:41:14+00:00",
+      "pushed_at": "2026-10-24T22:47:05+00:00",
+      "updated_at": "2026-10-25T10:28:47+00:00",
       "topics": [
-        "agent",
-        "cost-optimization",
-        "coupon",
-        "llm",
-        "mcd-mcp",
-        "mcdonalds",
-        "mcp",
-        "python",
-        "skill",
-        "workbuddy"
+        "cache-cleaner",
+        "cleaner",
+        "cli",
+        "developer-tools",
+        "disk-cleanup",
+        "disk-space",
+        "duplicate-finder",
+        "homebrew",
+        "liquid-glass",
+        "mac-cleaner",
+        "macos",
+        "macos-app",
+        "macos-golden-gate",
+        "macos-tahoe",
+        "macos-tweaks",
+        "swift",
+        "swiftui",
+        "terminal-themes",
+        "uninstall",
+        "uninstaller"
       ],
-      "language": "Python",
-      "license": "MIT",
-      "homepage": "https://github.com/Ayzzz123/mcd-coupon-strategist/blob/main/MCP_INTEGRATION.md",
-      "html_url": "https://github.com/Ayzzz123/mcd-coupon-strategist",
+      "language": "Swift",
+      "license": "GPL-3.0",
+      "homepage": "https://peel.tuguidragos.com",
+      "html_url": "https://github.com/TuguiDragos/Peel",
       "default_branch": "main",
       "archived": false,
       "search_score": 1.0,
-      "stars_7d_ago": 702,
+      "stars_7d_ago": 55,
       "star_series": [
         {
-          "d": "09-25",
-          "s": 702
-        },
-        {
           "d": "09-26",
-          "s": 702
+          "s": 28
         },
         {
           "d": "09-27",
-          "s": 702
+          "s": 28
         },
         {
           "d": "09-28",
-          "s": 702
+          "s": 28
         },
         {
           "d": "09-29",
-          "s": 702
+          "s": 28
         },
         {
           "d": "09-30",
-          "s": 702
+          "s": 28
         },
         {
           "d": "10-01",
-          "s": 702
+          "s": 28
         },
         {
           "d": "10-02",
-          "s": 702
+          "s": 28
         },
         {
           "d": "10-03",
-          "s": 702
+          "s": 28
         },
         {
           "d": "10-04",
-          "s": 702
+          "s": 28
         },
         {
           "d": "10-05",
-          "s": 702
+          "s": 28
         },
         {
           "d": "10-06",
-          "s": 702
+          "s": 28
         },
         {
           "d": "10-07",
-          "s": 702
+          "s": 28
         },
         {
           "d": "10-08",
-          "s": 702
+          "s": 28
         },
         {
           "d": "10-09",
-          "s": 702
+          "s": 28
         },
         {
           "d": "10-10",
-          "s": 702
+          "s": 28
         },
         {
           "d": "10-11",
-          "s": 702
+          "s": 28
         },
         {
           "d": "10-12",
-          "s": 702
+          "s": 28
         },
         {
           "d": "10-13",
-          "s": 702
+          "s": 28
         },
         {
           "d": "10-14",
-          "s": 702
+          "s": 28
         },
         {
           "d": "10-15",
-          "s": 702
+          "s": 28
         },
         {
           "d": "10-16",
-          "s": 702
+          "s": 28
         },
         {
           "d": "10-17",
-          "s": 702
+          "s": 28
         },
         {
           "d": "10-18",
-          "s": 702
+          "s": 28
         },
         {
           "d": "10-19",
-          "s": 702
+          "s": 55
         },
         {
           "d": "10-20",
-          "s": 702
+          "s": 81
         },
         {
           "d": "10-21",
-          "s": 805
+          "s": 111
         },
         {
           "d": "10-22",
-          "s": 875
+          "s": 119
         },
         {
           "d": "10-23",
-          "s": 994
+          "s": 124
         },
         {
           "d": "10-24",
-          "s": 998
+          "s": 163
+        },
+        {
+          "d": "10-25",
+          "s": 200
+        }
+      ]
+    },
+    "score": {
+      "score": 100.0,
+      "breakdown": {
+        "vel": 90,
+        "acc": 99,
+        "health": 68,
+        "fresh": 92,
+        "signal": 85
+      },
+      "stage": "early",
+      "stage_multiplier": 1.2,
+      "confidence": 1.0,
+      "base_score": 87.03,
+      "explanation": "Peel 是 Swift 开源项目，主打「Uninstall Mac apps with every file they leave behind, and see why each belongs. Free up space, fine-tune macOS, and set up Terminal.」；处于增长早期，本周涨速 21 star/天，涨速在加快；项目元数据完整、开发活跃。"
+    }
+  },
+  {
+    "repo": {
+      "owner": "feder-cr",
+      "name": "git-ai",
+      "full_name": "feder-cr/git-ai",
+      "description": "Git designed for AI agents.",
+      "stars": 996,
+      "forks": 97,
+      "open_issues": 1,
+      "created_at": "2026-10-15T13:12:02+00:00",
+      "pushed_at": "2026-10-23T11:12:35+00:00",
+      "updated_at": "2026-10-25T10:27:31+00:00",
+      "topics": [
+        "ai-agents",
+        "coding-agents",
+        "git",
+        "golang",
+        "scion",
+        "version-control"
+      ],
+      "language": "Go",
+      "license": "NOASSERTION",
+      "homepage": "https://www.anthropic.com/engineering/redesigning-source-control",
+      "html_url": "https://github.com/feder-cr/git-ai",
+      "default_branch": "main",
+      "archived": false,
+      "search_score": 1.0,
+      "stars_7d_ago": 769,
+      "star_series": [
+        {
+          "d": "09-26",
+          "s": 769
+        },
+        {
+          "d": "09-27",
+          "s": 769
+        },
+        {
+          "d": "09-28",
+          "s": 769
+        },
+        {
+          "d": "09-29",
+          "s": 769
+        },
+        {
+          "d": "09-30",
+          "s": 769
+        },
+        {
+          "d": "10-01",
+          "s": 769
+        },
+        {
+          "d": "10-02",
+          "s": 769
+        },
+        {
+          "d": "10-03",
+          "s": 769
+        },
+        {
+          "d": "10-04",
+          "s": 769
+        },
+        {
+          "d": "10-05",
+          "s": 769
+        },
+        {
+          "d": "10-06",
+          "s": 769
+        },
+        {
+          "d": "10-07",
+          "s": 769
+        },
+        {
+          "d": "10-08",
+          "s": 769
+        },
+        {
+          "d": "10-09",
+          "s": 769
+        },
+        {
+          "d": "10-10",
+          "s": 769
+        },
+        {
+          "d": "10-11",
+          "s": 769
+        },
+        {
+          "d": "10-12",
+          "s": 769
+        },
+        {
+          "d": "10-13",
+          "s": 769
+        },
+        {
+          "d": "10-14",
+          "s": 769
+        },
+        {
+          "d": "10-15",
+          "s": 769
+        },
+        {
+          "d": "10-16",
+          "s": 769
+        },
+        {
+          "d": "10-17",
+          "s": 769
+        },
+        {
+          "d": "10-18",
+          "s": 769
+        },
+        {
+          "d": "10-19",
+          "s": 769
+        },
+        {
+          "d": "10-20",
+          "s": 851
+        },
+        {
+          "d": "10-21",
+          "s": 916
+        },
+        {
+          "d": "10-22",
+          "s": 966
+        },
+        {
+          "d": "10-23",
+          "s": 980
+        },
+        {
+          "d": "10-24",
+          "s": 990
+        },
+        {
+          "d": "10-25",
+          "s": 996
         }
       ]
     },
@@ -159,507 +336,183 @@
       "breakdown": {
         "vel": 100,
         "acc": 99,
-        "health": 66,
-        "fresh": 96,
+        "health": 92,
+        "fresh": 98,
         "signal": 85
       },
       "stage": "early",
       "stage_multiplier": 1.2,
       "confidence": 1.0,
-      "base_score": 89.78,
-      "explanation": "mcd-coupon-strategist 是 Python 开源项目，主打「麦麦省钱助手 —— 基于麦当劳 MCP 的点餐成本优化 Skill。算出当前门店最省钱的点餐方案，并主动提示凑单陷阱。」；处于增长早期，本周涨速 42 star/天，涨速在加快；项目元数据完整、开发活跃。"
+      "base_score": 96.27,
+      "explanation": "git-ai 是 Go 开源项目，主打「Git designed for AI agents.」；处于增长早期，本周涨速 32 star/天，涨速在加快；社区健康（fork/star 比 9.7%，1 个 open issue）、项目元数据完整、开发活跃。"
     }
   },
   {
     "repo": {
-      "owner": "shinshin86",
-      "name": "mesh-avatar-studio",
-      "full_name": "shinshin86/mesh-avatar-studio",
-      "description": "Turn one illustration into an animated 2D mesh avatar with a coding agent and a local editor",
-      "stars": 996,
-      "forks": 110,
-      "open_issues": 1,
-      "created_at": "2026-10-04T03:33:57+00:00",
-      "pushed_at": "2026-10-24T06:34:20+00:00",
-      "updated_at": "2026-10-24T08:53:45+00:00",
+      "owner": "hang-jin",
+      "name": "editaplot",
+      "full_name": "hang-jin/editaplot",
+      "description": "AI-guided editable scientific figures with Codex and local Origin/OriginPro",
+      "stars": 999,
+      "forks": 35,
+      "open_issues": 13,
+      "created_at": "2026-07-21T08:57:13+00:00",
+      "pushed_at": "2026-10-25T06:10:48+00:00",
+      "updated_at": "2026-10-25T09:41:44+00:00",
       "topics": [
-        "2d-animation",
-        "avatar",
-        "claude-code",
-        "codex",
-        "mesh-deformation",
-        "vtuber",
-        "webgl"
+        "codex-skill",
+        "editable-figures",
+        "research",
+        "scientific-visualization",
+        "windows",
+        "xps",
+        "xrd"
       ],
-      "language": "TypeScript",
-      "license": "MIT",
-      "homepage": "https://shinshin86.github.io/mesh-avatar-studio/",
-      "html_url": "https://github.com/shinshin86/mesh-avatar-studio",
+      "language": "Python",
+      "license": "Apache-2.0",
+      "homepage": null,
+      "html_url": "https://github.com/hang-jin/editaplot",
       "default_branch": "main",
       "archived": false,
       "search_score": 1.0,
-      "stars_7d_ago": 809,
+      "stars_7d_ago": 958,
       "star_series": [
         {
-          "d": "09-25",
-          "s": 795
-        },
-        {
           "d": "09-26",
-          "s": 795
+          "s": 763
         },
         {
           "d": "09-27",
-          "s": 795
+          "s": 768
         },
         {
           "d": "09-28",
-          "s": 795
+          "s": 784
         },
         {
           "d": "09-29",
-          "s": 795
+          "s": 793
         },
         {
           "d": "09-30",
-          "s": 795
+          "s": 803
         },
         {
           "d": "10-01",
-          "s": 795
+          "s": 808
         },
         {
           "d": "10-02",
-          "s": 795
+          "s": 812
         },
         {
           "d": "10-03",
-          "s": 795
+          "s": 816
         },
         {
           "d": "10-04",
-          "s": 795
+          "s": 822
         },
         {
           "d": "10-05",
-          "s": 795
+          "s": 827
         },
         {
           "d": "10-06",
-          "s": 795
+          "s": 833
         },
         {
           "d": "10-07",
-          "s": 795
+          "s": 841
         },
         {
           "d": "10-08",
-          "s": 795
+          "s": 849
         },
         {
           "d": "10-09",
-          "s": 795
+          "s": 860
         },
         {
           "d": "10-10",
-          "s": 795
+          "s": 874
         },
         {
           "d": "10-11",
-          "s": 795
+          "s": 881
         },
         {
           "d": "10-12",
-          "s": 795
+          "s": 897
         },
         {
           "d": "10-13",
-          "s": 795
+          "s": 912
         },
         {
           "d": "10-14",
-          "s": 795
+          "s": 920
         },
         {
           "d": "10-15",
-          "s": 795
+          "s": 930
         },
         {
           "d": "10-16",
-          "s": 795
+          "s": 942
         },
         {
           "d": "10-17",
-          "s": 795
+          "s": 948
         },
         {
           "d": "10-18",
-          "s": 809
+          "s": 953
         },
         {
           "d": "10-19",
-          "s": 853
-        },
-        {
-          "d": "10-20",
-          "s": 899
-        },
-        {
-          "d": "10-21",
           "s": 958
         },
         {
-          "d": "10-22",
-          "s": 974
-        },
-        {
-          "d": "10-23",
-          "s": 992
-        },
-        {
-          "d": "10-24",
-          "s": 996
-        }
-      ]
-    },
-    "score": {
-      "score": 100.0,
-      "breakdown": {
-        "vel": 91,
-        "acc": 99,
-        "health": 97,
-        "fresh": 95,
-        "signal": 100
-      },
-      "stage": "early",
-      "stage_multiplier": 1.2,
-      "confidence": 1.0,
-      "base_score": 95.56,
-      "explanation": "mesh-avatar-studio 是 TypeScript 开源项目，主打「Turn one illustration into an animated 2D mesh avatar with a coding agent and a local editor」；处于增长早期，本周涨速 27 star/天，涨速在加快；社区健康（fork/star 比 11.0%，1 个 open issue）、项目元数据完整、开发活跃。"
-    }
-  },
-  {
-    "repo": {
-      "owner": "iQingshan",
-      "name": "Toshell",
-      "full_name": "iQingshan/Toshell",
-      "description": "ToShell 是一个轻量 C2 框架，由 服务端（Team Server）+ Web 控制台 + 多平台植入端 组成，覆盖「生成载荷 → 会话管理 → 任务执行」的完整链路。单二进制即可部署整套服务，开箱即用。",
-      "stars": 200,
-      "forks": 53,
-      "open_issues": 0,
-      "created_at": "2026-08-27T12:26:59+00:00",
-      "pushed_at": "2026-10-24T08:50:32+00:00",
-      "updated_at": "2026-10-24T08:50:35+00:00",
-      "topics": [],
-      "language": "Go",
-      "license": "MIT",
-      "homepage": null,
-      "html_url": "https://github.com/iQingshan/Toshell",
-      "default_branch": "main",
-      "archived": false,
-      "search_score": 1.0,
-      "stars_7d_ago": 185,
-      "star_series": [
-        {
-          "d": "09-25",
-          "s": 159
-        },
-        {
-          "d": "09-26",
-          "s": 160
-        },
-        {
-          "d": "09-27",
-          "s": 160
-        },
-        {
-          "d": "09-28",
-          "s": 162
-        },
-        {
-          "d": "09-29",
-          "s": 162
-        },
-        {
-          "d": "09-30",
-          "s": 164
-        },
-        {
-          "d": "10-01",
-          "s": 164
-        },
-        {
-          "d": "10-02",
-          "s": 164
-        },
-        {
-          "d": "10-03",
-          "s": 164
-        },
-        {
-          "d": "10-04",
-          "s": 165
-        },
-        {
-          "d": "10-05",
-          "s": 166
-        },
-        {
-          "d": "10-06",
-          "s": 166
-        },
-        {
-          "d": "10-07",
-          "s": 167
-        },
-        {
-          "d": "10-08",
-          "s": 176
-        },
-        {
-          "d": "10-09",
-          "s": 180
-        },
-        {
-          "d": "10-10",
-          "s": 182
-        },
-        {
-          "d": "10-11",
-          "s": 182
-        },
-        {
-          "d": "10-12",
-          "s": 183
-        },
-        {
-          "d": "10-13",
-          "s": 183
-        },
-        {
-          "d": "10-14",
-          "s": 184
-        },
-        {
-          "d": "10-15",
-          "s": 185
-        },
-        {
-          "d": "10-16",
-          "s": 185
-        },
-        {
-          "d": "10-17",
-          "s": 185
-        },
-        {
-          "d": "10-18",
-          "s": 185
-        },
-        {
-          "d": "10-19",
-          "s": 188
-        },
-        {
           "d": "10-20",
-          "s": 193
+          "s": 969
         },
         {
           "d": "10-21",
-          "s": 194
+          "s": 977
         },
         {
           "d": "10-22",
-          "s": 196
+          "s": 983
         },
         {
           "d": "10-23",
-          "s": 199
+          "s": 988
         },
         {
           "d": "10-24",
-          "s": 200
+          "s": 995
+        },
+        {
+          "d": "10-25",
+          "s": 999
         }
       ]
     },
     "score": {
-      "score": 74.76,
+      "score": 63.65,
       "breakdown": {
-        "vel": 31,
-        "acc": 85,
-        "health": 100,
-        "fresh": 84,
-        "signal": 55
-      },
-      "stage": "early",
-      "stage_multiplier": 1.2,
-      "confidence": 1.0,
-      "base_score": 62.3,
-      "explanation": "Toshell 是 Go 开源项目，主打「ToShell 是一个轻量 C2 框架，由 服务端（Team Server）+ Web 控制台 + 多平台植入端 组成，覆盖「生成载荷 → 会话管理 → 任务执行」的完整链路。单二进制即可部署整套服务，开箱即用。」；处于增长早期，涨速在加快；社区健康（fork/star 比 26.5%，0 个 open issue）、开发活跃。"
-    }
-  },
-  {
-    "repo": {
-      "owner": "nichochar",
-      "name": "ari",
-      "full_name": "nichochar/ari",
-      "description": "learn stuff with pen + paper + AI",
-      "stars": 200,
-      "forks": 17,
-      "open_issues": 0,
-      "created_at": "2026-10-18T15:46:49+00:00",
-      "pushed_at": "2026-10-21T15:40:10+00:00",
-      "updated_at": "2026-10-24T08:40:50+00:00",
-      "topics": [
-        "ai-tutor",
-        "education",
-        "local-first"
-      ],
-      "language": "TypeScript",
-      "license": "MIT",
-      "homepage": null,
-      "html_url": "https://github.com/nichochar/ari",
-      "default_branch": "main",
-      "archived": false,
-      "search_score": 1.0,
-      "stars_7d_ago": 11,
-      "star_series": [
-        {
-          "d": "09-25",
-          "s": 0
-        },
-        {
-          "d": "09-26",
-          "s": 0
-        },
-        {
-          "d": "09-27",
-          "s": 0
-        },
-        {
-          "d": "09-28",
-          "s": 0
-        },
-        {
-          "d": "09-29",
-          "s": 0
-        },
-        {
-          "d": "09-30",
-          "s": 0
-        },
-        {
-          "d": "10-01",
-          "s": 0
-        },
-        {
-          "d": "10-02",
-          "s": 0
-        },
-        {
-          "d": "10-03",
-          "s": 0
-        },
-        {
-          "d": "10-04",
-          "s": 0
-        },
-        {
-          "d": "10-05",
-          "s": 0
-        },
-        {
-          "d": "10-06",
-          "s": 0
-        },
-        {
-          "d": "10-07",
-          "s": 0
-        },
-        {
-          "d": "10-08",
-          "s": 0
-        },
-        {
-          "d": "10-09",
-          "s": 0
-        },
-        {
-          "d": "10-10",
-          "s": 0
-        },
-        {
-          "d": "10-11",
-          "s": 0
-        },
-        {
-          "d": "10-12",
-          "s": 0
-        },
-        {
-          "d": "10-13",
-          "s": 0
-        },
-        {
-          "d": "10-14",
-          "s": 0
-        },
-        {
-          "d": "10-15",
-          "s": 0
-        },
-        {
-          "d": "10-16",
-          "s": 0
-        },
-        {
-          "d": "10-17",
-          "s": 0
-        },
-        {
-          "d": "10-18",
-          "s": 11
-        },
-        {
-          "d": "10-19",
-          "s": 154
-        },
-        {
-          "d": "10-20",
-          "s": 160
-        },
-        {
-          "d": "10-21",
-          "s": 177
-        },
-        {
-          "d": "10-22",
-          "s": 192
-        },
-        {
-          "d": "10-23",
-          "s": 198
-        },
-        {
-          "d": "10-24",
-          "s": 200
-        }
-      ]
-    },
-    "score": {
-      "score": 62.81,
-      "breakdown": {
-        "vel": 91,
-        "acc": 99,
-        "health": 81,
-        "fresh": 99,
+        "vel": 57,
+        "acc": 42,
+        "health": 68,
+        "fresh": 74,
         "signal": 70
       },
-      "stage": "saturated",
-      "stage_multiplier": 0.7,
+      "stage": "mid_early",
+      "stage_multiplier": 1.1,
       "confidence": 1.0,
-      "base_score": 89.73,
-      "explanation": "ari 是 TypeScript 开源项目，主打「learn stuff with pen + paper + AI」；增长已饱和，本周涨速 27 star/天，涨速在加快；社区健康（fork/star 比 8.5%，0 个 open issue）、开发活跃。"
+      "base_score": 57.86,
+      "explanation": "editaplot 是 Python 开源项目，主打「AI-guided editable scientific figures with Codex and local Origin/OriginPro」；处于中早期增长，本周涨速 5.9 star/天；开发活跃。"
     }
   },
   {
@@ -668,12 +521,12 @@
       "name": "mcp",
       "full_name": "cloudflare/mcp",
       "description": "MCP server for the Cloudflare API",
-      "stars": 994,
+      "stars": 996,
       "forks": 147,
-      "open_issues": 38,
+      "open_issues": 39,
       "created_at": "2026-01-29T15:10:49+00:00",
-      "pushed_at": "2026-10-24T06:54:47+00:00",
-      "updated_at": "2026-10-24T04:15:11+00:00",
+      "pushed_at": "2026-10-25T06:54:39+00:00",
+      "updated_at": "2026-10-24T23:00:42+00:00",
       "topics": [
         "cloudflare",
         "cloudflare-workers",
@@ -687,83 +540,79 @@
       "default_branch": "main",
       "archived": false,
       "search_score": 1.0,
-      "stars_7d_ago": 968,
+      "stars_7d_ago": 971,
       "star_series": [
         {
-          "d": "09-25",
-          "s": 944
-        },
-        {
           "d": "09-26",
-          "s": 944
+          "s": 948
         },
         {
           "d": "09-27",
-          "s": 944
+          "s": 948
         },
         {
           "d": "09-28",
-          "s": 944
+          "s": 948
         },
         {
           "d": "09-29",
-          "s": 944
+          "s": 948
         },
         {
           "d": "09-30",
-          "s": 944
+          "s": 948
         },
         {
           "d": "10-01",
-          "s": 944
+          "s": 948
         },
         {
           "d": "10-02",
-          "s": 944
+          "s": 948
         },
         {
           "d": "10-03",
-          "s": 944
+          "s": 948
         },
         {
           "d": "10-04",
-          "s": 944
+          "s": 948
         },
         {
           "d": "10-05",
-          "s": 944
+          "s": 948
         },
         {
           "d": "10-06",
-          "s": 944
+          "s": 948
         },
         {
           "d": "10-07",
-          "s": 944
+          "s": 948
         },
         {
           "d": "10-08",
-          "s": 944
+          "s": 948
         },
         {
           "d": "10-09",
-          "s": 944
+          "s": 948
         },
         {
           "d": "10-10",
-          "s": 944
+          "s": 948
         },
         {
           "d": "10-11",
-          "s": 944
+          "s": 948
         },
         {
           "d": "10-12",
-          "s": 944
+          "s": 948
         },
         {
           "d": "10-13",
-          "s": 944
+          "s": 948
         },
         {
           "d": "10-14",
@@ -807,24 +656,188 @@
         },
         {
           "d": "10-24",
-          "s": 994
+          "s": 996
+        },
+        {
+          "d": "10-25",
+          "s": 996
         }
       ]
     },
     "score": {
-      "score": 62.64,
+      "score": 63.53,
       "breakdown": {
-        "vel": 42,
+        "vel": 45,
         "acc": 52,
-        "health": 92,
+        "health": 91,
         "fresh": 27,
         "signal": 85
       },
       "stage": "early",
       "stage_multiplier": 1.2,
       "confidence": 1.0,
-      "base_score": 52.2,
-      "explanation": "mcp 是 TypeScript 开源项目，主打「MCP server for the Cloudflare API」；处于增长早期，本周涨速 3.7 star/天；社区健康（fork/star 比 14.8%，38 个 open issue）、项目元数据完整。"
+      "base_score": 52.94,
+      "explanation": "mcp 是 TypeScript 开源项目，主打「MCP server for the Cloudflare API」；处于增长早期，本周涨速 3.6 star/天；社区健康（fork/star 比 14.8%，39 个 open issue）、项目元数据完整。"
+    }
+  },
+  {
+    "repo": {
+      "owner": "img2threejs",
+      "name": "img2threejs-showcase",
+      "full_name": "img2threejs/img2threejs-showcase",
+      "description": "Live demo gallery for img2threejs: procedural Three.js models rebuilt from a single reference image.",
+      "stars": 200,
+      "forks": 39,
+      "open_issues": 11,
+      "created_at": "2026-07-16T14:34:17+00:00",
+      "pushed_at": "2026-10-25T09:11:20+00:00",
+      "updated_at": "2026-10-25T09:11:24+00:00",
+      "topics": [],
+      "language": "TypeScript",
+      "license": null,
+      "homepage": "https://img2threejs.io",
+      "html_url": "https://github.com/img2threejs/img2threejs-showcase",
+      "default_branch": "main",
+      "archived": false,
+      "search_score": 1.0,
+      "stars_7d_ago": 191,
+      "star_series": [
+        {
+          "d": "09-26",
+          "s": 164
+        },
+        {
+          "d": "09-27",
+          "s": 165
+        },
+        {
+          "d": "09-28",
+          "s": 166
+        },
+        {
+          "d": "09-29",
+          "s": 167
+        },
+        {
+          "d": "09-30",
+          "s": 167
+        },
+        {
+          "d": "10-01",
+          "s": 167
+        },
+        {
+          "d": "10-02",
+          "s": 169
+        },
+        {
+          "d": "10-03",
+          "s": 170
+        },
+        {
+          "d": "10-04",
+          "s": 171
+        },
+        {
+          "d": "10-05",
+          "s": 172
+        },
+        {
+          "d": "10-06",
+          "s": 174
+        },
+        {
+          "d": "10-07",
+          "s": 174
+        },
+        {
+          "d": "10-08",
+          "s": 176
+        },
+        {
+          "d": "10-09",
+          "s": 178
+        },
+        {
+          "d": "10-10",
+          "s": 179
+        },
+        {
+          "d": "10-11",
+          "s": 181
+        },
+        {
+          "d": "10-12",
+          "s": 183
+        },
+        {
+          "d": "10-13",
+          "s": 185
+        },
+        {
+          "d": "10-14",
+          "s": 186
+        },
+        {
+          "d": "10-15",
+          "s": 187
+        },
+        {
+          "d": "10-16",
+          "s": 188
+        },
+        {
+          "d": "10-17",
+          "s": 188
+        },
+        {
+          "d": "10-18",
+          "s": 190
+        },
+        {
+          "d": "10-19",
+          "s": 191
+        },
+        {
+          "d": "10-20",
+          "s": 192
+        },
+        {
+          "d": "10-21",
+          "s": 196
+        },
+        {
+          "d": "10-22",
+          "s": 198
+        },
+        {
+          "d": "10-23",
+          "s": 199
+        },
+        {
+          "d": "10-24",
+          "s": 199
+        },
+        {
+          "d": "10-25",
+          "s": 200
+        }
+      ]
+    },
+    "score": {
+      "score": 60.16,
+      "breakdown": {
+        "vel": 24,
+        "acc": 53,
+        "health": 91,
+        "fresh": 73,
+        "signal": 65
+      },
+      "stage": "early",
+      "stage_multiplier": 1.2,
+      "confidence": 1.0,
+      "base_score": 50.14,
+      "explanation": "img2threejs-showcase 是 TypeScript 开源项目，主打「Live demo gallery for img2threejs: procedural Three.js models rebuilt from a single reference image.」；处于增长早期；社区健康（fork/star 比 19.5%，11 个 open issue）、开发活跃。"
     }
   }
 ]
