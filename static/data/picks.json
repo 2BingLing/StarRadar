@@ -1,839 +1,662 @@
 [
   {
     "repo": {
-      "owner": "UnderleveledBuilder",
-      "name": "awesome-short-drama-skills",
-      "full_name": "UnderleveledBuilder/awesome-short-drama-skills",
-      "description": "AI 短剧 · 漫剧 Skill（技能包）精选：剧本、改编、分镜、Seedance / 可灵 / MiniMax 视频提示词，千问、豆包、龙虾 OpenClaw、WorkBuddy、Claude Code、Codex 等智能体可用 | Curated agent skills for AI short drama, micro drama / microdrama, vertical drama and manju (AI comic drama): screenwriting, storyboards, Seedance / Kling / MiniMax video prompts",
-      "stars": 998,
-      "forks": 131,
-      "open_issues": 6,
-      "created_at": "2026-10-13T20:35:18+00:00",
-      "pushed_at": "2026-10-26T05:34:57+00:00",
-      "updated_at": "2026-10-26T12:02:03+00:00",
-      "topics": [
-        "agent-skills",
-        "ai-drama",
-        "ai-short-drama",
-        "awesome",
-        "awesome-list",
-        "claude-code",
-        "claude-skills",
-        "codex",
-        "doubao",
-        "kimi",
-        "manju",
-        "micro-drama",
-        "microdrama",
-        "openclaw",
-        "qwen",
-        "seedance",
-        "short-drama",
-        "trae",
-        "vertical-drama",
-        "workbuddy"
-      ],
-      "language": "HTML",
-      "license": "CC0-1.0",
-      "homepage": "https://shortdramaskills.com",
-      "html_url": "https://github.com/UnderleveledBuilder/awesome-short-drama-skills",
-      "default_branch": "main",
-      "archived": false,
-      "search_score": 1.0,
-      "stars_7d_ago": 746,
-      "star_series": [
-        {
-          "d": "09-27",
-          "s": 746
-        },
-        {
-          "d": "09-28",
-          "s": 746
-        },
-        {
-          "d": "09-29",
-          "s": 746
-        },
-        {
-          "d": "09-30",
-          "s": 746
-        },
-        {
-          "d": "10-01",
-          "s": 746
-        },
-        {
-          "d": "10-02",
-          "s": 746
-        },
-        {
-          "d": "10-03",
-          "s": 746
-        },
-        {
-          "d": "10-04",
-          "s": 746
-        },
-        {
-          "d": "10-05",
-          "s": 746
-        },
-        {
-          "d": "10-06",
-          "s": 746
-        },
-        {
-          "d": "10-07",
-          "s": 746
-        },
-        {
-          "d": "10-08",
-          "s": 746
-        },
-        {
-          "d": "10-09",
-          "s": 746
-        },
-        {
-          "d": "10-10",
-          "s": 746
-        },
-        {
-          "d": "10-11",
-          "s": 746
-        },
-        {
-          "d": "10-12",
-          "s": 746
-        },
-        {
-          "d": "10-13",
-          "s": 746
-        },
-        {
-          "d": "10-14",
-          "s": 746
-        },
-        {
-          "d": "10-15",
-          "s": 746
-        },
-        {
-          "d": "10-16",
-          "s": 746
-        },
-        {
-          "d": "10-17",
-          "s": 746
-        },
-        {
-          "d": "10-18",
-          "s": 746
-        },
-        {
-          "d": "10-19",
-          "s": 746
-        },
-        {
-          "d": "10-20",
-          "s": 746
-        },
-        {
-          "d": "10-21",
-          "s": 746
-        },
-        {
-          "d": "10-22",
-          "s": 746
-        },
-        {
-          "d": "10-23",
-          "s": 746
-        },
-        {
-          "d": "10-24",
-          "s": 749
-        },
-        {
-          "d": "10-25",
-          "s": 908
-        },
-        {
-          "d": "10-26",
-          "s": 998
-        }
-      ]
-    },
-    "score": {
-      "score": 100.0,
-      "breakdown": {
-        "vel": 100,
-        "acc": 99,
-        "health": 99,
-        "fresh": 97,
-        "signal": 85
-      },
-      "stage": "early",
-      "stage_multiplier": 1.2,
-      "confidence": 1.0,
-      "base_score": 97.57,
-      "explanation": "awesome-short-drama-skills 是 HTML 开源项目，主打「AI 短剧 · 漫剧 Skill（技能包）精选：剧本、改编、分镜、Seedance / 可灵 / MiniMax 视频提示词，千问、豆包、龙虾 OpenClaw、WorkBuddy、Claude Code、Codex 等智能体可用 | Curated agent skills for AI short drama, micro drama / microdrama, vertical drama and manju (AI comic drama): screenwriting, storyboards, Seedance / Kling / MiniMax video prompts」；处于增长早期，本周涨速 36 star/天，涨速在加快；社区健康（fork/star 比 13.1%，6 个 open issue）、项目元数据完整、开发活跃。"
-    }
-  },
-  {
-    "repo": {
-      "owner": "cosmictaserdev-creator",
-      "name": "Convx",
-      "full_name": "cosmictaserdev-creator/Convx",
-      "description": "A free, open-source Android music player for YouTube Music with an iOS-style Liquid Glass interface, synced lyrics, Automix and Listen Together.",
+      "owner": "Snapintosh",
+      "name": "Snapintosh",
+      "full_name": "Snapintosh/Snapintosh",
+      "description": "EL2 hypervisor and toolchain that boots macOS on the ASUS A16 (Snapdragon X2 Elite), with an Adreno Metal/IOGPU stack",
       "stars": 997,
-      "forks": 52,
-      "open_issues": 44,
-      "created_at": "2026-07-23T08:19:17+00:00",
-      "pushed_at": "2026-10-26T10:29:04+00:00",
-      "updated_at": "2026-10-26T09:44:19+00:00",
-      "topics": [
-        "android",
-        "android-app",
-        "automix",
-        "exoplayer",
-        "ios-design",
-        "jetpack-compose",
-        "kotlin",
-        "liquid-glass",
-        "lyrics",
-        "media3",
-        "music-player",
-        "open-source",
-        "streaming",
-        "youtube-music"
-      ],
-      "language": "Kotlin",
-      "license": "GPL-3.0",
-      "homepage": "https://cosmictaser.de5.net",
-      "html_url": "https://github.com/cosmictaserdev-creator/Convx",
+      "forks": 58,
+      "open_issues": 10,
+      "created_at": "2026-10-22T01:40:05+00:00",
+      "pushed_at": "2026-10-25T05:05:43+00:00",
+      "updated_at": "2026-10-27T11:05:43+00:00",
+      "topics": [],
+      "language": "Python",
+      "license": "NOASSERTION",
+      "homepage": null,
+      "html_url": "https://github.com/Snapintosh/Snapintosh",
       "default_branch": "main",
       "archived": false,
       "search_score": 1.0,
-      "stars_7d_ago": 926,
+      "stars_7d_ago": 915,
       "star_series": [
         {
-          "d": "09-27",
-          "s": 926
-        },
-        {
           "d": "09-28",
-          "s": 926
+          "s": 915
         },
         {
           "d": "09-29",
-          "s": 926
+          "s": 915
         },
         {
           "d": "09-30",
-          "s": 926
+          "s": 915
         },
         {
           "d": "10-01",
-          "s": 926
+          "s": 915
         },
         {
           "d": "10-02",
-          "s": 926
+          "s": 915
         },
         {
           "d": "10-03",
-          "s": 926
+          "s": 915
         },
         {
           "d": "10-04",
-          "s": 926
+          "s": 915
         },
         {
           "d": "10-05",
-          "s": 926
+          "s": 915
         },
         {
           "d": "10-06",
-          "s": 926
+          "s": 915
         },
         {
           "d": "10-07",
-          "s": 926
+          "s": 915
         },
         {
           "d": "10-08",
-          "s": 926
+          "s": 915
         },
         {
           "d": "10-09",
-          "s": 926
+          "s": 915
         },
         {
           "d": "10-10",
-          "s": 926
+          "s": 915
         },
         {
           "d": "10-11",
-          "s": 926
+          "s": 915
         },
         {
           "d": "10-12",
-          "s": 926
+          "s": 915
         },
         {
           "d": "10-13",
-          "s": 926
+          "s": 915
         },
         {
           "d": "10-14",
-          "s": 926
+          "s": 915
         },
         {
           "d": "10-15",
-          "s": 926
+          "s": 915
         },
         {
           "d": "10-16",
-          "s": 926
+          "s": 915
         },
         {
           "d": "10-17",
-          "s": 926
+          "s": 915
         },
         {
           "d": "10-18",
-          "s": 926
+          "s": 915
         },
         {
           "d": "10-19",
-          "s": 926
+          "s": 915
         },
         {
           "d": "10-20",
-          "s": 926
+          "s": 915
         },
         {
           "d": "10-21",
-          "s": 926
+          "s": 915
         },
         {
           "d": "10-22",
-          "s": 926
+          "s": 915
         },
         {
           "d": "10-23",
-          "s": 926
+          "s": 915
         },
         {
           "d": "10-24",
-          "s": 958
+          "s": 915
         },
         {
           "d": "10-25",
-          "s": 989
+          "s": 939
         },
         {
           "d": "10-26",
+          "s": 977
+        },
+        {
+          "d": "10-27",
           "s": 997
         }
       ]
     },
     "score": {
-      "score": 84.65,
+      "score": 91.14,
       "breakdown": {
-        "vel": 68,
+        "vel": 79,
         "acc": 99,
-        "health": 66,
-        "fresh": 74,
-        "signal": 85
+        "health": 76,
+        "fresh": 99,
+        "signal": 55
       },
       "stage": "mid_early",
       "stage_multiplier": 1.1,
       "confidence": 1.0,
-      "base_score": 76.95,
-      "explanation": "Convx 是 Kotlin 开源项目，主打「A free, open-source Android music player for YouTube Music with an iOS-style Liquid Glass interface, synced lyrics, Automix and Listen Together.」；处于中早期增长，本周涨速 10 star/天，涨速在加快；项目元数据完整、开发活跃。"
+      "base_score": 82.85,
+      "explanation": "Snapintosh 是 Python 开源项目，主打「EL2 hypervisor and toolchain that boots macOS on the ASUS A16 (Snapdragon X2 Elite), with an Adreno Metal/IOGPU stack」；处于中早期增长，本周涨速 12 star/天，涨速在加快；社区健康（fork/star 比 5.8%，10 个 open issue）、开发活跃。"
     }
   },
   {
     "repo": {
-      "owner": "Gxj230958",
-      "name": "TritonAscendBench",
-      "full_name": "Gxj230958/TritonAscendBench",
-      "description": "A migration benchmark that measures whether production GPU Triton kernels — extracted from vLLM and SGLang inference paths — can be ported to the Huawei Ascend 910B (Atlas A2) via `triton-ascend` without losing correctness or performance.",
-      "stars": 200,
-      "forks": 0,
-      "open_issues": 0,
-      "created_at": "2026-09-16T12:33:24+00:00",
-      "pushed_at": "2026-10-20T14:24:44+00:00",
-      "updated_at": "2026-10-26T00:41:18+00:00",
-      "topics": [],
-      "language": "Python",
-      "license": "Apache-2.0",
-      "homepage": null,
-      "html_url": "https://github.com/Gxj230958/TritonAscendBench",
-      "default_branch": "main",
-      "archived": false,
-      "search_score": 1.0,
-      "stars_7d_ago": 145,
-      "star_series": [
-        {
-          "d": "09-27",
-          "s": 40
-        },
-        {
-          "d": "09-28",
-          "s": 48
-        },
-        {
-          "d": "09-29",
-          "s": 58
-        },
-        {
-          "d": "09-30",
-          "s": 71
-        },
-        {
-          "d": "10-01",
-          "s": 77
-        },
-        {
-          "d": "10-02",
-          "s": 79
-        },
-        {
-          "d": "10-03",
-          "s": 79
-        },
-        {
-          "d": "10-04",
-          "s": 79
-        },
-        {
-          "d": "10-05",
-          "s": 79
-        },
-        {
-          "d": "10-06",
-          "s": 79
-        },
-        {
-          "d": "10-07",
-          "s": 79
-        },
-        {
-          "d": "10-08",
-          "s": 79
-        },
-        {
-          "d": "10-09",
-          "s": 79
-        },
-        {
-          "d": "10-10",
-          "s": 79
-        },
-        {
-          "d": "10-11",
-          "s": 79
-        },
-        {
-          "d": "10-12",
-          "s": 84
-        },
-        {
-          "d": "10-13",
-          "s": 92
-        },
-        {
-          "d": "10-14",
-          "s": 99
-        },
-        {
-          "d": "10-15",
-          "s": 102
-        },
-        {
-          "d": "10-16",
-          "s": 111
-        },
-        {
-          "d": "10-17",
-          "s": 116
-        },
-        {
-          "d": "10-18",
-          "s": 128
-        },
-        {
-          "d": "10-19",
-          "s": 137
-        },
-        {
-          "d": "10-20",
-          "s": 145
-        },
-        {
-          "d": "10-21",
-          "s": 159
-        },
-        {
-          "d": "10-22",
-          "s": 173
-        },
-        {
-          "d": "10-23",
-          "s": 178
-        },
-        {
-          "d": "10-24",
-          "s": 184
-        },
-        {
-          "d": "10-25",
-          "s": 198
-        },
-        {
-          "d": "10-26",
-          "s": 200
-        }
-      ]
-    },
-    "score": {
-      "score": 73.26,
-      "breakdown": {
-        "vel": 61,
-        "acc": 51,
-        "health": 60,
-        "fresh": 89,
-        "signal": 55
-      },
-      "stage": "early",
-      "stage_multiplier": 1.2,
-      "confidence": 1.0,
-      "base_score": 61.05,
-      "explanation": "TritonAscendBench 是 Python 开源项目，主打「A migration benchmark that measures whether production GPU Triton kernels — extracted from vLLM and SGLang inference paths — can be ported to the Huawei Ascend 910B (Atlas A2) via `triton-ascend` without losing correctness or performance.」；处于增长早期，本周涨速 7.9 star/天；开发活跃。"
-    }
-  },
-  {
-    "repo": {
-      "owner": "netmojo-systems",
-      "name": "omdrop-plugin",
-      "full_name": "netmojo-systems/omdrop-plugin",
-      "description": "Send and receive files with nearby Apple devices over AirDrop. Made for Omarchy Linux",
-      "stars": 200,
-      "forks": 27,
-      "open_issues": 18,
-      "created_at": "2026-09-15T07:16:47+00:00",
-      "pushed_at": "2026-10-23T17:29:19+00:00",
-      "updated_at": "2026-10-26T02:45:57+00:00",
+      "owner": "ling-stack-org",
+      "name": "ling-stack",
+      "full_name": "ling-stack-org/ling-stack",
+      "description": "Local-first AI teammate workspace. Bring your own models and keep project conversations, tool approvals, and results together.",
+      "stars": 996,
+      "forks": 114,
+      "open_issues": 1,
+      "created_at": "2026-05-20T04:49:54+00:00",
+      "pushed_at": "2026-10-27T11:18:34+00:00",
+      "updated_at": "2026-10-27T09:50:41+00:00",
       "topics": [
-        "airdrop",
-        "omarchy",
-        "omarchy-bar",
-        "omarchy-plugin"
-      ],
-      "language": "Rust",
-      "license": "MIT",
-      "homepage": null,
-      "html_url": "https://github.com/netmojo-systems/omdrop-plugin",
-      "default_branch": "main",
-      "archived": false,
-      "search_score": 1.0,
-      "stars_7d_ago": 191,
-      "star_series": [
-        {
-          "d": "09-27",
-          "s": 186
-        },
-        {
-          "d": "09-28",
-          "s": 186
-        },
-        {
-          "d": "09-29",
-          "s": 186
-        },
-        {
-          "d": "09-30",
-          "s": 186
-        },
-        {
-          "d": "10-01",
-          "s": 186
-        },
-        {
-          "d": "10-02",
-          "s": 186
-        },
-        {
-          "d": "10-03",
-          "s": 186
-        },
-        {
-          "d": "10-04",
-          "s": 186
-        },
-        {
-          "d": "10-05",
-          "s": 186
-        },
-        {
-          "d": "10-06",
-          "s": 186
-        },
-        {
-          "d": "10-07",
-          "s": 186
-        },
-        {
-          "d": "10-08",
-          "s": 186
-        },
-        {
-          "d": "10-09",
-          "s": 186
-        },
-        {
-          "d": "10-10",
-          "s": 186
-        },
-        {
-          "d": "10-11",
-          "s": 186
-        },
-        {
-          "d": "10-12",
-          "s": 186
-        },
-        {
-          "d": "10-13",
-          "s": 186
-        },
-        {
-          "d": "10-14",
-          "s": 186
-        },
-        {
-          "d": "10-15",
-          "s": 186
-        },
-        {
-          "d": "10-16",
-          "s": 186
-        },
-        {
-          "d": "10-17",
-          "s": 187
-        },
-        {
-          "d": "10-18",
-          "s": 188
-        },
-        {
-          "d": "10-19",
-          "s": 189
-        },
-        {
-          "d": "10-20",
-          "s": 191
-        },
-        {
-          "d": "10-21",
-          "s": 192
-        },
-        {
-          "d": "10-22",
-          "s": 193
-        },
-        {
-          "d": "10-23",
-          "s": 195
-        },
-        {
-          "d": "10-24",
-          "s": 195
-        },
-        {
-          "d": "10-25",
-          "s": 199
-        },
-        {
-          "d": "10-26",
-          "s": 200
-        }
-      ]
-    },
-    "score": {
-      "score": 63.09,
-      "breakdown": {
-        "vel": 23,
-        "acc": 64,
-        "health": 80,
-        "fresh": 89,
-        "signal": 70
-      },
-      "stage": "early",
-      "stage_multiplier": 1.2,
-      "confidence": 1.0,
-      "base_score": 52.57,
-      "explanation": "omdrop-plugin 是 Rust 开源项目，主打「Send and receive files with nearby Apple devices over AirDrop. Made for Omarchy Linux」；处于增长早期；社区健康（fork/star 比 13.5%，18 个 open issue）、开发活跃。"
-    }
-  },
-  {
-    "repo": {
-      "owner": "urzeye",
-      "name": "ophel",
-      "full_name": "urzeye/ophel",
-      "description": "Turn AI conversations into organized, reusable workflows — across major AI platforms. | 把 AI 对话转化为可组织、可复用的工作流，适用于主流 AI 平台",
-      "stars": 997,
-      "forks": 61,
-      "open_issues": 30,
-      "created_at": "2025-12-30T12:09:25+00:00",
-      "pushed_at": "2026-10-26T04:48:35+00:00",
-      "updated_at": "2026-10-26T09:29:45+00:00",
-      "topics": [
-        "ai-assistant",
-        "ai-chat",
-        "ai-studio",
-        "ai-workflow",
-        "browser-extension",
-        "chatgpt",
-        "chrome-extension",
-        "claude",
-        "deepseek-harness",
-        "gemini",
-        "grok",
-        "hotswap",
-        "long-conversation",
-        "minimap",
-        "outline",
-        "plugin",
-        "productivity",
-        "prompt",
-        "prompt-management",
-        "timeline"
+        "agent",
+        "agent-orchestration",
+        "agent-skills",
+        "agentic-ai",
+        "ai",
+        "ai-agents",
+        "ai-teammates",
+        "ai-workspace",
+        "anthropic",
+        "developer-tools",
+        "electron",
+        "llm",
+        "local-first",
+        "mcp",
+        "multi-agent",
+        "multi-model",
+        "openai",
+        "self-hosted",
+        "typescript"
       ],
       "language": "TypeScript",
+      "license": "MIT",
+      "homepage": null,
+      "html_url": "https://github.com/ling-stack-org/ling-stack",
+      "default_branch": "main",
+      "archived": false,
+      "search_score": 1.0,
+      "stars_7d_ago": 931,
+      "star_series": [
+        {
+          "d": "09-28",
+          "s": 931
+        },
+        {
+          "d": "09-29",
+          "s": 931
+        },
+        {
+          "d": "09-30",
+          "s": 931
+        },
+        {
+          "d": "10-01",
+          "s": 931
+        },
+        {
+          "d": "10-02",
+          "s": 931
+        },
+        {
+          "d": "10-03",
+          "s": 931
+        },
+        {
+          "d": "10-04",
+          "s": 931
+        },
+        {
+          "d": "10-05",
+          "s": 931
+        },
+        {
+          "d": "10-06",
+          "s": 931
+        },
+        {
+          "d": "10-07",
+          "s": 931
+        },
+        {
+          "d": "10-08",
+          "s": 931
+        },
+        {
+          "d": "10-09",
+          "s": 931
+        },
+        {
+          "d": "10-10",
+          "s": 931
+        },
+        {
+          "d": "10-11",
+          "s": 931
+        },
+        {
+          "d": "10-12",
+          "s": 931
+        },
+        {
+          "d": "10-13",
+          "s": 931
+        },
+        {
+          "d": "10-14",
+          "s": 931
+        },
+        {
+          "d": "10-15",
+          "s": 931
+        },
+        {
+          "d": "10-16",
+          "s": 931
+        },
+        {
+          "d": "10-17",
+          "s": 931
+        },
+        {
+          "d": "10-18",
+          "s": 931
+        },
+        {
+          "d": "10-19",
+          "s": 931
+        },
+        {
+          "d": "10-20",
+          "s": 931
+        },
+        {
+          "d": "10-21",
+          "s": 931
+        },
+        {
+          "d": "10-22",
+          "s": 931
+        },
+        {
+          "d": "10-23",
+          "s": 931
+        },
+        {
+          "d": "10-24",
+          "s": 931
+        },
+        {
+          "d": "10-25",
+          "s": 967
+        },
+        {
+          "d": "10-26",
+          "s": 996
+        },
+        {
+          "d": "10-27",
+          "s": 996
+        }
+      ]
+    },
+    "score": {
+      "score": 87.92,
+      "breakdown": {
+        "vel": 72,
+        "acc": 99,
+        "health": 98,
+        "fresh": 56,
+        "signal": 70
+      },
+      "stage": "mid_early",
+      "stage_multiplier": 1.1,
+      "confidence": 1.0,
+      "base_score": 79.93,
+      "explanation": "ling-stack 是 TypeScript 开源项目，主打「Local-first AI teammate workspace. Bring your own models and keep project conversations, tool approvals, and results together.」；处于中早期增长，本周涨速 9.3 star/天，涨速在加快；社区健康（fork/star 比 11.4%，1 个 open issue）。"
+    }
+  },
+  {
+    "repo": {
+      "owner": "MuwMx",
+      "name": "YumaPlayer",
+      "full_name": "MuwMx/YumaPlayer",
+      "description": "🎵 Hybrid music client for Android: Spotify discovery & UI + YouTube Music library + Hi-Res Lossless (FLAC) streaming with fluid Glassmorphism💫",
+      "stars": 1000,
+      "forks": 39,
+      "open_issues": 31,
+      "created_at": "2026-07-24T15:53:08+00:00",
+      "pushed_at": "2026-10-26T23:56:31+00:00",
+      "updated_at": "2026-10-27T09:17:49+00:00",
+      "topics": [
+        "android",
+        "android-ui",
+        "audiophile",
+        "flac",
+        "glassmorphism",
+        "jetpack-compose",
+        "kotlin",
+        "lossless-audio",
+        "lyrics",
+        "material3",
+        "music-player",
+        "spotify",
+        "youtube-music"
+      ],
+      "language": "Kotlin",
       "license": "GPL-3.0",
-      "homepage": "https://ophel.app",
-      "html_url": "https://github.com/urzeye/ophel",
+      "homepage": null,
+      "html_url": "https://github.com/MuwMx/YumaPlayer",
+      "default_branch": "main",
+      "archived": false,
+      "search_score": 1.0,
+      "stars_7d_ago": 941,
+      "star_series": [
+        {
+          "d": "09-28",
+          "s": 941
+        },
+        {
+          "d": "09-29",
+          "s": 941
+        },
+        {
+          "d": "09-30",
+          "s": 941
+        },
+        {
+          "d": "10-01",
+          "s": 941
+        },
+        {
+          "d": "10-02",
+          "s": 941
+        },
+        {
+          "d": "10-03",
+          "s": 941
+        },
+        {
+          "d": "10-04",
+          "s": 941
+        },
+        {
+          "d": "10-05",
+          "s": 941
+        },
+        {
+          "d": "10-06",
+          "s": 941
+        },
+        {
+          "d": "10-07",
+          "s": 941
+        },
+        {
+          "d": "10-08",
+          "s": 941
+        },
+        {
+          "d": "10-09",
+          "s": 941
+        },
+        {
+          "d": "10-10",
+          "s": 941
+        },
+        {
+          "d": "10-11",
+          "s": 941
+        },
+        {
+          "d": "10-12",
+          "s": 941
+        },
+        {
+          "d": "10-13",
+          "s": 941
+        },
+        {
+          "d": "10-14",
+          "s": 941
+        },
+        {
+          "d": "10-15",
+          "s": 941
+        },
+        {
+          "d": "10-16",
+          "s": 941
+        },
+        {
+          "d": "10-17",
+          "s": 941
+        },
+        {
+          "d": "10-18",
+          "s": 941
+        },
+        {
+          "d": "10-19",
+          "s": 941
+        },
+        {
+          "d": "10-20",
+          "s": 941
+        },
+        {
+          "d": "10-21",
+          "s": 941
+        },
+        {
+          "d": "10-22",
+          "s": 946
+        },
+        {
+          "d": "10-23",
+          "s": 961
+        },
+        {
+          "d": "10-24",
+          "s": 972
+        },
+        {
+          "d": "10-25",
+          "s": 980
+        },
+        {
+          "d": "10-26",
+          "s": 993
+        },
+        {
+          "d": "10-27",
+          "s": 1000
+        }
+      ]
+    },
+    "score": {
+      "score": 83.39,
+      "breakdown": {
+        "vel": 70,
+        "acc": 99,
+        "health": 65,
+        "fresh": 74,
+        "signal": 70
+      },
+      "stage": "mid_early",
+      "stage_multiplier": 1.1,
+      "confidence": 1.0,
+      "base_score": 75.81,
+      "explanation": "YumaPlayer 是 Kotlin 开源项目，主打「🎵 Hybrid music client for Android: Spotify discovery & UI + YouTube Music library + Hi-Res Lossless (FLAC) streaming with fluid Glassmorphism💫」；处于中早期增长，本周涨速 8.4 star/天，涨速在加快；开发活跃。"
+    }
+  },
+  {
+    "repo": {
+      "owner": "rampstackco",
+      "name": "claude-skills",
+      "full_name": "rampstackco/claude-skills",
+      "description": "Stack-agnostic Claude Skills covering the full website lifecycle: brand, design, content, SEO, dev, ops, growth, and research. Build, ship, audit, optimize.",
+      "stars": 1000,
+      "forks": 134,
+      "open_issues": 6,
+      "created_at": "2026-04-28T22:33:51+00:00",
+      "pushed_at": "2026-10-27T00:02:48+00:00",
+      "updated_at": "2026-10-26T23:27:35+00:00",
+      "topics": [
+        "agent-skills",
+        "ai-agents",
+        "anthropic",
+        "claude",
+        "claude-ai",
+        "claude-code",
+        "claude-skills",
+        "mcp",
+        "product-management",
+        "rampstack",
+        "seo",
+        "skills-collection",
+        "web-design",
+        "web-development"
+      ],
+      "language": "JavaScript",
+      "license": "MIT",
+      "homepage": "https://rampstack.co",
+      "html_url": "https://github.com/rampstackco/claude-skills",
       "default_branch": "main",
       "archived": false,
       "search_score": 1.0,
       "stars_7d_ago": 983,
       "star_series": [
         {
-          "d": "09-27",
-          "s": 983
-        },
-        {
           "d": "09-28",
-          "s": 983
+          "s": 905
         },
         {
           "d": "09-29",
-          "s": 983
+          "s": 909
         },
         {
           "d": "09-30",
-          "s": 983
+          "s": 912
         },
         {
           "d": "10-01",
-          "s": 983
+          "s": 915
         },
         {
           "d": "10-02",
-          "s": 983
+          "s": 919
         },
         {
           "d": "10-03",
-          "s": 983
+          "s": 922
         },
         {
           "d": "10-04",
-          "s": 983
+          "s": 925
         },
         {
           "d": "10-05",
-          "s": 983
+          "s": 928
         },
         {
           "d": "10-06",
-          "s": 983
+          "s": 930
         },
         {
           "d": "10-07",
-          "s": 983
+          "s": 935
         },
         {
           "d": "10-08",
-          "s": 983
+          "s": 936
         },
         {
           "d": "10-09",
-          "s": 983
+          "s": 939
         },
         {
           "d": "10-10",
-          "s": 983
+          "s": 940
         },
         {
           "d": "10-11",
-          "s": 983
+          "s": 946
         },
         {
           "d": "10-12",
-          "s": 983
+          "s": 948
         },
         {
           "d": "10-13",
-          "s": 983
+          "s": 955
         },
         {
           "d": "10-14",
-          "s": 983
+          "s": 960
         },
         {
           "d": "10-15",
-          "s": 983
+          "s": 961
         },
         {
           "d": "10-16",
-          "s": 983
+          "s": 964
         },
         {
           "d": "10-17",
-          "s": 983
+          "s": 967
         },
         {
           "d": "10-18",
-          "s": 983
+          "s": 969
         },
         {
           "d": "10-19",
-          "s": 983
+          "s": 973
         },
         {
           "d": "10-20",
-          "s": 983
+          "s": 975
         },
         {
           "d": "10-21",
-          "s": 986
+          "s": 983
         },
         {
           "d": "10-22",
-          "s": 991
+          "s": 985
         },
         {
           "d": "10-23",
-          "s": 993
+          "s": 990
         },
         {
           "d": "10-24",
-          "s": 993
+          "s": 992
         },
         {
           "d": "10-25",
@@ -841,24 +664,188 @@
         },
         {
           "d": "10-26",
-          "s": 997
+          "s": 1000
+        },
+        {
+          "d": "10-27",
+          "s": 1000
         }
       ]
     },
     "score": {
-      "score": 53.65,
+      "score": 64.82,
       "breakdown": {
-        "vel": 31,
-        "acc": 88,
-        "health": 73,
-        "fresh": 18,
+        "vel": 38,
+        "acc": 44,
+        "health": 99,
+        "fresh": 50,
         "signal": 85
+      },
+      "stage": "early",
+      "stage_multiplier": 1.2,
+      "confidence": 1.0,
+      "base_score": 54.01,
+      "explanation": "claude-skills 是 JavaScript 开源项目，主打「Stack-agnostic Claude Skills covering the full website lifecycle: brand, design, content, SEO, dev, ops, growth, and research. Build, ship, audit, optimize.」；处于增长早期；社区健康（fork/star 比 13.4%，6 个 open issue）、项目元数据完整。"
+    }
+  },
+  {
+    "repo": {
+      "owner": "domsvoboda",
+      "name": "xodus-nexus",
+      "full_name": "domsvoboda/xodus-nexus",
+      "description": "Open-source Xbox-inspired desktop launcher for Xodus on Linux",
+      "stars": 996,
+      "forks": 31,
+      "open_issues": 96,
+      "created_at": "2026-10-11T11:55:25+00:00",
+      "pushed_at": "2026-10-27T10:27:29+00:00",
+      "updated_at": "2026-10-27T11:34:55+00:00",
+      "topics": [],
+      "language": "TypeScript",
+      "license": "MIT",
+      "homepage": null,
+      "html_url": "https://github.com/domsvoboda/xodus-nexus",
+      "default_branch": "main",
+      "archived": false,
+      "search_score": 1.0,
+      "stars_7d_ago": 981,
+      "star_series": [
+        {
+          "d": "09-28",
+          "s": 981
+        },
+        {
+          "d": "09-29",
+          "s": 981
+        },
+        {
+          "d": "09-30",
+          "s": 981
+        },
+        {
+          "d": "10-01",
+          "s": 981
+        },
+        {
+          "d": "10-02",
+          "s": 981
+        },
+        {
+          "d": "10-03",
+          "s": 981
+        },
+        {
+          "d": "10-04",
+          "s": 981
+        },
+        {
+          "d": "10-05",
+          "s": 981
+        },
+        {
+          "d": "10-06",
+          "s": 981
+        },
+        {
+          "d": "10-07",
+          "s": 981
+        },
+        {
+          "d": "10-08",
+          "s": 981
+        },
+        {
+          "d": "10-09",
+          "s": 981
+        },
+        {
+          "d": "10-10",
+          "s": 981
+        },
+        {
+          "d": "10-11",
+          "s": 981
+        },
+        {
+          "d": "10-12",
+          "s": 981
+        },
+        {
+          "d": "10-13",
+          "s": 981
+        },
+        {
+          "d": "10-14",
+          "s": 981
+        },
+        {
+          "d": "10-15",
+          "s": 981
+        },
+        {
+          "d": "10-16",
+          "s": 981
+        },
+        {
+          "d": "10-17",
+          "s": 981
+        },
+        {
+          "d": "10-18",
+          "s": 981
+        },
+        {
+          "d": "10-19",
+          "s": 981
+        },
+        {
+          "d": "10-20",
+          "s": 981
+        },
+        {
+          "d": "10-21",
+          "s": 981
+        },
+        {
+          "d": "10-22",
+          "s": 981
+        },
+        {
+          "d": "10-23",
+          "s": 981
+        },
+        {
+          "d": "10-24",
+          "s": 981
+        },
+        {
+          "d": "10-25",
+          "s": 981
+        },
+        {
+          "d": "10-26",
+          "s": 985
+        },
+        {
+          "d": "10-27",
+          "s": 996
+        }
+      ]
+    },
+    "score": {
+      "score": 62.66,
+      "breakdown": {
+        "vel": 36,
+        "acc": 89,
+        "health": 45,
+        "fresh": 96,
+        "signal": 55
       },
       "stage": "mid_early",
       "stage_multiplier": 1.1,
       "confidence": 1.0,
-      "base_score": 48.77,
-      "explanation": "ophel 是 TypeScript 开源项目，主打「Turn AI conversations into organized, reusable workflows — across major AI platforms. | 把 AI 对话转化为可组织、可复用的工作流，适用于主流 AI 平台」；处于中早期增长，涨速在加快；社区健康（fork/star 比 6.1%，30 个 open issue）、项目元数据完整。"
+      "base_score": 56.96,
+      "explanation": "xodus-nexus 是 TypeScript 开源项目，主打「Open-source Xbox-inspired desktop launcher for Xodus on Linux」；处于中早期增长，涨速在加快；开发活跃。"
     }
   }
 ]
