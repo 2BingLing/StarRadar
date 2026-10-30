@@ -1,145 +1,331 @@
 [
   {
     "repo": {
-      "owner": "Moessif",
-      "name": "code-video-showcase",
-      "full_name": "Moessif/code-video-showcase",
-      "description": "A pure-code beat-synced showcase-video Agent Skill: HTML/Canvas/SVG/Three.js frame-by-frame + Python numpy/scipy score + FFmpeg. No generative models.",
+      "owner": "slow-stack",
+      "name": "mneme",
+      "full_name": "slow-stack/mneme",
+      "description": "🧠 The memory that dreams — cross-session memory for DeepSeek Harness. Local SQLite + Markdown mirrors, autoDream consolidation, 4-way recall (keyword/vector/BM25/entity), and a memory panel. 10 model tools, MCP server, CLI.",
       "stars": 200,
-      "forks": 11,
-      "open_issues": 0,
-      "created_at": "2026-10-24T14:02:58+00:00",
-      "pushed_at": "2026-10-28T06:20:54+00:00",
-      "updated_at": "2026-10-29T12:15:58+00:00",
-      "topics": [],
+      "forks": 22,
+      "open_issues": 19,
+      "created_at": "2026-08-13T15:18:08+00:00",
+      "pushed_at": "2026-10-30T08:36:02+00:00",
+      "updated_at": "2026-10-30T11:19:35+00:00",
+      "topics": [
+        "agent-memory",
+        "agent-memory-system",
+        "agentic-ai",
+        "autodream",
+        "claude",
+        "codex",
+        "deepseek-harness",
+        "dsh-plugin",
+        "knowledge-management",
+        "llm",
+        "long-term-memory",
+        "mcp",
+        "mcp-server",
+        "memory-consolidation",
+        "model-context-protocol",
+        "persistent-memory",
+        "rag",
+        "semantic-search",
+        "vector-search"
+      ],
       "language": "JavaScript",
       "license": "MIT",
-      "homepage": null,
-      "html_url": "https://github.com/Moessif/code-video-showcase",
+      "homepage": "https://www.npmjs.com/package/@modusensus/dsh-mneme",
+      "html_url": "https://github.com/slow-stack/mneme",
       "default_branch": "main",
       "archived": false,
       "search_score": 1.0,
-      "stars_7d_ago": 107,
+      "stars_7d_ago": 174,
       "star_series": [
         {
-          "d": "09-30",
-          "s": 107
-        },
-        {
           "d": "10-01",
-          "s": 107
+          "s": 170
         },
         {
           "d": "10-02",
-          "s": 107
+          "s": 170
         },
         {
           "d": "10-03",
-          "s": 107
+          "s": 170
         },
         {
           "d": "10-04",
-          "s": 107
+          "s": 170
         },
         {
           "d": "10-05",
-          "s": 107
+          "s": 170
         },
         {
           "d": "10-06",
-          "s": 107
+          "s": 170
         },
         {
           "d": "10-07",
-          "s": 107
+          "s": 170
         },
         {
           "d": "10-08",
-          "s": 107
+          "s": 170
         },
         {
           "d": "10-09",
-          "s": 107
+          "s": 170
         },
         {
           "d": "10-10",
-          "s": 107
+          "s": 170
         },
         {
           "d": "10-11",
-          "s": 107
+          "s": 170
         },
         {
           "d": "10-12",
-          "s": 107
+          "s": 170
         },
         {
           "d": "10-13",
-          "s": 107
+          "s": 170
         },
         {
           "d": "10-14",
-          "s": 107
+          "s": 170
         },
         {
           "d": "10-15",
-          "s": 107
+          "s": 170
         },
         {
           "d": "10-16",
-          "s": 107
+          "s": 170
         },
         {
           "d": "10-17",
-          "s": 107
+          "s": 170
         },
         {
           "d": "10-18",
-          "s": 107
+          "s": 170
         },
         {
           "d": "10-19",
-          "s": 107
+          "s": 170
         },
         {
           "d": "10-20",
-          "s": 107
+          "s": 170
         },
         {
           "d": "10-21",
-          "s": 107
+          "s": 170
         },
         {
           "d": "10-22",
-          "s": 107
+          "s": 170
         },
         {
           "d": "10-23",
-          "s": 107
+          "s": 170
         },
         {
           "d": "10-24",
-          "s": 107
-        },
-        {
-          "d": "10-25",
-          "s": 107
-        },
-        {
-          "d": "10-26",
-          "s": 107
-        },
-        {
-          "d": "10-27",
-          "s": 152
-        },
-        {
-          "d": "10-28",
           "s": 174
         },
         {
+          "d": "10-25",
+          "s": 177
+        },
+        {
+          "d": "10-26",
+          "s": 181
+        },
+        {
+          "d": "10-27",
+          "s": 187
+        },
+        {
+          "d": "10-28",
+          "s": 196
+        },
+        {
           "d": "10-29",
+          "s": 199
+        },
+        {
+          "d": "10-30",
           "s": 200
+        }
+      ]
+    },
+    "score": {
+      "score": 100.0,
+      "breakdown": {
+        "vel": 90,
+        "acc": 96,
+        "health": 71,
+        "fresh": 79,
+        "signal": 85
+      },
+      "stage": "early",
+      "stage_multiplier": 1.2,
+      "confidence": 1.0,
+      "base_score": 84.88,
+      "explanation": "mneme 是 JavaScript 开源项目，主打「🧠 The memory that dreams — cross-session memory for DeepSeek Harness. Local SQLite + Markdown mirrors, autoDream consolidation, 4-way recall (keyword/vector/BM25/entity), and a memory panel. 10 model tools, MCP server, CLI.」；处于增长早期，本周涨速 3.7 star/天，涨速在加快；社区健康（fork/star 比 11.0%，19 个 open issue）、项目元数据完整、开发活跃。"
+    }
+  },
+  {
+    "repo": {
+      "owner": "gufo-org",
+      "name": "gufo",
+      "full_name": "gufo-org/gufo",
+      "description": "The Open Source Strix Halo AI engine. Qwen 3.8  Flash Next Q4_K_XL: 1,801.01 pp, 73.17 tg single user, 194.37 tok/s 8 users; Qwen 3.8 27B Q4_K_XL: 656.33pp, 70.56tg tok/s single user with DFlash2",
+      "stars": 996,
+      "forks": 168,
+      "open_issues": 61,
+      "created_at": "2026-08-11T17:49:45+00:00",
+      "pushed_at": "2026-10-30T11:59:06+00:00",
+      "updated_at": "2026-10-30T11:57:50+00:00",
+      "topics": [
+        "amd",
+        "gfx1151",
+        "llm",
+        "ryzen-ai",
+        "strix-halo"
+      ],
+      "language": "C++",
+      "license": "MIT",
+      "homepage": "https://gufo.blog",
+      "html_url": "https://github.com/gufo-org/gufo",
+      "default_branch": "main",
+      "archived": false,
+      "search_score": 1.0,
+      "stars_7d_ago": 962,
+      "star_series": [
+        {
+          "d": "10-01",
+          "s": 962
+        },
+        {
+          "d": "10-02",
+          "s": 962
+        },
+        {
+          "d": "10-03",
+          "s": 962
+        },
+        {
+          "d": "10-04",
+          "s": 962
+        },
+        {
+          "d": "10-05",
+          "s": 962
+        },
+        {
+          "d": "10-06",
+          "s": 962
+        },
+        {
+          "d": "10-07",
+          "s": 962
+        },
+        {
+          "d": "10-08",
+          "s": 962
+        },
+        {
+          "d": "10-09",
+          "s": 962
+        },
+        {
+          "d": "10-10",
+          "s": 962
+        },
+        {
+          "d": "10-11",
+          "s": 962
+        },
+        {
+          "d": "10-12",
+          "s": 962
+        },
+        {
+          "d": "10-13",
+          "s": 962
+        },
+        {
+          "d": "10-14",
+          "s": 962
+        },
+        {
+          "d": "10-15",
+          "s": 962
+        },
+        {
+          "d": "10-16",
+          "s": 962
+        },
+        {
+          "d": "10-17",
+          "s": 962
+        },
+        {
+          "d": "10-18",
+          "s": 962
+        },
+        {
+          "d": "10-19",
+          "s": 962
+        },
+        {
+          "d": "10-20",
+          "s": 962
+        },
+        {
+          "d": "10-21",
+          "s": 962
+        },
+        {
+          "d": "10-22",
+          "s": 962
+        },
+        {
+          "d": "10-23",
+          "s": 962
+        },
+        {
+          "d": "10-24",
+          "s": 962
+        },
+        {
+          "d": "10-25",
+          "s": 962
+        },
+        {
+          "d": "10-26",
+          "s": 962
+        },
+        {
+          "d": "10-27",
+          "s": 963
+        },
+        {
+          "d": "10-28",
+          "s": 976
+        },
+        {
+          "d": "10-29",
+          "s": 989
+        },
+        {
+          "d": "10-30",
+          "s": 996
         }
       ]
     },
@@ -148,464 +334,477 @@
       "breakdown": {
         "vel": 100,
         "acc": 99,
-        "health": 72,
-        "fresh": 99,
-        "signal": 55
+        "health": 86,
+        "fresh": 78,
+        "signal": 85
       },
-      "stage": "early",
-      "stage_multiplier": 1.2,
+      "stage": "mid_early",
+      "stage_multiplier": 1.1,
       "confidence": 1.0,
-      "base_score": 88.03,
-      "explanation": "code-video-showcase 是 JavaScript 开源项目，主打「A pure-code beat-synced showcase-video Agent Skill: HTML/Canvas/SVG/Three.js frame-by-frame + Python numpy/scipy score + FFmpeg. No generative models.」；处于增长早期，本周涨速 13 star/天，涨速在加快；社区健康（fork/star 比 5.5%，0 个 open issue）、开发活跃。"
+      "base_score": 91.78,
+      "explanation": "gufo 是 C++ 开源项目，主打「The Open Source Strix Halo AI engine. Qwen 3.8  Flash Next Q4_K_XL: 1,801.01 pp, 73.17 tg single user, 194.37 tok/s 8 users; Qwen 3.8 27B Q4_K_XL: 656.33pp, 70.56tg tok/s single user with DFlash2」；处于中早期增长，本周涨速 4.9 star/天，涨速在加快；社区健康（fork/star 比 16.9%，61 个 open issue）、项目元数据完整、开发活跃。"
     }
   },
   {
     "repo": {
-      "owner": "CNWU16",
-      "name": "vedic-astro-skills",
-      "full_name": "CNWU16/vedic-astro-skills",
-      "description": "🔱 Vedic/Jyotish AI analysis toolkit | 吠陀占星AI分析工具包——从排盘开始，到以后的长期追问。支持所有可以挂载Skill的平台。感谢大家的支持。",
+      "owner": "SubBoost",
+      "name": "subboost",
+      "full_name": "SubBoost/subboost",
+      "description": "Clash/Mihomo subscription conversion, enhancement, and management tool. Clash/Mihomo 订阅转换、增强和管理工具。通过 UI 可视化，一键实现链式代理、精确分流、防 DNS 泄露和多订阅聚合等高级功能。",
       "stars": 1000,
-      "forks": 107,
-      "open_issues": 4,
-      "created_at": "2026-04-17T19:45:01+00:00",
-      "pushed_at": "2026-10-29T08:05:52+00:00",
-      "updated_at": "2026-10-29T10:28:02+00:00",
-      "topics": [],
-      "language": "Python",
+      "forks": 180,
+      "open_issues": 7,
+      "created_at": "2026-06-15T19:22:32+00:00",
+      "pushed_at": "2026-10-29T10:13:44+00:00",
+      "updated_at": "2026-10-30T11:18:32+00:00",
+      "topics": [
+        "clash",
+        "dns-leak-protection",
+        "mihomo",
+        "mihomo-config",
+        "mihomo-rules",
+        "proxy",
+        "subscription-converter"
+      ],
+      "language": "TypeScript",
       "license": "AGPL-3.0",
-      "homepage": null,
-      "html_url": "https://github.com/CNWU16/vedic-astro-skills",
+      "homepage": "https://subboost.org",
+      "html_url": "https://github.com/SubBoost/subboost",
       "default_branch": "main",
       "archived": false,
       "search_score": 1.0,
-      "stars_7d_ago": 980,
+      "stars_7d_ago": 971,
       "star_series": [
         {
-          "d": "09-30",
-          "s": 907
-        },
-        {
           "d": "10-01",
-          "s": 907
+          "s": 898
         },
         {
           "d": "10-02",
-          "s": 911
+          "s": 901
         },
         {
           "d": "10-03",
-          "s": 919
+          "s": 904
         },
         {
           "d": "10-04",
-          "s": 929
+          "s": 906
         },
         {
           "d": "10-05",
-          "s": 932
+          "s": 907
         },
         {
           "d": "10-06",
-          "s": 935
+          "s": 907
         },
         {
           "d": "10-07",
-          "s": 935
+          "s": 908
         },
         {
           "d": "10-08",
-          "s": 936
+          "s": 911
         },
         {
           "d": "10-09",
-          "s": 944
+          "s": 913
         },
         {
           "d": "10-10",
-          "s": 947
+          "s": 917
         },
         {
           "d": "10-11",
-          "s": 950
+          "s": 921
         },
         {
           "d": "10-12",
-          "s": 952
+          "s": 926
         },
         {
           "d": "10-13",
-          "s": 952
+          "s": 930
         },
         {
           "d": "10-14",
-          "s": 952
+          "s": 934
         },
         {
           "d": "10-15",
-          "s": 955
+          "s": 937
         },
         {
           "d": "10-16",
-          "s": 961
+          "s": 941
         },
         {
           "d": "10-17",
-          "s": 962
+          "s": 945
         },
         {
           "d": "10-18",
-          "s": 965
+          "s": 949
         },
         {
           "d": "10-19",
-          "s": 973
+          "s": 954
         },
         {
           "d": "10-20",
-          "s": 974
+          "s": 956
         },
         {
           "d": "10-21",
-          "s": 976
+          "s": 958
         },
         {
           "d": "10-22",
-          "s": 978
+          "s": 960
         },
         {
           "d": "10-23",
-          "s": 980
+          "s": 964
         },
         {
           "d": "10-24",
-          "s": 986
+          "s": 971
         },
         {
           "d": "10-25",
-          "s": 989
+          "s": 975
         },
         {
           "d": "10-26",
-          "s": 993
+          "s": 981
         },
         {
           "d": "10-27",
-          "s": 995
+          "s": 989
         },
         {
           "d": "10-28",
-          "s": 996
+          "s": 992
         },
         {
           "d": "10-29",
+          "s": 996
+        },
+        {
+          "d": "10-30",
           "s": 1000
         }
       ]
     },
     "score": {
-      "score": 49.62,
+      "score": 92.18,
       "breakdown": {
-        "vel": 53,
-        "acc": 51,
-        "health": 95,
-        "fresh": 47,
-        "signal": 55
-      },
-      "stage": "late",
-      "stage_multiplier": 0.85,
-      "confidence": 1.0,
-      "base_score": 58.37,
-      "explanation": "vedic-astro-skills 是 Python 开源项目，主打「🔱 Vedic/Jyotish AI analysis toolkit | 吠陀占星AI分析工具包——从排盘开始，到以后的长期追问。支持所有可以挂载Skill的平台。感谢大家的支持。」；接近增长天花板，本周涨速 2.9 star/天；社区健康（fork/star 比 10.7%，4 个 open issue）。"
-    }
-  },
-  {
-    "repo": {
-      "owner": "NVIDIA",
-      "name": "nvalchemi-toolkit",
-      "full_name": "NVIDIA/nvalchemi-toolkit",
-      "description": "ALCHEMI Toolkit is a developer toolkit for accelerating training and inference for AI in chemistry and material science.",
-      "stars": 200,
-      "forks": 43,
-      "open_issues": 21,
-      "created_at": "2026-02-26T21:56:09+00:00",
-      "pushed_at": "2026-10-28T22:43:21+00:00",
-      "updated_at": "2026-10-29T12:07:05+00:00",
-      "topics": [],
-      "language": "Python",
-      "license": "Apache-2.0",
-      "homepage": "https://nvidia.github.io/nvalchemi-toolkit/",
-      "html_url": "https://github.com/NVIDIA/nvalchemi-toolkit",
-      "default_branch": "main",
-      "archived": false,
-      "search_score": 1.0,
-      "stars_7d_ago": 197,
-      "star_series": [
-        {
-          "d": "09-30",
-          "s": 192
-        },
-        {
-          "d": "10-01",
-          "s": 192
-        },
-        {
-          "d": "10-02",
-          "s": 192
-        },
-        {
-          "d": "10-03",
-          "s": 192
-        },
-        {
-          "d": "10-04",
-          "s": 192
-        },
-        {
-          "d": "10-05",
-          "s": 192
-        },
-        {
-          "d": "10-06",
-          "s": 192
-        },
-        {
-          "d": "10-07",
-          "s": 192
-        },
-        {
-          "d": "10-08",
-          "s": 192
-        },
-        {
-          "d": "10-09",
-          "s": 192
-        },
-        {
-          "d": "10-10",
-          "s": 192
-        },
-        {
-          "d": "10-11",
-          "s": 192
-        },
-        {
-          "d": "10-12",
-          "s": 192
-        },
-        {
-          "d": "10-13",
-          "s": 192
-        },
-        {
-          "d": "10-14",
-          "s": 192
-        },
-        {
-          "d": "10-15",
-          "s": 192
-        },
-        {
-          "d": "10-16",
-          "s": 192
-        },
-        {
-          "d": "10-17",
-          "s": 192
-        },
-        {
-          "d": "10-18",
-          "s": 192
-        },
-        {
-          "d": "10-19",
-          "s": 192
-        },
-        {
-          "d": "10-20",
-          "s": 194
-        },
-        {
-          "d": "10-21",
-          "s": 196
-        },
-        {
-          "d": "10-22",
-          "s": 197
-        },
-        {
-          "d": "10-23",
-          "s": 197
-        },
-        {
-          "d": "10-24",
-          "s": 197
-        },
-        {
-          "d": "10-25",
-          "s": 197
-        },
-        {
-          "d": "10-26",
-          "s": 197
-        },
-        {
-          "d": "10-27",
-          "s": 199
-        },
-        {
-          "d": "10-28",
-          "s": 199
-        },
-        {
-          "d": "10-29",
-          "s": 200
-        }
-      ]
-    },
-    "score": {
-      "score": 43.21,
-      "breakdown": {
-        "vel": 14,
-        "acc": 43,
-        "health": 79,
-        "fresh": 33,
+        "vel": 95,
+        "acc": 53,
+        "health": 99,
+        "fresh": 63,
         "signal": 85
       },
       "stage": "early",
       "stage_multiplier": 1.2,
       "confidence": 1.0,
-      "base_score": 36.01,
-      "explanation": "nvalchemi-toolkit 是 Python 开源项目，主打「ALCHEMI Toolkit is a developer toolkit for accelerating training and inference for AI in chemistry and material science.」；处于增长早期；社区健康（fork/star 比 21.5%，21 个 open issue）、项目元数据完整。"
+      "base_score": 76.81,
+      "explanation": "subboost 是 TypeScript 开源项目，主打「Clash/Mihomo subscription conversion, enhancement, and management tool. Clash/Mihomo 订阅转换、增强和管理工具。通过 UI 可视化，一键实现链式代理、精确分流、防 DNS 泄露和多订阅聚合等高级功能。」；处于增长早期，本周涨速 4.1 star/天；社区健康（fork/star 比 18.0%，7 个 open issue）、项目元数据完整。"
     }
   },
   {
     "repo": {
-      "owner": "f-io",
-      "name": "LIVI",
-      "full_name": "f-io/LIVI",
-      "description": "Native CarPlay Ultra & Android Auto head unit for Linux and macOS, built in Rust + Slint. Multi-session wired + wireless, zero-copy hardware video, low-latency audio.",
-      "stars": 998,
-      "forks": 129,
-      "open_issues": 2,
-      "created_at": "2025-05-02T18:20:33+00:00",
-      "pushed_at": "2026-10-29T09:47:42+00:00",
-      "updated_at": "2026-10-29T11:46:59+00:00",
+      "owner": "alibaba",
+      "name": "atrex-kernel-agent",
+      "full_name": "alibaba/atrex-kernel-agent",
+      "description": "An end-to-end agent project for GPU kernel implementation, analysis, profiling, and iterative optimization. It helps an agent turn PyTorch logic or an existing kernel into a high-performance GPU kernel through a structured, profile-driven workflow.",
+      "stars": 200,
+      "forks": 39,
+      "open_issues": 4,
+      "created_at": "2026-06-23T04:15:02+00:00",
+      "pushed_at": "2026-10-30T07:42:32+00:00",
+      "updated_at": "2026-10-30T07:42:37+00:00",
       "topics": [
-        "android-auto",
-        "automotive",
-        "carplay",
-        "gstreamer",
-        "headunit",
-        "in-vehicle-infotainment",
-        "linux",
-        "rust",
-        "slint"
+        "agent",
+        "agentic-workflow",
+        "amd-gpu",
+        "autoresearch",
+        "gpu",
+        "gpu-kernel",
+        "gpu-programming",
+        "kernel-generation",
+        "nvidia-gpu",
+        "self-improving-agent",
+        "skills"
       ],
-      "language": "Rust",
-      "license": "GPL-3.0",
-      "homepage": "https://f-io.github.io/LIVI/",
-      "html_url": "https://github.com/f-io/LIVI",
+      "language": "Python",
+      "license": "Apache-2.0",
+      "homepage": null,
+      "html_url": "https://github.com/alibaba/atrex-kernel-agent",
+      "default_branch": "main",
+      "archived": false,
+      "search_score": 1.0,
+      "stars_7d_ago": 190,
+      "star_series": [
+        {
+          "d": "10-01",
+          "s": 184
+        },
+        {
+          "d": "10-02",
+          "s": 184
+        },
+        {
+          "d": "10-03",
+          "s": 184
+        },
+        {
+          "d": "10-04",
+          "s": 184
+        },
+        {
+          "d": "10-05",
+          "s": 184
+        },
+        {
+          "d": "10-06",
+          "s": 184
+        },
+        {
+          "d": "10-07",
+          "s": 184
+        },
+        {
+          "d": "10-08",
+          "s": 184
+        },
+        {
+          "d": "10-09",
+          "s": 184
+        },
+        {
+          "d": "10-10",
+          "s": 184
+        },
+        {
+          "d": "10-11",
+          "s": 184
+        },
+        {
+          "d": "10-12",
+          "s": 184
+        },
+        {
+          "d": "10-13",
+          "s": 184
+        },
+        {
+          "d": "10-14",
+          "s": 184
+        },
+        {
+          "d": "10-15",
+          "s": 184
+        },
+        {
+          "d": "10-16",
+          "s": 184
+        },
+        {
+          "d": "10-17",
+          "s": 184
+        },
+        {
+          "d": "10-18",
+          "s": 184
+        },
+        {
+          "d": "10-19",
+          "s": 184
+        },
+        {
+          "d": "10-20",
+          "s": 185
+        },
+        {
+          "d": "10-21",
+          "s": 185
+        },
+        {
+          "d": "10-22",
+          "s": 187
+        },
+        {
+          "d": "10-23",
+          "s": 189
+        },
+        {
+          "d": "10-24",
+          "s": 190
+        },
+        {
+          "d": "10-25",
+          "s": 190
+        },
+        {
+          "d": "10-26",
+          "s": 194
+        },
+        {
+          "d": "10-27",
+          "s": 195
+        },
+        {
+          "d": "10-28",
+          "s": 198
+        },
+        {
+          "d": "10-29",
+          "s": 200
+        },
+        {
+          "d": "10-30",
+          "s": 200
+        }
+      ]
+    },
+    "score": {
+      "score": 79.01,
+      "breakdown": {
+        "vel": 51,
+        "acc": 64,
+        "health": 98,
+        "fresh": 65,
+        "signal": 70
+      },
+      "stage": "early",
+      "stage_multiplier": 1.2,
+      "confidence": 1.0,
+      "base_score": 65.84,
+      "explanation": "atrex-kernel-agent 是 Python 开源项目，主打「An end-to-end agent project for GPU kernel implementation, analysis, profiling, and iterative optimization. It helps an agent turn PyTorch logic or an existing kernel into a high-performance GPU kernel through a structured, profile-driven workflow.」；处于增长早期，本周涨速 1.4 star/天；社区健康（fork/star 比 19.5%，4 个 open issue）。"
+    }
+  },
+  {
+    "repo": {
+      "owner": "CopilotKit",
+      "name": "aimock",
+      "full_name": "CopilotKit/aimock",
+      "description": "Mock everything your AI app talks to — LLM APIs, MCP, A2A, AG-UI, vector DBs, search. One package, one port, zero dependencies.",
+      "stars": 997,
+      "forks": 83,
+      "open_issues": 2,
+      "created_at": "2026-03-03T02:40:16+00:00",
+      "pushed_at": "2026-10-29T23:10:57+00:00",
+      "updated_at": "2026-10-29T23:11:01+00:00",
+      "topics": [
+        "ai-testing",
+        "aimock",
+        "llm",
+        "mcp",
+        "mock-server",
+        "openai"
+      ],
+      "language": "TypeScript",
+      "license": "MIT",
+      "homepage": "http://aimock.copilotkit.dev/",
+      "html_url": "https://github.com/CopilotKit/aimock",
       "default_branch": "main",
       "archived": false,
       "search_score": 1.0,
       "stars_7d_ago": 985,
       "star_series": [
         {
-          "d": "09-30",
-          "s": 985
-        },
-        {
           "d": "10-01",
-          "s": 985
+          "s": 983
         },
         {
           "d": "10-02",
-          "s": 985
+          "s": 983
         },
         {
           "d": "10-03",
-          "s": 985
+          "s": 983
         },
         {
           "d": "10-04",
-          "s": 985
+          "s": 983
         },
         {
           "d": "10-05",
-          "s": 985
+          "s": 983
         },
         {
           "d": "10-06",
-          "s": 985
+          "s": 983
         },
         {
           "d": "10-07",
-          "s": 985
+          "s": 983
         },
         {
           "d": "10-08",
-          "s": 985
+          "s": 983
         },
         {
           "d": "10-09",
-          "s": 985
+          "s": 983
         },
         {
           "d": "10-10",
-          "s": 985
+          "s": 983
         },
         {
           "d": "10-11",
-          "s": 985
+          "s": 983
         },
         {
           "d": "10-12",
-          "s": 985
+          "s": 983
         },
         {
           "d": "10-13",
-          "s": 985
+          "s": 983
         },
         {
           "d": "10-14",
-          "s": 985
+          "s": 983
         },
         {
           "d": "10-15",
-          "s": 985
+          "s": 983
         },
         {
           "d": "10-16",
-          "s": 985
+          "s": 983
         },
         {
           "d": "10-17",
-          "s": 985
+          "s": 983
         },
         {
           "d": "10-18",
-          "s": 985
+          "s": 983
         },
         {
           "d": "10-19",
-          "s": 985
+          "s": 983
         },
         {
           "d": "10-20",
-          "s": 985
+          "s": 983
         },
         {
           "d": "10-21",
-          "s": 985
+          "s": 984
         },
         {
           "d": "10-22",
-          "s": 985
+          "s": 984
         },
         {
           "d": "10-23",
-          "s": 985
+          "s": 984
         },
         {
           "d": "10-24",
@@ -613,205 +812,44 @@
         },
         {
           "d": "10-25",
-          "s": 985
-        },
-        {
-          "d": "10-26",
-          "s": 985
-        },
-        {
-          "d": "10-27",
           "s": 986
         },
         {
+          "d": "10-26",
+          "s": 987
+        },
+        {
+          "d": "10-27",
+          "s": 991
+        },
+        {
           "d": "10-28",
-          "s": 989
+          "s": 994
         },
         {
           "d": "10-29",
-          "s": 998
+          "s": 997
+        },
+        {
+          "d": "10-30",
+          "s": 997
         }
       ]
     },
     "score": {
-      "score": 40.24,
+      "score": 73.15,
       "breakdown": {
-        "vel": 41,
-        "acc": 86,
-        "health": 100,
-        "fresh": 0,
+        "vel": 58,
+        "acc": 81,
+        "health": 87,
+        "fresh": 34,
         "signal": 100
       },
       "stage": "mid_early",
       "stage_multiplier": 1.1,
       "confidence": 1.0,
-      "base_score": 36.59,
-      "explanation": "LIVI 是 Rust 开源项目，主打「Native CarPlay Ultra & Android Auto head unit for Linux and macOS, built in Rust + Slint. Multi-session wired + wireless, zero-copy hardware video, low-latency audio.」；处于中早期增长，本周涨速 1.9 star/天，涨速在加快；社区健康（fork/star 比 12.9%，2 个 open issue）、项目元数据完整。"
-    }
-  },
-  {
-    "repo": {
-      "owner": "SMS2Email",
-      "name": "SMS2Email",
-      "full_name": "SMS2Email/SMS2Email",
-      "description": "Android app that forwards SMS messages to SMTP (Email) server",
-      "stars": 200,
-      "forks": 30,
-      "open_issues": 27,
-      "created_at": "2025-12-23T12:11:30+00:00",
-      "pushed_at": "2026-10-28T17:52:44+00:00",
-      "updated_at": "2026-10-28T12:05:58+00:00",
-      "topics": [
-        "android",
-        "email",
-        "sms",
-        "smtp"
-      ],
-      "language": "Kotlin",
-      "license": "Apache-2.0",
-      "homepage": null,
-      "html_url": "https://github.com/SMS2Email/SMS2Email",
-      "default_branch": "main",
-      "archived": false,
-      "search_score": 1.0,
-      "stars_7d_ago": 196,
-      "star_series": [
-        {
-          "d": "09-30",
-          "s": 192
-        },
-        {
-          "d": "10-01",
-          "s": 192
-        },
-        {
-          "d": "10-02",
-          "s": 193
-        },
-        {
-          "d": "10-03",
-          "s": 194
-        },
-        {
-          "d": "10-04",
-          "s": 195
-        },
-        {
-          "d": "10-05",
-          "s": 195
-        },
-        {
-          "d": "10-06",
-          "s": 195
-        },
-        {
-          "d": "10-07",
-          "s": 195
-        },
-        {
-          "d": "10-08",
-          "s": 195
-        },
-        {
-          "d": "10-09",
-          "s": 195
-        },
-        {
-          "d": "10-10",
-          "s": 195
-        },
-        {
-          "d": "10-11",
-          "s": 196
-        },
-        {
-          "d": "10-12",
-          "s": 196
-        },
-        {
-          "d": "10-13",
-          "s": 196
-        },
-        {
-          "d": "10-14",
-          "s": 196
-        },
-        {
-          "d": "10-15",
-          "s": 196
-        },
-        {
-          "d": "10-16",
-          "s": 196
-        },
-        {
-          "d": "10-17",
-          "s": 196
-        },
-        {
-          "d": "10-18",
-          "s": 196
-        },
-        {
-          "d": "10-19",
-          "s": 196
-        },
-        {
-          "d": "10-20",
-          "s": 196
-        },
-        {
-          "d": "10-21",
-          "s": 196
-        },
-        {
-          "d": "10-22",
-          "s": 196
-        },
-        {
-          "d": "10-23",
-          "s": 196
-        },
-        {
-          "d": "10-24",
-          "s": 197
-        },
-        {
-          "d": "10-25",
-          "s": 197
-        },
-        {
-          "d": "10-26",
-          "s": 198
-        },
-        {
-          "d": "10-27",
-          "s": 199
-        },
-        {
-          "d": "10-28",
-          "s": 200
-        },
-        {
-          "d": "10-29",
-          "s": 200
-        }
-      ]
-    },
-    "score": {
-      "score": 40.14,
-      "breakdown": {
-        "vel": 18,
-        "acc": 64,
-        "health": 72,
-        "fresh": 15,
-        "signal": 70
-      },
-      "stage": "mid_early",
-      "stage_multiplier": 1.1,
-      "confidence": 1.0,
-      "base_score": 36.49,
-      "explanation": "SMS2Email 是 Kotlin 开源项目，主打「Android app that forwards SMS messages to SMTP (Email) server」；处于中早期增长；社区健康（fork/star 比 15.0%，27 个 open issue）。"
+      "base_score": 66.5,
+      "explanation": "aimock 是 TypeScript 开源项目，主打「Mock everything your AI app talks to — LLM APIs, MCP, A2A, AG-UI, vector DBs, search. One package, one port, zero dependencies.」；处于中早期增长，本周涨速 1.7 star/天，涨速在加快；社区健康（fork/star 比 8.3%，2 个 open issue）、项目元数据完整。"
     }
   }
 ]
