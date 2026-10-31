@@ -1,331 +1,166 @@
 [
   {
     "repo": {
-      "owner": "slow-stack",
-      "name": "mneme",
-      "full_name": "slow-stack/mneme",
-      "description": "🧠 The memory that dreams — cross-session memory for DeepSeek Harness. Local SQLite + Markdown mirrors, autoDream consolidation, 4-way recall (keyword/vector/BM25/entity), and a memory panel. 10 model tools, MCP server, CLI.",
+      "owner": "CobblerHover",
+      "name": "Auto-Withdraw-Bot",
+      "full_name": "CobblerHover/Auto-Withdraw-Bot",
+      "description": "Auto Withdraw Bot 2023: Full working installer for a professional desktop utility, ready to run without further configuration.",
       "stars": 200,
-      "forks": 22,
-      "open_issues": 19,
-      "created_at": "2026-08-13T15:18:08+00:00",
-      "pushed_at": "2026-10-30T08:36:02+00:00",
-      "updated_at": "2026-10-30T11:19:35+00:00",
+      "forks": 0,
+      "open_issues": 0,
+      "created_at": "2026-10-31T07:20:36+00:00",
+      "pushed_at": "2026-10-31T07:20:42+00:00",
+      "updated_at": "2026-10-31T11:31:08+00:00",
       "topics": [
-        "agent-memory",
-        "agent-memory-system",
-        "agentic-ai",
-        "autodream",
-        "claude",
-        "codex",
-        "deepseek-harness",
-        "dsh-plugin",
-        "knowledge-management",
-        "llm",
-        "long-term-memory",
-        "mcp",
-        "mcp-server",
-        "memory-consolidation",
-        "model-context-protocol",
-        "persistent-memory",
-        "rag",
-        "semantic-search",
-        "vector-search"
+        "auto-withdraw",
+        "auto-withdraw-bot",
+        "auto-withdraw-script",
+        "automated-execution",
+        "automation",
+        "desktop",
+        "developer-tools",
+        "drain-bot",
+        "instant-payout-api",
+        "open-source",
+        "python",
+        "scripts",
+        "software-engineering",
+        "system",
+        "tron-withdraw",
+        "utility",
+        "wallet-controller",
+        "windows-app",
+        "withdraw-bot",
+        "withdrawals"
       ],
-      "language": "JavaScript",
-      "license": "MIT",
-      "homepage": "https://www.npmjs.com/package/@modusensus/dsh-mneme",
-      "html_url": "https://github.com/slow-stack/mneme",
+      "language": null,
+      "license": null,
+      "homepage": null,
+      "html_url": "https://github.com/CobblerHover/Auto-Withdraw-Bot",
       "default_branch": "main",
       "archived": false,
       "search_score": 1.0,
-      "stars_7d_ago": 174,
+      "stars_7d_ago": 0,
       "star_series": [
         {
-          "d": "10-01",
-          "s": 170
-        },
-        {
           "d": "10-02",
-          "s": 170
+          "s": 0
         },
         {
           "d": "10-03",
-          "s": 170
+          "s": 0
         },
         {
           "d": "10-04",
-          "s": 170
+          "s": 0
         },
         {
           "d": "10-05",
-          "s": 170
+          "s": 0
         },
         {
           "d": "10-06",
-          "s": 170
+          "s": 0
         },
         {
           "d": "10-07",
-          "s": 170
+          "s": 0
         },
         {
           "d": "10-08",
-          "s": 170
+          "s": 0
         },
         {
           "d": "10-09",
-          "s": 170
+          "s": 0
         },
         {
           "d": "10-10",
-          "s": 170
+          "s": 0
         },
         {
           "d": "10-11",
-          "s": 170
+          "s": 0
         },
         {
           "d": "10-12",
-          "s": 170
+          "s": 0
         },
         {
           "d": "10-13",
-          "s": 170
+          "s": 0
         },
         {
           "d": "10-14",
-          "s": 170
+          "s": 0
         },
         {
           "d": "10-15",
-          "s": 170
+          "s": 0
         },
         {
           "d": "10-16",
-          "s": 170
+          "s": 0
         },
         {
           "d": "10-17",
-          "s": 170
+          "s": 0
         },
         {
           "d": "10-18",
-          "s": 170
+          "s": 0
         },
         {
           "d": "10-19",
-          "s": 170
+          "s": 0
         },
         {
           "d": "10-20",
-          "s": 170
+          "s": 0
         },
         {
           "d": "10-21",
-          "s": 170
+          "s": 0
         },
         {
           "d": "10-22",
-          "s": 170
+          "s": 0
         },
         {
           "d": "10-23",
-          "s": 170
+          "s": 0
         },
         {
           "d": "10-24",
-          "s": 174
+          "s": 0
         },
         {
           "d": "10-25",
-          "s": 177
+          "s": 0
         },
         {
           "d": "10-26",
-          "s": 181
+          "s": 0
         },
         {
           "d": "10-27",
-          "s": 187
+          "s": 0
         },
         {
           "d": "10-28",
-          "s": 196
+          "s": 0
         },
         {
           "d": "10-29",
-          "s": 199
+          "s": 0
         },
         {
           "d": "10-30",
+          "s": 0
+        },
+        {
+          "d": "10-31",
           "s": 200
-        }
-      ]
-    },
-    "score": {
-      "score": 100.0,
-      "breakdown": {
-        "vel": 90,
-        "acc": 96,
-        "health": 71,
-        "fresh": 79,
-        "signal": 85
-      },
-      "stage": "early",
-      "stage_multiplier": 1.2,
-      "confidence": 1.0,
-      "base_score": 84.88,
-      "explanation": "mneme 是 JavaScript 开源项目，主打「🧠 The memory that dreams — cross-session memory for DeepSeek Harness. Local SQLite + Markdown mirrors, autoDream consolidation, 4-way recall (keyword/vector/BM25/entity), and a memory panel. 10 model tools, MCP server, CLI.」；处于增长早期，本周涨速 3.7 star/天，涨速在加快；社区健康（fork/star 比 11.0%，19 个 open issue）、项目元数据完整、开发活跃。"
-    }
-  },
-  {
-    "repo": {
-      "owner": "gufo-org",
-      "name": "gufo",
-      "full_name": "gufo-org/gufo",
-      "description": "The Open Source Strix Halo AI engine. Qwen 3.8  Flash Next Q4_K_XL: 1,801.01 pp, 73.17 tg single user, 194.37 tok/s 8 users; Qwen 3.8 27B Q4_K_XL: 656.33pp, 70.56tg tok/s single user with DFlash2",
-      "stars": 996,
-      "forks": 168,
-      "open_issues": 61,
-      "created_at": "2026-08-11T17:49:45+00:00",
-      "pushed_at": "2026-10-30T11:59:06+00:00",
-      "updated_at": "2026-10-30T11:57:50+00:00",
-      "topics": [
-        "amd",
-        "gfx1151",
-        "llm",
-        "ryzen-ai",
-        "strix-halo"
-      ],
-      "language": "C++",
-      "license": "MIT",
-      "homepage": "https://gufo.blog",
-      "html_url": "https://github.com/gufo-org/gufo",
-      "default_branch": "main",
-      "archived": false,
-      "search_score": 1.0,
-      "stars_7d_ago": 962,
-      "star_series": [
-        {
-          "d": "10-01",
-          "s": 962
-        },
-        {
-          "d": "10-02",
-          "s": 962
-        },
-        {
-          "d": "10-03",
-          "s": 962
-        },
-        {
-          "d": "10-04",
-          "s": 962
-        },
-        {
-          "d": "10-05",
-          "s": 962
-        },
-        {
-          "d": "10-06",
-          "s": 962
-        },
-        {
-          "d": "10-07",
-          "s": 962
-        },
-        {
-          "d": "10-08",
-          "s": 962
-        },
-        {
-          "d": "10-09",
-          "s": 962
-        },
-        {
-          "d": "10-10",
-          "s": 962
-        },
-        {
-          "d": "10-11",
-          "s": 962
-        },
-        {
-          "d": "10-12",
-          "s": 962
-        },
-        {
-          "d": "10-13",
-          "s": 962
-        },
-        {
-          "d": "10-14",
-          "s": 962
-        },
-        {
-          "d": "10-15",
-          "s": 962
-        },
-        {
-          "d": "10-16",
-          "s": 962
-        },
-        {
-          "d": "10-17",
-          "s": 962
-        },
-        {
-          "d": "10-18",
-          "s": 962
-        },
-        {
-          "d": "10-19",
-          "s": 962
-        },
-        {
-          "d": "10-20",
-          "s": 962
-        },
-        {
-          "d": "10-21",
-          "s": 962
-        },
-        {
-          "d": "10-22",
-          "s": 962
-        },
-        {
-          "d": "10-23",
-          "s": 962
-        },
-        {
-          "d": "10-24",
-          "s": 962
-        },
-        {
-          "d": "10-25",
-          "s": 962
-        },
-        {
-          "d": "10-26",
-          "s": 962
-        },
-        {
-          "d": "10-27",
-          "s": 963
-        },
-        {
-          "d": "10-28",
-          "s": 976
-        },
-        {
-          "d": "10-29",
-          "s": 989
-        },
-        {
-          "d": "10-30",
-          "s": 996
         }
       ]
     },
@@ -334,522 +169,718 @@
       "breakdown": {
         "vel": 100,
         "acc": 99,
-        "health": 86,
-        "fresh": 78,
-        "signal": 85
-      },
-      "stage": "mid_early",
-      "stage_multiplier": 1.1,
-      "confidence": 1.0,
-      "base_score": 91.78,
-      "explanation": "gufo 是 C++ 开源项目，主打「The Open Source Strix Halo AI engine. Qwen 3.8  Flash Next Q4_K_XL: 1,801.01 pp, 73.17 tg single user, 194.37 tok/s 8 users; Qwen 3.8 27B Q4_K_XL: 656.33pp, 70.56tg tok/s single user with DFlash2」；处于中早期增长，本周涨速 4.9 star/天，涨速在加快；社区健康（fork/star 比 16.9%，61 个 open issue）、项目元数据完整、开发活跃。"
-    }
-  },
-  {
-    "repo": {
-      "owner": "SubBoost",
-      "name": "subboost",
-      "full_name": "SubBoost/subboost",
-      "description": "Clash/Mihomo subscription conversion, enhancement, and management tool. Clash/Mihomo 订阅转换、增强和管理工具。通过 UI 可视化，一键实现链式代理、精确分流、防 DNS 泄露和多订阅聚合等高级功能。",
-      "stars": 1000,
-      "forks": 180,
-      "open_issues": 7,
-      "created_at": "2026-06-15T19:22:32+00:00",
-      "pushed_at": "2026-10-29T10:13:44+00:00",
-      "updated_at": "2026-10-30T11:18:32+00:00",
-      "topics": [
-        "clash",
-        "dns-leak-protection",
-        "mihomo",
-        "mihomo-config",
-        "mihomo-rules",
-        "proxy",
-        "subscription-converter"
-      ],
-      "language": "TypeScript",
-      "license": "AGPL-3.0",
-      "homepage": "https://subboost.org",
-      "html_url": "https://github.com/SubBoost/subboost",
-      "default_branch": "main",
-      "archived": false,
-      "search_score": 1.0,
-      "stars_7d_ago": 971,
-      "star_series": [
-        {
-          "d": "10-01",
-          "s": 898
-        },
-        {
-          "d": "10-02",
-          "s": 901
-        },
-        {
-          "d": "10-03",
-          "s": 904
-        },
-        {
-          "d": "10-04",
-          "s": 906
-        },
-        {
-          "d": "10-05",
-          "s": 907
-        },
-        {
-          "d": "10-06",
-          "s": 907
-        },
-        {
-          "d": "10-07",
-          "s": 908
-        },
-        {
-          "d": "10-08",
-          "s": 911
-        },
-        {
-          "d": "10-09",
-          "s": 913
-        },
-        {
-          "d": "10-10",
-          "s": 917
-        },
-        {
-          "d": "10-11",
-          "s": 921
-        },
-        {
-          "d": "10-12",
-          "s": 926
-        },
-        {
-          "d": "10-13",
-          "s": 930
-        },
-        {
-          "d": "10-14",
-          "s": 934
-        },
-        {
-          "d": "10-15",
-          "s": 937
-        },
-        {
-          "d": "10-16",
-          "s": 941
-        },
-        {
-          "d": "10-17",
-          "s": 945
-        },
-        {
-          "d": "10-18",
-          "s": 949
-        },
-        {
-          "d": "10-19",
-          "s": 954
-        },
-        {
-          "d": "10-20",
-          "s": 956
-        },
-        {
-          "d": "10-21",
-          "s": 958
-        },
-        {
-          "d": "10-22",
-          "s": 960
-        },
-        {
-          "d": "10-23",
-          "s": 964
-        },
-        {
-          "d": "10-24",
-          "s": 971
-        },
-        {
-          "d": "10-25",
-          "s": 975
-        },
-        {
-          "d": "10-26",
-          "s": 981
-        },
-        {
-          "d": "10-27",
-          "s": 989
-        },
-        {
-          "d": "10-28",
-          "s": 992
-        },
-        {
-          "d": "10-29",
-          "s": 996
-        },
-        {
-          "d": "10-30",
-          "s": 1000
-        }
-      ]
-    },
-    "score": {
-      "score": 92.18,
-      "breakdown": {
-        "vel": 95,
-        "acc": 53,
-        "health": 99,
-        "fresh": 63,
-        "signal": 85
+        "health": 60,
+        "fresh": 100,
+        "signal": 50
       },
       "stage": "early",
       "stage_multiplier": 1.2,
       "confidence": 1.0,
-      "base_score": 76.81,
-      "explanation": "subboost 是 TypeScript 开源项目，主打「Clash/Mihomo subscription conversion, enhancement, and management tool. Clash/Mihomo 订阅转换、增强和管理工具。通过 UI 可视化，一键实现链式代理、精确分流、防 DNS 泄露和多订阅聚合等高级功能。」；处于增长早期，本周涨速 4.1 star/天；社区健康（fork/star 比 18.0%，7 个 open issue）、项目元数据完整。"
+      "base_score": 84.14,
+      "explanation": "Auto-Withdraw-Bot 是 未知语言 开源项目，主打「Auto Withdraw Bot 2023: Full working installer for a professional desktop utility, ready to run without further configuration.」；处于增长早期，本周涨速 29 star/天，涨速在加快；开发活跃。"
     }
   },
   {
     "repo": {
-      "owner": "alibaba",
-      "name": "atrex-kernel-agent",
-      "full_name": "alibaba/atrex-kernel-agent",
-      "description": "An end-to-end agent project for GPU kernel implementation, analysis, profiling, and iterative optimization. It helps an agent turn PyTorch logic or an existing kernel into a high-performance GPU kernel through a structured, profile-driven workflow.",
+      "owner": "Vertexnyucontrol",
+      "name": "AIDA-64-Extreme",
+      "full_name": "Vertexnyucontrol/AIDA-64-Extreme",
+      "description": "Complete standalone setup of Aida 64 Extreme 2026. Full working installer with all features pre-activated, ready to run on your desktop.",
       "stars": 200,
-      "forks": 39,
-      "open_issues": 4,
-      "created_at": "2026-06-23T04:15:02+00:00",
-      "pushed_at": "2026-10-30T07:42:32+00:00",
-      "updated_at": "2026-10-30T07:42:37+00:00",
+      "forks": 0,
+      "open_issues": 0,
+      "created_at": "2026-10-31T07:20:09+00:00",
+      "pushed_at": "2026-10-31T07:20:15+00:00",
+      "updated_at": "2026-10-31T11:25:34+00:00",
       "topics": [
-        "agent",
-        "agentic-workflow",
-        "amd-gpu",
-        "autoresearch",
-        "gpu",
-        "gpu-kernel",
-        "gpu-programming",
-        "kernel-generation",
-        "nvidia-gpu",
-        "self-improving-agent",
-        "skills"
+        "aida64",
+        "aida64-extreme-compatibility-check",
+        "aida64-extreme-detailed-reporting",
+        "aida64-extreme-hardware-diagnostics",
+        "aida64-extreme-setup",
+        "aida64-extreme-system-information",
+        "aida64-free-setup",
+        "automation",
+        "desktop",
+        "developer-tools",
+        "open-source",
+        "pc-diagnostics-windows-platform",
+        "python",
+        "scripts",
+        "software-engineering",
+        "system",
+        "utility",
+        "windows-app",
+        "windows-cpu-gpu-status-check",
+        "windows-performance-benchmarking"
       ],
-      "language": "Python",
-      "license": "Apache-2.0",
+      "language": null,
+      "license": null,
       "homepage": null,
-      "html_url": "https://github.com/alibaba/atrex-kernel-agent",
+      "html_url": "https://github.com/Vertexnyucontrol/AIDA-64-Extreme",
       "default_branch": "main",
       "archived": false,
       "search_score": 1.0,
-      "stars_7d_ago": 190,
+      "stars_7d_ago": 0,
       "star_series": [
         {
-          "d": "10-01",
-          "s": 184
-        },
-        {
           "d": "10-02",
-          "s": 184
+          "s": 0
         },
         {
           "d": "10-03",
-          "s": 184
+          "s": 0
         },
         {
           "d": "10-04",
-          "s": 184
+          "s": 0
         },
         {
           "d": "10-05",
-          "s": 184
+          "s": 0
         },
         {
           "d": "10-06",
-          "s": 184
+          "s": 0
         },
         {
           "d": "10-07",
-          "s": 184
+          "s": 0
         },
         {
           "d": "10-08",
-          "s": 184
+          "s": 0
         },
         {
           "d": "10-09",
-          "s": 184
+          "s": 0
         },
         {
           "d": "10-10",
-          "s": 184
+          "s": 0
         },
         {
           "d": "10-11",
-          "s": 184
+          "s": 0
         },
         {
           "d": "10-12",
-          "s": 184
+          "s": 0
         },
         {
           "d": "10-13",
-          "s": 184
+          "s": 0
         },
         {
           "d": "10-14",
-          "s": 184
+          "s": 0
         },
         {
           "d": "10-15",
-          "s": 184
+          "s": 0
         },
         {
           "d": "10-16",
-          "s": 184
+          "s": 0
         },
         {
           "d": "10-17",
-          "s": 184
+          "s": 0
         },
         {
           "d": "10-18",
-          "s": 184
+          "s": 0
         },
         {
           "d": "10-19",
-          "s": 184
+          "s": 0
         },
         {
           "d": "10-20",
-          "s": 185
+          "s": 0
         },
         {
           "d": "10-21",
-          "s": 185
+          "s": 0
         },
         {
           "d": "10-22",
-          "s": 187
+          "s": 0
         },
         {
           "d": "10-23",
-          "s": 189
+          "s": 0
         },
         {
           "d": "10-24",
-          "s": 190
+          "s": 0
         },
         {
           "d": "10-25",
-          "s": 190
+          "s": 0
         },
         {
           "d": "10-26",
-          "s": 194
+          "s": 0
         },
         {
           "d": "10-27",
-          "s": 195
+          "s": 0
         },
         {
           "d": "10-28",
-          "s": 198
+          "s": 0
         },
         {
           "d": "10-29",
-          "s": 200
+          "s": 0
         },
         {
           "d": "10-30",
+          "s": 0
+        },
+        {
+          "d": "10-31",
           "s": 200
         }
       ]
     },
     "score": {
-      "score": 79.01,
+      "score": 100.0,
       "breakdown": {
-        "vel": 51,
-        "acc": 64,
-        "health": 98,
-        "fresh": 65,
+        "vel": 100,
+        "acc": 99,
+        "health": 60,
+        "fresh": 100,
+        "signal": 50
+      },
+      "stage": "early",
+      "stage_multiplier": 1.2,
+      "confidence": 1.0,
+      "base_score": 84.14,
+      "explanation": "AIDA-64-Extreme 是 未知语言 开源项目，主打「Complete standalone setup of Aida 64 Extreme 2026. Full working installer with all features pre-activated, ready to run on your desktop.」；处于增长早期，本周涨速 29 star/天，涨速在加快；开发活跃。"
+    }
+  },
+  {
+    "repo": {
+      "owner": "Vanquisherplubegin",
+      "name": "Autodesk-CFD",
+      "full_name": "Vanquisherplubegin/Autodesk-CFD",
+      "description": "Autodesk Cfd 2026: Complete standalone setup with all tools ready to run.",
+      "stars": 200,
+      "forks": 0,
+      "open_issues": 0,
+      "created_at": "2026-10-31T07:20:38+00:00",
+      "pushed_at": "2026-10-31T07:20:44+00:00",
+      "updated_at": "2026-10-31T11:32:15+00:00",
+      "topics": [
+        "automation",
+        "cfd-simulation",
+        "cfd-toolbox",
+        "cfdtool-toolbox",
+        "desktop",
+        "developer-tools",
+        "open-source",
+        "python",
+        "scripts",
+        "software-engineering",
+        "system",
+        "utility",
+        "windows-app"
+      ],
+      "language": null,
+      "license": null,
+      "homepage": null,
+      "html_url": "https://github.com/Vanquisherplubegin/Autodesk-CFD",
+      "default_branch": "main",
+      "archived": false,
+      "search_score": 1.0,
+      "stars_7d_ago": 0,
+      "star_series": [
+        {
+          "d": "10-02",
+          "s": 0
+        },
+        {
+          "d": "10-03",
+          "s": 0
+        },
+        {
+          "d": "10-04",
+          "s": 0
+        },
+        {
+          "d": "10-05",
+          "s": 0
+        },
+        {
+          "d": "10-06",
+          "s": 0
+        },
+        {
+          "d": "10-07",
+          "s": 0
+        },
+        {
+          "d": "10-08",
+          "s": 0
+        },
+        {
+          "d": "10-09",
+          "s": 0
+        },
+        {
+          "d": "10-10",
+          "s": 0
+        },
+        {
+          "d": "10-11",
+          "s": 0
+        },
+        {
+          "d": "10-12",
+          "s": 0
+        },
+        {
+          "d": "10-13",
+          "s": 0
+        },
+        {
+          "d": "10-14",
+          "s": 0
+        },
+        {
+          "d": "10-15",
+          "s": 0
+        },
+        {
+          "d": "10-16",
+          "s": 0
+        },
+        {
+          "d": "10-17",
+          "s": 0
+        },
+        {
+          "d": "10-18",
+          "s": 0
+        },
+        {
+          "d": "10-19",
+          "s": 0
+        },
+        {
+          "d": "10-20",
+          "s": 0
+        },
+        {
+          "d": "10-21",
+          "s": 0
+        },
+        {
+          "d": "10-22",
+          "s": 0
+        },
+        {
+          "d": "10-23",
+          "s": 0
+        },
+        {
+          "d": "10-24",
+          "s": 0
+        },
+        {
+          "d": "10-25",
+          "s": 0
+        },
+        {
+          "d": "10-26",
+          "s": 0
+        },
+        {
+          "d": "10-27",
+          "s": 0
+        },
+        {
+          "d": "10-28",
+          "s": 0
+        },
+        {
+          "d": "10-29",
+          "s": 0
+        },
+        {
+          "d": "10-30",
+          "s": 0
+        },
+        {
+          "d": "10-31",
+          "s": 200
+        }
+      ]
+    },
+    "score": {
+      "score": 100.0,
+      "breakdown": {
+        "vel": 100,
+        "acc": 99,
+        "health": 60,
+        "fresh": 100,
+        "signal": 50
+      },
+      "stage": "early",
+      "stage_multiplier": 1.2,
+      "confidence": 1.0,
+      "base_score": 84.14,
+      "explanation": "Autodesk-CFD 是 未知语言 开源项目，主打「Autodesk Cfd 2026: Complete standalone setup with all tools ready to run.」；处于增长早期，本周涨速 29 star/天，涨速在加快；开发活跃。"
+    }
+  },
+  {
+    "repo": {
+      "owner": "accomplish07zrh-eng",
+      "name": "dsh-aurabot-qq",
+      "full_name": "accomplish07zrh-eng/dsh-aurabot-qq",
+      "description": "让 DeepSeek Harness 里的 AI 以「大肥鱼」住进 QQ：会聊天、发表情、发语音、记事、发空间、刷 B 站、唱歌。功能都是模块，能开关、能自己写，还能从模块市场装更多（SnowLuma / OneBot v11）。",
+      "stars": 200,
+      "forks": 28,
+      "open_issues": 31,
+      "created_at": "2026-10-24T06:43:38+00:00",
+      "pushed_at": "2026-10-31T11:38:39+00:00",
+      "updated_at": "2026-10-31T11:06:07+00:00",
+      "topics": [
+        "chatbot",
+        "deepseek",
+        "dsh-plugin",
+        "onebot",
+        "plugin-system",
+        "qq"
+      ],
+      "language": "JavaScript",
+      "license": "MIT",
+      "homepage": null,
+      "html_url": "https://github.com/accomplish07zrh-eng/dsh-aurabot-qq",
+      "default_branch": "main",
+      "archived": false,
+      "search_score": 1.0,
+      "stars_7d_ago": 152,
+      "star_series": [
+        {
+          "d": "10-02",
+          "s": 152
+        },
+        {
+          "d": "10-03",
+          "s": 152
+        },
+        {
+          "d": "10-04",
+          "s": 152
+        },
+        {
+          "d": "10-05",
+          "s": 152
+        },
+        {
+          "d": "10-06",
+          "s": 152
+        },
+        {
+          "d": "10-07",
+          "s": 152
+        },
+        {
+          "d": "10-08",
+          "s": 152
+        },
+        {
+          "d": "10-09",
+          "s": 152
+        },
+        {
+          "d": "10-10",
+          "s": 152
+        },
+        {
+          "d": "10-11",
+          "s": 152
+        },
+        {
+          "d": "10-12",
+          "s": 152
+        },
+        {
+          "d": "10-13",
+          "s": 152
+        },
+        {
+          "d": "10-14",
+          "s": 152
+        },
+        {
+          "d": "10-15",
+          "s": 152
+        },
+        {
+          "d": "10-16",
+          "s": 152
+        },
+        {
+          "d": "10-17",
+          "s": 152
+        },
+        {
+          "d": "10-18",
+          "s": 152
+        },
+        {
+          "d": "10-19",
+          "s": 152
+        },
+        {
+          "d": "10-20",
+          "s": 152
+        },
+        {
+          "d": "10-21",
+          "s": 152
+        },
+        {
+          "d": "10-22",
+          "s": 152
+        },
+        {
+          "d": "10-23",
+          "s": 152
+        },
+        {
+          "d": "10-24",
+          "s": 152
+        },
+        {
+          "d": "10-25",
+          "s": 152
+        },
+        {
+          "d": "10-26",
+          "s": 152
+        },
+        {
+          "d": "10-27",
+          "s": 152
+        },
+        {
+          "d": "10-28",
+          "s": 152
+        },
+        {
+          "d": "10-29",
+          "s": 152
+        },
+        {
+          "d": "10-30",
+          "s": 186
+        },
+        {
+          "d": "10-31",
+          "s": 200
+        }
+      ]
+    },
+    "score": {
+      "score": 92.36,
+      "breakdown": {
+        "vel": 61,
+        "acc": 99,
+        "health": 69,
+        "fresh": 98,
         "signal": 70
       },
       "stage": "early",
       "stage_multiplier": 1.2,
       "confidence": 1.0,
-      "base_score": 65.84,
-      "explanation": "atrex-kernel-agent 是 Python 开源项目，主打「An end-to-end agent project for GPU kernel implementation, analysis, profiling, and iterative optimization. It helps an agent turn PyTorch logic or an existing kernel into a high-performance GPU kernel through a structured, profile-driven workflow.」；处于增长早期，本周涨速 1.4 star/天；社区健康（fork/star 比 19.5%，4 个 open issue）。"
+      "base_score": 76.97,
+      "explanation": "dsh-aurabot-qq 是 JavaScript 开源项目，主打「让 DeepSeek Harness 里的 AI 以「大肥鱼」住进 QQ：会聊天、发表情、发语音、记事、发空间、刷 B 站、唱歌。功能都是模块，能开关、能自己写，还能从模块市场装更多（SnowLuma / OneBot v11）。」；处于增长早期，本周涨速 6.9 star/天，涨速在加快；开发活跃。"
     }
   },
   {
     "repo": {
-      "owner": "CopilotKit",
-      "name": "aimock",
-      "full_name": "CopilotKit/aimock",
-      "description": "Mock everything your AI app talks to — LLM APIs, MCP, A2A, AG-UI, vector DBs, search. One package, one port, zero dependencies.",
-      "stars": 997,
-      "forks": 83,
-      "open_issues": 2,
-      "created_at": "2026-03-03T02:40:16+00:00",
-      "pushed_at": "2026-10-29T23:10:57+00:00",
-      "updated_at": "2026-10-29T23:11:01+00:00",
+      "owner": "eugenioenko",
+      "name": "ttt",
+      "full_name": "eugenioenko/ttt",
+      "description": "TTT Editor (Terminal Text Tool): A real alternative to VS Code, Zed, and Sublime that runs in your terminal. A TUI that feels like GUI. Single binary, zero config.",
+      "stars": 996,
+      "forks": 112,
+      "open_issues": 94,
+      "created_at": "2026-01-16T06:21:11+00:00",
+      "pushed_at": "2026-10-30T01:27:32+00:00",
+      "updated_at": "2026-10-31T09:33:25+00:00",
       "topics": [
-        "ai-testing",
-        "aimock",
-        "llm",
-        "mcp",
-        "mock-server",
-        "openai"
+        "cli",
+        "code-editor",
+        "developer-tools",
+        "diff",
+        "editor",
+        "git-integration",
+        "go",
+        "golang",
+        "herdr-plugin",
+        "ide",
+        "lsp",
+        "syntax-highlighting",
+        "tcell",
+        "terminal",
+        "terminal-emulator",
+        "text",
+        "text-editor",
+        "ttt",
+        "tui",
+        "vscode-alternative"
       ],
-      "language": "TypeScript",
+      "language": "Go",
       "license": "MIT",
-      "homepage": "http://aimock.copilotkit.dev/",
-      "html_url": "https://github.com/CopilotKit/aimock",
+      "homepage": "http://tttedit.dev/",
+      "html_url": "https://github.com/eugenioenko/ttt",
       "default_branch": "main",
       "archived": false,
       "search_score": 1.0,
-      "stars_7d_ago": 985,
+      "stars_7d_ago": 940,
       "star_series": [
         {
-          "d": "10-01",
-          "s": 983
-        },
-        {
           "d": "10-02",
-          "s": 983
+          "s": 940
         },
         {
           "d": "10-03",
-          "s": 983
+          "s": 940
         },
         {
           "d": "10-04",
-          "s": 983
+          "s": 940
         },
         {
           "d": "10-05",
-          "s": 983
+          "s": 940
         },
         {
           "d": "10-06",
-          "s": 983
+          "s": 940
         },
         {
           "d": "10-07",
-          "s": 983
+          "s": 940
         },
         {
           "d": "10-08",
-          "s": 983
+          "s": 940
         },
         {
           "d": "10-09",
-          "s": 983
+          "s": 940
         },
         {
           "d": "10-10",
-          "s": 983
+          "s": 940
         },
         {
           "d": "10-11",
-          "s": 983
+          "s": 940
         },
         {
           "d": "10-12",
-          "s": 983
+          "s": 940
         },
         {
           "d": "10-13",
-          "s": 983
+          "s": 940
         },
         {
           "d": "10-14",
-          "s": 983
+          "s": 940
         },
         {
           "d": "10-15",
-          "s": 983
+          "s": 940
         },
         {
           "d": "10-16",
-          "s": 983
+          "s": 940
         },
         {
           "d": "10-17",
-          "s": 983
+          "s": 940
         },
         {
           "d": "10-18",
-          "s": 983
+          "s": 940
         },
         {
           "d": "10-19",
-          "s": 983
+          "s": 940
         },
         {
           "d": "10-20",
-          "s": 983
+          "s": 940
         },
         {
           "d": "10-21",
-          "s": 984
+          "s": 940
         },
         {
           "d": "10-22",
-          "s": 984
+          "s": 940
         },
         {
           "d": "10-23",
-          "s": 984
+          "s": 940
         },
         {
           "d": "10-24",
-          "s": 985
+          "s": 940
         },
         {
           "d": "10-25",
-          "s": 986
+          "s": 940
         },
         {
           "d": "10-26",
-          "s": 987
+          "s": 940
         },
         {
           "d": "10-27",
-          "s": 991
+          "s": 940
         },
         {
           "d": "10-28",
-          "s": 994
+          "s": 942
         },
         {
           "d": "10-29",
-          "s": 997
+          "s": 965
         },
         {
           "d": "10-30",
-          "s": 997
+          "s": 988
+        },
+        {
+          "d": "10-31",
+          "s": 996
         }
       ]
     },
     "score": {
-      "score": 73.15,
+      "score": 72.17,
       "breakdown": {
-        "vel": 58,
-        "acc": 81,
-        "health": 87,
-        "fresh": 34,
+        "vel": 65,
+        "acc": 99,
+        "health": 74,
+        "fresh": 21,
         "signal": 100
       },
       "stage": "mid_early",
       "stage_multiplier": 1.1,
       "confidence": 1.0,
-      "base_score": 66.5,
-      "explanation": "aimock 是 TypeScript 开源项目，主打「Mock everything your AI app talks to — LLM APIs, MCP, A2A, AG-UI, vector DBs, search. One package, one port, zero dependencies.」；处于中早期增长，本周涨速 1.7 star/天，涨速在加快；社区健康（fork/star 比 8.3%，2 个 open issue）、项目元数据完整。"
+      "base_score": 65.61,
+      "explanation": "ttt 是 Go 开源项目，主打「TTT Editor (Terminal Text Tool): A real alternative to VS Code, Zed, and Sublime that runs in your terminal. A TUI that feels like GUI. Single binary, zero config.」；处于中早期增长，本周涨速 8.0 star/天，涨速在加快；社区健康（fork/star 比 11.2%，94 个 open issue）、项目元数据完整。"
     }
   }
 ]
