@@ -1,326 +1,161 @@
 [
   {
     "repo": {
-      "owner": "google",
-      "name": "three-live",
-      "full_name": "google/three-live",
-      "description": "AI-first Native 3D, CAD & spatial computing. Runtime and JIT compiler for Android (Filament & Jetpack XR), iOS/visionOS (RealityKit), and WebGL2/WebXR.",
-      "stars": 200,
-      "forks": 27,
-      "open_issues": 0,
-      "created_at": "2026-10-02T15:59:12+00:00",
-      "pushed_at": "2026-11-08T08:12:59+00:00",
-      "updated_at": "2026-11-08T12:01:45+00:00",
-      "topics": [
-        "android-xr",
-        "cad",
-        "csg",
-        "gltf",
-        "mcp",
-        "spatial-computing",
-        "threejs",
-        "usdz",
-        "visionos"
-      ],
-      "language": "TypeScript",
-      "license": "Apache-2.0",
-      "homepage": "https://google.github.io/three-live/",
-      "html_url": "https://github.com/google/three-live",
-      "default_branch": "main",
-      "archived": false,
-      "search_score": 1.0,
-      "stars_7d_ago": 74,
-      "star_series": [
-        {
-          "d": "10-10",
-          "s": 74
-        },
-        {
-          "d": "10-11",
-          "s": 74
-        },
-        {
-          "d": "10-12",
-          "s": 74
-        },
-        {
-          "d": "10-13",
-          "s": 74
-        },
-        {
-          "d": "10-14",
-          "s": 74
-        },
-        {
-          "d": "10-15",
-          "s": 74
-        },
-        {
-          "d": "10-16",
-          "s": 74
-        },
-        {
-          "d": "10-17",
-          "s": 74
-        },
-        {
-          "d": "10-18",
-          "s": 74
-        },
-        {
-          "d": "10-19",
-          "s": 74
-        },
-        {
-          "d": "10-20",
-          "s": 74
-        },
-        {
-          "d": "10-21",
-          "s": 74
-        },
-        {
-          "d": "10-22",
-          "s": 74
-        },
-        {
-          "d": "10-23",
-          "s": 74
-        },
-        {
-          "d": "10-24",
-          "s": 74
-        },
-        {
-          "d": "10-25",
-          "s": 74
-        },
-        {
-          "d": "10-26",
-          "s": 74
-        },
-        {
-          "d": "10-27",
-          "s": 74
-        },
-        {
-          "d": "10-28",
-          "s": 74
-        },
-        {
-          "d": "10-29",
-          "s": 74
-        },
-        {
-          "d": "10-30",
-          "s": 74
-        },
-        {
-          "d": "10-31",
-          "s": 74
-        },
-        {
-          "d": "11-01",
-          "s": 74
-        },
-        {
-          "d": "11-02",
-          "s": 74
-        },
-        {
-          "d": "11-03",
-          "s": 74
-        },
-        {
-          "d": "11-04",
-          "s": 74
-        },
-        {
-          "d": "11-05",
-          "s": 90
-        },
-        {
-          "d": "11-06",
-          "s": 133
-        },
-        {
-          "d": "11-07",
-          "s": 169
-        },
-        {
-          "d": "11-08",
-          "s": 200
-        }
-      ]
-    },
-    "score": {
-      "score": 100.0,
-      "breakdown": {
-        "vel": 89,
-        "acc": 99,
-        "health": 98,
-        "fresh": 90,
-        "signal": 100
-      },
-      "stage": "early",
-      "stage_multiplier": 1.2,
-      "confidence": 1.0,
-      "base_score": 94.62,
-      "explanation": "three-live 是 TypeScript 开源项目，主打「AI-first Native 3D, CAD & spatial computing. Runtime and JIT compiler for Android (Filament & Jetpack XR), iOS/visionOS (RealityKit), and WebGL2/WebXR.」；处于增长早期，本周涨速 18 star/天，涨速在加快；社区健康（fork/star 比 13.5%，0 个 open issue）、项目元数据完整、开发活跃。"
-    }
-  },
-  {
-    "repo": {
-      "owner": "Get-Concord-AI",
-      "name": "concord-mcp",
-      "full_name": "Get-Concord-AI/concord-mcp",
-      "description": "Live messaging for coding agents",
+      "owner": "oinkvm",
+      "name": "oink",
+      "full_name": "oinkvm/oink",
+      "description": "Your computers, working as one. Share keyboard, mouse, trackpad, clipboard, drag and drop and audio across Macs and PCs.",
       "stars": 996,
-      "forks": 58,
-      "open_issues": 45,
-      "created_at": "2026-07-14T16:30:00+00:00",
-      "pushed_at": "2026-11-06T12:25:16+00:00",
-      "updated_at": "2026-11-08T05:39:30+00:00",
+      "forks": 83,
+      "open_issues": 15,
+      "created_at": "2026-10-19T21:08:57+00:00",
+      "pushed_at": "2026-11-09T11:31:40+00:00",
+      "updated_at": "2026-11-09T14:51:30+00:00",
       "topics": [
-        "agentic-coding",
-        "ai-agents",
-        "claude-code",
-        "code-review",
-        "codex",
-        "coding-agents",
-        "cursor",
-        "developer-tools",
-        "devtools",
-        "mcp",
-        "model-context-protocol"
+        "audio-sharing",
+        "barrier-alternative",
+        "clipboard-sync",
+        "cross-platform",
+        "drag-and-drop",
+        "keyboard-sharing",
+        "kvm",
+        "macos",
+        "mouse-sharing",
+        "productivity",
+        "rust",
+        "software-kvm",
+        "synergy-alternative",
+        "tauri",
+        "universal-control",
+        "windows"
       ],
-      "language": "TypeScript",
-      "license": "MIT",
-      "homepage": "https://getconcord.ai",
-      "html_url": "https://github.com/Get-Concord-AI/concord-mcp",
+      "language": "Rust",
+      "license": "GPL-3.0",
+      "homepage": null,
+      "html_url": "https://github.com/oinkvm/oink",
       "default_branch": "main",
       "archived": false,
       "search_score": 1.0,
-      "stars_7d_ago": 860,
+      "stars_7d_ago": 777,
       "star_series": [
         {
-          "d": "10-10",
-          "s": 842
-        },
-        {
           "d": "10-11",
-          "s": 842
+          "s": 777
         },
         {
           "d": "10-12",
-          "s": 842
+          "s": 777
         },
         {
           "d": "10-13",
-          "s": 842
+          "s": 777
         },
         {
           "d": "10-14",
-          "s": 842
+          "s": 777
         },
         {
           "d": "10-15",
-          "s": 842
+          "s": 777
         },
         {
           "d": "10-16",
-          "s": 842
+          "s": 777
         },
         {
           "d": "10-17",
-          "s": 842
+          "s": 777
         },
         {
           "d": "10-18",
-          "s": 842
+          "s": 777
         },
         {
           "d": "10-19",
-          "s": 842
+          "s": 777
         },
         {
           "d": "10-20",
-          "s": 842
+          "s": 777
         },
         {
           "d": "10-21",
-          "s": 842
+          "s": 777
         },
         {
           "d": "10-22",
-          "s": 842
+          "s": 777
         },
         {
           "d": "10-23",
-          "s": 842
+          "s": 777
         },
         {
           "d": "10-24",
-          "s": 842
+          "s": 777
         },
         {
           "d": "10-25",
-          "s": 842
+          "s": 777
         },
         {
           "d": "10-26",
-          "s": 842
+          "s": 777
         },
         {
           "d": "10-27",
-          "s": 842
+          "s": 777
         },
         {
           "d": "10-28",
-          "s": 842
+          "s": 777
         },
         {
           "d": "10-29",
-          "s": 842
+          "s": 777
         },
         {
           "d": "10-30",
-          "s": 842
+          "s": 777
         },
         {
           "d": "10-31",
-          "s": 842
+          "s": 777
         },
         {
           "d": "11-01",
-          "s": 842
+          "s": 777
         },
         {
           "d": "11-02",
-          "s": 860
+          "s": 777
         },
         {
           "d": "11-03",
-          "s": 899
+          "s": 777
         },
         {
           "d": "11-04",
-          "s": 944
+          "s": 777
         },
         {
           "d": "11-05",
-          "s": 976
+          "s": 777
         },
         {
           "d": "11-06",
-          "s": 990
+          "s": 777
         },
         {
           "d": "11-07",
-          "s": 995
+          "s": 777
         },
         {
           "d": "11-08",
+          "s": 844
+        },
+        {
+          "d": "11-09",
           "s": 996
         }
       ]
@@ -328,509 +163,700 @@
     "score": {
       "score": 100.0,
       "breakdown": {
-        "vel": 92,
+        "vel": 100,
         "acc": 99,
-        "health": 68,
-        "fresh": 68,
-        "signal": 85
-      },
-      "stage": "early",
-      "stage_multiplier": 1.2,
-      "confidence": 1.0,
-      "base_score": 83.64,
-      "explanation": "concord-mcp 是 TypeScript 开源项目，主打「Live messaging for coding agents」；处于增长早期，本周涨速 19 star/天，涨速在加快；项目元数据完整。"
-    }
-  },
-  {
-    "repo": {
-      "owner": "tsukiyo-zero",
-      "name": "hongguoTV",
-      "full_name": "tsukiyo-zero/hongguoTV",
-      "description": "红果TV-可登录 | macOS M芯片(主要维护TV版)",
-      "stars": 200,
-      "forks": 27,
-      "open_issues": 11,
-      "created_at": "2026-10-21T12:54:30+00:00",
-      "pushed_at": "2026-11-07T12:21:21+00:00",
-      "updated_at": "2026-11-08T11:50:39+00:00",
-      "topics": [],
-      "language": "Kotlin",
-      "license": "GPL-3.0",
-      "homepage": null,
-      "html_url": "https://github.com/tsukiyo-zero/hongguoTV",
-      "default_branch": "main",
-      "archived": false,
-      "search_score": 1.0,
-      "stars_7d_ago": 165,
-      "star_series": [
-        {
-          "d": "10-10",
-          "s": 165
-        },
-        {
-          "d": "10-11",
-          "s": 165
-        },
-        {
-          "d": "10-12",
-          "s": 165
-        },
-        {
-          "d": "10-13",
-          "s": 165
-        },
-        {
-          "d": "10-14",
-          "s": 165
-        },
-        {
-          "d": "10-15",
-          "s": 165
-        },
-        {
-          "d": "10-16",
-          "s": 165
-        },
-        {
-          "d": "10-17",
-          "s": 165
-        },
-        {
-          "d": "10-18",
-          "s": 165
-        },
-        {
-          "d": "10-19",
-          "s": 165
-        },
-        {
-          "d": "10-20",
-          "s": 165
-        },
-        {
-          "d": "10-21",
-          "s": 165
-        },
-        {
-          "d": "10-22",
-          "s": 165
-        },
-        {
-          "d": "10-23",
-          "s": 165
-        },
-        {
-          "d": "10-24",
-          "s": 165
-        },
-        {
-          "d": "10-25",
-          "s": 165
-        },
-        {
-          "d": "10-26",
-          "s": 165
-        },
-        {
-          "d": "10-27",
-          "s": 165
-        },
-        {
-          "d": "10-28",
-          "s": 165
-        },
-        {
-          "d": "10-29",
-          "s": 165
-        },
-        {
-          "d": "10-30",
-          "s": 165
-        },
-        {
-          "d": "10-31",
-          "s": 165
-        },
-        {
-          "d": "11-01",
-          "s": 165
-        },
-        {
-          "d": "11-02",
-          "s": 165
-        },
-        {
-          "d": "11-03",
-          "s": 165
-        },
-        {
-          "d": "11-04",
-          "s": 165
-        },
-        {
-          "d": "11-05",
-          "s": 165
-        },
-        {
-          "d": "11-06",
-          "s": 172
-        },
-        {
-          "d": "11-07",
-          "s": 189
-        },
-        {
-          "d": "11-08",
-          "s": 200
-        }
-      ]
-    },
-    "score": {
-      "score": 91.14,
-      "breakdown": {
-        "vel": 54,
-        "acc": 99,
-        "health": 88,
+        "health": 84,
         "fresh": 95,
-        "signal": 55
-      },
-      "stage": "early",
-      "stage_multiplier": 1.2,
-      "confidence": 1.0,
-      "base_score": 75.95,
-      "explanation": "hongguoTV 是 Kotlin 开源项目，主打「红果TV-可登录 | macOS M芯片(主要维护TV版)」；处于增长早期，本周涨速 5.0 star/天，涨速在加快；社区健康（fork/star 比 13.5%，11 个 open issue）、开发活跃。"
-    }
-  },
-  {
-    "repo": {
-      "owner": "beiyege-01",
-      "name": "dsh-voice-ai-girlfriend",
-      "full_name": "beiyege-01/dsh-voice-ai-girlfriend",
-      "description": "语音 AI 女友（Voice AI girlfriend for DeepSeek Harness）：Whisper 语音输入 + Qwen3-TTS 声音克隆 + 句子级流式朗读 + 数字人动画窗。插话/排队双模式，说话即打断。",
-      "stars": 1000,
-      "forks": 293,
-      "open_issues": 3,
-      "created_at": "2026-08-15T15:16:37+00:00",
-      "pushed_at": "2026-11-02T10:49:12+00:00",
-      "updated_at": "2026-11-08T12:15:14+00:00",
-      "topics": [
-        "ai-girlfriend",
-        "companion",
-        "deepseek-harness",
-        "digital-human",
-        "dsh",
-        "dsh-plugin",
-        "speech-to-speech",
-        "tts",
-        "voice-assistant",
-        "voice-clone",
-        "whisper"
-      ],
-      "language": "TypeScript",
-      "license": "NOASSERTION",
-      "homepage": null,
-      "html_url": "https://github.com/beiyege-01/dsh-voice-ai-girlfriend",
-      "default_branch": "main",
-      "archived": false,
-      "search_score": 1.0,
-      "stars_7d_ago": 884,
-      "star_series": [
-        {
-          "d": "10-10",
-          "s": 771
-        },
-        {
-          "d": "10-11",
-          "s": 771
-        },
-        {
-          "d": "10-12",
-          "s": 771
-        },
-        {
-          "d": "10-13",
-          "s": 771
-        },
-        {
-          "d": "10-14",
-          "s": 771
-        },
-        {
-          "d": "10-15",
-          "s": 771
-        },
-        {
-          "d": "10-16",
-          "s": 771
-        },
-        {
-          "d": "10-17",
-          "s": 771
-        },
-        {
-          "d": "10-18",
-          "s": 771
-        },
-        {
-          "d": "10-19",
-          "s": 771
-        },
-        {
-          "d": "10-20",
-          "s": 771
-        },
-        {
-          "d": "10-21",
-          "s": 771
-        },
-        {
-          "d": "10-22",
-          "s": 771
-        },
-        {
-          "d": "10-23",
-          "s": 771
-        },
-        {
-          "d": "10-24",
-          "s": 771
-        },
-        {
-          "d": "10-25",
-          "s": 771
-        },
-        {
-          "d": "10-26",
-          "s": 771
-        },
-        {
-          "d": "10-27",
-          "s": 771
-        },
-        {
-          "d": "10-28",
-          "s": 793
-        },
-        {
-          "d": "10-29",
-          "s": 814
-        },
-        {
-          "d": "10-30",
-          "s": 835
-        },
-        {
-          "d": "10-31",
-          "s": 855
-        },
-        {
-          "d": "11-01",
-          "s": 871
-        },
-        {
-          "d": "11-02",
-          "s": 884
-        },
-        {
-          "d": "11-03",
-          "s": 916
-        },
-        {
-          "d": "11-04",
-          "s": 935
-        },
-        {
-          "d": "11-05",
-          "s": 961
-        },
-        {
-          "d": "11-06",
-          "s": 981
-        },
-        {
-          "d": "11-07",
-          "s": 991
-        },
-        {
-          "d": "11-08",
-          "s": 1000
-        }
-      ]
-    },
-    "score": {
-      "score": 90.09,
-      "breakdown": {
-        "vel": 87,
-        "acc": 51,
-        "health": 100,
-        "fresh": 77,
         "signal": 70
       },
       "stage": "early",
       "stage_multiplier": 1.2,
       "confidence": 1.0,
-      "base_score": 75.07,
-      "explanation": "dsh-voice-ai-girlfriend 是 TypeScript 开源项目，主打「语音 AI 女友（Voice AI girlfriend for DeepSeek Harness）：Whisper 语音输入 + Qwen3-TTS 声音克隆 + 句子级流式朗读 + 数字人动画窗。插话/排队双模式，说话即打断。」；处于增长早期，本周涨速 17 star/天；社区健康（fork/star 比 29.3%，3 个 open issue）、开发活跃。"
+      "base_score": 92.33,
+      "explanation": "oink 是 Rust 开源项目，主打「Your computers, working as one. Share keyboard, mouse, trackpad, clipboard, drag and drop and audio across Macs and PCs.」；处于增长早期，本周涨速 31 star/天，涨速在加快；社区健康（fork/star 比 8.3%，15 个 open issue）、开发活跃。"
     }
   },
   {
     "repo": {
-      "owner": "yuanbw2025",
-      "name": "storyforge",
-      "full_name": "yuanbw2025/storyforge",
-      "description": "故事熔炉 StoryForge — AI 小说创作工作台 / AI novel writing workshop",
-      "stars": 1000,
-      "forks": 168,
-      "open_issues": 87,
-      "created_at": "2026-04-13T13:32:16+00:00",
-      "pushed_at": "2026-11-08T08:57:57+00:00",
-      "updated_at": "2026-11-08T11:46:00+00:00",
-      "topics": [],
-      "language": "TypeScript",
+      "owner": "sodiumsun",
+      "name": "agenttrail",
+      "full_name": "sodiumsun/agenttrail",
+      "description": "Local observability for AI coding agents. Agenttrail Map shows your project as a live map of what each agent is working on, in the browser or natively in Herdr.",
+      "stars": 997,
+      "forks": 71,
+      "open_issues": 6,
+      "created_at": "2026-08-21T21:14:33+00:00",
+      "pushed_at": "2026-11-06T18:03:25+00:00",
+      "updated_at": "2026-11-09T14:28:20+00:00",
+      "topics": [
+        "agent-monitoring",
+        "agent-observability",
+        "ai-agents",
+        "ai-coding-agents",
+        "claude-code",
+        "coding-agents",
+        "cursor-ai",
+        "dashboard",
+        "developer-tools",
+        "file-watcher",
+        "herdr-mod",
+        "local-first",
+        "monitoring",
+        "nodejs",
+        "openai-codex",
+        "progress-tracking"
+      ],
+      "language": "JavaScript",
       "license": "MIT",
       "homepage": null,
-      "html_url": "https://github.com/yuanbw2025/storyforge",
+      "html_url": "https://github.com/sodiumsun/agenttrail",
       "default_branch": "main",
       "archived": false,
       "search_score": 1.0,
-      "stars_7d_ago": 953,
+      "stars_7d_ago": 978,
       "star_series": [
         {
-          "d": "10-10",
-          "s": 950
-        },
-        {
           "d": "10-11",
-          "s": 950
+          "s": 945
         },
         {
           "d": "10-12",
-          "s": 950
+          "s": 945
         },
         {
           "d": "10-13",
-          "s": 950
+          "s": 945
         },
         {
           "d": "10-14",
-          "s": 950
+          "s": 945
         },
         {
           "d": "10-15",
-          "s": 950
+          "s": 945
         },
         {
           "d": "10-16",
-          "s": 950
+          "s": 945
         },
         {
           "d": "10-17",
-          "s": 950
+          "s": 945
         },
         {
           "d": "10-18",
-          "s": 950
+          "s": 945
         },
         {
           "d": "10-19",
-          "s": 950
+          "s": 945
         },
         {
           "d": "10-20",
-          "s": 950
+          "s": 945
         },
         {
           "d": "10-21",
-          "s": 950
+          "s": 945
         },
         {
           "d": "10-22",
-          "s": 950
+          "s": 945
         },
         {
           "d": "10-23",
-          "s": 950
+          "s": 949
         },
         {
           "d": "10-24",
-          "s": 950
+          "s": 955
         },
         {
           "d": "10-25",
-          "s": 950
+          "s": 959
         },
         {
           "d": "10-26",
-          "s": 950
+          "s": 962
         },
         {
           "d": "10-27",
-          "s": 950
+          "s": 966
         },
         {
           "d": "10-28",
-          "s": 950
+          "s": 967
         },
         {
           "d": "10-29",
-          "s": 950
+          "s": 970
         },
         {
           "d": "10-30",
-          "s": 950
+          "s": 972
         },
         {
           "d": "10-31",
-          "s": 950
+          "s": 973
         },
         {
           "d": "11-01",
-          "s": 950
+          "s": 974
         },
         {
           "d": "11-02",
-          "s": 953
+          "s": 977
         },
         {
           "d": "11-03",
-          "s": 957
+          "s": 978
         },
         {
           "d": "11-04",
-          "s": 987
+          "s": 979
         },
         {
           "d": "11-05",
-          "s": 992
+          "s": 981
         },
         {
           "d": "11-06",
-          "s": 995
+          "s": 986
         },
         {
           "d": "11-07",
-          "s": 999
+          "s": 990
         },
         {
           "d": "11-08",
-          "s": 1000
+          "s": 994
+        },
+        {
+          "d": "11-09",
+          "s": 997
         }
       ]
     },
     "score": {
-      "score": 82.18,
+      "score": 71.9,
       "breakdown": {
-        "vel": 62,
-        "acc": 99,
-        "health": 79,
-        "fresh": 43,
-        "signal": 55
+        "vel": 38,
+        "acc": 64,
+        "health": 82,
+        "fresh": 78,
+        "signal": 70
       },
       "stage": "early",
       "stage_multiplier": 1.2,
       "confidence": 1.0,
-      "base_score": 68.48,
-      "explanation": "storyforge 是 TypeScript 开源项目，主打「故事熔炉 StoryForge — AI 小说创作工作台 / AI novel writing workshop」；处于增长早期，本周涨速 6.7 star/天，涨速在加快；社区健康（fork/star 比 16.8%，87 个 open issue）。"
+      "base_score": 59.92,
+      "explanation": "agenttrail 是 JavaScript 开源项目，主打「Local observability for AI coding agents. Agenttrail Map shows your project as a live map of what each agent is working on, in the browser or natively in Herdr.」；处于增长早期；社区健康（fork/star 比 7.1%，6 个 open issue）、开发活跃。"
+    }
+  },
+  {
+    "repo": {
+      "owner": "jegly",
+      "name": "Box",
+      "full_name": "jegly/Box",
+      "description": "The most advanced, fully offline client-side AI suite on Android today.",
+      "stars": 998,
+      "forks": 68,
+      "open_issues": 1,
+      "created_at": "2026-04-17T10:42:52+00:00",
+      "pushed_at": "2026-11-09T06:42:04+00:00",
+      "updated_at": "2026-11-09T06:34:20+00:00",
+      "topics": [
+        "android",
+        "android-ai-app",
+        "artificial-intelligence",
+        "box",
+        "gguf",
+        "linux",
+        "linux-ai",
+        "litert",
+        "litert-lm",
+        "litertlm",
+        "llamacpp",
+        "local-ai",
+        "local-llm",
+        "mcp-server",
+        "music-generation",
+        "ondevice-ai",
+        "privacy-first-ai",
+        "rag",
+        "visionai"
+      ],
+      "language": "Kotlin",
+      "license": "NOASSERTION",
+      "homepage": "https://jegly.xyz",
+      "html_url": "https://github.com/jegly/Box",
+      "default_branch": "main",
+      "archived": false,
+      "search_score": 1.0,
+      "stars_7d_ago": 971,
+      "star_series": [
+        {
+          "d": "10-11",
+          "s": 928
+        },
+        {
+          "d": "10-12",
+          "s": 928
+        },
+        {
+          "d": "10-13",
+          "s": 928
+        },
+        {
+          "d": "10-14",
+          "s": 928
+        },
+        {
+          "d": "10-15",
+          "s": 928
+        },
+        {
+          "d": "10-16",
+          "s": 928
+        },
+        {
+          "d": "10-17",
+          "s": 928
+        },
+        {
+          "d": "10-18",
+          "s": 928
+        },
+        {
+          "d": "10-19",
+          "s": 928
+        },
+        {
+          "d": "10-20",
+          "s": 928
+        },
+        {
+          "d": "10-21",
+          "s": 930
+        },
+        {
+          "d": "10-22",
+          "s": 933
+        },
+        {
+          "d": "10-23",
+          "s": 937
+        },
+        {
+          "d": "10-24",
+          "s": 938
+        },
+        {
+          "d": "10-25",
+          "s": 940
+        },
+        {
+          "d": "10-26",
+          "s": 943
+        },
+        {
+          "d": "10-27",
+          "s": 946
+        },
+        {
+          "d": "10-28",
+          "s": 948
+        },
+        {
+          "d": "10-29",
+          "s": 953
+        },
+        {
+          "d": "10-30",
+          "s": 957
+        },
+        {
+          "d": "10-31",
+          "s": 959
+        },
+        {
+          "d": "11-01",
+          "s": 960
+        },
+        {
+          "d": "11-02",
+          "s": 965
+        },
+        {
+          "d": "11-03",
+          "s": 971
+        },
+        {
+          "d": "11-04",
+          "s": 975
+        },
+        {
+          "d": "11-05",
+          "s": 981
+        },
+        {
+          "d": "11-06",
+          "s": 991
+        },
+        {
+          "d": "11-07",
+          "s": 994
+        },
+        {
+          "d": "11-08",
+          "s": 997
+        },
+        {
+          "d": "11-09",
+          "s": 998
+        }
+      ]
+    },
+    "score": {
+      "score": 67.27,
+      "breakdown": {
+        "vel": 46,
+        "acc": 52,
+        "health": 82,
+        "fresh": 44,
+        "signal": 85
+      },
+      "stage": "early",
+      "stage_multiplier": 1.2,
+      "confidence": 1.0,
+      "base_score": 56.06,
+      "explanation": "Box 是 Kotlin 开源项目，主打「The most advanced, fully offline client-side AI suite on Android today.」；处于增长早期，本周涨速 3.9 star/天；社区健康（fork/star 比 6.8%，1 个 open issue）、项目元数据完整。"
+    }
+  },
+  {
+    "repo": {
+      "owner": "alfredxw",
+      "name": "denova",
+      "full_name": "alfredxw/denova",
+      "description": "Your One-Stop AI Workbench for Novel Writing and Role-Playing.",
+      "stars": 995,
+      "forks": 158,
+      "open_issues": 9,
+      "created_at": "2026-05-19T09:56:12+00:00",
+      "pushed_at": "2026-11-09T08:20:41+00:00",
+      "updated_at": "2026-11-09T14:24:58+00:00",
+      "topics": [
+        "agent",
+        "ai-agents",
+        "ai-tools",
+        "ide",
+        "novel"
+      ],
+      "language": "Go",
+      "license": "Apache-2.0",
+      "homepage": "https://denova-ai.com/",
+      "html_url": "https://github.com/alfredxw/denova",
+      "default_branch": "master",
+      "archived": false,
+      "search_score": 1.0,
+      "stars_7d_ago": 981,
+      "star_series": [
+        {
+          "d": "10-11",
+          "s": 955
+        },
+        {
+          "d": "10-12",
+          "s": 955
+        },
+        {
+          "d": "10-13",
+          "s": 955
+        },
+        {
+          "d": "10-14",
+          "s": 955
+        },
+        {
+          "d": "10-15",
+          "s": 955
+        },
+        {
+          "d": "10-16",
+          "s": 955
+        },
+        {
+          "d": "10-17",
+          "s": 955
+        },
+        {
+          "d": "10-18",
+          "s": 955
+        },
+        {
+          "d": "10-19",
+          "s": 955
+        },
+        {
+          "d": "10-20",
+          "s": 955
+        },
+        {
+          "d": "10-21",
+          "s": 955
+        },
+        {
+          "d": "10-22",
+          "s": 959
+        },
+        {
+          "d": "10-23",
+          "s": 962
+        },
+        {
+          "d": "10-24",
+          "s": 966
+        },
+        {
+          "d": "10-25",
+          "s": 967
+        },
+        {
+          "d": "10-26",
+          "s": 969
+        },
+        {
+          "d": "10-27",
+          "s": 971
+        },
+        {
+          "d": "10-28",
+          "s": 973
+        },
+        {
+          "d": "10-29",
+          "s": 976
+        },
+        {
+          "d": "10-30",
+          "s": 978
+        },
+        {
+          "d": "10-31",
+          "s": 978
+        },
+        {
+          "d": "11-01",
+          "s": 979
+        },
+        {
+          "d": "11-02",
+          "s": 980
+        },
+        {
+          "d": "11-03",
+          "s": 981
+        },
+        {
+          "d": "11-04",
+          "s": 983
+        },
+        {
+          "d": "11-05",
+          "s": 984
+        },
+        {
+          "d": "11-06",
+          "s": 986
+        },
+        {
+          "d": "11-07",
+          "s": 988
+        },
+        {
+          "d": "11-08",
+          "s": 991
+        },
+        {
+          "d": "11-09",
+          "s": 995
+        }
+      ]
+    },
+    "score": {
+      "score": 66.77,
+      "breakdown": {
+        "vel": 32,
+        "acc": 60,
+        "health": 99,
+        "fresh": 52,
+        "signal": 85
+      },
+      "stage": "early",
+      "stage_multiplier": 1.2,
+      "confidence": 1.0,
+      "base_score": 55.64,
+      "explanation": "denova 是 Go 开源项目，主打「Your One-Stop AI Workbench for Novel Writing and Role-Playing.」；处于增长早期；社区健康（fork/star 比 15.9%，9 个 open issue）、项目元数据完整。"
+    }
+  },
+  {
+    "repo": {
+      "owner": "ant-video",
+      "name": "ant-video",
+      "full_name": "ant-video/ant-video",
+      "description": null,
+      "stars": 200,
+      "forks": 29,
+      "open_issues": 0,
+      "created_at": "2026-04-01T09:58:32+00:00",
+      "pushed_at": "2026-11-08T07:16:44+00:00",
+      "updated_at": "2026-11-09T12:07:07+00:00",
+      "topics": [],
+      "language": "JavaScript",
+      "license": null,
+      "homepage": null,
+      "html_url": "https://github.com/ant-video/ant-video",
+      "default_branch": "main",
+      "archived": false,
+      "search_score": 1.0,
+      "stars_7d_ago": 183,
+      "star_series": [
+        {
+          "d": "10-11",
+          "s": 176
+        },
+        {
+          "d": "10-12",
+          "s": 176
+        },
+        {
+          "d": "10-13",
+          "s": 176
+        },
+        {
+          "d": "10-14",
+          "s": 176
+        },
+        {
+          "d": "10-15",
+          "s": 176
+        },
+        {
+          "d": "10-16",
+          "s": 178
+        },
+        {
+          "d": "10-17",
+          "s": 178
+        },
+        {
+          "d": "10-18",
+          "s": 178
+        },
+        {
+          "d": "10-19",
+          "s": 179
+        },
+        {
+          "d": "10-20",
+          "s": 179
+        },
+        {
+          "d": "10-21",
+          "s": 179
+        },
+        {
+          "d": "10-22",
+          "s": 179
+        },
+        {
+          "d": "10-23",
+          "s": 180
+        },
+        {
+          "d": "10-24",
+          "s": 180
+        },
+        {
+          "d": "10-25",
+          "s": 180
+        },
+        {
+          "d": "10-26",
+          "s": 180
+        },
+        {
+          "d": "10-27",
+          "s": 180
+        },
+        {
+          "d": "10-28",
+          "s": 180
+        },
+        {
+          "d": "10-29",
+          "s": 181
+        },
+        {
+          "d": "10-30",
+          "s": 181
+        },
+        {
+          "d": "10-31",
+          "s": 182
+        },
+        {
+          "d": "11-01",
+          "s": 182
+        },
+        {
+          "d": "11-02",
+          "s": 183
+        },
+        {
+          "d": "11-03",
+          "s": 183
+        },
+        {
+          "d": "11-04",
+          "s": 184
+        },
+        {
+          "d": "11-05",
+          "s": 184
+        },
+        {
+          "d": "11-06",
+          "s": 184
+        },
+        {
+          "d": "11-07",
+          "s": 184
+        },
+        {
+          "d": "11-08",
+          "s": 196
+        },
+        {
+          "d": "11-09",
+          "s": 200
+        }
+      ]
+    },
+    "score": {
+      "score": 63.33,
+      "breakdown": {
+        "vel": 36,
+        "acc": 88,
+        "health": 100,
+        "fresh": 39,
+        "signal": 20
+      },
+      "stage": "early",
+      "stage_multiplier": 1.2,
+      "confidence": 1.0,
+      "base_score": 52.78,
+      "explanation": "ant-video 是 JavaScript 方向的开源项目；处于增长早期，涨速在加快；社区健康（fork/star 比 14.5%，0 个 open issue）。"
     }
   }
 ]
