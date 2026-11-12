@@ -1,159 +1,337 @@
 [
   {
     "repo": {
-      "owner": "AienTech",
-      "name": "dossier",
-      "full_name": "AienTech/dossier",
-      "description": "A self-hosted job search and resume builder app that writes tailored resumes and cover letters from your profile.",
-      "stars": 4999,
-      "forks": 1036,
-      "open_issues": 25,
-      "created_at": "2026-10-03T21:26:15+00:00",
-      "pushed_at": "2026-11-08T13:29:38+00:00",
-      "updated_at": "2026-11-11T13:28:56+00:00",
+      "owner": "simplexai-labs",
+      "name": "PolyStrata",
+      "full_name": "simplexai-labs/PolyStrata",
+      "description": "Run large AI models on your own PC: Qwen3.8-Flash-Next on Strata's engine, and GLM 5.3 Flash, DeepSeek V4 Flash, LFM2.5, Qwen3.6, Ornith 1.5, Gemma 4, Tiel Coder and MiniCPM-V on a second engine written for PolyStrata. One-click install for Windows and Linux, OpenAI/Anthropic API on localhost.",
+      "stars": 1000,
+      "forks": 134,
+      "open_issues": 17,
+      "created_at": "2026-10-06T21:09:40+00:00",
+      "pushed_at": "2026-11-11T00:16:15+00:00",
+      "updated_at": "2026-11-12T13:38:26+00:00",
       "topics": [
-        "caprover",
-        "cover-letter",
-        "docker",
-        "job-application-tracker",
-        "job-search",
+        "anthropic-api",
+        "cuda",
+        "gemma",
+        "gguf",
+        "glm",
+        "inference-engine",
         "llm",
         "local-llm",
-        "nextjs",
-        "ollama",
-        "postgresql",
-        "resume",
+        "mixture-of-experts",
+        "openai-api",
+        "qwen",
         "self-hosted",
-        "typescript"
+        "speculative-decoding"
       ],
-      "language": "TypeScript",
-      "license": "AGPL-3.0",
-      "homepage": "https://dossier.aien.me",
-      "html_url": "https://github.com/AienTech/dossier",
+      "language": "C++",
+      "license": "MIT",
+      "homepage": null,
+      "html_url": "https://github.com/simplexai-labs/PolyStrata",
       "default_branch": "main",
       "archived": false,
       "search_score": 1.0,
-      "stars_7d_ago": 4816,
+      "stars_7d_ago": 890,
       "star_series": [
         {
-          "d": "10-13",
-          "s": 4816
-        },
-        {
           "d": "10-14",
-          "s": 4816
+          "s": 871
         },
         {
           "d": "10-15",
-          "s": 4816
+          "s": 871
         },
         {
           "d": "10-16",
-          "s": 4816
+          "s": 871
         },
         {
           "d": "10-17",
-          "s": 4816
+          "s": 871
         },
         {
           "d": "10-18",
-          "s": 4816
+          "s": 871
         },
         {
           "d": "10-19",
-          "s": 4816
+          "s": 871
         },
         {
           "d": "10-20",
-          "s": 4816
+          "s": 871
         },
         {
           "d": "10-21",
-          "s": 4816
+          "s": 871
         },
         {
           "d": "10-22",
-          "s": 4816
+          "s": 871
         },
         {
           "d": "10-23",
-          "s": 4816
+          "s": 871
         },
         {
           "d": "10-24",
-          "s": 4816
+          "s": 871
         },
         {
           "d": "10-25",
-          "s": 4816
+          "s": 871
         },
         {
           "d": "10-26",
-          "s": 4816
+          "s": 871
         },
         {
           "d": "10-27",
-          "s": 4816
+          "s": 871
         },
         {
           "d": "10-28",
-          "s": 4816
+          "s": 871
         },
         {
           "d": "10-29",
-          "s": 4816
+          "s": 871
         },
         {
           "d": "10-30",
-          "s": 4816
+          "s": 871
         },
         {
           "d": "10-31",
-          "s": 4816
+          "s": 871
         },
         {
           "d": "11-01",
-          "s": 4816
+          "s": 871
         },
         {
           "d": "11-02",
-          "s": 4816
+          "s": 871
         },
         {
           "d": "11-03",
-          "s": 4816
+          "s": 871
         },
         {
           "d": "11-04",
-          "s": 4816
+          "s": 871
         },
         {
           "d": "11-05",
-          "s": 4816
+          "s": 871
         },
         {
           "d": "11-06",
-          "s": 4816
+          "s": 890
         },
         {
           "d": "11-07",
-          "s": 4816
+          "s": 905
         },
         {
           "d": "11-08",
-          "s": 4849
+          "s": 926
         },
         {
           "d": "11-09",
-          "s": 4909
+          "s": 949
         },
         {
           "d": "11-10",
-          "s": 4962
+          "s": 979
         },
         {
           "d": "11-11",
-          "s": 4999
+          "s": 996
+        },
+        {
+          "d": "11-12",
+          "s": 1000
+        }
+      ]
+    },
+    "score": {
+      "score": 100.0,
+      "breakdown": {
+        "vel": 77,
+        "acc": 99,
+        "health": 97,
+        "fresh": 90,
+        "signal": 70
+      },
+      "stage": "early",
+      "stage_multiplier": 1.2,
+      "confidence": 1.0,
+      "base_score": 87.08,
+      "explanation": "PolyStrata 是 C++ 开源项目，主打「Run large AI models on your own PC: Qwen3.8-Flash-Next on Strata's engine, and GLM 5.3 Flash, DeepSeek V4 Flash, LFM2.5, Qwen3.6, Ornith 1.5, Gemma 4, Tiel Coder and MiniCPM-V on a second engine written for PolyStrata. One-click install for Windows and Linux, OpenAI/Anthropic API on localhost.」；处于增长早期，本周涨速 16 star/天，涨速在加快；社区健康（fork/star 比 13.4%，17 个 open issue）、开发活跃。"
+    }
+  },
+  {
+    "repo": {
+      "owner": "abhijot11",
+      "name": "fabfilter-total",
+      "full_name": "abhijot11/fabfilter-total",
+      "description": "Fabfilter Total 2026 security assessment toolkit with full feature validation and installer verifica",
+      "stars": 999,
+      "forks": 0,
+      "open_issues": 0,
+      "created_at": "2026-11-06T20:58:36+00:00",
+      "pushed_at": "2026-11-12T13:21:19+00:00",
+      "updated_at": "2026-11-12T14:21:22+00:00",
+      "topics": [
+        "automation",
+        "compressor-plugin",
+        "desktop",
+        "developer-tools",
+        "fabfilter",
+        "fabfilter-2026",
+        "fabfilter-bundle",
+        "fabfilter-pro-q",
+        "fabfilter-q-4",
+        "fabfilter-setup",
+        "open-source",
+        "python",
+        "scripts",
+        "software-engineering",
+        "system",
+        "utility",
+        "windows-app"
+      ],
+      "language": "HTML",
+      "license": null,
+      "homepage": null,
+      "html_url": "https://github.com/abhijot11/fabfilter-total",
+      "default_branch": "main",
+      "archived": false,
+      "search_score": 1.0,
+      "stars_7d_ago": 702,
+      "star_series": [
+        {
+          "d": "10-14",
+          "s": 702
+        },
+        {
+          "d": "10-15",
+          "s": 702
+        },
+        {
+          "d": "10-16",
+          "s": 702
+        },
+        {
+          "d": "10-17",
+          "s": 702
+        },
+        {
+          "d": "10-18",
+          "s": 702
+        },
+        {
+          "d": "10-19",
+          "s": 702
+        },
+        {
+          "d": "10-20",
+          "s": 702
+        },
+        {
+          "d": "10-21",
+          "s": 702
+        },
+        {
+          "d": "10-22",
+          "s": 702
+        },
+        {
+          "d": "10-23",
+          "s": 702
+        },
+        {
+          "d": "10-24",
+          "s": 702
+        },
+        {
+          "d": "10-25",
+          "s": 702
+        },
+        {
+          "d": "10-26",
+          "s": 702
+        },
+        {
+          "d": "10-27",
+          "s": 702
+        },
+        {
+          "d": "10-28",
+          "s": 702
+        },
+        {
+          "d": "10-29",
+          "s": 702
+        },
+        {
+          "d": "10-30",
+          "s": 702
+        },
+        {
+          "d": "10-31",
+          "s": 702
+        },
+        {
+          "d": "11-01",
+          "s": 702
+        },
+        {
+          "d": "11-02",
+          "s": 702
+        },
+        {
+          "d": "11-03",
+          "s": 702
+        },
+        {
+          "d": "11-04",
+          "s": 702
+        },
+        {
+          "d": "11-05",
+          "s": 702
+        },
+        {
+          "d": "11-06",
+          "s": 702
+        },
+        {
+          "d": "11-07",
+          "s": 702
+        },
+        {
+          "d": "11-08",
+          "s": 702
+        },
+        {
+          "d": "11-09",
+          "s": 702
+        },
+        {
+          "d": "11-10",
+          "s": 702
+        },
+        {
+          "d": "11-11",
+          "s": 999
+        },
+        {
+          "d": "11-12",
+          "s": 999
         }
       ]
     },
@@ -162,690 +340,514 @@
       "breakdown": {
         "vel": 100,
         "acc": 99,
-        "health": 99,
-        "fresh": 90,
-        "signal": 85
-      },
-      "stage": "mid_early",
-      "stage_multiplier": 1.1,
-      "confidence": 1.0,
-      "base_score": 96.42,
-      "explanation": "dossier 是 TypeScript 开源项目，主打「A self-hosted job search and resume builder app that writes tailored resumes and cover letters from your profile.」；处于中早期增长，本周涨速 26 star/天，涨速在加快；社区健康（fork/star 比 20.7%，25 个 open issue）、项目元数据完整、开发活跃。"
-    }
-  },
-  {
-    "repo": {
-      "owner": "chenxiachan",
-      "name": "textfold",
-      "full_name": "chenxiachan/textfold",
-      "description": "Fold papers, web pages, files, and AI replies into five levels of detail. Zoom from an overview to the original text.",
-      "stars": 997,
-      "forks": 88,
-      "open_issues": 9,
-      "created_at": "2026-10-04T22:19:52+00:00",
-      "pushed_at": "2026-11-09T15:34:05+00:00",
-      "updated_at": "2026-11-11T11:47:15+00:00",
-      "topics": [
-        "arxiv",
-        "llm",
-        "local-first",
-        "open-source",
-        "paper-reader",
-        "research-papers",
-        "semantic-zoom",
-        "translation"
-      ],
-      "language": "Python",
-      "license": "Apache-2.0",
-      "homepage": "https://chenxiachan.github.io/textfold/",
-      "html_url": "https://github.com/chenxiachan/textfold",
-      "default_branch": "main",
-      "archived": false,
-      "search_score": 1.0,
-      "stars_7d_ago": 920,
-      "star_series": [
-        {
-          "d": "10-13",
-          "s": 875
-        },
-        {
-          "d": "10-14",
-          "s": 875
-        },
-        {
-          "d": "10-15",
-          "s": 875
-        },
-        {
-          "d": "10-16",
-          "s": 875
-        },
-        {
-          "d": "10-17",
-          "s": 875
-        },
-        {
-          "d": "10-18",
-          "s": 875
-        },
-        {
-          "d": "10-19",
-          "s": 875
-        },
-        {
-          "d": "10-20",
-          "s": 875
-        },
-        {
-          "d": "10-21",
-          "s": 875
-        },
-        {
-          "d": "10-22",
-          "s": 875
-        },
-        {
-          "d": "10-23",
-          "s": 875
-        },
-        {
-          "d": "10-24",
-          "s": 875
-        },
-        {
-          "d": "10-25",
-          "s": 875
-        },
-        {
-          "d": "10-26",
-          "s": 875
-        },
-        {
-          "d": "10-27",
-          "s": 875
-        },
-        {
-          "d": "10-28",
-          "s": 875
-        },
-        {
-          "d": "10-29",
-          "s": 875
-        },
-        {
-          "d": "10-30",
-          "s": 875
-        },
-        {
-          "d": "10-31",
-          "s": 875
-        },
-        {
-          "d": "11-01",
-          "s": 875
-        },
-        {
-          "d": "11-02",
-          "s": 875
-        },
-        {
-          "d": "11-03",
-          "s": 889
-        },
-        {
-          "d": "11-04",
-          "s": 912
-        },
-        {
-          "d": "11-05",
-          "s": 920
-        },
-        {
-          "d": "11-06",
-          "s": 929
-        },
-        {
-          "d": "11-07",
-          "s": 945
-        },
-        {
-          "d": "11-08",
-          "s": 958
-        },
-        {
-          "d": "11-09",
-          "s": 974
-        },
-        {
-          "d": "11-10",
-          "s": 986
-        },
-        {
-          "d": "11-11",
-          "s": 997
-        }
-      ]
-    },
-    "score": {
-      "score": 95.84,
-      "breakdown": {
-        "vel": 76,
-        "acc": 67,
-        "health": 87,
-        "fresh": 90,
-        "signal": 100
+        "health": 60,
+        "fresh": 99,
+        "signal": 50
       },
       "stage": "early",
       "stage_multiplier": 1.2,
       "confidence": 1.0,
-      "base_score": 79.86,
-      "explanation": "textfold 是 Python 开源项目，主打「Fold papers, web pages, files, and AI replies into five levels of detail. Zoom from an overview to the original text.」；处于增长早期，本周涨速 11 star/天；社区健康（fork/star 比 8.8%，9 个 open issue）、项目元数据完整、开发活跃。"
+      "base_score": 83.96,
+      "explanation": "fabfilter-total 是 HTML 开源项目，主打「Fabfilter Total 2026 security assessment toolkit with full feature validation and installer verifica」；处于增长早期，本周涨速 42 star/天，涨速在加快；开发活跃。"
     }
   },
   {
     "repo": {
-      "owner": "Kizzuwatnaa",
-      "name": "DLSS5-Autopilot",
-      "full_name": "Kizzuwatnaa/DLSS5-Autopilot",
-      "description": "Puts DLSS 5 neural rendering into games that never shipped it, and brings the game's own DLSS up to date - super resolution, ray reconstruction, frame generation. Scans your library, picks one of eight routes, fetches every part from its publisher at run time, then says what happened. One exe, no admin; uninstall puts the game back.",
-      "stars": 997,
-      "forks": 44,
-      "open_issues": 31,
-      "created_at": "2026-08-31T17:09:10+00:00",
-      "pushed_at": "2026-11-11T11:52:53+00:00",
-      "updated_at": "2026-11-11T12:52:58+00:00",
-      "topics": [
-        "dlaa",
-        "dll-swap",
-        "dlss",
-        "dlss5",
-        "dxvk",
-        "frame-generation",
-        "game-modding",
-        "neural-rendering",
-        "nvidia",
-        "nvngx",
-        "optiscaler",
-        "ray-reconstruction",
-        "reshade",
-        "rtx",
-        "rtx-remix",
-        "super-resolution",
-        "upscaling",
-        "video-upscaling",
-        "windows"
-      ],
-      "language": "Python",
+      "owner": "NYLLON-SOFTWARE",
+      "name": "ember-cloudflare",
+      "full_name": "NYLLON-SOFTWARE/ember-cloudflare",
+      "description": "Open Source Slack and Campfire inspired chat with one click deploy to Cloudflare.",
+      "stars": 998,
+      "forks": 98,
+      "open_issues": 10,
+      "created_at": "2026-10-12T20:06:17+00:00",
+      "pushed_at": "2026-11-12T05:45:34+00:00",
+      "updated_at": "2026-11-12T14:33:06+00:00",
+      "topics": [],
+      "language": "TypeScript",
       "license": "MIT",
       "homepage": null,
-      "html_url": "https://github.com/Kizzuwatnaa/DLSS5-Autopilot",
+      "html_url": "https://github.com/NYLLON-SOFTWARE/ember-cloudflare",
       "default_branch": "main",
       "archived": false,
       "search_score": 1.0,
-      "stars_7d_ago": 977,
+      "stars_7d_ago": 873,
       "star_series": [
         {
-          "d": "10-13",
-          "s": 970
-        },
-        {
           "d": "10-14",
-          "s": 970
+          "s": 873
         },
         {
           "d": "10-15",
-          "s": 970
+          "s": 873
         },
         {
           "d": "10-16",
-          "s": 970
+          "s": 873
         },
         {
           "d": "10-17",
-          "s": 970
+          "s": 873
         },
         {
           "d": "10-18",
-          "s": 970
+          "s": 873
         },
         {
           "d": "10-19",
-          "s": 970
+          "s": 873
         },
         {
           "d": "10-20",
-          "s": 970
+          "s": 873
         },
         {
           "d": "10-21",
-          "s": 970
+          "s": 873
         },
         {
           "d": "10-22",
-          "s": 970
+          "s": 873
         },
         {
           "d": "10-23",
-          "s": 970
+          "s": 873
         },
         {
           "d": "10-24",
-          "s": 970
+          "s": 873
         },
         {
           "d": "10-25",
-          "s": 970
+          "s": 873
         },
         {
           "d": "10-26",
-          "s": 970
+          "s": 873
         },
         {
           "d": "10-27",
-          "s": 970
+          "s": 873
         },
         {
           "d": "10-28",
-          "s": 970
+          "s": 873
         },
         {
           "d": "10-29",
-          "s": 970
+          "s": 873
         },
         {
           "d": "10-30",
-          "s": 970
+          "s": 873
         },
         {
           "d": "10-31",
-          "s": 970
+          "s": 873
         },
         {
           "d": "11-01",
-          "s": 970
+          "s": 873
         },
         {
           "d": "11-02",
-          "s": 971
+          "s": 873
         },
         {
           "d": "11-03",
-          "s": 973
+          "s": 873
         },
         {
           "d": "11-04",
-          "s": 973
+          "s": 873
         },
         {
           "d": "11-05",
-          "s": 977
+          "s": 873
         },
         {
           "d": "11-06",
-          "s": 979
+          "s": 873
         },
         {
           "d": "11-07",
-          "s": 987
+          "s": 873
         },
         {
           "d": "11-08",
-          "s": 991
+          "s": 873
         },
         {
           "d": "11-09",
-          "s": 993
+          "s": 873
         },
         {
           "d": "11-10",
-          "s": 994
+          "s": 873
         },
         {
           "d": "11-11",
-          "s": 997
+          "s": 956
+        },
+        {
+          "d": "11-12",
+          "s": 998
         }
       ]
     },
     "score": {
-      "score": 70.13,
+      "score": 100.0,
       "breakdown": {
-        "vel": 41,
-        "acc": 86,
+        "vel": 80,
+        "acc": 99,
+        "health": 91,
+        "fresh": 92,
+        "signal": 55
+      },
+      "stage": "early",
+      "stage_multiplier": 1.2,
+      "confidence": 1.0,
+      "base_score": 85.27,
+      "explanation": "ember-cloudflare 是 TypeScript 开源项目，主打「Open Source Slack and Campfire inspired chat with one click deploy to Cloudflare.」；处于增长早期，本周涨速 18 star/天，涨速在加快；社区健康（fork/star 比 9.8%，10 个 open issue）、开发活跃。"
+    }
+  },
+  {
+    "repo": {
+      "owner": "omnirush-ai",
+      "name": "omnirush-gui",
+      "full_name": "omnirush-ai/omnirush-gui",
+      "description": "A desktop coding agent with free access to frontier models.",
+      "stars": 4999,
+      "forks": 141,
+      "open_issues": 65,
+      "created_at": "2026-09-21T05:26:26+00:00",
+      "pushed_at": "2026-11-12T06:46:20+00:00",
+      "updated_at": "2026-11-12T14:26:18+00:00",
+      "topics": [],
+      "language": "TypeScript",
+      "license": "NOASSERTION",
+      "homepage": "https://omnirush.ai",
+      "html_url": "https://github.com/omnirush-ai/omnirush-gui",
+      "default_branch": "main",
+      "archived": false,
+      "search_score": 1.0,
+      "stars_7d_ago": 4812,
+      "star_series": [
+        {
+          "d": "10-14",
+          "s": 4761
+        },
+        {
+          "d": "10-15",
+          "s": 4761
+        },
+        {
+          "d": "10-16",
+          "s": 4761
+        },
+        {
+          "d": "10-17",
+          "s": 4761
+        },
+        {
+          "d": "10-18",
+          "s": 4761
+        },
+        {
+          "d": "10-19",
+          "s": 4761
+        },
+        {
+          "d": "10-20",
+          "s": 4761
+        },
+        {
+          "d": "10-21",
+          "s": 4761
+        },
+        {
+          "d": "10-22",
+          "s": 4761
+        },
+        {
+          "d": "10-23",
+          "s": 4761
+        },
+        {
+          "d": "10-24",
+          "s": 4761
+        },
+        {
+          "d": "10-25",
+          "s": 4761
+        },
+        {
+          "d": "10-26",
+          "s": 4761
+        },
+        {
+          "d": "10-27",
+          "s": 4761
+        },
+        {
+          "d": "10-28",
+          "s": 4761
+        },
+        {
+          "d": "10-29",
+          "s": 4761
+        },
+        {
+          "d": "10-30",
+          "s": 4761
+        },
+        {
+          "d": "10-31",
+          "s": 4761
+        },
+        {
+          "d": "11-01",
+          "s": 4761
+        },
+        {
+          "d": "11-02",
+          "s": 4761
+        },
+        {
+          "d": "11-03",
+          "s": 4761
+        },
+        {
+          "d": "11-04",
+          "s": 4761
+        },
+        {
+          "d": "11-05",
+          "s": 4765
+        },
+        {
+          "d": "11-06",
+          "s": 4812
+        },
+        {
+          "d": "11-07",
+          "s": 4851
+        },
+        {
+          "d": "11-08",
+          "s": 4885
+        },
+        {
+          "d": "11-09",
+          "s": 4922
+        },
+        {
+          "d": "11-10",
+          "s": 4958
+        },
+        {
+          "d": "11-11",
+          "s": 4981
+        },
+        {
+          "d": "11-12",
+          "s": 4999
+        }
+      ]
+    },
+    "score": {
+      "score": 91.33,
+      "breakdown": {
+        "vel": 91,
+        "acc": 94,
         "health": 67,
-        "fresh": 81,
+        "fresh": 86,
         "signal": 70
       },
       "stage": "mid_early",
       "stage_multiplier": 1.1,
       "confidence": 1.0,
-      "base_score": 63.75,
-      "explanation": "DLSS5-Autopilot 是 Python 开源项目，主打「Puts DLSS 5 neural rendering into games that never shipped it, and brings the game's own DLSS up to date - super resolution, ray reconstruction, frame generation. Scans your library, picks one of eight routes, fetches every part from its publisher at run time, then says what happened. One exe, no admin; uninstall puts the game back.」；处于中早期增长，本周涨速 2.9 star/天，涨速在加快；开发活跃。"
+      "base_score": 83.03,
+      "explanation": "omnirush-gui 是 TypeScript 开源项目，主打「A desktop coding agent with free access to frontier models.」；处于中早期增长，本周涨速 27 star/天，涨速在加快；开发活跃。"
     }
   },
   {
     "repo": {
-      "owner": "aa1143",
-      "name": "NamiDSH",
-      "full_name": "aa1143/NamiDSH",
-      "description": "对照 DeepSeek Harness 的迷你学习项目：迷你版 Cordis + 迷你版 DSH + 网页端 Agent",
-      "stars": 200,
-      "forks": 30,
-      "open_issues": 0,
-      "created_at": "2026-11-05T06:10:10+00:00",
-      "pushed_at": "2026-11-05T13:03:00+00:00",
-      "updated_at": "2026-11-11T12:36:06+00:00",
+      "owner": "LingCore",
+      "name": "WinShun",
+      "full_name": "LingCore/WinShun",
+      "description": "Win顺：免费开源的 Windows 快速搜索启动器。双击 Ctrl，拼音秒搜文件、全文搜索 Word/Excel/PDF、剪贴板历史（代替 Win+V）、对话框搜索、任务栏搜索、插件、AI 助手 MCP。Free Windows search launcher: pinyin file search, full-text search, clipboard history, MCP server. Everything/Listary alternative.",
+      "stars": 998,
+      "forks": 69,
+      "open_issues": 52,
+      "created_at": "2026-10-08T03:18:00+00:00",
+      "pushed_at": "2026-11-12T07:58:33+00:00",
+      "updated_at": "2026-11-12T11:09:32+00:00",
       "topics": [
-        "agent",
-        "cordis",
-        "deepseek-harness",
-        "plugin-architecture",
-        "typescript"
+        "chinese",
+        "clipboard-history",
+        "clipboard-manager",
+        "cpp",
+        "everything",
+        "file-search",
+        "full-text-search",
+        "launcher",
+        "listary",
+        "mcp",
+        "mcp-server",
+        "ntfs",
+        "ocr",
+        "pinyin",
+        "productivity",
+        "qt6",
+        "search",
+        "windows"
       ],
-      "language": "TypeScript",
+      "language": "C++",
       "license": "MIT",
-      "homepage": "https://namiai.tech/dsh/",
-      "html_url": "https://github.com/aa1143/NamiDSH",
+      "homepage": null,
+      "html_url": "https://github.com/LingCore/WinShun",
       "default_branch": "main",
       "archived": false,
       "search_score": 1.0,
-      "stars_7d_ago": 38,
+      "stars_7d_ago": 951,
       "star_series": [
         {
-          "d": "10-13",
-          "s": 0
-        },
-        {
           "d": "10-14",
-          "s": 0
+          "s": 951
         },
         {
           "d": "10-15",
-          "s": 0
+          "s": 951
         },
         {
           "d": "10-16",
-          "s": 0
+          "s": 951
         },
         {
           "d": "10-17",
-          "s": 0
+          "s": 951
         },
         {
           "d": "10-18",
-          "s": 0
+          "s": 951
         },
         {
           "d": "10-19",
-          "s": 0
+          "s": 951
         },
         {
           "d": "10-20",
-          "s": 0
+          "s": 951
         },
         {
           "d": "10-21",
-          "s": 0
+          "s": 951
         },
         {
           "d": "10-22",
-          "s": 0
+          "s": 951
         },
         {
           "d": "10-23",
-          "s": 0
+          "s": 951
         },
         {
           "d": "10-24",
-          "s": 0
+          "s": 951
         },
         {
           "d": "10-25",
-          "s": 0
+          "s": 951
         },
         {
           "d": "10-26",
-          "s": 0
+          "s": 951
         },
         {
           "d": "10-27",
-          "s": 0
+          "s": 951
         },
         {
           "d": "10-28",
-          "s": 0
+          "s": 951
         },
         {
           "d": "10-29",
-          "s": 0
+          "s": 951
         },
         {
           "d": "10-30",
-          "s": 0
+          "s": 951
         },
         {
           "d": "10-31",
-          "s": 0
+          "s": 951
         },
         {
           "d": "11-01",
-          "s": 0
+          "s": 951
         },
         {
           "d": "11-02",
-          "s": 0
+          "s": 951
         },
         {
           "d": "11-03",
-          "s": 0
+          "s": 951
         },
         {
           "d": "11-04",
-          "s": 0
+          "s": 951
         },
         {
           "d": "11-05",
-          "s": 38
+          "s": 951
         },
         {
           "d": "11-06",
-          "s": 154
+          "s": 951
         },
         {
           "d": "11-07",
-          "s": 168
+          "s": 951
         },
         {
           "d": "11-08",
-          "s": 178
+          "s": 951
         },
         {
           "d": "11-09",
-          "s": 189
+          "s": 951
         },
         {
           "d": "11-10",
-          "s": 196
+          "s": 959
         },
         {
           "d": "11-11",
-          "s": 200
+          "s": 977
+        },
+        {
+          "d": "11-12",
+          "s": 998
         }
       ]
     },
     "score": {
-      "score": 67.53,
+      "score": 81.63,
       "breakdown": {
-        "vel": 97,
-        "acc": 96,
-        "health": 100,
-        "fresh": 98,
-        "signal": 85
-      },
-      "stage": "saturated",
-      "stage_multiplier": 0.7,
-      "confidence": 1.0,
-      "base_score": 96.47,
-      "explanation": "NamiDSH 是 TypeScript 开源项目，主打「对照 DeepSeek Harness 的迷你学习项目：迷你版 Cordis + 迷你版 DSH + 网页端 Agent」；增长已饱和，本周涨速 23 star/天，涨速在加快；社区健康（fork/star 比 15.0%，0 个 open issue）、项目元数据完整、开发活跃。"
-    }
-  },
-  {
-    "repo": {
-      "owner": "jiyin004-jpg",
-      "name": "ommega",
-      "full_name": "jiyin004-jpg/ommega",
-      "description": "Ommega three-end system: A/B-side Magisk modules, relay server, and B-side Android app",
-      "stars": 200,
-      "forks": 38,
-      "open_issues": 4,
-      "created_at": "2026-08-24T10:58:14+00:00",
-      "pushed_at": "2026-11-11T06:46:22+00:00",
-      "updated_at": "2026-11-11T10:14:26+00:00",
-      "topics": [],
-      "language": "Rust",
-      "license": "AGPL-3.0",
-      "homepage": null,
-      "html_url": "https://github.com/jiyin004-jpg/ommega",
-      "default_branch": "master",
-      "archived": false,
-      "search_score": 1.0,
-      "stars_7d_ago": 190,
-      "star_series": [
-        {
-          "d": "10-13",
-          "s": 190
-        },
-        {
-          "d": "10-14",
-          "s": 190
-        },
-        {
-          "d": "10-15",
-          "s": 190
-        },
-        {
-          "d": "10-16",
-          "s": 190
-        },
-        {
-          "d": "10-17",
-          "s": 190
-        },
-        {
-          "d": "10-18",
-          "s": 190
-        },
-        {
-          "d": "10-19",
-          "s": 190
-        },
-        {
-          "d": "10-20",
-          "s": 190
-        },
-        {
-          "d": "10-21",
-          "s": 190
-        },
-        {
-          "d": "10-22",
-          "s": 190
-        },
-        {
-          "d": "10-23",
-          "s": 190
-        },
-        {
-          "d": "10-24",
-          "s": 190
-        },
-        {
-          "d": "10-25",
-          "s": 190
-        },
-        {
-          "d": "10-26",
-          "s": 190
-        },
-        {
-          "d": "10-27",
-          "s": 190
-        },
-        {
-          "d": "10-28",
-          "s": 190
-        },
-        {
-          "d": "10-29",
-          "s": 190
-        },
-        {
-          "d": "10-30",
-          "s": 190
-        },
-        {
-          "d": "10-31",
-          "s": 190
-        },
-        {
-          "d": "11-01",
-          "s": 190
-        },
-        {
-          "d": "11-02",
-          "s": 190
-        },
-        {
-          "d": "11-03",
-          "s": 190
-        },
-        {
-          "d": "11-04",
-          "s": 190
-        },
-        {
-          "d": "11-05",
-          "s": 190
-        },
-        {
-          "d": "11-06",
-          "s": 190
-        },
-        {
-          "d": "11-07",
-          "s": 192
-        },
-        {
-          "d": "11-08",
-          "s": 196
-        },
-        {
-          "d": "11-09",
-          "s": 198
-        },
-        {
-          "d": "11-10",
-          "s": 199
-        },
-        {
-          "d": "11-11",
-          "s": 200
-        }
-      ]
-    },
-    "score": {
-      "score": 63.89,
-      "breakdown": {
-        "vel": 27,
-        "acc": 81,
-        "health": 98,
-        "fresh": 78,
-        "signal": 55
+        "vel": 56,
+        "acc": 99,
+        "health": 70,
+        "fresh": 90,
+        "signal": 70
       },
       "stage": "mid_early",
       "stage_multiplier": 1.1,
       "confidence": 1.0,
-      "base_score": 58.08,
-      "explanation": "ommega 是 Rust 开源项目，主打「Ommega three-end system: A/B-side Magisk modules, relay server, and B-side Android app」；处于中早期增长，涨速在加快；社区健康（fork/star 比 19.0%，4 个 open issue）、开发活跃。"
+      "base_score": 74.2,
+      "explanation": "WinShun 是 C++ 开源项目，主打「Win顺：免费开源的 Windows 快速搜索启动器。双击 Ctrl，拼音秒搜文件、全文搜索 Word/Excel/PDF、剪贴板历史（代替 Win+V）、对话框搜索、任务栏搜索、插件、AI 助手 MCP。Free Windows search launcher: pinyin file search, full-text search, clipboard history, MCP server. Everything/Listary alternative.」；处于中早期增长，本周涨速 6.7 star/天，涨速在加快；社区健康（fork/star 比 6.9%，52 个 open issue）、开发活跃。"
     }
   }
 ]
