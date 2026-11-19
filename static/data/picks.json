@@ -1,715 +1,523 @@
 [
   {
     "repo": {
-      "owner": "SumirSeth",
-      "name": "wisp",
-      "full_name": "SumirSeth/wisp",
-      "description": "A dock and a launcher for Windows. Replaces the taskbar. Alt+Space grows the dock into a launcher. Rust and Win32, one ~1.5 MB exe.",
+      "owner": "ITprogamatikDedSec",
+      "name": "manus--ai",
+      "full_name": "ITprogamatikDedSec/manus--ai",
+      "description": "AI Manus is a general-purpose AI Agent system that supports running various tools and operations in a sandbox environment. ",
       "stars": 200,
-      "forks": 14,
-      "open_issues": 17,
-      "created_at": "2026-10-27T17:24:57+00:00",
-      "pushed_at": "2026-11-17T18:39:29+00:00",
-      "updated_at": "2026-11-18T14:34:46+00:00",
+      "forks": 0,
+      "open_issues": 0,
+      "created_at": "2026-11-13T14:50:56+00:00",
+      "pushed_at": "2026-11-19T10:56:46+00:00",
+      "updated_at": "2026-11-19T09:38:41+00:00",
       "topics": [
-        "app-launcher",
-        "direct2d",
-        "dock",
-        "launcher",
-        "powertoys",
-        "powertoys-alternative",
-        "productivity",
-        "rust",
-        "system-tray",
-        "taskbar",
-        "taskbar-replacement",
-        "win32",
-        "windows",
-        "windows-11"
+        "ai",
+        "ai-agents",
+        "ai-sdk",
+        "anthropic",
+        "chatbot",
+        "function-calling",
+        "gemeni",
+        "generative-ai",
+        "llm",
+        "multimodal",
+        "openai",
+        "react",
+        "solidjs",
+        "streaming",
+        "svelte",
+        "tanstack",
+        "tool-calling",
+        "typescript",
+        "typescript-sdk",
+        "vue"
       ],
-      "language": "Rust",
-      "license": "MIT",
+      "language": null,
+      "license": "Apache-2.0",
       "homepage": null,
-      "html_url": "https://github.com/SumirSeth/wisp",
+      "html_url": "https://github.com/ITprogamatikDedSec/manus--ai",
       "default_branch": "main",
       "archived": false,
       "search_score": 1.0,
-      "stars_7d_ago": 151,
+      "stars_7d_ago": 65,
       "star_series": [
         {
-          "d": "10-20",
-          "s": 151
-        },
-        {
           "d": "10-21",
-          "s": 151
+          "s": 57
         },
         {
           "d": "10-22",
-          "s": 151
+          "s": 57
         },
         {
           "d": "10-23",
-          "s": 151
+          "s": 57
         },
         {
           "d": "10-24",
-          "s": 151
+          "s": 57
         },
         {
           "d": "10-25",
-          "s": 151
+          "s": 57
         },
         {
           "d": "10-26",
-          "s": 151
+          "s": 57
         },
         {
           "d": "10-27",
-          "s": 151
+          "s": 57
         },
         {
           "d": "10-28",
-          "s": 151
+          "s": 57
         },
         {
           "d": "10-29",
-          "s": 151
+          "s": 57
         },
         {
           "d": "10-30",
-          "s": 151
+          "s": 57
         },
         {
           "d": "10-31",
-          "s": 151
+          "s": 57
         },
         {
           "d": "11-01",
-          "s": 151
+          "s": 57
         },
         {
           "d": "11-02",
-          "s": 151
+          "s": 57
         },
         {
           "d": "11-03",
-          "s": 151
+          "s": 57
         },
         {
           "d": "11-04",
-          "s": 151
+          "s": 57
         },
         {
           "d": "11-05",
-          "s": 151
+          "s": 57
         },
         {
           "d": "11-06",
-          "s": 151
+          "s": 57
         },
         {
           "d": "11-07",
-          "s": 151
+          "s": 57
         },
         {
           "d": "11-08",
-          "s": 151
+          "s": 57
         },
         {
           "d": "11-09",
-          "s": 151
+          "s": 57
         },
         {
           "d": "11-10",
-          "s": 151
+          "s": 57
         },
         {
           "d": "11-11",
-          "s": 151
+          "s": 57
         },
         {
           "d": "11-12",
-          "s": 151
+          "s": 57
         },
         {
           "d": "11-13",
-          "s": 159
+          "s": 65
         },
         {
           "d": "11-14",
-          "s": 162
+          "s": 200
         },
         {
           "d": "11-15",
-          "s": 164
+          "s": 200
         },
         {
           "d": "11-16",
-          "s": 179
+          "s": 200
         },
         {
           "d": "11-17",
-          "s": 196
+          "s": 200
         },
         {
           "d": "11-18",
+          "s": 200
+        },
+        {
+          "d": "11-19",
           "s": 200
         }
       ]
     },
     "score": {
-      "score": 88.97,
+      "score": 100.0,
       "breakdown": {
-        "vel": 60,
+        "vel": 100,
         "acc": 99,
-        "health": 61,
-        "fresh": 94,
+        "health": 60,
+        "fresh": 98,
         "signal": 70
       },
       "stage": "early",
       "stage_multiplier": 1.2,
       "confidence": 1.0,
-      "base_score": 74.14,
-      "explanation": "wisp 是 Rust 开源项目，主打「A dock and a launcher for Windows. Replaces the taskbar. Alt+Space grows the dock into a launcher. Rust and Win32, one ~1.5 MB exe.」；处于增长早期，本周涨速 7.0 star/天，涨速在加快；开发活跃。"
+      "base_score": 86.79,
+      "explanation": "manus--ai 是 未知语言 开源项目，主打「AI Manus is a general-purpose AI Agent system that supports running various tools and operations in a sandbox environment.」；处于增长早期，本周涨速 19 star/天，涨速在加快；开发活跃。"
     }
   },
   {
     "repo": {
-      "owner": "alexeyw",
-      "name": "lot-map",
-      "full_name": "alexeyw/lot-map",
-      "description": "A live map beside the chat that shows what Claude Code is doing: tool calls, model steps, hooks, skills and subagents light up as they happen. Local only, in 7 languages.",
+      "owner": "LiPu-jpg",
+      "name": "Openwrite",
+      "full_name": "LiPu-jpg/Openwrite",
+      "description": "dsh-Openwrite：OpenWrite 的 DeepSeek Harness 小说创作插件，含统一创作 Agent、56 个小说工具、原生工作台与标准审稿 DAG",
       "stars": 997,
-      "forks": 109,
-      "open_issues": 6,
-      "created_at": "2026-11-09T19:13:52+00:00",
-      "pushed_at": "2026-11-18T12:36:24+00:00",
-      "updated_at": "2026-11-18T14:37:17+00:00",
+      "forks": 139,
+      "open_issues": 2,
+      "created_at": "2026-03-03T00:48:25+00:00",
+      "pushed_at": "2026-11-19T03:12:00+00:00",
+      "updated_at": "2026-11-19T12:23:43+00:00",
       "topics": [
-        "agent-observability",
-        "ai-agents",
-        "claude",
-        "claude-code",
-        "claude-code-plugin",
-        "developer-tools",
-        "svg-animation",
-        "typescript",
-        "visualization"
+        "ai-novel",
+        "deepseek-harness",
+        "dsh-plugin",
+        "story-writing",
+        "writing-assistant"
       ],
       "language": "TypeScript",
-      "license": "MIT",
-      "homepage": null,
-      "html_url": "https://github.com/alexeyw/lot-map",
-      "default_branch": "main",
-      "archived": false,
-      "search_score": 1.0,
-      "stars_7d_ago": 957,
-      "star_series": [
-        {
-          "d": "10-20",
-          "s": 957
-        },
-        {
-          "d": "10-21",
-          "s": 957
-        },
-        {
-          "d": "10-22",
-          "s": 957
-        },
-        {
-          "d": "10-23",
-          "s": 957
-        },
-        {
-          "d": "10-24",
-          "s": 957
-        },
-        {
-          "d": "10-25",
-          "s": 957
-        },
-        {
-          "d": "10-26",
-          "s": 957
-        },
-        {
-          "d": "10-27",
-          "s": 957
-        },
-        {
-          "d": "10-28",
-          "s": 957
-        },
-        {
-          "d": "10-29",
-          "s": 957
-        },
-        {
-          "d": "10-30",
-          "s": 957
-        },
-        {
-          "d": "10-31",
-          "s": 957
-        },
-        {
-          "d": "11-01",
-          "s": 957
-        },
-        {
-          "d": "11-02",
-          "s": 957
-        },
-        {
-          "d": "11-03",
-          "s": 957
-        },
-        {
-          "d": "11-04",
-          "s": 957
-        },
-        {
-          "d": "11-05",
-          "s": 957
-        },
-        {
-          "d": "11-06",
-          "s": 957
-        },
-        {
-          "d": "11-07",
-          "s": 957
-        },
-        {
-          "d": "11-08",
-          "s": 957
-        },
-        {
-          "d": "11-09",
-          "s": 957
-        },
-        {
-          "d": "11-10",
-          "s": 957
-        },
-        {
-          "d": "11-11",
-          "s": 957
-        },
-        {
-          "d": "11-12",
-          "s": 957
-        },
-        {
-          "d": "11-13",
-          "s": 957
-        },
-        {
-          "d": "11-14",
-          "s": 957
-        },
-        {
-          "d": "11-15",
-          "s": 957
-        },
-        {
-          "d": "11-16",
-          "s": 957
-        },
-        {
-          "d": "11-17",
-          "s": 983
-        },
-        {
-          "d": "11-18",
-          "s": 997
-        }
-      ]
-    },
-    "score": {
-      "score": 87.5,
-      "breakdown": {
-        "vel": 55,
-        "acc": 99,
-        "health": 96,
-        "fresh": 98,
-        "signal": 70
-      },
-      "stage": "mid_early",
-      "stage_multiplier": 1.1,
-      "confidence": 1.0,
-      "base_score": 79.54,
-      "explanation": "lot-map 是 TypeScript 开源项目，主打「A live map beside the chat that shows what Claude Code is doing: tool calls, model steps, hooks, skills and subagents light up as they happen. Local only, in 7 languages.」；处于中早期增长，本周涨速 5.7 star/天，涨速在加快；社区健康（fork/star 比 10.9%，6 个 open issue）、开发活跃。"
-    }
-  },
-  {
-    "repo": {
-      "owner": "torrentplayer",
-      "name": "torrentplayer",
-      "full_name": "torrentplayer/torrentplayer",
-      "description": "Stream any torrent, video or audio, and skip to any moment in about a second. Free, open-source desktop app for Windows, macOS and Linux. No servers, no accounts, no telemetry.",
-      "stars": 997,
-      "forks": 35,
-      "open_issues": 7,
-      "created_at": "2026-10-20T19:44:10+00:00",
-      "pushed_at": "2026-11-17T14:52:07+00:00",
-      "updated_at": "2026-11-18T13:40:56+00:00",
-      "topics": [
-        "audio-player",
-        "bittorrent",
-        "cross-platform",
-        "desktop-app",
-        "media-player",
-        "p2p",
-        "rust",
-        "streaming",
-        "svelte",
-        "tauri",
-        "torrent",
-        "video-player"
-      ],
-      "language": "Rust",
       "license": "Apache-2.0",
-      "homepage": "https://torrentplayer.io",
-      "html_url": "https://github.com/torrentplayer/torrentplayer",
+      "homepage": "https://github.com/LiPu-jpg/Openwrite#readme",
+      "html_url": "https://github.com/LiPu-jpg/Openwrite",
       "default_branch": "main",
       "archived": false,
       "search_score": 1.0,
-      "stars_7d_ago": 967,
+      "stars_7d_ago": 949,
       "star_series": [
         {
-          "d": "10-20",
-          "s": 878
-        },
-        {
           "d": "10-21",
-          "s": 878
+          "s": 884
         },
         {
           "d": "10-22",
-          "s": 878
+          "s": 884
         },
         {
           "d": "10-23",
-          "s": 878
+          "s": 884
         },
         {
           "d": "10-24",
-          "s": 878
+          "s": 884
         },
         {
           "d": "10-25",
-          "s": 878
+          "s": 884
         },
         {
           "d": "10-26",
-          "s": 878
+          "s": 884
         },
         {
           "d": "10-27",
-          "s": 878
+          "s": 884
         },
         {
           "d": "10-28",
-          "s": 878
+          "s": 889
         },
         {
           "d": "10-29",
-          "s": 878
+          "s": 892
         },
         {
           "d": "10-30",
-          "s": 878
+          "s": 899
         },
         {
           "d": "10-31",
-          "s": 878
+          "s": 901
         },
         {
           "d": "11-01",
-          "s": 878
+          "s": 902
         },
         {
           "d": "11-02",
-          "s": 878
+          "s": 904
         },
         {
           "d": "11-03",
-          "s": 878
+          "s": 907
         },
         {
           "d": "11-04",
-          "s": 878
+          "s": 913
         },
         {
           "d": "11-05",
-          "s": 878
+          "s": 918
         },
         {
           "d": "11-06",
-          "s": 878
-        },
-        {
-          "d": "11-07",
-          "s": 878
-        },
-        {
-          "d": "11-08",
-          "s": 878
-        },
-        {
-          "d": "11-09",
           "s": 923
         },
         {
+          "d": "11-07",
+          "s": 931
+        },
+        {
+          "d": "11-08",
+          "s": 933
+        },
+        {
+          "d": "11-09",
+          "s": 935
+        },
+        {
           "d": "11-10",
-          "s": 944
+          "s": 938
         },
         {
           "d": "11-11",
-          "s": 958
+          "s": 943
         },
         {
           "d": "11-12",
-          "s": 967
+          "s": 947
         },
         {
           "d": "11-13",
-          "s": 972
+          "s": 949
         },
         {
           "d": "11-14",
-          "s": 980
+          "s": 953
         },
         {
           "d": "11-15",
-          "s": 988
+          "s": 958
         },
         {
           "d": "11-16",
-          "s": 991
+          "s": 970
         },
         {
           "d": "11-17",
-          "s": 994
+          "s": 978
         },
         {
           "d": "11-18",
+          "s": 989
+        },
+        {
+          "d": "11-19",
           "s": 997
         }
       ]
     },
     "score": {
-      "score": 67.57,
+      "score": 81.24,
       "breakdown": {
-        "vel": 48,
-        "acc": 34,
-        "health": 69,
-        "fresh": 92,
+        "vel": 68,
+        "acc": 70,
+        "health": 100,
+        "fresh": 28,
         "signal": 100
       },
       "stage": "early",
       "stage_multiplier": 1.2,
       "confidence": 1.0,
-      "base_score": 56.3,
-      "explanation": "torrentplayer 是 Rust 开源项目，主打「Stream any torrent, video or audio, and skip to any moment in about a second. Free, open-source desktop app for Windows, macOS and Linux. No servers, no accounts, no telemetry.」；处于增长早期，本周涨速 4.3 star/天；项目元数据完整、开发活跃。"
+      "base_score": 67.7,
+      "explanation": "Openwrite 是 TypeScript 开源项目，主打「dsh-Openwrite：OpenWrite 的 DeepSeek Harness 小说创作插件，含统一创作 Agent、56 个小说工具、原生工作台与标准审稿 DAG」；处于增长早期，本周涨速 6.9 star/天；社区健康（fork/star 比 13.9%，2 个 open issue）、项目元数据完整。"
     }
   },
   {
     "repo": {
-      "owner": "n0-name0",
-      "name": "ai--manus",
-      "full_name": "n0-name0/ai--manus",
-      "description": "AI Manus is a general-purpose AI Agent system that supports running various tools and operations in a sandbox environment.",
+      "owner": "gokele",
+      "name": "ovh",
+      "full_name": "gokele/ovh",
+      "description": null,
       "stars": 200,
-      "forks": 0,
+      "forks": 71,
       "open_issues": 0,
-      "created_at": "2026-11-13T14:51:09+00:00",
-      "pushed_at": "2026-11-17T17:29:19+00:00",
-      "updated_at": "2026-11-15T17:01:11+00:00",
-      "topics": [
-        "ai",
-        "ai-agents",
-        "ai-sdk",
-        "anthropic",
-        "chatbot",
-        "function-calling",
-        "gemeni",
-        "generative-ai",
-        "llm",
-        "multimodal",
-        "openai",
-        "react",
-        "solidjs",
-        "streaming",
-        "svelte",
-        "tanstack",
-        "tool-calling",
-        "typescript",
-        "typescript-sdk",
-        "vue"
-      ],
-      "language": null,
-      "license": "Apache-2.0",
+      "created_at": "2026-05-16T18:04:24+00:00",
+      "pushed_at": "2026-11-19T01:50:49+00:00",
+      "updated_at": "2026-11-19T13:00:32+00:00",
+      "topics": [],
+      "language": "Go",
+      "license": "AGPL-3.0",
       "homepage": null,
-      "html_url": "https://github.com/n0-name0/ai--manus",
+      "html_url": "https://github.com/gokele/ovh",
       "default_branch": "main",
       "archived": false,
       "search_score": 1.0,
-      "stars_7d_ago": 0,
+      "stars_7d_ago": 164,
       "star_series": [
         {
-          "d": "10-20",
-          "s": 0
-        },
-        {
           "d": "10-21",
-          "s": 0
+          "s": 97
         },
         {
           "d": "10-22",
-          "s": 0
+          "s": 97
         },
         {
           "d": "10-23",
-          "s": 0
+          "s": 97
         },
         {
           "d": "10-24",
-          "s": 0
+          "s": 97
         },
         {
           "d": "10-25",
-          "s": 0
+          "s": 97
         },
         {
           "d": "10-26",
-          "s": 0
+          "s": 97
         },
         {
           "d": "10-27",
-          "s": 0
+          "s": 97
         },
         {
           "d": "10-28",
-          "s": 0
+          "s": 97
         },
         {
           "d": "10-29",
-          "s": 0
+          "s": 97
         },
         {
           "d": "10-30",
-          "s": 0
+          "s": 97
         },
         {
           "d": "10-31",
-          "s": 0
+          "s": 118
         },
         {
           "d": "11-01",
-          "s": 0
+          "s": 124
         },
         {
           "d": "11-02",
-          "s": 0
+          "s": 129
         },
         {
           "d": "11-03",
-          "s": 0
+          "s": 142
         },
         {
           "d": "11-04",
-          "s": 0
+          "s": 144
         },
         {
           "d": "11-05",
-          "s": 0
+          "s": 145
         },
         {
           "d": "11-06",
-          "s": 0
+          "s": 152
         },
         {
           "d": "11-07",
-          "s": 0
+          "s": 156
         },
         {
           "d": "11-08",
-          "s": 0
+          "s": 158
         },
         {
           "d": "11-09",
-          "s": 0
+          "s": 160
         },
         {
           "d": "11-10",
-          "s": 0
+          "s": 163
         },
         {
           "d": "11-11",
-          "s": 0
+          "s": 164
         },
         {
           "d": "11-12",
-          "s": 0
+          "s": 164
         },
         {
           "d": "11-13",
-          "s": 64
+          "s": 164
         },
         {
           "d": "11-14",
-          "s": 200
+          "s": 165
         },
         {
           "d": "11-15",
-          "s": 200
+          "s": 166
         },
         {
           "d": "11-16",
-          "s": 200
+          "s": 168
         },
         {
           "d": "11-17",
-          "s": 200
+          "s": 183
         },
         {
           "d": "11-18",
+          "s": 193
+        },
+        {
+          "d": "11-19",
           "s": 200
         }
       ]
     },
     "score": {
-      "score": 60.34,
+      "score": 68.3,
       "breakdown": {
-        "vel": 98,
-        "acc": 99,
-        "health": 60,
-        "fresh": 99,
-        "signal": 70
+        "vel": 60,
+        "acc": 88,
+        "health": 100,
+        "fresh": 49,
+        "signal": 40
       },
-      "stage": "saturated",
-      "stage_multiplier": 0.7,
+      "stage": "mid_late",
+      "stage_multiplier": 1.0,
       "confidence": 1.0,
-      "base_score": 86.2,
-      "explanation": "ai--manus 是 未知语言 开源项目，主打「AI Manus is a general-purpose AI Agent system that supports running various tools and operations in a sandbox environment.」；增长已饱和，本周涨速 29 star/天，涨速在加快；开发活跃。"
+      "base_score": 68.3,
+      "explanation": "ovh 是 Go 方向的开源项目；处于中后期增长，本周涨速 5.1 star/天，涨速在加快；社区健康（fork/star 比 35.5%，0 个 open issue）。"
     }
   },
   {
     "repo": {
-      "owner": "floki12342",
+      "owner": "jeremypires",
       "name": "ai--manus",
-      "full_name": "floki12342/ai--manus",
+      "full_name": "jeremypires/ai--manus",
       "description": "AI Manus is a general-purpose AI Agent system that supports running various tools and operations in a sandbox environment.",
       "stars": 200,
       "forks": 0,
       "open_issues": 0,
-      "created_at": "2026-11-13T14:51:00+00:00",
-      "pushed_at": "2026-11-15T10:04:52+00:00",
-      "updated_at": "2026-11-15T17:01:11+00:00",
+      "created_at": "2026-11-13T14:50:52+00:00",
+      "pushed_at": "2026-11-14T13:03:38+00:00",
+      "updated_at": "2026-11-19T09:38:42+00:00",
       "topics": [
         "ai",
         "ai-agents",
@@ -735,16 +543,12 @@
       "language": null,
       "license": "Apache-2.0",
       "homepage": null,
-      "html_url": "https://github.com/floki12342/ai--manus",
+      "html_url": "https://github.com/jeremypires/ai--manus",
       "default_branch": "main",
       "archived": false,
       "search_score": 1.0,
-      "stars_7d_ago": 0,
+      "stars_7d_ago": 65,
       "star_series": [
-        {
-          "d": "10-20",
-          "s": 0
-        },
         {
           "d": "10-21",
           "s": 0
@@ -860,23 +664,202 @@
         {
           "d": "11-18",
           "s": 200
+        },
+        {
+          "d": "11-19",
+          "s": 200
         }
       ]
     },
     "score": {
-      "score": 60.34,
+      "score": 56.55,
       "breakdown": {
-        "vel": 98,
-        "acc": 99,
+        "vel": 100,
+        "acc": 75,
         "health": 60,
-        "fresh": 99,
+        "fresh": 98,
         "signal": 70
       },
       "stage": "saturated",
       "stage_multiplier": 0.7,
       "confidence": 1.0,
-      "base_score": 86.2,
-      "explanation": "ai--manus 是 未知语言 开源项目，主打「AI Manus is a general-purpose AI Agent system that supports running various tools and operations in a sandbox environment.」；增长已饱和，本周涨速 29 star/天，涨速在加快；开发活跃。"
+      "base_score": 80.79,
+      "explanation": "ai--manus 是 未知语言 开源项目，主打「AI Manus is a general-purpose AI Agent system that supports running various tools and operations in a sandbox environment.」；增长已饱和，本周涨速 19 star/天，涨速在加快；开发活跃。"
+    }
+  },
+  {
+    "repo": {
+      "owner": "tastyeffectco",
+      "name": "sandboxd",
+      "full_name": "tastyeffectco/sandboxd",
+      "description": "Open-source, self-hosted AI app builder — an agent builds real apps in isolated sandboxes on your own server, each live at a preview URL. Self-host in one command. MIT.",
+      "stars": 998,
+      "forks": 74,
+      "open_issues": 13,
+      "created_at": "2026-06-03T18:55:02+00:00",
+      "pushed_at": "2026-11-19T11:55:11+00:00",
+      "updated_at": "2026-11-19T09:06:51+00:00",
+      "topics": [
+        "agent-infrastructure",
+        "ai",
+        "ai-agents",
+        "app-builder",
+        "coding-agent",
+        "developer-tools",
+        "devtools",
+        "docker",
+        "llm",
+        "open-source",
+        "paas",
+        "preview-environments",
+        "sandbox",
+        "self-hosted"
+      ],
+      "language": "Go",
+      "license": "MIT",
+      "homepage": "https://sandboxd.io/",
+      "html_url": "https://github.com/tastyeffectco/sandboxd",
+      "default_branch": "main",
+      "archived": false,
+      "search_score": 1.0,
+      "stars_7d_ago": 990,
+      "star_series": [
+        {
+          "d": "10-21",
+          "s": 976
+        },
+        {
+          "d": "10-22",
+          "s": 976
+        },
+        {
+          "d": "10-23",
+          "s": 976
+        },
+        {
+          "d": "10-24",
+          "s": 976
+        },
+        {
+          "d": "10-25",
+          "s": 976
+        },
+        {
+          "d": "10-26",
+          "s": 976
+        },
+        {
+          "d": "10-27",
+          "s": 976
+        },
+        {
+          "d": "10-28",
+          "s": 976
+        },
+        {
+          "d": "10-29",
+          "s": 976
+        },
+        {
+          "d": "10-30",
+          "s": 976
+        },
+        {
+          "d": "10-31",
+          "s": 976
+        },
+        {
+          "d": "11-01",
+          "s": 976
+        },
+        {
+          "d": "11-02",
+          "s": 976
+        },
+        {
+          "d": "11-03",
+          "s": 976
+        },
+        {
+          "d": "11-04",
+          "s": 976
+        },
+        {
+          "d": "11-05",
+          "s": 977
+        },
+        {
+          "d": "11-06",
+          "s": 978
+        },
+        {
+          "d": "11-07",
+          "s": 979
+        },
+        {
+          "d": "11-08",
+          "s": 981
+        },
+        {
+          "d": "11-09",
+          "s": 982
+        },
+        {
+          "d": "11-10",
+          "s": 985
+        },
+        {
+          "d": "11-11",
+          "s": 987
+        },
+        {
+          "d": "11-12",
+          "s": 989
+        },
+        {
+          "d": "11-13",
+          "s": 990
+        },
+        {
+          "d": "11-14",
+          "s": 995
+        },
+        {
+          "d": "11-15",
+          "s": 995
+        },
+        {
+          "d": "11-16",
+          "s": 995
+        },
+        {
+          "d": "11-17",
+          "s": 997
+        },
+        {
+          "d": "11-18",
+          "s": 997
+        },
+        {
+          "d": "11-19",
+          "s": 998
+        }
+      ]
+    },
+    "score": {
+      "score": 51.37,
+      "breakdown": {
+        "vel": 25,
+        "acc": 42,
+        "health": 82,
+        "fresh": 54,
+        "signal": 100
+      },
+      "stage": "mid_early",
+      "stage_multiplier": 1.1,
+      "confidence": 1.0,
+      "base_score": 46.7,
+      "explanation": "sandboxd 是 Go 开源项目，主打「Open-source, self-hosted AI app builder — an agent builds real apps in isolated sandboxes on your own server, each live at a preview URL. Self-host in one command. MIT.」；处于中早期增长；社区健康（fork/star 比 7.4%，13 个 open issue）、项目元数据完整。"
     }
   }
 ]
