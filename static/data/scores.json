@@ -1,175 +1,167 @@
 [
   {
     "repo": {
-      "owner": "simpsoka",
-      "name": "zigzag",
-      "full_name": "simpsoka/zigzag",
-      "description": "Free, open-source embroidery software for Mac and Windows. Turn SVG artwork into machine embroidery, edit stitches visually, and create designs with AI agents via MCP.",
-      "stars": 1000,
-      "forks": 70,
-      "open_issues": 10,
-      "created_at": "2026-10-30T01:53:39+00:00",
-      "pushed_at": "2026-11-21T00:27:45+00:00",
-      "updated_at": "2026-11-21T13:37:15+00:00",
+      "owner": "laobamac",
+      "name": "MirageWallpaper",
+      "full_name": "laobamac/MirageWallpaper",
+      "description": "The most perfect live wallpaper engine for macOS, supporting web/video/scene wallpaper",
+      "stars": 997,
+      "forks": 28,
+      "open_issues": 22,
+      "created_at": "2026-07-01T15:41:56+00:00",
+      "pushed_at": "2026-11-21T15:08:12+00:00",
+      "updated_at": "2026-11-22T11:06:23+00:00",
       "topics": [
-        "brother-skitch",
-        "embroidery",
-        "embroidery-digitizing",
-        "embroidery-software",
-        "machine-embroidery",
+        "dynamic-wallpaper",
         "macos",
-        "mcp",
-        "model-context-protocol",
-        "rust",
-        "svg",
-        "vector-editor",
-        "windows"
+        "mirage",
+        "miragewallpaper"
       ],
-      "language": "Rust",
-      "license": "Apache-2.0",
-      "homepage": "https://zigzag.diy/",
-      "html_url": "https://github.com/simpsoka/zigzag",
+      "language": "C++",
+      "license": "GPL-3.0",
+      "homepage": "https://mirage.simplehac.cn/",
+      "html_url": "https://github.com/laobamac/MirageWallpaper",
       "default_branch": "main",
       "archived": false,
       "search_score": 1.0,
-      "stars_7d_ago": 955,
+      "stars_7d_ago": 741,
       "star_series": [
         {
-          "d": "10-23",
-          "s": 955
-        },
-        {
           "d": "10-24",
-          "s": 955
+          "s": 700
         },
         {
           "d": "10-25",
-          "s": 955
+          "s": 700
         },
         {
           "d": "10-26",
-          "s": 955
+          "s": 700
         },
         {
           "d": "10-27",
-          "s": 955
+          "s": 700
         },
         {
           "d": "10-28",
-          "s": 955
+          "s": 700
         },
         {
           "d": "10-29",
-          "s": 955
+          "s": 700
         },
         {
           "d": "10-30",
-          "s": 955
+          "s": 700
         },
         {
           "d": "10-31",
-          "s": 955
+          "s": 700
         },
         {
           "d": "11-01",
-          "s": 955
+          "s": 700
         },
         {
           "d": "11-02",
-          "s": 955
+          "s": 700
         },
         {
           "d": "11-03",
-          "s": 955
+          "s": 700
         },
         {
           "d": "11-04",
-          "s": 955
+          "s": 700
         },
         {
           "d": "11-05",
-          "s": 955
+          "s": 700
         },
         {
           "d": "11-06",
-          "s": 955
+          "s": 700
         },
         {
           "d": "11-07",
-          "s": 955
+          "s": 700
         },
         {
           "d": "11-08",
-          "s": 955
+          "s": 700
         },
         {
           "d": "11-09",
-          "s": 955
+          "s": 700
         },
         {
           "d": "11-10",
-          "s": 955
+          "s": 700
         },
         {
           "d": "11-11",
-          "s": 955
+          "s": 700
         },
         {
           "d": "11-12",
-          "s": 955
+          "s": 700
         },
         {
           "d": "11-13",
-          "s": 955
+          "s": 700
         },
         {
           "d": "11-14",
-          "s": 955
+          "s": 700
         },
         {
           "d": "11-15",
-          "s": 955
+          "s": 702
         },
         {
           "d": "11-16",
-          "s": 955
+          "s": 741
         },
         {
           "d": "11-17",
-          "s": 955
+          "s": 798
         },
         {
           "d": "11-18",
-          "s": 955
+          "s": 843
         },
         {
           "d": "11-19",
-          "s": 973
+          "s": 876
         },
         {
           "d": "11-20",
-          "s": 993
+          "s": 975
         },
         {
           "d": "11-21",
-          "s": 1000
+          "s": 990
+        },
+        {
+          "d": "11-22",
+          "s": 997
         }
       ]
     },
     "score": {
-      "score": 87.28,
+      "score": 99.9,
       "breakdown": {
-        "vel": 58,
+        "vel": 100,
         "acc": 99,
-        "health": 81,
-        "fresh": 94,
+        "health": 63,
+        "fresh": 61,
         "signal": 85
       },
-      "stage": "mid_early",
-      "stage_multiplier": 1.1,
+      "stage": "early",
+      "stage_multiplier": 1.2,
       "confidence": 1.0,
-      "base_score": 79.35,
-      "explanation": "zigzag 是 Rust 开源项目，主打「Free, open-source embroidery software for Mac and Windows. Turn SVG artwork into machine embroidery, edit stitches visually, and create designs with AI agents via MCP.」；处于中早期增长，本周涨速 6.4 star/天，涨速在加快；社区健康（fork/star 比 7.0%，10 个 open issue）、项目元数据完整、开发活跃。"
+      "base_score": 83.25,
+      "explanation": "MirageWallpaper 是 C++ 开源项目，主打「The most perfect live wallpaper engine for macOS, supporting web/video/scene wallpaper」；处于增长早期，本周涨速 37 star/天，涨速在加快；项目元数据完整。"
     }
   },
   {
@@ -178,12 +170,12 @@
       "name": "autoshade",
       "full_name": "skymanbp/autoshade",
       "description": "AI-assisted RAW photo developer.",
-      "stars": 998,
+      "stars": 997,
       "forks": 44,
       "open_issues": 2,
       "created_at": "2026-06-26T18:55:41+00:00",
       "pushed_at": "2026-11-21T03:03:11+00:00",
-      "updated_at": "2026-11-21T09:11:38+00:00",
+      "updated_at": "2026-11-21T16:18:08+00:00",
       "topics": [
         "ai-photo-editing",
         "camera-raw",
@@ -205,646 +197,1144 @@
       "default_branch": "main",
       "archived": false,
       "search_score": 1.0,
-      "stars_7d_ago": 947,
+      "stars_7d_ago": 946,
       "star_series": [
         {
-          "d": "10-23",
-          "s": 861
-        },
-        {
           "d": "10-24",
-          "s": 863
+          "s": 862
         },
         {
           "d": "10-25",
-          "s": 864
+          "s": 863
         },
         {
           "d": "10-26",
-          "s": 866
+          "s": 865
         },
         {
           "d": "10-27",
-          "s": 870
+          "s": 869
         },
         {
           "d": "10-28",
-          "s": 872
+          "s": 871
         },
         {
           "d": "10-29",
-          "s": 873
+          "s": 872
         },
         {
           "d": "10-30",
-          "s": 876
+          "s": 875
         },
         {
           "d": "10-31",
-          "s": 879
+          "s": 878
         },
         {
           "d": "11-01",
-          "s": 880
+          "s": 879
         },
         {
           "d": "11-02",
-          "s": 880
+          "s": 879
         },
         {
           "d": "11-03",
-          "s": 883
+          "s": 882
         },
         {
           "d": "11-04",
-          "s": 884
+          "s": 883
         },
         {
           "d": "11-05",
-          "s": 888
+          "s": 887
         },
         {
           "d": "11-06",
-          "s": 888
+          "s": 887
         },
         {
           "d": "11-07",
-          "s": 895
+          "s": 894
         },
         {
           "d": "11-08",
-          "s": 919
+          "s": 918
         },
         {
           "d": "11-09",
-          "s": 939
+          "s": 938
         },
         {
           "d": "11-10",
-          "s": 939
+          "s": 938
         },
         {
           "d": "11-11",
-          "s": 940
+          "s": 939
         },
         {
           "d": "11-12",
-          "s": 943
+          "s": 942
         },
         {
           "d": "11-13",
-          "s": 946
+          "s": 945
         },
         {
           "d": "11-14",
-          "s": 947
+          "s": 946
         },
         {
           "d": "11-15",
-          "s": 947
+          "s": 946
         },
         {
           "d": "11-16",
-          "s": 947
+          "s": 946
         },
         {
           "d": "11-17",
-          "s": 948
+          "s": 947
         },
         {
           "d": "11-18",
-          "s": 948
+          "s": 947
         },
         {
           "d": "11-19",
-          "s": 948
+          "s": 947
         },
         {
           "d": "11-20",
-          "s": 997
+          "s": 996
         },
         {
           "d": "11-21",
-          "s": 998
+          "s": 997
+        },
+        {
+          "d": "11-22",
+          "s": 997
         }
       ]
     },
     "score": {
-      "score": 82.34,
+      "score": 90.51,
       "breakdown": {
-        "vel": 62,
-        "acc": 69,
+        "vel": 63,
+        "acc": 99,
         "health": 73,
-        "fresh": 60,
+        "fresh": 59,
         "signal": 100
       },
       "stage": "early",
       "stage_multiplier": 1.2,
       "confidence": 1.0,
-      "base_score": 68.61,
-      "explanation": "autoshade 是 Rust 开源项目，主打「AI-assisted RAW photo developer.」；处于增长早期，本周涨速 7.3 star/天；社区健康（fork/star 比 4.4%，2 个 open issue）、项目元数据完整。"
+      "base_score": 75.43,
+      "explanation": "autoshade 是 Rust 开源项目，主打「AI-assisted RAW photo developer.」；处于增长早期，本周涨速 7.3 star/天，涨速在加快；社区健康（fork/star 比 4.4%，2 个 open issue）、项目元数据完整。"
     }
   },
   {
     "repo": {
-      "owner": "wzc520pyfm",
-      "name": "gen-ai-pose-image",
-      "full_name": "wzc520pyfm/gen-ai-pose-image",
-      "description": "澜姿：从姿势线稿和衣装集给社区鲸鱼娘大肥鱼模特出图，调整姿势加变装，也可装进 DeepSeek Harness。Lanpose generates images of the community whale-girl Dafeiyu from pose sketches and costumes, and installs into DeepSeek Harness.",
+      "owner": "lab421",
+      "name": "forel",
+      "full_name": "lab421/forel",
+      "description": "File automation for macOS. The open source Hazel alternative for macOS.",
       "stars": 995,
-      "forks": 76,
-      "open_issues": 3,
-      "created_at": "2026-10-29T08:20:20+00:00",
-      "pushed_at": "2026-11-15T06:19:05+00:00",
-      "updated_at": "2026-11-21T10:10:18+00:00",
-      "topics": [
-        "deepseek",
-        "genai",
-        "generic",
-        "gpt",
-        "image",
-        "pose"
-      ],
-      "language": "JavaScript",
-      "license": "NOASSERTION",
-      "homepage": "https://gen-ai-pose-image.vercel.app/",
-      "html_url": "https://github.com/wzc520pyfm/gen-ai-pose-image",
+      "forks": 49,
+      "open_issues": 20,
+      "created_at": "2026-06-13T06:11:12+00:00",
+      "pushed_at": "2026-11-21T11:22:42+00:00",
+      "updated_at": "2026-11-22T13:07:10+00:00",
+      "topics": [],
+      "language": "Swift",
+      "license": "GPL-3.0",
+      "homepage": "https://forel-app.github.io",
+      "html_url": "https://github.com/lab421/forel",
       "default_branch": "main",
       "archived": false,
       "search_score": 1.0,
-      "stars_7d_ago": 924,
+      "stars_7d_ago": 945,
       "star_series": [
         {
-          "d": "10-23",
-          "s": 743
-        },
-        {
           "d": "10-24",
-          "s": 743
+          "s": 893
         },
         {
           "d": "10-25",
-          "s": 743
+          "s": 893
         },
         {
           "d": "10-26",
-          "s": 743
+          "s": 893
         },
         {
           "d": "10-27",
-          "s": 743
+          "s": 893
         },
         {
           "d": "10-28",
-          "s": 743
+          "s": 895
         },
         {
           "d": "10-29",
-          "s": 743
+          "s": 900
         },
         {
           "d": "10-30",
-          "s": 743
+          "s": 901
         },
         {
           "d": "10-31",
-          "s": 743
+          "s": 903
         },
         {
           "d": "11-01",
-          "s": 743
+          "s": 905
         },
         {
           "d": "11-02",
-          "s": 743
+          "s": 908
         },
         {
           "d": "11-03",
-          "s": 743
+          "s": 911
         },
         {
           "d": "11-04",
-          "s": 743
+          "s": 913
         },
         {
           "d": "11-05",
-          "s": 743
+          "s": 915
         },
         {
           "d": "11-06",
-          "s": 743
+          "s": 917
         },
         {
           "d": "11-07",
-          "s": 743
+          "s": 920
         },
         {
           "d": "11-08",
-          "s": 743
+          "s": 922
         },
         {
           "d": "11-09",
-          "s": 812
+          "s": 928
         },
         {
           "d": "11-10",
-          "s": 840
+          "s": 930
         },
         {
           "d": "11-11",
-          "s": 857
+          "s": 934
         },
         {
           "d": "11-12",
-          "s": 881
+          "s": 935
         },
         {
           "d": "11-13",
-          "s": 906
+          "s": 936
         },
         {
           "d": "11-14",
-          "s": 918
+          "s": 942
         },
         {
           "d": "11-15",
-          "s": 924
+          "s": 944
         },
         {
           "d": "11-16",
-          "s": 947
+          "s": 945
         },
         {
           "d": "11-17",
-          "s": 963
+          "s": 945
         },
         {
           "d": "11-18",
-          "s": 973
+          "s": 953
         },
         {
           "d": "11-19",
-          "s": 986
+          "s": 969
         },
         {
           "d": "11-20",
-          "s": 992
+          "s": 979
         },
         {
           "d": "11-21",
+          "s": 990
+        },
+        {
+          "d": "11-22",
           "s": 995
         }
       ]
     },
     "score": {
-      "score": 78.38,
+      "score": 84.71,
       "breakdown": {
-        "vel": 70,
-        "acc": 35,
-        "health": 84,
-        "fresh": 94,
+        "vel": 62,
+        "acc": 87,
+        "health": 71,
+        "fresh": 56,
         "signal": 85
       },
       "stage": "early",
       "stage_multiplier": 1.2,
       "confidence": 1.0,
-      "base_score": 65.32,
-      "explanation": "gen-ai-pose-image 是 JavaScript 开源项目，主打「澜姿：从姿势线稿和衣装集给社区鲸鱼娘大肥鱼模特出图，调整姿势加变装，也可装进 DeepSeek Harness。Lanpose generates images of the community whale-girl Dafeiyu from pose sketches and costumes, and installs into DeepSeek Harness.」；处于增长早期，本周涨速 10 star/天；社区健康（fork/star 比 7.6%，3 个 open issue）、项目元数据完整、开发活跃。"
+      "base_score": 70.6,
+      "explanation": "forel 是 Swift 开源项目，主打「File automation for macOS. The open source Hazel alternative for macOS.」；处于增长早期，本周涨速 7.1 star/天，涨速在加快；社区健康（fork/star 比 4.9%，20 个 open issue）、项目元数据完整。"
     }
   },
   {
     "repo": {
-      "owner": "snicolast",
-      "name": "SegaRally2Native",
-      "full_name": "snicolast/SegaRally2Native",
-      "description": "Sega Rally 2 - PC Port",
+      "owner": "magnuslab-sudo",
+      "name": "Orwell",
+      "full_name": "magnuslab-sudo/Orwell",
+      "description": "Chat and calls for communities, end-to-end encrypted. Maximizing privacy.",
       "stars": 200,
-      "forks": 14,
+      "forks": 8,
       "open_issues": 4,
-      "created_at": "2026-11-11T04:43:58+00:00",
-      "pushed_at": "2026-11-21T00:38:12+00:00",
-      "updated_at": "2026-11-21T03:53:34+00:00",
+      "created_at": "2026-11-09T18:04:18+00:00",
+      "pushed_at": "2026-11-22T13:06:06+00:00",
+      "updated_at": "2026-11-21T18:19:00+00:00",
       "topics": [],
-      "language": "C++",
-      "license": "NOASSERTION",
-      "homepage": null,
-      "html_url": "https://github.com/snicolast/SegaRally2Native",
+      "language": "TypeScript",
+      "license": "AGPL-3.0",
+      "homepage": "https://orwell.pt",
+      "html_url": "https://github.com/magnuslab-sudo/Orwell",
       "default_branch": "main",
       "archived": false,
       "search_score": 1.0,
-      "stars_7d_ago": 190,
+      "stars_7d_ago": 167,
       "star_series": [
         {
-          "d": "10-23",
-          "s": 190
-        },
-        {
           "d": "10-24",
-          "s": 190
+          "s": 138
         },
         {
           "d": "10-25",
-          "s": 190
+          "s": 138
         },
         {
           "d": "10-26",
-          "s": 190
+          "s": 138
         },
         {
           "d": "10-27",
-          "s": 190
+          "s": 138
         },
         {
           "d": "10-28",
-          "s": 190
+          "s": 138
         },
         {
           "d": "10-29",
-          "s": 190
+          "s": 138
         },
         {
           "d": "10-30",
-          "s": 190
+          "s": 138
         },
         {
           "d": "10-31",
-          "s": 190
+          "s": 138
         },
         {
           "d": "11-01",
-          "s": 190
+          "s": 138
         },
         {
           "d": "11-02",
-          "s": 190
+          "s": 138
         },
         {
           "d": "11-03",
-          "s": 190
+          "s": 138
         },
         {
           "d": "11-04",
-          "s": 190
+          "s": 138
         },
         {
           "d": "11-05",
-          "s": 190
+          "s": 138
         },
         {
           "d": "11-06",
-          "s": 190
+          "s": 138
         },
         {
           "d": "11-07",
-          "s": 190
+          "s": 138
         },
         {
           "d": "11-08",
-          "s": 190
+          "s": 138
         },
         {
           "d": "11-09",
-          "s": 190
+          "s": 138
         },
         {
           "d": "11-10",
-          "s": 190
+          "s": 138
         },
         {
           "d": "11-11",
-          "s": 190
+          "s": 138
         },
         {
           "d": "11-12",
-          "s": 190
+          "s": 138
         },
         {
           "d": "11-13",
-          "s": 190
+          "s": 138
         },
         {
           "d": "11-14",
-          "s": 190
+          "s": 146
         },
         {
           "d": "11-15",
-          "s": 190
+          "s": 159
         },
         {
           "d": "11-16",
-          "s": 190
+          "s": 167
         },
         {
           "d": "11-17",
-          "s": 191
+          "s": 182
         },
         {
           "d": "11-18",
-          "s": 195
+          "s": 192
         },
         {
           "d": "11-19",
-          "s": 197
+          "s": 194
         },
         {
           "d": "11-20",
-          "s": 199
+          "s": 196
         },
         {
           "d": "11-21",
+          "s": 200
+        },
+        {
+          "d": "11-22",
           "s": 200
         }
       ]
     },
     "score": {
-      "score": 61.6,
+      "score": 74.37,
       "breakdown": {
-        "vel": 26,
-        "acc": 81,
-        "health": 75,
+        "vel": 52,
+        "acc": 53,
+        "health": 66,
         "fresh": 97,
-        "signal": 55
+        "signal": 70
       },
-      "stage": "mid_early",
-      "stage_multiplier": 1.1,
+      "stage": "early",
+      "stage_multiplier": 1.2,
       "confidence": 1.0,
-      "base_score": 56.0,
-      "explanation": "SegaRally2Native 是 C++ 开源项目，主打「Sega Rally 2 - PC Port」；处于中早期增长，涨速在加快；社区健康（fork/star 比 7.0%，4 个 open issue）、开发活跃。"
+      "base_score": 61.98,
+      "explanation": "Orwell 是 TypeScript 开源项目，主打「Chat and calls for communities, end-to-end encrypted. Maximizing privacy.」；处于增长早期，本周涨速 4.7 star/天；开发活跃。"
     }
   },
   {
     "repo": {
-      "owner": "madong-code",
-      "name": "madong-admin",
-      "full_name": "madong-code/madong-admin",
-      "description": "Standard PHP Webman admin backend skeleton, with RBAC, CRUD generator, workflow and Vue3 Vben frontend.",
-      "stars": 996,
-      "forks": 49,
-      "open_issues": 0,
-      "created_at": "2025-07-23T06:27:43+00:00",
-      "pushed_at": "2026-11-20T03:25:05+00:00",
-      "updated_at": "2026-11-21T13:18:30+00:00",
-      "topics": [
-        "admin",
-        "admin-dashboard",
-        "apache2",
-        "backend",
-        "crud",
-        "crud-generator",
-        "madong-admin",
-        "open-source",
-        "php",
-        "rbac",
-        "skeleton",
-        "vben",
-        "vue3",
-        "webman"
-      ],
-      "language": "PHP",
-      "license": "Apache-2.0",
-      "homepage": "https://madong.tech",
-      "html_url": "https://github.com/madong-code/madong-admin",
+      "owner": "cwuom",
+      "name": "NeriPlayer-Desktop",
+      "full_name": "cwuom/NeriPlayer-Desktop",
+      "description": "NeriPlayer Desktop - Multi-source streaming, local music management, word-synced lyrics and sync to your own cloud",
+      "stars": 200,
+      "forks": 23,
+      "open_issues": 9,
+      "created_at": "2026-04-24T13:36:41+00:00",
+      "pushed_at": "2026-11-21T08:19:10+00:00",
+      "updated_at": "2026-11-22T13:56:15+00:00",
+      "topics": [],
+      "language": "Rust",
+      "license": "GPL-3.0",
+      "homepage": "https://neri.kano.kim",
+      "html_url": "https://github.com/cwuom/NeriPlayer-Desktop",
       "default_branch": "main",
       "archived": false,
       "search_score": 1.0,
-      "stars_7d_ago": 729,
+      "stars_7d_ago": 178,
       "star_series": [
         {
-          "d": "10-23",
-          "s": 728
-        },
-        {
           "d": "10-24",
-          "s": 728
+          "s": 173
         },
         {
           "d": "10-25",
-          "s": 728
+          "s": 173
         },
         {
           "d": "10-26",
-          "s": 728
+          "s": 173
         },
         {
           "d": "10-27",
-          "s": 728
+          "s": 173
         },
         {
           "d": "10-28",
-          "s": 728
+          "s": 173
         },
         {
           "d": "10-29",
-          "s": 728
+          "s": 173
         },
         {
           "d": "10-30",
-          "s": 728
+          "s": 173
         },
         {
           "d": "10-31",
-          "s": 728
+          "s": 173
         },
         {
           "d": "11-01",
-          "s": 728
+          "s": 173
         },
         {
           "d": "11-02",
-          "s": 728
+          "s": 173
         },
         {
           "d": "11-03",
-          "s": 728
+          "s": 173
         },
         {
           "d": "11-04",
-          "s": 728
+          "s": 173
         },
         {
           "d": "11-05",
-          "s": 728
+          "s": 173
         },
         {
           "d": "11-06",
-          "s": 728
+          "s": 173
         },
         {
           "d": "11-07",
-          "s": 728
+          "s": 173
         },
         {
           "d": "11-08",
-          "s": 728
+          "s": 173
         },
         {
           "d": "11-09",
-          "s": 728
+          "s": 173
         },
         {
           "d": "11-10",
-          "s": 728
+          "s": 173
         },
         {
           "d": "11-11",
-          "s": 728
+          "s": 173
         },
         {
           "d": "11-12",
-          "s": 728
+          "s": 173
         },
         {
           "d": "11-13",
-          "s": 728
+          "s": 173
         },
         {
           "d": "11-14",
-          "s": 728
+          "s": 173
         },
         {
           "d": "11-15",
-          "s": 729
+          "s": 175
         },
         {
           "d": "11-16",
-          "s": 765
+          "s": 178
         },
         {
           "d": "11-17",
-          "s": 816
+          "s": 183
         },
         {
           "d": "11-18",
-          "s": 869
+          "s": 186
         },
         {
           "d": "11-19",
-          "s": 898
+          "s": 188
         },
         {
           "d": "11-20",
-          "s": 969
+          "s": 191
         },
         {
           "d": "11-21",
+          "s": 194
+        },
+        {
+          "d": "11-22",
+          "s": 200
+        }
+      ]
+    },
+    "score": {
+      "score": 74.25,
+      "breakdown": {
+        "vel": 42,
+        "acc": 92,
+        "health": 84,
+        "fresh": 42,
+        "signal": 70
+      },
+      "stage": "early",
+      "stage_multiplier": 1.2,
+      "confidence": 1.0,
+      "base_score": 61.87,
+      "explanation": "NeriPlayer-Desktop 是 Rust 开源项目，主打「NeriPlayer Desktop - Multi-source streaming, local music management, word-synced lyrics and sync to your own cloud」；处于增长早期，本周涨速 3.1 star/天，涨速在加快；社区健康（fork/star 比 11.5%，9 个 open issue）。"
+    }
+  },
+  {
+    "repo": {
+      "owner": "Blizaine",
+      "name": "Maestro",
+      "full_name": "Blizaine/Maestro",
+      "description": "An all-in-one, 100% local AI video, image, and music studio. Director mode plans full music videos and short films from a single prompt. Built on the WanGP pipeline. Install via Pinokio.",
+      "stars": 996,
+      "forks": 189,
+      "open_issues": 99,
+      "created_at": "2026-07-08T12:02:05+00:00",
+      "pushed_at": "2026-11-22T10:45:40+00:00",
+      "updated_at": "2026-11-22T13:39:28+00:00",
+      "topics": [
+        "ai",
+        "ai-video",
+        "image-generation",
+        "local-ai",
+        "ltx-video",
+        "music-generation",
+        "pinokio",
+        "text-to-video",
+        "video-generation",
+        "wan"
+      ],
+      "language": "Python",
+      "license": "NOASSERTION",
+      "homepage": "https://pinokio.computer",
+      "html_url": "https://github.com/Blizaine/Maestro",
+      "default_branch": "main",
+      "archived": false,
+      "search_score": 1.0,
+      "stars_7d_ago": 968,
+      "star_series": [
+        {
+          "d": "10-24",
+          "s": 942
+        },
+        {
+          "d": "10-25",
+          "s": 942
+        },
+        {
+          "d": "10-26",
+          "s": 942
+        },
+        {
+          "d": "10-27",
+          "s": 942
+        },
+        {
+          "d": "10-28",
+          "s": 942
+        },
+        {
+          "d": "10-29",
+          "s": 942
+        },
+        {
+          "d": "10-30",
+          "s": 942
+        },
+        {
+          "d": "10-31",
+          "s": 942
+        },
+        {
+          "d": "11-01",
+          "s": 942
+        },
+        {
+          "d": "11-02",
+          "s": 942
+        },
+        {
+          "d": "11-03",
+          "s": 942
+        },
+        {
+          "d": "11-04",
+          "s": 942
+        },
+        {
+          "d": "11-05",
+          "s": 942
+        },
+        {
+          "d": "11-06",
+          "s": 942
+        },
+        {
+          "d": "11-07",
+          "s": 942
+        },
+        {
+          "d": "11-08",
+          "s": 942
+        },
+        {
+          "d": "11-09",
+          "s": 942
+        },
+        {
+          "d": "11-10",
+          "s": 942
+        },
+        {
+          "d": "11-11",
+          "s": 943
+        },
+        {
+          "d": "11-12",
+          "s": 948
+        },
+        {
+          "d": "11-13",
+          "s": 950
+        },
+        {
+          "d": "11-14",
+          "s": 953
+        },
+        {
+          "d": "11-15",
+          "s": 960
+        },
+        {
+          "d": "11-16",
+          "s": 968
+        },
+        {
+          "d": "11-17",
+          "s": 972
+        },
+        {
+          "d": "11-18",
+          "s": 978
+        },
+        {
+          "d": "11-19",
+          "s": 985
+        },
+        {
+          "d": "11-20",
+          "s": 989
+        },
+        {
+          "d": "11-21",
+          "s": 991
+        },
+        {
+          "d": "11-22",
           "s": 996
         }
       ]
     },
     "score": {
-      "score": 55.09,
+      "score": 70.72,
       "breakdown": {
-        "vel": 100,
-        "acc": 99,
+        "vel": 48,
+        "acc": 52,
         "health": 75,
-        "fresh": 0,
+        "fresh": 62,
         "signal": 85
       },
       "stage": "early",
       "stage_multiplier": 1.2,
       "confidence": 1.0,
-      "base_score": 45.91,
-      "explanation": "madong-admin 是 PHP 开源项目，主打「Standard PHP Webman admin backend skeleton, with RBAC, CRUD generator, workflow and Vue3 Vben frontend.」；处于增长早期，本周涨速 38 star/天，涨速在加快；社区健康（fork/star 比 4.9%，0 个 open issue）、项目元数据完整。"
+      "base_score": 58.93,
+      "explanation": "Maestro 是 Python 开源项目，主打「An all-in-one, 100% local AI video, image, and music studio. Director mode plans full music videos and short films from a single prompt. Built on the WanGP pipeline. Install via Pinokio.」；处于增长早期，本周涨速 4.0 star/天；社区健康（fork/star 比 19.0%，99 个 open issue）、项目元数据完整。"
+    }
+  },
+  {
+    "repo": {
+      "owner": "ispointer",
+      "name": "RePairip",
+      "full_name": "ispointer/RePairip",
+      "description": "RePairip is a Google加固 reverse engineering tool that can dump all VMRunner snapshots and fully repack Android applications, removing protection layers completely",
+      "stars": 200,
+      "forks": 40,
+      "open_issues": 0,
+      "created_at": "2026-06-08T23:09:37+00:00",
+      "pushed_at": "2026-11-16T03:03:19+00:00",
+      "updated_at": "2026-11-22T13:41:05+00:00",
+      "topics": [
+        "google-pairip",
+        "google-pairip-bypass",
+        "pairip",
+        "pairip-bypass",
+        "pairip-dumper",
+        "reverse-engineering",
+        "vmrunner"
+      ],
+      "language": "Java",
+      "license": null,
+      "homepage": null,
+      "html_url": "https://github.com/ispointer/RePairip",
+      "default_branch": "main",
+      "archived": false,
+      "search_score": 1.0,
+      "stars_7d_ago": 192,
+      "star_series": [
+        {
+          "d": "10-24",
+          "s": 165
+        },
+        {
+          "d": "10-25",
+          "s": 165
+        },
+        {
+          "d": "10-26",
+          "s": 165
+        },
+        {
+          "d": "10-27",
+          "s": 165
+        },
+        {
+          "d": "10-28",
+          "s": 165
+        },
+        {
+          "d": "10-29",
+          "s": 165
+        },
+        {
+          "d": "10-30",
+          "s": 165
+        },
+        {
+          "d": "10-31",
+          "s": 165
+        },
+        {
+          "d": "11-01",
+          "s": 165
+        },
+        {
+          "d": "11-02",
+          "s": 165
+        },
+        {
+          "d": "11-03",
+          "s": 166
+        },
+        {
+          "d": "11-04",
+          "s": 167
+        },
+        {
+          "d": "11-05",
+          "s": 168
+        },
+        {
+          "d": "11-06",
+          "s": 171
+        },
+        {
+          "d": "11-07",
+          "s": 173
+        },
+        {
+          "d": "11-08",
+          "s": 175
+        },
+        {
+          "d": "11-09",
+          "s": 175
+        },
+        {
+          "d": "11-10",
+          "s": 176
+        },
+        {
+          "d": "11-11",
+          "s": 182
+        },
+        {
+          "d": "11-12",
+          "s": 184
+        },
+        {
+          "d": "11-13",
+          "s": 186
+        },
+        {
+          "d": "11-14",
+          "s": 188
+        },
+        {
+          "d": "11-15",
+          "s": 190
+        },
+        {
+          "d": "11-16",
+          "s": 192
+        },
+        {
+          "d": "11-17",
+          "s": 193
+        },
+        {
+          "d": "11-18",
+          "s": 193
+        },
+        {
+          "d": "11-19",
+          "s": 194
+        },
+        {
+          "d": "11-20",
+          "s": 195
+        },
+        {
+          "d": "11-21",
+          "s": 197
+        },
+        {
+          "d": "11-22",
+          "s": 200
+        }
+      ]
+    },
+    "score": {
+      "score": 51.23,
+      "breakdown": {
+        "vel": 23,
+        "acc": 37,
+        "health": 100,
+        "fresh": 55,
+        "signal": 50
+      },
+      "stage": "early",
+      "stage_multiplier": 1.2,
+      "confidence": 1.0,
+      "base_score": 42.69,
+      "explanation": "RePairip 是 Java 开源项目，主打「RePairip is a Google加固 reverse engineering tool that can dump all VMRunner snapshots and fully repack Android applications, removing protection layers completely」；处于增长早期；社区健康（fork/star 比 20.0%，0 个 open issue）。"
+    }
+  },
+  {
+    "repo": {
+      "owner": "wenxuanzhang1209-cyber",
+      "name": "meetdo",
+      "full_name": "wenxuanzhang1209-cyber/meetdo",
+      "description": "MeetDo — open-source Meeting-to-Action AI by 筑听 · JKinco Listen. Self-hosted live meetings, local ASR/LLM, structured minutes, DOCX/PDF.",
+      "stars": 200,
+      "forks": 4,
+      "open_issues": 8,
+      "created_at": "2026-08-21T04:49:17+00:00",
+      "pushed_at": "2026-11-21T01:53:58+00:00",
+      "updated_at": "2026-11-22T04:55:18+00:00",
+      "topics": [
+        "ai-meeting-assistant",
+        "audio-transcription",
+        "docker",
+        "fastapi",
+        "funasr",
+        "livekit",
+        "local-first",
+        "local-llm",
+        "meeting-intelligence",
+        "meeting-minutes",
+        "meeting-to-action",
+        "offline-first",
+        "ollama",
+        "open-source",
+        "personal-agent",
+        "privacy-first",
+        "real-time-transcription",
+        "self-hosted",
+        "speech-to-text",
+        "webrtc"
+      ],
+      "language": "Python",
+      "license": "MIT",
+      "homepage": "https://jkincolisten.cloud",
+      "html_url": "https://github.com/wenxuanzhang1209-cyber/meetdo",
+      "default_branch": "main",
+      "archived": false,
+      "search_score": 1.0,
+      "stars_7d_ago": 158,
+      "star_series": [
+        {
+          "d": "10-24",
+          "s": 0
+        },
+        {
+          "d": "10-25",
+          "s": 0
+        },
+        {
+          "d": "10-26",
+          "s": 0
+        },
+        {
+          "d": "10-27",
+          "s": 0
+        },
+        {
+          "d": "10-28",
+          "s": 0
+        },
+        {
+          "d": "10-29",
+          "s": 27
+        },
+        {
+          "d": "10-30",
+          "s": 78
+        },
+        {
+          "d": "10-31",
+          "s": 124
+        },
+        {
+          "d": "11-01",
+          "s": 127
+        },
+        {
+          "d": "11-02",
+          "s": 127
+        },
+        {
+          "d": "11-03",
+          "s": 127
+        },
+        {
+          "d": "11-04",
+          "s": 127
+        },
+        {
+          "d": "11-05",
+          "s": 157
+        },
+        {
+          "d": "11-06",
+          "s": 157
+        },
+        {
+          "d": "11-07",
+          "s": 157
+        },
+        {
+          "d": "11-08",
+          "s": 157
+        },
+        {
+          "d": "11-09",
+          "s": 157
+        },
+        {
+          "d": "11-10",
+          "s": 157
+        },
+        {
+          "d": "11-11",
+          "s": 157
+        },
+        {
+          "d": "11-12",
+          "s": 157
+        },
+        {
+          "d": "11-13",
+          "s": 157
+        },
+        {
+          "d": "11-14",
+          "s": 158
+        },
+        {
+          "d": "11-15",
+          "s": 158
+        },
+        {
+          "d": "11-16",
+          "s": 158
+        },
+        {
+          "d": "11-17",
+          "s": 158
+        },
+        {
+          "d": "11-18",
+          "s": 158
+        },
+        {
+          "d": "11-19",
+          "s": 158
+        },
+        {
+          "d": "11-20",
+          "s": 158
+        },
+        {
+          "d": "11-21",
+          "s": 168
+        },
+        {
+          "d": "11-22",
+          "s": 200
+        }
+      ]
+    },
+    "score": {
+      "score": 49.88,
+      "breakdown": {
+        "vel": 58,
+        "acc": 99,
+        "health": 57,
+        "fresh": 75,
+        "signal": 85
+      },
+      "stage": "saturated",
+      "stage_multiplier": 0.7,
+      "confidence": 1.0,
+      "base_score": 71.26,
+      "explanation": "meetdo 是 Python 开源项目，主打「MeetDo — open-source Meeting-to-Action AI by 筑听 · JKinco Listen. Self-hosted live meetings, local ASR/LLM, structured minutes, DOCX/PDF.」；增长已饱和，本周涨速 6.0 star/天，涨速在加快；项目元数据完整、开发活跃。"
     }
   },
   {
@@ -853,12 +1343,12 @@
       "name": "ShichiZip",
       "full_name": "idawnlight/ShichiZip",
       "description": "The 7-Zip derivative intended for macOS",
-      "stars": 996,
+      "stars": 997,
       "forks": 35,
       "open_issues": 11,
       "created_at": "2026-04-06T16:05:19+00:00",
-      "pushed_at": "2026-11-20T06:48:50+00:00",
-      "updated_at": "2026-11-21T00:55:47+00:00",
+      "pushed_at": "2026-11-21T15:12:31+00:00",
+      "updated_at": "2026-11-21T21:36:21+00:00",
       "topics": [],
       "language": "Swift",
       "license": "LGPL-2.1",
@@ -867,12 +1357,8 @@
       "default_branch": "main",
       "archived": false,
       "search_score": 1.0,
-      "stars_7d_ago": 987,
+      "stars_7d_ago": 989,
       "star_series": [
-        {
-          "d": "10-23",
-          "s": 962
-        },
         {
           "d": "10-24",
           "s": 963
@@ -987,519 +1473,192 @@
         },
         {
           "d": "11-21",
-          "s": 996
+          "s": 997
+        },
+        {
+          "d": "11-22",
+          "s": 997
         }
       ]
     },
     "score": {
-      "score": 44.48,
+      "score": 42.7,
       "breakdown": {
-        "vel": 24,
-        "acc": 45,
+        "vel": 23,
+        "acc": 42,
         "health": 68,
-        "fresh": 38,
+        "fresh": 37,
         "signal": 55
       },
       "stage": "mid_early",
       "stage_multiplier": 1.1,
       "confidence": 1.0,
-      "base_score": 40.43,
+      "base_score": 38.81,
       "explanation": "ShichiZip 是 Swift 开源项目，主打「The 7-Zip derivative intended for macOS」；处于中早期增长。"
     }
   },
   {
     "repo": {
-      "owner": "tastyeffectco",
-      "name": "sandboxd",
-      "full_name": "tastyeffectco/sandboxd",
-      "description": "Open-source, self-hosted AI app builder — an agent builds real apps in isolated sandboxes on your own server, each live at a preview URL. Self-host in one command. MIT.",
+      "owner": "NaGaa95",
+      "name": "sphaira",
+      "full_name": "NaGaa95/sphaira",
+      "description": "A homebrew menu for the Nintendo Switch",
       "stars": 999,
-      "forks": 74,
-      "open_issues": 14,
-      "created_at": "2026-06-03T18:55:02+00:00",
-      "pushed_at": "2026-11-21T12:48:45+00:00",
-      "updated_at": "2026-11-20T18:47:55+00:00",
+      "forks": 102,
+      "open_issues": 100,
+      "created_at": "2024-12-16T20:51:30+00:00",
+      "pushed_at": "2026-11-20T02:25:22+00:00",
+      "updated_at": "2026-11-22T11:21:01+00:00",
       "topics": [
-        "agent-infrastructure",
-        "ai",
-        "ai-agents",
-        "app-builder",
-        "coding-agent",
-        "developer-tools",
-        "devtools",
-        "docker",
-        "llm",
-        "open-source",
-        "paas",
-        "preview-environments",
-        "sandbox",
-        "self-hosted"
+        "hbmenu",
+        "homebrew",
+        "nintendo-switch"
       ],
-      "language": "Go",
-      "license": "MIT",
-      "homepage": "https://sandboxd.io/",
-      "html_url": "https://github.com/tastyeffectco/sandboxd",
-      "default_branch": "main",
+      "language": "C++",
+      "license": "GPL-3.0",
+      "homepage": null,
+      "html_url": "https://github.com/NaGaa95/sphaira",
+      "default_branch": "master",
       "archived": false,
       "search_score": 1.0,
-      "stars_7d_ago": 995,
+      "stars_7d_ago": 956,
       "star_series": [
         {
-          "d": "10-23",
-          "s": 976
-        },
-        {
           "d": "10-24",
-          "s": 976
+          "s": 933
         },
         {
           "d": "10-25",
-          "s": 976
+          "s": 933
         },
         {
           "d": "10-26",
-          "s": 976
+          "s": 933
         },
         {
           "d": "10-27",
-          "s": 976
+          "s": 933
         },
         {
           "d": "10-28",
-          "s": 976
+          "s": 933
         },
         {
           "d": "10-29",
-          "s": 976
+          "s": 933
         },
         {
           "d": "10-30",
-          "s": 976
+          "s": 933
         },
         {
           "d": "10-31",
-          "s": 976
+          "s": 933
         },
         {
           "d": "11-01",
-          "s": 976
+          "s": 933
         },
         {
           "d": "11-02",
-          "s": 976
+          "s": 933
         },
         {
           "d": "11-03",
-          "s": 976
+          "s": 933
         },
         {
           "d": "11-04",
-          "s": 976
+          "s": 933
         },
         {
           "d": "11-05",
-          "s": 977
+          "s": 933
         },
         {
           "d": "11-06",
-          "s": 978
+          "s": 933
         },
         {
           "d": "11-07",
-          "s": 979
+          "s": 933
         },
         {
           "d": "11-08",
-          "s": 981
+          "s": 933
         },
         {
           "d": "11-09",
-          "s": 982
+          "s": 933
         },
         {
           "d": "11-10",
-          "s": 985
+          "s": 934
         },
         {
           "d": "11-11",
-          "s": 987
+          "s": 939
         },
         {
           "d": "11-12",
+          "s": 941
+        },
+        {
+          "d": "11-13",
+          "s": 943
+        },
+        {
+          "d": "11-14",
+          "s": 947
+        },
+        {
+          "d": "11-15",
+          "s": 948
+        },
+        {
+          "d": "11-16",
+          "s": 956
+        },
+        {
+          "d": "11-17",
+          "s": 968
+        },
+        {
+          "d": "11-18",
+          "s": 974
+        },
+        {
+          "d": "11-19",
+          "s": 980
+        },
+        {
+          "d": "11-20",
           "s": 989
         },
         {
-          "d": "11-13",
-          "s": 990
-        },
-        {
-          "d": "11-14",
-          "s": 995
-        },
-        {
-          "d": "11-15",
-          "s": 995
-        },
-        {
-          "d": "11-16",
-          "s": 995
-        },
-        {
-          "d": "11-17",
-          "s": 997
-        },
-        {
-          "d": "11-18",
-          "s": 997
-        },
-        {
-          "d": "11-19",
-          "s": 998
-        },
-        {
-          "d": "11-20",
-          "s": 999
-        },
-        {
           "d": "11-21",
+          "s": 996
+        },
+        {
+          "d": "11-22",
           "s": 999
         }
       ]
     },
     "score": {
-      "score": 39.92,
+      "score": 41.35,
       "breakdown": {
-        "vel": 13,
-        "acc": 33,
-        "health": 81,
-        "fresh": 53,
-        "signal": 100
-      },
-      "stage": "mid_early",
-      "stage_multiplier": 1.1,
-      "confidence": 1.0,
-      "base_score": 36.29,
-      "explanation": "sandboxd 是 Go 开源项目，主打「Open-source, self-hosted AI app builder — an agent builds real apps in isolated sandboxes on your own server, each live at a preview URL. Self-host in one command. MIT.」；处于中早期增长；社区健康（fork/star 比 7.4%，14 个 open issue）、项目元数据完整。"
-    }
-  },
-  {
-    "repo": {
-      "owner": "vasuki-re",
-      "name": "IStanPdf",
-      "full_name": "vasuki-re/IStanPdf",
-      "description": "Foss offline app alt to iLovePDF & smallpdf for PDF & DOCX operations.",
-      "stars": 200,
-      "forks": 16,
-      "open_issues": 0,
-      "created_at": "2026-06-23T04:47:27+00:00",
-      "pushed_at": "2026-11-15T15:10:53+00:00",
-      "updated_at": "2026-11-18T12:37:05+00:00",
-      "topics": [],
-      "language": "Kotlin",
-      "license": "AGPL-3.0",
-      "homepage": null,
-      "html_url": "https://github.com/vasuki-re/IStanPdf",
-      "default_branch": "Valhalla",
-      "archived": false,
-      "search_score": 1.0,
-      "stars_7d_ago": 198,
-      "star_series": [
-        {
-          "d": "10-23",
-          "s": 173
-        },
-        {
-          "d": "10-24",
-          "s": 173
-        },
-        {
-          "d": "10-25",
-          "s": 173
-        },
-        {
-          "d": "10-26",
-          "s": 173
-        },
-        {
-          "d": "10-27",
-          "s": 173
-        },
-        {
-          "d": "10-28",
-          "s": 174
-        },
-        {
-          "d": "10-29",
-          "s": 174
-        },
-        {
-          "d": "10-30",
-          "s": 174
-        },
-        {
-          "d": "10-31",
-          "s": 174
-        },
-        {
-          "d": "11-01",
-          "s": 175
-        },
-        {
-          "d": "11-02",
-          "s": 175
-        },
-        {
-          "d": "11-03",
-          "s": 175
-        },
-        {
-          "d": "11-04",
-          "s": 175
-        },
-        {
-          "d": "11-05",
-          "s": 175
-        },
-        {
-          "d": "11-06",
-          "s": 175
-        },
-        {
-          "d": "11-07",
-          "s": 175
-        },
-        {
-          "d": "11-08",
-          "s": 176
-        },
-        {
-          "d": "11-09",
-          "s": 190
-        },
-        {
-          "d": "11-10",
-          "s": 192
-        },
-        {
-          "d": "11-11",
-          "s": 193
-        },
-        {
-          "d": "11-12",
-          "s": 195
-        },
-        {
-          "d": "11-13",
-          "s": 196
-        },
-        {
-          "d": "11-14",
-          "s": 197
-        },
-        {
-          "d": "11-15",
-          "s": 198
-        },
-        {
-          "d": "11-16",
-          "s": 198
-        },
-        {
-          "d": "11-17",
-          "s": 199
-        },
-        {
-          "d": "11-18",
-          "s": 200
-        },
-        {
-          "d": "11-19",
-          "s": 200
-        },
-        {
-          "d": "11-20",
-          "s": 200
-        },
-        {
-          "d": "11-21",
-          "s": 200
-        }
-      ]
-    },
-    "score": {
-      "score": 33.97,
-      "breakdown": {
-        "vel": 7,
-        "acc": 29,
-        "health": 80,
-        "fresh": 59,
-        "signal": 55
-      },
-      "stage": "early",
-      "stage_multiplier": 1.2,
-      "confidence": 1.0,
-      "base_score": 28.31,
-      "explanation": "IStanPdf 是 Kotlin 开源项目，主打「Foss offline app alt to iLovePDF & smallpdf for PDF & DOCX operations.」；处于增长早期，涨速已放缓；社区健康（fork/star 比 8.0%，0 个 open issue）。"
-    }
-  },
-  {
-    "repo": {
-      "owner": "Euro-Office",
-      "name": "DesktopEditors",
-      "full_name": "Euro-Office/DesktopEditors",
-      "description": null,
-      "stars": 999,
-      "forks": 63,
-      "open_issues": 217,
-      "created_at": "2025-10-17T19:11:33+00:00",
-      "pushed_at": "2026-11-20T15:13:31+00:00",
-      "updated_at": "2026-11-21T11:29:50+00:00",
-      "topics": [],
-      "language": "PowerShell",
-      "license": "NOASSERTION",
-      "homepage": null,
-      "html_url": "https://github.com/Euro-Office/DesktopEditors",
-      "default_branch": "main",
-      "archived": false,
-      "search_score": 1.0,
-      "stars_7d_ago": 942,
-      "star_series": [
-        {
-          "d": "10-23",
-          "s": 873
-        },
-        {
-          "d": "10-24",
-          "s": 873
-        },
-        {
-          "d": "10-25",
-          "s": 873
-        },
-        {
-          "d": "10-26",
-          "s": 873
-        },
-        {
-          "d": "10-27",
-          "s": 873
-        },
-        {
-          "d": "10-28",
-          "s": 873
-        },
-        {
-          "d": "10-29",
-          "s": 873
-        },
-        {
-          "d": "10-30",
-          "s": 873
-        },
-        {
-          "d": "10-31",
-          "s": 873
-        },
-        {
-          "d": "11-01",
-          "s": 873
-        },
-        {
-          "d": "11-02",
-          "s": 873
-        },
-        {
-          "d": "11-03",
-          "s": 873
-        },
-        {
-          "d": "11-04",
-          "s": 873
-        },
-        {
-          "d": "11-05",
-          "s": 873
-        },
-        {
-          "d": "11-06",
-          "s": 873
-        },
-        {
-          "d": "11-07",
-          "s": 873
-        },
-        {
-          "d": "11-08",
-          "s": 873
-        },
-        {
-          "d": "11-09",
-          "s": 873
-        },
-        {
-          "d": "11-10",
-          "s": 873
-        },
-        {
-          "d": "11-11",
-          "s": 873
-        },
-        {
-          "d": "11-12",
-          "s": 873
-        },
-        {
-          "d": "11-13",
-          "s": 878
-        },
-        {
-          "d": "11-14",
-          "s": 916
-        },
-        {
-          "d": "11-15",
-          "s": 942
-        },
-        {
-          "d": "11-16",
-          "s": 972
-        },
-        {
-          "d": "11-17",
-          "s": 985
-        },
-        {
-          "d": "11-18",
-          "s": 990
-        },
-        {
-          "d": "11-19",
-          "s": 993
-        },
-        {
-          "d": "11-20",
-          "s": 998
-        },
-        {
-          "d": "11-21",
-          "s": 999
-        }
-      ]
-    },
-    "score": {
-      "score": 33.77,
-      "breakdown": {
-        "vel": 64,
-        "acc": 46,
-        "health": 50,
+        "vel": 58,
+        "acc": 70,
+        "health": 69,
         "fresh": 0,
-        "signal": 40
+        "signal": 70
       },
       "stage": "early",
       "stage_multiplier": 1.2,
       "confidence": 1.0,
-      "base_score": 28.14,
-      "explanation": "DesktopEditors 是 PowerShell 方向的开源项目；处于增长早期，本周涨速 8.1 star/天。"
+      "base_score": 34.46,
+      "explanation": "sphaira 是 C++ 开源项目，主打「A homebrew menu for the Nintendo Switch」；处于增长早期，本周涨速 6.1 star/天，涨速在加快。"
     }
   },
   {
@@ -1509,7 +1668,7 @@
       "full_name": "LearnPrompt/humanize-ppt",
       "description": "AST-based outline director for human-centered AI presentation workflows.",
       "stars": 997,
-      "forks": 81,
+      "forks": 82,
       "open_issues": 0,
       "created_at": "2026-05-14T05:37:41+00:00",
       "pushed_at": "2026-11-18T15:01:27+00:00",
@@ -1533,10 +1692,6 @@
       "stars_7d_ago": 991,
       "star_series": [
         {
-          "d": "10-23",
-          "s": 980
-        },
-        {
           "d": "10-24",
           "s": 981
         },
@@ -1651,23 +1806,187 @@
         {
           "d": "11-21",
           "s": 997
+        },
+        {
+          "d": "11-22",
+          "s": 997
         }
       ]
     },
     "score": {
-      "score": 33.48,
+      "score": 33.67,
       "breakdown": {
         "vel": 18,
         "acc": 70,
-        "health": 86,
-        "fresh": 48,
+        "health": 87,
+        "fresh": 47,
         "signal": 100
       },
       "stage": "saturated",
       "stage_multiplier": 0.7,
       "confidence": 1.0,
-      "base_score": 47.83,
-      "explanation": "humanize-ppt 是 Python 开源项目，主打「AST-based outline director for human-centered AI presentation workflows.」；增长已饱和，涨速在加快；社区健康（fork/star 比 8.1%，0 个 open issue）、项目元数据完整。"
+      "base_score": 48.09,
+      "explanation": "humanize-ppt 是 Python 开源项目，主打「AST-based outline director for human-centered AI presentation workflows.」；增长已饱和，涨速在加快；社区健康（fork/star 比 8.2%，0 个 open issue）、项目元数据完整。"
+    }
+  },
+  {
+    "repo": {
+      "owner": "wjc9011",
+      "name": "COMSOL_Multiphysics_MCP",
+      "full_name": "wjc9011/COMSOL_Multiphysics_MCP",
+      "description": null,
+      "stars": 997,
+      "forks": 92,
+      "open_issues": 1,
+      "created_at": "2026-02-16T07:07:03+00:00",
+      "pushed_at": "2026-11-21T13:40:39+00:00",
+      "updated_at": "2026-11-22T13:45:59+00:00",
+      "topics": [],
+      "language": "Python",
+      "license": "MIT",
+      "homepage": null,
+      "html_url": "https://github.com/wjc9011/COMSOL_Multiphysics_MCP",
+      "default_branch": "main",
+      "archived": false,
+      "search_score": 1.0,
+      "stars_7d_ago": 977,
+      "star_series": [
+        {
+          "d": "10-24",
+          "s": 872
+        },
+        {
+          "d": "10-25",
+          "s": 877
+        },
+        {
+          "d": "10-26",
+          "s": 883
+        },
+        {
+          "d": "10-27",
+          "s": 891
+        },
+        {
+          "d": "10-28",
+          "s": 896
+        },
+        {
+          "d": "10-29",
+          "s": 901
+        },
+        {
+          "d": "10-30",
+          "s": 915
+        },
+        {
+          "d": "10-31",
+          "s": 917
+        },
+        {
+          "d": "11-01",
+          "s": 921
+        },
+        {
+          "d": "11-02",
+          "s": 927
+        },
+        {
+          "d": "11-03",
+          "s": 932
+        },
+        {
+          "d": "11-04",
+          "s": 938
+        },
+        {
+          "d": "11-05",
+          "s": 940
+        },
+        {
+          "d": "11-06",
+          "s": 942
+        },
+        {
+          "d": "11-07",
+          "s": 942
+        },
+        {
+          "d": "11-08",
+          "s": 944
+        },
+        {
+          "d": "11-09",
+          "s": 947
+        },
+        {
+          "d": "11-10",
+          "s": 954
+        },
+        {
+          "d": "11-11",
+          "s": 955
+        },
+        {
+          "d": "11-12",
+          "s": 958
+        },
+        {
+          "d": "11-13",
+          "s": 964
+        },
+        {
+          "d": "11-14",
+          "s": 967
+        },
+        {
+          "d": "11-15",
+          "s": 971
+        },
+        {
+          "d": "11-16",
+          "s": 977
+        },
+        {
+          "d": "11-17",
+          "s": 983
+        },
+        {
+          "d": "11-18",
+          "s": 986
+        },
+        {
+          "d": "11-19",
+          "s": 989
+        },
+        {
+          "d": "11-20",
+          "s": 992
+        },
+        {
+          "d": "11-21",
+          "s": 995
+        },
+        {
+          "d": "11-22",
+          "s": 997
+        }
+      ]
+    },
+    "score": {
+      "score": 30.83,
+      "breakdown": {
+        "vel": 40,
+        "acc": 42,
+        "health": 90,
+        "fresh": 24,
+        "signal": 40
+      },
+      "stage": "saturated",
+      "stage_multiplier": 0.7,
+      "confidence": 1.0,
+      "base_score": 44.04,
+      "explanation": "COMSOL_Multiphysics_MCP 是 Python 方向的开源项目；增长已饱和，本周涨速 2.9 star/天；社区健康（fork/star 比 9.2%，1 个 open issue）。"
     }
   },
   {
@@ -1676,12 +1995,12 @@
       "name": "repoprompt-ce",
       "full_name": "repoprompt/repoprompt-ce",
       "description": "Community edition of RepoPrompt: a native macOS context engineering app for AI coding agents, with an MCP CLI.",
-      "stars": 997,
+      "stars": 998,
       "forks": 142,
-      "open_issues": 160,
+      "open_issues": 155,
       "created_at": "2026-05-12T19:44:16+00:00",
-      "pushed_at": "2026-11-21T13:59:45+00:00",
-      "updated_at": "2026-11-16T21:07:23+00:00",
+      "pushed_at": "2026-11-22T13:11:58+00:00",
+      "updated_at": "2026-11-22T12:42:31+00:00",
       "topics": [
         "ai-agents",
         "coding-agents",
@@ -1700,103 +2019,99 @@
       "default_branch": "main",
       "archived": false,
       "search_score": 1.0,
-      "stars_7d_ago": 995,
+      "stars_7d_ago": 997,
       "star_series": [
         {
-          "d": "10-23",
-          "s": 995
-        },
-        {
           "d": "10-24",
-          "s": 995
+          "s": 997
         },
         {
           "d": "10-25",
-          "s": 995
+          "s": 997
         },
         {
           "d": "10-26",
-          "s": 995
+          "s": 997
         },
         {
           "d": "10-27",
-          "s": 995
+          "s": 997
         },
         {
           "d": "10-28",
-          "s": 995
+          "s": 997
         },
         {
           "d": "10-29",
-          "s": 995
+          "s": 997
         },
         {
           "d": "10-30",
-          "s": 995
+          "s": 997
         },
         {
           "d": "10-31",
-          "s": 995
+          "s": 997
         },
         {
           "d": "11-01",
-          "s": 995
+          "s": 997
         },
         {
           "d": "11-02",
-          "s": 995
+          "s": 997
         },
         {
           "d": "11-03",
-          "s": 995
+          "s": 997
         },
         {
           "d": "11-04",
-          "s": 995
+          "s": 997
         },
         {
           "d": "11-05",
-          "s": 995
+          "s": 997
         },
         {
           "d": "11-06",
-          "s": 995
+          "s": 997
         },
         {
           "d": "11-07",
-          "s": 995
+          "s": 997
         },
         {
           "d": "11-08",
-          "s": 995
+          "s": 997
         },
         {
           "d": "11-09",
-          "s": 995
+          "s": 997
         },
         {
           "d": "11-10",
-          "s": 995
+          "s": 997
         },
         {
           "d": "11-11",
-          "s": 995
+          "s": 997
         },
         {
           "d": "11-12",
-          "s": 995
+          "s": 997
         },
         {
           "d": "11-13",
-          "s": 995
+          "s": 997
         },
         {
           "d": "11-14",
-          "s": 995
+          "s": 997
         },
         {
           "d": "11-15",
-          "s": 995
+          "s": 997
         },
         {
           "d": "11-16",
@@ -1821,14 +2136,18 @@
         {
           "d": "11-21",
           "s": 997
+        },
+        {
+          "d": "11-22",
+          "s": 998
         }
       ]
     },
     "score": {
-      "score": 33.15,
+      "score": 27.77,
       "breakdown": {
-        "vel": 7,
-        "acc": 57,
+        "vel": 4,
+        "acc": 54,
         "health": 70,
         "fresh": 47,
         "signal": 85
@@ -1836,172 +2155,679 @@
       "stage": "mid_late",
       "stage_multiplier": 1.0,
       "confidence": 1.0,
-      "base_score": 33.15,
+      "base_score": 27.77,
       "explanation": "repoprompt-ce 是 Swift 开源项目，主打「Community edition of RepoPrompt: a native macOS context engineering app for AI coding agents, with an MCP CLI.」；处于中后期增长；项目元数据完整。"
     }
   },
   {
     "repo": {
-      "owner": "tenngoxars",
-      "name": "WeMD",
-      "full_name": "tenngoxars/WeMD",
-      "description": "更优雅的 Markdown 公众号编辑器",
-      "stars": 999,
-      "forks": 146,
-      "open_issues": 0,
-      "created_at": "2025-11-27T06:41:04+00:00",
-      "pushed_at": "2026-11-20T03:45:39+00:00",
-      "updated_at": "2026-11-20T09:15:33+00:00",
-      "topics": [
-        "markdown-editor",
-        "markdown-it",
-        "markdown-to-html"
-      ],
-      "language": "TypeScript",
-      "license": "MIT",
-      "homepage": "https://wemd.app",
-      "html_url": "https://github.com/tenngoxars/WeMD",
+      "owner": "NVIDIA",
+      "name": "ncore",
+      "full_name": "NVIDIA/ncore",
+      "description": "Data representations, APIs, and tools for high quality AV and robotics applications",
+      "stars": 200,
+      "forks": 38,
+      "open_issues": 6,
+      "created_at": "2026-02-10T12:55:25+00:00",
+      "pushed_at": "2026-11-20T12:47:11+00:00",
+      "updated_at": "2026-11-17T16:42:30+00:00",
+      "topics": [],
+      "language": "Python",
+      "license": "Apache-2.0",
+      "homepage": null,
+      "html_url": "https://github.com/NVIDIA/ncore",
       "default_branch": "main",
       "archived": false,
       "search_score": 1.0,
-      "stars_7d_ago": 994,
+      "stars_7d_ago": 199,
       "star_series": [
         {
-          "d": "10-23",
-          "s": 982
-        },
-        {
           "d": "10-24",
-          "s": 982
+          "s": 199
         },
         {
           "d": "10-25",
-          "s": 982
+          "s": 199
         },
         {
           "d": "10-26",
-          "s": 982
+          "s": 199
         },
         {
           "d": "10-27",
-          "s": 982
+          "s": 199
         },
         {
           "d": "10-28",
-          "s": 982
+          "s": 199
         },
         {
           "d": "10-29",
-          "s": 982
+          "s": 199
         },
         {
           "d": "10-30",
-          "s": 983
+          "s": 199
         },
         {
           "d": "10-31",
-          "s": 983
+          "s": 199
         },
         {
           "d": "11-01",
-          "s": 983
+          "s": 199
         },
         {
           "d": "11-02",
-          "s": 984
+          "s": 199
         },
         {
           "d": "11-03",
-          "s": 987
+          "s": 199
         },
         {
           "d": "11-04",
-          "s": 988
+          "s": 199
         },
         {
           "d": "11-05",
-          "s": 989
+          "s": 199
         },
         {
           "d": "11-06",
-          "s": 989
+          "s": 199
         },
         {
           "d": "11-07",
-          "s": 990
+          "s": 199
         },
         {
           "d": "11-08",
-          "s": 991
+          "s": 199
         },
         {
           "d": "11-09",
-          "s": 992
+          "s": 199
         },
         {
           "d": "11-10",
-          "s": 993
+          "s": 199
         },
         {
           "d": "11-11",
-          "s": 993
+          "s": 199
         },
         {
           "d": "11-12",
-          "s": 993
+          "s": 199
         },
         {
           "d": "11-13",
-          "s": 993
+          "s": 199
         },
         {
           "d": "11-14",
-          "s": 993
+          "s": 199
         },
         {
           "d": "11-15",
-          "s": 994
+          "s": 199
         },
         {
           "d": "11-16",
-          "s": 995
+          "s": 199
         },
         {
           "d": "11-17",
-          "s": 995
+          "s": 200
         },
         {
           "d": "11-18",
-          "s": 996
+          "s": 200
         },
         {
           "d": "11-19",
-          "s": 998
+          "s": 200
         },
         {
           "d": "11-20",
-          "s": 999
+          "s": 200
         },
         {
           "d": "11-21",
-          "s": 999
+          "s": 200
+        },
+        {
+          "d": "11-22",
+          "s": 200
         }
       ]
     },
     "score": {
-      "score": 31.02,
+      "score": 27.77,
       "breakdown": {
-        "vel": 16,
-        "acc": 57,
-        "health": 100,
-        "fresh": 2,
-        "signal": 85
+        "vel": 4,
+        "acc": 54,
+        "health": 96,
+        "fresh": 22,
+        "signal": 55
       },
       "stage": "mid_early",
       "stage_multiplier": 1.1,
       "confidence": 1.0,
-      "base_score": 28.2,
-      "explanation": "WeMD 是 TypeScript 开源项目，主打「更优雅的 Markdown 公众号编辑器」；处于中早期增长；社区健康（fork/star 比 14.6%，0 个 open issue）、项目元数据完整。"
+      "base_score": 25.24,
+      "explanation": "ncore 是 Python 开源项目，主打「Data representations, APIs, and tools for high quality AV and robotics applications」；处于中早期增长；社区健康（fork/star 比 19.0%，6 个 open issue）。"
+    }
+  },
+  {
+    "repo": {
+      "owner": "Delta-Kronecker",
+      "name": "Delta-Tor",
+      "full_name": "Delta-Kronecker/Delta-Tor",
+      "description": "fast simple multi platform TOR client with built in bridge",
+      "stars": 200,
+      "forks": 12,
+      "open_issues": 7,
+      "created_at": "2026-02-23T23:13:46+00:00",
+      "pushed_at": "2026-11-20T23:58:39+00:00",
+      "updated_at": "2026-11-20T06:47:40+00:00",
+      "topics": [
+        "bridges",
+        "network",
+        "obfs4",
+        "privacy",
+        "proxy",
+        "proxy-client",
+        "proxy-server",
+        "tor",
+        "tor-bridge",
+        "tor-browser",
+        "tor-client",
+        "tor-expert-bundle",
+        "vanilla",
+        "vpn",
+        "vpn-client",
+        "vpn-server",
+        "webtunnel"
+      ],
+      "language": "C",
+      "license": "MIT",
+      "homepage": "https://delta-tor-official.github.io/",
+      "html_url": "https://github.com/Delta-Kronecker/Delta-Tor",
+      "default_branch": "main",
+      "archived": false,
+      "search_score": 1.0,
+      "stars_7d_ago": 196,
+      "star_series": [
+        {
+          "d": "10-24",
+          "s": 154
+        },
+        {
+          "d": "10-25",
+          "s": 154
+        },
+        {
+          "d": "10-26",
+          "s": 154
+        },
+        {
+          "d": "10-27",
+          "s": 154
+        },
+        {
+          "d": "10-28",
+          "s": 154
+        },
+        {
+          "d": "10-29",
+          "s": 154
+        },
+        {
+          "d": "10-30",
+          "s": 157
+        },
+        {
+          "d": "10-31",
+          "s": 159
+        },
+        {
+          "d": "11-01",
+          "s": 166
+        },
+        {
+          "d": "11-02",
+          "s": 171
+        },
+        {
+          "d": "11-03",
+          "s": 172
+        },
+        {
+          "d": "11-04",
+          "s": 175
+        },
+        {
+          "d": "11-05",
+          "s": 176
+        },
+        {
+          "d": "11-06",
+          "s": 178
+        },
+        {
+          "d": "11-07",
+          "s": 181
+        },
+        {
+          "d": "11-08",
+          "s": 183
+        },
+        {
+          "d": "11-09",
+          "s": 185
+        },
+        {
+          "d": "11-10",
+          "s": 187
+        },
+        {
+          "d": "11-11",
+          "s": 189
+        },
+        {
+          "d": "11-12",
+          "s": 190
+        },
+        {
+          "d": "11-13",
+          "s": 192
+        },
+        {
+          "d": "11-14",
+          "s": 194
+        },
+        {
+          "d": "11-15",
+          "s": 196
+        },
+        {
+          "d": "11-16",
+          "s": 196
+        },
+        {
+          "d": "11-17",
+          "s": 196
+        },
+        {
+          "d": "11-18",
+          "s": 199
+        },
+        {
+          "d": "11-19",
+          "s": 199
+        },
+        {
+          "d": "11-20",
+          "s": 200
+        },
+        {
+          "d": "11-21",
+          "s": 200
+        },
+        {
+          "d": "11-22",
+          "s": 200
+        }
+      ]
+    },
+    "score": {
+      "score": 27.21,
+      "breakdown": {
+        "vel": 13,
+        "acc": 35,
+        "health": 69,
+        "fresh": 26,
+        "signal": 100
+      },
+      "stage": "late",
+      "stage_multiplier": 0.85,
+      "confidence": 1.0,
+      "base_score": 32.02,
+      "explanation": "Delta-Tor 是 C 开源项目，主打「fast simple multi platform TOR client with built in bridge」；接近增长天花板；项目元数据完整。"
+    }
+  },
+  {
+    "repo": {
+      "owner": "hddq",
+      "name": "restoid",
+      "full_name": "hddq/restoid",
+      "description": "Secure, deduplicated backup tool for Android powered by restic",
+      "stars": 200,
+      "forks": 16,
+      "open_issues": 13,
+      "created_at": "2025-09-11T00:29:03+00:00",
+      "pushed_at": "2026-11-22T13:51:42+00:00",
+      "updated_at": "2026-11-20T20:30:44+00:00",
+      "topics": [
+        "android",
+        "android-application",
+        "backup",
+        "backup-tool",
+        "magisk",
+        "restic"
+      ],
+      "language": "Kotlin",
+      "license": "GPL-3.0",
+      "homepage": "https://hddq.github.io/restoid/fdroid/repo",
+      "html_url": "https://github.com/hddq/restoid",
+      "default_branch": "master",
+      "archived": false,
+      "search_score": 1.0,
+      "stars_7d_ago": 194,
+      "star_series": [
+        {
+          "d": "10-24",
+          "s": 192
+        },
+        {
+          "d": "10-25",
+          "s": 192
+        },
+        {
+          "d": "10-26",
+          "s": 192
+        },
+        {
+          "d": "10-27",
+          "s": 192
+        },
+        {
+          "d": "10-28",
+          "s": 192
+        },
+        {
+          "d": "10-29",
+          "s": 192
+        },
+        {
+          "d": "10-30",
+          "s": 192
+        },
+        {
+          "d": "10-31",
+          "s": 192
+        },
+        {
+          "d": "11-01",
+          "s": 192
+        },
+        {
+          "d": "11-02",
+          "s": 192
+        },
+        {
+          "d": "11-03",
+          "s": 192
+        },
+        {
+          "d": "11-04",
+          "s": 192
+        },
+        {
+          "d": "11-05",
+          "s": 192
+        },
+        {
+          "d": "11-06",
+          "s": 192
+        },
+        {
+          "d": "11-07",
+          "s": 192
+        },
+        {
+          "d": "11-08",
+          "s": 192
+        },
+        {
+          "d": "11-09",
+          "s": 192
+        },
+        {
+          "d": "11-10",
+          "s": 192
+        },
+        {
+          "d": "11-11",
+          "s": 192
+        },
+        {
+          "d": "11-12",
+          "s": 192
+        },
+        {
+          "d": "11-13",
+          "s": 192
+        },
+        {
+          "d": "11-14",
+          "s": 192
+        },
+        {
+          "d": "11-15",
+          "s": 192
+        },
+        {
+          "d": "11-16",
+          "s": 194
+        },
+        {
+          "d": "11-17",
+          "s": 195
+        },
+        {
+          "d": "11-18",
+          "s": 197
+        },
+        {
+          "d": "11-19",
+          "s": 199
+        },
+        {
+          "d": "11-20",
+          "s": 200
+        },
+        {
+          "d": "11-21",
+          "s": 200
+        },
+        {
+          "d": "11-22",
+          "s": 200
+        }
+      ]
+    },
+    "score": {
+      "score": 27.04,
+      "breakdown": {
+        "vel": 18,
+        "acc": 64,
+        "health": 68,
+        "fresh": 0,
+        "signal": 100
+      },
+      "stage": "mid_early",
+      "stage_multiplier": 1.1,
+      "confidence": 1.0,
+      "base_score": 24.58,
+      "explanation": "restoid 是 Kotlin 开源项目，主打「Secure, deduplicated backup tool for Android powered by restic」；处于中早期增长；项目元数据完整。"
+    }
+  },
+  {
+    "repo": {
+      "owner": "Memetrix",
+      "name": "gran-turismo-psp-career",
+      "full_name": "Memetrix/gran-turismo-psp-career",
+      "description": "Gran Turismo PSP Career: the career mode Gran Turismo PSP never got. Championships, a tuning shop, endurance races and lost tracks.",
+      "stars": 200,
+      "forks": 7,
+      "open_issues": 79,
+      "created_at": "2026-09-23T22:48:45+00:00",
+      "pushed_at": "2026-11-18T13:51:00+00:00",
+      "updated_at": "2026-11-21T17:53:49+00:00",
+      "topics": [
+        "career-mode",
+        "game-mod",
+        "gran-turismo",
+        "ppsspp",
+        "psp"
+      ],
+      "language": "JavaScript",
+      "license": "GPL-3.0",
+      "homepage": "https://memetrix.github.io/gran-turismo-psp-career/",
+      "html_url": "https://github.com/Memetrix/gran-turismo-psp-career",
+      "default_branch": "main",
+      "archived": false,
+      "search_score": 1.0,
+      "stars_7d_ago": 196,
+      "star_series": [
+        {
+          "d": "10-24",
+          "s": 148
+        },
+        {
+          "d": "10-25",
+          "s": 150
+        },
+        {
+          "d": "10-26",
+          "s": 152
+        },
+        {
+          "d": "10-27",
+          "s": 152
+        },
+        {
+          "d": "10-28",
+          "s": 154
+        },
+        {
+          "d": "10-29",
+          "s": 157
+        },
+        {
+          "d": "10-30",
+          "s": 158
+        },
+        {
+          "d": "10-31",
+          "s": 165
+        },
+        {
+          "d": "11-01",
+          "s": 168
+        },
+        {
+          "d": "11-02",
+          "s": 171
+        },
+        {
+          "d": "11-03",
+          "s": 175
+        },
+        {
+          "d": "11-04",
+          "s": 179
+        },
+        {
+          "d": "11-05",
+          "s": 183
+        },
+        {
+          "d": "11-06",
+          "s": 184
+        },
+        {
+          "d": "11-07",
+          "s": 185
+        },
+        {
+          "d": "11-08",
+          "s": 186
+        },
+        {
+          "d": "11-09",
+          "s": 186
+        },
+        {
+          "d": "11-10",
+          "s": 189
+        },
+        {
+          "d": "11-11",
+          "s": 189
+        },
+        {
+          "d": "11-12",
+          "s": 189
+        },
+        {
+          "d": "11-13",
+          "s": 191
+        },
+        {
+          "d": "11-14",
+          "s": 193
+        },
+        {
+          "d": "11-15",
+          "s": 194
+        },
+        {
+          "d": "11-16",
+          "s": 196
+        },
+        {
+          "d": "11-17",
+          "s": 196
+        },
+        {
+          "d": "11-18",
+          "s": 196
+        },
+        {
+          "d": "11-19",
+          "s": 197
+        },
+        {
+          "d": "11-20",
+          "s": 198
+        },
+        {
+          "d": "11-21",
+          "s": 200
+        },
+        {
+          "d": "11-22",
+          "s": 200
+        }
+      ]
+    },
+    "score": {
+      "score": 23.75,
+      "breakdown": {
+        "vel": 13,
+        "acc": 35,
+        "health": 37,
+        "fresh": 84,
+        "signal": 100
+      },
+      "stage": "saturated",
+      "stage_multiplier": 0.7,
+      "confidence": 1.0,
+      "base_score": 33.94,
+      "explanation": "gran-turismo-psp-career 是 JavaScript 开源项目，主打「Gran Turismo PSP Career: the career mode Gran Turismo PSP never got. Championships, a tuning shop, endurance races and lost tracks.」；增长已饱和；项目元数据完整、开发活跃。"
     }
   },
   {
@@ -2014,7 +2840,7 @@
       "forks": 92,
       "open_issues": 0,
       "created_at": "2024-08-13T17:13:22+00:00",
-      "pushed_at": "2026-11-21T09:52:24+00:00",
+      "pushed_at": "2026-11-22T10:28:38+00:00",
       "updated_at": "2026-11-21T10:11:20+00:00",
       "topics": [],
       "language": null,
@@ -2026,10 +2852,6 @@
       "search_score": 1.0,
       "stars_7d_ago": 994,
       "star_series": [
-        {
-          "d": "10-23",
-          "s": 983
-        },
         {
           "d": "10-24",
           "s": 983
@@ -2145,11 +2967,15 @@
         {
           "d": "11-21",
           "s": 998
+        },
+        {
+          "d": "11-22",
+          "s": 998
         }
       ]
     },
     "score": {
-      "score": 23.49,
+      "score": 23.62,
       "breakdown": {
         "vel": 13,
         "acc": 50,
@@ -2160,179 +2986,8 @@
       "stage": "mid_early",
       "stage_multiplier": 1.1,
       "confidence": 1.0,
-      "base_score": 21.36,
+      "base_score": 21.48,
       "explanation": "icons 是 未知语言 开源项目，主打「Collection of icons and logos maintained by selfh.st」；处于中早期增长；社区健康（fork/star 比 9.2%，0 个 open issue）。"
-    }
-  },
-  {
-    "repo": {
-      "owner": "Pouzor",
-      "name": "homelable-hacs",
-      "full_name": "Pouzor/homelable-hacs",
-      "description": "Home Assistant integration for Homelable — interactive homelab network topology, scanning and live status checks, distributed via HACS",
-      "stars": 200,
-      "forks": 19,
-      "open_issues": 9,
-      "created_at": "2026-04-29T16:43:01+00:00",
-      "pushed_at": "2026-11-17T22:59:32+00:00",
-      "updated_at": "2026-11-21T11:20:36+00:00",
-      "topics": [
-        "canvas",
-        "hacs",
-        "home-assistant",
-        "home-assistant-integration",
-        "homelab",
-        "homelable",
-        "network",
-        "nmap",
-        "topology",
-        "zigbee"
-      ],
-      "language": "TypeScript",
-      "license": "MIT",
-      "homepage": null,
-      "html_url": "https://github.com/Pouzor/homelable-hacs",
-      "default_branch": "main",
-      "archived": false,
-      "search_score": 1.0,
-      "stars_7d_ago": 198,
-      "star_series": [
-        {
-          "d": "10-23",
-          "s": 177
-        },
-        {
-          "d": "10-24",
-          "s": 177
-        },
-        {
-          "d": "10-25",
-          "s": 178
-        },
-        {
-          "d": "10-26",
-          "s": 179
-        },
-        {
-          "d": "10-27",
-          "s": 180
-        },
-        {
-          "d": "10-28",
-          "s": 183
-        },
-        {
-          "d": "10-29",
-          "s": 188
-        },
-        {
-          "d": "10-30",
-          "s": 188
-        },
-        {
-          "d": "10-31",
-          "s": 189
-        },
-        {
-          "d": "11-01",
-          "s": 189
-        },
-        {
-          "d": "11-02",
-          "s": 189
-        },
-        {
-          "d": "11-03",
-          "s": 189
-        },
-        {
-          "d": "11-04",
-          "s": 192
-        },
-        {
-          "d": "11-05",
-          "s": 193
-        },
-        {
-          "d": "11-06",
-          "s": 194
-        },
-        {
-          "d": "11-07",
-          "s": 194
-        },
-        {
-          "d": "11-08",
-          "s": 194
-        },
-        {
-          "d": "11-09",
-          "s": 194
-        },
-        {
-          "d": "11-10",
-          "s": 195
-        },
-        {
-          "d": "11-11",
-          "s": 196
-        },
-        {
-          "d": "11-12",
-          "s": 196
-        },
-        {
-          "d": "11-13",
-          "s": 198
-        },
-        {
-          "d": "11-14",
-          "s": 198
-        },
-        {
-          "d": "11-15",
-          "s": 198
-        },
-        {
-          "d": "11-16",
-          "s": 198
-        },
-        {
-          "d": "11-17",
-          "s": 198
-        },
-        {
-          "d": "11-18",
-          "s": 198
-        },
-        {
-          "d": "11-19",
-          "s": 198
-        },
-        {
-          "d": "11-20",
-          "s": 199
-        },
-        {
-          "d": "11-21",
-          "s": 200
-        }
-      ]
-    },
-    "score": {
-      "score": 21.36,
-      "breakdown": {
-        "vel": 7,
-        "acc": 43,
-        "health": 78,
-        "fresh": 44,
-        "signal": 70
-      },
-      "stage": "saturated",
-      "stage_multiplier": 0.7,
-      "confidence": 1.0,
-      "base_score": 30.51,
-      "explanation": "homelable-hacs 是 TypeScript 开源项目，主打「Home Assistant integration for Homelable — interactive homelab network topology, scanning and live status checks, distributed via HACS」；增长已饱和；社区健康（fork/star 比 9.5%，9 个 open issue）。"
     }
   },
   {
@@ -2341,12 +2996,12 @@
       "name": "review-prompts",
       "full_name": "masoncl/review-prompts",
       "description": "AI review prompts",
-      "stars": 996,
+      "stars": 997,
       "forks": 161,
       "open_issues": 17,
       "created_at": "2025-09-17T18:44:03+00:00",
       "pushed_at": "2026-11-17T20:56:01+00:00",
-      "updated_at": "2026-11-20T14:42:18+00:00",
+      "updated_at": "2026-11-21T19:26:18+00:00",
       "topics": [],
       "language": "Python",
       "license": "MIT",
@@ -2357,10 +3012,6 @@
       "search_score": 1.0,
       "stars_7d_ago": 993,
       "star_series": [
-        {
-          "d": "10-23",
-          "s": 983
-        },
         {
           "d": "10-24",
           "s": 984
@@ -2475,15 +3126,19 @@
         },
         {
           "d": "11-21",
-          "s": 996
+          "s": 997
+        },
+        {
+          "d": "11-22",
+          "s": 997
         }
       ]
     },
     "score": {
-      "score": 21.3,
+      "score": 23.38,
       "breakdown": {
-        "vel": 10,
-        "acc": 46,
+        "vel": 13,
+        "acc": 50,
         "health": 97,
         "fresh": 0,
         "signal": 55
@@ -2491,238 +3146,74 @@
       "stage": "mid_early",
       "stage_multiplier": 1.1,
       "confidence": 1.0,
-      "base_score": 19.36,
-      "explanation": "review-prompts 是 Python 开源项目，主打「AI review prompts」；处于中早期增长；社区健康（fork/star 比 16.2%，17 个 open issue）。"
+      "base_score": 21.25,
+      "explanation": "review-prompts 是 Python 开源项目，主打「AI review prompts」；处于中早期增长；社区健康（fork/star 比 16.1%，17 个 open issue）。"
     }
   },
   {
     "repo": {
-      "owner": "simonw",
-      "name": "llm-prices",
-      "full_name": "simonw/llm-prices",
-      "description": "Prices of various LLMs",
+      "owner": "sbr0574",
+      "name": "StockWidget",
+      "full_name": "sbr0574/StockWidget",
+      "description": "简洁股票盯盘工具，实时行情，支持全球股指、置顶浮窗显示、自由摆放，兼容Windows/macOS/Linux多平台",
       "stars": 200,
-      "forks": 65,
-      "open_issues": 34,
-      "created_at": "2025-04-24T00:58:54+00:00",
-      "pushed_at": "2026-11-18T23:06:10+00:00",
-      "updated_at": "2026-11-19T06:33:41+00:00",
-      "topics": [],
-      "language": "HTML",
-      "license": null,
-      "homepage": "https://www.llm-prices.com",
-      "html_url": "https://github.com/simonw/llm-prices",
-      "default_branch": "main",
-      "archived": false,
-      "search_score": 1.0,
-      "stars_7d_ago": 198,
-      "star_series": [
-        {
-          "d": "10-23",
-          "s": 196
-        },
-        {
-          "d": "10-24",
-          "s": 196
-        },
-        {
-          "d": "10-25",
-          "s": 196
-        },
-        {
-          "d": "10-26",
-          "s": 196
-        },
-        {
-          "d": "10-27",
-          "s": 196
-        },
-        {
-          "d": "10-28",
-          "s": 196
-        },
-        {
-          "d": "10-29",
-          "s": 196
-        },
-        {
-          "d": "10-30",
-          "s": 196
-        },
-        {
-          "d": "10-31",
-          "s": 196
-        },
-        {
-          "d": "11-01",
-          "s": 196
-        },
-        {
-          "d": "11-02",
-          "s": 196
-        },
-        {
-          "d": "11-03",
-          "s": 196
-        },
-        {
-          "d": "11-04",
-          "s": 196
-        },
-        {
-          "d": "11-05",
-          "s": 197
-        },
-        {
-          "d": "11-06",
-          "s": 197
-        },
-        {
-          "d": "11-07",
-          "s": 197
-        },
-        {
-          "d": "11-08",
-          "s": 197
-        },
-        {
-          "d": "11-09",
-          "s": 197
-        },
-        {
-          "d": "11-10",
-          "s": 197
-        },
-        {
-          "d": "11-11",
-          "s": 197
-        },
-        {
-          "d": "11-12",
-          "s": 197
-        },
-        {
-          "d": "11-13",
-          "s": 198
-        },
-        {
-          "d": "11-14",
-          "s": 198
-        },
-        {
-          "d": "11-15",
-          "s": 198
-        },
-        {
-          "d": "11-16",
-          "s": 198
-        },
-        {
-          "d": "11-17",
-          "s": 199
-        },
-        {
-          "d": "11-18",
-          "s": 199
-        },
-        {
-          "d": "11-19",
-          "s": 200
-        },
-        {
-          "d": "11-20",
-          "s": 200
-        },
-        {
-          "d": "11-21",
-          "s": 200
-        }
-      ]
-    },
-    "score": {
-      "score": 18.52,
-      "breakdown": {
-        "vel": 7,
-        "acc": 54,
-        "health": 70,
-        "fresh": 0,
-        "signal": 50
-      },
-      "stage": "mid_early",
-      "stage_multiplier": 1.1,
-      "confidence": 1.0,
-      "base_score": 16.83,
-      "explanation": "llm-prices 是 HTML 开源项目，主打「Prices of various LLMs」；处于中早期增长。"
-    }
-  },
-  {
-    "repo": {
-      "owner": "mazzz1y",
-      "name": "peel",
-      "full_name": "mazzz1y/peel",
-      "description": "Turn any website into a native-like Android app",
-      "stars": 200,
-      "forks": 6,
-      "open_issues": 32,
-      "created_at": "2026-02-08T16:56:41+00:00",
-      "pushed_at": "2026-11-16T08:38:47+00:00",
-      "updated_at": "2026-11-21T09:26:49+00:00",
+      "forks": 42,
+      "open_issues": 1,
+      "created_at": "2025-08-22T16:27:24+00:00",
+      "pushed_at": "2026-11-20T06:33:50+00:00",
+      "updated_at": "2026-11-20T16:20:29+00:00",
       "topics": [
-        "android",
-        "firefox",
-        "firefox-extension",
-        "geckoview",
-        "privacy",
-        "pwa"
+        "pyside",
+        "python3",
+        "qt",
+        "stock",
+        "stock-prices",
+        "widget"
       ],
-      "language": "Kotlin",
-      "license": "GPL-3.0",
+      "language": "Python",
+      "license": "Apache-2.0",
       "homepage": null,
-      "html_url": "https://github.com/mazzz1y/peel",
+      "html_url": "https://github.com/sbr0574/StockWidget",
       "default_branch": "main",
       "archived": false,
       "search_score": 1.0,
-      "stars_7d_ago": 197,
+      "stars_7d_ago": 194,
       "star_series": [
         {
-          "d": "10-23",
-          "s": 171
-        },
-        {
           "d": "10-24",
-          "s": 172
+          "s": 176
         },
         {
           "d": "10-25",
-          "s": 173
+          "s": 176
         },
         {
           "d": "10-26",
-          "s": 173
+          "s": 178
         },
         {
           "d": "10-27",
-          "s": 174
+          "s": 181
         },
         {
           "d": "10-28",
-          "s": 174
+          "s": 181
         },
         {
           "d": "10-29",
-          "s": 175
-        },
-        {
-          "d": "10-30",
-          "s": 180
-        },
-        {
-          "d": "10-31",
           "s": 182
         },
         {
-          "d": "11-01",
+          "d": "10-30",
+          "s": 183
+        },
+        {
+          "d": "10-31",
           "s": 184
+        },
+        {
+          "d": "11-01",
+          "s": 185
         },
         {
           "d": "11-02",
@@ -2730,7 +3221,7 @@
         },
         {
           "d": "11-03",
-          "s": 186
+          "s": 187
         },
         {
           "d": "11-04",
@@ -2746,51 +3237,556 @@
         },
         {
           "d": "11-07",
-          "s": 190
+          "s": 189
         },
         {
           "d": "11-08",
-          "s": 192
+          "s": 189
         },
         {
           "d": "11-09",
-          "s": 192
+          "s": 189
         },
         {
           "d": "11-10",
-          "s": 193
+          "s": 190
         },
         {
           "d": "11-11",
-          "s": 194
+          "s": 191
         },
         {
           "d": "11-12",
-          "s": 196
+          "s": 191
         },
         {
           "d": "11-13",
-          "s": 196
+          "s": 192
         },
         {
           "d": "11-14",
-          "s": 196
+          "s": 192
         },
         {
           "d": "11-15",
-          "s": 197
+          "s": 192
         },
         {
           "d": "11-16",
-          "s": 197
+          "s": 194
         },
         {
           "d": "11-17",
-          "s": 197
+          "s": 195
         },
         {
           "d": "11-18",
+          "s": 196
+        },
+        {
+          "d": "11-19",
           "s": 197
+        },
+        {
+          "d": "11-20",
+          "s": 200
+        },
+        {
+          "d": "11-21",
+          "s": 200
+        },
+        {
+          "d": "11-22",
+          "s": 200
+        }
+      ]
+    },
+    "score": {
+      "score": 20.8,
+      "breakdown": {
+        "vel": 18,
+        "acc": 54,
+        "health": 100,
+        "fresh": 0,
+        "signal": 70
+      },
+      "stage": "late",
+      "stage_multiplier": 0.85,
+      "confidence": 1.0,
+      "base_score": 24.48,
+      "explanation": "StockWidget 是 Python 开源项目，主打「简洁股票盯盘工具，实时行情，支持全球股指、置顶浮窗显示、自由摆放，兼容Windows/macOS/Linux多平台」；接近增长天花板；社区健康（fork/star 比 21.0%，1 个 open issue）。"
+    }
+  },
+  {
+    "repo": {
+      "owner": "FutureProofHomes",
+      "name": "Satellite1-ESPHome",
+      "full_name": "FutureProofHomes/Satellite1-ESPHome",
+      "description": "Open Source ESPHome Firmware for Your Private AI-Powered Satellite1 Voice Assistant & Multisensor",
+      "stars": 200,
+      "forks": 95,
+      "open_issues": 52,
+      "created_at": "2024-06-23T00:19:49+00:00",
+      "pushed_at": "2026-11-18T11:19:32+00:00",
+      "updated_at": "2026-11-18T19:11:39+00:00",
+      "topics": [
+        "esphome",
+        "firmware",
+        "home-assistant"
+      ],
+      "language": "C++",
+      "license": "NOASSERTION",
+      "homepage": "https://FutureProofHomes.net",
+      "html_url": "https://github.com/FutureProofHomes/Satellite1-ESPHome",
+      "default_branch": "develop",
+      "archived": false,
+      "search_score": 1.0,
+      "stars_7d_ago": 198,
+      "star_series": [
+        {
+          "d": "10-24",
+          "s": 191
+        },
+        {
+          "d": "10-25",
+          "s": 193
+        },
+        {
+          "d": "10-26",
+          "s": 194
+        },
+        {
+          "d": "10-27",
+          "s": 194
+        },
+        {
+          "d": "10-28",
+          "s": 194
+        },
+        {
+          "d": "10-29",
+          "s": 194
+        },
+        {
+          "d": "10-30",
+          "s": 194
+        },
+        {
+          "d": "10-31",
+          "s": 194
+        },
+        {
+          "d": "11-01",
+          "s": 194
+        },
+        {
+          "d": "11-02",
+          "s": 195
+        },
+        {
+          "d": "11-03",
+          "s": 195
+        },
+        {
+          "d": "11-04",
+          "s": 195
+        },
+        {
+          "d": "11-05",
+          "s": 195
+        },
+        {
+          "d": "11-06",
+          "s": 195
+        },
+        {
+          "d": "11-07",
+          "s": 195
+        },
+        {
+          "d": "11-08",
+          "s": 195
+        },
+        {
+          "d": "11-09",
+          "s": 195
+        },
+        {
+          "d": "11-10",
+          "s": 196
+        },
+        {
+          "d": "11-11",
+          "s": 197
+        },
+        {
+          "d": "11-12",
+          "s": 197
+        },
+        {
+          "d": "11-13",
+          "s": 197
+        },
+        {
+          "d": "11-14",
+          "s": 197
+        },
+        {
+          "d": "11-15",
+          "s": 198
+        },
+        {
+          "d": "11-16",
+          "s": 198
+        },
+        {
+          "d": "11-17",
+          "s": 199
+        },
+        {
+          "d": "11-18",
+          "s": 200
+        },
+        {
+          "d": "11-19",
+          "s": 200
+        },
+        {
+          "d": "11-20",
+          "s": 200
+        },
+        {
+          "d": "11-21",
+          "s": 200
+        },
+        {
+          "d": "11-22",
+          "s": 200
+        }
+      ]
+    },
+    "score": {
+      "score": 19.17,
+      "breakdown": {
+        "vel": 7,
+        "acc": 46,
+        "health": 49,
+        "fresh": 0,
+        "signal": 85
+      },
+      "stage": "early",
+      "stage_multiplier": 1.2,
+      "confidence": 1.0,
+      "base_score": 15.97,
+      "explanation": "Satellite1-ESPHome 是 C++ 开源项目，主打「Open Source ESPHome Firmware for Your Private AI-Powered Satellite1 Voice Assistant & Multisensor」；处于增长早期；项目元数据完整。"
+    }
+  },
+  {
+    "repo": {
+      "owner": "harys722",
+      "name": "free-domains",
+      "full_name": "harys722/free-domains",
+      "description": "A big list of free subdomains for personal websites, portfolios, open-source projects, and other online projects.",
+      "stars": 200,
+      "forks": 29,
+      "open_issues": 0,
+      "created_at": "2025-06-19T15:10:53+00:00",
+      "pushed_at": "2026-11-22T12:49:25+00:00",
+      "updated_at": "2026-11-22T11:33:48+00:00",
+      "topics": [
+        "awesome",
+        "awesome-list",
+        "awesome-lists",
+        "database",
+        "dev-tools",
+        "developer-tools",
+        "dns",
+        "domains",
+        "free",
+        "free-domain",
+        "free-domains",
+        "free-for-dev",
+        "free-for-everyone",
+        "free-for-life",
+        "freecodecamp",
+        "freedoms",
+        "information",
+        "namespace",
+        "subdomains",
+        "website"
+      ],
+      "language": "JavaScript",
+      "license": "MIT",
+      "homepage": "https://freedomains.web.app",
+      "html_url": "https://github.com/harys722/free-domains",
+      "default_branch": "main",
+      "archived": false,
+      "search_score": 1.0,
+      "stars_7d_ago": 193,
+      "star_series": [
+        {
+          "d": "10-24",
+          "s": 164
+        },
+        {
+          "d": "10-25",
+          "s": 165
+        },
+        {
+          "d": "10-26",
+          "s": 167
+        },
+        {
+          "d": "10-27",
+          "s": 169
+        },
+        {
+          "d": "10-28",
+          "s": 173
+        },
+        {
+          "d": "10-29",
+          "s": 175
+        },
+        {
+          "d": "10-30",
+          "s": 175
+        },
+        {
+          "d": "10-31",
+          "s": 178
+        },
+        {
+          "d": "11-01",
+          "s": 179
+        },
+        {
+          "d": "11-02",
+          "s": 181
+        },
+        {
+          "d": "11-03",
+          "s": 183
+        },
+        {
+          "d": "11-04",
+          "s": 184
+        },
+        {
+          "d": "11-05",
+          "s": 186
+        },
+        {
+          "d": "11-06",
+          "s": 186
+        },
+        {
+          "d": "11-07",
+          "s": 187
+        },
+        {
+          "d": "11-08",
+          "s": 188
+        },
+        {
+          "d": "11-09",
+          "s": 188
+        },
+        {
+          "d": "11-10",
+          "s": 189
+        },
+        {
+          "d": "11-11",
+          "s": 191
+        },
+        {
+          "d": "11-12",
+          "s": 191
+        },
+        {
+          "d": "11-13",
+          "s": 191
+        },
+        {
+          "d": "11-14",
+          "s": 192
+        },
+        {
+          "d": "11-15",
+          "s": 192
+        },
+        {
+          "d": "11-16",
+          "s": 193
+        },
+        {
+          "d": "11-17",
+          "s": 194
+        },
+        {
+          "d": "11-18",
+          "s": 194
+        },
+        {
+          "d": "11-19",
+          "s": 194
+        },
+        {
+          "d": "11-20",
+          "s": 196
+        },
+        {
+          "d": "11-21",
+          "s": 198
+        },
+        {
+          "d": "11-22",
+          "s": 200
+        }
+      ]
+    },
+    "score": {
+      "score": 18.38,
+      "breakdown": {
+        "vel": 21,
+        "acc": 57,
+        "health": 100,
+        "fresh": 0,
+        "signal": 85
+      },
+      "stage": "saturated",
+      "stage_multiplier": 0.7,
+      "confidence": 1.0,
+      "base_score": 26.26,
+      "explanation": "free-domains 是 JavaScript 开源项目，主打「A big list of free subdomains for personal websites, portfolios, open-source projects, and other online projects.」；增长已饱和；社区健康（fork/star 比 14.5%，0 个 open issue）、项目元数据完整。"
+    }
+  },
+  {
+    "repo": {
+      "owner": "microsoft",
+      "name": "AZD-for-beginners",
+      "full_name": "microsoft/AZD-for-beginners",
+      "description": " Welcome to the comprehensive guide for Azure Developer CLI (azd)! This repository is designed to help developers at all levels from students to professional developers learn and master Azure Developer CLI for efficient cloud deployments.",
+      "stars": 200,
+      "forks": 85,
+      "open_issues": 1,
+      "created_at": "2025-09-09T09:15:24+00:00",
+      "pushed_at": "2026-11-22T11:02:05+00:00",
+      "updated_at": "2026-11-21T17:42:21+00:00",
+      "topics": [],
+      "language": "CSS",
+      "license": "MIT",
+      "homepage": null,
+      "html_url": "https://github.com/microsoft/AZD-for-beginners",
+      "default_branch": "main",
+      "archived": false,
+      "search_score": 1.0,
+      "stars_7d_ago": 199,
+      "star_series": [
+        {
+          "d": "10-24",
+          "s": 198
+        },
+        {
+          "d": "10-25",
+          "s": 198
+        },
+        {
+          "d": "10-26",
+          "s": 198
+        },
+        {
+          "d": "10-27",
+          "s": 198
+        },
+        {
+          "d": "10-28",
+          "s": 198
+        },
+        {
+          "d": "10-29",
+          "s": 198
+        },
+        {
+          "d": "10-30",
+          "s": 198
+        },
+        {
+          "d": "10-31",
+          "s": 198
+        },
+        {
+          "d": "11-01",
+          "s": 198
+        },
+        {
+          "d": "11-02",
+          "s": 198
+        },
+        {
+          "d": "11-03",
+          "s": 198
+        },
+        {
+          "d": "11-04",
+          "s": 198
+        },
+        {
+          "d": "11-05",
+          "s": 198
+        },
+        {
+          "d": "11-06",
+          "s": 198
+        },
+        {
+          "d": "11-07",
+          "s": 198
+        },
+        {
+          "d": "11-08",
+          "s": 198
+        },
+        {
+          "d": "11-09",
+          "s": 198
+        },
+        {
+          "d": "11-10",
+          "s": 198
+        },
+        {
+          "d": "11-11",
+          "s": 198
+        },
+        {
+          "d": "11-12",
+          "s": 198
+        },
+        {
+          "d": "11-13",
+          "s": 199
+        },
+        {
+          "d": "11-14",
+          "s": 199
+        },
+        {
+          "d": "11-15",
+          "s": 199
+        },
+        {
+          "d": "11-16",
+          "s": 199
+        },
+        {
+          "d": "11-17",
+          "s": 199
+        },
+        {
+          "d": "11-18",
+          "s": 199
         },
         {
           "d": "11-19",
@@ -2803,23 +3799,27 @@
         {
           "d": "11-21",
           "s": 200
+        },
+        {
+          "d": "11-22",
+          "s": 200
         }
       ]
     },
     "score": {
-      "score": 18.11,
+      "score": 16.35,
       "breakdown": {
-        "vel": 10,
-        "acc": 43,
-        "health": 36,
-        "fresh": 22,
-        "signal": 70
+        "vel": 4,
+        "acc": 50,
+        "health": 88,
+        "fresh": 0,
+        "signal": 55
       },
-      "stage": "saturated",
-      "stage_multiplier": 0.7,
+      "stage": "mid_early",
+      "stage_multiplier": 1.1,
       "confidence": 1.0,
-      "base_score": 25.87,
-      "explanation": "peel 是 Kotlin 开源项目，主打「Turn any website into a native-like Android app」；增长已饱和。"
+      "base_score": 14.86,
+      "explanation": "AZD-for-beginners 是 CSS 开源项目，主打「Welcome to the comprehensive guide for Azure Developer CLI (azd)! This repository is designed to help developers at all levels from students to professional developers learn and master Azure Developer CLI for efficient cloud deployments.」；处于中早期增长；社区健康（fork/star 比 42.5%，1 个 open issue）。"
     }
   },
   {
@@ -2832,7 +3832,7 @@
       "forks": 41,
       "open_issues": 35,
       "created_at": "2024-10-04T08:09:23+00:00",
-      "pushed_at": "2026-11-18T09:42:18+00:00",
+      "pushed_at": "2026-11-21T15:49:34+00:00",
       "updated_at": "2026-11-20T09:13:32+00:00",
       "topics": [
         "file-sharing",
@@ -2850,10 +3850,6 @@
       "stars_7d_ago": 996,
       "star_series": [
         {
-          "d": "10-23",
-          "s": 996
-        },
-        {
           "d": "10-24",
           "s": 996
         },
@@ -2968,11 +3964,15 @@
         {
           "d": "11-21",
           "s": 997
+        },
+        {
+          "d": "11-22",
+          "s": 997
         }
       ]
     },
     "score": {
-      "score": 15.02,
+      "score": 15.1,
       "breakdown": {
         "vel": 4,
         "acc": 54,
@@ -2983,7 +3983,7 @@
       "stage": "mid_late",
       "stage_multiplier": 1.0,
       "confidence": 1.0,
-      "base_score": 15.02,
+      "base_score": 15.1,
       "explanation": "safebucket 是 Go 开源项目，主打「On-prem file sharing made simple, fast and safe.」；处于中后期增长；项目元数据完整。"
     }
   },
@@ -3016,12 +4016,8 @@
       "default_branch": "main",
       "archived": false,
       "search_score": 1.0,
-      "stars_7d_ago": 997,
+      "stars_7d_ago": 999,
       "star_series": [
-        {
-          "d": "10-23",
-          "s": 988
-        },
         {
           "d": "10-24",
           "s": 988
@@ -3137,23 +4133,353 @@
         {
           "d": "11-21",
           "s": 1000
+        },
+        {
+          "d": "11-22",
+          "s": 1000
         }
       ]
     },
     "score": {
-      "score": 14.37,
+      "score": 14.57,
       "breakdown": {
-        "vel": 10,
-        "acc": 54,
+        "vel": 4,
+        "acc": 39,
         "health": 99,
         "fresh": 0,
         "signal": 65
       },
+      "stage": "mid_late",
+      "stage_multiplier": 1.0,
+      "confidence": 1.0,
+      "base_score": 14.57,
+      "explanation": "AI-Compass 是 Python 开源项目，主打「“AI-Compass”将为社区指引在 AI 技术海洋中航行的方向，无论你是初学者还是进阶开发者，都能在这里找到通往 AI 各大方向的路径。旨在帮助开发者系统性地了解 AI 的核心概念、主流技术、前沿趋势，并通过实践掌握从理论到落地的全过程。」；处于中后期增长；社区健康（fork/star 比 13.6%，7 个 open issue）。"
+    }
+  },
+  {
+    "repo": {
+      "owner": "pytorch",
+      "name": "helion",
+      "full_name": "pytorch/helion",
+      "description": "A Python-embedded DSL that makes it easy to write fast, scalable ML kernels with minimal boilerplate.",
+      "stars": 995,
+      "forks": 193,
+      "open_issues": 397,
+      "created_at": "2025-04-22T17:50:13+00:00",
+      "pushed_at": "2026-11-22T13:52:40+00:00",
+      "updated_at": "2026-11-21T21:02:01+00:00",
+      "topics": [],
+      "language": "Python",
+      "license": "BSD-3-Clause",
+      "homepage": null,
+      "html_url": "https://github.com/pytorch/helion",
+      "default_branch": "main",
+      "archived": false,
+      "search_score": 1.0,
+      "stars_7d_ago": 994,
+      "star_series": [
+        {
+          "d": "10-24",
+          "s": 994
+        },
+        {
+          "d": "10-25",
+          "s": 994
+        },
+        {
+          "d": "10-26",
+          "s": 994
+        },
+        {
+          "d": "10-27",
+          "s": 994
+        },
+        {
+          "d": "10-28",
+          "s": 994
+        },
+        {
+          "d": "10-29",
+          "s": 994
+        },
+        {
+          "d": "10-30",
+          "s": 994
+        },
+        {
+          "d": "10-31",
+          "s": 994
+        },
+        {
+          "d": "11-01",
+          "s": 994
+        },
+        {
+          "d": "11-02",
+          "s": 994
+        },
+        {
+          "d": "11-03",
+          "s": 994
+        },
+        {
+          "d": "11-04",
+          "s": 994
+        },
+        {
+          "d": "11-05",
+          "s": 994
+        },
+        {
+          "d": "11-06",
+          "s": 994
+        },
+        {
+          "d": "11-07",
+          "s": 994
+        },
+        {
+          "d": "11-08",
+          "s": 994
+        },
+        {
+          "d": "11-09",
+          "s": 994
+        },
+        {
+          "d": "11-10",
+          "s": 994
+        },
+        {
+          "d": "11-11",
+          "s": 994
+        },
+        {
+          "d": "11-12",
+          "s": 994
+        },
+        {
+          "d": "11-13",
+          "s": 994
+        },
+        {
+          "d": "11-14",
+          "s": 994
+        },
+        {
+          "d": "11-15",
+          "s": 994
+        },
+        {
+          "d": "11-16",
+          "s": 994
+        },
+        {
+          "d": "11-17",
+          "s": 994
+        },
+        {
+          "d": "11-18",
+          "s": 994
+        },
+        {
+          "d": "11-19",
+          "s": 994
+        },
+        {
+          "d": "11-20",
+          "s": 994
+        },
+        {
+          "d": "11-21",
+          "s": 995
+        },
+        {
+          "d": "11-22",
+          "s": 995
+        }
+      ]
+    },
+    "score": {
+      "score": 14.42,
+      "breakdown": {
+        "vel": 4,
+        "acc": 54,
+        "health": 70,
+        "fresh": 0,
+        "signal": 55
+      },
+      "stage": "mid_late",
+      "stage_multiplier": 1.0,
+      "confidence": 1.0,
+      "base_score": 14.42,
+      "explanation": "helion 是 Python 开源项目，主打「A Python-embedded DSL that makes it easy to write fast, scalable ML kernels with minimal boilerplate.」；处于中后期增长。"
+    }
+  },
+  {
+    "repo": {
+      "owner": "AnYiEE",
+      "name": "touhou-mystia-izakaya-assistant",
+      "full_name": "AnYiEE/touhou-mystia-izakaya-assistant",
+      "description": "为游戏《东方夜雀食堂》所打造的辅助工具，提供顾客图鉴（包括羁绊奖励和符卡效果查询）、搭配稀客和普客的料理套餐，以及料理（食谱）、酒水、食材、厨具、摆件、衣服、伙伴、货币、道具、唱片、垂钓收藏和徽章查询等功能，旨在为玩家的游玩过程提供帮助。",
+      "stars": 200,
+      "forks": 8,
+      "open_issues": 1,
+      "created_at": "2024-06-01T14:43:41+00:00",
+      "pushed_at": "2026-11-20T13:55:27+00:00",
+      "updated_at": "2026-11-22T11:14:39+00:00",
+      "topics": [
+        "mystia-izakaya",
+        "mystias-izakaya",
+        "touhou",
+        "touhou-games",
+        "touhou-project"
+      ],
+      "language": "TypeScript",
+      "license": "AGPL-3.0",
+      "homepage": "https://izakaya.cc",
+      "html_url": "https://github.com/AnYiEE/touhou-mystia-izakaya-assistant",
+      "default_branch": "master",
+      "archived": false,
+      "search_score": 1.0,
+      "stars_7d_ago": 197,
+      "star_series": [
+        {
+          "d": "10-24",
+          "s": 189
+        },
+        {
+          "d": "10-25",
+          "s": 191
+        },
+        {
+          "d": "10-26",
+          "s": 191
+        },
+        {
+          "d": "10-27",
+          "s": 191
+        },
+        {
+          "d": "10-28",
+          "s": 192
+        },
+        {
+          "d": "10-29",
+          "s": 192
+        },
+        {
+          "d": "10-30",
+          "s": 193
+        },
+        {
+          "d": "10-31",
+          "s": 193
+        },
+        {
+          "d": "11-01",
+          "s": 193
+        },
+        {
+          "d": "11-02",
+          "s": 194
+        },
+        {
+          "d": "11-03",
+          "s": 194
+        },
+        {
+          "d": "11-04",
+          "s": 195
+        },
+        {
+          "d": "11-05",
+          "s": 195
+        },
+        {
+          "d": "11-06",
+          "s": 195
+        },
+        {
+          "d": "11-07",
+          "s": 196
+        },
+        {
+          "d": "11-08",
+          "s": 196
+        },
+        {
+          "d": "11-09",
+          "s": 196
+        },
+        {
+          "d": "11-10",
+          "s": 196
+        },
+        {
+          "d": "11-11",
+          "s": 196
+        },
+        {
+          "d": "11-12",
+          "s": 196
+        },
+        {
+          "d": "11-13",
+          "s": 197
+        },
+        {
+          "d": "11-14",
+          "s": 197
+        },
+        {
+          "d": "11-15",
+          "s": 197
+        },
+        {
+          "d": "11-16",
+          "s": 197
+        },
+        {
+          "d": "11-17",
+          "s": 197
+        },
+        {
+          "d": "11-18",
+          "s": 197
+        },
+        {
+          "d": "11-19",
+          "s": 197
+        },
+        {
+          "d": "11-20",
+          "s": 197
+        },
+        {
+          "d": "11-21",
+          "s": 199
+        },
+        {
+          "d": "11-22",
+          "s": 200
+        }
+      ]
+    },
+    "score": {
+      "score": 13.97,
+      "breakdown": {
+        "vel": 11,
+        "acc": 57,
+        "health": 68,
+        "fresh": 0,
+        "signal": 85
+      },
       "stage": "saturated",
       "stage_multiplier": 0.7,
       "confidence": 1.0,
-      "base_score": 20.53,
-      "explanation": "AI-Compass 是 Python 开源项目，主打「“AI-Compass”将为社区指引在 AI 技术海洋中航行的方向，无论你是初学者还是进阶开发者，都能在这里找到通往 AI 各大方向的路径。旨在帮助开发者系统性地了解 AI 的核心概念、主流技术、前沿趋势，并通过实践掌握从理论到落地的全过程。」；增长已饱和；社区健康（fork/star 比 13.6%，7 个 open issue）。"
+      "base_score": 19.95,
+      "explanation": "touhou-mystia-izakaya-assistant 是 TypeScript 开源项目，主打「为游戏《东方夜雀食堂》所打造的辅助工具，提供顾客图鉴（包括羁绊奖励和符卡效果查询）、搭配稀客和普客的料理套餐，以及料理（食谱）、酒水、食材、厨具、摆件、衣服、伙伴、货币、道具、唱片、垂钓收藏和徽章查询等功能，旨在为玩家的游玩过程提供帮助。」；增长已饱和；项目元数据完整。"
     }
   },
   {
@@ -3176,12 +4502,8 @@
       "default_branch": "master",
       "archived": false,
       "search_score": 1.0,
-      "stars_7d_ago": 996,
+      "stars_7d_ago": 997,
       "star_series": [
-        {
-          "d": "10-23",
-          "s": 988
-        },
         {
           "d": "10-24",
           "s": 988
@@ -3297,14 +4619,18 @@
         {
           "d": "11-21",
           "s": 999
+        },
+        {
+          "d": "11-22",
+          "s": 999
         }
       ]
     },
     "score": {
-      "score": 13.47,
+      "score": 11.82,
       "breakdown": {
-        "vel": 10,
-        "acc": 54,
+        "vel": 7,
+        "acc": 46,
         "health": 79,
         "fresh": 0,
         "signal": 55
@@ -3312,1232 +4638,8 @@
       "stage": "saturated",
       "stage_multiplier": 0.7,
       "confidence": 1.0,
-      "base_score": 19.25,
+      "base_score": 16.88,
       "explanation": "parakeet-mlx 是 Python 开源项目，主打「An implementation of the Nvidia's Parakeet models for Apple Silicon using MLX.」；增长已饱和；社区健康（fork/star 比 6.3%，7 个 open issue）。"
-    }
-  },
-  {
-    "repo": {
-      "owner": "stancaedy10-glitch",
-      "name": "manus--ai",
-      "full_name": "stancaedy10-glitch/manus--ai",
-      "description": "AI Manus is a general-purpose AI Agent system that supports running various tools and operations in a sandbox environment. ",
-      "stars": 200,
-      "forks": 0,
-      "open_issues": 0,
-      "created_at": "2026-11-13T14:47:22+00:00",
-      "pushed_at": "2026-11-21T11:49:16+00:00",
-      "updated_at": "2026-11-21T14:05:18+00:00",
-      "topics": [
-        "ai",
-        "ai-agents",
-        "ai-sdk",
-        "anthropic",
-        "chatbot",
-        "function-calling",
-        "gemeni",
-        "generative-ai",
-        "llm",
-        "multimodal",
-        "openai",
-        "react",
-        "solidjs",
-        "streaming",
-        "svelte",
-        "tanstack",
-        "tool-calling",
-        "typescript",
-        "typescript-sdk",
-        "vue"
-      ],
-      "language": null,
-      "license": "Apache-2.0",
-      "homepage": null,
-      "html_url": "https://github.com/stancaedy10-glitch/manus--ai",
-      "default_branch": "main",
-      "archived": false,
-      "search_score": 1.0,
-      "stars_7d_ago": 200,
-      "star_series": [
-        {
-          "d": "11-14",
-          "s": 200
-        },
-        {
-          "d": "11-21",
-          "s": 200
-        }
-      ]
-    },
-    "score": {
-      "score": 10.53,
-      "breakdown": {
-        "vel": 0,
-        "acc": 50,
-        "health": 60,
-        "fresh": 98,
-        "signal": 70
-      },
-      "stage": "early",
-      "stage_multiplier": 1.2,
-      "confidence": 0.5,
-      "base_score": 17.56,
-      "explanation": "manus--ai 是 未知语言 开源项目，主打「AI Manus is a general-purpose AI Agent system that supports running various tools and operations in a sandbox environment.」；处于增长早期；开发活跃。"
-    }
-  },
-  {
-    "repo": {
-      "owner": "stancaedy10-glitch",
-      "name": "ai--manus",
-      "full_name": "stancaedy10-glitch/ai--manus",
-      "description": "AI Manus is a general-purpose AI Agent system that supports running various tools and operations in a sandbox environment.",
-      "stars": 200,
-      "forks": 0,
-      "open_issues": 0,
-      "created_at": "2026-11-13T14:47:05+00:00",
-      "pushed_at": "2026-11-21T11:49:13+00:00",
-      "updated_at": "2026-11-21T14:05:22+00:00",
-      "topics": [
-        "ai",
-        "ai-agents",
-        "ai-sdk",
-        "anthropic",
-        "chatbot",
-        "function-calling",
-        "gemeni",
-        "generative-ai",
-        "llm",
-        "multimodal",
-        "openai",
-        "react",
-        "solidjs",
-        "streaming",
-        "svelte",
-        "tanstack",
-        "tool-calling",
-        "typescript",
-        "typescript-sdk",
-        "vue"
-      ],
-      "language": null,
-      "license": "Apache-2.0",
-      "homepage": null,
-      "html_url": "https://github.com/stancaedy10-glitch/ai--manus",
-      "default_branch": "main",
-      "archived": false,
-      "search_score": 1.0,
-      "stars_7d_ago": 200,
-      "star_series": [
-        {
-          "d": "11-14",
-          "s": 200
-        },
-        {
-          "d": "11-21",
-          "s": 200
-        }
-      ]
-    },
-    "score": {
-      "score": 10.53,
-      "breakdown": {
-        "vel": 0,
-        "acc": 50,
-        "health": 60,
-        "fresh": 98,
-        "signal": 70
-      },
-      "stage": "early",
-      "stage_multiplier": 1.2,
-      "confidence": 0.5,
-      "base_score": 17.56,
-      "explanation": "ai--manus 是 未知语言 开源项目，主打「AI Manus is a general-purpose AI Agent system that supports running various tools and operations in a sandbox environment.」；处于增长早期；开发活跃。"
-    }
-  },
-  {
-    "repo": {
-      "owner": "alphafalcongamer-creator",
-      "name": "manus--ai",
-      "full_name": "alphafalcongamer-creator/manus--ai",
-      "description": "AI Manus is a general-purpose AI Agent system that supports running various tools and operations in a sandbox environment. ",
-      "stars": 200,
-      "forks": 0,
-      "open_issues": 0,
-      "created_at": "2026-11-13T14:47:15+00:00",
-      "pushed_at": "2026-11-17T17:29:20+00:00",
-      "updated_at": "2026-11-21T14:05:19+00:00",
-      "topics": [
-        "ai",
-        "ai-agents",
-        "ai-sdk",
-        "anthropic",
-        "chatbot",
-        "function-calling",
-        "gemeni",
-        "generative-ai",
-        "llm",
-        "multimodal",
-        "openai",
-        "react",
-        "solidjs",
-        "streaming",
-        "svelte",
-        "tanstack",
-        "tool-calling",
-        "typescript",
-        "typescript-sdk",
-        "vue"
-      ],
-      "language": null,
-      "license": "Apache-2.0",
-      "homepage": null,
-      "html_url": "https://github.com/alphafalcongamer-creator/manus--ai",
-      "default_branch": "main",
-      "archived": false,
-      "search_score": 1.0,
-      "stars_7d_ago": 200,
-      "star_series": [
-        {
-          "d": "10-23",
-          "s": 0
-        },
-        {
-          "d": "10-24",
-          "s": 0
-        },
-        {
-          "d": "10-25",
-          "s": 0
-        },
-        {
-          "d": "10-26",
-          "s": 0
-        },
-        {
-          "d": "10-27",
-          "s": 0
-        },
-        {
-          "d": "10-28",
-          "s": 0
-        },
-        {
-          "d": "10-29",
-          "s": 0
-        },
-        {
-          "d": "10-30",
-          "s": 0
-        },
-        {
-          "d": "10-31",
-          "s": 0
-        },
-        {
-          "d": "11-01",
-          "s": 0
-        },
-        {
-          "d": "11-02",
-          "s": 0
-        },
-        {
-          "d": "11-03",
-          "s": 0
-        },
-        {
-          "d": "11-04",
-          "s": 0
-        },
-        {
-          "d": "11-05",
-          "s": 0
-        },
-        {
-          "d": "11-06",
-          "s": 0
-        },
-        {
-          "d": "11-07",
-          "s": 0
-        },
-        {
-          "d": "11-08",
-          "s": 0
-        },
-        {
-          "d": "11-09",
-          "s": 0
-        },
-        {
-          "d": "11-10",
-          "s": 0
-        },
-        {
-          "d": "11-11",
-          "s": 0
-        },
-        {
-          "d": "11-12",
-          "s": 0
-        },
-        {
-          "d": "11-13",
-          "s": 65
-        },
-        {
-          "d": "11-14",
-          "s": 200
-        },
-        {
-          "d": "11-15",
-          "s": 200
-        },
-        {
-          "d": "11-16",
-          "s": 200
-        },
-        {
-          "d": "11-17",
-          "s": 200
-        },
-        {
-          "d": "11-18",
-          "s": 200
-        },
-        {
-          "d": "11-19",
-          "s": 200
-        },
-        {
-          "d": "11-20",
-          "s": 200
-        },
-        {
-          "d": "11-21",
-          "s": 200
-        }
-      ]
-    },
-    "score": {
-      "score": 10.47,
-      "breakdown": {
-        "vel": 0,
-        "acc": 27,
-        "health": 60,
-        "fresh": 98,
-        "signal": 70
-      },
-      "stage": "saturated",
-      "stage_multiplier": 0.7,
-      "confidence": 1.0,
-      "base_score": 14.96,
-      "explanation": "manus--ai 是 未知语言 开源项目，主打「AI Manus is a general-purpose AI Agent system that supports running various tools and operations in a sandbox environment.」；增长已饱和，涨速已放缓；开发活跃。"
-    }
-  },
-  {
-    "repo": {
-      "owner": "AcgBoss",
-      "name": "ai--manus",
-      "full_name": "AcgBoss/ai--manus",
-      "description": "AI Manus is a general-purpose AI Agent system that supports running various tools and operations in a sandbox environment.",
-      "stars": 200,
-      "forks": 0,
-      "open_issues": 0,
-      "created_at": "2026-11-13T14:45:26+00:00",
-      "pushed_at": "2026-11-17T17:29:30+00:00",
-      "updated_at": "2026-11-21T14:05:42+00:00",
-      "topics": [
-        "ai",
-        "ai-agents",
-        "ai-sdk",
-        "anthropic",
-        "chatbot",
-        "function-calling",
-        "gemeni",
-        "generative-ai",
-        "llm",
-        "multimodal",
-        "openai",
-        "react",
-        "solidjs",
-        "streaming",
-        "svelte",
-        "tanstack",
-        "tool-calling",
-        "typescript",
-        "typescript-sdk",
-        "vue"
-      ],
-      "language": null,
-      "license": "Apache-2.0",
-      "homepage": null,
-      "html_url": "https://github.com/AcgBoss/ai--manus",
-      "default_branch": "main",
-      "archived": false,
-      "search_score": 1.0,
-      "stars_7d_ago": 200,
-      "star_series": [
-        {
-          "d": "10-23",
-          "s": 0
-        },
-        {
-          "d": "10-24",
-          "s": 0
-        },
-        {
-          "d": "10-25",
-          "s": 0
-        },
-        {
-          "d": "10-26",
-          "s": 0
-        },
-        {
-          "d": "10-27",
-          "s": 0
-        },
-        {
-          "d": "10-28",
-          "s": 0
-        },
-        {
-          "d": "10-29",
-          "s": 0
-        },
-        {
-          "d": "10-30",
-          "s": 0
-        },
-        {
-          "d": "10-31",
-          "s": 0
-        },
-        {
-          "d": "11-01",
-          "s": 0
-        },
-        {
-          "d": "11-02",
-          "s": 0
-        },
-        {
-          "d": "11-03",
-          "s": 0
-        },
-        {
-          "d": "11-04",
-          "s": 0
-        },
-        {
-          "d": "11-05",
-          "s": 0
-        },
-        {
-          "d": "11-06",
-          "s": 0
-        },
-        {
-          "d": "11-07",
-          "s": 0
-        },
-        {
-          "d": "11-08",
-          "s": 0
-        },
-        {
-          "d": "11-09",
-          "s": 0
-        },
-        {
-          "d": "11-10",
-          "s": 0
-        },
-        {
-          "d": "11-11",
-          "s": 0
-        },
-        {
-          "d": "11-12",
-          "s": 0
-        },
-        {
-          "d": "11-13",
-          "s": 65
-        },
-        {
-          "d": "11-14",
-          "s": 200
-        },
-        {
-          "d": "11-15",
-          "s": 200
-        },
-        {
-          "d": "11-16",
-          "s": 200
-        },
-        {
-          "d": "11-17",
-          "s": 200
-        },
-        {
-          "d": "11-18",
-          "s": 200
-        },
-        {
-          "d": "11-19",
-          "s": 200
-        },
-        {
-          "d": "11-20",
-          "s": 200
-        },
-        {
-          "d": "11-21",
-          "s": 200
-        }
-      ]
-    },
-    "score": {
-      "score": 10.47,
-      "breakdown": {
-        "vel": 0,
-        "acc": 27,
-        "health": 60,
-        "fresh": 98,
-        "signal": 70
-      },
-      "stage": "saturated",
-      "stage_multiplier": 0.7,
-      "confidence": 1.0,
-      "base_score": 14.96,
-      "explanation": "ai--manus 是 未知语言 开源项目，主打「AI Manus is a general-purpose AI Agent system that supports running various tools and operations in a sandbox environment.」；增长已饱和，涨速已放缓；开发活跃。"
-    }
-  },
-  {
-    "repo": {
-      "owner": "melchersimon011-bot",
-      "name": "ai--manus",
-      "full_name": "melchersimon011-bot/ai--manus",
-      "description": "AI Manus is a general-purpose AI Agent system that supports running various tools and operations in a sandbox environment.",
-      "stars": 200,
-      "forks": 0,
-      "open_issues": 0,
-      "created_at": "2026-11-13T14:46:20+00:00",
-      "pushed_at": "2026-11-15T10:37:57+00:00",
-      "updated_at": "2026-11-21T14:05:31+00:00",
-      "topics": [
-        "ai",
-        "ai-agents",
-        "ai-sdk",
-        "anthropic",
-        "chatbot",
-        "function-calling",
-        "gemeni",
-        "generative-ai",
-        "llm",
-        "multimodal",
-        "openai",
-        "react",
-        "solidjs",
-        "streaming",
-        "svelte",
-        "tanstack",
-        "tool-calling",
-        "typescript",
-        "typescript-sdk",
-        "vue"
-      ],
-      "language": null,
-      "license": "Apache-2.0",
-      "homepage": null,
-      "html_url": "https://github.com/melchersimon011-bot/ai--manus",
-      "default_branch": "main",
-      "archived": false,
-      "search_score": 1.0,
-      "stars_7d_ago": 200,
-      "star_series": [
-        {
-          "d": "10-23",
-          "s": 0
-        },
-        {
-          "d": "10-24",
-          "s": 0
-        },
-        {
-          "d": "10-25",
-          "s": 0
-        },
-        {
-          "d": "10-26",
-          "s": 0
-        },
-        {
-          "d": "10-27",
-          "s": 0
-        },
-        {
-          "d": "10-28",
-          "s": 0
-        },
-        {
-          "d": "10-29",
-          "s": 0
-        },
-        {
-          "d": "10-30",
-          "s": 0
-        },
-        {
-          "d": "10-31",
-          "s": 0
-        },
-        {
-          "d": "11-01",
-          "s": 0
-        },
-        {
-          "d": "11-02",
-          "s": 0
-        },
-        {
-          "d": "11-03",
-          "s": 0
-        },
-        {
-          "d": "11-04",
-          "s": 0
-        },
-        {
-          "d": "11-05",
-          "s": 0
-        },
-        {
-          "d": "11-06",
-          "s": 0
-        },
-        {
-          "d": "11-07",
-          "s": 0
-        },
-        {
-          "d": "11-08",
-          "s": 0
-        },
-        {
-          "d": "11-09",
-          "s": 0
-        },
-        {
-          "d": "11-10",
-          "s": 0
-        },
-        {
-          "d": "11-11",
-          "s": 0
-        },
-        {
-          "d": "11-12",
-          "s": 0
-        },
-        {
-          "d": "11-13",
-          "s": 65
-        },
-        {
-          "d": "11-14",
-          "s": 200
-        },
-        {
-          "d": "11-15",
-          "s": 200
-        },
-        {
-          "d": "11-16",
-          "s": 200
-        },
-        {
-          "d": "11-17",
-          "s": 200
-        },
-        {
-          "d": "11-18",
-          "s": 200
-        },
-        {
-          "d": "11-19",
-          "s": 200
-        },
-        {
-          "d": "11-20",
-          "s": 200
-        },
-        {
-          "d": "11-21",
-          "s": 200
-        }
-      ]
-    },
-    "score": {
-      "score": 10.47,
-      "breakdown": {
-        "vel": 0,
-        "acc": 27,
-        "health": 60,
-        "fresh": 98,
-        "signal": 70
-      },
-      "stage": "saturated",
-      "stage_multiplier": 0.7,
-      "confidence": 1.0,
-      "base_score": 14.96,
-      "explanation": "ai--manus 是 未知语言 开源项目，主打「AI Manus is a general-purpose AI Agent system that supports running various tools and operations in a sandbox environment.」；增长已饱和，涨速已放缓；开发活跃。"
-    }
-  },
-  {
-    "repo": {
-      "owner": "alphafalcongamer-creator",
-      "name": "ai--manus",
-      "full_name": "alphafalcongamer-creator/ai--manus",
-      "description": "AI Manus is a general-purpose AI Agent system that supports running various tools and operations in a sandbox environment.",
-      "stars": 200,
-      "forks": 0,
-      "open_issues": 0,
-      "created_at": "2026-11-13T14:46:57+00:00",
-      "pushed_at": "2026-11-17T17:29:17+00:00",
-      "updated_at": "2026-11-21T14:05:23+00:00",
-      "topics": [
-        "ai",
-        "ai-agents",
-        "ai-sdk",
-        "anthropic",
-        "chatbot",
-        "function-calling",
-        "gemeni",
-        "generative-ai",
-        "llm",
-        "multimodal",
-        "openai",
-        "react",
-        "solidjs",
-        "streaming",
-        "svelte",
-        "tanstack",
-        "tool-calling",
-        "typescript",
-        "typescript-sdk",
-        "vue"
-      ],
-      "language": null,
-      "license": "Apache-2.0",
-      "homepage": null,
-      "html_url": "https://github.com/alphafalcongamer-creator/ai--manus",
-      "default_branch": "main",
-      "archived": false,
-      "search_score": 1.0,
-      "stars_7d_ago": 200,
-      "star_series": [
-        {
-          "d": "10-23",
-          "s": 0
-        },
-        {
-          "d": "10-24",
-          "s": 0
-        },
-        {
-          "d": "10-25",
-          "s": 0
-        },
-        {
-          "d": "10-26",
-          "s": 0
-        },
-        {
-          "d": "10-27",
-          "s": 0
-        },
-        {
-          "d": "10-28",
-          "s": 0
-        },
-        {
-          "d": "10-29",
-          "s": 0
-        },
-        {
-          "d": "10-30",
-          "s": 0
-        },
-        {
-          "d": "10-31",
-          "s": 0
-        },
-        {
-          "d": "11-01",
-          "s": 0
-        },
-        {
-          "d": "11-02",
-          "s": 0
-        },
-        {
-          "d": "11-03",
-          "s": 0
-        },
-        {
-          "d": "11-04",
-          "s": 0
-        },
-        {
-          "d": "11-05",
-          "s": 0
-        },
-        {
-          "d": "11-06",
-          "s": 0
-        },
-        {
-          "d": "11-07",
-          "s": 0
-        },
-        {
-          "d": "11-08",
-          "s": 0
-        },
-        {
-          "d": "11-09",
-          "s": 0
-        },
-        {
-          "d": "11-10",
-          "s": 0
-        },
-        {
-          "d": "11-11",
-          "s": 0
-        },
-        {
-          "d": "11-12",
-          "s": 0
-        },
-        {
-          "d": "11-13",
-          "s": 66
-        },
-        {
-          "d": "11-14",
-          "s": 200
-        },
-        {
-          "d": "11-15",
-          "s": 200
-        },
-        {
-          "d": "11-16",
-          "s": 200
-        },
-        {
-          "d": "11-17",
-          "s": 200
-        },
-        {
-          "d": "11-18",
-          "s": 200
-        },
-        {
-          "d": "11-19",
-          "s": 200
-        },
-        {
-          "d": "11-20",
-          "s": 200
-        },
-        {
-          "d": "11-21",
-          "s": 200
-        }
-      ]
-    },
-    "score": {
-      "score": 10.47,
-      "breakdown": {
-        "vel": 0,
-        "acc": 27,
-        "health": 60,
-        "fresh": 98,
-        "signal": 70
-      },
-      "stage": "saturated",
-      "stage_multiplier": 0.7,
-      "confidence": 1.0,
-      "base_score": 14.96,
-      "explanation": "ai--manus 是 未知语言 开源项目，主打「AI Manus is a general-purpose AI Agent system that supports running various tools and operations in a sandbox environment.」；增长已饱和，涨速已放缓；开发活跃。"
-    }
-  },
-  {
-    "repo": {
-      "owner": "lebronstx-collab",
-      "name": "manus--ai",
-      "full_name": "lebronstx-collab/manus--ai",
-      "description": "AI Manus is a general-purpose AI Agent system that supports running various tools and operations in a sandbox environment. ",
-      "stars": 200,
-      "forks": 0,
-      "open_issues": 0,
-      "created_at": "2026-11-13T14:47:47+00:00",
-      "pushed_at": "2026-11-15T10:37:32+00:00",
-      "updated_at": "2026-11-21T14:05:10+00:00",
-      "topics": [
-        "ai",
-        "ai-agents",
-        "ai-sdk",
-        "anthropic",
-        "chatbot",
-        "function-calling",
-        "gemeni",
-        "generative-ai",
-        "llm",
-        "multimodal",
-        "openai",
-        "react",
-        "solidjs",
-        "streaming",
-        "svelte",
-        "tanstack",
-        "tool-calling",
-        "typescript",
-        "typescript-sdk",
-        "vue"
-      ],
-      "language": null,
-      "license": "Apache-2.0",
-      "homepage": null,
-      "html_url": "https://github.com/lebronstx-collab/manus--ai",
-      "default_branch": "main",
-      "archived": false,
-      "search_score": 1.0,
-      "stars_7d_ago": 200,
-      "star_series": [
-        {
-          "d": "10-23",
-          "s": 0
-        },
-        {
-          "d": "10-24",
-          "s": 0
-        },
-        {
-          "d": "10-25",
-          "s": 0
-        },
-        {
-          "d": "10-26",
-          "s": 0
-        },
-        {
-          "d": "10-27",
-          "s": 0
-        },
-        {
-          "d": "10-28",
-          "s": 0
-        },
-        {
-          "d": "10-29",
-          "s": 0
-        },
-        {
-          "d": "10-30",
-          "s": 0
-        },
-        {
-          "d": "10-31",
-          "s": 0
-        },
-        {
-          "d": "11-01",
-          "s": 0
-        },
-        {
-          "d": "11-02",
-          "s": 0
-        },
-        {
-          "d": "11-03",
-          "s": 0
-        },
-        {
-          "d": "11-04",
-          "s": 0
-        },
-        {
-          "d": "11-05",
-          "s": 0
-        },
-        {
-          "d": "11-06",
-          "s": 0
-        },
-        {
-          "d": "11-07",
-          "s": 0
-        },
-        {
-          "d": "11-08",
-          "s": 0
-        },
-        {
-          "d": "11-09",
-          "s": 0
-        },
-        {
-          "d": "11-10",
-          "s": 0
-        },
-        {
-          "d": "11-11",
-          "s": 0
-        },
-        {
-          "d": "11-12",
-          "s": 0
-        },
-        {
-          "d": "11-13",
-          "s": 65
-        },
-        {
-          "d": "11-14",
-          "s": 200
-        },
-        {
-          "d": "11-15",
-          "s": 200
-        },
-        {
-          "d": "11-16",
-          "s": 200
-        },
-        {
-          "d": "11-17",
-          "s": 200
-        },
-        {
-          "d": "11-18",
-          "s": 200
-        },
-        {
-          "d": "11-19",
-          "s": 200
-        },
-        {
-          "d": "11-20",
-          "s": 200
-        },
-        {
-          "d": "11-21",
-          "s": 200
-        }
-      ]
-    },
-    "score": {
-      "score": 10.47,
-      "breakdown": {
-        "vel": 0,
-        "acc": 27,
-        "health": 60,
-        "fresh": 98,
-        "signal": 70
-      },
-      "stage": "saturated",
-      "stage_multiplier": 0.7,
-      "confidence": 1.0,
-      "base_score": 14.96,
-      "explanation": "manus--ai 是 未知语言 开源项目，主打「AI Manus is a general-purpose AI Agent system that supports running various tools and operations in a sandbox environment.」；增长已饱和，涨速已放缓；开发活跃。"
-    }
-  },
-  {
-    "repo": {
-      "owner": "AcgBoss",
-      "name": "manus--ai",
-      "full_name": "AcgBoss/manus--ai",
-      "description": "AI Manus is a general-purpose AI Agent system that supports running various tools and operations in a sandbox environment. ",
-      "stars": 200,
-      "forks": 0,
-      "open_issues": 0,
-      "created_at": "2026-11-13T14:45:45+00:00",
-      "pushed_at": "2026-11-17T17:29:37+00:00",
-      "updated_at": "2026-11-21T14:05:38+00:00",
-      "topics": [
-        "ai",
-        "ai-agents",
-        "ai-sdk",
-        "anthropic",
-        "chatbot",
-        "function-calling",
-        "gemeni",
-        "generative-ai",
-        "llm",
-        "multimodal",
-        "openai",
-        "react",
-        "solidjs",
-        "streaming",
-        "svelte",
-        "tanstack",
-        "tool-calling",
-        "typescript",
-        "typescript-sdk",
-        "vue"
-      ],
-      "language": null,
-      "license": "Apache-2.0",
-      "homepage": null,
-      "html_url": "https://github.com/AcgBoss/manus--ai",
-      "default_branch": "main",
-      "archived": false,
-      "search_score": 1.0,
-      "stars_7d_ago": 200,
-      "star_series": [
-        {
-          "d": "10-23",
-          "s": 0
-        },
-        {
-          "d": "10-24",
-          "s": 0
-        },
-        {
-          "d": "10-25",
-          "s": 0
-        },
-        {
-          "d": "10-26",
-          "s": 0
-        },
-        {
-          "d": "10-27",
-          "s": 0
-        },
-        {
-          "d": "10-28",
-          "s": 0
-        },
-        {
-          "d": "10-29",
-          "s": 0
-        },
-        {
-          "d": "10-30",
-          "s": 0
-        },
-        {
-          "d": "10-31",
-          "s": 0
-        },
-        {
-          "d": "11-01",
-          "s": 0
-        },
-        {
-          "d": "11-02",
-          "s": 0
-        },
-        {
-          "d": "11-03",
-          "s": 0
-        },
-        {
-          "d": "11-04",
-          "s": 0
-        },
-        {
-          "d": "11-05",
-          "s": 0
-        },
-        {
-          "d": "11-06",
-          "s": 0
-        },
-        {
-          "d": "11-07",
-          "s": 0
-        },
-        {
-          "d": "11-08",
-          "s": 0
-        },
-        {
-          "d": "11-09",
-          "s": 0
-        },
-        {
-          "d": "11-10",
-          "s": 0
-        },
-        {
-          "d": "11-11",
-          "s": 0
-        },
-        {
-          "d": "11-12",
-          "s": 0
-        },
-        {
-          "d": "11-13",
-          "s": 65
-        },
-        {
-          "d": "11-14",
-          "s": 200
-        },
-        {
-          "d": "11-15",
-          "s": 200
-        },
-        {
-          "d": "11-16",
-          "s": 200
-        },
-        {
-          "d": "11-17",
-          "s": 200
-        },
-        {
-          "d": "11-18",
-          "s": 200
-        },
-        {
-          "d": "11-19",
-          "s": 200
-        },
-        {
-          "d": "11-20",
-          "s": 200
-        },
-        {
-          "d": "11-21",
-          "s": 200
-        }
-      ]
-    },
-    "score": {
-      "score": 10.47,
-      "breakdown": {
-        "vel": 0,
-        "acc": 27,
-        "health": 60,
-        "fresh": 98,
-        "signal": 70
-      },
-      "stage": "saturated",
-      "stage_multiplier": 0.7,
-      "confidence": 1.0,
-      "base_score": 14.96,
-      "explanation": "manus--ai 是 未知语言 开源项目，主打「AI Manus is a general-purpose AI Agent system that supports running various tools and operations in a sandbox environment.」；增长已饱和，涨速已放缓；开发活跃。"
     }
   },
   {
@@ -4547,10 +4649,10 @@
       "full_name": "duckdb/duckdb-node-neo",
       "description": "Second iteration on a DuckDB Node.js client",
       "stars": 200,
-      "forks": 55,
+      "forks": 56,
       "open_issues": 39,
       "created_at": "2024-06-15T18:50:20+00:00",
-      "pushed_at": "2026-11-20T18:03:31+00:00",
+      "pushed_at": "2026-11-22T00:20:15+00:00",
       "updated_at": "2026-11-19T12:45:49+00:00",
       "topics": [],
       "language": "TypeScript",
@@ -4563,10 +4665,6 @@
       "stars_7d_ago": 200,
       "star_series": [
         {
-          "d": "10-23",
-          "s": 198
-        },
-        {
           "d": "10-24",
           "s": 198
         },
@@ -4680,6 +4778,10 @@
         },
         {
           "d": "11-21",
+          "s": 200
+        },
+        {
+          "d": "11-22",
           "s": 200
         }
       ]
@@ -4723,10 +4825,6 @@
       "stars_7d_ago": 200,
       "star_series": [
         {
-          "d": "10-23",
-          "s": 195
-        },
-        {
           "d": "10-24",
           "s": 195
         },
@@ -4840,6 +4938,10 @@
         },
         {
           "d": "11-21",
+          "s": 200
+        },
+        {
+          "d": "11-22",
           "s": 200
         }
       ]
